@@ -2,7 +2,7 @@ import { describe, it, expect } from 'vitest'
 import { useSeriesData } from '@/composables/useSeriesData'
 
 describe('useSeriesData', () => {
-  const { series, books, bookBySlug, liveBooks, upcomingBooks, stubBooks, pausedBooks } = useSeriesData()
+  const { series, books, bookBySlug, liveBooks, upcomingBooks, stubBooks, gatedBooks } = useSeriesData()
 
   it('loads series metadata from series.yaml', () => {
     expect(series.value.name).toBe('Agile Sapiens')
@@ -24,7 +24,7 @@ describe('useSeriesData', () => {
   it('each book has required fields', () => {
     books.value.forEach((book) => {
       expect(book.slug).toMatch(/^kn[1-7]$/)
-      expect(book.status).toMatch(/^(live|stub|launch_target|variant_b_pause)$/)
+      expect(book.status).toMatch(/^(live|stub|launch_target|variant_b_pause|svod_zakryt_pre_shit_v5)$/)
       expect(book.slug_en_temp).toBeDefined()
     })
   })
@@ -49,9 +49,10 @@ describe('useSeriesData', () => {
     expect(upcomingBooks.value[0].slug).toBe('kn5')
   })
 
-  it('pausedBooks includes kn7 (Variant B)', () => {
-    expect(pausedBooks.value).toHaveLength(1)
-    expect(pausedBooks.value[0].slug).toBe('kn7')
+  it('gatedBooks includes kn7 (quality gate pending — ЩИТ v5 после кн.3 per Иви S151)', () => {
+    expect(gatedBooks.value).toHaveLength(1)
+    expect(gatedBooks.value[0].slug).toBe('kn7')
+    expect(gatedBooks.value[0].status).toBe('svod_zakryt_pre_shit_v5')
   })
 
   it('kn1 has canonical pointing к sapiens (pre-cutover state)', () => {

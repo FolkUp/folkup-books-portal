@@ -23,9 +23,19 @@ export default defineConfig({
     // Rollup optimization
     rollupOptions: {
       output: {
-        manualChunks: {
-          // Vendor split for cache stability
-          vendor: ['vue', 'vue-router', 'vue-i18n', '@unhead/vue'],
+        // manualChunks applied only in client build (SSR treats vue as external)
+        manualChunks(id, { getModuleInfo }) {
+          if (id.includes('node_modules')) {
+            if (
+              id.includes('/vue/') ||
+              id.includes('/vue-router/') ||
+              id.includes('/vue-i18n/') ||
+              id.includes('/@unhead/')
+            ) {
+              // Only chunk into vendor for client build (getModuleInfo undefined in SSR external)
+              return 'vendor'
+            }
+          }
         },
       },
     },
