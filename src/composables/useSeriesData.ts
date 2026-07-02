@@ -6,7 +6,7 @@ export interface Book {
   position: number
   slug: string
   slug_en_temp: string
-  status: 'live' | 'stub' | 'launch_target' | 'variant_b_pause'
+  status: 'live' | 'stub' | 'launch_target' | 'variant_b_pause' | 'svod_zakryt_pre_shit_v5'
   canonical_pre_cutover?: string
   version?: string
   launch_date?: string
@@ -52,8 +52,14 @@ export function useSeriesData() {
     books.value.filter((b) => b.status === 'launch_target')
   )
   const stubBooks = computed(() => books.value.filter((b) => b.status === 'stub'))
-  const pausedBooks = computed(() =>
-    books.value.filter((b) => b.status === 'variant_b_pause')
+  // Books waiting for quality gate (ЩИТ v5) before publication.
+  // Includes historical variant_b_pause + current svod_zakryt_pre_shit_v5 (Иви S151).
+  const gatedBooks = computed(() =>
+    books.value.filter(
+      (b) =>
+        b.status === 'variant_b_pause' ||
+        b.status === 'svod_zakryt_pre_shit_v5'
+    )
   )
 
   return {
@@ -63,6 +69,6 @@ export function useSeriesData() {
     liveBooks,
     upcomingBooks,
     stubBooks,
-    pausedBooks,
+    gatedBooks,
   }
 }

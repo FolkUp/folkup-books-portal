@@ -1,0 +1,151 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":dependencyDashboard",
+    ":semanticCommits",
+    ":semanticCommitTypeAll(chore)",
+    ":gitSignOff",
+    ":prConcurrentLimit10",
+    "helpers:pinGitHubActionDigests",
+    "schedule:earlyMondays"
+  ],
+  "timezone": "Europe/Berlin",
+  "labels": ["renovate", "dependencies"],
+  "assignees": ["anklemPT"],
+  "prHourlyLimit": 3,
+  "prConcurrentLimit": 5,
+  "rangeStrategy": "bump",
+  "rebaseWhen": "conflicted",
+  "commitMessagePrefix": "chore(deps):",
+  "lockFileMaintenance": {
+    "enabled": true,
+    "schedule": ["before 5am on monday"],
+    "commitMessageAction": "refresh lockfile",
+    "automerge": true
+  },
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "labels": ["security", "renovate", "priority-high"],
+    "schedule": ["at any time"],
+    "prPriority": 10,
+    "automerge": false
+  },
+  "packageRules": [
+    {
+      "description": "Auto-merge patch updates if CI green",
+      "matchUpdateTypes": ["patch", "pin", "digest"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true
+    },
+    {
+      "description": "Auto-merge minor updates после 3-day quarantine (стабильность community)",
+      "matchUpdateTypes": ["minor"],
+      "matchCurrentVersion": "!/^0/",
+      "automerge": true,
+      "automergeType": "pr",
+      "platformAutomerge": true,
+      "minimumReleaseAge": "3 days"
+    },
+    {
+      "description": "Major updates — manual PR review только",
+      "matchUpdateTypes": ["major"],
+      "automerge": false,
+      "labels": ["renovate", "major-update", "review-required"],
+      "prPriority": 5
+    },
+    {
+      "description": "0.x versions — treat all bumps как major (breaking возможен)",
+      "matchCurrentVersion": "/^0/",
+      "automerge": false,
+      "labels": ["renovate", "prerelease", "review-required"]
+    },
+    {
+      "description": "Vue ecosystem — grouped PR",
+      "matchPackagePatterns": [
+        "^vue",
+        "^@vue/",
+        "^@vitejs/plugin-vue",
+        "^@vueuse/",
+        "^@unhead/"
+      ],
+      "groupName": "Vue ecosystem",
+      "commitMessageTopic": "Vue ecosystem"
+    },
+    {
+      "description": "Vite ecosystem — grouped PR",
+      "matchPackagePatterns": [
+        "^vite$",
+        "^vite-",
+        "^@vitejs/"
+      ],
+      "excludePackagePatterns": ["^@vitejs/plugin-vue"],
+      "groupName": "Vite build tooling",
+      "commitMessageTopic": "Vite build tooling"
+    },
+    {
+      "description": "Testing stack — grouped PR",
+      "matchPackagePatterns": [
+        "^vitest",
+        "^@vitest/",
+        "^@vue/test-utils",
+        "^happy-dom",
+        "^jsdom"
+      ],
+      "groupName": "Testing stack",
+      "commitMessageTopic": "Testing stack"
+    },
+    {
+      "description": "Playwright + a11y — grouped PR",
+      "matchPackagePatterns": [
+        "^@playwright/",
+        "^playwright",
+        "^@axe-core/"
+      ],
+      "groupName": "E2E + a11y",
+      "commitMessageTopic": "E2E + a11y"
+    },
+    {
+      "description": "TypeScript + type-check — grouped PR",
+      "matchPackagePatterns": [
+        "^typescript$",
+        "^vue-tsc",
+        "^@types/"
+      ],
+      "groupName": "TypeScript tooling",
+      "commitMessageTopic": "TypeScript tooling"
+    },
+    {
+      "description": "Linters + formatters — grouped PR",
+      "matchPackagePatterns": [
+        "^eslint",
+        "^@vue/eslint-",
+        "^prettier",
+        "^@intlify/"
+      ],
+      "groupName": "Lint + format",
+      "commitMessageTopic": "Lint + format"
+    },
+    {
+      "description": "Content pipeline — grouped PR",
+      "matchPackagePatterns": [
+        "^asciidoctor",
+        "^js-yaml",
+        "^style-dictionary"
+      ],
+      "groupName": "Content + tokens pipeline",
+      "commitMessageTopic": "Content + tokens pipeline"
+    },
+    {
+      "description": "GitHub Actions — grouped PR",
+      "matchManagers": ["github-actions"],
+      "groupName": "GitHub Actions",
+      "commitMessageTopic": "GitHub Actions",
+      "automerge": true,
+      "minimumReleaseAge": "3 days"
+    }
+  ],
+  "ignoreDeps": []
+}
