@@ -1,0 +1,25 @@
+# CF Pages headers config
+# Per Андрей mandate cont +39: indexируется всё published (main branch).
+# noindex/nofollow только на preview branches (WIP).
+
+# Base headers для всех pages
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: interest-cohort=()
+
+# Sitemap XML
+/sitemap.xml
+  Content-Type: application/xml; charset=utf-8
+
+# llms.txt
+/llms.txt
+  Content-Type: text/markdown; charset=utf-8
+
+# robots.txt
+/robots.txt
+  Content-Type: text/plain; charset=utf-8
+
+# NOTE: X-Robots-Tag: noindex, nofollow добавляется только для preview branches
+# в отдельном workflow step (не в этом файле — main branch остаётся индексируемым).

@@ -1,0 +1,121 @@
+name: Deploy books.folkup.life
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+env:
+  NODE_VERSION: '22'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Type check
+        run: npm run type-check
+
+      - name: Lint
+        run: npm run lint --if-present || echo "lint скипнут — no config"
+
+      - name: Unit tests (Vitest)
+        run: npm run test:unit
+
+      - name: Build (vite-ssg)
+        run: npm run build
+
+      - name: Verify build artifacts
+        run: |
+          test -f dist/index.html
+          test -f dist/robots.txt
+          test -f dist/llms.txt
+          test -f dist/_redirects
+          test -f dist/_headers
+          echo "✓ All required artifacts present"
+
+      - name: Bundle size check (60KB gzip gate)
+        run: |
+          MAX_KB=60
+          for js in dist/assets/*.js; do
+            KB=$(gzip -c "$js" | wc -c | awk '{print int($1/1024)}')
+            echo "$js: ${KB}KB gzip"
+            if [ "$KB" -gt "$MAX_KB" ]; then
+              echo "❌ Bundle exceeds ${MAX_KB}KB gate"
+              exit 1
+            fi
+          done
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+
+      - name: Run Playwright tests (E2E + visual regression + a11y + Schema.org)
+        run: npm run test:e2e
+
+      - name: Upload Playwright report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report/
+          retention-days: 7
+
+      - name: Deploy к Cloudflare Pages (main branch only)
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: df4ac254f54d45ae99d2273c0f1af48c
+          projectName: books-folkup-life
+          directory: dist
+
+      - name: Post-deploy smoke test
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: |
+          for url in https://books.folkup.life/ \
+                     https://books.folkup.life/kn1/ \
+                     https://books.folkup.life/kn5/ \
+                     https://books.folkup.life/robots.txt \
+                     https://books.folkup.life/llms.txt; do
+            for i in 1 2 3; do
+              STATUS=$(curl -s -o /dev/null -w "%{http_code}" "$url")
+              if [ "$STATUS" = "200" ] || [ "$STATUS" = "301" ]; then
+                echo "✓ $url ($STATUS)"
+                break
+              fi
+              [ $i -eq 3 ] && (echo "❌ $url ($STATUS)" && exit 1)
+              sleep 3
+            done
+          done
+
+      - name: IndexNow ping (Bing + Yandex — Google не поддерживает)
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: |
+          echo "TODO: IndexNow ping after key file setup"
+          # curl -X POST https://api.indexnow.org/indexnow \
+          #   -H "Content-Type: application/json" \
+          #   -d '{"host":"books.folkup.life","key":"KEY","urlList":["..."]}'
+
+  preview-headers:
+    # Preview branches получают X-Robots-Tag: noindex, nofollow
+    # per Андрей mandate cont +39 «noindex только на unpublished»
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Note preview noindex
+        run: |
+          echo "PR builds → preview URL <branch>.books-folkup-life.pages.dev"
+          echo "TODO: Inject X-Robots-Tag: noindex, nofollow into preview _headers"

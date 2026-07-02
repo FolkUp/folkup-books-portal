@@ -1,0 +1,27 @@
+{
+  "brand": {
+    "name": "Agile Sapiens",
+    "tagline": "Coleção de livros de Andrey Klemenchionok"
+  },
+  "portal": {
+    "title": "Agile Sapiens — 7 livros sobre equipas, liderança, diálogo",
+    "hero": "Análise literária de negócios. Como a literatura clássica previu a gestão moderna.",
+    "series_intro": "7 livros unidos por um tema — ler equipas através da literatura.",
+    "read_book": "Ler livro",
+    "coming_soon": "Em breve",
+    "in_pause": "Em pausa"
+  },
+  "footer": {
+    "copyright": "© {year} Andrey Klemenchionok. Conteúdo licenciado sob CC BY-SA 4.0.",
+    "license": "Código — MIT. Conteúdo — CC BY-SA 4.0."
+  },
+  "books": {
+    "kn1": { "title": "Agile Sapiens", "subtitle": "Como a literatura clássica previu a gestão moderna" },
+    "kn2": { "title": "Consoantes sem vogais", "subtitle": "Sobre os que falam; os que ouvem; os que escrevem entre linhas" },
+    "kn3": { "title": "Cidade do Sol", "subtitle": "Utopia de equipa: de Campanella às organizações digital-first" },
+    "kn4": { "title": "Onde vive o novo", "subtitle": "Topografia da inovação: porque o novo nasce nas periferias" },
+    "kn5": { "title": "Por mãos alheias", "subtitle": "Como a mão invisível do mercado se torna a mão visível do engenheiro" },
+    "kn6": { "title": "Com os próprios olhos", "subtitle": "Experiência pessoal como fonte de conhecimento: prática sem metodologia, mas com reflexão" },
+    "kn7": { "title": "Dificuldades do diálogo", "subtitle": "O final da coleção. Em pausa — voltaremos quando chegar o tempo." }
+  }
+}

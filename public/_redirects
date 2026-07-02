@@ -1,0 +1,7 @@
+# CF Pages redirect rules
+# ⚠️ Default status = 302 (temporary) per R1 memo. Must specify 301 (permanent) explicitly!
+# Per Андрей mandate cont +39: honest permanent redirects per Google guidance.
+
+# Placeholder — populated post-cutover (Kочегар Step 4 canonical shift):
+# / https://books.folkup.life/kn1/ 301
+# (currently empty — books.folkup.life is destination portal, redirects will be authored в sapiens repo's _redirects)

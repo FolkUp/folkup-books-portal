@@ -1,0 +1,48 @@
+{
+  "brand": {
+    "name": "Agile Sapiens",
+    "tagline": "Book series by Andrey Klemenchionok"
+  },
+  "portal": {
+    "title": "Agile Sapiens — 7 books on teams, leadership, dialogue",
+    "hero": "Literary Business Analysis. How classical literature predicted modern management.",
+    "series_intro": "7 books unified by one theme — reading teams through literature.",
+    "read_book": "Read book",
+    "coming_soon": "Coming soon",
+    "in_pause": "On pause"
+  },
+  "footer": {
+    "copyright": "© {year} Andrey Klemenchionok. Content licensed under CC BY-SA 4.0.",
+    "license": "Code — MIT. Content — CC BY-SA 4.0."
+  },
+  "books": {
+    "kn1": {
+      "title": "Agile Sapiens",
+      "subtitle": "How classical literature predicted modern management"
+    },
+    "kn2": {
+      "title": "Consonants Without Vowels",
+      "subtitle": "About those who speak; those who hear; those who write between lines"
+    },
+    "kn3": {
+      "title": "City of the Sun",
+      "subtitle": "Team utopia: from Campanella to digital-first organizations"
+    },
+    "kn4": {
+      "title": "Where the New Lives",
+      "subtitle": "Topography of innovation: why new things are born on peripheries"
+    },
+    "kn5": {
+      "title": "By Others' Hands",
+      "subtitle": "How the invisible hand of the market becomes the visible hand of the engineer"
+    },
+    "kn6": {
+      "title": "Own Eyes",
+      "subtitle": "Personal experience as source of knowledge: practice without methodology, but with reflection"
+    },
+    "kn7": {
+      "title": "Lost in Conversation",
+      "subtitle": "The series finale. On pause — we'll return when time comes."
+    }
+  }
+}

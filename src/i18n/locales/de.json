@@ -1,0 +1,27 @@
+{
+  "brand": {
+    "name": "Agile Sapiens",
+    "tagline": "Buchreihe von Andrey Klemenchionok"
+  },
+  "portal": {
+    "title": "Agile Sapiens — 7 Bücher über Teams, Führung, Dialog",
+    "hero": "Literarische Geschäftsanalyse. Wie klassische Literatur modernes Management vorhersagte.",
+    "series_intro": "7 Bücher, vereint durch ein Thema — Teams durch Literatur lesen.",
+    "read_book": "Buch lesen",
+    "coming_soon": "Bald verfügbar",
+    "in_pause": "Pausiert"
+  },
+  "footer": {
+    "copyright": "© {year} Andrey Klemenchionok. Inhalt lizenziert unter CC BY-SA 4.0.",
+    "license": "Code — MIT. Inhalt — CC BY-SA 4.0."
+  },
+  "books": {
+    "kn1": { "title": "Agile Sapiens", "subtitle": "Wie klassische Literatur modernes Management vorhersagte" },
+    "kn2": { "title": "Konsonanten ohne Vokale", "subtitle": "Über die, die sprechen; die hören; die zwischen den Zeilen schreiben" },
+    "kn3": { "title": "Sonnenstaat", "subtitle": "Team-Utopie: von Campanella zu digital-first Organisationen" },
+    "kn4": { "title": "Wo das Neue lebt", "subtitle": "Topographie der Innovation: warum Neues an den Rändern geboren wird" },
+    "kn5": { "title": "Mit fremden Händen", "subtitle": "Wie die unsichtbare Hand des Marktes zur sichtbaren Hand des Ingenieurs wird" },
+    "kn6": { "title": "Mit eigenen Augen", "subtitle": "Persönliche Erfahrung als Wissensquelle: Praxis ohne Methodologie, aber mit Reflexion" },
+    "kn7": { "title": "Schwierigkeiten des Dialogs", "subtitle": "Das Finale der Reihe. Pausiert — wir kehren zurück, wenn die Zeit gekommen ist." }
+  }
+}

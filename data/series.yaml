@@ -1,0 +1,70 @@
+# Series metadata canonical
+# EN slugs: temporary из Иви S138 SVG covers (per Q1.3=А cont +39). Лёлик утвердит финальные позже.
+# License: CC BY-SA 4.0 (S100/S135 canon)
+
+series:
+  name: Agile Sapiens
+  author: Андрей Клеменчёнок
+  author_url: https://books.folkup.life/#author
+  license: CC BY-SA 4.0
+  license_url: https://creativecommons.org/licenses/by-sa/4.0/
+  total_books: 7
+  publisher: FolkUp Ecosystem
+  publisher_imprint: Редакция FolkUp
+
+books:
+  - position: 1
+    slug: kn1
+    slug_en_temp: agile-sapiens
+    status: live
+    canonical_pre_cutover: https://sapiens.folkup.life/
+    version: 1.0.10
+    launch_date: 2026-05-24
+    date_relicensed: 2026-06-25
+    downloads:
+      epub: https://sapiens.folkup.life/downloads/agile-sapiens-v1.0.10.epub
+      pdf: https://sapiens.folkup.life/downloads/agile-sapiens-v1.0.10.pdf
+    cover_v1: /covers/cover_kn1_ru.svg
+    isbn: null  # Pending Гутенберг + Бowker
+
+  - position: 2
+    slug: kn2
+    slug_en_temp: consonants-without-vowels
+    status: stub
+    launch_target: 2026-Q3
+    cover_v1: /covers/cover_kn2_ru.svg
+
+  - position: 3
+    slug: kn3
+    slug_en_temp: city-of-the-sun
+    status: stub
+    launch_target: 2026-Q3
+    illustration_style: Bauhaus / Kandinsky (per Андрей mandate cont +39)
+    cover_v1: /covers/cover_kn3_ru.svg
+
+  - position: 4
+    slug: kn4
+    slug_en_temp: where-the-new-lives
+    status: stub
+    launch_target: 2026-Q3
+    cover_v1: /covers/cover_kn4_ru.svg
+
+  - position: 5
+    slug: kn5
+    slug_en_temp: by-others-hands
+    status: launch_target
+    launch_date_target: 2026-07-04
+    cover_v1: /covers/cover_kn5_ru.svg
+
+  - position: 6
+    slug: kn6
+    slug_en_temp: own-eyes
+    status: stub
+    launch_target: 2026-Q4
+    cover_v1: /covers/cover_kn6_ru.svg
+
+  - position: 7
+    slug: kn7
+    slug_en_temp: lost-in-conversation
+    status: variant_b_pause  # Variant B жёсткий — не релизится до сигнала Андрея
+    cover_v1: /covers/cover_kn7_ru.svg

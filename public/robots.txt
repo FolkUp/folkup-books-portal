@@ -1,0 +1,29 @@
+# robots.txt для books.folkup.life
+# Per Андрей mandate cont +39: индексируем всё опубликованное, noindex только на preview branches
+# Per Q11 canonical: AI bot policy — allow trusted, block untrusted
+
+# Trusted AI crawlers
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+# Blocked AI crawlers
+User-agent: GPTBot
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+# All other crawlers welcome (Google, Bing, Yandex, DuckDuckGo)
+User-agent: *
+Allow: /
+
+Sitemap: https://books.folkup.life/sitemap.xml
