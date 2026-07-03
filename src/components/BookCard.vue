@@ -7,10 +7,22 @@ const props = defineProps<{
   book: Book
 }>()
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 
 const bookTitle = computed(() => t(`books.${props.book.slug}.title`))
 const bookSubtitle = computed(() => t(`books.${props.book.slug}.subtitle`))
+
+// Cover selection per current i18n locale, fallback к cover_v1 (RU) OR placeholder.
+// Supports 4 langs: ru / en / de / pt (Иви S138 pack).
+const coverSrc = computed(() => {
+  const currentLocale = locale.value as 'ru' | 'en' | 'de' | 'pt'
+  return (
+    props.book.covers?.[currentLocale] ||
+    props.book.covers?.ru ||
+    props.book.cover_v1 ||
+    null
+  )
+})
 
 const statusLabel = computed(() => {
   switch (props.book.status) {
@@ -21,13 +33,18 @@ const statusLabel = computed(() => {
     case 'stub':
       return t('portal.coming_soon')
     case 'variant_b_pause':
+    case 'svod_zakryt_pre_shit_v5':
       return t('portal.in_pause')
     default:
       return ''
   }
 })
 
-const isDisabled = computed(() => props.book.status === 'variant_b_pause')
+const isDisabled = computed(
+  () =>
+    props.book.status === 'variant_b_pause' ||
+    props.book.status === 'svod_zakryt_pre_shit_v5'
+)
 </script>
 
 <template>
@@ -44,8 +61,8 @@ const isDisabled = computed(() => props.book.status === 'variant_b_pause')
     >
       <div class="book-card__cover">
         <img
-          v-if="book.cover_v1"
-          :src="book.cover_v1"
+          v-if="coverSrc"
+          :src="coverSrc"
           :alt="`Обложка книги ${bookTitle}`"
           width="240"
           height="360"
@@ -86,7 +103,8 @@ const isDisabled = computed(() => props.book.status === 'variant_b_pause')
   border-color: var(--color-primary);
 }
 
-.book-card--variant_b_pause {
+.book-card--variant_b_pause,
+.book-card--svod_zakryt_pre_shit_v5 {
   opacity: 0.6;
   font-style: italic;
 }
