@@ -1,0 +1,72 @@
+# Manual trigger workflow — generate Playwright visual regression baselines.
+#
+# WHY: Baselines OS-specific (Linux CI vs Windows/Mac local dev). Cannot be
+# pre-committed from developer machine — must generate в Linux CI environment.
+#
+# HOW to use:
+#  1. Go to Actions tab → «Update Playwright Baselines» → «Run workflow»
+#  2. Wait ~5 min (build + playwright generation)
+#  3. Download «playwright-baselines» artifact
+#  4. Unzip → copy к tests/visual/portal-visual.spec.ts-snapshots/
+#  5. Commit + push
+#  6. Change deploy.yml: remove `continue-on-error: true` from Playwright step
+#     → strict mode enabled, regressions block deploy
+#
+# AFTER strict mode enabled — this workflow only re-runs when intentional UI
+# change requires baseline refresh.
+
+name: Update Playwright Baselines
+
+on:
+  workflow_dispatch:
+    inputs:
+      reason:
+        description: 'Причина refresh (пример: after design system update)'
+        required: true
+        default: 'Initial baseline generation'
+
+env:
+  NODE_VERSION: '22'
+
+jobs:
+  generate-baselines:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers (chromium + webkit)
+        run: npx playwright install --with-deps chromium webkit
+
+      - name: Build (vite-ssg)
+        run: npm run build
+
+      - name: Generate baselines (--update-snapshots)
+        run: npx playwright test --update-snapshots || true
+
+      - name: Package baselines
+        run: |
+          find tests -name "*-snapshots" -type d | tar czf /tmp/baselines.tar.gz -T -
+          ls -la /tmp/baselines.tar.gz
+
+      - name: Upload baselines artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-baselines
+          path: /tmp/baselines.tar.gz
+          retention-days: 30
+
+      - name: Show download instructions
+        run: |
+          echo "::notice::Baselines generated. Download 'playwright-baselines' artifact."
+          echo "::notice::Unzip → copy к tests/visual/*-snapshots/ → commit."
+          echo "::notice::Reason for this generation: ${{ github.event.inputs.reason }}"
