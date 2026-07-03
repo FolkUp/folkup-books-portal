@@ -60,10 +60,25 @@ describe('useSeriesData', () => {
     expect(kn1?.canonical_pre_cutover).toBe('https://sapiens.folkup.life/')
   })
 
-  it('kn1 has EPUB + PDF downloads', () => {
+  it('kn1 has EPUB + PDF downloads (current v1.0.11 LIVE)', () => {
     const kn1 = bookBySlug('kn1')
-    expect(kn1?.downloads?.epub).toContain('v1.0.10.epub')
-    expect(kn1?.downloads?.pdf).toContain('v1.0.10.pdf')
+    expect(kn1?.downloads?.epub).toContain('v1.0.11.epub')
+    expect(kn1?.downloads?.pdf).toContain('v1.0.11.pdf')
+  })
+
+  it('kn1 covers include all 4 languages', () => {
+    const kn1 = bookBySlug('kn1')
+    expect(kn1?.covers?.ru).toBe('/covers/cover_kn1.svg')
+    expect(kn1?.covers?.en).toBe('/covers/cover_kn1_en.svg')
+    expect(kn1?.covers?.de).toBe('/covers/cover_kn1_de.svg')
+    expect(kn1?.covers?.pt).toBe('/covers/cover_kn1_pt.svg')
+  })
+
+  it('all books have covers structure (Иви S138 pack import)', () => {
+    books.value.forEach((book) => {
+      expect(book.covers).toBeDefined()
+      expect(book.covers?.ru).toMatch(/^\/covers\/cover_kn[1-7]\.svg$/)
+    })
   })
 
   it('kn3 has Bauhaus/Kandinsky illustration style', () => {

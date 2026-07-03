@@ -1,6 +1,9 @@
 # Series metadata canonical
 # EN slugs: temporary из Иви S138 SVG covers (per Q1.3=А cont +39). Лёлик утвердит финальные позже.
 # License: CC BY-SA 4.0 (S100/S135 canon)
+# Covers v1 (S138 Иви pack): временные, канон до финального арта Фриды/Ремедиос.
+#   Каждая обложка несёт круглый штамп «ЭКСПОНАТ НА РЕСТАВРАЦИИ» (переведён по языку).
+#   DE обложки содержат «Kommandant» — pending regen с «Comandante» per Иви S152.
 
 series:
   name: Agile Sapiens
@@ -18,21 +21,31 @@ books:
     slug_en_temp: agile-sapiens
     status: live
     canonical_pre_cutover: https://sapiens.folkup.life/
-    version: 1.0.10
+    version: 1.0.11
     launch_date: 2026-05-24
     date_relicensed: 2026-06-25
     downloads:
-      epub: https://sapiens.folkup.life/downloads/agile-sapiens-v1.0.10.epub
-      pdf: https://sapiens.folkup.life/downloads/agile-sapiens-v1.0.10.pdf
-    cover_v1: /covers/cover_kn1_ru.svg
-    isbn: null  # Pending Гутенберг + Бowker
+      epub: https://sapiens.folkup.life/downloads/agile-sapiens-v1.0.11.epub
+      pdf: https://sapiens.folkup.life/downloads/agile-sapiens-v1.0.11.pdf
+    cover_v1: /covers/cover_kn1.svg
+    covers:
+      ru: /covers/cover_kn1.svg
+      en: /covers/cover_kn1_en.svg
+      de: /covers/cover_kn1_de.svg
+      pt: /covers/cover_kn1_pt.svg
+    isbn: null  # Pending Гутенберг + Bowker
 
   - position: 2
     slug: kn2
     slug_en_temp: consonants-without-vowels
     status: stub
     launch_target: 2026-Q3
-    cover_v1: /covers/cover_kn2_ru.svg
+    cover_v1: /covers/cover_kn2.svg
+    covers:
+      ru: /covers/cover_kn2.svg
+      en: /covers/cover_kn2_en.svg
+      de: /covers/cover_kn2_de.svg
+      pt: /covers/cover_kn2_pt.svg
 
   - position: 3
     slug: kn3
@@ -40,34 +53,59 @@ books:
     status: stub
     launch_target: 2026-Q3
     illustration_style: Bauhaus / Kandinsky (per Андрей mandate cont +39)
-    cover_v1: /covers/cover_kn3_ru.svg
+    cover_v1: /covers/cover_kn3.svg
+    covers:
+      ru: /covers/cover_kn3.svg
+      en: /covers/cover_kn3_en.svg
+      de: /covers/cover_kn3_de.svg
+      pt: /covers/cover_kn3_pt.svg
 
   - position: 4
     slug: kn4
     slug_en_temp: where-the-new-lives
     status: stub
     launch_target: 2026-Q3
-    cover_v1: /covers/cover_kn4_ru.svg
+    cover_v1: /covers/cover_kn4.svg
+    covers:
+      ru: /covers/cover_kn4.svg
+      en: /covers/cover_kn4_en.svg
+      de: /covers/cover_kn4_de.svg
+      pt: /covers/cover_kn4_pt.svg
 
   - position: 5
     slug: kn5
     slug_en_temp: by-others-hands
     status: launch_target
     launch_date_target: 2026-07-04
-    cover_v1: /covers/cover_kn5_ru.svg
+    cover_v1: /covers/cover_kn5.svg
+    covers:
+      ru: /covers/cover_kn5.svg
+      en: /covers/cover_kn5_en.svg
+      de: /covers/cover_kn5_de.svg
+      pt: /covers/cover_kn5_pt.svg
 
   - position: 6
     slug: kn6
     slug_en_temp: own-eyes
     status: stub
     launch_target: 2026-Q4
-    cover_v1: /covers/cover_kn6_ru.svg
+    cover_v1: /covers/cover_kn6.svg
+    covers:
+      ru: /covers/cover_kn6.svg
+      en: /covers/cover_kn6_en.svg
+      de: /covers/cover_kn6_de.svg
+      pt: /covers/cover_kn6_pt.svg
 
   - position: 7
     slug: kn7
     slug_en_temp: lost-in-conversation
     status: svod_zakryt_pre_shit_v5  # Variant B UNLOCKED S151 (Андрей сигнал 2026-07-02). Свод закрыт (S120 master + вставка «Переводчик» S142 + Занзибар v10). ЩИТ v5.0 после кн.3 — только тогда публикация.
-    cover_v1: /covers/cover_kn7_ru.svg
+    cover_v1: /covers/cover_kn7.svg
+    covers:
+      ru: /covers/cover_kn7.svg
+      en: /covers/cover_kn7_en.svg
+      de: /covers/cover_kn7_de.svg
+      pt: /covers/cover_kn7_pt.svg
     svod_components:
       - S120_master
       - vstavka_perevodchik_S142
