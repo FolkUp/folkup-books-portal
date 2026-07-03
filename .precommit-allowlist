@@ -1,0 +1,4 @@
+# Precommit allowlist — book content directory is literary content
+# that intentionally mentions AI tools as subject matter. Hook regex
+# false positives here.
+content/**/*.md
