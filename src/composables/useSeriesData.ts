@@ -18,6 +18,12 @@ export interface Book {
     pdf?: string
   }
   cover_v1?: string
+  covers?: {
+    ru?: string
+    en?: string
+    de?: string
+    pt?: string
+  }
   illustration_style?: string
   isbn?: string | null
 }
