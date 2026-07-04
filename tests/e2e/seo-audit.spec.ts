@@ -13,6 +13,27 @@ import { test, expect } from '@playwright/test'
  */
 
 test.describe('SEO — F-SEO-1..9 regression coverage', () => {
+  // F-SEO-2: hreflang minimal (Q1 verdict А cont +17 — single-lang + x-default)
+  test('F-SEO-2: hreflang ru + x-default on homepage', async ({ page }) => {
+    await page.goto('/')
+    const hreflangRu = await page.locator('link[rel="alternate"][hreflang="ru"]').getAttribute('href')
+    const hreflangDefault = await page.locator('link[rel="alternate"][hreflang="x-default"]').getAttribute('href')
+
+    expect(hreflangRu).toBe('https://books.folkup.life/')
+    expect(hreflangDefault).toBe('https://books.folkup.life/')
+  })
+
+  test('F-SEO-2: hreflang per-route on book pages', async ({ page }) => {
+    for (const slug of ['kn1', 'kn5', 'kn7']) {
+      await page.goto(`/${slug}`)
+      const hreflangRu = await page.locator('link[rel="alternate"][hreflang="ru"]').getAttribute('href')
+      const hreflangDefault = await page.locator('link[rel="alternate"][hreflang="x-default"]').getAttribute('href')
+
+      expect(hreflangRu).toContain(`/${slug}`)
+      expect(hreflangDefault).toContain(`/${slug}`)
+    }
+  })
+
   // F-SEO-6: <html lang="ru"> for Russian-primary content
   test('F-SEO-6: html lang="ru" on all pages', async ({ page }) => {
     for (const url of ['/', '/kn1', '/kn5', '/kn7']) {
