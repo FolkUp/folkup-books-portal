@@ -5,6 +5,9 @@ import { useI18n } from 'vue-i18n'
 const { t, locale } = useI18n()
 
 // Base head — augmented per-page via useHead в individual pages
+const SITE_URL = 'https://books.folkup.life'
+const DEFAULT_OG_IMAGE = `${SITE_URL}/covers/cover_kn1.svg`
+
 useHead({
   htmlAttrs: {
     lang: locale.value,
@@ -12,6 +15,15 @@ useHead({
   meta: [
     { property: 'og:locale', content: () => locale.value },
     { property: 'og:type', content: 'website' },
+    { property: 'og:site_name', content: 'Agile Sapiens' },
+    // Default og:image (per-page override via useHead в pages/BookPage.vue)
+    { property: 'og:image', content: DEFAULT_OG_IMAGE },
+    { property: 'og:image:type', content: 'image/svg+xml' },
+    { property: 'og:image:width', content: '240' },
+    { property: 'og:image:height', content: '360' },
+    // Twitter Card (summary_large_image — works с book covers)
+    { name: 'twitter:card', content: 'summary_large_image' },
+    { name: 'twitter:image', content: DEFAULT_OG_IMAGE },
   ],
 })
 </script>
