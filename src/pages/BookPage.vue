@@ -23,6 +23,14 @@ const subtitle = computed(() => t(`books.${props.slug}.subtitle`))
 const isLive = computed(() => book.value?.status === 'live')
 const isPause = computed(() => book.value?.status === 'variant_b_pause')
 
+const SITE_URL = 'https://books.folkup.life'
+
+// Per-book og:image (absolute URL, overrides App.vue default)
+const bookOgImage = computed(() => {
+  const coverPath = book.value?.cover_v1 || '/covers/cover_kn1.svg'
+  return coverPath.startsWith('http') ? coverPath : `${SITE_URL}${coverPath}`
+})
+
 useHead({
   title: () => title.value + ' — ' + t('brand.name'),
   meta: [
@@ -30,6 +38,11 @@ useHead({
     { property: 'og:title', content: () => title.value },
     { property: 'og:description', content: () => subtitle.value },
     { property: 'og:type', content: 'book' },
+    { property: 'og:image', content: () => bookOgImage.value },
+    // Twitter Card override (per-book image)
+    { name: 'twitter:title', content: () => title.value },
+    { name: 'twitter:description', content: () => subtitle.value },
+    { name: 'twitter:image', content: () => bookOgImage.value },
   ],
   link: [
     {
