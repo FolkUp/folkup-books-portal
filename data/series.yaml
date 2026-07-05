@@ -25,8 +25,8 @@ books:
     launch_date: 2026-05-24
     date_relicensed: 2026-06-25
     downloads:
-      epub: https://sapiens.folkup.life/downloads/agile-sapiens-v1.0.11.epub
-      pdf: https://sapiens.folkup.life/downloads/agile-sapiens-v1.0.11.pdf
+      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.11.epub
+      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.11.pdf
     cover_v1: /covers/cover_kn1.svg
     covers:
       ru: /covers/cover_kn1.svg
