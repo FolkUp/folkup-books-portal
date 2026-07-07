@@ -20,7 +20,7 @@ useHead({
   meta: [
     { property: 'og:locale', content: () => locale.value },
     { property: 'og:type', content: 'website' },
-    { property: 'og:site_name', content: 'Agile Sapiens' },
+    { property: 'og:site_name', content: 'Библиотека FolkUp' },
     { property: 'og:url', content: currentUrl },
     // Default og:image (per-page override via useHead в pages/BookPage.vue)
     { property: 'og:image', content: DEFAULT_OG_IMAGE },

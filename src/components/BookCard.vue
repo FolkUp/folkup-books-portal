@@ -33,8 +33,12 @@ const statusLabel = computed(() => {
     case 'stub':
       return t('portal.coming_soon')
     case 'variant_b_pause':
-    case 'svod_zakryt_pre_shit_v5':
       return t('portal.in_pause')
+    case 'svod_zakryt_pre_shit_v5':
+      // Иве S170 canon 2026-07-07: свод закрыт S158-S159, лейбл «В паузе»
+      // устарел. Теперь как остальные stub — «Скоро». isDisabled сохранено
+      // (не роутится до release-signal Андрея).
+      return t('portal.coming_soon')
     default:
       return ''
   }

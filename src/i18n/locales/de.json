@@ -1,12 +1,12 @@
 {
   "brand": {
-    "name": "Agile Sapiens",
-    "tagline": "Buchreihe von Andrey Klemenchionok"
+    "name": "FolkUp-Bibliothek",
+    "tagline": "Bücher über Teams, Führung, Dialog"
   },
   "portal": {
-    "title": "Agile Sapiens — 7 Bücher über Teams, Führung, Dialog",
-    "hero": "Literarische Geschäftsanalyse. Wie klassische Literatur modernes Management vorhersagte.",
-    "series_intro": "7 Bücher, vereint durch ein Thema — Teams durch Literatur lesen.",
+    "title": "FolkUp-Bibliothek",
+    "hero": "Lesungen klassischer Literatur durch die Linse moderner Teams und Entscheidungen.",
+    "series_intro": "Die Reihe «Agile Sapiens» — offene Bücher sind mit «Lesen» markiert.",
     "read_book": "Buch lesen",
     "coming_soon": "Bald verfügbar",
     "in_pause": "Pausiert"
@@ -22,6 +22,6 @@
     "kn4": { "title": "Wo das Neue lebt", "subtitle": "Topographie der Innovation: warum Neues an den Rändern geboren wird" },
     "kn5": { "title": "Mit fremden Händen", "subtitle": "Wie die unsichtbare Hand des Marktes zur sichtbaren Hand des Ingenieurs wird" },
     "kn6": { "title": "Mit eigenen Augen", "subtitle": "Persönliche Erfahrung als Wissensquelle: Praxis ohne Methodologie, aber mit Reflexion" },
-    "kn7": { "title": "Schwierigkeiten des Dialogs", "subtitle": "Das Finale der Reihe. Pausiert — wir kehren zurück, wenn die Zeit gekommen ist." }
+    "kn7": { "title": "Schwierigkeiten des Dialogs", "subtitle": "Das Finale der Reihe. Kommt nach dem Qualitäts-Gate." }
   }
 }

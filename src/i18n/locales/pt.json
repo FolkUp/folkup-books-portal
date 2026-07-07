@@ -1,12 +1,12 @@
 {
   "brand": {
-    "name": "Agile Sapiens",
-    "tagline": "Coleção de livros de Andrey Klemenchionok"
+    "name": "Biblioteca FolkUp",
+    "tagline": "Livros sobre equipas, liderança, diálogo"
   },
   "portal": {
-    "title": "Agile Sapiens — 7 livros sobre equipas, liderança, diálogo",
-    "hero": "Análise literária de negócios. Como a literatura clássica previu a gestão moderna.",
-    "series_intro": "7 livros unidos por um tema — ler equipas através da literatura.",
+    "title": "Biblioteca FolkUp",
+    "hero": "Leituras da literatura clássica através da lente de equipas e decisões modernas.",
+    "series_intro": "A coleção «Agile Sapiens» — livros abertos estão marcados «Ler».",
     "read_book": "Ler livro",
     "coming_soon": "Em breve",
     "in_pause": "Em pausa"
@@ -22,6 +22,6 @@
     "kn4": { "title": "Onde vive o novo", "subtitle": "Topografia da inovação: porque o novo nasce nas periferias" },
     "kn5": { "title": "Por mãos alheias", "subtitle": "Como a mão invisível do mercado se torna a mão visível do engenheiro" },
     "kn6": { "title": "Com os próprios olhos", "subtitle": "Experiência pessoal como fonte de conhecimento: prática sem metodologia, mas com reflexão" },
-    "kn7": { "title": "Dificuldades do diálogo", "subtitle": "O final da coleção. Em pausa — voltaremos quando chegar o tempo." }
+    "kn7": { "title": "Dificuldades do diálogo", "subtitle": "O final da coleção. Vem após o portão de qualidade." }
   }
 }
