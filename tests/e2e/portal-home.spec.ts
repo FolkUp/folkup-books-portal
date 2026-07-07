@@ -6,7 +6,8 @@ test.describe('Portal home page', () => {
   })
 
   test('loads с корректным title', async ({ page }) => {
-    await expect(page).toHaveTitle(/Agile Sapiens/i)
+    // cont+47 Иве S169 P0-B: site title = «Библиотека FolkUp» (без числа книг)
+    await expect(page).toHaveTitle(/Библиотека FolkUp/i)
   })
 
   test('shows all 7 book cards', async ({ page }) => {

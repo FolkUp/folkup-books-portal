@@ -82,7 +82,7 @@ if (book.value) {
       <article class="book-page__content">
         <p class="book-page__series">
           <RouterLink to="/">{{ t('brand.name') }}</RouterLink>
-          &middot; Книга {{ book.position }} из {{ series.total_books }}
+          &middot; Серия «{{ series.name }}» &middot; Книга {{ book.position }}
         </p>
 
         <h1 class="book-page__title">{{ title }}</h1>
