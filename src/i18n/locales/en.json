@@ -1,12 +1,12 @@
 {
   "brand": {
-    "name": "Agile Sapiens",
-    "tagline": "Book series by Andrey Klemenchionok"
+    "name": "FolkUp Library",
+    "tagline": "Books on teams, leadership, dialogue"
   },
   "portal": {
-    "title": "Agile Sapiens — 7 books on teams, leadership, dialogue",
-    "hero": "Literary Business Analysis. How classical literature predicted modern management.",
-    "series_intro": "7 books unified by one theme — reading teams through literature.",
+    "title": "FolkUp Library",
+    "hero": "Readings of classical literature through the lens of modern teams and decisions.",
+    "series_intro": "The «Agile Sapiens» series — open books are marked «Read».",
     "read_book": "Read book",
     "coming_soon": "Coming soon",
     "in_pause": "On pause"
@@ -42,7 +42,7 @@
     },
     "kn7": {
       "title": "Lost in Conversation",
-      "subtitle": "The series finale. On pause — we'll return when time comes."
+      "subtitle": "The series finale. Coming after quality gate."
     }
   }
 }

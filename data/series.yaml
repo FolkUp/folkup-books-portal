@@ -99,7 +99,7 @@ books:
   - position: 7
     slug: kn7
     slug_en_temp: lost-in-conversation
-    status: svod_zakryt_pre_shit_v5  # Variant B UNLOCKED S151 (Андрей сигнал 2026-07-02). Свод закрыт (S120 master + вставка «Переводчик» S142 + Занзибар v10). ЩИТ v5.0 после кн.3 — только тогда публикация.
+    status: stub  # cont+28 Иве S170: свод закрыт (S158-S159), устаревший «В паузе» лейбл убран, теперь «Скоро» как остальные stub. Ожидание PR#8 canon-zip → приёмка Иве → rundown → release-слово Андрея (release-signal канонизирован отдельно). Metadata о свод-компонентах сохранена ниже.
     cover_v1: /covers/cover_kn7.svg
     covers:
       ru: /covers/cover_kn7.svg
