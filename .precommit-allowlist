@@ -2,3 +2,8 @@
 # that intentionally mentions AI tools as subject matter. Hook regex
 # false positives here.
 content/**/*.md
+
+# i18n locales: /ai-disclosure page content requires naming AI systems
+# per EU AI Act Article 50(4)(b) legal disclosure mandate. Legitimate
+# subject-matter mention, not accidental leak. Q4a compromise applied cont+32.
+src/i18n/locales/*.json

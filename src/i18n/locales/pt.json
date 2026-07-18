@@ -23,5 +23,35 @@
     "kn5": { "title": "Por mãos alheias", "subtitle": "Como a mão invisível do mercado se torna a mão visível do engenheiro" },
     "kn6": { "title": "Com os próprios olhos", "subtitle": "Experiência pessoal como fonte de conhecimento: prática sem metodologia, mas com reflexão" },
     "kn7": { "title": "Dificuldades do diálogo", "subtitle": "O final da coleção. Vem após o portão de qualidade." }
+  },
+  "ai_disclosure": {
+    "title": "Divulgação de utilização de IA",
+    "h1": "Divulgação de utilização de IA",
+    "meta_description": "Conformidade com o Artigo 50(4) do Regulamento IA da UE. Nome legal da pessoa singular responsável pela supervisão editorial: Andrei Klemenchionok. Publicado sob o pseudónimo «Comandante FolkUp».",
+    "section1": {
+      "h2": "Responsabilidade editorial",
+      "p1": "Os livros da Biblioteca FolkUp são assinados com o pseudónimo «Comandante FolkUp». Por trás do pseudónimo está uma pessoa viva: Andrei Klemenchionok, residente em Portugal, editor e revisor. O pseudónimo é um padrão de tipo Banksy para identidade de marca não comercial, não uma ocultação de responsabilidade.",
+      "p2": "Contacto editorial e jurídico: editorial@folkup.app"
+    },
+    "section2": {
+      "h2": "Como usamos IA",
+      "p1": "A FolkUp utiliza assistentes de IA (Anthropic Claude e outros modelos) como ferramentas de rascunho e pesquisa na produção de livros:",
+      "item1": "Análise literária e trabalho estrutural sobre o manuscrito",
+      "item2": "Tradução (russo → inglês, alemão, português europeu) com posterior revisão humana por falante nativo",
+      "item3": "Verificação de factos através de investigação OSINT e verificação cruzada de fontes",
+      "p2": "Cada livro publicado passa por controlos humanos:",
+      "gate1": "Portão editorial — compilação do manuscrito, controlo de qualidade ЩИТ v5.0",
+      "gate2": "Revisão por falante nativo para traduções não russas (princípio Quatro Olhos / Vier-Augen)",
+      "gate3": "Verificação de conformidade legal antes da publicação"
+    },
+    "section3": {
+      "h2": "Conformidade com o Artigo 50(4) do Regulamento IA da UE",
+      "p1": "Esta página cumpre o requisito de divulgação da pessoa singular responsável pela supervisão editorial de conteúdo assistido por IA nos termos do Artigo 50(4)(b) do Regulamento IA da UE. Pessoa responsável: Andrei Klemenchionok, cidadão russo, residente em Portugal.",
+      "p2": "O pseudónimo «Comandante FolkUp» é usado nas superfícies públicas (páginas dos livros, catálogo, rodapé, metadados) — padrão de tipo Banksy para identidade de marca não comercial. O pseudónimo mantém a marca da coleção; esta página fornece a divulgação legal nos termos do Regulamento IA."
+    },
+    "section4": {
+      "h2": "Licença",
+      "p1": "Todo o conteúdo da biblioteca está sob Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). Código de infraestrutura — MIT."
+    }
   }
 }
