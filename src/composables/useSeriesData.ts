@@ -6,7 +6,7 @@ export interface Book {
   position: number
   slug: string
   slug_en_temp: string
-  status: 'live' | 'stub' | 'launch_target' | 'variant_b_pause' | 'svod_zakryt_pre_shit_v5'
+  status: 'live' | 'stub' | 'launch_target' | 'launch_preparing' | 'variant_b_pause' | 'svod_zakryt_pre_shit_v5'
   canonical_pre_cutover?: string
   version?: string
   launch_date?: string
@@ -55,7 +55,7 @@ export function useSeriesData() {
 
   const liveBooks = computed(() => books.value.filter((b) => b.status === 'live'))
   const upcomingBooks = computed(() =>
-    books.value.filter((b) => b.status === 'launch_target')
+    books.value.filter((b) => b.status === 'launch_target' || b.status === 'launch_preparing')
   )
   const stubBooks = computed(() => books.value.filter((b) => b.status === 'stub'))
   // Books waiting for quality gate (ЩИТ v5) before publication.

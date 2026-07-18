@@ -24,7 +24,7 @@ describe('useSeriesData', () => {
   it('each book has required fields', () => {
     books.value.forEach((book) => {
       expect(book.slug).toMatch(/^kn[1-7]$/)
-      expect(book.status).toMatch(/^(live|stub|launch_target|variant_b_pause|svod_zakryt_pre_shit_v5)$/)
+      expect(book.status).toMatch(/^(live|stub|launch_target|launch_preparing|variant_b_pause|svod_zakryt_pre_shit_v5)$/)
       expect(book.slug_en_temp).toBeDefined()
     })
   })
@@ -55,9 +55,9 @@ describe('useSeriesData', () => {
     expect(gatedBooks.value[0].status).toBe('svod_zakryt_pre_shit_v5')
   })
 
-  it('kn1 has canonical pointing к sapiens (pre-cutover state)', () => {
+  it('kn1 post-cutover — canonical_pre_cutover removed', () => {
     const kn1 = bookBySlug('kn1')
-    expect(kn1?.canonical_pre_cutover).toBe('https://sapiens.folkup.life/')
+    expect(kn1?.canonical_pre_cutover).toBeUndefined()
   })
 
   it('kn1 has EPUB + PDF downloads (current v1.0.14 LIVE)', () => {

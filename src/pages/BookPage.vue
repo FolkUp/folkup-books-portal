@@ -47,14 +47,7 @@ useHead({
   link: [
     {
       rel: 'canonical',
-      href: () => {
-        // Кн.1 pre-cutover: canonical → sapiens.folkup.life
-        // Post-cutover: canonical → books.folkup.life/kn1/
-        if (book.value?.canonical_pre_cutover) {
-          return book.value.canonical_pre_cutover
-        }
-        return `https://books.folkup.life/${props.slug}/`
-      },
+      href: () => `https://books.folkup.life/${props.slug}/`,
     },
   ],
 })
@@ -121,10 +114,10 @@ if (book.value) {
 
         <footer class="book-page__meta">
           <p>
-            <strong>Автор:</strong> {{ series.author }}
+            <strong>Автор:</strong> Comandante FolkUp
           </p>
           <p>
-            <strong>Лицензия:</strong>
+            <strong>©</strong> {{ series.author }} ·
             <a :href="series.license_url">{{ series.license }}</a>
           </p>
           <p v-if="book.illustration_style">

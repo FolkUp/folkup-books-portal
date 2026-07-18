@@ -29,7 +29,6 @@ const testBook: Book = {
   status: 'live',
   version: '1.0.14',
   launch_date: '2026-05-24',
-  canonical_pre_cutover: 'https://sapiens.folkup.life/',
   downloads: {
     epub: 'https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.14.epub',
     pdf: 'https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.14.pdf',
@@ -112,10 +111,10 @@ describe('useBookSchema', () => {
     expect(action['@type']).toBe('ReadAction')
   })
 
-  it('includes sameAs pointing к pre-cutover canonical', () => {
+  it('post-cutover — no sameAs (canonical_pre_cutover removed)', () => {
     useBookSchema(testBook, testSeries, 'Agile Sapiens')
     const jsonLd = extractJsonLd(0)
-    expect(jsonLd.sameAs).toBe('https://sapiens.folkup.life/')
+    expect(jsonLd.sameAs).toBeUndefined()
   })
 
   it('stub book has future datePublished без workExample', () => {

@@ -20,7 +20,6 @@ books:
     slug: kn1
     slug_en_temp: agile-sapiens
     status: live
-    canonical_pre_cutover: https://sapiens.folkup.life/
     version: 1.0.14
     launch_date: 2026-05-24
     date_relicensed: 2026-06-25
@@ -75,8 +74,8 @@ books:
   - position: 5
     slug: kn5
     slug_en_temp: by-others-hands
-    status: launch_target
-    launch_date_target: 2026-07-04
+    status: launch_preparing
+    launch_note: "Финальные приёмки. Дата определится ближе к выходу."
     cover_v1: /covers/cover_kn5.svg
     covers:
       ru: /covers/cover_kn5.svg

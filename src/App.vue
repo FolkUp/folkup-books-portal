@@ -54,6 +54,9 @@ useHead({
     <footer class="site-footer">
       <p>{{ t('footer.copyright', { year: new Date().getFullYear() }) }}</p>
       <p>{{ t('footer.license') }}</p>
+      <p class="site-footer__docs">
+        <a href="/docs/reestr-rifm.md">Реестр рифм</a>
+      </p>
     </footer>
   </div>
 </template>
