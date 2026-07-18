@@ -13,7 +13,9 @@ import type { Book, SeriesMeta } from '@/composables/useSeriesData'
 
 const testSeries: SeriesMeta = {
   name: 'Agile Sapiens',
-  author: 'Андрей Клеменчёнок',
+  // Q10 verdict via Iskra S178b 2026-07-18: public author = pseudonym «Comandante FolkUp».
+  // Legal name reserved для /ai-disclosure per AI Act Art. 50(4).
+  author: 'Comandante FolkUp',
   author_url: 'https://books.folkup.life/#author',
   license: 'CC BY-SA 4.0',
   license_url: 'https://creativecommons.org/licenses/by-sa/4.0/',
