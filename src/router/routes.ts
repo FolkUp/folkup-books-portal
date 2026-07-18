@@ -61,6 +61,12 @@ export const routes: RouteRecordRaw[] = [
     meta: { pageType: 'about' },
   },
   {
+    path: '/ai-disclosure',
+    name: 'ai-disclosure',
+    component: () => import('../pages/ai-disclosure.vue'),
+    meta: { pageType: 'ai-disclosure' },
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'not-found',
     component: () => import('../pages/404.vue'),

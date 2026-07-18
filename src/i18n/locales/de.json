@@ -23,5 +23,35 @@
     "kn5": { "title": "Mit fremden Händen", "subtitle": "Wie die unsichtbare Hand des Marktes zur sichtbaren Hand des Ingenieurs wird" },
     "kn6": { "title": "Mit eigenen Augen", "subtitle": "Persönliche Erfahrung als Wissensquelle: Praxis ohne Methodologie, aber mit Reflexion" },
     "kn7": { "title": "Schwierigkeiten des Dialogs", "subtitle": "Das Finale der Reihe. Kommt nach dem Qualitäts-Gate." }
+  },
+  "ai_disclosure": {
+    "title": "KI-Nutzungshinweis",
+    "h1": "KI-Nutzungshinweis",
+    "meta_description": "EU-KI-Verordnung Artikel 50(4) Compliance. Rechtlicher Name der natürlichen Person mit redaktioneller Verantwortung: Andrei Klemenchionok. Veröffentlichung unter Pseudonym «Comandante FolkUp».",
+    "section1": {
+      "h2": "Redaktionelle Verantwortung",
+      "p1": "Die Bücher der FolkUp-Bibliothek sind mit dem Pseudonym «Comandante FolkUp» unterschrieben. Hinter dem Pseudonym steht ein lebender Mensch: Andrei Klemenchionok, Portugal-Resident, Verleger und Redakteur. Das Pseudonym ist ein Banksy-Muster für nicht-kommerzielle Markenidentität, keine Verschleierung der Verantwortung.",
+      "p2": "Redaktioneller und rechtlicher Kontakt: editorial{'@'}folkup.app"
+    },
+    "section2": {
+      "h2": "Wie wir KI verwenden",
+      "p1": "FolkUp setzt KI-Assistenten (Anthropic Claude und weitere Modelle) als Entwurfs- und Rechercheinstrumente in der Buchproduktion ein:",
+      "item1": "Literaturanalyse und strukturelle Arbeit am Manuskript",
+      "item2": "Übersetzung (Russisch → Englisch, Deutsch, europäisches Portugiesisch) mit anschließender menschlicher Muttersprachler-Redaktion",
+      "item3": "Faktenprüfung durch OSINT-Recherche und quellenübergreifende Verifikation",
+      "p2": "Jedes veröffentlichte Buch durchläuft menschliche Kontrollstufen:",
+      "gate1": "Redaktions-Gate — Manuskriptzusammenstellung, Qualitätskontrolle ЩИТ v5.0",
+      "gate2": "Muttersprachler-Review für nicht-russische Übersetzungen (Vier-Augen-Prinzip)",
+      "gate3": "Rechtliche Compliance-Prüfung vor Veröffentlichung"
+    },
+    "section3": {
+      "h2": "EU-KI-Verordnung Artikel 50(4) Compliance",
+      "p1": "Diese Seite erfüllt die Anforderung, die natürliche Person offenzulegen, die für die redaktionelle Aufsicht über KI-gestützte Inhalte gemäß EU-KI-Verordnung Artikel 50(4)(b) verantwortlich ist. Verantwortliche Person: Andrei Klemenchionok, russischer Staatsbürger, Portugal-Resident.",
+      "p2": "Das Pseudonym «Comandante FolkUp» wird auf öffentlichen Oberflächen (Buchseiten, Katalog, Fußzeile, Metadaten) verwendet — Banksy-Muster für nicht-kommerzielle Markenidentität. Das Pseudonym trägt die Serienmarke; diese Seite liefert die rechtliche Offenlegung gemäß KI-Verordnung."
+    },
+    "section4": {
+      "h2": "Lizenz",
+      "p1": "Der gesamte Bibliotheksinhalt steht unter Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). Infrastrukturcode — MIT."
+    }
   }
 }
