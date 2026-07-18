@@ -24,7 +24,7 @@ describe('useSeriesData', () => {
   it('each book has required fields', () => {
     books.value.forEach((book) => {
       expect(book.slug).toMatch(/^kn[1-7]$/)
-      expect(book.status).toMatch(/^(live|stub|launch_target|variant_b_pause|svod_zakryt_pre_shit_v5)$/)
+      expect(book.status).toMatch(/^(live|stub|launch_target|launch_preparing|variant_b_pause|svod_zakryt_pre_shit_v5)$/)
       expect(book.slug_en_temp).toBeDefined()
     })
   })
