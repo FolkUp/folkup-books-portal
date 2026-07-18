@@ -8,7 +8,9 @@ describe('useSeriesData', () => {
     expect(series.value.name).toBe('Agile Sapiens')
     expect(series.value.total_books).toBe(7)
     expect(series.value.license).toBe('CC BY-SA 4.0')
-    expect(series.value.author).toBe('Андрей Клеменчёнок')
+    // Q10 verdict via Iskra S178b 2026-07-18: public author = pseudonym.
+    // Legal name «Andrei Klemenchionok» reserved для /ai-disclosure per AI Act Art. 50(4).
+    expect(series.value.author).toBe('Comandante FolkUp')
   })
 
   it('loads exactly 7 books', () => {

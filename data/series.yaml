@@ -7,7 +7,10 @@
 
 series:
   name: Agile Sapiens
-  author: Андрей Клеменчёнок
+  # Public author display = pseudonym per Andrei Q10 verdict via Iskra S178b 2026-07-18.
+  # Legal name «Andrei Klemenchionok» reserved для /ai-disclosure page (AI Act Art. 50(4))
+  # per Лев Option F + Andrei explicit «Моё имя указываем только там, где требуется юридически».
+  author: Comandante FolkUp
   author_url: https://books.folkup.life/#author
   license: CC BY-SA 4.0
   license_url: https://creativecommons.org/licenses/by-sa/4.0/

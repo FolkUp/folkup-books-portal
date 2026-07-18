@@ -55,6 +55,12 @@ export const routes: RouteRecordRaw[] = [
     meta: { pageType: 'book', bookSlug: 'kn7' },
   },
   {
+    path: '/about',
+    name: 'about',
+    component: () => import('../pages/about.vue'),
+    meta: { pageType: 'about' },
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'not-found',
     component: () => import('../pages/404.vue'),
