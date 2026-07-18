@@ -60,10 +60,10 @@ describe('useSeriesData', () => {
     expect(kn1?.canonical_pre_cutover).toBe('https://sapiens.folkup.life/')
   })
 
-  it('kn1 has EPUB + PDF downloads (current v1.0.11 LIVE)', () => {
+  it('kn1 has EPUB + PDF downloads (current v1.0.14 LIVE)', () => {
     const kn1 = bookBySlug('kn1')
-    expect(kn1?.downloads?.epub).toContain('v1.0.11.epub')
-    expect(kn1?.downloads?.pdf).toContain('v1.0.11.pdf')
+    expect(kn1?.downloads?.epub).toContain('v1.0.14.epub')
+    expect(kn1?.downloads?.pdf).toContain('v1.0.14.pdf')
   })
 
   it('kn1 covers include all 4 languages', () => {

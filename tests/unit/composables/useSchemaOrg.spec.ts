@@ -27,12 +27,12 @@ const testBook: Book = {
   slug: 'kn1',
   slug_en_temp: 'agile-sapiens',
   status: 'live',
-  version: '1.0.11',
+  version: '1.0.14',
   launch_date: '2026-05-24',
   canonical_pre_cutover: 'https://sapiens.folkup.life/',
   downloads: {
-    epub: 'https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.11.epub',
-    pdf: 'https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.11.pdf',
+    epub: 'https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.14.epub',
+    pdf: 'https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.14.pdf',
   },
 }
 
@@ -98,7 +98,7 @@ describe('useBookSchema', () => {
     useBookSchema(testBook, testSeries, 'Agile Sapiens')
     const jsonLd = extractJsonLd(0)
     expect(jsonLd.datePublished).toBe('2026-05-24')
-    expect(jsonLd.bookEdition).toBe('1.0.11')
+    expect(jsonLd.bookEdition).toBe('1.0.14')
   })
 
   it('includes workExample с ReadAction для live book с EPUB', () => {
