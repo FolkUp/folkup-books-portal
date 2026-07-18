@@ -14,7 +14,8 @@
 
 ## Author
 
-Андрей Клеменчёнок (Andrey Klemenchionok). FolkUp Ecosystem. https://folkup.app
+Comandante FolkUp (pseudonym). FolkUp Ecosystem. https://folkup.app
+Legal name disclosed per AI Act Art. 50(4) на https://books.folkup.life/ai-disclosure/ (pending page).
 
 ## License
 
