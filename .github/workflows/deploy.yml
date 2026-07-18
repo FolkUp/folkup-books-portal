@@ -71,7 +71,10 @@ jobs:
         continue-on-error: true
 
       - name: Upload Playwright report
-        if: always()
+        # if: failure() only — экономит artifact quota (упирались на success too).
+        # Cot+31 B1 fix: prior `if: always()` заливал 55 files каждый green run.
+        # При pass — report не нужен, при fail — нужен для диагностики.
+        if: failure()
         uses: actions/upload-artifact@v4
         with:
           name: playwright-report
