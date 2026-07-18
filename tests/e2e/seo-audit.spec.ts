@@ -55,8 +55,8 @@ test.describe('SEO — F-SEO-1..9 regression coverage', () => {
       await page.goto(`/${slug}`)
       const canonical = await page.locator('link[rel="canonical"]').getAttribute('href')
       expect(canonical, `${slug} canonical should be defined`).toBeTruthy()
-      // Either books.folkup.life/<slug>/ OR sapiens.folkup.life/ (кн.1 pre-cutover)
-      expect(canonical).toMatch(/^https:\/\/(books|sapiens)\.folkup\.(life|life\/)/)
+      // Post-cutover: all book pages canonical → books.folkup.life/<slug>/
+      expect(canonical).toMatch(/^https:\/\/books\.folkup\.life\//)
     }
   })
 
