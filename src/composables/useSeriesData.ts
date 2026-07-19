@@ -2,6 +2,9 @@ import { computed } from 'vue'
 import yaml from 'js-yaml'
 import seriesYamlRaw from '@data/series.yaml?raw'
 
+export type TranslationStatus = 'live' | 'preparing'
+export type Locale = 'ru' | 'de' | 'en' | 'pt'
+
 export interface Book {
   position: number
   slug: string
@@ -23,6 +26,12 @@ export interface Book {
     en?: string
     de?: string
     pt?: string
+  }
+  translations?: {
+    ru?: TranslationStatus
+    de?: TranslationStatus
+    en?: TranslationStatus
+    pt?: TranslationStatus
   }
   illustration_style?: string
   isbn?: string | null

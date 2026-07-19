@@ -35,6 +35,13 @@ books:
       en: /covers/cover_kn1_en.svg
       de: /covers/cover_kn1_de.svg
       pt: /covers/cover_kn1_pt.svg
+    # Translation status per language position — Iskra canon ZAGLUSHKI S179 (Andrei visa 2026-07-18).
+    # Rule «перевод не блокирует релиз»: RU не ждёт переводов, каждый выходит следующей версией.
+    translations:
+      ru: live
+      de: preparing
+      en: preparing
+      pt: preparing
     isbn: null  # Pending Гутенберг + Bowker
 
   - position: 2
@@ -48,6 +55,11 @@ books:
       en: /covers/cover_kn2_en.svg
       de: /covers/cover_kn2_de.svg
       pt: /covers/cover_kn2_pt.svg
+    translations:
+      ru: preparing
+      de: preparing
+      en: preparing
+      pt: preparing
 
   - position: 3
     slug: kn3
@@ -61,6 +73,11 @@ books:
       en: /covers/cover_kn3_en.svg
       de: /covers/cover_kn3_de.svg
       pt: /covers/cover_kn3_pt.svg
+    translations:
+      ru: preparing
+      de: preparing
+      en: preparing
+      pt: preparing
 
   - position: 4
     slug: kn4
@@ -73,6 +90,11 @@ books:
       en: /covers/cover_kn4_en.svg
       de: /covers/cover_kn4_de.svg
       pt: /covers/cover_kn4_pt.svg
+    translations:
+      ru: preparing
+      de: preparing
+      en: preparing
+      pt: preparing
 
   - position: 5
     slug: kn5
@@ -85,6 +107,11 @@ books:
       en: /covers/cover_kn5_en.svg
       de: /covers/cover_kn5_de.svg
       pt: /covers/cover_kn5_pt.svg
+    translations:
+      ru: preparing  # RU мастер готов, launch_preparing per S179 очередь
+      de: preparing  # Кнут в работе, "перевод не блокирует релиз" S179
+      en: preparing
+      pt: preparing
 
   - position: 6
     slug: kn6
@@ -97,6 +124,11 @@ books:
       en: /covers/cover_kn6_en.svg
       de: /covers/cover_kn6_de.svg
       pt: /covers/cover_kn6_pt.svg
+    translations:
+      ru: preparing
+      de: preparing
+      en: preparing
+      pt: preparing
 
   - position: 7
     slug: kn7
@@ -108,6 +140,11 @@ books:
       en: /covers/cover_kn7_en.svg
       de: /covers/cover_kn7_de.svg
       pt: /covers/cover_kn7_pt.svg
+    translations:
+      ru: preparing
+      de: preparing
+      en: preparing
+      pt: preparing
     svod_components:
       - S120_master
       - vstavka_perevodchik_S142

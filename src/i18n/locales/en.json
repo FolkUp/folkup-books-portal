@@ -9,7 +9,11 @@
     "series_intro": "The «Agile Sapiens» series — open books are marked «Read».",
     "read_book": "Read book",
     "coming_soon": "Coming soon",
-    "in_pause": "On pause"
+    "in_pause": "On pause",
+    "translations_heading": "Language editions",
+    "translation_available": "available",
+    "translation_stub_short": "in progress",
+    "translation_stub_full": "The translation is taking shape in the FolkUp workshop. The exhibit will soon appear in this hall."
   },
   "footer": {
     "copyright": "© {year} Comandante FolkUp. Content licensed under CC BY-SA 4.0.",

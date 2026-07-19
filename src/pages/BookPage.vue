@@ -6,7 +6,7 @@
 import { computed } from 'vue'
 import { useHead } from '@unhead/vue'
 import { useI18n } from 'vue-i18n'
-import { useSeriesData } from '../composables/useSeriesData'
+import { useSeriesData, type Locale } from '../composables/useSeriesData'
 import { useBookSchema } from '../composables/useSchemaOrg'
 
 const props = defineProps<{
@@ -22,6 +22,20 @@ const subtitle = computed(() => t(`books.${props.slug}.subtitle`))
 
 const isLive = computed(() => book.value?.status === 'live')
 const isPause = computed(() => book.value?.status === 'variant_b_pause')
+
+// Language positions per Iskra ZAGLUSHKI canon S179 — order fixed (RU first, then DE/EN/PT echelon)
+const LANGUAGE_ORDER: Locale[] = ['ru', 'de', 'en', 'pt']
+
+const translationEntries = computed(() =>
+  LANGUAGE_ORDER.map((lang) => ({
+    lang,
+    status: book.value?.translations?.[lang] ?? 'preparing',
+  }))
+)
+
+const hasAnyPreparing = computed(() =>
+  translationEntries.value.some((entry) => entry.status === 'preparing')
+)
 
 const SITE_URL = 'https://books.folkup.life'
 
@@ -111,6 +125,45 @@ if (book.value) {
             Ожидаем: {{ book.launch_date_target || book.launch_target }}
           </p>
         </div>
+
+        <!--
+          Языковые версии — Iskra canon ZAGLUSHKI S179 (виза Андрея 2026-07-18).
+          Регистр музейный, рифма со штампом «ЭКСПОНАТ НА РЕСТАВРАЦИИ» (S138).
+          Правило «перевод не блокирует релиз» — RU не ждёт остальные.
+        -->
+        <section
+          v-if="book.translations"
+          class="book-page__translations"
+          :aria-label="t('portal.translations_heading')"
+        >
+          <h2 class="book-page__translations-heading">{{ t('portal.translations_heading') }}</h2>
+          <ul class="book-page__translations-list">
+            <li
+              v-for="entry in translationEntries"
+              :key="entry.lang"
+              class="book-page__translation-item"
+              :class="{
+                'book-page__translation-item--live': entry.status === 'live',
+                'book-page__translation-item--preparing': entry.status === 'preparing',
+              }"
+            >
+              <span class="book-page__translation-lang">{{ entry.lang.toUpperCase() }}</span>
+              <span
+                class="book-page__translation-badge"
+                :class="{
+                  'book-page__translation-badge--live': entry.status === 'live',
+                  'book-page__translation-badge--preparing': entry.status === 'preparing',
+                }"
+              >
+                <template v-if="entry.status === 'live'">{{ t('portal.translation_available') }}</template>
+                <template v-else>{{ t('portal.translation_stub_short') }}</template>
+              </span>
+            </li>
+          </ul>
+          <p v-if="hasAnyPreparing" class="book-page__translation-stub-full">
+            {{ t('portal.translation_stub_full') }}
+          </p>
+        </section>
 
         <footer class="book-page__meta">
           <p>
@@ -207,6 +260,70 @@ if (book.value) {
   background: var(--color-border);
   border-radius: var(--radius-sm);
   margin-bottom: var(--spacing-xl);
+}
+
+/*
+  Языковые версии — Iskra canon ZAGLUSHKI S179.
+  Регистр музейный, рифма со штампом «ЭКСПОНАТ НА РЕСТАВРАЦИИ».
+*/
+.book-page__translations {
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg);
+}
+
+.book-page__translations-heading {
+  font-size: var(--fs-lg);
+  margin: 0 0 var(--spacing-md);
+  color: var(--color-text);
+  font-family: var(--font-brand);
+}
+
+.book-page__translations-list {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--spacing-md);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+}
+
+.book-page__translation-item {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  border-radius: var(--radius-sm);
+  background: var(--color-border);
+  font-size: var(--fs-sm);
+}
+
+.book-page__translation-lang {
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  color: var(--color-text);
+}
+
+.book-page__translation-badge {
+  font-size: 0.8125rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+}
+
+.book-page__translation-badge--live {
+  color: var(--color-primary);
+  font-style: normal;
+  font-weight: 500;
+}
+
+.book-page__translation-stub-full {
+  margin: 0;
+  font-size: var(--fs-sm);
+  color: var(--color-text-muted);
+  font-style: italic;
+  line-height: 1.5;
 }
 
 .book-page__meta {
