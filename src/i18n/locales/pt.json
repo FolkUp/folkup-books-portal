@@ -9,7 +9,11 @@
     "series_intro": "A coleção «Agile Sapiens» — livros abertos estão marcados «Ler».",
     "read_book": "Ler livro",
     "coming_soon": "Em breve",
-    "in_pause": "Em pausa"
+    "in_pause": "Em pausa",
+    "translations_heading": "Versões linguísticas",
+    "translation_available": "disponível",
+    "translation_stub_short": "em preparação",
+    "translation_stub_full": "A tradução está a ganhar forma na oficina FolkUp. A peça chegará em breve a esta sala."
   },
   "footer": {
     "copyright": "© {year} Comandante FolkUp. Conteúdo licenciado sob CC BY-SA 4.0.",
