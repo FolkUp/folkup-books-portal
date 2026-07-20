@@ -29,6 +29,12 @@ books:
     downloads:
       epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.14.epub
       pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.14.pdf
+    # Iskra S191 P0 приёмка Андрея 2026-07-19: EPUB/PDF содержат v1.0.11 контент
+    # (colophon внутри показывает 1.0.11); веб-версия свежая v1.0.14 с 3 factual
+    # правками Iskra S169. Форматы регенерируются в Phase D спринта. Honest metallica
+    # per Q5 staged release + Iskra canon «формат не блокирует релиз».
+    format_stale_note: |
+      Скачивание в актуальной форматной версии готовится. EPUB и PDF сейчас содержат текст версии 1.0.11 (июль 2026); веб-версия уже несёт свежий 1.0.14 с редакторскими уточнениями. Полное соответствие форматов вернётся апдейтом в ближайшие дни — экспонат на реставрации.
     cover_v1: /covers/cover_kn1.svg
     covers:
       ru: /covers/cover_kn1.svg

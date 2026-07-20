@@ -100,6 +100,16 @@ if (book.value) {
           </a>
         </div>
 
+        <div
+          v-if="isLive && book.format_stale_note"
+          class="book-page__format-stale"
+          role="note"
+          aria-label="Пометка о форматах на реставрации"
+        >
+          <strong>Форматы на реставрации.</strong>
+          <p>{{ book.format_stale_note }}</p>
+        </div>
+
         <div v-else-if="isPause" class="book-page__notice">
           <strong>{{ t('portal.in_pause') }}.</strong>
           <p>{{ subtitle }}</p>
@@ -182,8 +192,32 @@ if (book.value) {
 .book-page__actions {
   display: flex;
   gap: var(--spacing-md);
-  margin-bottom: var(--spacing-2xl);
+  margin-bottom: var(--spacing-md);
   flex-wrap: wrap;
+}
+
+.book-page__format-stale {
+  padding: var(--spacing-md) var(--spacing-lg);
+  margin-bottom: var(--spacing-2xl);
+  background: var(--color-ivory, #FEFCF6);
+  border: 1px solid var(--color-amber, #E8AD4A);
+  border-left: 4px solid var(--color-amber, #E8AD4A);
+  border-radius: var(--radius-sm);
+  font-size: var(--fs-sm);
+  color: var(--color-text, #2b2b2b);
+}
+
+.book-page__format-stale strong {
+  color: var(--color-bordeaux, #7D4450);
+  display: block;
+  margin-bottom: var(--spacing-xs);
+  letter-spacing: 0.02em;
+}
+
+.book-page__format-stale p {
+  margin: 0;
+  line-height: 1.5;
+  font-style: italic;
 }
 
 .book-page__button {
