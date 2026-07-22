@@ -16,7 +16,7 @@
     "translation_stub_full": "Die Übersetzung entsteht in der FolkUp-Werkstatt. Das Exponat wird bald in diesem Saal gezeigt."
   },
   "footer": {
-    "copyright": "© {year} Comandante FolkUp. Inhalt lizenziert unter CC BY-SA 4.0.",
+    "copyright": "© {year} Команданте FolkUp. Inhalt lizenziert unter CC BY-SA 4.0.",
     "license": "Code — MIT. Inhalt — CC BY-SA 4.0."
   },
   "books": {
@@ -31,10 +31,10 @@
   "ai_disclosure": {
     "title": "KI-Nutzungshinweis",
     "h1": "KI-Nutzungshinweis",
-    "meta_description": "EU-KI-Verordnung Artikel 50(4) Compliance. Rechtlicher Name der natürlichen Person mit redaktioneller Verantwortung: Andrei Klemenchionok. Veröffentlichung unter Pseudonym «Comandante FolkUp».",
+    "meta_description": "EU-KI-Verordnung Artikel 50(4) Compliance. Rechtlicher Name der natürlichen Person mit redaktioneller Verantwortung: Andrei Klemenchionok. Veröffentlichung unter Pseudonym «Команданте FolkUp».",
     "section1": {
       "h2": "Redaktionelle Verantwortung",
-      "p1": "Die Bücher der FolkUp-Bibliothek sind mit dem Pseudonym «Comandante FolkUp» unterschrieben. Hinter dem Pseudonym steht ein lebender Mensch: Andrei Klemenchionok, Portugal-Resident, Verleger und Redakteur. Das Pseudonym ist ein Banksy-Muster für nicht-kommerzielle Markenidentität, keine Verschleierung der Verantwortung.",
+      "p1": "Die Bücher der FolkUp-Bibliothek sind mit dem Pseudonym «Команданте FolkUp» unterschrieben. Hinter dem Pseudonym steht ein lebender Mensch: Andrei Klemenchionok, Portugal-Resident, Verleger und Redakteur. Das Pseudonym ist ein Banksy-Muster für nicht-kommerzielle Markenidentität, keine Verschleierung der Verantwortung.",
       "p2": "Redaktioneller und rechtlicher Kontakt: editorial{'@'}folkup.app"
     },
     "section2": {
@@ -51,7 +51,7 @@
     "section3": {
       "h2": "EU-KI-Verordnung Artikel 50(4) Compliance",
       "p1": "Diese Seite erfüllt die Anforderung, die natürliche Person offenzulegen, die für die redaktionelle Aufsicht über KI-gestützte Inhalte gemäß EU-KI-Verordnung Artikel 50(4)(b) verantwortlich ist. Verantwortliche Person: Andrei Klemenchionok, russischer Staatsbürger, Portugal-Resident.",
-      "p2": "Das Pseudonym «Comandante FolkUp» wird auf öffentlichen Oberflächen (Buchseiten, Katalog, Fußzeile, Metadaten) verwendet — Banksy-Muster für nicht-kommerzielle Markenidentität. Das Pseudonym trägt die Serienmarke; diese Seite liefert die rechtliche Offenlegung gemäß KI-Verordnung."
+      "p2": "Das Pseudonym «Команданте FolkUp» wird auf öffentlichen Oberflächen (Buchseiten, Katalog, Fußzeile, Metadaten) verwendet — Banksy-Muster für nicht-kommerzielle Markenidentität. Das Pseudonym trägt die Serienmarke; diese Seite liefert die rechtliche Offenlegung gemäß KI-Verordnung."
     },
     "section4": {
       "h2": "Lizenz",

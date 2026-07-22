@@ -2,7 +2,7 @@
 /**
  * /ai-disclosure — EU AI Act Art. 50(4) compliance page.
  * Canon: Лев T-LEV-IMPRESSUM verdikт cont+29 B4 + Q4a compromise verdict cont+32
- * (Andrei A choice — legal name only here, псевдоним «Comandante FolkUp» везде остальном).
+ * (Andrei A choice — legal name only here, псевдоним «Команданте FolkUp» везде остальном).
  *
  * Discloses:
  * - Legal name Andrei Klemenchionok (natural person editorial responsibility per AI Act 50(4)(b))
@@ -51,7 +51,7 @@ useHead({
           name: 'Andrei Klemenchionok',
           jobTitle: 'Editor / Publisher',
           worksFor: { '@id': `${SITE_URL}/#organization` },
-          description: 'Natural person responsible для editorial oversight of AI-assisted content per EU AI Act Art. 50(4)(b). Publishes under pseudonym «Comandante FolkUp».',
+          description: 'Natural person responsible для editorial oversight of AI-assisted content per EU AI Act Art. 50(4)(b). Publishes under pseudonym «Команданте FolkUp».',
         },
         inLanguage: 'ru',
       }),

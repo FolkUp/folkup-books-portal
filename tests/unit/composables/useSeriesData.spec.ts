@@ -10,7 +10,7 @@ describe('useSeriesData', () => {
     expect(series.value.license).toBe('CC BY-SA 4.0')
     // Q10 verdict via Iskra S178b 2026-07-18: public author = pseudonym.
     // Legal name «Andrei Klemenchionok» reserved для /ai-disclosure per AI Act Art. 50(4).
-    expect(series.value.author).toBe('Comandante FolkUp')
+    expect(series.value.author).toBe('Команданте FolkUp')
   })
 
   it('loads exactly 7 books', () => {
