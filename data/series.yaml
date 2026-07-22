@@ -10,7 +10,7 @@ series:
   # Public author display = pseudonym per Andrei Q10 verdict via Iskra S178b 2026-07-18.
   # Legal name «Andrei Klemenchionok» reserved для /ai-disclosure page (AI Act Art. 50(4))
   # per Лев Option F + Andrei explicit «Моё имя указываем только там, где требуется юридически».
-  author: Comandante FolkUp
+  author: Команданте FolkUp
   author_url: https://books.folkup.life/#author
   license: CC BY-SA 4.0
   license_url: https://creativecommons.org/licenses/by-sa/4.0/
@@ -34,7 +34,7 @@ books:
     # правками Iskra S169. Форматы регенерируются в Phase D спринта. Honest metallica
     # per Q5 staged release + Iskra canon «формат не блокирует релиз».
     format_stale_note: |
-      Скачивание в актуальной форматной версии готовится. EPUB и PDF сейчас содержат текст версии 1.0.11 (июль 2026); веб-версия уже несёт свежий 1.0.14 с редакторскими уточнениями. Полное соответствие форматов вернётся апдейтом в ближайшие дни — экспонат на реставрации.
+      Скачивание в актуальной форматной версии готовится. EPUB и PDF сейчас содержат текст версии 1.0.11 (июль 2026); веб-версия уже несёт свежий 1.0.14 с редакторскими уточнениями. PDF пока без иллюстраций — полная версия готовится. Полное соответствие форматов вернётся апдейтом в ближайшие дни — экспонат на реставрации.
     cover_v1: /covers/cover_kn1.svg
     covers:
       ru: /covers/cover_kn1.svg

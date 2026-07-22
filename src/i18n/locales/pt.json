@@ -16,7 +16,7 @@
     "translation_stub_full": "A tradução está a ganhar forma na oficina FolkUp. A peça chegará em breve a esta sala."
   },
   "footer": {
-    "copyright": "© {year} Comandante FolkUp. Conteúdo licenciado sob CC BY-SA 4.0.",
+    "copyright": "© {year} Команданте FolkUp. Conteúdo licenciado sob CC BY-SA 4.0.",
     "license": "Código — MIT. Conteúdo — CC BY-SA 4.0."
   },
   "books": {
@@ -31,10 +31,10 @@
   "ai_disclosure": {
     "title": "Divulgação de utilização de IA",
     "h1": "Divulgação de utilização de IA",
-    "meta_description": "Conformidade com o Artigo 50(4) do Regulamento IA da UE. Nome legal da pessoa singular responsável pela supervisão editorial: Andrei Klemenchionok. Publicado sob o pseudónimo «Comandante FolkUp».",
+    "meta_description": "Conformidade com o Artigo 50(4) do Regulamento IA da UE. Nome legal da pessoa singular responsável pela supervisão editorial: Andrei Klemenchionok. Publicado sob o pseudónimo «Команданте FolkUp».",
     "section1": {
       "h2": "Responsabilidade editorial",
-      "p1": "Os livros da Biblioteca FolkUp são assinados com o pseudónimo «Comandante FolkUp». Por trás do pseudónimo está uma pessoa viva: Andrei Klemenchionok, residente em Portugal, editor e revisor. O pseudónimo é um padrão de tipo Banksy para identidade de marca não comercial, não uma ocultação de responsabilidade.",
+      "p1": "Os livros da Biblioteca FolkUp são assinados com o pseudónimo «Команданте FolkUp». Por trás do pseudónimo está uma pessoa viva: Andrei Klemenchionok, residente em Portugal, editor e revisor. O pseudónimo é um padrão de tipo Banksy para identidade de marca não comercial, não uma ocultação de responsabilidade.",
       "p2": "Contacto editorial e jurídico: editorial{'@'}folkup.app"
     },
     "section2": {
@@ -51,7 +51,7 @@
     "section3": {
       "h2": "Conformidade com o Artigo 50(4) do Regulamento IA da UE",
       "p1": "Esta página cumpre o requisito de divulgação da pessoa singular responsável pela supervisão editorial de conteúdo assistido por IA nos termos do Artigo 50(4)(b) do Regulamento IA da UE. Pessoa responsável: Andrei Klemenchionok, cidadão russo, residente em Portugal.",
-      "p2": "O pseudónimo «Comandante FolkUp» é usado nas superfícies públicas (páginas dos livros, catálogo, rodapé, metadados) — padrão de tipo Banksy para identidade de marca não comercial. O pseudónimo mantém a marca da coleção; esta página fornece a divulgação legal nos termos do Regulamento IA."
+      "p2": "O pseudónimo «Команданте FolkUp» é usado nas superfícies públicas (páginas dos livros, catálogo, rodapé, metadados) — padrão de tipo Banksy para identidade de marca não comercial. O pseudónimo mantém a marca da coleção; esta página fornece a divulgação legal nos termos do Regulamento IA."
     },
     "section4": {
       "h2": "Licença",

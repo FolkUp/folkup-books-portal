@@ -216,7 +216,7 @@ if (book.value) {
 
         <footer class="book-page__meta">
           <p>
-            <strong>Автор:</strong> Comandante FolkUp
+            <strong>Автор:</strong> Команданте FolkUp
           </p>
           <p>
             <strong>©</strong> {{ series.author }} ·
