@@ -9,6 +9,14 @@ import { useI18n } from 'vue-i18n'
 import { useSeriesData, type Locale } from '../composables/useSeriesData'
 import { useBookSchema } from '../composables/useSchemaOrg'
 
+// Long-form «Про что книга» annotations — per book, per locale (RU first).
+// Iskra canon v3-BEZ-SCHYOTA (S198 виза Andrey) — «файл на скачивание = та же информация что и на сайте».
+// Eager glob import: Vite bundles all matched files. Other books/locales add as они canonized.
+const proChtoModules = import.meta.glob<string>(
+  '../../content/kn*/ru/pro-chto.md',
+  { query: '?raw', import: 'default', eager: true },
+)
+
 const props = defineProps<{
   slug: string
 }>()
@@ -19,6 +27,19 @@ const { series, bookBySlug } = useSeriesData()
 const book = computed(() => bookBySlug(props.slug))
 const title = computed(() => t(`books.${props.slug}.title`))
 const subtitle = computed(() => t(`books.${props.slug}.subtitle`))
+
+// Long-form annotation body (paragraphs) — strip HTML comments + headings.
+const proChtoParagraphs = computed<string[]>(() => {
+  const path = `../../content/${props.slug}/ru/pro-chto.md`
+  const raw = proChtoModules[path]
+  if (!raw) return []
+  return raw
+    .split(/\n\n+/)
+    .map((p) => p.trim())
+    .filter((p) => p && !p.startsWith('<!--') && !p.startsWith('#'))
+})
+
+const hasProChto = computed(() => proChtoParagraphs.value.length > 0)
 
 const isLive = computed(() => book.value?.status === 'live')
 const isPause = computed(() => book.value?.status === 'variant_b_pause')
@@ -94,6 +115,24 @@ if (book.value) {
 
         <h1 class="book-page__title">{{ title }}</h1>
         <p class="book-page__subtitle">{{ subtitle }}</p>
+
+        <!--
+          «Про что книга» — canonical annotation body per Iskra S198 v3-BEZ-SCHYOTA (виза Андрея).
+          Rendered only if content/kn{N}/ru/pro-chto.md exists (currently kn1).
+          Rule «файл на скачивание = та же информация что и на сайте» — S197 canon.
+        -->
+        <section
+          v-if="hasProChto"
+          class="book-page__pro-chto"
+          :aria-label="'Про что книга «' + title + '»'"
+        >
+          <h2 class="book-page__pro-chto-heading">Про что книга</h2>
+          <p
+            v-for="(para, index) in proChtoParagraphs"
+            :key="index"
+            class="book-page__pro-chto-paragraph"
+          >{{ para }}</p>
+        </section>
 
         <div v-if="isLive" class="book-page__actions">
           <a
@@ -240,6 +279,35 @@ if (book.value) {
   font-style: italic;
   color: var(--color-text-muted);
   margin-bottom: var(--spacing-xl);
+}
+
+/*
+  «Про что книга» — long-form annotation section (Iskra canon S198).
+  Rendered после subtitle, перед downloads buttons — reader flow: title → tagline → content preview → download.
+*/
+.book-page__pro-chto {
+  margin: 0 0 var(--spacing-2xl);
+  padding: var(--spacing-lg) 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.book-page__pro-chto-heading {
+  font-size: var(--fs-xl);
+  margin: 0 0 var(--spacing-md);
+  color: var(--color-text);
+  font-family: var(--font-brand);
+}
+
+.book-page__pro-chto-paragraph {
+  margin: 0 0 var(--spacing-md);
+  line-height: 1.65;
+  color: var(--color-text);
+  font-size: var(--fs-md);
+}
+
+.book-page__pro-chto-paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .book-page__actions {
