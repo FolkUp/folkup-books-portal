@@ -28,6 +28,14 @@ const book = computed(() => bookBySlug(props.slug))
 const title = computed(() => t(`books.${props.slug}.title`))
 const subtitle = computed(() => t(`books.${props.slug}.subtitle`))
 
+// Canon v2 Iskra S214 §2+§4: витрина несёт принадлежность («Серия „Своим умом" · трилогия „X"»),
+// не счёт («Книга N» упразднена). Trilogy name resolved через series.trilogies map.
+const trilogyName = computed<string | null>(() => {
+  const key = book.value?.trilogy
+  if (!key) return null
+  return series.value.trilogies?.[key]?.name ?? null
+})
+
 // Long-form annotation body (paragraphs) — strip HTML comments + headings.
 const proChtoParagraphs = computed<string[]>(() => {
   const path = `../../content/${props.slug}/ru/pro-chto.md`
@@ -110,7 +118,7 @@ if (book.value) {
       <article class="book-page__content">
         <p class="book-page__series">
           <RouterLink to="/">{{ t('brand.name') }}</RouterLink>
-          &middot; Серия «{{ series.name }}» &middot; Книга {{ book.position }}
+          &middot; Серия «{{ series.name }}»<template v-if="trilogyName">&nbsp;&middot; трилогия «{{ trilogyName }}»</template>
         </p>
 
         <h1 class="book-page__title">{{ title }}</h1>

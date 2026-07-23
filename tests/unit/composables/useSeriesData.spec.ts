@@ -5,8 +5,9 @@ describe('useSeriesData', () => {
   const { series, books, bookBySlug, liveBooks, upcomingBooks, stubBooks, gatedBooks } = useSeriesData()
 
   it('loads series metadata from series.yaml', () => {
-    // Series name canonized «FolkUp» per Iskra P0-ZHIVOY §5 (cont+18) — «Agile Sapiens» = title кн.1, не серии.
-    expect(series.value.name).toBe('FolkUp')
+    // Canon v2 Iskra S214 2026-07-23 (виза Andrey): «Своим умом» supersedes cont+18 best-guess «FolkUp».
+    // «FolkUp» остаётся брендом издательства/экосистемы, не именем серии.
+    expect(series.value.name).toBe('Своим умом')
     expect(series.value.total_books).toBe(7)
     expect(series.value.license).toBe('CC BY-SA 4.0')
     // Q10 verdict via Iskra S178b 2026-07-18: public author = pseudonym.
@@ -14,28 +15,61 @@ describe('useSeriesData', () => {
     expect(series.value.author).toBe('Команданте FolkUp')
   })
 
+  it('loads canonical trilogies map (canon v2 §3)', () => {
+    // Canon v2 §3: три трилогии — I «Своими силами» · II «Из первых рук» · III «Общий язык»
+    expect(series.value.trilogies).toBeDefined()
+    expect(series.value.trilogies?.svoimi_silami.name).toBe('Своими силами')
+    expect(series.value.trilogies?.iz_pervyh_ruk.name).toBe('Из первых рук')
+    expect(series.value.trilogies?.obshchiy_yazyk.name).toBe('Общий язык')
+  })
+
   it('loads exactly 7 books', () => {
     expect(books.value).toHaveLength(7)
   })
 
-  it('books are ordered by position', () => {
+  it('books are ordered by position (canon v2 §2 таблица переномеровки)', () => {
+    // Canon v2 порядок = карта замысла: kn1, kn3, kn4, kn2, kn5, kn6, kn7
+    // Position 1..7 sequential; slug — технический идентификатор, ≠ position (canon v2 §3).
+    const expectedSlugsByPosition = ['kn1', 'kn3', 'kn4', 'kn2', 'kn5', 'kn6', 'kn7']
     books.value.forEach((book, idx) => {
       expect(book.position).toBe(idx + 1)
+      expect(book.slug).toBe(expectedSlugsByPosition[idx])
     })
   })
 
-  it('each book has required fields', () => {
+  it('each book has required fields + trilogy key (canon v2 §3)', () => {
     books.value.forEach((book) => {
       expect(book.slug).toMatch(/^kn[1-7]$/)
       expect(book.status).toMatch(/^(live|stub|launch_target|launch_preparing|variant_b_pause|svod_zakryt_pre_shit_v5)$/)
       expect(book.slug_en_temp).toBeDefined()
+      expect(book.trilogy).toMatch(/^(svoimi_silami|iz_pervyh_ruk|obshchiy_yazyk)$/)
     })
   })
 
-  it('bookBySlug returns correct book', () => {
-    const kn1 = bookBySlug('kn1')
-    expect(kn1?.position).toBe(1)
-    expect(kn1?.status).toBe('live')
+  it('trilogy assignment per canon v2 §3', () => {
+    // I. Своими силами: kn1, kn3, kn4 (команда создаёт)
+    expect(bookBySlug('kn1')?.trilogy).toBe('svoimi_silami')
+    expect(bookBySlug('kn3')?.trilogy).toBe('svoimi_silami')
+    expect(bookBySlug('kn4')?.trilogy).toBe('svoimi_silami')
+    // II. Из первых рук: kn2, kn5, kn6 (знание доходит до нас)
+    expect(bookBySlug('kn2')?.trilogy).toBe('iz_pervyh_ruk')
+    expect(bookBySlug('kn5')?.trilogy).toBe('iz_pervyh_ruk')
+    expect(bookBySlug('kn6')?.trilogy).toBe('iz_pervyh_ruk')
+    // III. Общий язык: kn7 (люди договариваются) + будущие тома
+    expect(bookBySlug('kn7')?.trilogy).toBe('obshchiy_yazyk')
+  })
+
+  it('bookBySlug returns correct book with new positions (canon v2)', () => {
+    // kn1 → position 1 (I·1), kn3 → 2 (I·2), kn4 → 3 (I·3),
+    // kn2 → 4 (II·1), kn5 → 5 (II·2), kn6 → 6 (II·3), kn7 → 7 (III·1)
+    expect(bookBySlug('kn1')?.position).toBe(1)
+    expect(bookBySlug('kn3')?.position).toBe(2)
+    expect(bookBySlug('kn4')?.position).toBe(3)
+    expect(bookBySlug('kn2')?.position).toBe(4)
+    expect(bookBySlug('kn5')?.position).toBe(5)
+    expect(bookBySlug('kn6')?.position).toBe(6)
+    expect(bookBySlug('kn7')?.position).toBe(7)
+    expect(bookBySlug('kn1')?.status).toBe('live')
   })
 
   it('bookBySlug returns undefined for non-existent slug', () => {
