@@ -17,8 +17,7 @@
     "translation_stub_full": "The translation is taking shape in the FolkUp workshop. The exhibit will soon appear in this hall."
   },
   "footer": {
-    "copyright": "© {year} Команданте FolkUp. Content licensed under CC BY-SA 4.0.",
-    "license": "Code — MIT. Content — CC BY-SA 4.0."
+    "copyright": "© {year} Команданте FolkUp · Content CC BY-SA 4.0 · Code MIT"
   },
   "books": {
     "kn1": {
