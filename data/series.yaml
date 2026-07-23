@@ -72,7 +72,7 @@ books:
     slug_en_temp: city-of-the-sun
     status: stub
     launch_target: 2026-Q3
-    illustration_style: Bauhaus / Kandinsky (per Андрей mandate cont +39)
+    illustration_style: Bauhaus / Kandinsky
     cover_v1: /covers/cover_kn3.svg
     covers:
       ru: /covers/cover_kn3.svg
