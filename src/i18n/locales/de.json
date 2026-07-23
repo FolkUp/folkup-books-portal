@@ -17,8 +17,7 @@
     "translation_stub_full": "Die Übersetzung entsteht in der FolkUp-Werkstatt. Das Exponat wird bald in diesem Saal gezeigt."
   },
   "footer": {
-    "copyright": "© {year} Команданте FolkUp. Inhalt lizenziert unter CC BY-SA 4.0.",
-    "license": "Code — MIT. Inhalt — CC BY-SA 4.0."
+    "copyright": "© {year} Команданте FolkUp · Inhalt CC BY-SA 4.0 · Code MIT"
   },
   "books": {
     "kn1": { "title": "Agile Sapiens", "subtitle": "Wie klassische Literatur modernes Management vorhersagte" },

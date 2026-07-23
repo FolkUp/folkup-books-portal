@@ -17,8 +17,7 @@
     "translation_stub_full": "A tradução está a ganhar forma na oficina FolkUp. A peça chegará em breve a esta sala."
   },
   "footer": {
-    "copyright": "© {year} Команданте FolkUp. Conteúdo licenciado sob CC BY-SA 4.0.",
-    "license": "Código — MIT. Conteúdo — CC BY-SA 4.0."
+    "copyright": "© {year} Команданте FolkUp · Conteúdo CC BY-SA 4.0 · Código MIT"
   },
   "books": {
     "kn1": { "title": "Agile Sapiens", "subtitle": "Como a literatura clássica previu a gestão moderna" },

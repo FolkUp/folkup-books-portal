@@ -301,7 +301,8 @@ if (book.value) {
   font-size: var(--fs-xl);
   margin: 0 0 var(--spacing-md);
   color: var(--color-text);
-  font-family: var(--font-brand);
+  /* Iskra P0-ZHIVOY §3 п.2 (2026-07-23): script-шрифт в блоках → serif как тело до дизайн-арки */
+  font-family: var(--font-body);
 }
 
 .book-page__pro-chto-paragraph {
@@ -385,7 +386,8 @@ if (book.value) {
   font-size: var(--fs-lg);
   margin: 0 0 var(--spacing-md);
   color: var(--color-text);
-  font-family: var(--font-brand);
+  /* Iskra P0-ZHIVOY §3 п.2 (2026-07-23): script-шрифт в блоках → serif как тело до дизайн-арки */
+  font-family: var(--font-body);
 }
 
 .book-page__translations-list {

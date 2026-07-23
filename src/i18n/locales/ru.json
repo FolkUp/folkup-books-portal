@@ -17,8 +17,7 @@
     "translation_stub_full": "Перевод готовится в мастерской FolkUp. Экспонат появится в этом зале — заходите."
   },
   "footer": {
-    "copyright": "© {year} Команданте FolkUp. Контент под лицензией CC BY-SA 4.0.",
-    "license": "Код — MIT. Контент — CC BY-SA 4.0."
+    "copyright": "© {year} Команданте FolkUp · Контент CC BY-SA 4.0 · Код MIT"
   },
   "books": {
     "kn1": {

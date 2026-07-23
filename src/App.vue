@@ -52,8 +52,8 @@ useHead({
     </main>
 
     <footer class="site-footer">
+      <!-- Iskra P0-ZHIVOY §3 п.1 (2026-07-23): одна строка вместо двух -->
       <p>{{ t('footer.copyright', { year: new Date().getFullYear() }) }}</p>
-      <p>{{ t('footer.license') }}</p>
     </footer>
   </div>
 </template>
