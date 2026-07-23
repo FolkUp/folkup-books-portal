@@ -15,7 +15,7 @@
     "footer_terms": "Terms",
     "footer_cookies": "Cookies",
     "footer_imprint": "Legal notice",
-    "footer_contact": "editorial&#64;folkup.app"
+    "footer_contact": "editorial{'@'}folkup.app"
   },
   "portal": {
     "_translator_note": "PLACEHOLDER — Iskra S214 §2/§3/§9 adapted from RU canon by Alice cont+20 pending native-speaker verdict from Zeka (EN translator, Vier-Augen). §10 rule: no counts, no fake urgency, no promised dates. Series name «A Mind of One's Own» retained from prior neighbor commit as tentative idiom; translator may refine.",
@@ -69,7 +69,7 @@
     "section1": {
       "h2": "Editorial responsibility",
       "p1": "Books of the FolkUp Library are signed with the pseudonym «Команданте FolkUp». Behind the pseudonym stands one living person: Andrei Klemenchionok, resident of Portugal, publisher and editor. The pseudonym is a Banksy-style pattern for non-commercial brand identity, not concealment of responsibility.",
-      "p2": "Editorial and legal contact: editorial{'@'}folkup.app"
+      "p2": "Editorial and legal contact: editorial&#64;folkup.app"
     },
     "section2": {
       "h2": "How we use AI",

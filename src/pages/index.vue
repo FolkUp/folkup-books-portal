@@ -44,6 +44,7 @@ function trilogyDescription(key: string): string {
     <section class="hero">
       <h1>{{ t('portal.title') }}</h1>
       <p class="hero__lead">{{ t('portal.hero') }}</p>
+      <p class="hero__ornament" aria-hidden="true">◆</p>
       <p class="hero__intro">{{ t('portal.series_intro') }}</p>
     </section>
 
@@ -102,10 +103,23 @@ function trilogyDescription(key: string): string {
   margin-right: auto;
 }
 
+.hero h1 {
+  font-size: clamp(2.25rem, 4vw + 1rem, 3.5rem);
+}
+
 .hero__lead {
   font-size: var(--fs-lg);
   color: var(--color-text-muted);
   margin-bottom: var(--spacing-md);
+}
+
+.hero__ornament {
+  color: var(--color-accent);
+  font-size: 1.25rem;
+  letter-spacing: 0.5em;
+  margin: var(--spacing-md) 0;
+  text-align: center;
+  line-height: 1;
 }
 
 .hero__intro {
@@ -139,7 +153,7 @@ function trilogyDescription(key: string): string {
 .series-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: var(--spacing-lg);
+  gap: clamp(1rem, 2vw + 0.5rem, 2.5rem);
 }
 
 .feedback-block {
