@@ -141,7 +141,7 @@ if (book.value) {
             class="book-page__button"
             download
           >
-            {{ t('portal.read_book') }} (EPUB)
+            {{ t('portal.download_epub') }}
           </a>
           <a
             v-if="book.downloads?.pdf"

@@ -30,6 +30,8 @@ const statusLabel = computed(() => {
       return t('portal.read_book')
     case 'launch_target':
       return t('portal.coming_soon')
+    case 'launch_preparing':
+      return t('portal.coming_soon')
     case 'stub':
       return t('portal.coming_soon')
     case 'variant_b_pause':
