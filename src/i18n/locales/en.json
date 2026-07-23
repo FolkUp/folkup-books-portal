@@ -18,17 +18,37 @@
     "footer_contact": "editorial&#64;folkup.app"
   },
   "portal": {
+    "_translator_note": "PLACEHOLDER — Iskra S214 §2/§3/§9 adapted from RU canon by Alice cont+20 pending native-speaker verdict from Zeka (EN translator, Vier-Augen). §10 rule: no counts, no fake urgency, no promised dates. Series name «A Mind of One's Own» retained from prior neighbor commit as tentative idiom; translator may refine.",
     "title": "FolkUp Library",
-    "hero": "Books about how people get work done together — and why that stays hard.",
-    "series_intro": "A Mind of One's Own — three conversations: how teams create, how knowledge reaches us, how people find common ground. Volumes open as they're ready.",
+    "hero": "FolkUp Library — free books about teams, knowledge, and understanding: how people get their work done, how knowledge reaches them undistorted, and why finding common ground is harder than it seems.",
+    "series_intro": "«A Mind of One's Own» — books on figuring things out for yourself. Open volumes are marked «Read».",
     "read_book": "Read book",
+    "read_book_short": "Read",
     "download_epub": "Download EPUB",
     "coming_soon": "Coming soon",
     "in_pause": "On pause",
     "translations_heading": "Language editions",
     "translation_available": "available",
     "translation_stub_short": "in progress",
-    "translation_stub_full": "The translation is taking shape in the FolkUp workshop. The exhibit will soon appear in this hall."
+    "translation_stub_full": "The translation is taking shape in the FolkUp workshop. The exhibit will soon appear in this hall.",
+    "trilogies": {
+      "svoimi_silami": {
+        "name": "By Their Own Hand",
+        "description": "How a team does its work: learns to see itself, invents better shape, and brings forth what wasn't there before."
+      },
+      "iz_pervyh_ruk": {
+        "name": "From the First Hand",
+        "description": "How knowledge reaches us: through those who locked it away, through those who stand in the middle — and how to verify that what was delivered is what was meant."
+      },
+      "obshchiy_yazyk": {
+        "name": "Common Tongue",
+        "description": "Why finding common ground is harder than it seems, and what to do about it."
+      }
+    },
+    "feedback_heading": "Feedback",
+    "feedback_text": "Found an error? Write to us — we'll fix it in the next version.",
+    "feedback_url": "https://github.com/FolkUp/books-feedback/issues",
+    "feedback_link_text": "github.com/FolkUp/books-feedback"
   },
   "footer": {
     "copyright": "© {year} Команданте FolkUp · Content CC BY-SA 4.0 · Code MIT"
