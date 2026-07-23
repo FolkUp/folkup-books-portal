@@ -6,7 +6,10 @@
 #   DE обложки содержат «Kommandant» — pending regen с «Comandante» per Иви S152.
 
 series:
-  name: Agile Sapiens
+  # Series naming per Iskra S213 P0-ZHIVOY-OBKHOD §5:
+  # «Agile Sapiens» = title кн.1, не серии. Серия = FolkUp (7 книг о разных обликах команды).
+  # Applied cont+18 carte-blanche best-guess; rollback trivial if Andrey overrides formulation.
+  name: FolkUp
   # Public author display = pseudonym per Andrei Q10 verdict via Iskra S178b 2026-07-18.
   # Legal name «Andrei Klemenchionok» reserved для /ai-disclosure page (AI Act Art. 50(4))
   # per Лев Option F + Andrei explicit «Моё имя указываем только там, где требуется юридически».

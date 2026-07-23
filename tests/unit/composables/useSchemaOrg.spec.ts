@@ -12,7 +12,7 @@ import { useBookSeriesSchema, useBookSchema } from '@/composables/useSchemaOrg'
 import type { Book, SeriesMeta } from '@/composables/useSeriesData'
 
 const testSeries: SeriesMeta = {
-  name: 'Agile Sapiens',
+  name: 'FolkUp',
   // Q10 verdict via Iskra S178b 2026-07-18: public author = pseudonym «Команданте FolkUp».
   // Legal name reserved для /ai-disclosure per AI Act Art. 50(4).
   author: 'Команданте FolkUp',
@@ -52,7 +52,7 @@ describe('useBookSeriesSchema', () => {
     const jsonLd = extractJsonLd(0)
     expect(jsonLd['@type']).toBe('BookSeries')
     expect(jsonLd['@id']).toBe('https://books.folkup.life/#series')
-    expect(jsonLd.name).toBe('Agile Sapiens')
+    expect(jsonLd.name).toBe('FolkUp')
     expect(jsonLd.numberOfBooks).toBe(7)
   })
 
