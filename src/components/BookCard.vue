@@ -27,7 +27,8 @@ const coverSrc = computed(() => {
 const statusLabel = computed(() => {
   switch (props.book.status) {
     case 'live':
-      return t('portal.read_book')
+      // Iskra §6 VITRINNYY-PAKET S214: короткий лейбл «Читать» вместо «Читать книгу».
+      return t('portal.read_book_short')
     case 'launch_target':
       return t('portal.coming_soon')
     case 'launch_preparing':

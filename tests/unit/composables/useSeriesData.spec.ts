@@ -2,7 +2,16 @@ import { describe, it, expect } from 'vitest'
 import { useSeriesData } from '@/composables/useSeriesData'
 
 describe('useSeriesData', () => {
-  const { series, books, bookBySlug, liveBooks, upcomingBooks, stubBooks, gatedBooks } = useSeriesData()
+  const {
+    series,
+    books,
+    bookBySlug,
+    booksByTrilogy,
+    liveBooks,
+    upcomingBooks,
+    stubBooks,
+    gatedBooks,
+  } = useSeriesData()
 
   it('loads series metadata from series.yaml', () => {
     // Canon v2 Iskra S214 2026-07-23 (виза Andrey): «Своим умом» supersedes cont+18 best-guess «FolkUp».
@@ -21,6 +30,30 @@ describe('useSeriesData', () => {
     expect(series.value.trilogies?.svoimi_silami.name).toBe('Своими силами')
     expect(series.value.trilogies?.iz_pervyh_ruk.name).toBe('Из первых рук')
     expect(series.value.trilogies?.obshchiy_yazyk.name).toBe('Общий язык')
+  })
+
+  it('trilogies carry Iskra §3 canonical descriptions (VITRINNYY-PAKET S214)', () => {
+    // Iskra §3 VITRINNYY-PAKET S214: подписи-описания для группировки на главной.
+    expect(series.value.trilogies?.svoimi_silami.description).toContain('команда делает своё дело')
+    expect(series.value.trilogies?.iz_pervyh_ruk.description).toContain('знание доходит до нас')
+    expect(series.value.trilogies?.obshchiy_yazyk.description).toContain('договориться труднее')
+  })
+
+  it('booksByTrilogy groups books by trilogy in canon v2 order (Iskra §3)', () => {
+    // Iskra §3 canonical: order = svoimi_silami → iz_pervyh_ruk → obshchiy_yazyk.
+    // Внутри трилогии — по position field (canon v2 §2 таблица переномеровки).
+    const groups = booksByTrilogy.value
+    expect(groups).toHaveLength(3)
+    expect(groups[0].key).toBe('svoimi_silami')
+    expect(groups[1].key).toBe('iz_pervyh_ruk')
+    expect(groups[2].key).toBe('obshchiy_yazyk')
+
+    // I. Своими силами (kn1 → kn3 → kn4 by position)
+    expect(groups[0].books.map((b) => b.slug)).toEqual(['kn1', 'kn3', 'kn4'])
+    // II. Из первых рук (kn2 → kn5 → kn6)
+    expect(groups[1].books.map((b) => b.slug)).toEqual(['kn2', 'kn5', 'kn6'])
+    // III. Общий язык (kn7 — единственная сейчас; canon v2 §3 «группа с одной книгой»)
+    expect(groups[2].books.map((b) => b.slug)).toEqual(['kn7'])
   })
 
   it('loads exactly 7 books', () => {

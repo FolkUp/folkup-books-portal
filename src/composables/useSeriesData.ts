@@ -11,6 +11,7 @@ export type TrilogyKey = 'svoimi_silami' | 'iz_pervyh_ruk' | 'obshchiy_yazyk'
 export interface Trilogy {
   name: string
   arc: string
+  description?: string
 }
 
 export interface Book {
@@ -72,6 +73,22 @@ export function useSeriesData() {
 
   const bookBySlug = (slug: string) => books.value.find((b) => b.slug === slug)
 
+  // Iskra §3 VITRINNYY-PAKET S214: книги сгруппированы по трилогиям для главной.
+  // Порядок трилогий = порядок в trilogies map (svoimi_silami → iz_pervyh_ruk → obshchiy_yazyk).
+  // Внутри трилогии — по position field. Книги без trilogy field попадают в 'other'.
+  const booksByTrilogy = computed(() => {
+    const trilogies = series.value.trilogies
+    if (!trilogies) return []
+    const trilogyKeys = Object.keys(trilogies) as TrilogyKey[]
+    return trilogyKeys.map((key) => ({
+      key,
+      trilogy: trilogies[key],
+      books: books.value
+        .filter((b) => b.trilogy === key)
+        .sort((a, b) => a.position - b.position),
+    }))
+  })
+
   const liveBooks = computed(() => books.value.filter((b) => b.status === 'live'))
   const upcomingBooks = computed(() =>
     books.value.filter((b) => b.status === 'launch_target' || b.status === 'launch_preparing')
@@ -91,6 +108,7 @@ export function useSeriesData() {
     series,
     books,
     bookBySlug,
+    booksByTrilogy,
     liveBooks,
     upcomingBooks,
     stubBooks,

@@ -18,17 +18,37 @@
     "footer_contact": "editorial&#64;folkup.app"
   },
   "portal": {
+    "_translator_note": "PLATZHALTER — Iskra S214 §2/§3/§9 adaptiert aus RU-Kanon von Alice cont+20, wartet auf muttersprachliches Urteil von Bolik (DE-Übersetzer, Vier-Augen). §10-Regel: keine Zählungen, keine falsche Dringlichkeit, keine versprochenen Termine. Reihenname «Aus eigenem Kopf» aus vorherigem Nachbar-Commit als vorläufige Idiom-Wahl übernommen; Übersetzer kann verfeinern.",
     "title": "FolkUp-Bibliothek",
-    "hero": "Bücher darüber, wie Menschen gemeinsam etwas zustande bringen — und warum das schwer bleibt.",
-    "series_intro": "«Aus eigenem Kopf» — drei Gespräche: wie Teams etwas erschaffen, wie Wissen uns erreicht, wie Menschen eine gemeinsame Sprache finden. Bände erscheinen, wenn sie fertig sind.",
+    "hero": "FolkUp-Bibliothek — freie Bücher über Team, Wissen und Verständigung: wie Menschen ihre Arbeit tun, wie Wissen sie unverfälscht erreicht und warum es schwieriger ist, sich zu einigen, als es scheint.",
+    "series_intro": "Reihe «Aus eigenem Kopf» — Bücher darüber, wie man selbst zurechtkommt. Offene Bände sind mit «Lesen» markiert.",
     "read_book": "Buch lesen",
+    "read_book_short": "Lesen",
     "download_epub": "EPUB herunterladen",
     "coming_soon": "Bald verfügbar",
     "in_pause": "Pausiert",
     "translations_heading": "Sprachfassungen",
     "translation_available": "verfügbar",
     "translation_stub_short": "in Arbeit",
-    "translation_stub_full": "Die Übersetzung entsteht in der FolkUp-Werkstatt. Das Exponat wird bald in diesem Saal gezeigt."
+    "translation_stub_full": "Die Übersetzung entsteht in der FolkUp-Werkstatt. Das Exponat wird bald in diesem Saal gezeigt.",
+    "trilogies": {
+      "svoimi_silami": {
+        "name": "Mit eigenen Kräften",
+        "description": "Wie ein Team seine Arbeit tut: lernt sich selbst zu sehen, erfindet eine bessere Form und bringt hervor, was zuvor nicht da war."
+      },
+      "iz_pervyh_ruk": {
+        "name": "Aus erster Hand",
+        "description": "Wie Wissen zu uns kommt: durch jene, die es weggesperrt haben, durch jene, die dazwischenstehen — und wie zu prüfen, dass angekommen ist, was gemeint war."
+      },
+      "obshchiy_yazyk": {
+        "name": "Gemeinsame Sprache",
+        "description": "Warum es schwieriger ist, sich zu einigen, als es scheint, und was man dagegen tun kann."
+      }
+    },
+    "feedback_heading": "Rückmeldung",
+    "feedback_text": "Einen Fehler gefunden? Schreiben Sie uns — wir korrigieren ihn in der nächsten Version.",
+    "feedback_url": "https://github.com/FolkUp/books-feedback/issues",
+    "feedback_link_text": "github.com/FolkUp/books-feedback"
   },
   "footer": {
     "copyright": "© {year} Команданте FolkUp · Inhalt CC BY-SA 4.0 · Code MIT"

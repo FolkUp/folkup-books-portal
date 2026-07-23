@@ -18,17 +18,37 @@
     "footer_contact": "editorial&#64;folkup.app"
   },
   "portal": {
+    "_translator_note": "PLACEHOLDER — Iskra S214 §2/§3/§9 adaptado do cânone RU por Alice cont+20, aguarda parecer nativo de Lelik (tradutor PT-EU, Quatro Olhos). Regra §10: sem contagens, sem falsa urgência, sem datas prometidas. Nome da série «Pela Própria Cabeça» mantido do commit anterior como idioma tentativo; o tradutor pode refinar. PT-EU obrigatório, sem brasileirismos.",
     "title": "Biblioteca FolkUp",
-    "hero": "Livros sobre como as pessoas fazem as coisas em conjunto — e por que continua a ser difícil.",
-    "series_intro": "«Pela Própria Cabeça» — três conversas: como as equipas criam, como o conhecimento chega até nós, como as pessoas se entendem. Os volumes abrem à medida que ficam prontos.",
+    "hero": "Biblioteca FolkUp — livros livres sobre equipa, conhecimento e entendimento: como as pessoas fazem o seu trabalho, como o conhecimento chega até elas sem distorção e porque entender-se é mais difícil do que parece.",
+    "series_intro": "Série «Pela Própria Cabeça» — livros sobre como orientar-se por si próprio. Os volumes abertos estão marcados com «Ler».",
     "read_book": "Ler livro",
+    "read_book_short": "Ler",
     "download_epub": "Descarregar EPUB",
     "coming_soon": "Em breve",
     "in_pause": "Em pausa",
     "translations_heading": "Versões linguísticas",
     "translation_available": "disponível",
     "translation_stub_short": "em preparação",
-    "translation_stub_full": "A tradução está a ganhar forma na oficina FolkUp. A peça chegará em breve a esta sala."
+    "translation_stub_full": "A tradução está a ganhar forma na oficina FolkUp. A peça chegará em breve a esta sala.",
+    "trilogies": {
+      "svoimi_silami": {
+        "name": "Pelas Próprias Mãos",
+        "description": "Como uma equipa faz o seu trabalho: aprende a ver-se a si mesma, inventa uma forma melhor e traz ao mundo o que antes não existia."
+      },
+      "iz_pervyh_ruk": {
+        "name": "Em Primeira Mão",
+        "description": "Como o conhecimento chega até nós: através dos que o trancaram, através dos que estão pelo meio — e como verificar que chegou aquilo que se quis dizer."
+      },
+      "obshchiy_yazyk": {
+        "name": "Língua Comum",
+        "description": "Porque entender-se é mais difícil do que parece, e o que se pode fazer quanto a isso."
+      }
+    },
+    "feedback_heading": "Comentários",
+    "feedback_text": "Encontrou um erro? Escreva-nos — corrigi-lo-emos na próxima versão.",
+    "feedback_url": "https://github.com/FolkUp/books-feedback/issues",
+    "feedback_link_text": "github.com/FolkUp/books-feedback"
   },
   "footer": {
     "copyright": "© {year} Команданте FolkUp · Conteúdo CC BY-SA 4.0 · Código MIT"

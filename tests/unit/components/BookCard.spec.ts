@@ -57,9 +57,10 @@ describe('BookCard', () => {
     expect(img.attributes('loading')).toBe('lazy')
   })
 
-  it('renders status "Читать книгу" для live book', () => {
+  it('renders status "Читать" (short) для live book (Iskra §6 VITRINNYY-PAKET S214)', () => {
+    // Iskra §6 canonical: короткий лейбл вместо «Читать книгу» для снижения визуального шума.
     const wrapper = createBookCard(liveBook)
-    expect(wrapper.find('.book-card__status').text()).toBe('Читать книгу')
+    expect(wrapper.find('.book-card__status').text()).toBe('Читать')
   })
 
   it('renders status "В паузе" для Variant B book', () => {
