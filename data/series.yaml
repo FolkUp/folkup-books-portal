@@ -4,12 +4,16 @@
 # Covers v1 (S138 Иви pack): временные, канон до финального арта Фриды/Ремедиос.
 #   Каждая обложка несёт круглый штамп «ЭКСПОНАТ НА РЕСТАВРАЦИИ» (переведён по языку).
 #   DE обложки содержат «Kommandant» — pending regen с «Comandante» per Иви S152.
+# CANON v2 «Своим умом» Iskra S214 2026-07-23 (виза Andrey «раз и навсегда»):
+#   Серия — «Своим умом»; читателю нумерация НЕ показывается (canon v2 §1).
+#   Внутренний порядок = карта замысла: создаём → получаем без искажений → договариваемся.
+#   Три трилогии: I. «Своими силами» (kn1+kn3+kn4) · II. «Из первых рук» (kn2+kn5+kn6) · III. «Общий язык» (kn7+…)
+#   Slug ≠ position: URL /kn1–/kn7 живой, не меняем; position = поле сортировки карточек.
 
 series:
-  # Series naming per Iskra S213 P0-ZHIVOY-OBKHOD §5:
-  # «Agile Sapiens» = title кн.1, не серии. Серия = FolkUp (7 книг о разных обликах команды).
-  # Applied cont+18 carte-blanche best-guess; rollback trivial if Andrey overrides formulation.
-  name: FolkUp
+  # CANON v2 Iskra S214: серия «Своим умом» (виза Andrey — «FolkUp» бренд, не имя серии).
+  # DE/EN/PT идиомы уйдут Болику/Лёлику/Зеке отдельно; до их вердикта — RU placeholder.
+  name: Своим умом
   # Public author display = pseudonym per Andrei Q10 verdict via Iskra S178b 2026-07-18.
   # Legal name «Andrei Klemenchionok» reserved для /ai-disclosure page (AI Act Art. 50(4))
   # per Лев Option F + Andrei explicit «Моё имя указываем только там, где требуется юридически».
@@ -20,11 +24,29 @@ series:
   total_books: 7
   publisher: FolkUp Ecosystem
   publisher_imprint: Редакция FolkUp
+  # Трилогии — внутренняя карта замысла (canon v2 §3).
+  # DE/EN/PT — placeholder RU до перевода (Iskra §1 «не подстрочник»).
+  trilogies:
+    svoimi_silami:
+      name: Своими силами
+      arc: команда создаёт
+    iz_pervyh_ruk:
+      name: Из первых рук
+      arc: знание доходит до нас
+    obshchiy_yazyk:
+      name: Общий язык
+      arc: люди договариваются
 
+# CANON v2 §2 таблица переномеровки (виза Andrey):
+#   kn1 pos 1 (I·1) · kn3 pos 2 (I·2) · kn4 pos 3 (I·3)
+#   kn2 pos 4 (II·1) · kn5 pos 5 (II·2) · kn6 pos 6 (II·3)
+#   kn7 pos 7 (III·1) · будущие тома III·2, III·3
+# Slug /kn1–/kn7 НЕ меняется — технический идентификатор.
 books:
   - position: 1
     slug: kn1
     slug_en_temp: agile-sapiens
+    trilogy: svoimi_silami
     status: live
     version: 1.0.14
     launch_date: 2026-05-24
@@ -54,25 +76,9 @@ books:
     isbn: null  # Pending Гутенберг + Bowker
 
   - position: 2
-    slug: kn2
-    slug_en_temp: consonants-without-vowels
-    status: stub
-    launch_target: 2026-Q3
-    cover_v1: /covers/cover_kn2.svg
-    covers:
-      ru: /covers/cover_kn2.svg
-      en: /covers/cover_kn2_en.svg
-      de: /covers/cover_kn2_de.svg
-      pt: /covers/cover_kn2_pt.svg
-    translations:
-      ru: preparing
-      de: preparing
-      en: preparing
-      pt: preparing
-
-  - position: 3
     slug: kn3
     slug_en_temp: city-of-the-sun
+    trilogy: svoimi_silami
     status: stub
     launch_target: 2026-Q3
     illustration_style: Bauhaus / Kandinsky
@@ -88,9 +94,10 @@ books:
       en: preparing
       pt: preparing
 
-  - position: 4
+  - position: 3
     slug: kn4
     slug_en_temp: where-the-new-lives
+    trilogy: svoimi_silami
     status: live
     version: 1.0.0
     launch_date: 2026-07-22
@@ -111,9 +118,28 @@ books:
       en: preparing
       pt: preparing
 
+  - position: 4
+    slug: kn2
+    slug_en_temp: consonants-without-vowels
+    trilogy: iz_pervyh_ruk
+    status: stub
+    launch_target: 2026-Q3
+    cover_v1: /covers/cover_kn2.svg
+    covers:
+      ru: /covers/cover_kn2.svg
+      en: /covers/cover_kn2_en.svg
+      de: /covers/cover_kn2_de.svg
+      pt: /covers/cover_kn2_pt.svg
+    translations:
+      ru: preparing
+      de: preparing
+      en: preparing
+      pt: preparing
+
   - position: 5
     slug: kn5
     slug_en_temp: by-others-hands
+    trilogy: iz_pervyh_ruk
     status: launch_preparing
     launch_note: "Финальные приёмки. Дата определится ближе к выходу."
     cover_v1: /covers/cover_kn5.svg
@@ -131,6 +157,7 @@ books:
   - position: 6
     slug: kn6
     slug_en_temp: own-eyes
+    trilogy: iz_pervyh_ruk
     status: stub
     launch_target: 2026-Q4
     cover_v1: /covers/cover_kn6.svg
@@ -148,6 +175,7 @@ books:
   - position: 7
     slug: kn7
     slug_en_temp: lost-in-conversation
+    trilogy: obshchiy_yazyk
     status: svod_zakryt_pre_shit_v5  # Variant B UNLOCKED S151 (Андрей сигнал 2026-07-02). Свод закрыт (S120 master + вставка «Переводчик» S142 + Занзибар v10). ЩИТ v5.0 после кн.3 — только тогда публикация. Label «Скоро» via BookCard mapping (cont+28 Иве S170 update).
     cover_v1: /covers/cover_kn7.svg
     covers:

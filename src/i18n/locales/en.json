@@ -5,8 +5,8 @@
   },
   "portal": {
     "title": "FolkUp Library",
-    "hero": "The FolkUp Library — seven books on teams and people: from classical management analysis to utopias, intermediaries, innovation, fact-checking, and barriers to understanding.",
-    "series_intro": "The FolkUp series — seven books on the many faces of teamwork. Open volumes are marked «Read».",
+    "hero": "Библиотека FolkUp — книги о команде и людях: от классического анализа менеджмента до утопий, посредников, проверки фактов и барьеров понимания. [placeholder until translator — canon v2 «Своим умом» Iskra S214]",
+    "series_intro": "Серия «Своим умом» — книги о разных обликах командной работы. Открытые тома отмечены статусом «Читать». [placeholder until translator]",
     "read_book": "Read book",
     "download_epub": "Download EPUB",
     "coming_soon": "Coming soon",

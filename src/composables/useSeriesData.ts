@@ -5,10 +5,19 @@ import seriesYamlRaw from '@data/series.yaml?raw'
 export type TranslationStatus = 'live' | 'preparing'
 export type Locale = 'ru' | 'de' | 'en' | 'pt'
 
+// Canon v2 Iskra S214: trilogy keys = svoimi_silami / iz_pervyh_ruk / obshchiy_yazyk
+export type TrilogyKey = 'svoimi_silami' | 'iz_pervyh_ruk' | 'obshchiy_yazyk'
+
+export interface Trilogy {
+  name: string
+  arc: string
+}
+
 export interface Book {
   position: number
   slug: string
   slug_en_temp: string
+  trilogy?: TrilogyKey
   status: 'live' | 'stub' | 'launch_target' | 'launch_preparing' | 'variant_b_pause' | 'svod_zakryt_pre_shit_v5'
   canonical_pre_cutover?: string
   version?: string
@@ -46,6 +55,7 @@ export interface SeriesMeta {
   total_books: number
   publisher: string
   publisher_imprint: string
+  trilogies?: Record<TrilogyKey, Trilogy>
 }
 
 interface SeriesData {
