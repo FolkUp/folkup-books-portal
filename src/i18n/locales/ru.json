@@ -15,7 +15,7 @@
     "footer_terms": "Условия",
     "footer_cookies": "Cookies",
     "footer_imprint": "Правовые сведения",
-    "footer_contact": "editorial&#64;folkup.app"
+    "footer_contact": "editorial{'@'}folkup.app"
   },
   "portal": {
     "title": "Библиотека FolkUp",
@@ -97,7 +97,7 @@
     "section1": {
       "h2": "Ответственность за содержание",
       "p1": "Книги «Библиотеки FolkUp» подписаны псевдонимом «Команданте FolkUp». За псевдонимом стоит один живой человек: Андрей Клеменчёнок, резидент Португалии, издатель и редактор. Псевдоним — pattern Banksy для non-commercial brand identity, не сокрытие ответственности.",
-      "p2": "Контакт по редакционным и юридическим вопросам: editorial{'@'}folkup.app"
+      "p2": "Контакт по редакционным и юридическим вопросам: editorial&#64;folkup.app"
     },
     "section2": {
       "h2": "Как мы используем ИИ",

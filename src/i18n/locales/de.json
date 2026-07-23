@@ -15,7 +15,7 @@
     "footer_terms": "Nutzungsbedingungen",
     "footer_cookies": "Cookies",
     "footer_imprint": "Impressum",
-    "footer_contact": "editorial&#64;folkup.app"
+    "footer_contact": "editorial{'@'}folkup.app"
   },
   "portal": {
     "_translator_note": "PLATZHALTER — Iskra S214 §2/§3/§9 adaptiert aus RU-Kanon von Alice cont+20, wartet auf muttersprachliches Urteil von Bolik (DE-Übersetzer, Vier-Augen). §10-Regel: keine Zählungen, keine falsche Dringlichkeit, keine versprochenen Termine. Reihenname «Aus eigenem Kopf» aus vorherigem Nachbar-Commit als vorläufige Idiom-Wahl übernommen; Übersetzer kann verfeinern.",
@@ -69,7 +69,7 @@
     "section1": {
       "h2": "Redaktionelle Verantwortung",
       "p1": "Die Bücher der FolkUp-Bibliothek sind mit dem Pseudonym «Команданте FolkUp» unterschrieben. Hinter dem Pseudonym steht ein lebender Mensch: Andrei Klemenchionok, Portugal-Resident, Verleger und Redakteur. Das Pseudonym ist ein Banksy-Muster für nicht-kommerzielle Markenidentität, keine Verschleierung der Verantwortung.",
-      "p2": "Redaktioneller und rechtlicher Kontakt: editorial{'@'}folkup.app"
+      "p2": "Redaktioneller und rechtlicher Kontakt: editorial&#64;folkup.app"
     },
     "section2": {
       "h2": "Wie wir KI verwenden",
