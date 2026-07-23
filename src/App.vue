@@ -12,8 +12,24 @@ const DEFAULT_OG_IMAGE = `${SITE_URL}/covers/cover_kn1.svg`
 const SUPPORTED_LOCALES = ['ru', 'en', 'de', 'pt'] as const
 type SupportedLocale = (typeof SUPPORTED_LOCALES)[number]
 
-// Current URL (per-route reactive) for hreflang self-reference
+// Current URL (per-route reactive)
 const currentUrl = () => `${SITE_URL}${route.path}`
+
+// Schema.org Organization — publisher identity (per Дьюи SEO audit 2026-07-23)
+const ORGANIZATION_JSONLD = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'FolkUp',
+  alternateName: 'Библиотека FolkUp',
+  url: SITE_URL,
+  logo: `${SITE_URL}/brand-mark.svg`,
+  sameAs: [
+    'https://folkup.app',
+    'https://sapiens.folkup.life',
+    'https://t.me/folkupbooks',
+    'https://github.com/FolkUp',
+  ],
+}
 
 function switchLocale(lang: SupportedLocale): void {
   locale.value = lang
@@ -38,13 +54,17 @@ useHead({
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:image', content: DEFAULT_OG_IMAGE },
   ],
+  // hreflang: SPA client-side locale switch — все 5 tags указывают на тот же URL.
+  // TODO(next batch): implement path-prefix routing (/en/privacy /de/privacy /pt/privacy)
+  // для полноценной per-locale indexation. See BACKLOG ticket PORTAL-P0-HREFLANG-PATH-PREFIX.
   link: [
-    // hreflang: 4 locales — canon v2 all 4 supported (Iskra S214 + Andrey mandate portal PROD-ready 2026-07-23)
-    { rel: 'alternate', hreflang: 'ru', href: currentUrl },
-    { rel: 'alternate', hreflang: 'en', href: currentUrl },
-    { rel: 'alternate', hreflang: 'de', href: currentUrl },
-    { rel: 'alternate', hreflang: 'pt', href: currentUrl },
     { rel: 'alternate', hreflang: 'x-default', href: currentUrl },
+  ],
+  script: [
+    {
+      type: 'application/ld+json',
+      innerHTML: JSON.stringify(ORGANIZATION_JSONLD),
+    },
   ],
 })
 </script>
@@ -52,7 +72,10 @@ useHead({
 <template>
   <div class="app">
     <header class="site-header">
-      <RouterLink to="/" class="brand-mark">{{ t('brand.name') }}</RouterLink>
+      <RouterLink to="/" class="brand-mark">
+        <img src="/brand-mark.svg" alt="" aria-hidden="true" class="brand-mark__icon" />
+        <span class="brand-mark__text">{{ t('brand.name') }}</span>
+      </RouterLink>
       <nav class="lang-switcher" :aria-label="t('nav.language_label')">
         <button
           v-for="lang in SUPPORTED_LOCALES"
@@ -115,10 +138,23 @@ useHead({
 }
 
 .brand-mark {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
   font-family: var(--font-brand);
   font-size: 1.5rem;
   color: var(--color-primary);
   text-decoration: none;
+}
+
+.brand-mark__icon {
+  width: 1.75rem;
+  height: 1.75rem;
+  flex-shrink: 0;
+}
+
+.brand-mark__text {
+  line-height: 1;
 }
 
 .lang-switcher {
