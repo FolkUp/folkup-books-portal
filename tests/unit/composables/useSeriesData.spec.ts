@@ -42,8 +42,10 @@ describe('useSeriesData', () => {
   })
 
   it('liveBooks filters correctly', () => {
-    expect(liveBooks.value).toHaveLength(1)
-    expect(liveBooks.value[0].slug).toBe('kn1')
+    // kn.1 (v1.0.14 LIVE with 3 factual updates) + kn.4 (flip S213 Вариант А per Iskra VIZA-PAKET 2026-07-23)
+    expect(liveBooks.value).toHaveLength(2)
+    const slugs = liveBooks.value.map((b) => b.slug).sort()
+    expect(slugs).toEqual(['kn1', 'kn4'])
   })
 
   it('upcomingBooks filters correctly', () => {
