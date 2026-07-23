@@ -5,7 +5,8 @@ describe('useSeriesData', () => {
   const { series, books, bookBySlug, liveBooks, upcomingBooks, stubBooks, gatedBooks } = useSeriesData()
 
   it('loads series metadata from series.yaml', () => {
-    expect(series.value.name).toBe('Agile Sapiens')
+    // Series name canonized «FolkUp» per Iskra P0-ZHIVOY §5 (cont+18) — «Agile Sapiens» = title кн.1, не серии.
+    expect(series.value.name).toBe('FolkUp')
     expect(series.value.total_books).toBe(7)
     expect(series.value.license).toBe('CC BY-SA 4.0')
     // Q10 verdict via Iskra S178b 2026-07-18: public author = pseudonym.
