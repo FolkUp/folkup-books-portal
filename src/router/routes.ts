@@ -67,6 +67,30 @@ export const routes: RouteRecordRaw[] = [
     meta: { pageType: 'ai-disclosure' },
   },
   {
+    path: '/privacy',
+    name: 'privacy',
+    component: () => import('../pages/legal/privacy.vue'),
+    meta: { pageType: 'legal', pageKey: 'privacy' },
+  },
+  {
+    path: '/terms',
+    name: 'terms',
+    component: () => import('../pages/legal/terms.vue'),
+    meta: { pageType: 'legal', pageKey: 'terms' },
+  },
+  {
+    path: '/cookies',
+    name: 'cookies',
+    component: () => import('../pages/legal/cookies.vue'),
+    meta: { pageType: 'legal', pageKey: 'cookies' },
+  },
+  {
+    path: '/imprint',
+    name: 'imprint',
+    component: () => import('../pages/legal/imprint.vue'),
+    meta: { pageType: 'legal', pageKey: 'imprint' },
+  },
+  {
     path: '/:pathMatch(.*)*',
     name: 'not-found',
     component: () => import('../pages/404.vue'),

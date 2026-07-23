@@ -3,10 +3,24 @@
     "name": "FolkUp-Bibliothek",
     "tagline": "Bücher über Teams, Führung, Dialog"
   },
+  "nav": {
+    "language_label": "Sprache",
+    "language_ru": "RU",
+    "language_en": "EN",
+    "language_de": "DE",
+    "language_pt": "PT",
+    "footer_about": "Über das Projekt",
+    "footer_ai_disclosure": "KI-Nutzung",
+    "footer_privacy": "Datenschutz",
+    "footer_terms": "Nutzungsbedingungen",
+    "footer_cookies": "Cookies",
+    "footer_imprint": "Impressum",
+    "footer_contact": "editorial@folkup.app"
+  },
   "portal": {
     "title": "FolkUp-Bibliothek",
-    "hero": "Библиотека FolkUp — книги о команде и людях: от классического анализа менеджмента до утопий, посредников, проверки фактов и барьеров понимания. [placeholder until translator — canon v2 «Своим умом» Iskra S214]",
-    "series_intro": "Серия «Своим умом» — книги о разных обликах командной работы. Открытые тома отмечены статусом «Читать». [placeholder until translator]",
+    "hero": "Bücher darüber, wie Menschen gemeinsam etwas zustande bringen — und warum das schwer bleibt.",
+    "series_intro": "«Aus eigenem Kopf» — drei Gespräche: wie Teams etwas erschaffen, wie Wissen uns erreicht, wie Menschen eine gemeinsame Sprache finden. Bände erscheinen, wenn sie fertig sind.",
     "read_book": "Buch lesen",
     "download_epub": "EPUB herunterladen",
     "coming_soon": "Bald verfügbar",
@@ -56,6 +70,109 @@
     "section4": {
       "h2": "Lizenz",
       "p1": "Der gesamte Bibliotheksinhalt steht unter Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). Infrastrukturcode — MIT."
+    }
+  },
+  "legal": {
+    "last_updated_label": "Zuletzt aktualisiert:",
+    "last_updated_date": "23.07.2026",
+    "privacy": {
+      "title": "Datenschutzerklärung",
+      "meta_description": "Wie wir mit Daten auf books.folkup.life umgehen. Kurze Antwort: Wir erheben nichts Persönliches. Ausführliche Angaben zu Verantwortlichem, technischen Protokollen, Cookies und Ihren DSGVO-Rechten.",
+      "content": [
+        "<h2>Wer diese Seite betreibt</h2>",
+        "<p>Dieses Portal wird betrieben von <strong>Andrei Klemenchionok</strong>, einer natürlichen Person mit Wohnsitz in Portugal, die Bücher unter dem Pseudonym «Команданте FolkUp» veröffentlicht. Es handelt sich um ein nicht-kommerzielles Hobbyprojekt zur Buchveröffentlichung.</p>",
+        "<p>Kontakt für Datenschutzangelegenheiten: <a href='mailto:rights@folkup.app'>rights@folkup.app</a><br>Allgemeiner redaktioneller Kontakt: <a href='mailto:editorial@folkup.app'>editorial@folkup.app</a></p>",
+        "<h2>Welche Daten wir erheben</h2>",
+        "<p><strong>Persönlich: keine.</strong></p>",
+        "<ul><li>Keine Nutzerkonten, keine Registrierung</li><li>Keine Formulare, keine Kommentare, keine Käufe</li><li>Kein Newsletter, keine Tracking-Pixel</li><li>Keine Verhaltensanalyse</li></ul>",
+        "<p><strong>Technisch:</strong> Cloudflare (unser Infrastrukturanbieter) verarbeitet standardmäßige HTTP-Anfrageprotokolle — Ihre IP-Adresse, den Zeitstempel, die angefragte URL und den User-Agent. Das ist für den Grundbetrieb und den DDoS-Schutz notwendig. Wir greifen nicht auf diese Protokolle zu, aggregieren oder analysieren sie nicht. Cloudflare bewahrt sie gemäß seiner Standardrichtlinie etwa 90 Tage auf.</p>",
+        "<h2>Wer sonst noch Ihre Daten sieht</h2>",
+        "<ul><li><strong>Cloudflare, Inc.</strong> (CDN, DDoS-Abwehr, Hosting). Cloudflare ist DSGVO-konform; der Datenverarbeitungszusatz ist öffentlich verfügbar unter <a href='https://www.cloudflare.com/cloudflare-customer-dpa/' rel='noopener'>cloudflare.com/cloudflare-customer-dpa</a>.</li></ul>",
+        "<p>Es werden keine Daten verkauft, an Werbetreibende weitergegeben oder an andere Dritte übermittelt.</p>",
+        "<h2>Cookies</h2>",
+        "<p>Siehe unsere <a href='/cookies'>Cookie-Richtlinie</a>. Kurzfassung: keine Tracking-Cookies. Nur unbedingt erforderliche technische Cookies, die Cloudflare zur Bot-Verwaltung setzt.</p>",
+        "<h2>Ihre Rechte nach der DSGVO</h2>",
+        "<p>Nach der Verordnung (EU) 2016/679 (Datenschutz-Grundverordnung, DSGVO), Artikel 12–22, haben Sie folgende Rechte:</p>",
+        "<ul><li><strong>Auskunft</strong> über personenbezogene Daten, die wir über Sie speichern</li><li><strong>Berichtigung</strong> unrichtiger Daten</li><li><strong>Löschung</strong> («Recht auf Vergessenwerden»)</li><li><strong>Datenübertragbarkeit</strong> in einem maschinenlesbaren Format</li><li><strong>Widerspruch</strong> gegen die Verarbeitung</li><li><strong>Beschwerde</strong> bei Ihrer nationalen Datenschutzaufsichtsbehörde (in Portugal: <a href='https://www.cnpd.pt/' rel='noopener'>CNPD</a>; in Deutschland: die zuständige Landesdatenschutzbehörde oder der <a href='https://www.bfdi.bund.de/' rel='noopener'>BfDI</a>)</li></ul>",
+        "<p>Da wir keine Datenbank mit personenbezogenen Daten führen, haben die meisten dieser Rechte auf dieser Seite nur begrenzte praktische Wirkung — sie stehen Ihnen aber zu. Wenden Sie sich an <a href='mailto:rights@folkup.app'>rights@folkup.app</a>, um sie auszuüben.</p>",
+        "<h2>Kein Profiling, keine automatisierten Entscheidungen</h2>",
+        "<p>Wir erstellen keine Profile von Besuchern und treffen keine automatisierten Entscheidungen über Sie.</p>",
+        "<h2>Änderungen</h2>",
+        "<p>Wenn sich diese Richtlinie ändert, wird das im Datum «Zuletzt aktualisiert» oben vermerkt. Wesentliche Änderungen werden mindestens 30 Tage lang auf der Startseite angezeigt.</p>"
+      ]
+    },
+    "terms": {
+      "title": "Nutzungsbedingungen",
+      "meta_description": "Bedingungen für die Nutzung von books.folkup.life. Inhalte unter CC BY-SA 4.0, kostenlos zu lesen und zu teilen. Portugiesisches Recht.",
+      "content": [
+        "<h2>Was diese Seite ist</h2>",
+        "<p><strong>books.folkup.life</strong> ist ein kostenloses Portal, das Bücher von Команданте FolkUp (dem Pseudonym von Andrei Klemenchionok, Portugal) veröffentlicht. Online lesen, herunterladen, teilen.</p>",
+        "<p>Dies ist ein nicht-kommerzielles Hobbyprojekt. Es gibt keine kostenpflichtigen Funktionen, keine Konten, keine Abonnements.</p>",
+        "<h2>Lizenz für die Inhalte</h2>",
+        "<p>Alle Bücher und Textinhalte auf diesem Portal werden unter der <strong>Creative Commons Attribution-ShareAlike 4.0 International License</strong> (<a href='https://creativecommons.org/licenses/by-sa/4.0/' rel='noopener'>CC BY-SA 4.0</a>) veröffentlicht.</p>",
+        "<p>Es ist Ihnen gestattet:</p>",
+        "<ul><li><strong>Teilen</strong> — das Material in jedem Medium und Format zu vervielfältigen und weiterzuverbreiten</li><li><strong>Bearbeiten</strong> — das Material zu remixen, zu verändern und darauf aufzubauen, für beliebige Zwecke, sogar kommerziell</li></ul>",
+        "<p>Unter folgenden Bedingungen:</p>",
+        "<ul><li><strong>Namensnennung</strong> — Sie müssen «Команданте FolkUp» angemessen nennen, einen Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden</li><li><strong>Weitergabe unter gleichen Bedingungen</strong> — wenn Sie das Material remixen oder darauf aufbauen, müssen Sie Ihre Beiträge unter derselben Lizenz verbreiten</li></ul>",
+        "<p>Das Entfernen der Namensnennung oder die Neulizenzierung abgeleiteter Werke unter unvereinbaren Bedingungen verstößt gegen die Lizenz und gegen portugiesisches Urheberrecht.</p>",
+        "<h2>Infrastrukturcode</h2>",
+        "<p>Jeglicher Quellcode, der diesem Portal zugrunde liegt (Seitenvorlagen, Build-Skripte), ist gesondert unter der <strong>MIT-Lizenz</strong> lizenziert und in unseren öffentlichen Repositorien verfügbar.</p>",
+        "<h2>Keine Gewährleistung</h2>",
+        "<p>Die Inhalte werden <strong>«wie besehen»</strong> bereitgestellt, ohne jegliche Gewährleistung. Dies ist ein Amateur-Verlagsprojekt — wir geben unser Bestes, garantieren aber weder Richtigkeit noch Vollständigkeit noch Eignung für einen bestimmten Zweck.</p>",
+        "<h2>Haftungsbeschränkung</h2>",
+        "<p>Im größtmöglichen nach portugiesischem Recht zulässigen Umfang haftet Andrei Klemenchionok nicht für direkte, indirekte, zufällige oder Folgeschäden, die sich aus Ihrer Nutzung dieser Seite oder ihrer Inhalte ergeben.</p>",
+        "<h2>Ihre Pflichten</h2>",
+        "<ul><li>Halten Sie die Lizenzbedingungen von CC BY-SA 4.0 bei der Weiterverwendung von Inhalten ein</li><li>Versuchen Sie nicht, die Seite zu stören (DDoS, missbräuchliches Scraping und Ähnliches)</li><li>Geben Sie sich nicht als Herausgeber aus</li></ul>",
+        "<h2>Anwendbares Recht und Gerichtsstand</h2>",
+        "<p>Diese Bedingungen unterliegen <strong>portugiesischem Recht</strong>. Für alle Streitigkeiten sind ausschließlich die portugiesischen Gerichte zuständig, vorbehaltlich zwingender Verbraucherschutzrechte, die Ihnen als EU-Bürger zustehen.</p>",
+        "<h2>Änderungen</h2>",
+        "<p>Die Bedingungen können aktualisiert werden. Das Datum «Zuletzt aktualisiert» oben spiegelt die aktuelle Fassung wider.</p>"
+      ]
+    },
+    "cookies": {
+      "title": "Cookie-Richtlinie",
+      "meta_description": "Diese Seite verwendet keine Tracking-Cookies. Nur unbedingt erforderliche Cloudflare-Cookies zur Bot-Abwehr. Deshalb kein Cookie-Banner.",
+      "content": [
+        "<h2>Kurzfassung</h2>",
+        "<p><strong>Diese Seite verwendet keine Tracking-Cookies, keine Analyse-Cookies und keine Werbe-Cookies.</strong></p>",
+        "<p>Deshalb sehen Sie kein Cookie-Einwilligungsbanner — nach der ePrivacy-Richtlinie 2002/58/EG (in der geänderten Fassung) und Erwägungsgrund 66 ist keine Einwilligung erforderlich für Cookies, die «unbedingt erforderlich» sind, um einen vom Nutzer angeforderten Dienst zu erbringen.</p>",
+        "<h2>Welche Cookies gesetzt werden können</h2>",
+        "<p>Die einzigen Cookies, die beim Besuch dieser Seite in Ihrem Browser erscheinen können, werden von <strong>Cloudflare</strong>, unserem Infrastrukturanbieter, aus Sicherheits- und Missbrauchsschutzgründen gesetzt:</p>",
+        "<table><thead><tr><th>Cookie</th><th>Gesetzt von</th><th>Zweck</th><th>Dauer</th></tr></thead><tbody><tr><td><code>__cf_bm</code></td><td>Cloudflare</td><td>Bot-Verwaltung — unterscheidet Menschen von automatisiertem Datenverkehr zum Schutz vor Missbrauch</td><td>30 Minuten</td></tr><tr><td><code>cf_clearance</code></td><td>Cloudflare</td><td>Vermerkt, dass ein Besucher eine Sicherheitsprüfung bestanden hat (wird nur gesetzt, wenn eine Prüfung ausgelöst wird)</td><td>30 Tage</td></tr></tbody></table>",
+        "<p>Beide werden nach DSGVO- / ePrivacy-Auslegung und Cloudflares eigener <a href='https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/' rel='noopener'>Cookie-Dokumentation</a> als <strong>unbedingt erforderlich</strong> eingestuft.</p>",
+        "<h2>Was wir nicht verwenden</h2>",
+        "<ul><li>Kein Google Analytics, kein Matomo, kein Plausible, kein Fathom</li><li>Keine Werbe-Cookies (kein Google Ads, kein Facebook Pixel, gar nichts dergleichen)</li><li>Keine Einbettungs-Cookies für soziale Netzwerke (wir binden weder Facebook noch Twitter und Ähnliches ein)</li><li>Keine CDN-Cookies für Schriften oder Skripte Dritter (Schriften werden selbst gehostet)</li><li>Keine Sitzungs-Cookies (wir haben keine Konten)</li></ul>",
+        "<p>Sollten wir jemals eine cookielose Analyse einsetzen (etwa Cloudflare Web Analytics, das keine Cookies verwendet und keine Einzelpersonen verfolgt), wird diese Richtlinie aktualisiert.</p>",
+        "<h2>Ihre Kontrolle</h2>",
+        "<p>Sie können Cookies über die Einstellungen Ihres Browsers deaktivieren oder löschen. Das kann die Fähigkeit Cloudflares beeinträchtigen, Ihren Datenverkehr von automatisiertem Missbrauch zu unterscheiden, die Seite bleibt aber funktionsfähig.</p>",
+        "<h2>Kontakt</h2>",
+        "<p>Fragen zu Cookies? Schreiben Sie an <a href='mailto:rights@folkup.app'>rights@folkup.app</a>.</p>"
+      ]
+    },
+    "imprint": {
+      "title": "Impressum",
+      "meta_description": "Impressum gemäß §5 TMG. Verantwortlich: Andrei Klemenchionok, Portugal, veröffentlicht unter dem Pseudonym Команданте FolkUp.",
+      "content": [
+        "<p><em>Angaben gemäß <strong>§5 TMG (Telemediengesetz, Deutschland)</strong> und allgemeiner guter EU-Praxis für Seiten, die in der gesamten Europäischen Union abrufbar sind.</em></p>",
+        "<h2>Diensteanbieter</h2>",
+        "<p><strong>Andrei Klemenchionok</strong><br>Natürliche Person, wohnhaft in Portugal<br>Kontakt: <a href='mailto:editorial@folkup.app'>editorial@folkup.app</a><br>Veröffentlichung unter dem Pseudonym: <strong>Команданте FolkUp</strong></p>",
+        "<p>Dies ist ein nicht-kommerzielles Hobbyprojekt zur Buchveröffentlichung. Es ist <strong>kein</strong> eingetragenes Unternehmen. Es gibt keine Umsatzsteuer-Identifikationsnummer, keinen Handelsregistereintrag und keine Kammerzugehörigkeit.</p>",
+        "<h2>Verantwortlich für den Inhalt</h2>",
+        "<p>Verantwortlich für redaktionelle Inhalte gemäß <strong>§55 Abs. 2 RStV</strong> (Rundfunkstaatsvertrag, Deutschland):</p>",
+        "<p><strong>Andrei Klemenchionok</strong> — Anschrift und Kontakt wie oben.</p>",
+        "<h2>Angaben zur KI-Nutzung</h2>",
+        "<p>Gemäß <strong>EU-KI-Verordnung (EU) 2024/1689, Artikel 50 Absatz 4</strong>, werden KI-gestützte Inhalte und Werkzeuge, die bei der Erstellung der hier veröffentlichten Werke eingesetzt wurden, auf einer eigenen Seite offengelegt: <a href='/ai-disclosure'>Angaben zur KI-Nutzung</a>.</p>",
+        "<h2>Urheberrecht und Lizenzen</h2>",
+        "<p>Ursprüngliche Textinhalte auf dieser Seite: <strong>© Andrei Klemenchionok</strong>, veröffentlicht unter <a href='https://creativecommons.org/licenses/by-sa/4.0/' rel='noopener'>Creative Commons Namensnennung — Weitergabe unter gleichen Bedingungen 4.0 International (CC BY-SA 4.0)</a>.</p>",
+        "<p>Zugrunde liegender Quellcode: <strong>MIT-Lizenz</strong>.</p>",
+        "<p>Der Name «FolkUp» und die zugehörige Markenausstattung werden von Andrei Klemenchionok als Teil des FolkUp-Ökosystems verwendet.</p>",
+        "<h2>Haftungsausschluss für externe Links</h2>",
+        "<p>Diese Seite kann Links zu externen Webseiten enthalten. Auf die Inhalte externer Seiten haben wir keinen Einfluss und übernehmen keine Verantwortung für deren Inhalte oder Datenschutzpraktiken. Wenn Sie einem externen Link folgen, verlassen Sie den Geltungsbereich dieser Richtlinie und unterliegen den Bedingungen der Zielseite.</p>",
+        "<h2>Kontakt</h2>",
+        "<ul><li>Allgemein / Redaktion: <a href='mailto:editorial@folkup.app'>editorial@folkup.app</a></li><li>Datenschutz / DSGVO-Anfragen: <a href='mailto:rights@folkup.app'>rights@folkup.app</a></li></ul>",
+        "<h2>Verwandte Dokumente</h2>",
+        "<ul><li><a href='/privacy'>Datenschutzerklärung</a></li><li><a href='/terms'>Nutzungsbedingungen</a></li><li><a href='/cookies'>Cookie-Richtlinie</a></li><li><a href='/ai-disclosure'>Angaben zur KI-Nutzung</a></li></ul>"
+      ]
     }
   }
 }
