@@ -15,7 +15,7 @@
     "footer_terms": "Nutzungsbedingungen",
     "footer_cookies": "Cookies",
     "footer_imprint": "Impressum",
-    "footer_contact": "editorial@folkup.app"
+    "footer_contact": "editorial&#64;folkup.app"
   },
   "portal": {
     "title": "FolkUp-Bibliothek",
@@ -81,7 +81,7 @@
       "content": [
         "<h2>Wer diese Seite betreibt</h2>",
         "<p>Dieses Portal wird betrieben von <strong>Andrei Klemenchionok</strong>, einer natürlichen Person mit Wohnsitz in Portugal, die Bücher unter dem Pseudonym «Команданте FolkUp» veröffentlicht. Es handelt sich um ein nicht-kommerzielles Hobbyprojekt zur Buchveröffentlichung.</p>",
-        "<p>Kontakt für Datenschutzangelegenheiten: <a href='mailto:rights@folkup.app'>rights@folkup.app</a><br>Allgemeiner redaktioneller Kontakt: <a href='mailto:editorial@folkup.app'>editorial@folkup.app</a></p>",
+        "<p>Kontakt für Datenschutzangelegenheiten: <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a><br>Allgemeiner redaktioneller Kontakt: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a></p>",
         "<h2>Welche Daten wir erheben</h2>",
         "<p><strong>Persönlich: keine.</strong></p>",
         "<ul><li>Keine Nutzerkonten, keine Registrierung</li><li>Keine Formulare, keine Kommentare, keine Käufe</li><li>Kein Newsletter, keine Tracking-Pixel</li><li>Keine Verhaltensanalyse</li></ul>",
@@ -94,7 +94,7 @@
         "<h2>Ihre Rechte nach der DSGVO</h2>",
         "<p>Nach der Verordnung (EU) 2016/679 (Datenschutz-Grundverordnung, DSGVO), Artikel 12–22, haben Sie folgende Rechte:</p>",
         "<ul><li><strong>Auskunft</strong> über personenbezogene Daten, die wir über Sie speichern</li><li><strong>Berichtigung</strong> unrichtiger Daten</li><li><strong>Löschung</strong> («Recht auf Vergessenwerden»)</li><li><strong>Datenübertragbarkeit</strong> in einem maschinenlesbaren Format</li><li><strong>Widerspruch</strong> gegen die Verarbeitung</li><li><strong>Beschwerde</strong> bei Ihrer nationalen Datenschutzaufsichtsbehörde (in Portugal: <a href='https://www.cnpd.pt/' rel='noopener'>CNPD</a>; in Deutschland: die zuständige Landesdatenschutzbehörde oder der <a href='https://www.bfdi.bund.de/' rel='noopener'>BfDI</a>)</li></ul>",
-        "<p>Da wir keine Datenbank mit personenbezogenen Daten führen, haben die meisten dieser Rechte auf dieser Seite nur begrenzte praktische Wirkung — sie stehen Ihnen aber zu. Wenden Sie sich an <a href='mailto:rights@folkup.app'>rights@folkup.app</a>, um sie auszuüben.</p>",
+        "<p>Da wir keine Datenbank mit personenbezogenen Daten führen, haben die meisten dieser Rechte auf dieser Seite nur begrenzte praktische Wirkung — sie stehen Ihnen aber zu. Wenden Sie sich an <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a>, um sie auszuüben.</p>",
         "<h2>Kein Profiling, keine automatisierten Entscheidungen</h2>",
         "<p>Wir erstellen keine Profile von Besuchern und treffen keine automatisierten Entscheidungen über Sie.</p>",
         "<h2>Änderungen</h2>",
@@ -146,7 +146,7 @@
         "<h2>Ihre Kontrolle</h2>",
         "<p>Sie können Cookies über die Einstellungen Ihres Browsers deaktivieren oder löschen. Das kann die Fähigkeit Cloudflares beeinträchtigen, Ihren Datenverkehr von automatisiertem Missbrauch zu unterscheiden, die Seite bleibt aber funktionsfähig.</p>",
         "<h2>Kontakt</h2>",
-        "<p>Fragen zu Cookies? Schreiben Sie an <a href='mailto:rights@folkup.app'>rights@folkup.app</a>.</p>"
+        "<p>Fragen zu Cookies? Schreiben Sie an <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a>.</p>"
       ]
     },
     "imprint": {
@@ -155,7 +155,7 @@
       "content": [
         "<p><em>Angaben gemäß <strong>§5 TMG (Telemediengesetz, Deutschland)</strong> und allgemeiner guter EU-Praxis für Seiten, die in der gesamten Europäischen Union abrufbar sind.</em></p>",
         "<h2>Diensteanbieter</h2>",
-        "<p><strong>Andrei Klemenchionok</strong><br>Natürliche Person, wohnhaft in Portugal<br>Kontakt: <a href='mailto:editorial@folkup.app'>editorial@folkup.app</a><br>Veröffentlichung unter dem Pseudonym: <strong>Команданте FolkUp</strong></p>",
+        "<p><strong>Andrei Klemenchionok</strong><br>Natürliche Person, wohnhaft in Portugal<br>Kontakt: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a><br>Veröffentlichung unter dem Pseudonym: <strong>Команданте FolkUp</strong></p>",
         "<p>Dies ist ein nicht-kommerzielles Hobbyprojekt zur Buchveröffentlichung. Es ist <strong>kein</strong> eingetragenes Unternehmen. Es gibt keine Umsatzsteuer-Identifikationsnummer, keinen Handelsregistereintrag und keine Kammerzugehörigkeit.</p>",
         "<h2>Verantwortlich für den Inhalt</h2>",
         "<p>Verantwortlich für redaktionelle Inhalte gemäß <strong>§55 Abs. 2 RStV</strong> (Rundfunkstaatsvertrag, Deutschland):</p>",
@@ -169,7 +169,7 @@
         "<h2>Haftungsausschluss für externe Links</h2>",
         "<p>Diese Seite kann Links zu externen Webseiten enthalten. Auf die Inhalte externer Seiten haben wir keinen Einfluss und übernehmen keine Verantwortung für deren Inhalte oder Datenschutzpraktiken. Wenn Sie einem externen Link folgen, verlassen Sie den Geltungsbereich dieser Richtlinie und unterliegen den Bedingungen der Zielseite.</p>",
         "<h2>Kontakt</h2>",
-        "<ul><li>Allgemein / Redaktion: <a href='mailto:editorial@folkup.app'>editorial@folkup.app</a></li><li>Datenschutz / DSGVO-Anfragen: <a href='mailto:rights@folkup.app'>rights@folkup.app</a></li></ul>",
+        "<ul><li>Allgemein / Redaktion: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a></li><li>Datenschutz / DSGVO-Anfragen: <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a></li></ul>",
         "<h2>Verwandte Dokumente</h2>",
         "<ul><li><a href='/privacy'>Datenschutzerklärung</a></li><li><a href='/terms'>Nutzungsbedingungen</a></li><li><a href='/cookies'>Cookie-Richtlinie</a></li><li><a href='/ai-disclosure'>Angaben zur KI-Nutzung</a></li></ul>"
       ]

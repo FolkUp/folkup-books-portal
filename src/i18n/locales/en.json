@@ -15,7 +15,7 @@
     "footer_terms": "Terms",
     "footer_cookies": "Cookies",
     "footer_imprint": "Legal notice",
-    "footer_contact": "editorial@folkup.app"
+    "footer_contact": "editorial&#64;folkup.app"
   },
   "portal": {
     "title": "FolkUp Library",
@@ -81,7 +81,7 @@
       "content": [
         "<h2>Who runs this site</h2>",
         "<p>This portal is operated by <strong>Andrei Klemenchionok</strong>, a physical person and resident of Portugal, publishing books under the pseudonym «Команданте FolkUp». This is a non-commercial hobbyist publishing project.</p>",
-        "<p>Contact for privacy matters: <a href='mailto:rights@folkup.app'>rights@folkup.app</a><br>General editorial contact: <a href='mailto:editorial@folkup.app'>editorial@folkup.app</a></p>",
+        "<p>Contact for privacy matters: <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a><br>General editorial contact: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a></p>",
         "<h2>What data we collect</h2>",
         "<p><strong>Personally: nothing.</strong></p>",
         "<ul><li>No user accounts, no registration</li><li>No forms, no comments, no purchases</li><li>No newsletter, no tracking pixels</li><li>No behavioural analytics</li></ul>",
@@ -94,7 +94,7 @@
         "<h2>Your rights under GDPR</h2>",
         "<p>Under Regulation (EU) 2016/679 (GDPR), Articles 12–22, you have the right to:</p>",
         "<ul><li><strong>Access</strong> any personal data we hold about you</li><li><strong>Rectification</strong> of inaccurate data</li><li><strong>Erasure</strong> («right to be forgotten»)</li><li><strong>Portability</strong> of your data in a machine-readable format</li><li><strong>Objection</strong> to processing</li><li><strong>Lodge a complaint</strong> with your national data protection authority (in Portugal: <a href='https://www.cnpd.pt/' rel='noopener'>CNPD</a>)</li></ul>",
-        "<p>Since we do not maintain a database of personal data, most of these rights have limited practical effect on this site — but they are yours. Contact <a href='mailto:rights@folkup.app'>rights@folkup.app</a> to exercise them.</p>",
+        "<p>Since we do not maintain a database of personal data, most of these rights have limited practical effect on this site — but they are yours. Contact <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a> to exercise them.</p>",
         "<h2>No profiling, no automated decisions</h2>",
         "<p>We do not profile visitors and do not make automated decisions about you.</p>",
         "<h2>Changes</h2>",
@@ -146,7 +146,7 @@
         "<h2>Your control</h2>",
         "<p>You can disable or delete cookies through your browser settings. Doing so may affect Cloudflare's ability to distinguish your traffic from automated abuse, but the site will remain functional.</p>",
         "<h2>Contact</h2>",
-        "<p>Questions about cookies? Write to <a href='mailto:rights@folkup.app'>rights@folkup.app</a>.</p>"
+        "<p>Questions about cookies? Write to <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a>.</p>"
       ]
     },
     "imprint": {
@@ -155,7 +155,7 @@
       "content": [
         "<p><em>Information provided in accordance with <strong>§5 TMG (Telemediengesetz, Germany)</strong> and general EU good practice for sites accessible across the European Union.</em></p>",
         "<h2>Service provider</h2>",
-        "<p><strong>Andrei Klemenchionok</strong><br>Physical person, resident of Portugal<br>Contact: <a href='mailto:editorial@folkup.app'>editorial@folkup.app</a><br>Publishing under the pseudonym: <strong>Команданте FolkUp</strong></p>",
+        "<p><strong>Andrei Klemenchionok</strong><br>Physical person, resident of Portugal<br>Contact: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a><br>Publishing under the pseudonym: <strong>Команданте FolkUp</strong></p>",
         "<p>This is a non-commercial hobbyist publishing project. It is <strong>not</strong> a registered company. There is no VAT identification number, no commercial register entry, and no chamber of commerce affiliation.</p>",
         "<h2>Responsibility for content</h2>",
         "<p>Responsible for editorial content in accordance with <strong>§55 Abs. 2 RStV</strong> (Rundfunkstaatsvertrag, Germany):</p>",
@@ -169,7 +169,7 @@
         "<h2>Disclaimer for external links</h2>",
         "<p>This site may contain links to external websites. We have no control over the content of external sites and accept no responsibility for their content or privacy practices. When you follow an external link, you leave the scope of this policy and are subject to the destination site's terms.</p>",
         "<h2>Contact</h2>",
-        "<ul><li>General / editorial: <a href='mailto:editorial@folkup.app'>editorial@folkup.app</a></li><li>Privacy / GDPR requests: <a href='mailto:rights@folkup.app'>rights@folkup.app</a></li></ul>",
+        "<ul><li>General / editorial: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a></li><li>Privacy / GDPR requests: <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a></li></ul>",
         "<h2>Related documents</h2>",
         "<ul><li><a href='/privacy'>Privacy Policy</a></li><li><a href='/terms'>Terms of Use</a></li><li><a href='/cookies'>Cookie Policy</a></li><li><a href='/ai-disclosure'>AI Disclosure</a></li></ul>"
       ]

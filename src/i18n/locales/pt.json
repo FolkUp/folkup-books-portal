@@ -15,7 +15,7 @@
     "footer_terms": "Termos",
     "footer_cookies": "Cookies",
     "footer_imprint": "Aviso legal",
-    "footer_contact": "editorial@folkup.app"
+    "footer_contact": "editorial&#64;folkup.app"
   },
   "portal": {
     "title": "Biblioteca FolkUp",
@@ -81,7 +81,7 @@
       "content": [
         "<h2>Quem gere este sítio</h2>",
         "<p>Este portal é operado por <strong>Andrei Klemenchionok</strong>, pessoa singular e residente em Portugal, que publica livros sob o pseudónimo «Команданте FolkUp». Trata-se de um projeto editorial amador, sem fins comerciais.</p>",
-        "<p>Contacto para questões de privacidade: <a href='mailto:rights@folkup.app'>rights@folkup.app</a><br>Contacto editorial geral: <a href='mailto:editorial@folkup.app'>editorial@folkup.app</a></p>",
+        "<p>Contacto para questões de privacidade: <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a><br>Contacto editorial geral: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a></p>",
         "<h2>Que dados recolhemos</h2>",
         "<p><strong>A nível pessoal: nenhuns.</strong></p>",
         "<ul><li>Sem contas de utilizador, sem registo</li><li>Sem formulários, sem comentários, sem compras</li><li>Sem boletim informativo, sem pixels de rastreio</li><li>Sem análise comportamental</li></ul>",
@@ -94,7 +94,7 @@
         "<h2>Os seus direitos ao abrigo do RGPD</h2>",
         "<p>Nos termos do Regulamento (UE) 2016/679 (RGPD), artigos 12.º a 22.º, assiste-lhe o direito de:</p>",
         "<ul><li><strong>Acesso</strong> a quaisquer dados pessoais que detenhamos a seu respeito</li><li><strong>Retificação</strong> de dados inexatos</li><li><strong>Apagamento</strong> («direito ao esquecimento»)</li><li><strong>Portabilidade</strong> dos seus dados num formato legível por máquina</li><li><strong>Oposição</strong> ao tratamento</li><li><strong>Apresentar reclamação</strong> junto da autoridade nacional de proteção de dados (em Portugal: <a href='https://www.cnpd.pt/' rel='noopener'>CNPD</a>)</li></ul>",
-        "<p>Uma vez que não mantemos qualquer base de dados de dados pessoais, a maioria destes direitos tem efeito prático limitado neste sítio — mas são seus. Contacte <a href='mailto:rights@folkup.app'>rights@folkup.app</a> para os exercer.</p>",
+        "<p>Uma vez que não mantemos qualquer base de dados de dados pessoais, a maioria destes direitos tem efeito prático limitado neste sítio — mas são seus. Contacte <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a> para os exercer.</p>",
         "<h2>Sem definição de perfis, sem decisões automatizadas</h2>",
         "<p>Não definimos perfis dos visitantes nem tomamos decisões automatizadas a seu respeito.</p>",
         "<h2>Alterações</h2>",
@@ -145,7 +145,7 @@
         "<h2>O seu controlo</h2>",
         "<p>Pode desativar ou eliminar cookies através das definições do seu navegador. Ao fazê-lo, poderá afetar a capacidade da Cloudflare para distinguir o seu tráfego de abusos automatizados, mas o sítio manter-se-á funcional.</p>",
         "<h2>Contacto</h2>",
-        "<p>Dúvidas sobre cookies? Escreva para <a href='mailto:rights@folkup.app'>rights@folkup.app</a>.</p>"
+        "<p>Dúvidas sobre cookies? Escreva para <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a>.</p>"
       ]
     },
     "imprint": {
@@ -154,7 +154,7 @@
       "content": [
         "<p><em>Informações prestadas em conformidade com o <strong>§5 TMG (Telemediengesetz, Alemanha)</strong> e as boas práticas gerais da UE aplicáveis a sítios acessíveis em todo o território da União Europeia.</em></p>",
         "<h2>Prestador de serviço</h2>",
-        "<p><strong>Andrei Klemenchionok</strong><br>Pessoa singular, residente em Portugal<br>Contacto: <a href='mailto:editorial@folkup.app'>editorial@folkup.app</a><br>Publica sob o pseudónimo: <strong>Команданте FolkUp</strong></p>",
+        "<p><strong>Andrei Klemenchionok</strong><br>Pessoa singular, residente em Portugal<br>Contacto: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a><br>Publica sob o pseudónimo: <strong>Команданте FolkUp</strong></p>",
         "<p>Trata-se de um projeto editorial amador, sem fins comerciais. <strong>Não</strong> é uma sociedade registada. Não existe número de identificação fiscal (NIF) para efeitos comerciais, nem inscrição no registo comercial, nem filiação em qualquer câmara de comércio.</p>",
         "<h2>Responsabilidade pelos conteúdos</h2>",
         "<p>Responsável pelos conteúdos editoriais nos termos do <strong>§55 n.º 2 RStV</strong> (Rundfunkstaatsvertrag, Alemanha):</p>",
@@ -168,7 +168,7 @@
         "<h2>Exoneração de responsabilidade quanto a ligações externas</h2>",
         "<p>Este sítio pode conter ligações para sítios externos. Não temos qualquer controlo sobre o conteúdo de sítios externos e não assumimos qualquer responsabilidade pelo respetivo conteúdo ou práticas de privacidade. Ao seguir uma ligação externa, sai do âmbito desta política e fica sujeito aos termos do sítio de destino.</p>",
         "<h2>Contacto</h2>",
-        "<ul><li>Geral / editorial: <a href='mailto:editorial@folkup.app'>editorial@folkup.app</a></li><li>Privacidade / pedidos ao abrigo do RGPD: <a href='mailto:rights@folkup.app'>rights@folkup.app</a></li></ul>",
+        "<ul><li>Geral / editorial: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a></li><li>Privacidade / pedidos ao abrigo do RGPD: <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a></li></ul>",
         "<h2>Documentos relacionados</h2>",
         "<ul><li><a href='/privacy'>Política de Privacidade</a></li><li><a href='/terms'>Termos de Utilização</a></li><li><a href='/cookies'>Política de Cookies</a></li><li><a href='/ai-disclosure'>Divulgação de utilização de IA</a></li></ul>"
       ]
