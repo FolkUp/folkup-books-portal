@@ -3,10 +3,24 @@
     "name": "FolkUp Library",
     "tagline": "Books on teams, leadership, dialogue"
   },
+  "nav": {
+    "language_label": "Language",
+    "language_ru": "RU",
+    "language_en": "EN",
+    "language_de": "DE",
+    "language_pt": "PT",
+    "footer_about": "About",
+    "footer_ai_disclosure": "AI usage",
+    "footer_privacy": "Privacy",
+    "footer_terms": "Terms",
+    "footer_cookies": "Cookies",
+    "footer_imprint": "Legal notice",
+    "footer_contact": "editorial&#64;folkup.app"
+  },
   "portal": {
     "title": "FolkUp Library",
-    "hero": "Библиотека FolkUp — книги о команде и людях: от классического анализа менеджмента до утопий, посредников, проверки фактов и барьеров понимания. [placeholder until translator — canon v2 «Своим умом» Iskra S214]",
-    "series_intro": "Серия «Своим умом» — книги о разных обликах командной работы. Открытые тома отмечены статусом «Читать». [placeholder until translator]",
+    "hero": "Books about how people get work done together — and why that stays hard.",
+    "series_intro": "A Mind of One's Own — three conversations: how teams create, how knowledge reaches us, how people find common ground. Volumes open as they're ready.",
     "read_book": "Read book",
     "download_epub": "Download EPUB",
     "coming_soon": "Coming soon",
@@ -20,34 +34,13 @@
     "copyright": "© {year} Команданте FolkUp · Content CC BY-SA 4.0 · Code MIT"
   },
   "books": {
-    "kn1": {
-      "title": "Agile Sapiens",
-      "subtitle": "How classical literature predicted modern management"
-    },
-    "kn2": {
-      "title": "Consonants Without Vowels",
-      "subtitle": "About those who speak; those who hear; those who write between lines"
-    },
-    "kn3": {
-      "title": "City of the Sun",
-      "subtitle": "Team utopia: from Campanella to digital-first organizations"
-    },
-    "kn4": {
-      "title": "Where the New Lives",
-      "subtitle": "Topography of innovation: why new things are born on peripheries"
-    },
-    "kn5": {
-      "title": "By Others' Hands",
-      "subtitle": "How the invisible hand of the market becomes the visible hand of the engineer"
-    },
-    "kn6": {
-      "title": "Own Eyes",
-      "subtitle": "Personal experience as source of knowledge: practice without methodology, but with reflection"
-    },
-    "kn7": {
-      "title": "Lost in Conversation",
-      "subtitle": "The series finale. Coming after quality gate."
-    }
+    "kn1": { "title": "Agile Sapiens", "subtitle": "How classical literature predicted modern management" },
+    "kn2": { "title": "Consonants Without Vowels", "subtitle": "About those who speak; those who hear; those who write between lines" },
+    "kn3": { "title": "City of the Sun", "subtitle": "Team utopia: from Campanella to digital-first organizations" },
+    "kn4": { "title": "Where the New Lives", "subtitle": "Topography of innovation: why new things are born on peripheries" },
+    "kn5": { "title": "By Others' Hands", "subtitle": "How the invisible hand of the market becomes the visible hand of the engineer" },
+    "kn6": { "title": "Own Eyes", "subtitle": "Personal experience as source of knowledge: practice without methodology, but with reflection" },
+    "kn7": { "title": "Lost in Conversation", "subtitle": "The series finale. Coming after quality gate." }
   },
   "ai_disclosure": {
     "title": "AI Usage Disclosure",
@@ -77,6 +70,109 @@
     "section4": {
       "h2": "License",
       "p1": "All library content is licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). Infrastructure code — MIT."
+    }
+  },
+  "legal": {
+    "last_updated_label": "Last updated:",
+    "last_updated_date": "2026-07-23",
+    "privacy": {
+      "title": "Privacy Policy",
+      "meta_description": "How we handle data on books.folkup.life. Short answer: we collect nothing personal. Full details on data controller, technical logs, cookies, and your GDPR rights.",
+      "content": [
+        "<h2>Who runs this site</h2>",
+        "<p>This portal is operated by <strong>Andrei Klemenchionok</strong>, a physical person and resident of Portugal, publishing books under the pseudonym «Команданте FolkUp». This is a non-commercial hobbyist publishing project.</p>",
+        "<p>Contact for privacy matters: <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a><br>General editorial contact: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a></p>",
+        "<h2>What data we collect</h2>",
+        "<p><strong>Personally: nothing.</strong></p>",
+        "<ul><li>No user accounts, no registration</li><li>No forms, no comments, no purchases</li><li>No newsletter, no tracking pixels</li><li>No behavioural analytics</li></ul>",
+        "<p><strong>Technically:</strong> Cloudflare (our infrastructure provider) processes standard HTTP request logs — your IP address, timestamp, requested URL, and user agent. This is required for basic operation and DDoS protection. We do not access, aggregate, or analyse these logs. Cloudflare retains them for approximately 90 days per their standard policy.</p>",
+        "<h2>Who else sees your data</h2>",
+        "<ul><li><strong>Cloudflare, Inc.</strong> (CDN, DDoS mitigation, hosting). Cloudflare is GDPR-compliant; their Data Processing Addendum is publicly available at <a href='https://www.cloudflare.com/cloudflare-customer-dpa/' rel='noopener'>cloudflare.com/cloudflare-customer-dpa</a>.</li></ul>",
+        "<p>No data is sold, shared with advertisers, or transferred to any other third party.</p>",
+        "<h2>Cookies</h2>",
+        "<p>See our <a href='/cookies'>Cookie Policy</a>. Short version: no tracking cookies. Only strictly necessary technical cookies set by Cloudflare for bot management.</p>",
+        "<h2>Your rights under GDPR</h2>",
+        "<p>Under Regulation (EU) 2016/679 (GDPR), Articles 12–22, you have the right to:</p>",
+        "<ul><li><strong>Access</strong> any personal data we hold about you</li><li><strong>Rectification</strong> of inaccurate data</li><li><strong>Erasure</strong> («right to be forgotten»)</li><li><strong>Portability</strong> of your data in a machine-readable format</li><li><strong>Objection</strong> to processing</li><li><strong>Lodge a complaint</strong> with your national data protection authority (in Portugal: <a href='https://www.cnpd.pt/' rel='noopener'>CNPD</a>)</li></ul>",
+        "<p>Since we do not maintain a database of personal data, most of these rights have limited practical effect on this site — but they are yours. Contact <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a> to exercise them.</p>",
+        "<h2>No profiling, no automated decisions</h2>",
+        "<p>We do not profile visitors and do not make automated decisions about you.</p>",
+        "<h2>Changes</h2>",
+        "<p>If this policy changes, the «Last updated» date at the top will reflect that. Material changes will be noted on the site's homepage for at least 30 days.</p>"
+      ]
+    },
+    "terms": {
+      "title": "Terms of Use",
+      "meta_description": "Terms for using books.folkup.life. Content is free under CC BY-SA 4.0. No warranties, Portuguese jurisdiction.",
+      "content": [
+        "<h2>What this site is</h2>",
+        "<p><strong>books.folkup.life</strong> is a free portal publishing books written by Команданте FolkUp (the pseudonym of Andrei Klemenchionok, Portugal). Read online, download, share.</p>",
+        "<p>This is a hobbyist non-commercial project. There are no paid features, no accounts, no subscriptions.</p>",
+        "<h2>License for the content</h2>",
+        "<p>All books and written content on this portal are published under the <strong>Creative Commons Attribution-ShareAlike 4.0 International License</strong> (<a href='https://creativecommons.org/licenses/by-sa/4.0/' rel='noopener'>CC BY-SA 4.0</a>).</p>",
+        "<p>You are free to:</p>",
+        "<ul><li><strong>Share</strong> — copy and redistribute the material in any medium or format</li><li><strong>Adapt</strong> — remix, transform, and build upon the material for any purpose, even commercially</li></ul>",
+        "<p>Under the following terms:</p>",
+        "<ul><li><strong>Attribution</strong> — you must give appropriate credit to «Команданте FolkUp», provide a link to the license, and indicate if changes were made</li><li><strong>ShareAlike</strong> — if you remix or build upon the material, you must distribute your contributions under the same license</li></ul>",
+        "<p>Removing attribution or relicensing derivative works under incompatible terms violates the license and Portuguese copyright law.</p>",
+        "<h2>Infrastructure code</h2>",
+        "<p>Any source code underlying this portal (site templates, build scripts) is separately licensed under the <strong>MIT License</strong> and available in our public repositories.</p>",
+        "<h2>No warranties</h2>",
+        "<p>The content is provided <strong>«as is»</strong>, without warranty of any kind. This is an amateur publishing project — we do our best, but we don't guarantee accuracy, completeness, or fitness for any particular purpose.</p>",
+        "<h2>Limitation of liability</h2>",
+        "<p>To the maximum extent permitted by Portuguese law, Andrei Klemenchionok is not liable for any direct, indirect, incidental, or consequential damages arising from your use of this site or its content.</p>",
+        "<h2>Your obligations</h2>",
+        "<ul><li>Respect the CC BY-SA 4.0 license terms when reusing content</li><li>Don't attempt to disrupt the site (DDoS, scraping abuse, etc.)</li><li>Don't impersonate the publisher</li></ul>",
+        "<h2>Governing law and jurisdiction</h2>",
+        "<p>These terms are governed by <strong>Portuguese law</strong>. Any disputes fall under the exclusive jurisdiction of Portuguese courts, subject to any mandatory consumer protection rights you may have as an EU resident.</p>",
+        "<h2>Changes</h2>",
+        "<p>Terms may be updated. The «Last updated» date at the top reflects the current version.</p>"
+      ]
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "meta_description": "We use no tracking cookies. Only strictly necessary technical cookies from Cloudflare for security. No consent banner because none is required.",
+      "content": [
+        "<h2>Short version</h2>",
+        "<p><strong>This site does not use tracking cookies, analytics cookies, or advertising cookies.</strong></p>",
+        "<p>That is why you do not see a cookie consent banner — under the ePrivacy Directive 2002/58/EC (as amended) and Recital 66, consent is not required for cookies that are «strictly necessary» to deliver a service the user requested.</p>",
+        "<h2>What cookies may be set</h2>",
+        "<p>The only cookies that may appear in your browser when visiting this site are set by <strong>Cloudflare</strong>, our infrastructure provider, for security and abuse-prevention purposes:</p>",
+        "<table><thead><tr><th>Cookie</th><th>Set by</th><th>Purpose</th><th>Duration</th></tr></thead><tbody><tr><td><code>__cf_bm</code></td><td>Cloudflare</td><td>Bot management — distinguishes humans from automated traffic to protect against abuse</td><td>30 minutes</td></tr><tr><td><code>cf_clearance</code></td><td>Cloudflare</td><td>Records that a visitor passed a security challenge (only set if challenge is triggered)</td><td>30 days</td></tr></tbody></table>",
+        "<p>Both are classified as <strong>strictly necessary</strong> under GDPR / ePrivacy interpretation and Cloudflare's own <a href='https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/' rel='noopener'>cookie documentation</a>.</p>",
+        "<h2>What we do not use</h2>",
+        "<ul><li>No Google Analytics, no Matomo, no Plausible, no Fathom</li><li>No advertising cookies (no Google Ads, no Facebook Pixel, no anything)</li><li>No social media embedding cookies (we don't embed Facebook, Twitter, etc.)</li><li>No CDN cookies for third-party fonts or scripts (fonts are self-hosted)</li><li>No session cookies (we have no accounts)</li></ul>",
+        "<p>If we ever add cookieless analytics (such as Cloudflare Web Analytics, which does not use cookies and does not track individuals), this policy will be updated.</p>",
+        "<h2>Your control</h2>",
+        "<p>You can disable or delete cookies through your browser settings. Doing so may affect Cloudflare's ability to distinguish your traffic from automated abuse, but the site will remain functional.</p>",
+        "<h2>Contact</h2>",
+        "<p>Questions about cookies? Write to <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a>.</p>"
+      ]
+    },
+    "imprint": {
+      "title": "Legal Notice / Imprint",
+      "meta_description": "Legal notice for books.folkup.life per §5 TMG and general EU practice. Publisher, contact, responsibility, licensing.",
+      "content": [
+        "<p><em>Information provided in accordance with <strong>§5 TMG (Telemediengesetz, Germany)</strong> and general EU good practice for sites accessible across the European Union.</em></p>",
+        "<h2>Service provider</h2>",
+        "<p><strong>Andrei Klemenchionok</strong><br>Physical person, resident of Portugal<br>Contact: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a><br>Publishing under the pseudonym: <strong>Команданте FolkUp</strong></p>",
+        "<p>This is a non-commercial hobbyist publishing project. It is <strong>not</strong> a registered company. There is no VAT identification number, no commercial register entry, and no chamber of commerce affiliation.</p>",
+        "<h2>Responsibility for content</h2>",
+        "<p>Responsible for editorial content in accordance with <strong>§55 Abs. 2 RStV</strong> (Rundfunkstaatsvertrag, Germany):</p>",
+        "<p><strong>Andrei Klemenchionok</strong> — same address and contact as above.</p>",
+        "<h2>AI usage disclosure</h2>",
+        "<p>In accordance with <strong>EU AI Act Regulation (EU) 2024/1689 Article 50(4)</strong>, AI-assisted content and tooling used in the production of works published here are disclosed on a dedicated page: <a href='/ai-disclosure'>AI Usage Disclosure</a>.</p>",
+        "<h2>Copyright and licensing</h2>",
+        "<p>Original written content on this site: <strong>© Andrei Klemenchionok</strong>, published under <a href='https://creativecommons.org/licenses/by-sa/4.0/' rel='noopener'>Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a>.</p>",
+        "<p>Underlying source code: <strong>MIT License</strong>.</p>",
+        "<p>The «FolkUp» name and associated branding are used by Andrei Klemenchionok as part of the FolkUp ecosystem.</p>",
+        "<h2>Disclaimer for external links</h2>",
+        "<p>This site may contain links to external websites. We have no control over the content of external sites and accept no responsibility for their content or privacy practices. When you follow an external link, you leave the scope of this policy and are subject to the destination site's terms.</p>",
+        "<h2>Contact</h2>",
+        "<ul><li>General / editorial: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a></li><li>Privacy / GDPR requests: <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a></li></ul>",
+        "<h2>Related documents</h2>",
+        "<ul><li><a href='/privacy'>Privacy Policy</a></li><li><a href='/terms'>Terms of Use</a></li><li><a href='/cookies'>Cookie Policy</a></li><li><a href='/ai-disclosure'>AI Disclosure</a></li></ul>"
+      ]
     }
   }
 }
