@@ -222,9 +222,6 @@ if (book.value) {
             <strong>©</strong> {{ series.author }} ·
             <a :href="series.license_url">{{ series.license }}</a>
           </p>
-          <p v-if="book.illustration_style">
-            <strong>Стиль иллюстраций:</strong> {{ book.illustration_style }}
-          </p>
         </footer>
       </article>
     </div>
