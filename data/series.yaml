@@ -88,8 +88,14 @@ books:
   - position: 4
     slug: kn4
     slug_en_temp: where-the-new-lives
-    status: stub
-    launch_target: 2026-Q3
+    status: live
+    version: 1.0.0
+    launch_date: 2026-07-22
+    # Iskra VIZA-PAKET S213 2026-07-23 Вариант А (kn.1-pattern): веб LIVE, EPUB/PDF готовятся.
+    # PR#30 merged 2026-07-22 (770db1a) — RU master .adoc + 3 правки H2 antisyflyorstvo (ЩИТ v5.0 PASS).
+    # Канон S212 ПАРИТЕТ ФОРМАТОВ — соблюдён через honest banner ниже.
+    format_stale_note: |
+      Веб-версия готова. Скачивание в EPUB и PDF готовится — сборка форматов и вычитка иллюстраций ведутся. Полное соответствие форматов появится ближайшим апдейтом — экспонат на реставрации.
     cover_v1: /covers/cover_kn4.svg
     covers:
       ru: /covers/cover_kn4.svg
@@ -97,7 +103,7 @@ books:
       de: /covers/cover_kn4_de.svg
       pt: /covers/cover_kn4_pt.svg
     translations:
-      ru: preparing
+      ru: live
       de: preparing
       en: preparing
       pt: preparing
