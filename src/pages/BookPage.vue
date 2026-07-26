@@ -36,7 +36,22 @@ const trilogyName = computed<string | null>(() => {
   return series.value.trilogies?.[key]?.name ?? null
 })
 
-// Long-form annotation body (paragraphs) — strip HTML comments + headings.
+// Iskra S217 pair-review defect cont+23 2026-07-26: escape HTML + render **bold** к <strong>.
+// Trusted content (Iskra + Andrey authored, mounted at build time); escapeHtml — защита от future edits.
+function escapeHtml(text: string): string {
+  return text
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;')
+}
+
+function renderProChtoMarkdown(text: string): string {
+  return escapeHtml(text).replace(/\*\*([^*]+?)\*\*/g, '<strong>$1</strong>')
+}
+
+// Long-form annotation body (paragraphs) — strip HTML comments + headings + render bold markdown.
 const proChtoParagraphs = computed<string[]>(() => {
   const path = `../../content/${props.slug}/ru/pro-chto.md`
   const raw = proChtoModules[path]
@@ -45,6 +60,7 @@ const proChtoParagraphs = computed<string[]>(() => {
     .split(/\n\n+/)
     .map((p) => p.trim())
     .filter((p) => p && !p.startsWith('<!--') && !p.startsWith('#'))
+    .map(renderProChtoMarkdown)
 })
 
 const hasProChto = computed(() => proChtoParagraphs.value.length > 0)
@@ -139,7 +155,8 @@ if (book.value) {
             v-for="(para, index) in proChtoParagraphs"
             :key="index"
             class="book-page__pro-chto-paragraph"
-          >{{ para }}</p>
+            v-html="para"
+          ></p>
         </section>
 
         <div v-if="isLive" class="book-page__actions">
