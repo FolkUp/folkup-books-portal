@@ -1,8 +1,7 @@
-<!-- ПРО ЧТО КНИГА · кн.3 «Город Солнца» · v1-DRAFT (Alice S3SCOOP cont+21, 2026-07-26).
+<!-- ПРО ЧТО КНИГА · кн.3 «Город Солнца» · v1 KANON (Alice S3SCOOP cont+21, ратифицирован Iskra S216 2026-07-26).
 Alice-authored draft derived из preface KN3-FULL v3.1 sections I-VI + trilogy metadata.
-PENDING Iskra visa ratification (её PRO-CHTO-KN3 файл не обнаружен на bridge при discovery cont+21).
-Iskra может patch content OR ratify as-is через bridge MAYAK.
-Alice apply per Andrey «А» verdict AskUserQuestion 2026-07-23.
+VIZA ISKRA S216 2026-07-26: ратифицировано as-is (variant a) через PAKET-VYKLADKI-S216. FULL v3.1 проверен изнутри — адрес приёмной верный, запрет ИИ и NC-ND отсутствуют, аппарат полный.
+Marker: PRO-CHTO-KN3-v1-cont21-VIZA-S216-2026-07-26.
 Источник: KN3-FULL v3.1 staging (vault a0255d0, 7137 lines).
 Лицензия: CC BY-SA 4.0. -->
 
