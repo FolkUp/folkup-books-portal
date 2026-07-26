@@ -154,8 +154,13 @@ books:
     slug: kn5
     slug_en_temp: by-others-hands
     trilogy: iz_pervyh_ruk
-    status: launch_preparing
-    launch_note: "Финальные приёмки. Дата определится ближе к выходу."
+    status: live
+    version: 1.0.0
+    launch_date: 2026-07-26
+    # Iskra PAKET-VYKLADKI-S216 §2 (2026-07-26): «Файл проверен изнутри — чист. Книга готова.» + Andrey Q5=А cont+22 autonomous publish. RU FULL v1.1 vault preserved (KN5-Chuzhimi-rukami-FULL-v1.1-cont15-vorota-fix-2026-07-22.md).
+    # Pattern kn.1/kn.4: LIVE веб-версия (pro-chto landing), файлы EPUB/PDF готовятся honest banner.
+    format_stale_note: |
+      Веб-версия готова. EPUB и PDF готовятся — сборка форматов ведётся.
     cover_v1: /covers/cover_kn5.svg
     covers:
       ru: /covers/cover_kn5.svg
@@ -163,7 +168,7 @@ books:
       de: /covers/cover_kn5_de.svg
       pt: /covers/cover_kn5_pt.svg
     translations:
-      ru: preparing  # RU мастер готов, launch_preparing per S179 очередь
+      ru: live  # RU FULL v1.1 clean per Iskra pair 2026-07-26 · Andrey Q5=А publish
       de: preparing  # Кнут в работе, "перевод не блокирует релиз" S179
       en: preparing
       pt: preparing
