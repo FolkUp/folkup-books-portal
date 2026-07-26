@@ -178,9 +178,6 @@ if (book.value) {
 
         <div v-else class="book-page__notice">
           <strong>{{ t('portal.coming_soon') }}</strong>
-          <p v-if="book.launch_date_target || book.launch_target">
-            Ожидаем: {{ book.launch_date_target || book.launch_target }}
-          </p>
         </div>
 
         <!--
