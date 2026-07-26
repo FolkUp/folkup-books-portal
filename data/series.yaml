@@ -70,8 +70,9 @@ books:
     # правками Iskra S169. Форматы регенерируются в Phase D спринта. Honest metallica
     # per Q5 staged release + Iskra canon «формат не блокирует релиз».
     # Iskra §7 VITRINNYY-PAKET S214 canonical: файл отстаёт от веба по версии.
+    # Виза Andrey B5 apply cont+22 2026-07-26 Q5: строка про иллюстрации PDF.
     format_stale_note: |
-      Файлы для скачивания собраны из более ранней редакции, чем веб-версия. Догоняем ближайшим обновлением.
+      Файлы для скачивания собраны из более ранней редакции, чем веб-версия. PDF пока без иллюстраций — полная версия готовится. Догоняем ближайшим обновлением.
     cover_v1: /covers/cover_kn1.svg
     covers:
       ru: /covers/cover_kn1.svg
@@ -92,7 +93,7 @@ books:
     slug_en_temp: city-of-the-sun
     trilogy: svoimi_silami
     status: stub
-    launch_target: 2026-Q3
+    # Iskra §11 gate «даты-обещания запрещены» cont+22 2026-07-26 — launch_target removed.
     illustration_style: Bauhaus / Kandinsky
     cover_v1: /covers/cover_kn3.svg
     covers:
@@ -110,15 +111,14 @@ books:
     slug: kn4
     slug_en_temp: where-the-new-lives
     trilogy: svoimi_silami
-    status: live
-    version: 1.0.0
-    launch_date: 2026-07-22
-    # Iskra VIZA-PAKET S213 2026-07-23 Вариант А (kn.1-pattern): веб LIVE, EPUB/PDF готовятся.
-    # PR#30 merged 2026-07-22 (770db1a) — RU master .adoc + 3 правки H2 antisyflyorstvo (ЩИТ v5.0 PASS).
-    # Канон S212 ПАРИТЕТ ФОРМАТОВ — соблюдён через honest banner ниже.
-    # Iskra §7 VITRINNYY-PAKET S214 canonical: веб есть, файлов ещё нет.
-    format_stale_note: |
-      Веб-версия готова. EPUB и PDF готовятся — сборка форматов и вычитка иллюстраций ведутся.
+    # RU master готов PR#30 2026-07-22 (770db1a), ЩИТ v5.0 PASS.
+    # Iskra §7 VITRINNYY-PAKET A1 + Andrey Q4 my-call cont+22 2026-07-26 «Скоро с оговоркой»
+    # per §11 gate «даты-обещания запрещены»: read-online не собираем в эту арку, файлов нет
+    # → status «launch_preparing» + coming_note без дат.
+    # Rollback: status → live + restore launch_date/format_stale_note (git revert).
+    status: launch_preparing
+    coming_note: |
+      Готовим полный текст. Пока — оглавление и обложка (плашки такие же как на kn.1).
     cover_v1: /covers/cover_kn4.svg
     covers:
       ru: /covers/cover_kn4.svg
@@ -136,7 +136,7 @@ books:
     slug_en_temp: consonants-without-vowels
     trilogy: iz_pervyh_ruk
     status: stub
-    launch_target: 2026-Q3
+    # Iskra §11 gate «даты-обещания запрещены» cont+22 2026-07-26 — launch_target removed.
     cover_v1: /covers/cover_kn2.svg
     covers:
       ru: /covers/cover_kn2.svg
@@ -154,7 +154,9 @@ books:
     slug_en_temp: by-others-hands
     trilogy: iz_pervyh_ruk
     status: launch_preparing
-    launch_note: "Финальные приёмки. Дата определится ближе к выходу."
+    # Renamed launch_note → coming_note cont+22 2026-07-26 — unified render pattern в BookPage.vue
+    coming_note: |
+      Финальные приёмки. Дата определится ближе к выходу.
     cover_v1: /covers/cover_kn5.svg
     covers:
       ru: /covers/cover_kn5.svg
@@ -172,7 +174,7 @@ books:
     slug_en_temp: own-eyes
     trilogy: iz_pervyh_ruk
     status: stub
-    launch_target: 2026-Q4
+    # Iskra §11 gate «даты-обещания запрещены» cont+22 2026-07-26 — launch_target removed.
     cover_v1: /covers/cover_kn6.svg
     covers:
       ru: /covers/cover_kn6.svg

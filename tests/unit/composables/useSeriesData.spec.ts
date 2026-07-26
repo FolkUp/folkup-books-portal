@@ -110,15 +110,18 @@ describe('useSeriesData', () => {
   })
 
   it('liveBooks filters correctly', () => {
-    // kn.1 (v1.0.14 LIVE with 3 factual updates) + kn.4 (flip S213 Вариант А per Iskra VIZA-PAKET 2026-07-23)
-    expect(liveBooks.value).toHaveLength(2)
+    // kn.1 (v1.0.14 LIVE with 3 factual updates) — kn.4 downgraded к launch_preparing
+    // per Andrey Q4 my-call cont+22 2026-07-26 «Скоро с оговоркой» (Iskra §11 gate + §7 A1)
+    expect(liveBooks.value).toHaveLength(1)
     const slugs = liveBooks.value.map((b) => b.slug).sort()
-    expect(slugs).toEqual(['kn1', 'kn4'])
+    expect(slugs).toEqual(['kn1'])
   })
 
   it('upcomingBooks filters correctly', () => {
-    expect(upcomingBooks.value).toHaveLength(1)
-    expect(upcomingBooks.value[0].slug).toBe('kn5')
+    // kn.4 + kn.5 both launch_preparing (kn.4 добавлен cont+22 per Q4 «Скоро с оговоркой»)
+    expect(upcomingBooks.value).toHaveLength(2)
+    const slugs = upcomingBooks.value.map((b) => b.slug).sort()
+    expect(slugs).toEqual(['kn4', 'kn5'])
   })
 
   it('gatedBooks includes kn7 (quality gate pending — ЩИТ v5 после кн.3 per Иви S151)', () => {
