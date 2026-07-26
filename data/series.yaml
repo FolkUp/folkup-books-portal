@@ -92,8 +92,15 @@ books:
     slug: kn3
     slug_en_temp: city-of-the-sun
     trilogy: svoimi_silami
-    status: stub
-    # Iskra §11 gate «даты-обещания запрещены» cont+22 2026-07-26 — launch_target removed.
+    status: live
+    version: 1.0.0
+    launch_date: 2026-07-26
+    # Iskra S217 VIZA 2026-07-26 (Andrey «давайте её переводить к публикации»):
+    # kn.3 «Город Солнца» → LIVE per образцу kn.5 (веб pro-chto готов, EPUB/PDF готовятся).
+    # FULL v3.1 проверен изнутри S216 (адрес приёмной верный, ИИ-запрет + NC-ND отсутствуют).
+    # pro-chto ратифицирован PR #54, маркер VIZA-S216.
+    format_stale_note: |
+      Веб-версия готова. EPUB и PDF готовятся — сборка форматов ведётся.
     illustration_style: Bauhaus / Kandinsky
     cover_v1: /covers/cover_kn3.svg
     covers:
