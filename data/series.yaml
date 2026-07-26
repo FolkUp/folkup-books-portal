@@ -109,7 +109,7 @@ books:
       de: /covers/cover_kn3_de.svg
       pt: /covers/cover_kn3_pt.svg
     translations:
-      ru: preparing
+      ru: live  # RU веб-версия LIVE per Iskra S217 VIZA + Andrey «давайте её переводить к публикации» 2026-07-26 · fix regression cont+24 S2SCOOP POMETKA loop-poll-5
       de: preparing
       en: preparing
       pt: preparing
