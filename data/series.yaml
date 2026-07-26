@@ -93,7 +93,7 @@ books:
     slug_en_temp: city-of-the-sun
     trilogy: svoimi_silami
     status: stub
-    launch_target: 2026-Q3
+    # Iskra §11 gate «даты-обещания запрещены» cont+22 2026-07-26 — launch_target removed.
     illustration_style: Bauhaus / Kandinsky
     cover_v1: /covers/cover_kn3.svg
     covers:
@@ -137,7 +137,7 @@ books:
     slug_en_temp: consonants-without-vowels
     trilogy: iz_pervyh_ruk
     status: stub
-    launch_target: 2026-Q3
+    # Iskra §11 gate «даты-обещания запрещены» cont+22 2026-07-26 — launch_target removed.
     cover_v1: /covers/cover_kn2.svg
     covers:
       ru: /covers/cover_kn2.svg
@@ -178,7 +178,7 @@ books:
     slug_en_temp: own-eyes
     trilogy: iz_pervyh_ruk
     status: stub
-    launch_target: 2026-Q4
+    # Iskra §11 gate «даты-обещания запрещены» cont+22 2026-07-26 — launch_target removed.
     cover_v1: /covers/cover_kn6.svg
     covers:
       ru: /covers/cover_kn6.svg
