@@ -72,7 +72,7 @@ books:
     # Iskra §7 VITRINNYY-PAKET S214 canonical: файл отстаёт от веба по версии.
     # Iskra PAKET-VYKLADKI-S216 2026-07-26 §3: PDF found к содержать 1 изображение на 216 стр (проверено открытием файла), EPUB — 16 + обложка. Дефект pipeline сборки. Плашка честная про PDF-illustrations gap до v1.0.15 pipeline fix.
     format_stale_note: |
-      PDF пока без иллюстраций, полная версия готовится. EPUB содержит все 16 иллюстраций. Веб-версия свежее файлов — догоняем ближайшим обновлением.
+      EPUB v1.0.14 актуальный (cont+25 nav fix — оглавление больше не мешается с главами на первых страницах). PDF v1.0.14 без иллюстраций внутри — регенерация в следующей волне.
     cover_v1: /covers/cover_kn1.svg
     covers:
       ru: /covers/cover_kn1.svg

@@ -84,10 +84,13 @@ const hasAnyPreparing = computed(() =>
 
 const SITE_URL = 'https://books.folkup.life'
 
-// Per-book og:image (absolute URL, overrides App.vue default)
+// Per-book og:image — PNG version для соцсетей (Iskra STOP-MAYAK S219 §2д:
+// «соцсети капризны к SVG, превью отдавать растровым»). Wave 2 PNG variants
+// живут рядом с SVG (cover_knN.png). SVG остаётся для страничного рендера.
 const bookOgImage = computed(() => {
   const coverPath = book.value?.cover_v1 || '/covers/cover_kn1.svg'
-  return coverPath.startsWith('http') ? coverPath : `${SITE_URL}${coverPath}`
+  const pngPath = coverPath.replace(/\.svg$/, '.png')
+  return pngPath.startsWith('http') ? pngPath : `${SITE_URL}${pngPath}`
 })
 
 useHead({
@@ -174,7 +177,7 @@ if (book.value) {
             class="book-page__button"
             download
           >
-            PDF
+            {{ t('portal.download_pdf') }}
           </a>
         </div>
 

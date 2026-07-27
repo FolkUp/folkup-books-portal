@@ -8,7 +8,8 @@ const route = useRoute()
 
 // Base head — augmented per-page via useHead в individual pages
 const SITE_URL = 'https://books.folkup.life'
-const DEFAULT_OG_IMAGE = `${SITE_URL}/covers/cover_kn1.svg`
+// Iskra STOP-MAYAK S219 §2д: соцсети капризны к SVG. Wave 2 PNG отдаём для превью.
+const DEFAULT_OG_IMAGE = `${SITE_URL}/covers/cover_kn1.png`
 const SUPPORTED_LOCALES = ['ru', 'en', 'de', 'pt'] as const
 type SupportedLocale = (typeof SUPPORTED_LOCALES)[number]
 
@@ -48,9 +49,9 @@ useHead({
     { property: 'og:site_name', content: 'Библиотека FolkUp' },
     { property: 'og:url', content: currentUrl },
     { property: 'og:image', content: DEFAULT_OG_IMAGE },
-    { property: 'og:image:type', content: 'image/svg+xml' },
-    { property: 'og:image:width', content: '240' },
-    { property: 'og:image:height', content: '360' },
+    { property: 'og:image:type', content: 'image/png' },
+    { property: 'og:image:width', content: '800' },
+    { property: 'og:image:height', content: '1200' },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:image', content: DEFAULT_OG_IMAGE },
   ],
