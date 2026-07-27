@@ -78,7 +78,8 @@ sources:
     license: "Public Domain (CC PDM 1.0, PD-Art)"
     license_url: "https://creativecommons.org/publicdomain/mark/1.0/"
     source_url: "https://commons.wikimedia.org/wiki/File:The_Donation_of_Constantine,_page_318.jpg"
-    chapter_placement: "III. Инквизитор"
+    chapter_placement: "II. Филолог"
+    placement_history: "Изначально предлагалось «III. Инквизитор», Iskra S219 pair-review cont+25 → перенос к «II. Филолог»: Донация — сюжет главы Валлы, обрушение подлога"
     attribution: >-
       *Constitutum Constantini* (Донация Константина), рукопись 9 века.
       St. Gallen, Stiftsbibliothek, Cod. Sang. 670, стр. 318 (Псевдо-Исидорова
@@ -93,8 +94,9 @@ sources:
     license: "Public Domain (CC PDM 1.0, PD-Art)"
     license_url: "https://creativecommons.org/publicdomain/mark/1.0/"
     source_url: "https://commons.wikimedia.org/wiki/File:De_falso_credita_et_ementita_Constantini_Donatione_declamatio_(1).png"
-    chapter_placement: "II. Филолог / III. Инквизитор"
-    caveat: "1620 edition — если Iskra editorial предпочитает 1517 Ульрих фон Хуттен edition, требуется secondary OSINT sweep"
+    chapter_placement: "II. Филолог"
+    placement_history: "Изначально предлагалось «II. Филолог / III. Инквизитор» (dual), Iskra S219 pair-review cont+25 → single «II. Филолог»"
+    caveat: "1620 edition — Iskra S219 editorial: 1620 подтверждён (1517 Hutten sweep optional, P3 backlog)"
     attribution: >-
       Lorenzo Valla, *De falso credita et ementita Constantini Donatione
       declamatio* — титульный лист издания 1620. Текст 1440. Wikimedia Commons,

@@ -12,8 +12,8 @@ Structure per `vault/books/KN6-SVOD-MASTER-v1.0-S196.md` (S196 canon) + S127 OGL
 |---------|-------------|--------------|----------------|
 | **Введение. Своими глазами** | `kn6-00-vvedenie.webp` (conformity metaphor — figure vs chorus) | — | Frida only |
 | **I. Проверь сам** | `kn6-01-prover-sam.webp` SHIPPED cont+24 | `sources/07-apollo11-aldrin-1969.webp` | Frida + Apollo 11 |
-| **II. Филолог** | `kn6-02-filolog.webp` (medieval scholar с magnifying glass) | `sources/06-valla-de-falso-credita-1620.webp` | Frida + Valla 1620 |
-| **III. Инквизитор** | `kn6-03-inkvizitor.webp` SHIPPED cont+24 | `sources/05-donatio-constantini-stgallen-9c.webp` + `sources/06-valla-de-falso-credita-1620.webp` | Frida + 2 первоисточника |
+| **II. Филолог** | `kn6-02-filolog.webp` (medieval scholar с magnifying glass) | `sources/05-donatio-constantini-stgallen-9c.webp` + `sources/06-valla-de-falso-credita-1620.webp` | Frida + Donatio + Valla (Iskra S219 pair-review cont+25: перенос из «Инквизитор») |
+| **III. Инквизитор** | `kn6-03-inkvizitor.webp` SHIPPED cont+24 | — | Frida only (перенесены к «Филолог» per Iskra S219) |
 | **IV. Комиссия** | `kn6-04-komissiya.webp` SHIPPED cont+24 | `sources/01-bailly-rapport-1784-title.webp` | Frida + Bailly 1784 |
 | **V. Врач** | `kn6-05-vrach.webp` SHIPPED cont+24 | `sources/04-semmelweis-aetiologie-1861-title.webp` | Frida + Semmelweis 1861 |
 | **VI. Офицер** | `kn6-06-oficer.webp` SHIPPED cont+24 | `sources/02-zola-jaccuse-laurore-1898.webp` + `sources/03-bordereau-dreyfus-1894.webp` | Frida + Zola + Bordereau |
