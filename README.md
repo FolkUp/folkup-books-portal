@@ -4,7 +4,35 @@
 **Domain:** `books.folkup.life`
 **Purpose:** Единый portal для 7-book Agile Sapiens series
 **Stack:** Vue 3 + Vite + vite-ssg + asciidoctor.js + vue-i18n + style-dictionary
-**License:** Content — CC BY-SA 4.0. Code — MIT.
+**License:** Dual — MIT (code) + CC BY-SA 4.0 (content). Full text: [`LICENSE`](LICENSE) (MIT) + [`LICENSE-CONTENT`](LICENSE-CONTENT) (CC BY-SA 4.0). Directory-to-license mapping under `## Licensing` section below. Copyright infringement reporting: [`DMCA.md`](DMCA.md).
+
+## Licensing
+
+Materials are dual-licensed by class:
+
+**MIT License (`LICENSE`) — code + technical infrastructure:**
+
+- `src/**` — Vue 3 components, composables, routing, i18n loader
+- `scripts/**` — build scripts, generators, deployment tooling
+- `astro.config.*`, `vite.config.*`, `package.json`, `tsconfig.json`, config files
+- `.github/**` — CI/CD workflows
+
+**Creative Commons Attribution-ShareAlike 4.0 International (`LICENSE-CONTENT`) — content:**
+
+- `content/kn*/**` — book chapters (kn.1-kn.7 series), MASTER.md, editorial text
+- `public/kn*/downloads/**` — per-book EPUB and PDF compiled formats
+- `public/covers/**` + `public/images/kn*-chapters/**` — cover art, chapter plates
+- `translations/**` — translated versions (translators as FolkUp entities)
+
+**Third-party dependencies** — retain original licenses. See `package.json`.
+
+**Attribution format:**
+
+> «Book Chapter Title» by Команданте FolkUp, licensed under CC BY-SA 4.0.
+> Source: https://github.com/FolkUp/folkup-books-portal/blob/main/content/<path>
+> Modifications: [describe if any].
+
+**Copyright infringement reporting:** see [`DMCA.md`](DMCA.md).
 
 ## Aligned decisions (cont +39 S26AGIL)
 
