@@ -15,7 +15,7 @@
 ## Author
 
 Comandante FolkUp (pseudonym). FolkUp Ecosystem. https://folkup.app
-Legal name (Andrei Klemenchionok) disclosed per AI Act Art. 50(4) at https://books.folkup.life/ai-disclosure/
+Legal disclosure per EU AI Act Art. 50(4)(b): https://books.folkup.life/ai-disclosure/
 
 ## License
 
