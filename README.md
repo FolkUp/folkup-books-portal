@@ -1,49 +1,56 @@
-<!-- precommit:allow-ai-mentions -->
-# folkup-books-portal
+# FolkUp Books Portal · Vue 3 SPA для серии литературно-философских книг
 
-**Domain:** `books.folkup.life`
-**Purpose:** Единый portal для 7-book Agile Sapiens series
-**Stack:** Vue 3 + Vite + vite-ssg + asciidoctor.js + vue-i18n + style-dictionary
-**License:** Dual — MIT (code) + CC BY-SA 4.0 (content). Full text: [`LICENSE`](LICENSE) (MIT) + [`LICENSE-CONTENT`](LICENSE-CONTENT) (CC BY-SA 4.0). Directory-to-license mapping under `## Licensing` section below. Copyright infringement reporting: [`DMCA.md`](DMCA.md).
+[![License MIT (code)](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+[![License CC BY-SA 4.0 (content)](https://img.shields.io/badge/content-CC%20BY--SA%204.0-green.svg)](LICENSE-CONTENT)
+[![Site](https://img.shields.io/badge/live-books.folkup.life-blue.svg)](https://books.folkup.life)
 
-## Licensing
+**Vue 3 + Vite + vite-ssg portal для серии «A Mind of One's Own (Своим умом)». Reader-facing SPA с per-book download packages (EPUB + PDF) и longform integration с [underground.folkup.life](https://underground.folkup.life).**
 
-Materials are dual-licensed by class:
+## About
 
-**MIT License (`LICENSE`) — code + technical infrastructure:**
+Portal обслуживает семикнижную серию в общей нижней навигации, единой typography (Playfair Display + Vollkorn + Pacifico brand mark), unified download packages, cross-references между книгами и longform materials.
 
-- `src/**` — Vue 3 components, composables, routing, i18n loader
-- `scripts/**` — build scripts, generators, deployment tooling
-- `astro.config.*`, `vite.config.*`, `package.json`, `tsconfig.json`, config files
-- `.github/**` — CI/CD workflows
+Автор — Команданте FolkUp (Команданте FolkUp is a literary pseudonym; legal identification and AI-use disclosure: [books.folkup.life/ai-disclosure](https://books.folkup.life/ai-disclosure)).
 
-**Creative Commons Attribution-ShareAlike 4.0 International (`LICENSE-CONTENT`) — content:**
+LIVE at [books.folkup.life](https://books.folkup.life). Deploy: Cloudflare Pages.
 
-- `content/kn*/**` — book chapters (kn.1-kn.7 series), MASTER.md, editorial text
-- `public/kn*/downloads/**` — per-book EPUB and PDF compiled formats
-- `public/covers/**` + `public/images/kn*-chapters/**` — cover art, chapter plates
-- `translations/**` — translated versions (translators as FolkUp entities)
+## Books в серии
 
-**Third-party dependencies** — retain original licenses. See `package.json`.
+- **kn.1** — Agile Sapiens (Литературный бизнес-анализ) — **LIVE**
+- **kn.2** — Согласные без гласных — publishing pipeline
+- **kn.3** — Город Солнца — publishing pipeline
+- **kn.4** — Где живёт новое — publishing pipeline
+- **kn.5** — Палимпсест Архимеда — publishing pipeline
+- **kn.6** — in preparation
+- **kn.7** — in preparation
 
-**Attribution format:**
+## Development
 
-> «Book Chapter Title» by Команданте FolkUp, licensed under CC BY-SA 4.0.
-> Source: https://github.com/FolkUp/folkup-books-portal/blob/main/content/<path>
-> Modifications: [describe if any].
+```bash
+npm install
+npx playwright install --with-deps chromium
 
-**Copyright infringement reporting:** see [`DMCA.md`](DMCA.md).
+npm run dev            # local dev server (Vite HMR)
+npm run type-check     # TypeScript strict
+npm run test:unit      # Vitest unit tests
+npm run test:e2e       # Playwright E2E + visual regression + a11y
+npm run build          # production SSG build
+npm run preview        # preview production build
+```
 
-## Aligned decisions (cont +39 S26AGIL)
+Stack:
 
-- **Tech stack** = Vue 3 + Vite + vite-ssg per Андрей verdict 2026-07-02 + CLDESIGN-007 target framework
-- **Migration model** = кн.1 mirror + 301 redirect from sapiens.folkup.life (Андрей Q8=В cont +39)
-- **Timing** = кн.5 launch + migration параллельно 04-05 июля 2026
-- **Кн.7** = Variant B жёсткий (не релизится до сигнала Андрея; stub «В паузе» ~150 слов)
-- **Indexation** = всё published indexed; noindex только preview branches (Андрей mandate 2026-07-02)
-- **Owners** = Johnny (frontend, per panel gap audit) + Кочегар (deploy) + Гутенберг (content pipeline) + Дьюи (SEO) + Фрида (illustrations) + Фонарщик (design tokens)
+- **Vue 3** — Composition API, Vue Router
+- **Vite** — build + HMR
+- **vite-ssg** — static site generation with island hydration
+- **TypeScript** — strict mode
+- **Tailwind CSS v4** — utility styling
+- **asciidoctor.js** — book content processing
+- **vue-i18n** — RU primary + EN/DE/PT translations
+- **Playwright** — visual regression + accessibility E2E
+- **Vitest** — unit tests (jsdom + v8 coverage)
 
-## Repo structure
+## Architecture
 
 ```
 folkup-books-portal/
@@ -59,8 +66,10 @@ folkup-books-portal/
 │   ├── pages/{index,kn1,kn2,...,kn7,BookPage,404}.vue
 │   └── styles/{tokens.css,base.css}
 ├── data/series.yaml                      # 7-book metadata + status per book
+├── content/kn{1-7}/**                    # Book content (Markdown + AsciiDoc)
 ├── public/
-│   ├── robots.txt                        # AI bot policy per Q11
+│   ├── kn{1-7}/**                        # Per-book static assets
+│   ├── robots.txt                        # AI bot policy
 │   ├── llms.txt                          # LLM discoverability per llmstxt.org
 │   ├── _redirects                        # CF Pages (301 explicit)
 │   └── _headers                          # Content-type + security
@@ -77,50 +86,47 @@ folkup-books-portal/
 └── README.md
 ```
 
-## Development
-
-```bash
-# Install
-npm install
-npx playwright install --with-deps chromium
-
-# Dev server
-npm run dev
-
-# Type check
-npm run type-check
-
-# Unit tests
-npm run test:unit
-
-# E2E + visual + a11y
-npm run test:e2e
-
-# Build (vite-ssg static generation)
-npm run build
-
-# Preview built site
-npm run preview
-```
-
 ## Deploy
 
-Push к `main` → GH Actions → Cloudflare Pages (`books-folkup-life` project). Post-deploy smoke test verifies 200 responses.
+Push to `main` → GitHub Actions → Cloudflare Pages (`books-folkup-life` project). Post-deploy smoke test verifies 200 responses across all published book pages.
 
-## Content pipeline (Иви .adoc → LIVE)
+## Related projects (FolkUp Ecosystem)
 
-```
-Иви .adoc (Drive)  →  Гутенберг conversion  →  content/knN/  →
-   asciidoctor.js build-time  →  Vue components  →  vite-ssg build  →  CF Pages
-```
+- [agile-sapiens](https://github.com/FolkUp/agile-sapiens) — kn.1 monograph source repo
+- [orga (underground.folkup.life)](https://github.com/FolkUp/orga) — longform research + essay platform
+- [folkup-landing](https://github.com/FolkUp/folkup-landing) — FolkUp ecosystem entry point
 
-## Cross-references
+Full ecosystem map: [folkup.app](https://folkup.app).
 
-- CLDESIGN-007 (BACKLOG:10618) — target framework validation
-- SITE-LONGREADS-001 (BACKLOG:19099) — Иви S52 mandate original
-- Kочегар + Дьюи panel verdict: `vault/memory/kochegar-dewey-portal-verdict-2026-07-01.md`
-- Stack documentation: `vault/memory/publishing-stack-documentation-2026-07-02.md`
-- Panel gap audit: `vault/memory/panel-fornit-gap-audit-vue-publishing-2026-07-02.md`
-- КиберГонзо industry research: `vault/memory/kibergonzo-book-portal-industry-research-2026-07-01.md`
-- Illustrations registry: `vault/memory/illustrations-registry-canonical.md`
-- Publishing pipeline roadmap: `vault/memory/publishing-pipeline-program-roadmap-2026-06-28.md`
+## Licensing
+
+Dual-licensed following the FolkUp ecosystem canon:
+
+- **Code (Vue 3 components, composables, scripts, config, workflows)** — MIT.
+  See [`LICENSE`](./LICENSE).
+- **Content (book chapters, per-book downloads, cover art, translations)** —
+  Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).
+  See [`LICENSE-CONTENT`](./LICENSE-CONTENT).
+
+Attribution format for CC BY-SA content:
+
+> «Book Chapter Title» by Команданте FolkUp, licensed under CC BY-SA 4.0.
+> Source: https://github.com/FolkUp/folkup-books-portal/blob/main/content/<path>
+> Modifications: [describe if any].
+
+Copyright infringement notices → [`DMCA.md`](./DMCA.md) (GitHub referral +
+direct contact `info@folkup.app`, subject: DMCA).
+
+## Contributing
+
+Pull requests welcomed. Content edits and code contributions: DCO Signed-off-by required. See `CONTRIBUTING.md` when opening the repository.
+
+## Contact
+
+- Editorial / content: `info@folkup.app`
+- DMCA / copyright: `info@folkup.app` (subject: DMCA) — see [`DMCA.md`](./DMCA.md)
+- Publisher: Команданте FolkUp / FolkUp Ecosystem
+
+---
+
+**© 2026 Команданте FolkUp · Publisher: FolkUp Ecosystem · Content CC BY-SA 4.0 · Code MIT**
