@@ -133,9 +133,10 @@ describe('useSeriesData', () => {
     expect(kn1?.canonical_pre_cutover).toBeUndefined()
   })
 
-  it('kn1 downloads REMOVED (P0 takedown cont+27 2026-07-28 — EPUB truncated ch.2-6, PDF deanon; rebuild v1.0.15 pending)', () => {
+  it('kn1 has EPUB v1.0.15 (rebuild cont+27 post-takedown), PDF still pending Track 2', () => {
     const kn1 = bookBySlug('kn1')
-    expect(kn1?.downloads).toBeUndefined()
+    expect(kn1?.downloads?.epub).toContain('v1.0.15.epub')
+    expect(kn1?.downloads?.pdf).toBeUndefined()
   })
 
   it('kn1 covers include all 4 languages', () => {
