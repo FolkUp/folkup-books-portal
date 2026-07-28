@@ -62,17 +62,15 @@ books:
     version: 1.0.14
     launch_date: 2026-05-24
     date_relicensed: 2026-06-25
-    downloads:
-      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.14.epub
-      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.14.pdf
-    # Iskra S191 P0 приёмка Андрея 2026-07-19: EPUB/PDF содержат v1.0.11 контент
-    # (colophon внутри показывает 1.0.11); веб-версия свежая v1.0.14 с 3 factual
-    # правками Iskra S169. Форматы регенерируются в Phase D спринта. Honest metallica
-    # per Q5 staged release + Iskra canon «формат не блокирует релиз».
-    # Iskra §7 VITRINNYY-PAKET S214 canonical: файл отстаёт от веба по версии.
-    # Iskra PAKET-VYKLADKI-S216 2026-07-26 §3: PDF found к содержать 1 изображение на 216 стр (проверено открытием файла), EPUB — 16 + обложка. Дефект pipeline сборки. Плашка честная про PDF-illustrations gap до v1.0.15 pipeline fix.
+    # TAKEDOWN cont+27 2026-07-28 (Andrey directive «немедленный takedown»):
+    # EPUB v1.0.14 — главы 2-6 усечены до 10-20% объёма (кардиограмма покойника
+    # отсутствует, Iskra S223 P1 маяк 27.07 22:30 UTC подтверждён Discovery Sweep).
+    # PDF v1.0.14 — содержит real name «Андрей Клеменчёнок» 4 раза (F2 sanitize
+    # cont+21 покрыла только EPUB dc:creator, PDF pipeline не sanitized).
+    # Downloads сняты до переиздания v1.0.15. Веб-версия «Про что книга» остаётся.
+    # Iskra S223 escalation trigger: «оба канала битые → P0, чинить вне очереди».
     format_stale_note: |
-      EPUB v1.0.14 актуальный (cont+25 nav fix — оглавление больше не мешается с главами на первых страницах). PDF v1.0.14 без иллюстраций внутри — регенерация в следующей волне.
+      Форматы сняты для переиздания. EPUB и PDF v1.0.14 содержат критические дефекты — переиздание v1.0.15 готовится. Читайте «Про что книга» здесь. Возвращайтесь за v1.0.15.
     cover_v1: /covers/cover_kn1.svg
     covers:
       ru: /covers/cover_kn1.svg
