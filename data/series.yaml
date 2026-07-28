@@ -59,18 +59,21 @@ books:
     slug_en_temp: agile-sapiens
     trilogy: svoimi_silami
     status: live
-    version: 1.0.14
+    version: 1.0.15
     launch_date: 2026-05-24
     date_relicensed: 2026-06-25
-    # TAKEDOWN cont+27 2026-07-28 (Andrey directive «немедленный takedown»):
-    # EPUB v1.0.14 — главы 2-6 усечены до 10-20% объёма (кардиограмма покойника
-    # отсутствует, Iskra S223 P1 маяк 27.07 22:30 UTC подтверждён Discovery Sweep).
-    # PDF v1.0.14 — содержит real name «Андрей Клеменчёнок» 4 раза (F2 sanitize
-    # cont+21 покрыла только EPUB dc:creator, PDF pipeline не sanitized).
-    # Downloads сняты до переиздания v1.0.15. Веб-версия «Про что книга» остаётся.
-    # Iskra S223 escalation trigger: «оба канала битые → P0, чинить вне очереди».
+    downloads:
+      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.15.epub
+      # PDF: сборка pending Track 2 sanitize + rebuild (v1.0.14 содержал real
+      # name 4×, PDF pipeline не покрыт F2 cont+21). Следующий batch.
+    # RESTORE PARTIAL cont+27 2026-07-28 после EPUB pipeline fix:
+    # EPUB v1.0.15 — sed frontmatter strip заменён awk state machine.
+    # Главы 2-6 восстановлены к full length (Iskra S223 P1 «размеры глав 2-6»
+    # разоблачение закрыто). Кардиограмма покойника anchor гл.3 возвращён.
+    # PDF v1.0.15 — Track 2 pending (sanitize real name + rebuild).
+    # Iskra POMETKA follows после deploy.
     format_stale_note: |
-      Форматы сняты для переиздания. EPUB и PDF v1.0.14 содержат критические дефекты — переиздание v1.0.15 готовится. Читайте «Про что книга» здесь. Возвращайтесь за v1.0.15.
+      EPUB v1.0.15 переиздан с полным текстом глав 2-6 (fix pipeline bug 28.07). PDF v1.0.15 готовится следующей волной. Скачать EPUB — по кнопке ниже.
     cover_v1: /covers/cover_kn1.svg
     covers:
       ru: /covers/cover_kn1.svg
