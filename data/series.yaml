@@ -4,19 +4,19 @@
 # Covers v1 (S138 Иви pack): временные, канон до финального арта Фриды/Ремедиос.
 #   Каждая обложка несёт круглый штамп «ЭКСПОНАТ НА РЕСТАВРАЦИИ» (переведён по языку).
 #   DE обложки содержат «Kommandant» — pending regen с «Comandante» per Иви S152.
-# CANON v2 «Своим умом» Iskra S214 2026-07-23 (виза Andrey «раз и навсегда»):
+# CANON v2 «Своим умом» Iskra S214 2026-07-23 (виза «раз и навсегда»):
 #   Серия — «Своим умом»; читателю нумерация НЕ показывается (canon v2 §1).
 #   Внутренний порядок = карта замысла: создаём → получаем без искажений → договариваемся.
 #   Три трилогии: I. «Своими силами» (kn1+kn3+kn4) · II. «Из первых рук» (kn2+kn5+kn6) · III. «Общий язык» (kn7+…)
 #   Slug ≠ position: URL /kn1–/kn7 живой, не меняем; position = поле сортировки карточек.
 
 series:
-  # CANON v2 Iskra S214: серия «Своим умом» (виза Andrey — «FolkUp» бренд, не имя серии).
+  # CANON v2 Iskra S214: серия «Своим умом» (виза — «FolkUp» бренд, не имя серии).
   # DE/EN/PT идиомы уйдут Болику/Лёлику/Зеке отдельно; до их вердикта — RU placeholder.
   name: Своим умом
-  # Public author display = pseudonym per Andrei Q10 verdict via Iskra S178b 2026-07-18.
-  # Legal name «Andrei Klemenchionok» reserved для /ai-disclosure page (AI Act Art. 50(4))
-  # per Лев Option F + Andrei explicit «Моё имя указываем только там, где требуется юридически».
+  # Public author display = pseudonym per Iskra S178b canon 2026-07-18.
+  # Legal identity reserved для /ai-disclosure page (AI Act Art. 50(4))
+  # per Лев Option F canon: legal name published only where legally required.
   author: Команданте FolkUp
   author_url: https://books.folkup.life/#author
   license: CC BY-SA 4.0
@@ -48,7 +48,7 @@ series:
       description: >-
         Почему договориться труднее, чем кажется, и что с этим делать.
 
-# CANON v2 §2 таблица переномеровки (виза Andrey):
+# CANON v2 §2 таблица переномеровки (визирована):
 #   kn1 pos 1 (I·1) · kn3 pos 2 (I·2) · kn4 pos 3 (I·3)
 #   kn2 pos 4 (II·1) · kn5 pos 5 (II·2) · kn6 pos 6 (II·3)
 #   kn7 pos 7 (III·1) · будущие тома III·2, III·3
@@ -80,7 +80,7 @@ books:
       en: /covers/cover_kn1_en.svg
       de: /covers/cover_kn1_de.svg
       pt: /covers/cover_kn1_pt.svg
-    # Translation status per language position — Iskra canon ZAGLUSHKI S179 (Andrei visa 2026-07-18).
+    # Translation status per language position — Iskra canon ZAGLUSHKI S179 (visa 2026-07-18).
     # Rule «перевод не блокирует релиз»: RU не ждёт переводов, каждый выходит следующей версией.
     translations:
       ru: live
@@ -96,7 +96,7 @@ books:
     status: live
     version: 1.0.0
     launch_date: 2026-07-26
-    # Iskra S217 VIZA 2026-07-26 (Andrey «давайте её переводить к публикации»):
+    # Iskra S217 VIZA 2026-07-26 (publish canon «давайте её переводить к публикации»):
     # kn.3 «Город Солнца» → LIVE per образцу kn.5 (веб pro-chto готов, EPUB/PDF готовятся).
     # FULL v3.1 проверен изнутри S216 (адрес приёмной верный, ИИ-запрет + NC-ND отсутствуют).
     # pro-chto ратифицирован PR #54, маркер VIZA-S216.
@@ -110,7 +110,7 @@ books:
       de: /covers/cover_kn3_de.svg
       pt: /covers/cover_kn3_pt.svg
     translations:
-      ru: live  # RU веб-версия LIVE per Iskra S217 VIZA + Andrey «давайте её переводить к публикации» 2026-07-26 · fix regression cont+24 S2SCOOP POMETKA loop-poll-5
+      ru: live  # RU веб-версия LIVE per Iskra S217 VIZA + publish canon «давайте её переводить к публикации» 2026-07-26 · fix regression cont+24 S2SCOOP POMETKA loop-poll-5
       de: preparing
       en: preparing
       pt: preparing
@@ -165,7 +165,7 @@ books:
     status: live
     version: 1.0.0
     launch_date: 2026-07-26
-    # Iskra PAKET-VYKLADKI-S216 §2 (2026-07-26): «Файл проверен изнутри — чист. Книга готова.» + Andrey Q5=А cont+22 autonomous publish. RU FULL v1.1 vault preserved (KN5-Chuzhimi-rukami-FULL-v1.1-cont15-vorota-fix-2026-07-22.md).
+    # Iskra PAKET-VYKLADKI-S216 §2 (2026-07-26): «Файл проверен изнутри — чист. Книга готова.» + publish Q5=А cont+22 autonomous canon. RU FULL v1.1 vault preserved (KN5-Chuzhimi-rukami-FULL-v1.1-cont15-vorota-fix-2026-07-22.md).
     # Pattern kn.1/kn.4: LIVE веб-версия (pro-chto landing), файлы EPUB/PDF готовятся honest banner.
     format_stale_note: |
       Веб-версия готова. EPUB и PDF готовятся — сборка форматов ведётся.
@@ -176,7 +176,7 @@ books:
       de: /covers/cover_kn5_de.svg
       pt: /covers/cover_kn5_pt.svg
     translations:
-      ru: live  # RU FULL v1.1 clean per Iskra pair 2026-07-26 · Andrey Q5=А publish
+      ru: live  # RU FULL v1.1 clean per Iskra pair 2026-07-26 · publish Q5=А
       de: preparing  # Кнут в работе, "перевод не блокирует релиз" S179
       en: preparing
       pt: preparing
