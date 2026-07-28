@@ -82,13 +82,16 @@ jobs:
           retention-days: 7
 
       - name: Deploy к Cloudflare Pages (main branch only)
+        # cloudflare/pages-action ARCHIVED 2026-07-27 by Cloudflare, replaced by
+        # wrangler-action. Migration per Kuper R-K4 (SHA-pin) + Andrey Q6 verdict
+        # cont+24 Variant A. Canonical pattern aligned с agile-sapiens/orga/landing
+        # deploy-cf-backup.yml (v3.14.1 SHA `da0e0dfe...`).
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@da0e0dfe58b7a431659754fdf3f186c529afbe65 # v3.14.1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: df4ac254f54d45ae99d2273c0f1af48c
-          projectName: books-folkup-life
-          directory: dist
+          command: pages deploy dist --project-name=books-folkup-life --branch=main --commit-message="portal auto-deploy ${{ github.sha }}"
 
       - name: Post-deploy smoke test
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
