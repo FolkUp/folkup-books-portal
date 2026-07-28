@@ -64,16 +64,16 @@ books:
     date_relicensed: 2026-06-25
     downloads:
       epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.15.epub
-      # PDF: сборка pending Track 2 sanitize + rebuild (v1.0.14 содержал real
-      # name 4×, PDF pipeline не покрыт F2 cont+21). Следующий batch.
-    # RESTORE PARTIAL cont+27 2026-07-28 после EPUB pipeline fix:
-    # EPUB v1.0.15 — sed frontmatter strip заменён awk state machine.
-    # Главы 2-6 восстановлены к full length (Iskra S223 P1 «размеры глав 2-6»
-    # разоблачение закрыто). Кардиограмма покойника anchor гл.3 возвращён.
-    # PDF v1.0.15 — Track 2 pending (sanitize real name + rebuild).
-    # Iskra POMETKA follows после deploy.
+      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.15.pdf
+    # RESTORE FULL cont+27 2026-07-28 после Track 1 (EPUB pipeline fix) + Track 2 (PDF sanitize).
+    # EPUB v1.0.15 — sed frontmatter strip заменён awk state machine. Главы 2-6
+    # восстановлены к full length. Кардиограмма покойника гл.3 ✓.
+    # PDF v1.0.15 — title page real name sanitized («Команданте FolkUp» byline).
+    # Остаются 3 references «Клеменчёнок»: acknowledgments (1× soft) + colophon
+    # (2× legal disclosure per PT Decreto-Lei 7/2004 + EU AI Act Art. 50(4)) —
+    # Iskra ratify дальнейшие sanitize levels если нужно.
     format_stale_note: |
-      EPUB v1.0.15 переиздан с полным текстом глав 2-6 (fix pipeline bug 28.07). PDF v1.0.15 готовится следующей волной. Скачать EPUB — по кнопке ниже.
+      EPUB и PDF v1.0.15 переизданы 28.07: EPUB — полный текст глав 2-6 (fix pipeline); PDF — title page sanitized. Скачать по кнопкам ниже.
     cover_v1: /covers/cover_kn1.svg
     covers:
       ru: /covers/cover_kn1.svg
