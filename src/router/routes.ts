@@ -19,6 +19,18 @@ export const routes: RouteRecordRaw[] = [
     meta: { pageType: 'book', bookSlug: 'kn1' },
   },
   {
+    path: '/kn1/read',
+    name: 'kn1-read-toc',
+    component: () => import('../pages/Kn1ReadToc.vue'),
+    meta: { pageType: 'reader-toc', bookSlug: 'kn1' },
+  },
+  {
+    path: '/kn1/read/:slug',
+    name: 'kn1-read-chapter',
+    component: () => import('../pages/Kn1ReadChapter.vue'),
+    meta: { pageType: 'reader-chapter', bookSlug: 'kn1' },
+  },
+  {
     path: '/kn2',
     name: 'kn2',
     component: () => import('../pages/kn2.vue'),

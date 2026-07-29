@@ -1,0 +1,237 @@
+{
+  "generated": "2026-07-29T09:44:48.529Z",
+  "book": "kn1",
+  "locale": "ru",
+  "entries": [
+    {
+      "slug": "chapter-0-pilot",
+      "title": "Филеас Фогг изобрёл то, что уничтожает современные корпорации",
+      "description": "Как вымышленный английский джентльмен 1872 года интуитивно применил принципы, которые современная индустрия гибких методов коммерциализировала, исказила и продаёт обратно за миллиарды долларов",
+      "weight": 10,
+      "act": "I: Истоки",
+      "act_opener": true,
+      "isApparatus": false,
+      "order": 10
+    },
+    {
+      "slug": "chapter-1-jules-verne",
+      "title": "Глава 1: Жюль Верн программирует",
+      "description": "Как приключенческая литература XIX века заложила паттерны управления проектами — от «Двадцати тысяч лье» до циклов разработки (спринтов) в Кремниевой долине",
+      "weight": 20,
+      "act": "I: Истоки",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 20
+    },
+    {
+      "slug": "chapter-2-frankenstein",
+      "title": "Глава 2: Франкенштейн управляет проектом",
+      "description": "Как роман восемнадцатилетней Мэри Шелли стал точнейшим разбором полётов (post-mortem) корпоративных провалов: от FBI Sentinel до Healthcare.gov",
+      "weight": 30,
+      "act": "I: Истоки",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 30
+    },
+    {
+      "slug": "chapter-3-holmes",
+      "title": "Глава 3: Шерлок Холмс ставит диагноз",
+      "description": "Дедуктивный метод распознавания корпоративных патологий: семь признаков того, что ваш проект умирает: от Knight Capital до Target Canada",
+      "weight": 40,
+      "act": "I: Истоки",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 40
+    },
+    {
+      "slug": "intermezzo-1",
+      "title": "Интермедия I. Консультационные апартаменты",
+      "description": "Mad Tea Party как agile dysfunction: измеряют метрики, но не выпускают продукты. Carroll-Bulgakov literary fusion.",
+      "weight": 47,
+      "act": "Intermezzi",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 47
+    },
+    {
+      "slug": "chapter-4-borges",
+      "title": "Глава 4: Борхес считает story points",
+      "description": "Как измерения, призванные сделать команды гибче, превращаются в лотерею: от Spotify Model до OKR-театра, от игры с производительностью (velocity gaming) до ретроспективного ритуала",
+      "weight": 50,
+      "act": "I: Истоки",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 50
+    },
+    {
+      "slug": "preface",
+      "title": "Предисловие: О методе литературного анализа бизнеса",
+      "description": "Предисловие к книге *Agile Sapiens* — о методологии Literary Business Analysis и том, почему классическая литература оказалась точнее любого консультанта.",
+      "weight": 5,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 50
+    },
+    {
+      "slug": "chapter-5-nemo",
+      "title": "Глава 5: Сайрус Смит строит цивилизацию",
+      "description": "Bootstrap leadership: как малая автономная команда превосходит корпоративную бюрократию. Инженеры «Таинственного острова» как прототип каждой успешной тигровой команды",
+      "weight": 60,
+      "act": "II: Трансформация",
+      "act_opener": true,
+      "isApparatus": false,
+      "order": 60
+    },
+    {
+      "slug": "chapter-6-mina-harker",
+      "title": "Глава 6: Мина Харкер собирает разведку",
+      "description": "Распределённая команда викторианской эпохи: фонограф, стенография, телеграф и одна пишущая машинка против невидимого врага. Команда Света Брэма Стокера как ранний прообраз кросс-функциональной команды с единым источником правды.",
+      "weight": 70,
+      "act": "II: Трансформация",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 70
+    },
+    {
+      "slug": "chapter-6-jekyll-hyde",
+      "title": "Глава 7: Доктор Джекил",
+      "description": "Корпоративная двойственность от Стивенсона до Аргириса: почему то, что компания декларирует, и то, что её сотрудники делают на третий час пятничного спринта, — два разных существа в одном теле. Джекил, Хайд и пропавший без вести доктор Лэньон.",
+      "weight": 75,
+      "act": "II: Трансформация",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 75
+    },
+    {
+      "slug": "chapter-7-don-quixote",
+      "title": "Глава 8: Дон Кихот и Санчо — рождение командного мифа",
+      "description": "Почему команды держатся не на оргструктурах и KPI, а на разделяемом мифе. От рыцарской клятвы Дон Кихота до учредительной мифологии Patagonia, Theranos и Бендера-Воробьянинова. Карл Вейк, sensemaking, четыре закона командной мифологии — и две смерти, когда миф разрушен.",
+      "weight": 80,
+      "act": "II: Трансформация",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 80
+    },
+    {
+      "slug": "intermezzo-2",
+      "title": "Интермедия II. Продакшенское подземелье",
+      "description": null,
+      "weight": 85,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 85
+    },
+    {
+      "slug": "chapter-8-time-machine",
+      "title": "Глава 9: Машина времени и горизонты труда",
+      "description": "«Машина времени» Уэллса как диагноз расслоения труда XXI века: Элои когнитивного класса и Морлоки операций. Дэвид Аутор о поляризации навыков, Аджемоглу и Джонсон об институциях, Карл Поланьи о двойном движении рынка, Платонов о цене проекта снизу.",
+      "weight": 90,
+      "act": "III: Горизонты",
+      "act_opener": true,
+      "isApparatus": false,
+      "order": 90
+    },
+    {
+      "slug": "chapter-9-niichavo",
+      "title": "Глава 10: Понедельник начинается в субботу. НИИЧАВО как идеальная Agile-команда",
+      "description": "Четыре закона самоорганизующейся R&D-команды от Стругацких: смысл как фильтр входа, двойственное лидерство, специалист против администратора, погружение вместо обучения. НИИЧАВО как утопия осмысленного труда и диагноз бюрократии в команде.",
+      "weight": 100,
+      "act": "III: Горизонты",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 100
+    },
+    {
+      "slug": "chapter-10-chuma",
+      "title": "Глава 11: Чума. Как команда формируется в режиме длящегося кризиса",
+      "description": "Альбер Камю «Чума» 1947 — communauté доктора Риэ, Тарру, Кастеля, Рамбера, Гран и Панлю: четыре закона длящейся работы под кризисом без горизонта победы — отказ как обязательство, общая порядочность вместо героизма, сходимость без иерархии, дисциплина продолжения.",
+      "weight": 110,
+      "act": "III: Горизонты",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 110
+    },
+    {
+      "slug": "intermezzo-3",
+      "title": "Интермедия III. Трансформационный лифт",
+      "description": null,
+      "weight": 120,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 120
+    },
+    {
+      "slug": "afterword",
+      "title": "Послесловие. Одиннадцать вопросов",
+      "description": "Послесловие к книге *Agile Sapiens* — синтез двенадцати глав как одиннадцать диагностических вопросов и рамка от главы-пилота. Не команды, а вопросы.",
+      "weight": 1000,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 8000
+    },
+    {
+      "slug": "apparatus-acknowledgments",
+      "title": "Благодарности",
+      "description": "Признательность всем, кто помогал в создании этой книги",
+      "weight": 50,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "order": 9000
+    },
+    {
+      "slug": "apparatus-methodology",
+      "title": "Методология",
+      "description": "Принципы исследования, стандарты верификации, подходы к анализу",
+      "weight": 20,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "order": 9010
+    },
+    {
+      "slug": "apparatus-sources",
+      "title": "Источники",
+      "description": "Полная библиография всех использованных источников с группировкой по главам",
+      "weight": 30,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "order": 9020
+    },
+    {
+      "slug": "apparatus-predmetnyy-ukazatel",
+      "title": "Предметный указатель",
+      "description": "Алфавитный указатель ключевых концепций, имён и аббревиатур книги «Agile Sapiens». Главы Ch.0–10.",
+      "weight": 50,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "order": 9040
+    },
+    {
+      "slug": "apparatus-transparency",
+      "title": "Заявление о прозрачности ИИ",
+      "description": "Transparent disclosure of AI assistance in content creation per EU AI Act Article 50",
+      "weight": 40,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "order": 9050
+    },
+    {
+      "slug": "apparatus-colophon",
+      "title": "Выходные данные",
+      "description": "Издательская информация — кто, когда, как создавал эту книгу",
+      "weight": 10,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "order": 9060
+    }
+  ]
+}
