@@ -1,0 +1,140 @@
+{
+  "generated": "2026-07-29T11:08:27.182Z",
+  "book": "kn3",
+  "locale": "ru",
+  "entries": [
+    {
+      "slug": "intro",
+      "title": "Город Солнца",
+      "description": "## Ретроспектива 2026",
+      "order": 10,
+      "isApparatus": false
+    },
+    {
+      "slug": "colophon",
+      "title": "Колофон",
+      "description": "© Андрей Клеменчёнок, 2026",
+      "order": 20,
+      "isApparatus": true
+    },
+    {
+      "slug": "preface",
+      "title": "Предисловие. Как сделана эта книга",
+      "description": "## I",
+      "order": 30,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-1",
+      "title": "Глава 1. Хрустальный символ",
+      "description": "## I",
+      "order": 110,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-2",
+      "title": "Глава 2. Тени хрусталя",
+      "description": "## I",
+      "order": 120,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-3",
+      "title": "Глава 3. Город из камня и стекла",
+      "description": "## I",
+      "order": 130,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-4",
+      "title": "Глава 4. Город из людей",
+      "description": "## I",
+      "order": 140,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-5",
+      "title": "Глава 5. Город внутри головы. Химическая утопия и её блокеры",
+      "description": "## I. С чего начинается линия",
+      "order": 150,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-6",
+      "title": "Глава 6. Аптека вместо города",
+      "description": "## I. Семь способов переносить жизнь",
+      "order": 160,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-7",
+      "title": "Глава 7. Город, который растёт сам",
+      "description": "## I. Первое мая в Кройцберге",
+      "order": 170,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-8",
+      "title": "Глава 8. Три сценария",
+      "description": "## I. Утро в почтовом ящике",
+      "order": 180,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-9",
+      "title": "Глава 9. Что делать. Возвращение к жителю",
+      "description": "## I. Минута, когда видишь",
+      "order": 190,
+      "isApparatus": false
+    },
+    {
+      "slug": "epilogue",
+      "title": "Эпилог. Четыре города и одна кривая",
+      "description": "## I. Петербург. Saudade",
+      "order": 800,
+      "isApparatus": false
+    },
+    {
+      "slug": "apparatus-a1-bis",
+      "title": "Приложение А1-bis. Латинский указатель",
+      "description": "Назначение. Сводный алфавитный указатель латинских форм имён, названий и аббревиатур, упомянутых в книге, со ссылками на основные записи в основном указателе А1. Применяется как UX-инструмент поиск…",
+      "order": 911,
+      "isApparatus": true
+    },
+    {
+      "slug": "apparatus-a1-ter",
+      "title": "Приложение А1-ter. Тематический указатель",
+      "description": "Назначение. Десять тематических точек входа в А1. Для читателя, который ищет фигуры по сюжету, а не по фамилии.",
+      "order": 912,
+      "isApparatus": true
+    },
+    {
+      "slug": "apparatus-a2",
+      "title": "Приложение А2. Глоссарий понятий",
+      "description": "Назначение. Сводный глоссарий специальных терминов книги — философских понятий, политических концепций, химических обозначений, культурных рамок. Для читателя, встретившего незнакомый термин в осно…",
+      "order": 920,
+      "isApparatus": true
+    },
+    {
+      "slug": "apparatus-a3",
+      "title": "Приложение А3. Общая хронология",
+      "description": "Краткое сведение узловых дат всей книги. Для читателя, которому полезно увидеть всё одним взглядом — все четыре утопические линии (политическая, химическая, архитектурная, городская) в единой ленте…",
+      "order": 930,
+      "isApparatus": true
+    },
+    {
+      "slug": "apparatus-a4",
+      "title": "Приложение А4. Географический указатель",
+      "description": "Указатель городов, регионов и проектных мест книги. Для читателя, которому полезно увидеть пространственную карту аргумента: где случилось каждое узловое событие, какие города несут какие линии кни…",
+      "order": 940,
+      "isApparatus": true
+    }
+  ],
+  "excluded": [
+    {
+      "slug": "apparatus-a1",
+      "title": "Приложение А1. Указатель имён",
+      "reason": "body too large for 60 KB gzip bundle gate — consult EPUB"
+    }
+  ]
+}

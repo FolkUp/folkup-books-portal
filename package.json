@@ -12,7 +12,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "prebuild": "node scripts/kn1-reader-manifest.mjs",
+    "prebuild": "node scripts/kn1-reader-manifest.mjs && node scripts/kn3-reader-manifest.mjs",
     "build": "cross-env NODE_OPTIONS=--experimental-require-module vite-ssg build",
     "preview": "vite preview",
     "test:unit": "vitest run",

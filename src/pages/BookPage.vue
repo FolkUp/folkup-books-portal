@@ -67,9 +67,10 @@ const hasProChto = computed(() => proChtoParagraphs.value.length > 0)
 
 const isLive = computed(() => book.value?.status === 'live')
 
-// Books with online reader — currently only kn.1 (cont+30 restoration).
-// Extend when kn.3/kn.4/etc get readers.
-const READER_ENABLED_BOOKS = ['kn1']
+// Books with online reader — extend when more books get readers.
+// kn.1 restored cont+30 (agile-sapiens multi-file → portal). kn.3 added same session
+// (MASTER.md monolithic → chapters-generated split via kn3-reader-manifest prebuild).
+const READER_ENABLED_BOOKS = ['kn1', 'kn3']
 const hasReader = computed(() => READER_ENABLED_BOOKS.includes(props.slug) && isLive.value)
 const isPause = computed(() => book.value?.status === 'variant_b_pause')
 
