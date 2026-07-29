@@ -52,7 +52,8 @@ function parseFrontmatter(raw) {
 }
 
 function orderKey(slug, fm) {
-  if (slug === 'preface') return 50
+  // preface — first, before chapter-0-pilot (weight=10). Fix Iskra S230 AKT §1 P1-1.
+  if (slug === 'preface') return 5
   if (slug === 'afterword') return 8000
   if (slug.startsWith('apparatus-')) {
     const idx = APPARATUS_ORDER.indexOf(slug)
