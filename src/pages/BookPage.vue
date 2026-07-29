@@ -70,7 +70,7 @@ const isLive = computed(() => book.value?.status === 'live')
 // Books with online reader — extend when more books get readers.
 // kn.1 restored cont+30 (agile-sapiens multi-file → portal). kn.3 added same session
 // (MASTER.md monolithic → chapters-generated split via kn3-reader-manifest prebuild).
-const READER_ENABLED_BOOKS = ['kn1', 'kn3']
+const READER_ENABLED_BOOKS = ['kn1', 'kn3', 'kn4']
 const hasReader = computed(() => READER_ENABLED_BOOKS.includes(props.slug) && isLive.value)
 const isPause = computed(() => book.value?.status === 'variant_b_pause')
 

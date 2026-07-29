@@ -47,3 +47,4 @@ node_modules/.vite/
 # Format build artefacts (kn.3 EPUB pipeline, cont+30)
 build/
 content/kn3/ru/chapters-generated/
+content/kn4/ru/chapters-generated/
