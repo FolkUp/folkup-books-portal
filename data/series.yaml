@@ -59,21 +59,25 @@ books:
     slug_en_temp: agile-sapiens
     trilogy: svoimi_silami
     status: live
-    version: 1.0.15
+    version: 1.0.16
     launch_date: 2026-05-24
     date_relicensed: 2026-06-25
+    date_patched: 2026-07-29  # v1.0.16 «числа и вскрытия» patch per Iskra S229
     downloads:
-      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.15.epub
-      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.15.pdf
-    # RESTORE FULL cont+27 2026-07-28 после Track 1 (EPUB pipeline fix) + Track 2 (PDF sanitize).
-    # EPUB v1.0.15 — sed frontmatter strip заменён awk state machine. Главы 2-6
-    # восстановлены к full length. Кардиограмма покойника гл.3 ✓.
-    # PDF v1.0.15 — title page real name sanitized («Команданте FolkUp» byline).
-    # Остаются 3 references «Клеменчёнок»: acknowledgments (1× soft) + colophon
-    # (2× legal disclosure per PT Decreto-Lei 7/2004 + EU AI Act Art. 50(4)) —
-    # Iskra ratify дальнейшие sanitize levels если нужно.
+      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.16.epub
+      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.16.pdf
+    # v1.0.16 cont+30 S3SCOOP 2026-07-29: Iskra S229 ПАТЧ-ЗАКАЗ (Andrey visa live) —
+    # убрать числа глав («двенадцать» / «десять» / «шесть» / «семь») чтобы будущие
+    # главы не требовали переписывания + убрать метафору «вскрытий» («мы не
+    # патологоанатомы»). 3 surgical правки в preface + chapter-0-pilot. Reader +
+    # EPUB + PDF синхронно пересобраны. Downstream: переводчики Iskra укажет
+    # синхронизировать в v0.3.
+    # v1.0.15 legacy comments preserved:
+    #   RESTORE FULL cont+27 2026-07-28: EPUB pipeline fix (awk state machine) +
+    #   PDF title sanitize. Кардиограмма покойника гл.3 ✓. Legal колофон
+    #   references «Клеменчёнок» stay per PT+AI Act canon.
     format_stale_note: |
-      EPUB и PDF v1.0.15 переизданы 28.07: EPUB — полный текст глав 2-6 (fix pipeline); PDF — title page sanitized. Скачать по кнопкам ниже.
+      EPUB и PDF v1.0.16 переизданы 29.07: убраны числа глав + метафора «вскрытий» по вердикту редакции. Скачать по кнопкам ниже.
     cover_v1: /covers/cover_kn1.svg
     covers:
       ru: /covers/cover_kn1.svg
