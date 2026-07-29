@@ -59,25 +59,28 @@ books:
     slug_en_temp: agile-sapiens
     trilogy: svoimi_silami
     status: live
-    version: 1.0.17
+    version: 1.0.18
     launch_date: 2026-05-24
     date_relicensed: 2026-06-25
-    date_patched: 2026-07-29  # v1.0.17 «FACT-GATE Verne 15 месяцев/31 выпуск/23 франка/560%» per Iskra S232 FINAL (S231 pt.1-2 annulled)
+    date_patched: 2026-07-29  # v1.0.18 «Iskra S233 p5+p6+FACT#1+#3 evidence-запросы + POMETKA FACT-GATE» (C19 карт-бланш minor tech)
     downloads:
-      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.17.epub
-      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.17.pdf
-    # v1.0.17 cont+31 S3SCOOP 2026-07-29: Iskra S232 FINAL VERDIKT — конфликт S230↔S231
-    # снят Andrey гибрид (арифметика S230 + экономика S231). 3 хирургические правки
-    # в chapter-1-jules-verne.md: (1) «двадцать три выпуска» → «пятнадцать месяцев,
-    # из номера в номер»; (2) «Журнал: 20-24 × 75 сантимов = 15-18 франков» →
-    # «31 выпуск × 75 сантимов ≈ 23 франка»; (3) «~400% увеличение» → «~560%».
-    # «131 год» AS-IS не править (S231 pt.1-2 АННУЛИРОВАНЫ). FACT-GATE: Magasin
-    # d'éducation №121-№151 (20.03.1869-20.06.1870) = 31 номер / 15 месяцев.
-    # Downstream: переводчикам синхронизация в v0.3/v0.4 через Iskra directly.
-    # v1.0.16 legacy: убрана метафора «вскрытий» + числа глав в preface/chapter-0.
-    # v1.0.15 legacy: RESTORE FULL cont+27 (EPUB awk fix + PDF sanitize).
+      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.18.epub
+      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.18.pdf
+    # v1.0.18 cont+31 S3SCOOP 2026-07-29: Iskra S233 evidence-запросы p5+p6 +
+    # POMETKA FACT-GATE #1+#3 (C19 карт-бланш minor tech): (p5) колофон version
+    # 1.0.15→1.0.17 + 2 changelog entries added; (p6) гл.5 Немо dedicated plate
+    # (plate_override: agil-chapter-5-plate.webp вместо shared act-opener-II);
+    # (FACT#1) chapter-3 Knight Capital «семилетней»→«девятилетней» (arithmetic
+    # consistency с «девять лет с 2003 года»); (FACT#3) Digital.ai «17th Annual
+    # State of Agile Report» год «2024»→«2023» (public: 17th May 2023, 18th May 2024).
+    # p4 (обложка «библиотечная») ОТЛОЖЕНА — жду Iskra явный expected source.
+    # FACT#2 (SEC Power Peg formulation) — principle-level БАГРЕПОРТ pending
+    # SEC 3-15570 re-verify + Andrey visa.
+    # v1.0.17 legacy: Iskra S232 VERDIKT (Verne 15м/31вып/23фр/560%).
+    # v1.0.16 legacy: убрана метафора «вскрытий» + числа глав.
+    # v1.0.15 legacy: EPUB awk pipeline fix.
     format_stale_note: |
-      EPUB и PDF v1.0.17 переизданы 29.07: правки FACT-GATE по фельетону Верна (15 месяцев / 31 выпуск / 23 франка / 560%) по вердикту редакции. Скачать по кнопкам ниже.
+      EPUB и PDF v1.0.18 переизданы 29.07: правки редакции (колофон обновлён на 1.0.17, гравюра пятой главы получила свою обложку, факт-исправления в главах 3 и 4). Скачать по кнопкам ниже.
     cover_v1: /covers/cover_kn1.svg
     covers:
       ru: /covers/cover_kn1.svg
