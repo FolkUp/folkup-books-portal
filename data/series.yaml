@@ -59,28 +59,31 @@ books:
     slug_en_temp: agile-sapiens
     trilogy: svoimi_silami
     status: live
-    version: 1.0.18
+    version: 1.0.19
     launch_date: 2026-05-24
     date_relicensed: 2026-06-25
-    date_patched: 2026-07-29  # v1.0.18 «Iskra S233 p5+p6+FACT#1+#3 evidence-запросы + POMETKA FACT-GATE» (C19 карт-бланш minor tech)
+    date_patched: 2026-07-29  # v1.0.19 «S2SCOOP cont+31 Q2 SEC + Q3 Frida cover + Q4 colophon bundle» (C19 карт-бланш minor tech)
     downloads:
-      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.18.epub
-      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.18.pdf
-    # v1.0.18 cont+31 S3SCOOP 2026-07-29: Iskra S233 evidence-запросы p5+p6 +
-    # POMETKA FACT-GATE #1+#3 (C19 карт-бланш minor tech): (p5) колофон version
-    # 1.0.15→1.0.17 + 2 changelog entries added; (p6) гл.5 Немо dedicated plate
-    # (plate_override: agil-chapter-5-plate.webp вместо shared act-opener-II);
-    # (FACT#1) chapter-3 Knight Capital «семилетней»→«девятилетней» (arithmetic
-    # consistency с «девять лет с 2003 года»); (FACT#3) Digital.ai «17th Annual
-    # State of Agile Report» год «2024»→«2023» (public: 17th May 2023, 18th May 2024).
-    # p4 (обложка «библиотечная») ОТЛОЖЕНА — жду Iskra явный expected source.
-    # FACT#2 (SEC Power Peg formulation) — principle-level БАГРЕПОРТ pending
-    # SEC 3-15570 re-verify + Andrey visa.
+      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.19.epub
+      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.19.pdf
+    # v1.0.19 cont+31 S2SCOOP 2026-07-29: автономный patch по Андрея carte blanche
+    # (Q2-Q5 на моё усмотрение), Iskra S234 порядок волн W-A первым:
+    # (Q2 FACT#2) chapter-3 L101 drop «когда SEC потребовала снять Power Peg» —
+    # SEC Administrative Proceeding File No. 3-15570 (16.10.2013) не содержит
+    # приказа SEC на снятие Power Peg, Knight Capital сам прекратил в 2003;
+    # neutral phrasing защищает от неподтверждённого утверждения (Iskra flagged
+    # principle-level, Andrey mandate «на моё усмотрение» → Вариант B safest).
+    # (Q3) Обложка static/images/cover.webp заменена placeholder 62KB WebP
+    # 1600×2400 → Frida canonical KANON v2 27KB WebP 800×1200 (S1FRIDA PR#33+40
+    # MERGED 22-23 июля 2026, 4 langs shipped).
+    # (Q4) Colophon.md «Текущая версия» 1.0.17→1.0.19 (sync с package.json)
+    # + v1.0.19 changelog entry + retroactive v1.0.18 entry.
+    # v1.0.18 legacy S3SCOOP: Iskra S233 evidence-запросы p5+p6+FACT#1+#3.
     # v1.0.17 legacy: Iskra S232 VERDIKT (Verne 15м/31вып/23фр/560%).
     # v1.0.16 legacy: убрана метафора «вскрытий» + числа глав.
     # v1.0.15 legacy: EPUB awk pipeline fix.
     format_stale_note: |
-      EPUB и PDF v1.0.18 переизданы 29.07: правки редакции (колофон обновлён на 1.0.17, гравюра пятой главы получила свою обложку, факт-исправления в главах 3 и 4). Скачать по кнопкам ниже.
+      EPUB и PDF v1.0.19 переизданы 29.07: обложка Фриды канон KANON v2, факт-исправление в главе 3 (SEC Power Peg), синхронный колофон. Скачать по кнопкам ниже.
     cover_v1: /covers/cover_kn1.svg
     covers:
       ru: /covers/cover_kn1.svg
