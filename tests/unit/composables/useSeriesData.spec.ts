@@ -133,10 +133,10 @@ describe('useSeriesData', () => {
     expect(kn1?.canonical_pre_cutover).toBeUndefined()
   })
 
-  it('kn1 has EPUB + PDF v1.0.16 (cont+30 «числа и вскрытия» patch per Iskra S229)', () => {
+  it('kn1 has EPUB + PDF v1.0.17 (cont+31 «FACT-GATE Verne» patch per Iskra S232 FINAL)', () => {
     const kn1 = bookBySlug('kn1')
-    expect(kn1?.downloads?.epub).toContain('v1.0.16.epub')
-    expect(kn1?.downloads?.pdf).toContain('v1.0.16.pdf')
+    expect(kn1?.downloads?.epub).toContain('v1.0.17.epub')
+    expect(kn1?.downloads?.pdf).toContain('v1.0.17.pdf')
   })
 
   it('kn1 covers include all 4 languages', () => {

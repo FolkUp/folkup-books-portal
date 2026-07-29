@@ -1,8 +1,18 @@
 {
-  "generated": "2026-07-29T09:44:48.529Z",
+  "generated": "2026-07-29T17:09:37.952Z",
   "book": "kn1",
   "locale": "ru",
   "entries": [
+    {
+      "slug": "preface",
+      "title": "Предисловие: О методе литературного анализа бизнеса",
+      "description": "Предисловие к книге *Agile Sapiens* — о методологии Literary Business Analysis и том, почему классическая литература оказалась точнее любого консультанта.",
+      "weight": 5,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 5
+    },
     {
       "slug": "chapter-0-pilot",
       "title": "Филеас Фогг изобрёл то, что уничтожает современные корпорации",
@@ -59,16 +69,6 @@
       "description": "Как измерения, призванные сделать команды гибче, превращаются в лотерею: от Spotify Model до OKR-театра, от игры с производительностью (velocity gaming) до ретроспективного ритуала",
       "weight": 50,
       "act": "I: Истоки",
-      "act_opener": false,
-      "isApparatus": false,
-      "order": 50
-    },
-    {
-      "slug": "preface",
-      "title": "Предисловие: О методе литературного анализа бизнеса",
-      "description": "Предисловие к книге *Agile Sapiens* — о методологии Literary Business Analysis и том, почему классическая литература оказалась точнее любого консультанта.",
-      "weight": 5,
-      "act": null,
       "act_opener": false,
       "isApparatus": false,
       "order": 50

@@ -59,25 +59,25 @@ books:
     slug_en_temp: agile-sapiens
     trilogy: svoimi_silami
     status: live
-    version: 1.0.16
+    version: 1.0.17
     launch_date: 2026-05-24
     date_relicensed: 2026-06-25
-    date_patched: 2026-07-29  # v1.0.16 «числа и вскрытия» patch per Iskra S229
+    date_patched: 2026-07-29  # v1.0.17 «FACT-GATE Verne 15 месяцев/31 выпуск/23 франка/560%» per Iskra S232 FINAL (S231 pt.1-2 annulled)
     downloads:
-      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.16.epub
-      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.16.pdf
-    # v1.0.16 cont+30 S3SCOOP 2026-07-29: Iskra S229 ПАТЧ-ЗАКАЗ (Andrey visa live) —
-    # убрать числа глав («двенадцать» / «десять» / «шесть» / «семь») чтобы будущие
-    # главы не требовали переписывания + убрать метафору «вскрытий» («мы не
-    # патологоанатомы»). 3 surgical правки в preface + chapter-0-pilot. Reader +
-    # EPUB + PDF синхронно пересобраны. Downstream: переводчики Iskra укажет
-    # синхронизировать в v0.3.
-    # v1.0.15 legacy comments preserved:
-    #   RESTORE FULL cont+27 2026-07-28: EPUB pipeline fix (awk state machine) +
-    #   PDF title sanitize. Кардиограмма покойника гл.3 ✓. Legal колофон
-    #   references «Клеменчёнок» stay per PT+AI Act canon.
+      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.17.epub
+      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.17.pdf
+    # v1.0.17 cont+31 S3SCOOP 2026-07-29: Iskra S232 FINAL VERDIKT — конфликт S230↔S231
+    # снят Andrey гибрид (арифметика S230 + экономика S231). 3 хирургические правки
+    # в chapter-1-jules-verne.md: (1) «двадцать три выпуска» → «пятнадцать месяцев,
+    # из номера в номер»; (2) «Журнал: 20-24 × 75 сантимов = 15-18 франков» →
+    # «31 выпуск × 75 сантимов ≈ 23 франка»; (3) «~400% увеличение» → «~560%».
+    # «131 год» AS-IS не править (S231 pt.1-2 АННУЛИРОВАНЫ). FACT-GATE: Magasin
+    # d'éducation №121-№151 (20.03.1869-20.06.1870) = 31 номер / 15 месяцев.
+    # Downstream: переводчикам синхронизация в v0.3/v0.4 через Iskra directly.
+    # v1.0.16 legacy: убрана метафора «вскрытий» + числа глав в preface/chapter-0.
+    # v1.0.15 legacy: RESTORE FULL cont+27 (EPUB awk fix + PDF sanitize).
     format_stale_note: |
-      EPUB и PDF v1.0.16 переизданы 29.07: убраны числа глав + метафора «вскрытий» по вердикту редакции. Скачать по кнопкам ниже.
+      EPUB и PDF v1.0.17 переизданы 29.07: правки FACT-GATE по фельетону Верна (15 месяцев / 31 выпуск / 23 франка / 560%) по вердикту редакции. Скачать по кнопкам ниже.
     cover_v1: /covers/cover_kn1.svg
     covers:
       ru: /covers/cover_kn1.svg
