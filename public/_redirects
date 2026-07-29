@@ -7,11 +7,11 @@
 # (currently empty — books.folkup.life is destination portal, redirects will be authored в sapiens repo's _redirects)
 
 # ─────────────────────────────────────────────────────────────────
-# BOOK-KN1-DOWNLOADS-404-FALLBACK-STUB (S3SCOOP cont+28 2026-07-28, extended cont+31 2026-07-29)
+# BOOK-KN1-DOWNLOADS-404-FALLBACK-STUB (S3SCOOP cont+28 2026-07-28, extended cont+31 2026-07-29 x2)
 # Per Andrey mandate cont+27: «чтобы не было 404 на сайте, лучше поставить заглушку»
 # Old kn1 download versions removed per Iskra POMETKA S232 archive canon
 # «в обороте только последняя редакция» (S226 canon consistency).
-# ВНИМАНИЕ: при релизе v1.0.18 — добавить v1.0.17 в список ниже.
+# ВНИМАНИЕ: при релизе v1.0.19 — добавить v1.0.18 в список ниже.
 
 /kn1/downloads/agile-sapiens-v1.0.7.epub    /kn1/  301
 /kn1/downloads/agile-sapiens-v1.0.7.pdf     /kn1/  301
@@ -33,3 +33,5 @@
 /kn1/downloads/agile-sapiens-v1.0.15.pdf    /kn1/  301
 /kn1/downloads/agile-sapiens-v1.0.16.epub   /kn1/  301
 /kn1/downloads/agile-sapiens-v1.0.16.pdf    /kn1/  301
+/kn1/downloads/agile-sapiens-v1.0.17.epub   /kn1/  301
+/kn1/downloads/agile-sapiens-v1.0.17.pdf    /kn1/  301
