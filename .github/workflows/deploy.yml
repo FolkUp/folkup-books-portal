@@ -12,10 +12,46 @@ env:
 jobs:
   build:
     runs-on: ubuntu-latest
+    outputs:
+      content-only: ${{ steps.paths.outputs.content-only }}
     steps:
+      # fetch-depth=1 достаточно для build/deploy (was 0 = full history).
+      # Экономит ~30-60s clone time для large repo.
+      # Path filter step ниже подтягивает base ref shallow через git fetch.
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
         with:
-          fetch-depth: 0
+          fetch-depth: 1
+
+      # CI-optimization cont+30 S3SCOOP B1: Detect content-only PRs → skip Playwright.
+      # Content-only paths (не triggers full test suite):
+      #   - content/**              — chapter markdown + adoc + pro-chto
+      #   - public/*/downloads/**   — EPUB/PDF binary placement
+      #   - data/series.yaml        — book metadata
+      #   - *.md at root            — docs (README, CHANGELOG, etc)
+      # Any file OUTSIDE these paths → full CI (code/tests/config changed).
+      # Push events (main) always run full CI (no path filter).
+      - name: Detect content-only PR
+        id: paths
+        if: github.event_name == 'pull_request'
+        run: |
+          set -euo pipefail
+          # Fetch PR base ref shallow для git diff
+          git fetch --depth=1 origin ${{ github.base_ref }}
+          CHANGED=$(git diff --name-only "origin/${{ github.base_ref }}...HEAD")
+          echo "Changed files:"
+          echo "$CHANGED"
+          echo ""
+          # Filter out content-only paths — если остаётся что-то → non-content PR
+          NON_CONTENT=$(echo "$CHANGED" | grep -vE '^(content/|public/[^/]+/downloads/|data/series\.yaml|[^/]+\.md$)' || true)
+          if [ -z "$NON_CONTENT" ]; then
+            echo "content-only=true" >> "$GITHUB_OUTPUT"
+            echo "🟢 Content-only PR — skip Playwright (save ~5-8 min)"
+          else
+            echo "content-only=false" >> "$GITHUB_OUTPUT"
+            echo "🔴 Non-content changes detected — full CI"
+            echo "Files требующие full CI:"
+            echo "$NON_CONTENT"
+          fi
 
       - name: Setup Node
         uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7
@@ -59,14 +95,18 @@ jobs:
             fi
           done
 
+      # Playwright browsers install — только для non-content PRs + push events.
+      # Skip для content-only PR economies ~1-2 min.
       - name: Install Playwright browsers (все браузеры — playwright.config uses WebKit для mobile viewports)
+        if: steps.paths.outputs.content-only != 'true'
         run: npx playwright install --with-deps chromium webkit
 
+      # Playwright tests — full E2E + visual regression + a11y + Schema.
+      # Skip для content-only PRs (chapter markdown / EPUB placement / series.yaml —
+      # не меняют code, layout, или tests). Экономит ~5-8 min per такой PR.
       # Non-blocking пока visual regression baselines не committed.
-      # Baselines OS-specific (Linux CI vs Windows local) — генерируются в CI
-      # первом run как artifact, потом download+commit → strict mode.
-      # TODO: enable strict mode после baseline commit
       - name: Run Playwright tests (E2E + visual regression + a11y + Schema.org)
+        if: steps.paths.outputs.content-only != 'true'
         run: npm run test:e2e
         continue-on-error: true
 
@@ -74,7 +114,8 @@ jobs:
         # if: failure() only — экономит artifact quota (упирались на success too).
         # Cot+31 B1 fix: prior `if: always()` заливал 55 files каждый green run.
         # При pass — report не нужен, при fail — нужен для диагностики.
-        if: failure()
+        # Also skipped для content-only PRs (Playwright не ran → нет report).
+        if: failure() && steps.paths.outputs.content-only != 'true'
         uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # v7
         with:
           name: playwright-report
