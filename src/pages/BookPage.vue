@@ -66,6 +66,11 @@ const proChtoParagraphs = computed<string[]>(() => {
 const hasProChto = computed(() => proChtoParagraphs.value.length > 0)
 
 const isLive = computed(() => book.value?.status === 'live')
+
+// Books with online reader — currently only kn.1 (cont+30 restoration).
+// Extend when kn.3/kn.4/etc get readers.
+const READER_ENABLED_BOOKS = ['kn1']
+const hasReader = computed(() => READER_ENABLED_BOOKS.includes(props.slug) && isLive.value)
 const isPause = computed(() => book.value?.status === 'variant_b_pause')
 
 // Language positions per Iskra ZAGLUSHKI canon S179 — order fixed (RU first, then DE/EN/PT echelon)
@@ -163,6 +168,13 @@ if (book.value) {
         </section>
 
         <div v-if="isLive" class="book-page__actions">
+          <RouterLink
+            v-if="hasReader"
+            :to="`/${props.slug}/read`"
+            class="book-page__button book-page__button--primary"
+          >
+            Читать онлайн
+          </RouterLink>
           <a
             v-if="book.downloads?.epub"
             :href="book.downloads.epub"
