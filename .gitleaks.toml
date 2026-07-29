@@ -123,6 +123,10 @@ regexes = [
   # В контексте owner/action@hex40 всегда SHA, не CF token.
   # Covers Renovate/Dependabot pin patterns (-action@… + actions/…@…) единым правилом.
   '''[a-zA-Z0-9_-]+/[a-zA-Z0-9_-]+@[a-f0-9]{40}''',
+  # Iskra S228 A' addition — historical README vault/memory refs (weekly cron FP class)
+  # Lab-verified 8.24.3 × 4 progona PASS (Iskra DOPOLNENIE 2026-07-29)
+  # Filters findings like `vault/memory/some-40-char-filename.md` без реального token
+  '''vault/memory/[A-Za-z0-9_-]{40}''',
 ]
 
 commits = [
