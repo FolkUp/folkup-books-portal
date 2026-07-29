@@ -33,11 +33,13 @@ jobs:
       - name: Detect content-only PR
         id: paths
         if: github.event_name == 'pull_request'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           set -euo pipefail
-          # Fetch PR base ref shallow для git diff
-          git fetch --depth=1 origin ${{ github.base_ref }}
-          CHANGED=$(git diff --name-only "origin/${{ github.base_ref }}...HEAD")
+          # Use gh CLI (available in GitHub Actions runner) — API-based, no git history needed.
+          # Prior attempt via git diff failed on fetch-depth=1 (no merge base найден).
+          CHANGED=$(gh pr diff ${{ github.event.pull_request.number }} --name-only)
           echo "Changed files:"
           echo "$CHANGED"
           echo ""
