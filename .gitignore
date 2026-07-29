@@ -43,3 +43,6 @@ node_modules/.vite/
 # Design tokens generated output (regenerated от tokens/*.json via style-dictionary)
 # But keep hand-authored fallback:
 # src/styles/tokens.css  ← commit это ok, оно версионированное
+
+# Format build artefacts (kn.3 EPUB pipeline, cont+30)
+build/

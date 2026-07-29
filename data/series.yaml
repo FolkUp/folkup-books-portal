@@ -94,14 +94,21 @@ books:
     slug_en_temp: city-of-the-sun
     trilogy: svoimi_silami
     status: live
-    version: 1.0.0
+    version: 1.0.1
     launch_date: 2026-07-26
+    date_epub_shipped: 2026-07-29  # S3SCOOP cont+30 · pandoc-based build pipeline
     # Iskra S217 VIZA 2026-07-26 (publish canon «давайте её переводить к публикации»):
-    # kn.3 «Город Солнца» → LIVE per образцу kn.5 (веб pro-chto готов, EPUB/PDF готовятся).
+    # kn.3 «Город Солнца» → LIVE per образцу kn.5 (веб pro-chto готов).
     # FULL v3.1 проверен изнутри S216 (адрес приёмной верный, ИИ-запрет + NC-ND отсутствуют).
     # pro-chto ратифицирован PR #54, маркер VIZA-S216.
+    # v1.0.1 S3SCOOP cont+30 2026-07-29: EPUB shipped. Title byline sanitized
+    # (real name → «Команданте FolkUp» per Andrey deanon mandate 2026-07-28).
+    # Colophon legal disclosure remains per PT Decreto-Lei 7/2004 Art. 10 + EU AI Act Art. 50(4).
+    # PDF готовится в v1.0.2 (Puppeteer pipeline setup).
+    downloads:
+      epub: https://books.folkup.life/kn3/downloads/city-of-the-sun-v1.0.1.epub
     format_stale_note: |
-      Веб-версия готова. EPUB и PDF готовятся — сборка форматов ведётся.
+      EPUB v1.0.1 готов и доступен для скачивания. PDF готовится в следующей версии.
     illustration_style: Bauhaus / Kandinsky
     cover_v1: /covers/cover_kn3.svg
     covers:
