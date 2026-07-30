@@ -167,8 +167,21 @@ books:
     slug: kn2
     slug_en_temp: consonants-without-vowels
     trilogy: iz_pervyh_ruk
-    status: stub
+    status: live
+    version: 1.0.0
+    launch_date: 2026-07-30
+    date_epub_shipped: 2026-07-30  # S3SCOOP cont+33 · pandoc MD→EPUB3 + Python 5-step processor
     # Iskra §11 gate «даты-обещания запрещены» cont+22 2026-07-26 — launch_target removed.
+    # Iskra S236 KONFLIKT VIZ RESOLVED 2026-07-30 11:34 UTC: rev2 patch «Iskra»→«Иви» applied.
+    # Iskra S236 VIZA-PAKET Q3.1 (a) awk h1-dedup + Q3.2a (title page псевдоним) + Q3.2b (Иви co-author).
+    # v1.0 rev2 S3SCOOP cont+33 2026-07-30: EPUB 240 KB SHA ad7f45ed... TOC 19 clean.
+    # Body text-only (kn.2 без иллюстраций vault — обложка Иве S138 pack временная до Frida wave).
+    # Deanon canon S224: byline «Команданте FolkUp и Иви».
+    # PDF + illustrations v1.0.1 patch (Iskra AUTO-G5 карт-бланш).
+    downloads:
+      epub: https://books.folkup.life/kn2/downloads/soglasnye-bez-glasnyh-v1.0.epub
+    format_stale_note: |
+      EPUB v1.0 готов и доступен для скачивания. PDF и иллюстрации готовятся в следующей версии.
     cover_v1: /covers/cover_kn2.svg
     covers:
       ru: /covers/cover_kn2.svg
@@ -176,7 +189,7 @@ books:
       de: /covers/cover_kn2_de.svg
       pt: /covers/cover_kn2_pt.svg
     translations:
-      ru: preparing
+      ru: live  # v1.0 shipped 2026-07-30 · Iskra S236 AUTO-G5 карт-бланш
       de: preparing
       en: preparing
       pt: preparing
@@ -188,10 +201,18 @@ books:
     status: live
     version: 1.0.0
     launch_date: 2026-07-26
-    # Iskra PAKET-VYKLADKI-S216 §2 (2026-07-26): «Файл проверен изнутри — чист. Книга готова.» + publish Q5=А cont+22 autonomous canon. RU FULL v1.1 vault preserved (KN5-Chuzhimi-rukami-FULL-v1.1-cont15-vorota-fix-2026-07-22.md).
-    # Pattern kn.1/kn.4: LIVE веб-версия (pro-chto landing), файлы EPUB/PDF готовятся honest banner.
+    date_epub_shipped: 2026-07-30  # S3SCOOP cont+33 · pandoc HTML→MD→EPUB3 + h1-dedup FIX-FAST
+    # Iskra S236 VERDIKT W-B kn.5 v1.0 2026-07-30 11:26 UTC: G1-G3 PASS + G4 FIX-FAST (F1 TOC) + AUTO-G5 карт-бланш.
+    # FIX-FAST applied: HTML→MD via pandoc, fenced div strip (::: markers blocked h1 split),
+    # attribute strip, cover h1 removed. Rev6 = 10 TOC clean entries + illustrations embedded.
+    # Iskra PAKET-VYKLADKI-S216 §2 (2026-07-26): «Файл проверен изнутри — чист. Книга готова.» + publish Q5=А cont+22.
+    # v1.0 S3SCOOP cont+33 2026-07-30: EPUB 4.96 MB (with illustrations) SHA e36386a5... TOC 10 clean.
+    # Deanon canon S224: byline «Команданте FolkUp и Иви».
+    # PDF + apparat consolidation + epubcheck v1.0.1 patch (defer).
+    downloads:
+      epub: https://books.folkup.life/kn5/downloads/chuzhimi-rukami-v1.0.epub
     format_stale_note: |
-      Веб-версия готова. EPUB и PDF готовятся — сборка форматов ведётся.
+      EPUB v1.0 готов и доступен для скачивания. PDF готовится в следующей версии.
     cover_v1: /covers/cover_kn5.svg
     covers:
       ru: /covers/cover_kn5.svg
