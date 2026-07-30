@@ -37,3 +37,11 @@
 /kn1/downloads/agile-sapiens-v1.0.17.pdf    /kn1/  301
 /kn1/downloads/agile-sapiens-v1.0.18.epub   /kn1/  301
 /kn1/downloads/agile-sapiens-v1.0.18.pdf    /kn1/  301
+
+# ─────────────────────────────────────────────────────────────────
+# P1 Option A per Iskra S238 §1 (Andrey verdict cont+33 execute 2026-07-30)
+# Honest 404 для несуществующих локалей /de/ /en/ до перевода готов V-A (~15.08)
+# Preview-карточки на главной остаются, hreflang в App.vue уже clean (только x-default)
+# Transition к Option C (full локали) — после Bolik v0.9-retrofit shipped V-A pass
+/de/*  /404.html  404
+/en/*  /404.html  404
