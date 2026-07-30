@@ -110,12 +110,13 @@ describe('useSeriesData', () => {
   })
 
   it('liveBooks filters correctly', () => {
-    // kn.1 (v1.0.14 LIVE) + kn.3 (Iskra S217 виза Andrey «переводить к публикации» 2026-07-26)
+    // kn.1 (v1.0.19 LIVE) + kn.3 (Iskra S217 виза Andrey «переводить к публикации» 2026-07-26)
     // + kn.4 (Iskra VIZA-PAKET S213 flip 2026-07-23) + kn.5 (Andrey Q5=А + Iskra S216 §2 publish 2026-07-26)
     // + kn.2 (Iskra S236 KONFLIKT VIZ RESOLVED + AUTO-G5 карт-бланш portalization S3SCOOP cont+34 2026-07-30)
-    expect(liveBooks.value).toHaveLength(5)
+    // + kn.6 (Iskra S237 GO REWORK build 2 2026-07-30 · S3SCOOP built + S2SCOOP cont+33 portalization per Andrey verdict C)
+    expect(liveBooks.value).toHaveLength(6)
     const slugs = liveBooks.value.map((b) => b.slug).sort()
-    expect(slugs).toEqual(['kn1', 'kn2', 'kn3', 'kn4', 'kn5'])
+    expect(slugs).toEqual(['kn1', 'kn2', 'kn3', 'kn4', 'kn5', 'kn6'])
   })
 
   it('upcomingBooks filters correctly — kn.5 promoted к live, upcoming empty', () => {
