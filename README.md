@@ -16,7 +16,7 @@ LIVE at [books.folkup.life](https://books.folkup.life). Deploy: Cloudflare Pages
 
 ## Books в серии
 
-- **kn.1** — Agile Sapiens (Литературный бизнес-анализ) — **LIVE**
+- **kn.1** — Agile Sapiens (Литературный анализ бизнеса) — **LIVE**
 - **kn.2** — Согласные без гласных — publishing pipeline
 - **kn.3** — Город Солнца — publishing pipeline
 - **kn.4** — Где живёт новое — publishing pipeline
