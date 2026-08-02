@@ -77,6 +77,17 @@ const READER_ENABLED_BOOKS = ['kn1', 'kn3', 'kn4']
 const hasReader = computed(() => READER_ENABLED_BOOKS.includes(props.slug) && isLive.value)
 const isPause = computed(() => book.value?.status === 'variant_b_pause')
 
+// Iskra S242 §1 KANON1=β (виза Andrey «Да, запускай» 2026-08-02):
+// «файл» = любой работающий «Читать» ИЛИ «Скачать» (reader/EPUB/PDF).
+// Длинное pro-chto показываем ТОЛЬКО если у книги ещё нет ни одного средства доступа.
+// Кн.1–6 → короткое (все имеют минимум EPUB). Кн.7 → длинное (нет файлов).
+const hasAccessMethod = computed(
+  () =>
+    isLive.value &&
+    (hasReader.value || !!book.value?.downloads?.epub || !!book.value?.downloads?.pdf),
+)
+const showLongProChto = computed(() => hasProChto.value && !hasAccessMethod.value)
+
 // Language positions per Iskra ZAGLUSHKI canon S179 — order fixed (RU first, then DE/EN/PT echelon)
 const LANGUAGE_ORDER: Locale[] = ['ru', 'de', 'en', 'pt']
 
@@ -154,11 +165,12 @@ if (book.value) {
 
         <!--
           «Про что книга» — canonical annotation body per Iskra S198 v3-BEZ-SCHYOTA (виза Андрея).
-          Rendered only if content/kn{N}/ru/pro-chto.md exists (currently kn1).
+          Rendered only if pro-chto.md exists AND книга не имеет ни одного средства доступа
+          (reader/EPUB/PDF) per Iskra S242 §1 KANON1=β виза Andrey «Да, запускай» 2026-08-02.
           Rule «файл на скачивание = та же информация что и на сайте» — S197 canon.
         -->
         <section
-          v-if="hasProChto"
+          v-if="showLongProChto"
           class="book-page__pro-chto"
           :aria-label="'Про что книга «' + title + '»'"
         >
