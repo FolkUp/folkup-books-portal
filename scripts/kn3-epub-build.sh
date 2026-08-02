@@ -72,7 +72,7 @@ pandoc "$MASTER" \
   --metadata lang="ru" \
   --metadata publisher="FolkUp Ecosystem" \
   --metadata rights="© 2026 Команданте FolkUp. Licensed under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)" \
-  --metadata description="Как утопии города становятся планом — и что из этого выходит. Книга серии «Своим умом», трилогия «Своими силами»." \
+  --metadata description="Как утопии города становятся планом — и что из этого выходит. Книга из трилогии «Своими силами»." \
   --metadata date="$(date -u +%Y-%m-%d)" \
   --metadata subject="essays, urban planning, utopia, philosophy, business, agile" \
   --output "$OUTPUT_EPUB"

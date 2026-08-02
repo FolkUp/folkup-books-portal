@@ -224,7 +224,7 @@ pandoc "$MERGED_MD" \
   --metadata lang="ru" \
   --metadata publisher="FolkUp Ecosystem" \
   --metadata rights="© 2026 Команданте FolkUp. Licensed under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)" \
-  --metadata description="Как отличить настоящее от подделки — своими глазами, шесть веков, девять историй. Книга серии «Своим умом», трилогия «Из первых рук»." \
+  --metadata description="Как отличить настоящее от подделки — своими глазами, шесть веков, девять историй. Книга из трилогии «Из первых рук»." \
   --metadata date="$(date -u +%Y-%m-%d)" \
   --metadata subject="essays, epistemology, forensics, verification, history" \
   --output "$OUTPUT_EPUB"

@@ -1,10 +1,10 @@
-# FolkUp Books Portal · Vue 3 SPA для серии литературно-философских книг
+# FolkUp Books Portal · Vue 3 SPA для Библиотеки FolkUp
 
 [![License MIT (code)](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![License CC BY-SA 4.0 (content)](https://img.shields.io/badge/content-CC%20BY--SA%204.0-green.svg)](LICENSE-CONTENT)
 [![Site](https://img.shields.io/badge/live-books.folkup.life-blue.svg)](https://books.folkup.life)
 
-**Vue 3 + Vite + vite-ssg portal для серии «A Mind of One's Own (Своим умом)». Reader-facing SPA с per-book download packages (EPUB + PDF) и longform integration с [underground.folkup.life](https://underground.folkup.life).**
+**Vue 3 + Vite + vite-ssg portal для Библиотеки FolkUp — свободные книги под CC BY-SA 4.0. Reader-facing SPA с per-book download packages (EPUB + PDF) и longform integration с [underground.folkup.life](https://underground.folkup.life).**
 
 ## About
 

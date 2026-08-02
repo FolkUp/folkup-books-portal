@@ -18,10 +18,10 @@
     "footer_contact": "editorial{'@'}folkup.app"
   },
   "portal": {
-    "_translator_note": "PLATZHALTER — Iskra S214 §2/§3/§9 adaptiert aus RU-Kanon von Alice cont+20, wartet auf muttersprachliches Urteil von Bolik (DE-Übersetzer, Vier-Augen). §10-Regel: keine Zählungen, keine falsche Dringlichkeit, keine versprochenen Termine. Reihenname «Aus eigenem Kopf» aus vorherigem Nachbar-Commit als vorläufige Idiom-Wahl übernommen; Übersetzer kann verfeinern.",
+    "_translator_note": "PLATZHALTER — Iskra S214 §2/§3/§9 adaptiert aus RU-Kanon von Alice cont+20, wartet auf muttersprachliches Urteil von Bolik (DE-Übersetzer, Vier-Augen). §10-Regel: keine Zählungen, keine falsche Dringlichkeit, keine versprochenen Termine. Reihenname per Iskra S239 KANON-FLAG P1 entfernt — die Reihe trägt keinen öffentlichen Namen (Alisa cont+38 2026-08-02 §4 grep-clean).",
     "title": "FolkUp-Bibliothek",
     "hero": "FolkUp-Bibliothek — freie Bücher über Team, Wissen und Verständigung: wie Menschen ihre Arbeit tun, wie Wissen sie unverfälscht erreicht und warum es schwieriger ist, sich zu einigen, als es scheint.",
-    "series_intro": "Reihe «Aus eigenem Kopf» — Bücher darüber, wie man selbst zurechtkommt. Offene Bände sind mit «Lesen» markiert.",
+    "series_intro": "Bücher darüber, wie man selbst zurechtkommt. Offene Bände sind mit «Lesen» markiert. Andere Säle werden noch vorbereitet — kommen Sie herein.",
     "read_book": "Buch lesen",
     "read_book_short": "Lesen",
     "download_epub": "EPUB herunterladen",
