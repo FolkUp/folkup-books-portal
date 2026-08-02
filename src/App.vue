@@ -1,10 +1,13 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
 import { useHead } from '@unhead/vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 
 const { t, locale } = useI18n()
 const route = useRoute()
+
+const LOCALE_STORAGE_KEY = 'folkup-preferred-locale'
 
 // Base head — augmented per-page via useHead в individual pages
 const SITE_URL = 'https://books.folkup.life'
@@ -37,7 +40,31 @@ function switchLocale(lang: SupportedLocale): void {
   if (typeof document !== 'undefined') {
     document.documentElement.setAttribute('lang', lang)
   }
+  if (typeof window !== 'undefined' && window.localStorage) {
+    try {
+      window.localStorage.setItem(LOCALE_STORAGE_KEY, lang)
+    } catch {
+      // Storage quota exceeded / private mode — silent
+    }
+  }
 }
+
+// Restore persisted locale on mount (SSR-safe — vite-ssg prerenders с default RU)
+onMounted(() => {
+  if (typeof window === 'undefined' || !window.localStorage) return
+  try {
+    const stored = window.localStorage.getItem(LOCALE_STORAGE_KEY)
+    if (stored && (SUPPORTED_LOCALES as readonly string[]).includes(stored)) {
+      const lang = stored as SupportedLocale
+      if (locale.value !== lang) {
+        locale.value = lang
+        document.documentElement.setAttribute('lang', lang)
+      }
+    }
+  } catch {
+    // Storage access denied — silent
+  }
+})
 
 useHead({
   htmlAttrs: {
