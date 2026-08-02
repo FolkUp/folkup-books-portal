@@ -58,7 +58,7 @@ const sections = computed<TocSection[]>(() => {
 
     <header class="reader-toc__header">
       <h1>Agile Sapiens</h1>
-      <p class="reader-toc__subtitle">Литературный бизнес-анализ</p>
+      <p class="reader-toc__subtitle">Литературный анализ бизнеса</p>
       <p class="reader-toc__hint">
         Читать онлайн бесплатно. Тексты доступны также в форматах
         <a href="/kn1/downloads/agile-sapiens-v1.0.15.epub" download>EPUB</a>
