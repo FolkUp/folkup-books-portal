@@ -40,7 +40,7 @@ useHead({
         '@id': `${SITE_URL}/about/#aboutpage`,
         name: 'О проекте — Библиотека FolkUp',
         url: `${SITE_URL}/about/`,
-        description: 'О библиотеке FolkUp: свободные книги под CC BY-SA 4.0, серия «Своим умом», редакция человек+ИИ.',
+        description: 'О Библиотеке FolkUp: свободные книги под CC BY-SA 4.0 — нон-фикшн серия о командах и людях. Редактирует человек вместе с ИИ; за каждое слово отвечает человек.',
         publisher: { '@id': `${SITE_URL}/#organization` },
         mainEntity: { '@id': `${SITE_URL}/#series` },
         inLanguage: 'ru',
