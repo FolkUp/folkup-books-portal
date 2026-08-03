@@ -29,6 +29,15 @@ const book = computed(() => bookBySlug(props.slug))
 const title = computed(() => t(`books.${props.slug}.title`))
 const subtitle = computed(() => t(`books.${props.slug}.subtitle`))
 
+// Extended annotation ~50-100 words for SEO meta description / social cards.
+// DE ratified per Iskra S252 §1 (Bolik S15BOLIK annotation-tier, RU v3 S209 canonical mirror).
+// Other locales fallback к subtitle когда description absent (vue-i18n returns key path on miss).
+const descriptionKey = computed(() => `books.${props.slug}.description`)
+const metaDescription = computed(() => {
+  const val = t(descriptionKey.value)
+  return val && val !== descriptionKey.value ? val : subtitle.value
+})
+
 // Canon v2 Iskra S214 §2+§4: витрина несёт принадлежность («Серия „Своим умом" · трилогия „X"»),
 // не счёт («Книга N» упразднена). Trilogy name resolved через series.trilogies map.
 const trilogyName = computed<string | null>(() => {
@@ -119,14 +128,14 @@ const bookOgImage = computed(() => {
 useHead({
   title: () => title.value + ' — ' + t('brand.name'),
   meta: [
-    { name: 'description', content: () => subtitle.value },
+    { name: 'description', content: () => metaDescription.value},
     { property: 'og:title', content: () => title.value },
-    { property: 'og:description', content: () => subtitle.value },
+    { property: 'og:description', content: () => metaDescription.value},
     { property: 'og:type', content: 'book' },
     { property: 'og:image', content: () => bookOgImage.value },
     // Twitter Card override (per-book image)
     { name: 'twitter:title', content: () => title.value },
-    { name: 'twitter:description', content: () => subtitle.value },
+    { name: 'twitter:description', content: () => metaDescription.value},
     { name: 'twitter:image', content: () => bookOgImage.value },
   ],
   link: [
