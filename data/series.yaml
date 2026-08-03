@@ -59,13 +59,13 @@ books:
     slug_en_temp: agile-sapiens
     trilogy: svoimi_silami
     status: live
-    version: 1.0.20
+    version: 1.0.21
     launch_date: 2026-05-24
     date_relicensed: 2026-06-25
-    date_patched: 2026-08-03  # v1.0.20 «S2SCOOP+S3SCOOP cont+39/+44 ЭШЕЛОН-2 dedup Iskra S248» (11 patches П6-П16 + Иви→Искра rename + term-α EN + hybrid П15)
+    date_patched: 2026-08-03  # v1.0.21 REWORK per Iskra S252 vskrytie v1.0.20: colophon cleanup + title Iskra sync + PDF English subtitle removed + Series canon v2
     downloads:
-      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.20.epub
-      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.20.pdf
+      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.21.epub
+      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.21.pdf
     # v1.0.20 cont+39/+44 S2SCOOP+S3SCOOP 2026-08-03: ЭШЕЛОН-2 dedup canon
     # per Iskra S248 МАЯК-КАНОН-DEDUP GO — 11 patches П6-П16 (dedup + rename
     # Иви→Искра + term-α EN form + hybrid П15 for portal absent ЭШЕЛОН-1).
