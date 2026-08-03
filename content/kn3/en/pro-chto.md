@@ -16,6 +16,4 @@ For this reason the book's litmus test is simple: is it comfortable here for an 
 
 The author tests this optic on himself: the book has a personal line about three cities in which he lived — Saint Petersburg, Setúbal, Berlin — and about what each taught. And the horizon of this curve the book finds in the most unexpected place: in a drawn city, where they make gondolas by hand, brew coffee slowly, and greet the neighbors. From this comes the closing formula: the City of the Sun is not built. The City of the Sun is practiced, and it spreads not by scaling, but by contagion — people see how it works for others and try it themselves.
 
-This is the third book of the trilogy about how to live wisely and freely: method, access, and now environment. Because you can work right and get to the bottom of everything, but you still have to live in a city. Better if it's one that suits you, not a great one.
-
 — Comandante FolkUp

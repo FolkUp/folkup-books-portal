@@ -17,6 +17,4 @@ Deshalb ist der Lackmustest des Buches einfach: ist es hier für den gewöhnlich
 
 Diese Optik prüft der Autor auch an sich selbst: im Buch gibt es eine persönliche Linie über die drei Städte, in denen er gelebt hat — Sankt Petersburg, Setúbal, Berlin — und darüber, was jede lehrte. Und den Horizont dieser Kurve findet das Buch am unerwartetsten Ort — in einer gezeichneten Stadt, wo man Gondeln von Hand baut, den Kaffee langsam kocht und die Nachbarn grüßt. Daraus die Schlussformel: die Stadt der Sonne wird nicht gebaut. Die Stadt der Sonne wird praktiziert — und verbreitet sich nicht durch Skalierung, sondern durch Ansteckung: die Menschen sehen, wie es bei anderen funktioniert, und probieren es bei sich.
 
-Dies ist das dritte Buch der Trilogie darüber, wie man klug und frei lebt: Methode, Zugang — und nun das Umfeld. Denn man kann richtig arbeiten und allem auf den Grund gehen, aber leben muss man doch in einer Stadt. Es wäre gut: in einer, die für Sie bequem ist, nicht in einer großen.
-
 — Comandante FolkUp
