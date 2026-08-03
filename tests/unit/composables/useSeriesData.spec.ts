@@ -110,7 +110,7 @@ describe('useSeriesData', () => {
   })
 
   it('liveBooks filters correctly', () => {
-    // kn.1 (v1.0.19 LIVE) + kn.3 (Iskra S217 виза Andrey «переводить к публикации» 2026-07-26)
+    // kn.1 (v1.0.20 LIVE — ЭШЕЛОН-2 dedup Iskra S248 cont+39/+44) + kn.3 (Iskra S217 виза Andrey «переводить к публикации» 2026-07-26)
     // + kn.4 (Iskra VIZA-PAKET S213 flip 2026-07-23) + kn.5 (Andrey Q5=А + Iskra S216 §2 publish 2026-07-26)
     // + kn.2 (Iskra S236 KONFLIKT VIZ RESOLVED + AUTO-G5 карт-бланш portalization S3SCOOP cont+34 2026-07-30)
     // + kn.6 (Iskra S237 GO REWORK build 2 2026-07-30 · S3SCOOP built + S2SCOOP cont+33 portalization per Andrey verdict C)
@@ -135,10 +135,10 @@ describe('useSeriesData', () => {
     expect(kn1?.canonical_pre_cutover).toBeUndefined()
   })
 
-  it('kn1 has EPUB + PDF v1.0.19 (cont+31 «S2SCOOP Q2 SEC + Q3 Frida cover + Q4 colophon» C19 карт-бланш)', () => {
+  it('kn1 has EPUB + PDF v1.0.20 (cont+39/+44 «ЭШЕЛОН-2 dedup Iskra S248 + rename Иви→Искра + term-α EN» S2SCOOP+S3SCOOP карт-бланш)', () => {
     const kn1 = bookBySlug('kn1')
-    expect(kn1?.downloads?.epub).toContain('v1.0.19.epub')
-    expect(kn1?.downloads?.pdf).toContain('v1.0.19.pdf')
+    expect(kn1?.downloads?.epub).toContain('v1.0.20.epub')
+    expect(kn1?.downloads?.pdf).toContain('v1.0.20.pdf')
   })
 
   it('kn1 covers include all 4 languages', () => {
