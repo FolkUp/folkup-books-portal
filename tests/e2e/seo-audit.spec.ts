@@ -165,11 +165,11 @@ test.describe('SEO — F-SEO-1..9 regression coverage', () => {
   })
 
   // F-SEO-8: llms.txt has current kn.1 version (no drift)
-  test('F-SEO-8: llms.txt has kn.1 v1.0.19 (not drift older versions)', async ({ request }) => {
+  test('F-SEO-8: llms.txt has kn.1 v1.0.20 (not drift older versions)', async ({ request }) => {
     const response = await request.get('/llms.txt')
     const body = await response.text()
 
-    expect(body).toContain('v1.0.19')
+    expect(body).toContain('v1.0.20')
     expect(body).not.toContain('v1.0.14')
     expect(body).not.toContain('v1.0.11')
     expect(body).not.toContain('v1.0.10')
