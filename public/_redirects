@@ -42,6 +42,13 @@
 /kn1/downloads/agile-sapiens-v1.0.19.pdf    /kn1/  301
 
 # ─────────────────────────────────────────────────────────────────
+# BOOK-KN5-V1.0-DEFEKT-REDIRECT (S2SCOOP cont+40 2026-08-03)
+# Iskra МАЯК RU-ЗАПУСК S248 §0 mandate: v1.0 EPUB defekt (нет посвящения) — «прекратить показывать».
+# Physical file removed cont+40; direct URL bookmarks 301 → /kn5/ where pro-chto format_stale_note
+# «Файл на реставрации — приёмка возобновится после пересборки v1.0.1» (соседkина cont+45 track).
+/kn5/downloads/chuzhimi-rukami-v1.0.epub    /kn5/  301
+
+# ─────────────────────────────────────────────────────────────────
 # P1 Option A per Iskra S238 §1 (Andrey verdict cont+33 execute 2026-07-30)
 # Honest 404 для несуществующих локалей /de/ /en/ до перевода готов V-A (~15.08)
 # Preview-карточки на главной остаются, hreflang в App.vue уже clean (только x-default)
