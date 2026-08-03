@@ -11,7 +11,8 @@
 # Per Andrey mandate cont+27: «чтобы не было 404 на сайте, лучше поставить заглушку»
 # Old kn1 download versions removed per Iskra POMETKA S232 archive canon
 # «в обороте только последняя редакция» (S226 canon consistency).
-# ВНИМАНИЕ: при релизе v1.0.20 — добавить v1.0.19 в список ниже.
+# S3SCOOP cont+45 T-PROD-5: v1.0.19 добавлен после v1.0.20 release 2026-08-03.
+# ВНИМАНИЕ: при следующем релизе — добавить v1.0.20 в список ниже.
 
 /kn1/downloads/agile-sapiens-v1.0.7.epub    /kn1/  301
 /kn1/downloads/agile-sapiens-v1.0.7.pdf     /kn1/  301
@@ -37,6 +38,8 @@
 /kn1/downloads/agile-sapiens-v1.0.17.pdf    /kn1/  301
 /kn1/downloads/agile-sapiens-v1.0.18.epub   /kn1/  301
 /kn1/downloads/agile-sapiens-v1.0.18.pdf    /kn1/  301
+/kn1/downloads/agile-sapiens-v1.0.19.epub   /kn1/  301
+/kn1/downloads/agile-sapiens-v1.0.19.pdf    /kn1/  301
 
 # ─────────────────────────────────────────────────────────────────
 # P1 Option A per Iskra S238 §1 (Andrey verdict cont+33 execute 2026-07-30)
