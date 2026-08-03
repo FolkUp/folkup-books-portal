@@ -13,7 +13,10 @@ const LOCALE_STORAGE_KEY = 'folkup-preferred-locale'
 const SITE_URL = 'https://books.folkup.life'
 // Iskra STOP-MAYAK S219 §2д: соцсети капризны к SVG. Wave 2 PNG отдаём для превью.
 const DEFAULT_OG_IMAGE = `${SITE_URL}/covers/cover_kn1.png`
-const SUPPORTED_LOCALES = ['ru', 'en', 'de', 'pt'] as const
+// PT temporarily hidden from switcher pending pt.json translation + native-speaker review
+// per Iskra рекомендация S250 (Andrey verdict а 2026-08-03 cont+45). Type union и pt.json
+// файлы preserved. Downloads pt.epub/pt.pdf остаются доступны напрямую по URL.
+const SUPPORTED_LOCALES = ['ru', 'en', 'de'] as const
 type SupportedLocale = (typeof SUPPORTED_LOCALES)[number]
 
 // Current URL (per-route reactive)
