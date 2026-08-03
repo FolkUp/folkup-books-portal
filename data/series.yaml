@@ -209,10 +209,20 @@ books:
     # v1.0 S3SCOOP cont+33 2026-07-30: EPUB 4.96 MB (with illustrations) SHA e36386a5... TOC 10 clean.
     # Deanon canon S224: byline «Команданте FolkUp и Иви».
     # PDF + apparat consolidation + epubcheck v1.0.1 patch (defer).
-    downloads:
-      epub: https://books.folkup.life/kn5/downloads/chuzhimi-rukami-v1.0.epub
+    #
+    # P0 FIX S2SCOOP cont+39 2026-08-03: Iskra МАЯК RU-ЗАПУСК S248 §0 (мандат Andrey голосом
+    # «сделаем всё чтобы помочь Алисе запустить хотя бы русские версии»).
+    # Andrey открыл chuzhimi-rukami-v1.0.epub → обнаружил дефект: НЕТ ПОСВЯЩЕНИЯ.
+    # Public артефакт снят с публикации (канон «только ЩИТ-версии публично»).
+    # downloads.epub commented out → BookPage.vue hasAccessMethod=false → длинное pro-chto
+    # v4-BEZ-SCHYOTA (Ф1-Palimpsest applied PR #128 cont+41 EXT-C) возвращается на страницу.
+    # v1.0.1 пересборка (посвящение + аппарат + колофон + обложка KANON v2) — отдельный batch
+    # per Iskra §2 порядок работ: §0 срочное → полный цикл kn.5 v1.0.1.
+    #
+    # downloads:
+    #   epub: https://books.folkup.life/kn5/downloads/chuzhimi-rukami-v1.0.epub  # DISABLED cont+39 P0 defekt — no dedication inside
     format_stale_note: |
-      EPUB v1.0 готов и доступен для скачивания. PDF готовится в следующей версии.
+      Файл на реставрации: обнаружен дефект в v1.0 (нет посвящения). Приёмка возобновится после пересборки v1.0.1.
     cover_v1: /covers/cover_kn5.svg
     covers:
       ru: /covers/cover_kn5.svg
