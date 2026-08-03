@@ -164,15 +164,29 @@ test.describe('SEO — F-SEO-1..9 regression coverage', () => {
     expect(body).not.toMatch(/CCBot\s*\n\s*Disallow/i)
   })
 
-  // F-SEO-8: llms.txt has current kn.1 version (no drift)
-  test('F-SEO-8: llms.txt has kn.1 v1.0.20 (not drift older versions)', async ({ request }) => {
-    const response = await request.get('/llms.txt')
-    const body = await response.text()
+  // F-SEO-8: llms.txt kn.1 version matches actual /kn1/ page download link
+  // Per LESSON-CONT44-1 (2026-08-03 cont+44): hardcoded «v1.0.20» blocked next release.
+  // Fix: derive expected version from live /kn1/ page — test self-adapts on future bumps.
+  test('F-SEO-8: llms.txt kn.1 version matches current /kn1/ download link (no drift)', async ({ request }) => {
+    const kn1Page = await request.get('/kn1/')
+    const kn1Body = await kn1Page.text()
+    const versionMatch = kn1Body.match(/agile-sapiens-v(\d+\.\d+\.\d+)\.epub/)
+    expect(versionMatch, '/kn1/ page must expose current EPUB version').toBeTruthy()
+    const currentVersion = versionMatch![1]
 
-    expect(body).toContain('v1.0.20')
-    expect(body).not.toContain('v1.0.14')
-    expect(body).not.toContain('v1.0.11')
-    expect(body).not.toContain('v1.0.10')
+    const llmsResponse = await request.get('/llms.txt')
+    const llmsBody = await llmsResponse.text()
+
+    // Positive: llms.txt mentions current shipped version
+    expect(llmsBody, `llms.txt must reference current v${currentVersion}`).toContain(`v${currentVersion}`)
+
+    // Negative: known-superseded versions must not appear (301-catched per T-PROD-5)
+    const oldVersions = ['v1.0.10', 'v1.0.11', 'v1.0.14']
+    for (const old of oldVersions) {
+      if (old !== `v${currentVersion}`) {
+        expect(llmsBody, `llms.txt must not mention superseded ${old}`).not.toContain(old)
+      }
+    }
   })
 
   // F-SEO-9: llms.txt kn.5 status matches homepage (no drift)

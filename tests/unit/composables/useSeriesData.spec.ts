@@ -135,10 +135,16 @@ describe('useSeriesData', () => {
     expect(kn1?.canonical_pre_cutover).toBeUndefined()
   })
 
-  it('kn1 has EPUB + PDF v1.0.20 (cont+39/+44 «ЭШЕЛОН-2 dedup Iskra S248 + rename Иви→Искра + term-α EN» S2SCOOP+S3SCOOP карт-бланш)', () => {
+  it('kn1 downloads match current series.yaml version (LESSON-CONT44-1 parametrized against hardcoded drift)', () => {
+    // Per LESSON-CONT44-1 (2026-08-03 cont+44): hardcoded «v1.0.19» assertions from cont+31
+    // blocked v1.0.20 release cycle. Fix: derive expected version from series.yaml source-of-truth.
+    // When version bumps, only series.yaml + files need update — tests self-adapt.
     const kn1 = bookBySlug('kn1')
-    expect(kn1?.downloads?.epub).toContain('v1.0.20.epub')
-    expect(kn1?.downloads?.pdf).toContain('v1.0.20.pdf')
+    const currentVersion = `v${kn1?.version}`  // e.g. 'v1.0.20'
+    expect(kn1?.downloads?.epub).toContain(`${currentVersion}.epub`)
+    expect(kn1?.downloads?.pdf).toContain(`${currentVersion}.pdf`)
+    // Sanity: version follows semver-lite pattern
+    expect(kn1?.version).toMatch(/^\d+\.\d+\.\d+$/)
   })
 
   it('kn1 covers include all 4 languages', () => {
