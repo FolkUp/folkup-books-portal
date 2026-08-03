@@ -7,8 +7,16 @@
 import { computed } from 'vue'
 import { useHead } from '@unhead/vue'
 import { useKn1Chapters } from '../composables/useKn1Chapters'
+import { useSeriesData } from '../composables/useSeriesData'
 
 const chapters = useKn1Chapters()
+const { bookBySlug } = useSeriesData()
+
+// P0 fix cont+46: было hardcoded v1.0.15 → 301 к /kn1/ = «читать не работает» per Iskra S252 ESKALACIYA
+// LESSON-CONT44-1 recurring: derive URLs из series.yaml source-of-truth, self-adapt при version bumps
+const kn1 = computed(() => bookBySlug('kn1'))
+const epubHref = computed(() => kn1.value?.downloads?.epub ?? '/kn1')
+const pdfHref = computed(() => kn1.value?.downloads?.pdf ?? '/kn1')
 
 const SITE_URL = 'https://books.folkup.life'
 
@@ -61,9 +69,9 @@ const sections = computed<TocSection[]>(() => {
       <p class="reader-toc__subtitle">Литературный анализ бизнеса</p>
       <p class="reader-toc__hint">
         Читать онлайн бесплатно. Тексты доступны также в форматах
-        <a href="/kn1/downloads/agile-sapiens-v1.0.15.epub" download>EPUB</a>
+        <a :href="epubHref" download>EPUB</a>
         и
-        <a href="/kn1/downloads/agile-sapiens-v1.0.15.pdf" download>PDF</a>.
+        <a :href="pdfHref" download>PDF</a>.
       </p>
     </header>
 
