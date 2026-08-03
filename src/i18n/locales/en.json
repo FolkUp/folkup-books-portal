@@ -28,6 +28,8 @@
     "download_pdf": "Download PDF",
     "coming_soon": "Coming soon",
     "in_pause": "Paused",
+    "pro_chto_heading": "About This Book",
+    "pro_chto_aria": "About the book «{title}»",
     "translations_heading": "Language editions",
     "translation_available": "available",
     "translation_stub_short": "in progress",
