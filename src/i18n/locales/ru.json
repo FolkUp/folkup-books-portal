@@ -27,6 +27,8 @@
     "download_pdf": "Скачать PDF",
     "coming_soon": "Скоро",
     "in_pause": "В паузе",
+    "pro_chto_heading": "Про что книга",
+    "pro_chto_aria": "Про что книга «{title}»",
     "translations_heading": "Языковые версии",
     "translation_available": "готово",
     "translation_stub_short": "готовится",

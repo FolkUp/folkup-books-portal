@@ -9,11 +9,12 @@ import { useI18n } from 'vue-i18n'
 import { useSeriesData, type Locale } from '../composables/useSeriesData'
 import { useBookSchema } from '../composables/useSchemaOrg'
 
-// Long-form «Про что книга» annotations — per book, per locale (RU first).
+// Long-form «Про что книга» annotations — per book, per locale (RU baseline + EN/DE/PT as они canonized).
 // Iskra canon v3-BEZ-SCHYOTA (S198 виза Andrey) — «файл на скачивание = та же информация что и на сайте».
-// Eager glob import: Vite bundles all matched files. Other books/locales add as они canonized.
+// Iskra S244 §4 cascade OPEN extension: glob covers all locale directories; загружается current locale c RU fallback.
+// Eager glob import: Vite bundles all matched files.
 const proChtoModules = import.meta.glob<string>(
-  '../../content/kn*/ru/pro-chto.md',
+  '../../content/kn*/*/pro-chto.md',
   { query: '?raw', import: 'default', eager: true },
 )
 
@@ -21,7 +22,7 @@ const props = defineProps<{
   slug: string
 }>()
 
-const { t } = useI18n()
+const { t, locale } = useI18n()
 const { series, bookBySlug } = useSeriesData()
 
 const book = computed(() => bookBySlug(props.slug))
@@ -52,9 +53,11 @@ function renderProChtoMarkdown(text: string): string {
 }
 
 // Long-form annotation body (paragraphs) — strip HTML comments + headings + render bold markdown.
+// Iskra S244 §4 cascade OPEN: load current-locale pro-chto if exists, fallback RU (mandatory canon).
 const proChtoParagraphs = computed<string[]>(() => {
-  const path = `../../content/${props.slug}/ru/pro-chto.md`
-  const raw = proChtoModules[path]
+  const localePath = `../../content/${props.slug}/${locale.value}/pro-chto.md`
+  const fallbackPath = `../../content/${props.slug}/ru/pro-chto.md`
+  const raw = proChtoModules[localePath] ?? proChtoModules[fallbackPath]
   if (!raw) return []
   return raw
     .split(/\n\n+/)
@@ -172,9 +175,9 @@ if (book.value) {
         <section
           v-if="showLongProChto"
           class="book-page__pro-chto"
-          :aria-label="'Про что книга «' + title + '»'"
+          :aria-label="t('portal.pro_chto_aria', { title })"
         >
-          <h2 class="book-page__pro-chto-heading">Про что книга</h2>
+          <h2 class="book-page__pro-chto-heading">{{ t('portal.pro_chto_heading') }}</h2>
           <p
             v-for="(para, index) in proChtoParagraphs"
             :key="index"
