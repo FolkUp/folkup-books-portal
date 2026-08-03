@@ -59,14 +59,19 @@ books:
     slug_en_temp: agile-sapiens
     trilogy: svoimi_silami
     status: live
-    version: 1.0.19
+    version: 1.0.20
     launch_date: 2026-05-24
     date_relicensed: 2026-06-25
-    date_patched: 2026-07-29  # v1.0.19 «S2SCOOP cont+31 Q2 SEC + Q3 Frida cover + Q4 colophon bundle» (C19 карт-бланш minor tech)
+    date_patched: 2026-08-03  # v1.0.20 «S2SCOOP+S3SCOOP cont+39/+44 ЭШЕЛОН-2 dedup Iskra S248» (11 patches П6-П16 + Иви→Искра rename + term-α EN + hybrid П15)
     downloads:
-      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.19.epub
-      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.19.pdf
-    # v1.0.19 cont+31 S2SCOOP 2026-07-29: автономный patch по Андрея carte blanche
+      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.20.epub
+      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.20.pdf
+    # v1.0.20 cont+39/+44 S2SCOOP+S3SCOOP 2026-08-03: ЭШЕЛОН-2 dedup canon
+    # per Iskra S248 МАЯК-КАНОН-DEDUP GO — 11 patches П6-П16 (dedup + rename
+    # Иви→Искра + term-α EN form + hybrid П15 for portal absent ЭШЕЛОН-1).
+    # Соседkа cont+39 (S2SCOOP) applied dedup patches + version bump 1.0.19→1.0.20;
+    # Alisa cont+44 (S3SCOOP) executed build + upload + series.yaml sync.
+    # v1.0.19 legacy patch (S2SCOOP cont+31 2026-07-29): автономный patch по Андрея carte blanche
     # (Q2-Q5 на моё усмотрение), Iskra S234 порядок волн W-A первым:
     # (Q2 FACT#2) chapter-3 L101 drop «когда SEC потребовала снять Power Peg» —
     # SEC Administrative Proceeding File No. 3-15570 (16.10.2013) не содержит
@@ -83,7 +88,7 @@ books:
     # v1.0.16 legacy: убрана метафора «вскрытий» + числа глав.
     # v1.0.15 legacy: EPUB awk pipeline fix.
     format_stale_note: |
-      EPUB и PDF v1.0.19 переизданы 29.07: обложка Фриды канон KANON v2, факт-исправление в главе 3 (SEC Power Peg), синхронный колофон. Скачать по кнопкам ниже.
+      EPUB и PDF v1.0.20 переизданы 03.08: ЭШЕЛОН-2 dedup Iskra S248 (11 patches П6-П16), rename Иви→Искра, term-α EN form. Скачать по кнопкам ниже.
     cover_v1: /covers/cover_kn1.svg
     covers:
       ru: /covers/cover_kn1.svg
