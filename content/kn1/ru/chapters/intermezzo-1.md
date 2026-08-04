@@ -1,6 +1,6 @@
 ---
 title: "Интермедия I. Консультационные апартаменты"
-description: "Mad Tea Party как agile dysfunction: измеряют метрики, но не выпускают продукты. Carroll-Bulgakov literary fusion."
+description: "Mad Tea Party как agile dysfunction: измеряют метрики, но не выпускают продукты."
 date: 2026-04-15
 date_created: "2026-04-15"
 date_updated: "2026-04-19"
