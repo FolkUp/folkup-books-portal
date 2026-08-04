@@ -2,7 +2,7 @@
 title: "Предисловие: О методе литературного анализа бизнеса"
 description: "Предисловие к книге *Agile Sapiens* — о методологии Literary Analysis of Business и том, почему классическая литература оказалась точнее любого консультанта."
 date: 2026-05-12
-weight: 5
+weight: 1
 category: methodology
 reading_time: "12 min"
 tags:
