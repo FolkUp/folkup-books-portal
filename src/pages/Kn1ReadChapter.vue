@@ -1,53 +1,38 @@
 <script setup lang="ts">
 /**
  * kn.1 reader single-chapter page (/kn1/read/:slug).
- * Renders markdown body via marked (lazy-loaded from node_modules).
- * Chapter body itself lazy-loaded per-chunk (см. useKn1Chapters manifest strategy).
- * Prev/next navigation по canonical chapter order.
+ *
+ * VIT-KLB cont+49 P0 fix (Кочегар root-cause):
+ *   Old pattern использовал async watcher + dynamic import(marked) + async marked.parse
+ *   — ни один шаг не suspend'ился vite-ssg SSR-ом. Результат: prerendered HTML прибит
+ *   на <div>Загрузка…</div>, GoogleBot видит placeholder, indexing fails.
+ *
+ * New pattern: bodies pre-rendered at build time via scripts/kn1-reader-manifest.mjs
+ *   → eager-imported here (chapter chunk only, TOC не затронут — separate route chunk)
+ *   → sync computed picks bodyHtml по route slug. SSR emits real HTML byte-match с
+ *   client hydration. Zero async, zero loading state.
  */
-import { computed, ref, watch } from 'vue'
+import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 import { useHead } from '@unhead/vue'
 import {
   useKn1ChapterMeta,
-  loadKn1ChapterBody,
-  stripFrontmatter,
+  pickKn1ChapterBodyHtml,
+  type Kn1BodiesArtifact,
 } from '../composables/useKn1Chapters'
+// Eager import — bundles bodies (~830 KB, gzip ~200-300 KB) в chapter route chunk.
+// Route lazy-load (см. src/router/routes.ts) → other pages untouched.
+import bodiesJson from '../../content/kn1/ru/chapters-bodies.json'
 
 const route = useRoute()
 const slug = computed(() => route.params.slug as string)
 
 const chapterData = computed(() => useKn1ChapterMeta(slug.value))
 
-const renderedHtml = ref<string>('')
-const isLoading = ref<boolean>(true)
-
-async function renderMarkdown(body: string): Promise<string> {
-  const { marked } = await import('marked')
-  const result = await marked.parse(body, { async: true })
-  return result as string
-}
-
-async function updateRender() {
-  isLoading.value = true
-  renderedHtml.value = ''
-  const currentSlug = slug.value
-  if (!currentSlug) {
-    isLoading.value = false
-    return
-  }
-  const rawBody = await loadKn1ChapterBody(currentSlug)
-  if (!rawBody) {
-    isLoading.value = false
-    return
-  }
-  const bodyOnly = stripFrontmatter(rawBody)
-  renderedHtml.value = await renderMarkdown(bodyOnly)
-  isLoading.value = false
-}
-
-// Initial render + reactive к route changes
-watch(slug, updateRender, { immediate: true })
+const bodiesArtifact = bodiesJson as Kn1BodiesArtifact
+const renderedHtml = computed<string>(
+  () => pickKn1ChapterBodyHtml(bodiesArtifact.bodies, slug.value) ?? '',
+)
 
 const SITE_URL = 'https://books.folkup.life'
 
@@ -105,10 +90,9 @@ useHead({
         </p>
       </header>
 
-      <div v-if="isLoading" class="reader-chapter__loading">Загрузка…</div>
-
-      <!-- v-html: контент из trusted source (Iskra canonical body) rendered by marked -->
-      <div v-else class="reader-chapter__content" v-html="renderedHtml"></div>
+      <!-- v-html: контент из trusted source (Iskra canonical body) pre-rendered by marked
+           at build time (см. scripts/kn1-reader-manifest.mjs). Sync render — SSR-safe. -->
+      <div class="reader-chapter__content" v-html="renderedHtml"></div>
 
       <nav class="reader-chapter__nav" aria-label="Навигация по главам">
         <RouterLink
@@ -199,12 +183,6 @@ useHead({
 .reader-chapter__content {
   font-size: 1.1rem;
   line-height: 1.7;
-}
-.reader-chapter__loading {
-  text-align: center;
-  padding: 2rem;
-  color: var(--color-text-muted, #666);
-  font-style: italic;
 }
 .reader-chapter__content :deep(p) {
   margin: 0 0 1.2em;

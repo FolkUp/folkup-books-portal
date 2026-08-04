@@ -1,13 +1,13 @@
 {
-  "generated": "2026-07-29T17:09:37.952Z",
+  "generated": "2026-08-04T11:45:31.605Z",
   "book": "kn1",
   "locale": "ru",
   "entries": [
     {
       "slug": "preface",
       "title": "Предисловие: О методе литературного анализа бизнеса",
-      "description": "Предисловие к книге *Agile Sapiens* — о методологии Literary Business Analysis и том, почему классическая литература оказалась точнее любого консультанта.",
-      "weight": 5,
+      "description": "Предисловие к книге *Agile Sapiens* — о методологии Literary Analysis of Business и том, почему классическая литература оказалась точнее любого консультанта.",
+      "weight": 1,
       "act": null,
       "act_opener": false,
       "isApparatus": false,
@@ -56,7 +56,7 @@
     {
       "slug": "intermezzo-1",
       "title": "Интермедия I. Консультационные апартаменты",
-      "description": "Mad Tea Party как agile dysfunction: измеряют метрики, но не выпускают продукты. Carroll-Bulgakov literary fusion.",
+      "description": "Mad Tea Party как agile dysfunction: измеряют метрики, но не выпускают продукты.",
       "weight": 47,
       "act": "Intermezzi",
       "act_opener": false,
