@@ -37,6 +37,8 @@ export interface Book {
     de?: string
     pt?: string
   }
+  format_stale_note?: string
+  date_epub_shipped?: string
   translations?: {
     ru?: TranslationStatus
     de?: TranslationStatus

@@ -125,6 +125,35 @@ const bookOgImage = computed(() => {
   return pngPath.startsWith('http') ? pngPath : `${SITE_URL}${pngPath}`
 })
 
+// Iskra M-P0 S254 (2026-08-04): locale-aware cover per active language.
+// Fallback: covers[locale] → cover_v1 (RU baseline) → placeholder gracefully absent.
+const localizedCover = computed<string | undefined>(() => {
+  return book.value?.covers?.[locale.value as Locale] ?? book.value?.cover_v1
+})
+
+// Iskra M-P0 S254 (2026-08-04): format_stale_note body localized через i18n template.
+// Extract version + date из per-book series.yaml fields, format date per locale via Intl.
+// Fallback: если поля отсутствуют — показать оригинальную RU строку (backward compat).
+const localizedFormatStaleNote = computed<string | null>(() => {
+  const rawNote = book.value?.format_stale_note?.trim()
+  if (!rawNote) return null
+  const version = book.value?.version
+  const dateIso = book.value?.date_epub_shipped
+  if (!version || !dateIso) return rawNote
+  const localeMap: Record<Locale, string> = {
+    ru: 'ru-RU',
+    de: 'de-DE',
+    en: 'en-GB',
+    pt: 'pt-PT',
+  }
+  const dateFormatted = new Intl.DateTimeFormat(localeMap[locale.value as Locale] || 'en-GB', {
+    day: '2-digit',
+    month: '2-digit',
+    year: 'numeric',
+  }).format(new Date(dateIso))
+  return t('portal.formats_stale_body', { version, date: dateFormatted })
+})
+
 useHead({
   title: () => title.value + ' — ' + t('brand.name'),
   meta: [
@@ -157,9 +186,9 @@ if (book.value) {
     <div class="book-page__layout">
       <aside class="book-page__cover">
         <img
-          v-if="book.cover_v1"
-          :src="book.cover_v1"
-          :alt="`Обложка книги ${title}`"
+          v-if="localizedCover"
+          :src="localizedCover"
+          :alt="t('portal.cover_alt', { title })"
           width="360"
           height="540"
           loading="eager"
@@ -168,8 +197,7 @@ if (book.value) {
 
       <article class="book-page__content">
         <p class="book-page__series">
-          <RouterLink to="/">{{ t('brand.name') }}</RouterLink>
-          &middot; Серия «{{ series.name }}»<template v-if="trilogyName">&nbsp;&middot; трилогия «{{ trilogyName }}»</template>
+          <RouterLink to="/">{{ t('brand.name') }}</RouterLink><template v-if="trilogyName">&nbsp;&middot; {{ t('portal.crumb_trilogy', { name: trilogyName }) }}</template>
         </p>
 
         <h1 class="book-page__title">{{ title }}</h1>
@@ -201,7 +229,7 @@ if (book.value) {
             :to="`/${props.slug}/read`"
             class="book-page__button book-page__button--primary"
           >
-            Читать онлайн
+            {{ t('portal.read_online') }}
           </RouterLink>
           <a
             v-if="book.downloads?.epub"
@@ -222,13 +250,13 @@ if (book.value) {
         </div>
 
         <div
-          v-if="isLive && book.format_stale_note"
+          v-if="isLive && localizedFormatStaleNote"
           class="book-page__format-stale"
           role="note"
-          aria-label="Пометка о форматах на реставрации"
+          :aria-label="t('portal.formats_stale_aria')"
         >
-          <strong>Форматы на реставрации.</strong>
-          <p>{{ book.format_stale_note }}</p>
+          <strong>{{ t('portal.formats_stale_heading') }}</strong>
+          <p>{{ localizedFormatStaleNote }}</p>
         </div>
 
         <div v-else-if="isPause" class="book-page__notice">
@@ -281,7 +309,7 @@ if (book.value) {
 
         <footer class="book-page__meta">
           <p>
-            <strong>Автор:</strong> Команданте FolkUp
+            <strong>{{ t('portal.author_label') }}</strong> Команданте FolkUp
           </p>
           <p>
             <strong>©</strong> {{ series.author }} ·
