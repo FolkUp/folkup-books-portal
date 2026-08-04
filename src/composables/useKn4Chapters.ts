@@ -1,13 +1,13 @@
 /**
- * kn.4 «Где живёт новое» chapters composable — manifest + lazy body loader.
- * Mirror useKn1/useKn3 pattern. Source split by kn4-reader-manifest.mjs prebuild.
+ * kn.4 «Где живёт новое» chapters composable — manifest + per-chapter HTML loader.
+ * VIT-KLB cont+51 mirror kn1 pattern: pre-rendered HTML modules, dynamic glob per-chunk.
+ * Source: content/kn4/ru/chapters-html/*.js (pre-rendered by kn4-reader-manifest.mjs).
  */
 import { ref } from 'vue'
 import manifest from '../../content/kn4/ru/chapters-manifest.json'
 
-const chapterBodyModules = import.meta.glob<string>(
-  '../../content/kn4/ru/chapters-generated/*.md',
-  { query: '?raw', import: 'default' },
+const chapterHtmlModules = import.meta.glob<{ default: string }>(
+  '../../content/kn4/ru/chapters-html/*.js',
 )
 
 export interface Kn4ChapterMeta {
@@ -48,10 +48,13 @@ export function useKn4ChapterMeta(slug: string) {
   }
 }
 
-export async function loadKn4ChapterBody(slug: string): Promise<string | null> {
-  const path = `../../content/kn4/ru/chapters-generated/${slug}.md`
-  if (chapterBodyModules[path]) {
-    return await chapterBodyModules[path]()
-  }
-  return null
+/**
+ * Load pre-rendered HTML body для chapter by slug. See useKn3Chapters for pattern rationale.
+ */
+export async function loadKn4ChapterBodyHtml(slug: string): Promise<string | null> {
+  const path = `../../content/kn4/ru/chapters-html/${slug}.js`
+  const loader = chapterHtmlModules[path]
+  if (!loader) return null
+  const mod = await loader()
+  return mod.default
 }

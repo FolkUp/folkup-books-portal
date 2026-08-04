@@ -1,15 +1,20 @@
 <script setup lang="ts">
 /**
  * kn.3 «Город Солнца» reader single-chapter (/kn3/read/:slug).
- * Renders markdown body via marked (lazy). Body includes H1 heading, strip from md
- * before render so useHead title takes precedence.
+ *
+ * VIT-KLB cont+51 mirror kn1 PR #146 fix (Kочегар 3-step):
+ *   Bodies pre-rendered at build time via scripts/kn3-reader-manifest.mjs
+ *   → per-chapter ES modules content/kn3/ru/chapters-html/{slug}.js (dynamic glob).
+ *   SSR: onServerPrefetch awaits body load → renderToString emits real HTML.
+ *   Client: watch(slug) triggers same async loader; hydration skips первый trigger
+ *   если renderedHtml уже populated from SSR initialState.
  */
-import { computed, ref, watch } from 'vue'
+import { computed, onServerPrefetch, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useHead } from '@unhead/vue'
 import {
   useKn3ChapterMeta,
-  loadKn3ChapterBody,
+  loadKn3ChapterBodyHtml,
 } from '../composables/useKn3Chapters'
 
 const route = useRoute()
@@ -18,41 +23,30 @@ const slug = computed(() => route.params.slug as string)
 const chapterData = computed(() => useKn3ChapterMeta(slug.value))
 
 const renderedHtml = ref<string>('')
-const isLoading = ref<boolean>(true)
 
-/**
- * Strip leading H1 heading (# ...\n\n) — заголовок renders via useHead + h1 в template,
- * дубли в body не нужны.
- */
-function stripLeadingH1(md: string): string {
-  return md.replace(/^# [^\n]+\n+/, '')
+// SSR: preload body before renderToString continues → body inlined в prerendered HTML.
+onServerPrefetch(async () => {
+  const html = await loadKn3ChapterBodyHtml(slug.value)
+  if (html !== null) renderedHtml.value = html
+})
+
+// Client: react к route changes (SPA prev/next). On initial mount после SSR
+// renderedHtml already populated from initialState — skip первый triger loading.
+if (typeof window !== 'undefined') {
+  let hydrated = renderedHtml.value !== ''
+  watch(
+    slug,
+    async (newSlug) => {
+      if (hydrated) {
+        hydrated = false // skip только первый call
+        return
+      }
+      const html = await loadKn3ChapterBodyHtml(newSlug)
+      renderedHtml.value = html ?? ''
+    },
+    { immediate: true },
+  )
 }
-
-async function renderMarkdown(body: string): Promise<string> {
-  const { marked } = await import('marked')
-  const result = await marked.parse(body, { async: true })
-  return result as string
-}
-
-async function updateRender() {
-  isLoading.value = true
-  renderedHtml.value = ''
-  const currentSlug = slug.value
-  if (!currentSlug) {
-    isLoading.value = false
-    return
-  }
-  const rawBody = await loadKn3ChapterBody(currentSlug)
-  if (!rawBody) {
-    isLoading.value = false
-    return
-  }
-  const bodyWithoutH1 = stripLeadingH1(rawBody)
-  renderedHtml.value = await renderMarkdown(bodyWithoutH1)
-  isLoading.value = false
-}
-
-watch(slug, updateRender, { immediate: true })
 
 const SITE_URL = 'https://books.folkup.life'
 
@@ -101,9 +95,9 @@ useHead({
         <h1>{{ chapterData.meta.title }}</h1>
       </header>
 
-      <div v-if="isLoading" class="reader-chapter__loading">Загрузка…</div>
-
-      <div v-else class="reader-chapter__content" v-html="renderedHtml"></div>
+      <!-- v-html: контент из trusted source pre-rendered by marked at build time
+           (см. scripts/kn3-reader-manifest.mjs). Sync render — SSR-safe. -->
+      <div class="reader-chapter__content" v-html="renderedHtml"></div>
 
       <nav class="reader-chapter__nav" aria-label="Навигация по главам">
         <RouterLink
@@ -177,12 +171,6 @@ useHead({
 .reader-chapter__content {
   font-size: 1.1rem;
   line-height: 1.7;
-}
-.reader-chapter__loading {
-  text-align: center;
-  padding: 2rem;
-  color: var(--color-text-muted, #666);
-  font-style: italic;
 }
 .reader-chapter__content :deep(p) {
   margin: 0 0 1.2em;
