@@ -249,8 +249,14 @@ if (book.value) {
           </a>
         </div>
 
+        <!--
+          Format stale note — плашка версии издания. Показываем ТОЛЬКО когда
+          downloads реально отсутствуют (обе формата: EPUB + PDF). Per Iskra
+          Р-25 DOP-8 S260 flag + Andrey Q1=a verdict cont+51 2026-08-04:
+          «rudiment» heading при живых downloads = устраняем conditional.
+        -->
         <div
-          v-if="isLive && localizedFormatStaleNote"
+          v-if="isLive && localizedFormatStaleNote && !book.downloads?.epub && !book.downloads?.pdf"
           class="book-page__format-stale"
           role="note"
           :aria-label="t('portal.formats_stale_aria')"
@@ -259,14 +265,16 @@ if (book.value) {
           <p>{{ localizedFormatStaleNote }}</p>
         </div>
 
-        <div v-else-if="isPause" class="book-page__notice">
-          <strong>{{ t('portal.in_pause') }}.</strong>
-          <p>{{ subtitle }}</p>
-        </div>
+        <template v-if="!isLive">
+          <div v-if="isPause" class="book-page__notice">
+            <strong>{{ t('portal.in_pause') }}.</strong>
+            <p>{{ subtitle }}</p>
+          </div>
 
-        <div v-else class="book-page__notice">
-          <strong>{{ t('portal.coming_soon') }}</strong>
-        </div>
+          <div v-else class="book-page__notice">
+            <strong>{{ t('portal.coming_soon') }}</strong>
+          </div>
+        </template>
 
         <!--
           Языковые версии — Iskra canon ZAGLUSHKI S179 (виза Андрея 2026-07-18).
