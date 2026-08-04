@@ -1,16 +1,16 @@
 /**
- * kn.1 chapters composable — manifest-driven ordered list + pre-rendered body loader.
+ * kn.1 chapters composable — manifest-driven ordered list + per-chapter body loader.
  *
  * Bundle strategy (VIT-KLB cont+49 P0 fix):
  *   - Manifest (metadata only, ~12 KB JSON) → eager import для TOC + navigation.
- *     TOC page (Kn1ReadToc.vue) touches ONLY this — не подтягивает bodies bundle.
- *   - Bodies (~830 KB pre-rendered HTML, keyed by slug) → dynamic import ONLY from
- *     chapter page (Kn1ReadChapter.vue) → отдельный chunk. Per-request cost pays only
- *     once per SPA session (browser cache) + prerender inlines в HTML anyway.
+ *     TOC page (Kn1ReadToc.vue) touches ONLY this — не подтягивает bodies.
+ *   - Bodies split per-chapter ES modules (content/kn1/ru/chapters-html/{slug}.js) —
+ *     dynamic import via glob. Vite splits каждый в собственный chunk (~5-90 KB raw,
+ *     gzip typically 30-40% — все under 60 KB gzip bundle gate).
  *
  * Origin: reader restoration cont+30 S3SCOOP (metadata manifest). cont+49 Кочегар fix —
  * async watcher pattern не suspend'ился SSR → HTML прибит на «Загрузка…». Pre-render
- * bodies at build time → SSR emits real HTML → GoogleBot видит контент.
+ * bodies at build time + per-chapter split → SSR emits real HTML + bundle gate OK.
  */
 import { ref } from 'vue'
 import manifest from '../../content/kn1/ru/chapters-manifest.json'
@@ -33,14 +33,14 @@ interface Manifest {
   entries: ChapterMeta[]
 }
 
-interface BodiesArtifact {
-  generated: string
-  book: string
-  locale: string
-  bodies: Record<string, string>
-}
-
 const typedManifest = manifest as Manifest
+
+// Per-chapter HTML modules — dynamic glob → каждый chunk отдельно.
+// Vite matches `../../content/kn1/ru/chapters-html/{slug}.js` at build,
+// каждый chapter файл = own on-demand chunk.
+const chapterHtmlModules = import.meta.glob<{ default: string }>(
+  '../../content/kn1/ru/chapters-html/*.js',
+)
 
 /**
  * All chapter metadata — ordered per canonical sequence.
@@ -73,16 +73,18 @@ export function useKn1ChapterMeta(slug: string) {
 }
 
 /**
- * Look up pre-rendered HTML body для chapter by slug from a supplied bodies dictionary.
- * Callers pass в bodies loaded из chapters-bodies.json (usually eager-imported by
- * Kn1ReadChapter.vue so bodies bundle in chapter chunk only — не bloats TOC).
+ * Load pre-rendered HTML body для chapter by slug.
+ * Returns null if slug unknown.
+ *
+ * SSR path (Kn1ReadChapter.vue onServerPrefetch) — awaited by vite-ssg's
+ *   renderToString → body inlined в prerendered HTML.
+ * Client path (watch(slug)) — chunk loads on-demand per navigation, browser
+ *   caches after first hit.
  */
-export function pickKn1ChapterBodyHtml(
-  bodies: Record<string, string>,
-  slug: string,
-): string | null {
-  return bodies[slug] ?? null
+export async function loadKn1ChapterBodyHtml(slug: string): Promise<string | null> {
+  const path = `../../content/kn1/ru/chapters-html/${slug}.js`
+  const loader = chapterHtmlModules[path]
+  if (!loader) return null
+  const mod = await loader()
+  return mod.default
 }
-
-/** Type helper для bodies JSON — Kn1ReadChapter.vue imports and casts к this. */
-export type Kn1BodiesArtifact = BodiesArtifact

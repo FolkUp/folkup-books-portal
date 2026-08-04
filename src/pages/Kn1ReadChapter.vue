@@ -8,31 +8,51 @@
  *   на <div>Загрузка…</div>, GoogleBot видит placeholder, indexing fails.
  *
  * New pattern: bodies pre-rendered at build time via scripts/kn1-reader-manifest.mjs
- *   → eager-imported here (chapter chunk only, TOC не затронут — separate route chunk)
- *   → sync computed picks bodyHtml по route slug. SSR emits real HTML byte-match с
- *   client hydration. Zero async, zero loading state.
+ *   → per-chapter ES modules content/kn1/ru/chapters-html/{slug}.js (dynamic glob).
+ *   SSR: onServerPrefetch awaits body load → renderToString emits real HTML.
+ *   Client: watch(slug) triggers same async loader → per-chapter chunk lazy-fetched
+ *   on navigation, browser caches. Each chunk under 60 KB gzip bundle gate.
+ *   Hydration: SSR-populated renderedHtml serialized через vite-ssg initialState;
+ *   client picks it up на initial mount → no flash of loading, byte-match render.
  */
-import { computed } from 'vue'
+import { computed, onServerPrefetch, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useHead } from '@unhead/vue'
 import {
   useKn1ChapterMeta,
-  pickKn1ChapterBodyHtml,
-  type Kn1BodiesArtifact,
+  loadKn1ChapterBodyHtml,
 } from '../composables/useKn1Chapters'
-// Eager import — bundles bodies (~830 KB, gzip ~200-300 KB) в chapter route chunk.
-// Route lazy-load (см. src/router/routes.ts) → other pages untouched.
-import bodiesJson from '../../content/kn1/ru/chapters-bodies.json'
 
 const route = useRoute()
 const slug = computed(() => route.params.slug as string)
 
 const chapterData = computed(() => useKn1ChapterMeta(slug.value))
 
-const bodiesArtifact = bodiesJson as Kn1BodiesArtifact
-const renderedHtml = computed<string>(
-  () => pickKn1ChapterBodyHtml(bodiesArtifact.bodies, slug.value) ?? '',
-)
+const renderedHtml = ref<string>('')
+
+// SSR: preload body before renderToString continues → body inlined в prerendered HTML.
+onServerPrefetch(async () => {
+  const html = await loadKn1ChapterBodyHtml(slug.value)
+  if (html !== null) renderedHtml.value = html
+})
+
+// Client: react к route changes (SPA prev/next). On initial mount после SSR
+// renderedHtml already populated from initialState — skip первый triger loading.
+if (typeof window !== 'undefined') {
+  let hydrated = renderedHtml.value !== ''
+  watch(
+    slug,
+    async (newSlug) => {
+      if (hydrated) {
+        hydrated = false // skip только первый call
+        return
+      }
+      const html = await loadKn1ChapterBodyHtml(newSlug)
+      renderedHtml.value = html ?? ''
+    },
+    { immediate: true },
+  )
+}
 
 const SITE_URL = 'https://books.folkup.life'
 
