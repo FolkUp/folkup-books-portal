@@ -1,46 +1,41 @@
 <script setup lang="ts">
-import { computed, ref, watch } from 'vue'
+/**
+ * kn.4 «Где живёт новое» reader single-chapter (/kn4/read/:slug).
+ * VIT-KLB cont+51 mirror kn1 pattern: SSR-safe pre-rendered HTML via onServerPrefetch.
+ */
+import { computed, onServerPrefetch, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useHead } from '@unhead/vue'
 import {
   useKn4ChapterMeta,
-  loadKn4ChapterBody,
+  loadKn4ChapterBodyHtml,
 } from '../composables/useKn4Chapters'
 
 const route = useRoute()
 const slug = computed(() => route.params.slug as string)
 const chapterData = computed(() => useKn4ChapterMeta(slug.value))
 const renderedHtml = ref<string>('')
-const isLoading = ref<boolean>(true)
 
-function stripLeadingH1(md: string): string {
-  return md.replace(/^# [^\n]+\n+/, '')
+onServerPrefetch(async () => {
+  const html = await loadKn4ChapterBodyHtml(slug.value)
+  if (html !== null) renderedHtml.value = html
+})
+
+if (typeof window !== 'undefined') {
+  let hydrated = renderedHtml.value !== ''
+  watch(
+    slug,
+    async (newSlug) => {
+      if (hydrated) {
+        hydrated = false
+        return
+      }
+      const html = await loadKn4ChapterBodyHtml(newSlug)
+      renderedHtml.value = html ?? ''
+    },
+    { immediate: true },
+  )
 }
-
-async function renderMarkdown(body: string): Promise<string> {
-  const { marked } = await import('marked')
-  const result = await marked.parse(body, { async: true })
-  return result as string
-}
-
-async function updateRender() {
-  isLoading.value = true
-  renderedHtml.value = ''
-  const currentSlug = slug.value
-  if (!currentSlug) {
-    isLoading.value = false
-    return
-  }
-  const rawBody = await loadKn4ChapterBody(currentSlug)
-  if (!rawBody) {
-    isLoading.value = false
-    return
-  }
-  renderedHtml.value = await renderMarkdown(stripLeadingH1(rawBody))
-  isLoading.value = false
-}
-
-watch(slug, updateRender, { immediate: true })
 
 const SITE_URL = 'https://books.folkup.life'
 
@@ -87,8 +82,9 @@ useHead({
       <header class="reader-chapter__header">
         <h1>{{ chapterData.meta.title }}</h1>
       </header>
-      <div v-if="isLoading" class="reader-chapter__loading">Загрузка…</div>
-      <div v-else class="reader-chapter__content" v-html="renderedHtml"></div>
+      <!-- v-html: контент из trusted source pre-rendered by marked at build time
+           (см. scripts/kn4-reader-manifest.mjs). Sync render — SSR-safe. -->
+      <div class="reader-chapter__content" v-html="renderedHtml"></div>
       <nav class="reader-chapter__nav" aria-label="Навигация по главам">
         <RouterLink
           v-if="chapterData.prev"
@@ -130,7 +126,6 @@ useHead({
 .reader-chapter__header { margin-bottom: 2rem; text-align: center; }
 .reader-chapter__header h1 { font-size: 2rem; margin: 0 0 0.6rem; line-height: 1.3; }
 .reader-chapter__content { font-size: 1.1rem; line-height: 1.7; }
-.reader-chapter__loading { text-align: center; padding: 2rem; color: var(--color-text-muted, #666); font-style: italic; }
 .reader-chapter__content :deep(p) { margin: 0 0 1.2em; text-align: justify; hyphens: auto; }
 .reader-chapter__content :deep(h2) { font-size: 1.4rem; margin: 2.5em 0 1em; border-bottom: 1px solid var(--color-border, #e0d5c8); padding-bottom: 0.3em; }
 .reader-chapter__content :deep(h3) { font-size: 1.2rem; margin: 2em 0 0.8em; }

@@ -1,14 +1,14 @@
 /**
- * kn.5 «Чужими руками» chapters composable — manifest + lazy body loader.
- * Source: content/kn5/ru/chapters-generated/ (split by kn5-reader-manifest.mjs
- * from pandoc-fenced-div MASTER).
+ * kn.5 «Чужими руками» chapters composable — manifest + per-chapter HTML loader.
+ * VIT-KLB cont+51 mirror kn1 pattern: pre-rendered HTML modules (via marked GFM sync),
+ *   dynamic glob per-chunk. Source: content/kn5/ru/chapters-html/*.js (pre-rendered
+ *   by kn5-reader-manifest.mjs — pandoc-fenced-div MASTER stripping preserved).
  */
 import { ref } from 'vue'
 import manifest from '../../content/kn5/ru/chapters-manifest.json'
 
-const chapterBodyModules = import.meta.glob<string>(
-  '../../content/kn5/ru/chapters-generated/*.md',
-  { query: '?raw', import: 'default' },
+const chapterHtmlModules = import.meta.glob<{ default: string }>(
+  '../../content/kn5/ru/chapters-html/*.js',
 )
 
 export interface Kn5ChapterMeta {
@@ -49,10 +49,13 @@ export function useKn5ChapterMeta(slug: string) {
   }
 }
 
-export async function loadKn5ChapterBody(slug: string): Promise<string | null> {
-  const path = `../../content/kn5/ru/chapters-generated/${slug}.md`
-  if (chapterBodyModules[path]) {
-    return await chapterBodyModules[path]()
-  }
-  return null
+/**
+ * Load pre-rendered HTML body для chapter by slug. See useKn3Chapters for pattern rationale.
+ */
+export async function loadKn5ChapterBodyHtml(slug: string): Promise<string | null> {
+  const path = `../../content/kn5/ru/chapters-html/${slug}.js`
+  const loader = chapterHtmlModules[path]
+  if (!loader) return null
+  const mod = await loader()
+  return mod.default
 }
