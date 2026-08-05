@@ -43,7 +43,7 @@
     "translation_stub_full": "The translation is taking shape in the FolkUp workshop. The exhibit will soon appear in this hall — come in.",
     "trilogies": {
       "svoimi_silami": {
-        "name": "On Their Own",
+        "name": "By Our Own Means",
         "description": "How a team does its work: learns to see itself, invents a better shape, and brings into being what wasn't there before."
       },
       "iz_pervyh_ruk": {
@@ -51,7 +51,7 @@
         "description": "How knowledge reaches us: through those who locked it away, through those who stand in the middle — and how to verify that what arrived is what was meant."
       },
       "obshchiy_yazyk": {
-        "name": "Common Tongue",
+        "name": "Common Ground",
         "description": "Why finding common ground is harder than it seems, and what to do about it."
       }
     },

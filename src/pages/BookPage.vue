@@ -22,7 +22,7 @@ const props = defineProps<{
   slug: string
 }>()
 
-const { t, locale } = useI18n()
+const { t, te, locale } = useI18n()
 const { series, bookBySlug } = useSeriesData()
 
 const book = computed(() => bookBySlug(props.slug))
@@ -39,10 +39,15 @@ const metaDescription = computed(() => {
 })
 
 // Canon v2 Iskra S214 §2+§4: витрина несёт принадлежность («Серия „Своим умом" · трилогия „X"»),
-// не счёт («Книга N» упразднена). Trilogy name resolved через series.trilogies map.
+// не счёт («Книга N» упразднена). Trilogy name resolved: i18n key first (per-locale),
+// fallback к series.yaml trilogies[key].name (RU baseline). Mirror index.vue pattern.
+// Fix cont+47 EXT-2 2026-08-05: closes 18 matrix cells RU-fallback DE/EN/PT — i18n keys
+// portal.trilogies.{key}.name уже existed but BookPage.vue не consumed them.
 const trilogyName = computed<string | null>(() => {
   const key = book.value?.trilogy
   if (!key) return null
+  const i18nKey = `portal.trilogies.${key}.name`
+  if (te(i18nKey)) return t(i18nKey)
   return series.value.trilogies?.[key]?.name ?? null
 })
 
