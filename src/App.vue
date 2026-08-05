@@ -20,7 +20,14 @@ const SUPPORTED_LOCALES = ['ru', 'en', 'de'] as const
 type SupportedLocale = (typeof SUPPORTED_LOCALES)[number]
 
 // Current URL (per-route reactive)
-const currentUrl = () => `${SITE_URL}${route.path}`
+// Iskra P3 (cont+52 SEAL): normalize к trailing-slash form чтобы align og:url + hreflang
+// к canonical convention BookPage.vue (`https://books.folkup.life/${slug}/`).
+// SSG route.path returns `/kn1` без slash → canonical/og drift observed by Iskra.
+const currentUrl = () => {
+  const path = route.path
+  const withSlash = path.endsWith('/') ? path : `${path}/`
+  return `${SITE_URL}${withSlash}`
+}
 
 // Schema.org Organization — publisher identity (per Дьюи SEO audit 2026-07-23)
 const ORGANIZATION_JSONLD = {
