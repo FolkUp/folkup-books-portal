@@ -42,6 +42,8 @@ related:
   - _act-iii-architecture
 ---
 
+![Гравюра к главе: Машина времени и горизонты труда](/kn1/images/chapters/agil-chapter-8-plate.webp)
+
 > «The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His grey eyes shone and twinkled, and his usually pale face was flushed and animated.»¹
 >
 > — Г. Уэллс, «Машина времени» (1895), глава I
