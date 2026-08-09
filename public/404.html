@@ -4,36 +4,379 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex">
-<title>404 — Страница не найдена / Not Found / Nicht gefunden / Não encontrado</title>
+<title>404 — Экспонат на реставрации · Библиотека FolkUp</title>
+<meta name="description" content="Запрошенной страницы в Библиотеке FolkUp нет. Пока — открытые залы серии.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Vollkorn:wght@400;500;700&family=Pacifico&display=swap">
+<link rel="icon" type="image/svg+xml" href="/brand-mark.svg">
+
 <style>
-body { font-family: system-ui, -apple-system, sans-serif; max-width: 600px; margin: 4rem auto; padding: 1rem; line-height: 1.6; color: #222; }
-h1 { font-size: 3rem; margin-bottom: 0; color: #7D4450; }
-.lang { border-top: 1px solid #ddd; padding-top: 1rem; margin-top: 1.5rem; }
-a { color: #7D4450; }
+  :root {
+    --color-bordeaux: #7D4450;
+    --color-sage: #839E75;
+    --color-amber: #E8AD4A;
+    --color-ivory: #FEFCF6;
+    --color-text: #1A1A1A;
+    --color-text-muted: #6B6B6B;
+    --color-border: #E5E0D0;
+    --font-display: 'Playfair Display', Georgia, serif;
+    --font-body: 'Vollkorn', Georgia, serif;
+    --font-brand: 'Pacifico', cursive;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: var(--font-body);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    color: var(--color-text);
+    background: var(--color-ivory);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  /* Header — mirrors portal home canon (brand-mark + label + langswitch) */
+  .site-header {
+    padding: 1.25rem 1.5rem;
+    border-bottom: 1px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    background: var(--color-ivory);
+  }
+  .site-header a { color: var(--color-bordeaux); text-decoration: none; }
+  .site-header .brand {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-right: auto;
+  }
+  .site-header .brand-mark {
+    font-family: var(--font-brand);
+    font-size: 1.75rem;
+    color: var(--color-bordeaux);
+    line-height: 1;
+  }
+  .site-header .brand-label {
+    font-family: var(--font-display);
+    font-size: 1.125rem;
+    color: var(--color-text);
+    letter-spacing: 0.02em;
+  }
+  .site-header .lang-switch {
+    display: flex;
+    gap: 0.5rem;
+    font-size: 0.9375rem;
+  }
+  .site-header .lang-switch a {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid var(--color-border);
+    border-radius: 4px;
+    color: var(--color-text-muted);
+  }
+  .site-header .lang-switch a[aria-current="true"] {
+    color: var(--color-bordeaux);
+    border-color: var(--color-bordeaux);
+    font-weight: 700;
+  }
+
+  /* Main museum hall */
+  main {
+    flex: 1 0 auto;
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 3.5rem;
+    text-align: center;
+    width: 100%;
+  }
+
+  /* Museum frame — empty picture frame with paspartu + S138 stamp */
+  .museum {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto 1rem;
+    width: 100%;
+    max-width: 420px;
+  }
+  .museum-frame {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .museum-stamp {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    max-width: 220px;
+    transform: translate(-50%, -50%) rotate(-12deg);
+    opacity: 0.6;
+    pointer-events: none;
+  }
+  .inventory-tag {
+    display: inline-block;
+    margin-top: 0.5rem;
+    padding: 0.375rem 0.875rem;
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 3px;
+    font-family: var(--font-body);
+    font-size: 0.8125rem;
+    letter-spacing: 0.08em;
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+  }
+
+  /* Text blocks — RU primary + EN/DE/PT secondary */
+  .msg-primary {
+    margin: 2rem auto 1.5rem;
+    max-width: 580px;
+  }
+  .msg-primary h1 {
+    font-family: var(--font-display);
+    font-size: 1.875rem;
+    font-weight: 700;
+    color: var(--color-bordeaux);
+    margin: 0 0 0.75rem;
+    letter-spacing: -0.01em;
+  }
+  .msg-primary p {
+    font-size: 1.125rem;
+    color: var(--color-text);
+    margin: 0.5rem 0;
+  }
+  .msg-primary a {
+    color: var(--color-bordeaux);
+    text-decoration: underline;
+  }
+
+  .msg-secondary {
+    margin: 2rem auto 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    max-width: 700px;
+    text-align: left;
+  }
+  .msg-secondary .lang {
+    padding: 0.875rem 1rem;
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--color-sage);
+    border-radius: 3px;
+    font-size: 0.9375rem;
+    line-height: 1.5;
+  }
+  .msg-secondary .lang p { margin: 0.25rem 0; }
+  .msg-secondary .lang strong { color: var(--color-bordeaux); }
+  .msg-secondary .lang a { color: var(--color-bordeaux); }
+
+  /* Live books hall — mini cards Wave 2 */
+  .live-books {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--color-border);
+  }
+  .live-books h2 {
+    font-family: var(--font-display);
+    font-size: 1.375rem;
+    font-weight: 400;
+    color: var(--color-text);
+    margin: 0 0 1.5rem;
+    font-style: italic;
+  }
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+  .card {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.15s ease;
+  }
+  .card:hover, .card:focus-visible {
+    transform: translateY(-3px);
+    outline: none;
+  }
+  .card:focus-visible .card-cover { box-shadow: 0 0 0 3px var(--color-amber); }
+  .card-cover {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    box-shadow: 0 2px 8px rgba(125, 68, 80, 0.15);
+    border-radius: 2px;
+    transition: box-shadow 0.15s ease;
+  }
+  .card-label {
+    display: block;
+    margin-top: 0.5rem;
+    font-family: var(--font-display);
+    font-size: 0.9375rem;
+    color: var(--color-text);
+    font-weight: 700;
+  }
+  .card-note {
+    display: block;
+    margin-top: 0.125rem;
+    font-size: 0.8125rem;
+    color: var(--color-text-muted);
+    font-style: italic;
+  }
+
+  /* Footer canon */
+  .site-footer {
+    padding: 1.5rem;
+    border-top: 1px solid var(--color-border);
+    background: var(--color-ivory);
+    text-align: center;
+    font-size: 0.875rem;
+    color: var(--color-text-muted);
+    line-height: 1.6;
+  }
+  .site-footer a { color: var(--color-bordeaux); text-decoration: none; }
+  .site-footer a:hover { text-decoration: underline; }
+  .site-footer .credits { margin: 0.25rem 0; }
+
+  /* Mobile responsive */
+  @media (max-width: 640px) {
+    main { padding: 1.75rem 1rem 2.5rem; }
+    .museum { max-width: 320px; }
+    .msg-primary h1 { font-size: 1.5rem; }
+    .msg-primary p { font-size: 1rem; }
+    .msg-secondary {
+      grid-template-columns: 1fr;
+      gap: 0.75rem;
+    }
+    .cards {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      max-width: 100%;
+    }
+    .card-label { font-size: 0.875rem; }
+    .card-note { font-size: 0.75rem; }
+    .site-header {
+      padding: 1rem;
+      gap: 0.75rem;
+    }
+    .site-header .brand-mark { font-size: 1.5rem; }
+    .site-header .brand-label { font-size: 1rem; }
+    .site-header .lang-switch { font-size: 0.875rem; }
+  }
 </style>
 </head>
 <body>
-<h1>404</h1>
 
-<div class="lang">
-<p><strong>Такой страницы нет.</strong> Возможно вы искали <a href="/">главную</a>?</p>
-<p><em>Перевод готовится в мастерской FolkUp. Экспонат появится в этом зале — заходите.</em></p>
-</div>
+<header class="site-header">
+  <a class="brand" href="/" aria-label="На главную — Библиотека FolkUp">
+    <span class="brand-mark">FolkUp</span>
+    <span class="brand-label">Библиотека</span>
+  </a>
+  <nav class="lang-switch" aria-label="Языки">
+    <a href="/" aria-current="true">RU</a>
+    <a href="/en/">EN</a>
+    <a href="/de/">DE</a>
+  </nav>
+</header>
 
-<div class="lang">
-<p><strong>Not found.</strong> Try our <a href="/">homepage</a>?</p>
-<p><em>The translation is taking shape in the FolkUp workshop. The exhibit will soon appear in this hall — come in.</em></p>
-</div>
+<main>
 
-<div class="lang">
-<p><strong>Nicht gefunden.</strong> Vielleicht suchen Sie unsere <a href="/">Startseite</a>?</p>
-<p><em>Die Übersetzung entsteht in der FolkUp-Werkstatt. Das Exponat wird bald in diesem Saal gezeigt.</em></p>
-</div>
+  <div class="museum" role="img" aria-label="Пустая музейная рама с круглой печатью «Экспонат на реставрации, 2026»">
+    <!-- Museum picture frame — SVG, ornate rectangle with ivory paspartu -->
+    <svg class="museum-frame" viewBox="0 0 420 320" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <!-- Outer wood frame -->
+      <rect x="8" y="8" width="404" height="304" rx="2" fill="#8a5a3b" />
+      <rect x="12" y="12" width="396" height="296" rx="1" fill="none" stroke="#5f3d24" stroke-width="0.5" />
+      <!-- Inner frame moulding -->
+      <rect x="26" y="26" width="368" height="268" rx="1" fill="none" stroke="#c4915f" stroke-width="1.5" />
+      <rect x="30" y="30" width="360" height="260" rx="1" fill="none" stroke="#5f3d24" stroke-width="0.4" />
+      <!-- Ivory paspartu (mat) -->
+      <rect x="34" y="34" width="352" height="252" fill="#FEFCF6" stroke="#E5E0D0" stroke-width="0.5" />
+      <!-- Inner canvas (empty, slightly darker ivory to hint depth) -->
+      <rect x="66" y="58" width="288" height="204" fill="#F5F1E4" stroke="#D6CFB9" stroke-width="1" />
+      <!-- Corner ornament dots (subtle museum classic) -->
+      <circle cx="26" cy="26" r="2" fill="#5f3d24" />
+      <circle cx="394" cy="26" r="2" fill="#5f3d24" />
+      <circle cx="26" cy="294" r="2" fill="#5f3d24" />
+      <circle cx="394" cy="294" r="2" fill="#5f3d24" />
+    </svg>
 
-<div class="lang">
-<p><strong>Não encontrado.</strong> Talvez procure a nossa <a href="/">página inicial</a>?</p>
-<p><em>A tradução está a ganhar forma na oficina FolkUp. A peça chegará em breve a esta sala — entrem.</em></p>
-</div>
+    <!-- Circular stamp S138 «ЭКСПОНАТ НА РЕСТАВРАЦИИ · 2026» -->
+    <svg class="museum-stamp" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <path id="stamp-ring" d="M 110,110 m -85,0 a 85,85 0 1,1 170,0 a 85,85 0 1,1 -170,0" />
+      </defs>
+      <!-- Outer ring -->
+      <circle cx="110" cy="110" r="100" fill="none" stroke="#7D4450" stroke-width="3" />
+      <circle cx="110" cy="110" r="93" fill="none" stroke="#7D4450" stroke-width="1.5" />
+      <!-- Circular ring text (RU) -->
+      <text font-family="Vollkorn, Georgia, serif" font-size="15" font-weight="700" fill="#7D4450" letter-spacing="2">
+        <textPath href="#stamp-ring" startOffset="0">ЭКСПОНАТ НА РЕСТАВРАЦИИ · ЭКСПОНАТ НА РЕСТАВРАЦИИ · </textPath>
+      </text>
+      <!-- Center: year -->
+      <text x="110" y="120" font-family="Playfair Display, Georgia, serif" font-size="42" font-weight="700" fill="#7D4450" text-anchor="middle">2026</text>
+    </svg>
+  </div>
+
+  <div class="inventory-tag">Инвентарный № 404</div>
+
+  <div class="msg-primary">
+    <h1>Такой страницы нет</h1>
+    <p>Возможно, вы искали <a href="/">главную Библиотеки</a>?</p>
+    <p><em>Перевод готовится в мастерской FolkUp. Экспонат появится в этом зале — заходите.</em></p>
+  </div>
+
+  <div class="msg-secondary">
+    <div class="lang" lang="en">
+      <p><strong>Not found.</strong> Try our <a href="/">homepage</a>?</p>
+      <p><em>The translation is taking shape in the FolkUp workshop.</em></p>
+    </div>
+    <div class="lang" lang="de">
+      <p><strong>Nicht gefunden.</strong> Vielleicht suchen Sie unsere <a href="/">Startseite</a>?</p>
+      <p><em>Die Übersetzung entsteht in der FolkUp-Werkstatt.</em></p>
+    </div>
+    <div class="lang" lang="pt">
+      <p><strong>Não encontrado.</strong> Talvez procure a nossa <a href="/">página inicial</a>?</p>
+      <p><em>A tradução está a ganhar forma na oficina FolkUp.</em></p>
+    </div>
+  </div>
+
+  <section class="live-books" aria-labelledby="live-hall">
+    <h2 id="live-hall">А пока — открытые залы</h2>
+    <div class="cards">
+      <a class="card" href="/kn1">
+        <img class="card-cover" src="/covers/cover_kn1.png" alt="Обложка книги «Agile Sapiens»" loading="lazy" width="200" height="300">
+        <span class="card-label">Кн.1 · Agile Sapiens</span>
+        <span class="card-note">Викторианская литература как теория менеджмента</span>
+      </a>
+      <a class="card" href="/kn5">
+        <img class="card-cover" src="/covers/cover_kn5.png" alt="Обложка книги «Чужими руками»" loading="lazy" width="200" height="300">
+        <span class="card-label">Кн.5 · Чужими руками</span>
+        <span class="card-note">Между автором и нами всегда кто-то стоит</span>
+      </a>
+      <a class="card" href="/kn3">
+        <img class="card-cover" src="/covers/cover_kn3.png" alt="Обложка книги «Город Солнца»" loading="lazy" width="200" height="300">
+        <span class="card-label">Кн.3 · Город Солнца</span>
+        <span class="card-note">Идеальные города и обычный человек с сумками</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p class="credits">Библиотека <a href="/">FolkUp</a> · <a href="/legal/">Правовое</a> · <a href="mailto:editor@folkup.app">editor@folkup.app</a></p>
+  <p class="credits">© 2026 Команданте FolkUp · Контент — CC BY-SA 4.0 · Код — MIT</p>
+</footer>
 
 </body>
 </html>
