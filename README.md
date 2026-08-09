@@ -8,7 +8,7 @@
 
 ## About
 
-Portal обслуживает семикнижную серию в общей нижней навигации, единой typography (Playfair Display + Vollkorn + Pacifico brand mark), unified download packages, cross-references между книгами и longform materials.
+Portal обслуживает серию в общей нижней навигации, единой typography (Playfair Display + Vollkorn + Pacifico brand mark), unified download packages, cross-references между книгами и longform materials.
 
 Автор — Команданте FolkUp (Команданте FolkUp is a literary pseudonym; legal identification and AI-use disclosure: [books.folkup.life/ai-disclosure](https://books.folkup.life/ai-disclosure)).
 
