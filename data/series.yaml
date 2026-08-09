@@ -59,13 +59,13 @@ books:
     slug_en_temp: agile-sapiens
     trilogy: svoimi_silami
     status: live
-    version: 1.0.21
+    version: 1.0.22
     launch_date: 2026-05-24
     date_relicensed: 2026-06-25
-    date_patched: 2026-08-03  # v1.0.21 REWORK per Iskra S252 vskrytie v1.0.20: colophon cleanup + title Iskra sync + PDF English subtitle removed + Series canon v2
+    date_patched: 2026-08-09  # v1.0.22 S4SCOOP cont+1 F POST-SEAL 2026-08-09: chapter-8 plate canon closed (recovered from git 041a5e7^) + colophon no-numbers fix per Andrey mandate («канон плат таблицы F Wave 2 полный» вместо «17 гравюр»). Regenerated locally 12:58 UTC after PR #229 colophon fix landed. Portal PR = this changeset.
     downloads:
-      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.21.epub
-      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.21.pdf
+      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.22.epub
+      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.22.pdf
     # v1.0.20 cont+39/+44 S2SCOOP+S3SCOOP 2026-08-03: ЭШЕЛОН-2 dedup canon
     # per Iskra S248 МАЯК-КАНОН-DEDUP GO — 11 patches П6-П16 (dedup + rename
     # Иви→Искра + term-α EN form + hybrid П15 for portal absent ЭШЕЛОН-1).
@@ -88,7 +88,7 @@ books:
     # v1.0.16 legacy: убрана метафора «вскрытий» + числа глав.
     # v1.0.15 legacy: EPUB awk pipeline fix.
     format_stale_note: |
-      Издание v1.0.21 · обновлено 03.08.2026
+      Издание v1.0.22 · обновлено 09.08.2026
     cover_v1: /covers/cover_kn1.svg
     covers:
       ru: /covers/cover_kn1.svg
