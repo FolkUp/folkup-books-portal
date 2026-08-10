@@ -94,6 +94,22 @@ const READER_ENABLED_BOOKS = ['kn1', 'kn3', 'kn4']
 const hasReader = computed(() => READER_ENABLED_BOOKS.includes(props.slug) && isLive.value)
 const isPause = computed(() => book.value?.status === 'variant_b_pause')
 
+// Д-7 hotfix (Iskra INCIDENT 2026-08-10 ~12:00 UTC): DE/EN-страница отдавала
+// RU-файл под немой кнопкой скачивания. Пока язык переключается только JS
+// (Д-8 URL-роутинг в отдельном треке с Джонни), download-кнопки должны
+// показываться ТОЛЬКО когда у книги существует артефакт на текущем языке.
+// Правило: `book.translations?.[locale] === 'live'` — файл есть; иначе
+// показываем честную плашку с явной опцией «Скачать русскую версию».
+const hasLocalizedDownload = computed(
+  () => book.value?.translations?.[locale.value as Locale] === 'live',
+)
+const showDownloadNotice = computed(
+  () =>
+    isLive.value &&
+    !hasLocalizedDownload.value &&
+    (!!book.value?.downloads?.epub || !!book.value?.downloads?.pdf),
+)
+
 // Iskra S242 §1 KANON1=β (виза Andrey «Да, запускай» 2026-08-02):
 // «файл» = любой работающий «Читать» ИЛИ «Скачать» (reader/EPUB/PDF).
 // Длинное pro-chto показываем ТОЛЬКО если у книги ещё нет ни одного средства доступа.
@@ -236,22 +252,68 @@ if (book.value) {
           >
             {{ t('portal.read_online') }}
           </RouterLink>
-          <a
-            v-if="book.downloads?.epub"
-            :href="book.downloads.epub"
-            class="book-page__button"
-            download
-          >
-            {{ t('portal.download_epub') }}
-          </a>
-          <a
-            v-if="book.downloads?.pdf"
-            :href="book.downloads.pdf"
-            class="book-page__button"
-            download
-          >
-            {{ t('portal.download_pdf') }}
-          </a>
+          <!--
+            Download buttons — Д-7 hotfix per Iskra INCIDENT 2026-08-10:
+            показываем только когда `book.translations?.[locale] === 'live'`
+            (артефакт на текущем языке существует). Иначе — плашка ниже.
+          -->
+          <template v-if="hasLocalizedDownload">
+            <a
+              v-if="book.downloads?.epub"
+              :href="book.downloads.epub"
+              class="book-page__button"
+              download
+            >
+              {{ t('portal.download_epub') }}
+            </a>
+            <a
+              v-if="book.downloads?.pdf"
+              :href="book.downloads.pdf"
+              class="book-page__button"
+              download
+            >
+              {{ t('portal.download_pdf') }}
+            </a>
+          </template>
+        </div>
+
+        <!--
+          Download notice — Д-7 hotfix per Iskra INCIDENT 2026-08-10:
+          на DE/EN/PT (пока переводы «готовятся») честно сообщаем что скачивание
+          доступно только на русском + даём explicit ссылку с явной [RU] пометкой.
+          Полный Д-8 URL-роутинг закроет корень отдельным треком с Джонни.
+        -->
+        <div
+          v-if="showDownloadNotice"
+          class="book-page__download-notice"
+          role="note"
+          :aria-label="t('portal.download_ru_only_aria')"
+        >
+          <p class="book-page__download-notice-text">{{ t('portal.download_ru_only_notice') }}</p>
+          <div class="book-page__download-notice-actions">
+            <a
+              v-if="book.downloads?.epub"
+              :href="book.downloads.epub"
+              class="book-page__button book-page__button--ru-fallback"
+              download
+              hreflang="ru"
+              lang="ru"
+            >
+              <span class="book-page__download-lang-tag">RU</span>
+              {{ t('portal.download_ru_epub') }}
+            </a>
+            <a
+              v-if="book.downloads?.pdf"
+              :href="book.downloads.pdf"
+              class="book-page__button book-page__button--ru-fallback"
+              download
+              hreflang="ru"
+              lang="ru"
+            >
+              <span class="book-page__download-lang-tag">RU</span>
+              {{ t('portal.download_ru_pdf') }}
+            </a>
+          </div>
         </div>
 
         <!--
@@ -459,6 +521,63 @@ if (book.value) {
 .book-page__button:hover {
   background: var(--color-bordeaux);
   color: var(--color-ivory);
+}
+
+/*
+  Д-7 hotfix — download honesty notice for non-RU locales.
+  Показывается когда язык интерфейса не RU и файл на этом языке ещё не готов.
+  Даём explicit RU-опцию с явной [RU] пометкой чтобы пользователь понимал.
+*/
+.book-page__download-notice {
+  padding: var(--spacing-md) var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+  background: var(--color-ivory, #FEFCF6);
+  border: 1px solid var(--color-border);
+  border-left: 4px solid var(--color-amber, #E8AD4A);
+  border-radius: var(--radius-sm);
+}
+
+.book-page__download-notice-text {
+  margin: 0 0 var(--spacing-md);
+  color: var(--color-text);
+  font-size: var(--fs-md);
+  line-height: 1.5;
+}
+
+.book-page__download-notice-actions {
+  display: flex;
+  gap: var(--spacing-md);
+  flex-wrap: wrap;
+}
+
+.book-page__button--ru-fallback {
+  background: transparent;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+}
+
+.book-page__button--ru-fallback:hover {
+  background: var(--color-primary);
+  color: var(--color-ivory);
+}
+
+.book-page__download-lang-tag {
+  display: inline-block;
+  padding: 0.1em 0.4em;
+  font-size: 0.75em;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  background: var(--color-primary);
+  color: var(--color-ivory);
+  border-radius: var(--radius-xs, 2px);
+}
+
+.book-page__button--ru-fallback:hover .book-page__download-lang-tag {
+  background: var(--color-ivory);
+  color: var(--color-primary);
 }
 
 .book-page__notice {
