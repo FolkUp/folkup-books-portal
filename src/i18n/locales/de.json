@@ -134,6 +134,35 @@
       "p1": "Der gesamte Bibliotheksinhalt steht unter Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). Infrastrukturcode — MIT."
     }
   },
+  "about": {
+    "title": "Über das Projekt",
+    "h1": "Über das Projekt",
+    "meta_description": "Über die FolkUp-Bibliothek: freie Bücher unter CC BY-SA 4.0 — Sachbuch-Reihe über Teams und Menschen. Redigiert von einem Menschen gemeinsam mit KI; für jedes Wort ist ein Mensch verantwortlich.",
+    "section1": {
+      "h2": "Was das für eine Bibliothek ist",
+      "p1": "Hier liegen Bücher, die man nicht wegsperren kann.",
+      "p2": "Jedes erscheint unter der freien Lizenz CC BY-SA 4.0 — lesen Sie, laden Sie herunter, teilen Sie, übersetzen Sie, geben Sie neu heraus. Die einzige Bedingung: Nennen Sie die Quelle und geben Sie die Freiheit weiter. Es gibt keine «Vollversion gegen Bezahlung»: Was Sie vor sich haben, ist die Vollversion.",
+      "p3": "Die Reihe ist vollständig geschrieben und erscheint nach Reifegrad — so, wie Bücher vor der Ära der Termine erschienen: wenn der Text fertig ist, nicht wenn es der Kalender verlangt. Jedes durchläuft eine redaktionelle Strecke: Abgleich der Quellen mit den Originalen, wörtliche Zitatprüfung, ehrliche Fußnoten. Wenn wir uns irgendwo geirrt haben — schreiben Sie uns: wir korrigieren es und bedanken uns in der nächsten Version. Freie Bücher haben einen Luxus, der dem Papier verwehrt bleibt: sie können nach dem Erscheinen besser werden."
+    },
+    "section2": {
+      "h2": "Wer Comandante FolkUp ist",
+      "p1": "Die Bücher der Reihe sind mit diesem Namen unterschrieben. Wer dahintersteht — unwichtig; wichtig ist, dass unter diesem Namen das Wissen in die Freiheit tritt. So haben es andere schon getan: Pessoa hat sein Schreiben den Heteronymen übergeben, Banksy hat den Wänden gesichtslose Arbeiten gelassen. Der Name ist keine Maske, sondern eine Weise, die Figur des Autors aus dem Weg zu räumen, auf dem der Leser geht.",
+      "p2": "Hinter den Texten steht ein lebender Mensch mit fünfundzwanzig Jahren Praxis in Software und Teams — und eine Redaktion, in der ein Mensch gemeinsam mit künstlicher Intelligenz arbeitet. Wir verbergen das nicht, sondern halten es für Teil der Methode: die Epoche, von der diese Bücher handeln, hat auch in unserer Redaktion begonnen. Für jedes Wort ist ein Mensch verantwortlich."
+    },
+    "section3": {
+      "h2": "Wozu das alles",
+      "p1": "Wir meinen, dass Wissen, das hinter einer Bezahlschranke eingesperrt ist, schlechter wirkt als Wissen, das von Hand zu Hand geht. Dieser Gedanke ist in der {declarationLink} formuliert — dem Manifest unseres Ökosystems. Die Bibliothek ist sein praktischer Beweis: kein Aufruf zum Teilen, sondern der Akt des Teilens selbst.",
+      "declaration_link_text": "Erklärung des ungezäunten Wissens",
+      "p2": "Um die Bibliothek herum wächst das FolkUp-Ökosystem: {articlesLink} über das, was zwischen den Buchdeckeln keinen Platz fand, und {encyclopediasLink} — offene Wissenssammlungen zu den Themen der Reihe. Alles unter denselben freien Lizenzen.",
+      "articles_link_text": "Artikel",
+      "encyclopedias_link_text": "Enzyklopädien"
+    },
+    "section4": {
+      "h2": "Womit beginnen",
+      "p1": "Mit dem {firstBookLink} — oder mit einem beliebigen, das Sie am Umschlag anspricht. Freie Bücher verlangen nicht, in der Reihenfolge gelesen zu werden: die Tür steht von jeder Seite offen.",
+      "first_book_link_text": "ersten Buch"
+    }
+  },
   "legal": {
     "last_updated_label": "Zuletzt aktualisiert:",
     "last_updated_date": "23.07.2026",

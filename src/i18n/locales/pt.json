@@ -106,6 +106,35 @@
       "p1": "Todo o conteúdo da biblioteca está sob Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). Código de infraestrutura — MIT."
     }
   },
+  "about": {
+    "title": "Sobre o projeto",
+    "h1": "Sobre o projeto",
+    "meta_description": "Sobre a Biblioteca FolkUp: livros livres sob CC BY-SA 4.0 — coleção de não-ficção sobre equipas e pessoas. Editado por uma pessoa em conjunto com IA; por cada palavra responde uma pessoa.",
+    "section1": {
+      "h2": "Que biblioteca é esta",
+      "p1": "Aqui estão livros que não se podem fechar.",
+      "p2": "Cada um é publicado sob a licença livre CC BY-SA 4.0 — leia, descarregue, partilhe, traduza, republique. A única condição: cite a fonte e transmita a liberdade adiante. Não existe «versão completa a pagamento»: o que tem diante de si já é a versão completa.",
+      "p3": "A coleção está escrita por inteiro e é publicada à medida que cada livro fica pronto — tal como os livros se publicavam antes da era dos prazos: quando o texto está pronto, não quando o calendário o exige. Cada um passa por um circuito editorial: verificação de fontes contra os originais, exatidão das citações, notas de rodapé honestas. Se em algum ponto errámos — escreva-nos: corrigimos e agradecemos na próxima versão. Os livros livres têm um luxo inacessível ao papel: sabem melhorar depois de publicados."
+    },
+    "section2": {
+      "h2": "Quem é o Comandante FolkUp",
+      "p1": "Os livros da coleção estão assinados com este nome. Quem está por trás dele não importa; importa que sob este nome o conhecimento sai em liberdade. Já se fez assim antes: Pessoa entregou a sua obra aos heterónimos, Banksy entregou aos muros os trabalhos sem rosto. O nome não é uma máscara — é uma forma de retirar a figura do autor do caminho pelo qual o leitor caminha.",
+      "p2": "Por trás dos textos está uma pessoa viva, com vinte e cinco anos de prática em software e equipas — e uma redação onde uma pessoa trabalha em conjunto com inteligência artificial. Não escondemos isto, consideramo-lo parte do método: a época sobre a qual estes livros foram escritos começou também na nossa redação. Por cada palavra responde uma pessoa."
+    },
+    "section3": {
+      "h2": "Para que tudo isto",
+      "p1": "Cremos que o conhecimento trancado atrás de uma parede paga funciona pior do que o conhecimento que anda de mão em mão. Este pensamento está formulado na {declarationLink} — o manifesto do nosso ecossistema. A biblioteca é a sua prova prática: não um apelo à partilha, mas o próprio ato de partilhar.",
+      "declaration_link_text": "Declaração do Conhecimento sem Cercas",
+      "p2": "Em torno da biblioteca cresce o ecossistema FolkUp: {articlesLink} sobre o que ficou fora da encadernação dos livros, e {encyclopediasLink} — sumas abertas de conhecimento sobre os temas da coleção. Tudo sob as mesmas licenças livres.",
+      "articles_link_text": "artigos",
+      "encyclopedias_link_text": "enciclopédias"
+    },
+    "section4": {
+      "h2": "Por onde começar",
+      "p1": "Pelo {firstBookLink} — ou por qualquer um que o cative pela capa. Os livros livres não pedem que se leia por ordem: a porta está aberta de qualquer lado.",
+      "first_book_link_text": "primeiro livro"
+    }
+  },
   "legal": {
     "last_updated_label": "Última atualização:",
     "last_updated_date": "23-07-2026",
