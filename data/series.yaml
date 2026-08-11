@@ -59,13 +59,13 @@ books:
     slug_en_temp: agile-sapiens
     trilogy: svoimi_silami
     status: live
-    version: 1.0.23
+    version: 1.0.24
     launch_date: 2026-05-24
     date_relicensed: 2026-06-25
-    date_patched: 2026-08-10  # v1.0.23 S6SCOOP cont+1 2026-08-10: Wave 2 canonical cover apply per Iskra REVERSE S265 (D-1/D-3 fix after Andrey physical vскрытие v1.0.22 found старая обложка v1.0.19 наследие; извлечён embedded 106KB raster из cover_kn1.svg Frida canonical; agile-sapiens PR #231 admin-merged a8253fc; EPUB rebuild cover hash 59ab198... verified; PDF illustrations count 13→21 JPEG markers side-effect improvement). PR #229 v1.0.22 predecessor (chapter-8 plate + colophon no-numbers).
+    date_patched: 2026-08-11  # v1.0.24 S6SCOOP cont+7 2026-08-11: build pipeline fixes per Iskra GLAZA-VERDIKTY (Д-2 EPUB spine linear=no + Д-4-final PDF plates derivePlate + Д-4-Chrome-headers off) + Д-2b epubcheck OPF-096 fix (nav.xhtml link on title.xhtml). Iskra S274 PROD-GATE-GO ADDENDUM: «номер остаётся v1.0.24 (публично не выкладывался, bump не нужен)». Content unchanged relative v1.0.23. PRs chain: agile-sapiens #235 05ed2a8 + #236 9a4e5dd CI-guard + #237 41bc924 Д-2b.
     downloads:
-      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.23.epub
-      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.23.pdf
+      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.24.epub
+      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.24.pdf
     # v1.0.20 cont+39/+44 S2SCOOP+S3SCOOP 2026-08-03: ЭШЕЛОН-2 dedup canon
     # per Iskra S248 МАЯК-КАНОН-DEDUP GO — 11 patches П6-П16 (dedup + rename
     # Иви→Искра + term-α EN form + hybrid П15 for portal absent ЭШЕЛОН-1).
@@ -88,7 +88,7 @@ books:
     # v1.0.16 legacy: убрана метафора «вскрытий» + числа глав.
     # v1.0.15 legacy: EPUB awk pipeline fix.
     format_stale_note: |
-      Издание v1.0.23 · обновлено 10.08.2026
+      Издание v1.0.24 · обновлено 11.08.2026
     cover_v1: /covers/cover_kn1.svg
     covers:
       ru: /covers/cover_kn1.svg

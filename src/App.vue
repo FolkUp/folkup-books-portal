@@ -16,7 +16,11 @@ const DEFAULT_OG_IMAGE = `${SITE_URL}/covers/cover_kn1.png`
 // PT temporarily hidden from switcher pending pt.json translation + native-speaker review
 // per Iskra рекомендация S250 (Andrey verdict а 2026-08-03 cont+45). Type union и pt.json
 // файлы preserved. Downloads pt.epub/pt.pdf остаются доступны напрямую по URL.
-const SUPPORTED_LOCALES = ['ru', 'en', 'de'] as const
+// LANG-404 HOTFIX Iskra S274 2026-08-11: EN + DE temporarily hidden from switcher —
+// /en /de portal routes returned HTTP 404 (Andrey direct catch). Ступень (а) hotfix:
+// remove EN/DE из shapka. Ступень (б) next cycle: /en /de честные заглушки-страницы
+// когда Bolik/Lolik shipped portal DE-hero + EN-hero v2 через Vier-Augen ratify.
+const SUPPORTED_LOCALES = ['ru'] as const
 type SupportedLocale = (typeof SUPPORTED_LOCALES)[number]
 
 // Current URL (per-route reactive)
