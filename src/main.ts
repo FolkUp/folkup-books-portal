@@ -17,7 +17,18 @@ import './styles/base.css'
 // vite-ssg's server head plugin, preventing SSG prerender from applying useHead calls.
 export const createApp = ViteSSG(
   App,
-  { routes },
+  {
+    routes,
+    // READER-SCROLL-1 fix (cont+14): Vue router scroll behavior for reader UX.
+    // - Browser back/forward: restore saved position
+    // - URL с #anchor: scroll к element with smooth behavior
+    // - New route navigation: scroll к top
+    scrollBehavior(to, _from, savedPosition) {
+      if (savedPosition) return savedPosition
+      if (to.hash) return { el: to.hash, behavior: 'smooth' }
+      return { top: 0 }
+    },
+  },
   ({ app, router, initialState }) => {
     // i18n — per-locale build (SEO + bundle size per R1 memo)
     const i18n = createI18n({
