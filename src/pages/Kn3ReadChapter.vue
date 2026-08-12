@@ -95,6 +95,26 @@ useHead({
         <h1>{{ chapterData.meta.title }}</h1>
       </header>
 
+      <!-- READER-NAV-1 cont+14: top nav mirror bottom nav (compact — labels only) -->
+      <nav
+        class="reader-chapter__nav reader-chapter__nav--top"
+        aria-label="Навигация по главам (верх)"
+      >
+        <RouterLink
+          v-if="chapterData.prev"
+          :to="`/kn3/read/${chapterData.prev.slug}`"
+          class="reader-chapter__nav-link reader-chapter__nav-prev"
+        >← Предыдущая</RouterLink>
+        <RouterLink to="/kn3/read" class="reader-chapter__nav-link reader-chapter__nav-toc">
+          К оглавлению
+        </RouterLink>
+        <RouterLink
+          v-if="chapterData.next"
+          :to="`/kn3/read/${chapterData.next.slug}`"
+          class="reader-chapter__nav-link reader-chapter__nav-next"
+        >Следующая →</RouterLink>
+      </nav>
+
       <!-- v-html: контент из trusted source pre-rendered by marked at build time
            (см. scripts/kn3-reader-manifest.mjs). Sync render — SSR-safe. -->
       <div class="reader-chapter__content" v-html="renderedHtml"></div>
@@ -229,6 +249,19 @@ useHead({
   margin-top: 3rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--color-border, #ddd);
+}
+/* READER-NAV-1 cont+14: top nav compact variant — labels only, less vertical weight */
+.reader-chapter__nav--top {
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 1px solid var(--color-border, #ddd);
+  border-bottom: 1px solid var(--color-border, #ddd);
+  font-size: 0.9rem;
+}
+.reader-chapter__nav--top .reader-chapter__nav-link {
+  padding: 0.3rem 0.6rem;
 }
 .reader-chapter__nav-link {
   display: block;
