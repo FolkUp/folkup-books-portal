@@ -30,6 +30,23 @@ export const routes: RouteRecordRaw[] = [
     component: () => import('../pages/Kn1ReadChapter.vue'),
     meta: { pageType: 'reader-chapter', bookSlug: 'kn1' },
   },
+  // READER-UNIFY-1 cont+16: PT reader routes (Iskra S284-01 §2 pt.3).
+  // /kn1/pt/read/:slug — served if content/kn1/pt/chapters-manifest.json exists.
+  {
+    path: '/kn1/pt/read/:slug',
+    name: 'kn1-pt-read-chapter',
+    component: () => import('../pages/Kn1ReadChapter.vue'),
+    meta: { pageType: 'reader-chapter', bookSlug: 'kn1', lang: 'pt' },
+    props: (route) => ({ ...route.params, lang: 'pt' }),
+  },
+  // EN placeholder — route registered; renders "not found" until content/kn1/en/chapters/ populated.
+  {
+    path: '/kn1/en/read/:slug',
+    name: 'kn1-en-read-chapter',
+    component: () => import('../pages/Kn1ReadChapter.vue'),
+    meta: { pageType: 'reader-chapter', bookSlug: 'kn1', lang: 'en' },
+    props: (route) => ({ ...route.params, lang: 'en' }),
+  },
   {
     path: '/kn2',
     name: 'kn2',
