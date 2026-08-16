@@ -15,25 +15,47 @@ import { resolve } from 'node:path'
 // Must match scripts/kn1-reader-manifest.mjs SKIP_FILES set.
 const READER_SKIP_FILES = new Set(['_index.md', '_index.ru.md'])
 
-function kn1ReaderRoutes(): string[] {
-  const chaptersDir = resolve(fileURLToPath(new URL('.', import.meta.url)), 'content/kn1/ru/chapters')
+/**
+ * Enumerate kn.1 reader routes for given lang.
+ * RU has no lang segment (backward compat); PT/EN prefixed с /kn1/{lang}/read/*.
+ * Graceful: если lang dir absent OR empty — returns [] (silent skip).
+ */
+function kn1LangReaderRoutes(lang: string): string[] {
+  const langSegment = lang === 'ru' ? '' : `/${lang}`
+  const projectRoot = fileURLToPath(new URL('.', import.meta.url))
+  const chaptersDir = resolve(projectRoot, `content/kn1/${lang}/chapters`)
   const routes: string[] = []
   try {
-    // Root chapter files
     for (const file of readdirSync(chaptersDir)) {
       if (!file.endsWith('.md') || READER_SKIP_FILES.has(file)) continue
-      routes.push(`/kn1/read/${file.replace(/\.md$/, '')}`)
+      routes.push(`/kn1${langSegment}/read/${file.replace(/\.md$/, '')}`)
     }
-    // Apparatus subfolder — slug prefixed «apparatus-»
+    // Apparatus subfolder — optional (may not exist for PT/EN yet).
     const apparatusDir = resolve(chaptersDir, 'apparatus')
-    for (const file of readdirSync(apparatusDir)) {
-      if (!file.endsWith('.md') || READER_SKIP_FILES.has(file)) continue
-      routes.push(`/kn1/read/apparatus-${file.replace(/\.md$/, '')}`)
+    try {
+      for (const file of readdirSync(apparatusDir)) {
+        if (!file.endsWith('.md') || READER_SKIP_FILES.has(file)) continue
+        routes.push(`/kn1${langSegment}/read/apparatus-${file.replace(/\.md$/, '')}`)
+      }
+    } catch {
+      // Apparatus dir absent — skip silently (PT/EN don't have apparatus yet).
     }
   } catch (err) {
-    console.warn('[vite.config] Failed enumerate kn.1 chapters:', err)
+    // Chapters dir absent — silent skip (EN scaffold pending).
+    if (lang === 'ru') {
+      console.warn(`[vite.config] Failed enumerate kn.1 chapters for ${lang}:`, err)
+    }
   }
   return routes
+}
+
+function kn1ReaderRoutes(): string[] {
+  // RU + PT + EN (order matters for prerender log clarity).
+  return [
+    ...kn1LangReaderRoutes('ru'),
+    ...kn1LangReaderRoutes('pt'),
+    ...kn1LangReaderRoutes('en'),
+  ]
 }
 
 /**
@@ -90,11 +112,17 @@ function kn5ReaderRoutes(): string[] {
   return routes
 }
 
-const KN1_READER_ROUTES = kn1ReaderRoutes()
+const KN1_RU_ROUTES = kn1LangReaderRoutes('ru')
+const KN1_PT_ROUTES = kn1LangReaderRoutes('pt')
+const KN1_EN_ROUTES = kn1LangReaderRoutes('en')
+const KN1_READER_ROUTES = [...KN1_RU_ROUTES, ...KN1_PT_ROUTES, ...KN1_EN_ROUTES]
 const KN3_READER_ROUTES = kn3ReaderRoutes()
 const KN4_READER_ROUTES = kn4ReaderRoutes()
 const KN5_READER_ROUTES = kn5ReaderRoutes()
-console.log(`[vite-ssg] Prerender kn.1 reader routes: ${KN1_READER_ROUTES.length}`)
+console.log(
+  `[vite-ssg] Prerender kn.1 reader routes: ${KN1_READER_ROUTES.length}` +
+  ` (ru: ${KN1_RU_ROUTES.length} + pt: ${KN1_PT_ROUTES.length} + en: ${KN1_EN_ROUTES.length})`,
+)
 console.log(`[vite-ssg] Prerender kn.3 reader routes: ${KN3_READER_ROUTES.length}`)
 console.log(`[vite-ssg] Prerender kn.4 reader routes: ${KN4_READER_ROUTES.length}`)
 console.log(`[vite-ssg] Prerender kn.5 reader routes: ${KN5_READER_ROUTES.length}`)
