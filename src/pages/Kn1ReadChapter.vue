@@ -72,8 +72,11 @@ const SITE_URL = 'https://books.folkup.life'
 
 // URL path segment (RU has no lang segment, PT/EN do).
 const langSegment = computed(() => (lang.value === 'ru' ? '' : `/${lang.value}`))
-const bookHomePath = computed(() => (lang.value === 'ru' ? '/kn1' : `/kn1/${lang.value}`))
-const tocPath = computed(() => `/kn1${langSegment.value}/read`)
+// HOTFIX P0-NAV-1 (Iskra ESKALACIYA-S286-03 2026-08-16): route /kn1/{en,pt} + /kn1/{en,pt}/read
+// не существуют, вело в 404. Ступень 1 hotfix: RU-TOC из EN/PT-главы (осознанный компромисс,
+// 404 хуже смешанного языка). Ступень 2 lang-aware TOC — следующим PR (READER-UNIFY-1 dependency).
+const bookHomePath = computed(() => '/kn1')
+const tocPath = computed(() => '/kn1/read')
 
 // Localized navigation labels.
 const NAV_LABELS: Record<Lang, {
@@ -179,7 +182,7 @@ const articleJsonLd = computed(() => {
     },
     author: {
       '@type': 'Person',
-      name: 'Андрей Голота',
+      name: 'Andrei Klemenchenok',
     },
   }
 })

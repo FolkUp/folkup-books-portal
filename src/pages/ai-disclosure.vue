@@ -5,7 +5,7 @@
  * (Andrei A choice — legal name only here, псевдоним «Команданте FolkUp» везде остальном).
  *
  * Discloses:
- * - Legal name Andrei Klemenchionok (natural person editorial responsibility per AI Act 50(4)(b))
+ * - Legal name Andrei Klemenchenok (natural person editorial responsibility per AI Act 50(4)(b))
  * - AI tools used в production pipeline
  * - Human editorial oversight gates
  * - License CC BY-SA 4.0
@@ -44,11 +44,11 @@ useHead({
         '@id': `${SITE_URL}/ai-disclosure/#webpage`,
         name: 'Раскрытие использования ИИ — Библиотека FolkUp',
         url: `${SITE_URL}/ai-disclosure/`,
-        description: 'AI usage disclosure per EU AI Act Article 50(4). Legal name of natural person responsible for editorial oversight: Andrei Klemenchionok.',
+        description: 'AI usage disclosure per EU AI Act Article 50(4). Legal name of natural person responsible for editorial oversight: Andrei Klemenchenok.',
         publisher: { '@id': `${SITE_URL}/#organization` },
         mainEntity: {
           '@type': 'Person',
-          name: 'Andrei Klemenchionok',
+          name: 'Andrei Klemenchenok',
           jobTitle: 'Editor / Publisher',
           worksFor: { '@id': `${SITE_URL}/#organization` },
           description: 'Natural person responsible для editorial oversight of AI-assisted content per EU AI Act Art. 50(4)(b). Publishes under pseudonym «Команданте FolkUp».',
