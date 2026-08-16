@@ -1,5 +1,5 @@
 ---
-title: "Chapter 10: The Plague — How a Team Forms in Sustained Crisis"
+title: "Chapter 11: The Plague — How a Team Forms in Sustained Crisis"
 description: "Albert Camus's *La Peste* (1947) — the *communauté* of Doctor Rieux, Tarrou, Castel, Rambert, Grand, and Paneloux: four laws of sustained work under crisis without a victory horizon — refusal as obligation, common decency instead of heroism, convergence without hierarchy, the discipline of continuation."
 date: 2026-08-16
 date_created: "2026-04-08"

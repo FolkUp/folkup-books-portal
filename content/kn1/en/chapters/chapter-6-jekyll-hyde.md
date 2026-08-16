@@ -1,5 +1,5 @@
 ---
-title: "Chapter 6b: Doctor Jekyll and Doctor Lanyon — Corporate Duality from Stevenson to Argyris"
+title: "Chapter 7: Doctor Jekyll"
 description: "Corporate duality from Stevenson to Argyris. Dr Jekyll is the manifesto — corporate values on the meeting-room wall. Mr Hyde is what teams actually do at the third hour of a Friday sprint. Doctor Lanyon is the senior who sees both and does not survive the seeing. Argyris and Schön (1974), Goffman (1959) and Koreiko from The Little Golden Calf."
 date: 2026-08-16
 date_created: "2026-04-07"

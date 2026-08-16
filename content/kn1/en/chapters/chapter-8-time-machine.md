@@ -1,5 +1,5 @@
 ---
-title: "Chapter 8: H.G. Wells and the Horizons of Labor — *The Time Machine* as Diagnosis"
+title: "Chapter 9: The Time Machine and the Horizons of Labor"
 description: "In 1895 Wells is describing not a journey to the year 802,701 but the mechanism by which labor is rearranged under the pressure of technology. The Eloi and the Morlocks are the logic of workforce differentiation carried to its limit. A century later economists rediscover the same mechanism under the names «job polarization» (Autor) and «political economy of distribution» (Acemoglu and Johnson). Platonov in 1930 adds a third reading: labor severed from its outcome turns into a pit that eats itself."
 date: 2026-08-16
 date_created: "2026-04-08"

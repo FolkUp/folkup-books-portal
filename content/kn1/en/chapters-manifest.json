@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-16T17:16:59.270Z",
+  "generated": "2026-08-16T17:53:48.707Z",
   "book": "kn1",
   "locale": "en",
   "entries": [
@@ -95,7 +95,7 @@
     },
     {
       "slug": "chapter-6-jekyll-hyde",
-      "title": "Chapter 6b: Doctor Jekyll and Doctor Lanyon — Corporate Duality from Stevenson to Argyris",
+      "title": "Chapter 7: Doctor Jekyll",
       "description": "Corporate duality from Stevenson to Argyris. Dr Jekyll is the manifesto — corporate values on the meeting-room wall. Mr Hyde is what teams actually do at the third hour of a Friday sprint. Doctor Lanyon is the senior who sees both and does not survive the seeing. Argyris and Schön (1974), Goffman (1959) and Koreiko from The Little Golden Calf.",
       "weight": 75,
       "act": "II: Transformation",
@@ -105,7 +105,7 @@
     },
     {
       "slug": "chapter-7-don-quixote",
-      "title": "Chapter 7: Don Quixote and Sancho — The Birth of Team Myth",
+      "title": "Chapter 8: Don Quixote and Sancho — The Birth of Team Myth",
       "description": "The finale of Act II. Karl Weick showed in 1995 what Cervantes had shown in 1605: organizations are held together not by org structures and not by procedures, but by a shared story about who they are and where they are going. Four laws of team mythology, three modes (generative, defensive, reconciling), one Russian twin, and one death, in which Sancho weeps not for the loss of a partner but for the loss of a shared meaning.",
       "weight": 80,
       "act": "II: Transformation",
@@ -125,7 +125,7 @@
     },
     {
       "slug": "chapter-8-time-machine",
-      "title": "Chapter 8: H.G. Wells and the Horizons of Labor — *The Time Machine* as Diagnosis",
+      "title": "Chapter 9: The Time Machine and the Horizons of Labor",
       "description": "In 1895 Wells is describing not a journey to the year 802,701 but the mechanism by which labor is rearranged under the pressure of technology. The Eloi and the Morlocks are the logic of workforce differentiation carried to its limit. A century later economists rediscover the same mechanism under the names «job polarization» (Autor) and «political economy of distribution» (Acemoglu and Johnson). Platonov in 1930 adds a third reading: labor severed from its outcome turns into a pit that eats itself.",
       "weight": 90,
       "act": "III: Horizons",
@@ -135,7 +135,7 @@
     },
     {
       "slug": "chapter-9-niichavo",
-      "title": "Chapter 9: Monday Begins on Saturday — NIICHAVO as the Ideal Agile Team",
+      "title": "Chapter 10: Monday Begins on Saturday — NIICHAVO as the Ideal Agile Team",
       "description": "Four laws of a self-organizing R&D team from the Strugatsky brothers: meaning as entry filter, dual leadership, specialist against administrator, immersion instead of training. NIICHAVO as a utopia of meaningful labor and a diagnosis of bureaucracy in a team.",
       "weight": 100,
       "act": "III: Horizons",
@@ -145,7 +145,7 @@
     },
     {
       "slug": "chapter-10-chuma",
-      "title": "Chapter 10: The Plague — How a Team Forms in Sustained Crisis",
+      "title": "Chapter 11: The Plague — How a Team Forms in Sustained Crisis",
       "description": "Albert Camus's *La Peste* (1947) — the *communauté* of Doctor Rieux, Tarrou, Castel, Rambert, Grand, and Paneloux: four laws of sustained work under crisis without a victory horizon — refusal as obligation, common decency instead of heroism, convergence without hierarchy, the discipline of continuation.",
       "weight": 110,
       "act": "III: Horizons — the Finale",
