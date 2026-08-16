@@ -1,5 +1,5 @@
 ---
-title: "Chapter 7: Don Quixote and Sancho — The Birth of Team Myth"
+title: "Chapter 8: Don Quixote and Sancho — The Birth of Team Myth"
 description: "The finale of Act II. Karl Weick showed in 1995 what Cervantes had shown in 1605: organizations are held together not by org structures and not by procedures, but by a shared story about who they are and where they are going. Four laws of team mythology, three modes (generative, defensive, reconciling), one Russian twin, and one death, in which Sancho weeps not for the loss of a partner but for the loss of a shared meaning."
 date: 2026-08-16
 date_created: "2026-04-07"

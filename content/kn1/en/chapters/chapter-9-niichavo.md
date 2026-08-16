@@ -1,11 +1,11 @@
 ---
-title: "Chapter 9: Monday Begins on Saturday — NIICHAVO as the Ideal Agile Team"
+title: "Chapter 10: Monday Begins on Saturday — NIICHAVO as the Ideal Agile Team"
 description: "Four laws of a self-organizing R&D team from the Strugatsky brothers: meaning as entry filter, dual leadership, specialist against administrator, immersion instead of training. NIICHAVO as a utopia of meaningful labor and a diagnosis of bureaucracy in a team."
 date: 2026-08-16
 date_created: "2026-04-08"
 date_updated: "2026-08-16"
 weight: 100
-chapter: 9
+chapter: 10
 act: "III: Horizons"
 category: team-self-organization
 reading_time: "20 min"
