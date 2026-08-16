@@ -94,6 +94,20 @@ const READER_ENABLED_BOOKS = ['kn1', 'kn3', 'kn4']
 const hasReader = computed(() => READER_ENABLED_BOOKS.includes(props.slug) && isLive.value)
 const isPause = computed(() => book.value?.status === 'variant_b_pause')
 
+// NAV-1 Ступень 3 cont+22 S1PT FIX-3 (Iskra TIKET-S287-01 §3): «Читать онлайн» lang-aware.
+// Pattern per Iskra: translations?.[lang]==='live' → /${slug}/${lang}/read, иначе /${slug}/read.
+// Currently locale.value на /kn{N} card = 'ru' (watcher fallback bez meta.lang), поэтому
+// сейчас всегда возвращает /${slug}/read. Rails готовы для future /en/kn{N} card + series.yaml
+// en=live flip: EN-locale user click ведёт к EN reader без hardcoded RU fallback.
+const readerUrl = computed<string>(() => {
+  const currentLocale = locale.value as Locale
+  const translations = book.value?.translations
+  if (currentLocale !== 'ru' && translations?.[currentLocale] === 'live') {
+    return `/${props.slug}/${currentLocale}/read`
+  }
+  return `/${props.slug}/read`
+})
+
 // Д-7 hotfix (Iskra INCIDENT 2026-08-10 ~12:00 UTC): DE/EN-страница отдавала
 // RU-файл под немой кнопкой скачивания. Пока язык переключается только JS
 // (Д-8 URL-роутинг в отдельном треке с Джонни), download-кнопки должны
@@ -247,7 +261,7 @@ if (book.value) {
         <div v-if="isLive" class="book-page__actions">
           <RouterLink
             v-if="hasReader"
-            :to="`/${props.slug}/read`"
+            :to="readerUrl"
             class="book-page__button book-page__button--primary"
           >
             {{ t('portal.read_online') }}
