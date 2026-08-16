@@ -3,7 +3,7 @@ title: "Filipe Fogg inventou o que destrói as empresas modernas"
 description: "Como um cavalheiro inglês ficcional de 1872 aplicou intuitivamente princípios que a indústria contemporânea dos métodos ágeis comercializou, distorceu e revende por mil milhões de dólares"
 date: 2026-04-08
 date_created: "2026-03-25"
-date_updated: "2026-08-12"
+date_updated: "2026-08-16"
 weight: 10
 chapter: 0
 act: "I: Origens"
@@ -48,7 +48,7 @@ sources:
   - "Bank of England inflation calculator / UK Inflation Calculator (officialdata.org). Dados sobre o poder de compra de £20 000 em 1872."
 confidence: high
 reviewed_by: "Equipa Editorial"
-review_date: "2026-08-12"
+review_date: "2026-08-16"
 ---
 
 > **Sobre este capítulo.** Análise provocatória de como um personagem ficcional do século XIX aplicou intuitivamente princípios que a indústria contemporânea dos métodos ágeis comercializou e distorceu. Como o bom senso de um único cavalheiro literário desnuda a insanidade de uma indústria avaliada em dezenas de mil milhões de dólares.
@@ -219,7 +219,7 @@ Satya Nadella fez exatamente isto. Em 2014, ao assumir o cargo de CEO da Microso
 
 Nadella não otimizou métricas. Mudou a definição de sucesso. Da cultura do «sabemos tudo» (know-it-all culture) para a cultura do «aprendemos tudo» (learn-it-all culture). Da competição entre departamentos para a colaboração. Da classificação forçada (stack ranking) para a mentalidade de crescimento (growth mindset) de cada empregado. Uma alteração da área de abrangência (scope change) ao nível de toda a organização, não de uma equipa. A capitalização da Microsoft entre 2014 e 2024 cresceu mais de dez vezes e atingiu três biliões de dólares¹⁵.
 
-Fogg salvou Aouda, e ganhou a aposta. Nadella parou a máquina de métricas, e construiu uma das empresas mais caras da história. Coincidência? Não. Padrão. Os projetos em que as pessoas são mais importantes do que o plano não são apenas mais humanos. São mais eficazes. Não porque a bondade seja uma boa estratégia. Mas porque um sistema em que as pessoas são recursos para otimizar perde o seu principal activo: a capacidade das pessoas de resolverem problemas que o sistema não previa. Passepartout na pira funerária não é «recurso». É um homem que inventou o impossível não porque lho pediram por procedimento, mas porque era preciso.
+Fogg salvou Aouda, e ganhou a aposta. Nadella parou a máquina de métricas, e construiu uma das empresas mais caras da história. Coincidência? Não. Padrão. Os projetos em que as pessoas são mais importantes do que o plano não são apenas mais humanos. São mais eficazes. Não porque a bondade seja uma boa estratégia. Mas porque um sistema em que as pessoas são recursos para otimizar perde o seu principal ativo: a capacidade das pessoas de resolverem problemas que o sistema não previa. Passepartout na pira funerária não é «recurso». É um homem que inventou o impossível não porque lho pediram por procedimento, mas porque era preciso.
 
 ### «O Dia a Mais» — a Incerteza (uncertainty) como Recurso
 
