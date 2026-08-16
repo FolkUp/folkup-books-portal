@@ -127,6 +127,63 @@ const NAV_LABELS: Record<Lang, {
 }
 const labels = computed(() => NAV_LABELS[lang.value])
 
+// PT-READER-OG-LOCALE-1 (Q25) + PORTAL-P0-HREFLANG-EMIT-READER (Q23) + Schema.org
+// Article inLanguage (Q22) — consolidated PR 2026-08-16 cont+18.
+
+// BCP 47 language tags для Schema.org JSON-LD `inLanguage` field (per W3C spec).
+const BCP47_MAP: Record<Lang, string> = {
+  ru: 'ru-RU',
+  pt: 'pt-PT',
+  en: 'en-US',
+}
+
+// Open Graph locale codes (ISO 15897 style — underscore separator, per OG spec).
+const OG_LOCALE_MAP: Record<Lang, string> = {
+  ru: 'ru_RU',
+  pt: 'pt_PT',
+  en: 'en_US',
+}
+
+// URL builder per lang (RU = no lang segment, backward compat; PT/EN = lang-prefixed).
+const urlFor = (l: Lang, s: string): string => {
+  const seg = l === 'ru' ? '' : `/${l}`
+  return `${SITE_URL}/kn1${seg}/read/${s}/`
+}
+
+// Availability check per slug: which languages have this chapter in manifest?
+// Uses existing useKn1ChapterMetaLang (returns .meta=null if absent).
+// Purpose: emit hreflang alternates only для langs where chapter actually exists —
+// avoids linking к 404 pages, satisfies Google reciprocal hreflang requirement.
+const availableLangs = computed<Lang[]>(() =>
+  SUPPORTED_LANGS.filter(
+    (l) => useKn1ChapterMetaLang(l, slug.value).meta !== null,
+  ),
+)
+
+// Schema.org Article JSON-LD — per-chapter, per-lang.
+// Emitted only when chapter meta loaded (avoids empty schema on 404).
+const articleJsonLd = computed(() => {
+  if (!chapterData.value.meta) return null
+  return {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: chapterData.value.meta.title,
+    description:
+      chapterData.value.meta.description || chapterData.value.meta.title,
+    inLanguage: BCP47_MAP[lang.value],
+    url: urlFor(lang.value, slug.value),
+    isPartOf: {
+      '@type': 'Book',
+      '@id': `${SITE_URL}/kn1/#book`,
+      name: 'Agile Sapiens',
+    },
+    author: {
+      '@type': 'Person',
+      name: 'Андрей Голота',
+    },
+  }
+})
+
 useHead({
   title: () =>
     (chapterData.value.meta?.title || labels.value.metaFallback) +
@@ -146,15 +203,45 @@ useHead({
     { property: 'og:type', content: 'article' },
     {
       property: 'og:url',
-      content: `${SITE_URL}/kn1${langSegment.value}/read/${slug.value}/`,
+      content: urlFor(lang.value, slug.value),
     },
+    // Q25 fix: per-page og:locale override wins over App.vue base.
+    { property: 'og:locale', content: OG_LOCALE_MAP[lang.value] },
   ],
   link: () => [
     {
       rel: 'canonical',
-      href: `${SITE_URL}/kn1${langSegment.value}/read/${slug.value}/`,
+      href: urlFor(lang.value, slug.value),
     },
+    // Q23 hreflang emit: alternate link per available lang (checked против manifests).
+    // Reciprocal per Google spec — pages linked here MUST list back to us.
+    ...availableLangs.value.map((l) => ({
+      rel: 'alternate',
+      hreflang: l,
+      href: urlFor(l, slug.value),
+    })),
+    // x-default → RU canonical fallback (per FolkUp mandate — RU is source-of-truth).
+    // Only emit if RU variant exists (should always, but defensive).
+    ...(availableLangs.value.includes('ru')
+      ? [
+          {
+            rel: 'alternate',
+            hreflang: 'x-default',
+            href: urlFor('ru', slug.value),
+          },
+        ]
+      : []),
   ],
+  // Q22 Schema.org Article JSON-LD с inLanguage per lang.
+  script: () =>
+    articleJsonLd.value
+      ? [
+          {
+            type: 'application/ld+json',
+            innerHTML: JSON.stringify(articleJsonLd.value),
+          },
+        ]
+      : [],
 })
 </script>
 

@@ -11,6 +11,24 @@ const LOCALE_STORAGE_KEY = 'folkup-preferred-locale'
 
 // Base head — augmented per-page via useHead в individual pages
 const SITE_URL = 'https://books.folkup.life'
+
+// PT-READER-OG-LOCALE-1 fix (2026-08-16):
+// og:locale + htmlAttrs.lang reactive per route.meta.lang (reader routes set это в routes.ts).
+// Non-reader routes fall back к i18n locale.value (RU only per SUPPORTED_LOCALES).
+// Overrides могут прийти из per-page useHead (Kn1ReadChapter.vue) — они выигрывают.
+type OgLang = 'ru' | 'pt' | 'en'
+const OG_LOCALE_MAP: Record<OgLang, string> = {
+  ru: 'ru_RU',
+  pt: 'pt_PT',
+  en: 'en_US',
+}
+const routeLang = (): OgLang => {
+  const metaLang = route.meta.lang
+  if (typeof metaLang === 'string' && (metaLang === 'ru' || metaLang === 'pt' || metaLang === 'en')) {
+    return metaLang
+  }
+  return locale.value as OgLang
+}
 // Iskra STOP-MAYAK S219 §2д: соцсети капризны к SVG. Wave 2 PNG отдаём для превью.
 const DEFAULT_OG_IMAGE = `${SITE_URL}/covers/cover_kn1.png`
 // PT temporarily hidden from switcher pending pt.json translation + native-speaker review
@@ -82,10 +100,10 @@ onMounted(() => {
 
 useHead({
   htmlAttrs: {
-    lang: locale.value,
+    lang: routeLang,
   },
   meta: [
-    { property: 'og:locale', content: () => locale.value },
+    { property: 'og:locale', content: () => OG_LOCALE_MAP[routeLang()] },
     { property: 'og:type', content: 'website' },
     { property: 'og:site_name', content: 'Библиотека FolkUp' },
     { property: 'og:url', content: currentUrl },
@@ -96,12 +114,12 @@ useHead({
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:image', content: DEFAULT_OG_IMAGE },
   ],
-  // hreflang: SPA client-side locale switch — все 5 tags указывают на тот же URL.
-  // TODO(next batch): implement path-prefix routing (/en/privacy /de/privacy /pt/privacy)
-  // для полноценной per-locale indexation. See BACKLOG ticket PORTAL-P0-HREFLANG-PATH-PREFIX.
-  link: [
-    { rel: 'alternate', hreflang: 'x-default', href: currentUrl },
-  ],
+  // hreflang: per-page emission через Kn1ReadChapter.vue (reader routes уже path-prefixed
+  // /kn1/read/*, /kn1/pt/read/*, /kn1/en/read/*). Non-reader страницы — single-lang RU
+  // (SUPPORTED_LOCALES=['ru']), не нужны alternates. Stray x-default→self удалён per
+  // Оракул verdict Q23 (был self-referential bug; correct pattern — reader emits own alternates).
+  // Reader page Kn1ReadChapter.vue: emit `<link rel="alternate" hreflang="X" href="Y">` per
+  // available lang + x-default→RU, plus canonical URL.
   script: [
     {
       type: 'application/ld+json',
