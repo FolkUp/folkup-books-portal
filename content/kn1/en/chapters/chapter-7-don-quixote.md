@@ -46,7 +46,7 @@ draft: false
 
 ## Cervantes, La Mancha, 1605
 
-«At this point they came in sight of thirty forty windmills that there are on that plain, and as soon as Don Quixote saw them he said to his squire, "Fortune is arranging matters for us better than we could have shaped our desires ourselves, for look there, friend Sancho Panza, where thirty or more monstrous giants present themselves, all of whom I mean to engage in battle and slay"»¹.
+«At this point they came in sight of thirty or forty windmills that there are on that plain, and as soon as Don Quixote saw them he said to his squire, "Fortune is arranging matters for us better than we could have shaped our desires ourselves, for look there, friend Sancho Panza, where thirty or more monstrous giants present themselves, all of whom I mean to engage in battle and slay"»¹.
 
 For four centuries this scene was read as a comic episode. The madman sees what is not there; the loyal squire points to the obvious; the lance breaks against a sail; the hero falls; the reader laughs.
 

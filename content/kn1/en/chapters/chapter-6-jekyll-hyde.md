@@ -47,7 +47,7 @@ draft: false
 
 ## HOOK: Bournemouth, Skerryvore Villa, Autumn 1885
 
-Bournemouth, autumn 1885. Stevenson is bedridden with another lung attack: he is thirty-five, famous after *Treasure Island*, still short of money. He wakes in the night to his own scream: in the dream a man had taken a powder and become another. «Why did you wake me? I was dreaming a fine bogey tale»¹, he snaps at Fanny. Family legend has it that the first draft was written in three days and burned in the fireplace; Fanny delivered her verdict in writing that her husband had written a scary tale and had missed the allegory. The correspondence tells it more plainly: the work took about six weeks. Either way the outcome was the same: Stevenson sat down and rewrote it. Not a story about a monster, but a story about a man who deliberately kept two lives.
+Bournemouth, autumn 1885. Stevenson is bedridden with another lung attack: he is thirty-four, famous after *Treasure Island*, still short of money. He wakes in the night to his own scream: in the dream a man had taken a powder and become another. «Why did you wake me? I was dreaming a fine bogey tale»¹, he snaps at Fanny. Family legend has it that the first draft was written in three days and burned in the fireplace; Fanny delivered her verdict in writing that her husband had written a scary tale and had missed the allegory. The correspondence tells it more plainly: the work took about six weeks. Either way the outcome was the same: Stevenson sat down and rewrote it. Not a story about a monster, but a story about a man who deliberately kept two lives.
 
 ¹ The «fine bogey tale» remark quoted from: Balfour, Graham. *The Life of Robert Louis Stevenson* (1901). Charles Scribner's Sons, New York. Chapter 15 (per Fanny Stevenson's account).
 
@@ -59,9 +59,9 @@ This is not a story about a double agent. It is a story about a double *structur
 
 Turn to the ninth chapter of the novella. Stevenson gives it in the form of a sealed letter from Doctor Lanyon — an old friend of Jekyll's, the second most respectable physician in their circle. The letter is addressed to the attorney Utterson with the condition «to be opened after my death or disappearance.» What does this chapter do in the novel? It introduces a witness.
 
-Lanyon receives a strange note from Jekyll asking him to go late at night to Jekyll's house, take out a certain drawer, and bring it home to Cavendish Square. At midnight Lanyon, understanding nothing, receives at his own home an unknown visitor and watches with his own eyes as the unremarkable stranger himself prepares a mixture from the drawer's contents, drinks it, and turns into Henry Jekyll. Lanyon is the only character in the novel who observes the transformation in full, *and dies a few weeks later*. Not from poison. Not from a blow. Stevenson writes in Lanyon's own voice: «I feel that my days are numbered and that I must die; and yet shall I die incredulous»².
+Lanyon receives a strange note from Jekyll asking him to go late at night to Jekyll's house, take out a certain drawer, and bring it home to Cavendish Square. At midnight Lanyon, understanding nothing, receives at his own home an unknown visitor and watches with his own eyes as the unremarkable stranger himself prepares a mixture from the drawer's contents, drinks it, and turns into Henry Jekyll. Lanyon is the only character in the novel who observes the transformation in full, *and dies a few weeks later*. Not from poison. Not from a blow. Stevenson writes in Lanyon's own voice: «I feel that my days are numbered, and that I must die; and yet I shall die incredulous»².
 
-² Stevenson, Robert Louis. *Strange Case of Dr Jekyll and Mr Hyde* (1886). Longmans, Green & Co, London. Chapter 9: «Dr Lanyon's Narrative» (author's abbreviated rendering; Stevenson's original English is public domain).
+² Stevenson, Robert Louis. *Strange Case of Dr Jekyll and Mr Hyde* (1886). Longmans, Green & Co, London. Chapter 9: «Dr Lanyon's Narrative».
 
 Lanyon dies not from what he saw but from the *impossibility of telling it*. The knowledge he acquired does not fit into any of his professional frameworks. Tell his friends: they will call him mad. Tell his patients: he will lose his practice. Tell the journals: they will laugh him off the podium. Tell no one: he stays alone with a secret exceeding his capacity to bear.
 
@@ -263,9 +263,9 @@ From Stevenson's closed duality to Cervantes's open vision. From Hyde who hides 
 
 ---
 
-*«Man is not truly one, but truly two. I say two, because the state of my own knowledge does not pass beyond that point; others will follow, others will outstrip me on the same lines»*  
+*«Man is not truly one, but truly two. I say two, because the state of my own knowledge does not pass beyond that point. Others will follow, others will outstrip me on the same lines»*  
 — Robert Louis Stevenson, *Strange Case of Dr Jekyll and Mr Hyde* (1886)¹⁴
 
-¹⁴ Stevenson, *Strange Case of Dr Jekyll and Mr Hyde* (1886), chapter 10: «Henry Jekyll's Full Statement of the Case» (Stevenson's original English is public domain; author's abbreviated rendering above).
+¹⁴ Stevenson, *Strange Case of Dr Jekyll and Mr Hyde* (1886), chapter 10: «Henry Jekyll's Full Statement of the Case».
 
 ---
