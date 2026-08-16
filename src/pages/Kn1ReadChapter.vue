@@ -71,18 +71,13 @@ if (typeof window !== 'undefined') {
 const SITE_URL = 'https://books.folkup.life'
 
 // URL path segment (RU has no lang segment, PT/EN do).
-// `langSegment` сохраняем для prev/next chapter nav — `/kn1/{lang}/read/{slug}` routes
-// зарегистрированы (routes.ts L36-49) и работают для EN + PT глав.
 const langSegment = computed(() => (lang.value === 'ru' ? '' : `/${lang.value}`))
-// NAV-1 Ступень 1 HOTFIX (Iskra ESKALACIYA-03 P0-NAV-1 2026-08-16 · S1PT cont+20):
-// bookHomePath + tocPath временно жёстко привязаны к живым RU paths для всех lang.
-// Причина: `/kn1/pt` + `/kn1/en` landing и `/kn1/pt/read` + `/kn1/en/read` TOC pages
-// ещё не существуют → breadcrumb + nav-toc из EN/PT глав вели на 404 (P0 direct мандат
-// Андрея через Iskra: «Сломанная навигация — это баг, который надо чинить немедленно»).
-// Iskra завизировала compromise: RU-оглавление из EN-главы > 404 (hreflang-эмиссию глав
-// не трогать). Ступень 2 (follow-up PR): add lang-aware TOC routes + revert hardcoding.
+// NAV-1 Ступень 2 cont+21 S1PT: reverted Ступень 1 hardcoding per Iskra POMETKA-10 §B
+// pt.1 acceptance — lang-aware TOC routes /kn1/en/read + /kn1/pt/read shipped this PR.
+// bookHomePath keeps '/kn1' fallback (no /kn1/{lang} landing pages yet — deferred scope).
+// tocPath now lang-aware — EN/PT chapter breadcrumb points к EN/PT TOC (no more RU fallback).
 const bookHomePath = computed(() => '/kn1')
-const tocPath = computed(() => '/kn1/read')
+const tocPath = computed(() => `/kn1${langSegment.value}/read`)
 
 // Localized navigation labels.
 const NAV_LABELS: Record<Lang, {
