@@ -3,7 +3,7 @@ title: "Chapter 6: Mina Harker Takes the Notes"
 description: "The Victorian-era distributed team: phonograph, shorthand, telegraph, and one typewriter against an invisible enemy. The Crew of Light in Bram Stoker as an early prototype of the cross-functional team with a single source of truth."
 date: 2026-05-24
 date_created: "2026-05-24"
-date_updated: "2026-05-24"
+date_updated: "2026-08-16"
 weight: 70
 chapter: 6
 plate_override: "agil-chapter-6-mina-plate.webp"
@@ -11,9 +11,9 @@ act: "II: Transformation"
 category: "analysis"
 status: "verified"
 confidence: "high"
-authors: ["Андрей Клеменчёнок"]
+authors: ["Andrei Klemenchenok"]
 reviewed_by: "Editorial Team"
-review_date: "2026-05-24"
+review_date: "2026-08-16"
 tags:
   - "mina-harker"
   - "crew-of-light"
@@ -54,13 +54,13 @@ Each fragment on its own is almost nothing. Jonathan's diary describes the capti
 
 This night, Mina sits down for the first time to retype everything into a single document. Jonathan's diaries — with her own transcription of the shorthand into ordinary English. Seward's cylinders — she puts on the phonograph earphones and types from the voice. Lucy's letters, the telegrams, the ship's log, the newspaper clippings — all on one typewriter, on one grade of paper, in one chronological sequence.
 
-"Today I begin to type out the whole of the material," Mina records in her diary on 30 September.² By morning she has a document the team can, for the first time, read as a whole. That same evening, in Seward's office after dinner, six people gather around a table and, in her own formulation, "unconsciously form a sort of council or committee."³ From this moment the group possesses what it had not: a single source of truth and a common basis for decision.
+According to Mina's diary entry for 30 September, she sets about retyping the whole of the material that night.² By morning she has a document the team can, for the first time, read as a whole. That same evening, in Seward's office after dinner, six people gather around a table and, in her own words, "unconsciously formed a sort of board or committee."³ From this moment the group possesses what it had not: a single source of truth and a common basis for decision.
 
 ¹ Stoker does not name the shorthand system explicitly, but by the 1890s Isaac Pitman's system (1837) dominated in England. The alternative Gregg system (1888) took hold in America, where its author moved in 1893, and in Britain of that period was almost never used. See Pitman, Sir Isaac. *Stenographic Soundhand* (1837). Bath.
 
-² Stoker, Bram. *Dracula* (1897). Archibald Constable & Co, London. Chapter XVII, Mina Harker's diary, entry of 30 September. Author's rendering from the RU master; canonical English text in Stoker.
+² Stoker, Bram. *Dracula* (1897). Archibald Constable & Co, London. Chapter XVII, Mina Harker's diary, entry of 30 September.
 
-³ Ibid., Chapter XVIII, Mina Harker's diary, entry of 30 September, evening. Author's rendering.
+³ Ibid., Chapter XVIII, Mina Harker's diary, entry of 30 September, evening.
 
 **Six people and one typewriter.**
 
