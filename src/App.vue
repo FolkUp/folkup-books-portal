@@ -1,13 +1,11 @@
 <script setup lang="ts">
-import { onMounted } from 'vue'
+import { watch } from 'vue'
 import { useHead } from '@unhead/vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 
 const { t, locale } = useI18n()
 const route = useRoute()
-
-const LOCALE_STORAGE_KEY = 'folkup-preferred-locale'
 
 // Base head — augmented per-page via useHead в individual pages
 const SITE_URL = 'https://books.folkup.life'
@@ -71,36 +69,49 @@ const ORGANIZATION_JSONLD = {
   ],
 }
 
-function switchLocale(lang: SupportedLocale): void {
-  locale.value = lang
-  if (typeof document !== 'undefined') {
-    document.documentElement.setAttribute('lang', lang)
-  }
-  if (typeof window !== 'undefined' && window.localStorage) {
-    try {
-      window.localStorage.setItem(LOCALE_STORAGE_KEY, lang)
-    } catch {
-      // Storage quota exceeded / private mode — silent
-    }
-  }
-}
-
-// Restore persisted locale on mount (SSR-safe — vite-ssg prerenders с default RU)
-onMounted(() => {
-  if (typeof window === 'undefined' || !window.localStorage) return
-  try {
-    const stored = window.localStorage.getItem(LOCALE_STORAGE_KEY)
-    if (stored && (SUPPORTED_LOCALES as readonly string[]).includes(stored)) {
-      const lang = stored as SupportedLocale
-      if (locale.value !== lang) {
-        locale.value = lang
-        document.documentElement.setAttribute('lang', lang)
+// NAV-1 Ступень 3 cont+22 S1PT LANG-URL-CANON-1 (Iskra TIKET-S287-01):
+// Язык — источник истины = маршрут (route.meta.lang). switchLocale() удалён, localStorage
+// упразднён (§2.3). Interface locale синхронизирован с route.meta.lang через watcher (§2.4).
+// PT temporarily fallback к RU для i18n (не в SUPPORTED_LOCALES per S250) но PT контент
+// главы остаётся доступен /kn1/pt/read/* (Kn1ReadChapter читает свой content по props.lang).
+watch(
+  () => route.meta.lang,
+  (metaLang) => {
+    const targetLang =
+      typeof metaLang === 'string' && (SUPPORTED_LOCALES as readonly string[]).includes(metaLang)
+        ? (metaLang as SupportedLocale)
+        : 'ru'
+    if (locale.value !== targetLang) {
+      locale.value = targetLang
+      if (typeof document !== 'undefined') {
+        document.documentElement.setAttribute('lang', targetLang)
       }
     }
-  } catch {
-    // Storage access denied — silent
+  },
+  { immediate: true },
+)
+
+// buildLangUrl: строит адрес параллельной языковой версии текущей страницы.
+// Reader routes: /kn{N}/read ↔ /kn{N}/{lang}/read (chapter tail preserved).
+// Non-reader routes: возвращает currentPath (§2.5 «нет версии — переключатель ведёт на
+// существующий адрес», в нашем случае карточка книги уже соответствует RU-only).
+function buildLangUrl(currentPath: string, targetLang: SupportedLocale): string {
+  const withLangMatch = currentPath.match(/^\/(kn\d+)\/(ru|pt|en|de)\/read(\/.*)?$/)
+  if (withLangMatch) {
+    const [, book, , tail = ''] = withLangMatch
+    if (targetLang === 'ru') return `/${book}/read${tail}`
+    return `/${book}/${targetLang}/read${tail}`
   }
-})
+
+  const withoutLangMatch = currentPath.match(/^\/(kn\d+)\/read(\/.*)?$/)
+  if (withoutLangMatch) {
+    const [, book, tail = ''] = withoutLangMatch
+    if (targetLang === 'ru') return currentPath
+    return `/${book}/${targetLang}/read${tail}`
+  }
+
+  return currentPath
+}
 
 useHead({
   htmlAttrs: {
@@ -141,18 +152,17 @@ useHead({
         <span class="brand-mark__text">{{ t('brand.name') }}</span>
       </RouterLink>
       <nav class="lang-switcher" :aria-label="t('nav.language_label')">
-        <button
+        <RouterLink
           v-for="lang in SUPPORTED_LOCALES"
           :key="lang"
-          type="button"
+          :to="buildLangUrl(route.path, lang)"
           class="lang-switcher__btn"
-          :class="{ 'lang-switcher__btn--active': locale === lang }"
-          :aria-pressed="locale === lang"
+          :class="{ 'lang-switcher__btn--active': routeLang() === lang }"
+          :aria-current="routeLang() === lang ? 'true' : undefined"
           :lang="lang"
-          @click="switchLocale(lang)"
         >
           {{ t(`nav.language_${lang}`) }}
-        </button>
+        </RouterLink>
       </nav>
     </header>
 
