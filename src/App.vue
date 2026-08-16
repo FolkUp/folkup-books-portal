@@ -33,12 +33,16 @@ const routeLang = (): OgLang => {
 const DEFAULT_OG_IMAGE = `${SITE_URL}/covers/cover_kn1.png`
 // PT temporarily hidden from switcher pending pt.json translation + native-speaker review
 // per Iskra рекомендация S250 (Andrey verdict а 2026-08-03 cont+45). Type union и pt.json
-// файлы preserved. Downloads pt.epub/pt.pdf остаются доступны напрямую по URL.
-// LANG-404 HOTFIX Iskra S274 2026-08-11: EN + DE temporarily hidden from switcher —
-// /en /de portal routes returned HTTP 404 (Andrey direct catch). Ступень (а) hotfix:
-// remove EN/DE из shapka. Ступень (б) next cycle: /en /de честные заглушки-страницы
-// когда Bolik/Lolik shipped portal DE-hero + EN-hero v2 через Vier-Augen ratify.
-const SUPPORTED_LOCALES = ['ru'] as const
+// файлы preserved. Downloads pt.epub/pt.pdf + PT reader /kn1/pt/read/* остаются доступны
+// напрямую по URL. NAV-1 Ступень 2 cont+21 explicit «PT НЕ возвращать (S250 в силе)»
+// per Iskra POMETKA-10 §B pt.2.
+// LANG-404 HOTFIX Iskra S274 2026-08-11: EN + DE temporarily hidden from switcher.
+// DE остаётся hidden до Bolik cont+27+ portal DE-hero v2 через Vier-Augen ratify.
+// NAV-1 Ступень 2 cont+21 S1PT: EN restored per Iskra POMETKA-10 §B pt.2. switcher =
+// i18n locale-only (UI language change, NOT URL routing) — safe от S274 LANG-404 bug.
+// EN interface texts в en.json ready. EN book content /kn1/en/read/* live (Vier-Augen 9/13
+// CONDITIONAL PASS 2026-08-16). Landing /en waits Lolik cont+44+ portal EN-hero v2.
+const SUPPORTED_LOCALES = ['ru', 'en'] as const
 type SupportedLocale = (typeof SUPPORTED_LOCALES)[number]
 
 // Current URL (per-route reactive)

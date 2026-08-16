@@ -30,7 +30,22 @@ export const routes: RouteRecordRaw[] = [
     component: () => import('../pages/Kn1ReadChapter.vue'),
     meta: { pageType: 'reader-chapter', bookSlug: 'kn1' },
   },
-  // READER-UNIFY-1 cont+16: PT reader routes (Iskra S284-01 §2 pt.3).
+  // NAV-1 Ступень 2 cont+21 S1PT: lang-aware TOC routes per Iskra POMETKA-10 §B pt.1
+  // (useKn1ChaptersLang уже exists — READER-UNIFY-1 задел). Reverts Ступень 1 hardcoding
+  // в Kn1ReadChapter.vue L82-83.
+  {
+    path: '/kn1/pt/read',
+    name: 'kn1-pt-read-toc',
+    component: () => import('../pages/Kn1ReadToc.vue'),
+    meta: { pageType: 'reader-toc', bookSlug: 'kn1', lang: 'pt' },
+  },
+  {
+    path: '/kn1/en/read',
+    name: 'kn1-en-read-toc',
+    component: () => import('../pages/Kn1ReadToc.vue'),
+    meta: { pageType: 'reader-toc', bookSlug: 'kn1', lang: 'en' },
+  },
+  // READER-UNIFY-1 cont+16: PT reader chapters (Iskra S284-01 §2 pt.3).
   // /kn1/pt/read/:slug — served if content/kn1/pt/chapters-manifest.json exists.
   {
     path: '/kn1/pt/read/:slug',
@@ -39,7 +54,7 @@ export const routes: RouteRecordRaw[] = [
     meta: { pageType: 'reader-chapter', bookSlug: 'kn1', lang: 'pt' },
     props: (route) => ({ ...route.params, lang: 'pt' }),
   },
-  // EN placeholder — route registered; renders "not found" until content/kn1/en/chapters/ populated.
+  // EN reader chapters — content shipping via Iskra Vier-Augen конвейер (9/13 as of 2026-08-16).
   {
     path: '/kn1/en/read/:slug',
     name: 'kn1-en-read-chapter',
