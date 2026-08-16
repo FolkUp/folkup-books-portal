@@ -43,7 +43,7 @@ const ORGANIZATION_JSONLD = {
   logo: `${SITE_URL}/brand-mark.svg`,
   sameAs: [
     'https://folkup.app',
-    'https://sapiens.folkup.life',
+    'https://books.folkup.life/kn1',
     'https://t.me/folkupbooks',
     'https://github.com/FolkUp',
   ],
