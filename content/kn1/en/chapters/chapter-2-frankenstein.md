@@ -28,7 +28,7 @@ sources:
   - "Aldini, Giovanni. *An Account of the Late Improvements in Galvanism* (1804). London. Public demonstrations of galvanism, 1803."
   - "GAO-05-105. 'FBI Trilogy Project,' February 2005. Government Accountability Office. Total VCF budget approximately 170 million dollars."
 confidence: high
-reviewed_by: "Borges (literary architecture), CyberGonzo (OSINT verification)"
+reviewed_by: "Editorial Team"
 review_date: "2026-05-13"
 ---
 

@@ -49,7 +49,7 @@ What Hetzel does with Verne's manuscript is not only a business model. It is the
 
 One hundred and thirty-one years later, seventeen programmers at Snowbird, Utah, would write: "Working software over comprehensive documentation."⁷ They would think they had made a revolution. Hetzel had made it 131 years before them.
 
-**Hetzel's operational model (a prototype of the Russian SaaS strategies):**
+**Hetzel's operational model (a prototype of SaaS strategies):**
 - **Regular installments in place of one-off releases:** recurring revenue against one-time sales. TAdviser data show the Russian subscription-services market grew 340 percent in 2020–2024.
 - **Feedback cycles through sales metrics** (real-time market validation), analogous to modern user-retention analytics in 1C:Enterprise¹⁶ or Kontur.Elba.
 - **Iterative content adaptation on the basis of user data, managed by metrics** — a principle later formalized in the methodology of the Russian IT giants (Yandex, VK, Sber).
