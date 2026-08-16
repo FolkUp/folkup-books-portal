@@ -1,0 +1,167 @@
+{
+  "generated": "2026-08-16T13:06:42.922Z",
+  "book": "kn1",
+  "locale": "en",
+  "entries": [
+    {
+      "slug": "preface",
+      "title": "Preface: On the Method of Literary Analysis of Business",
+      "description": "Preface to *Agile Sapiens* — on the Literary Analysis of Business method and why classical fiction turned out to be more accurate than any consultant.",
+      "weight": 5,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 5
+    },
+    {
+      "slug": "chapter-0-pilot",
+      "title": "Phileas Fogg Invented What Is Now Killing Modern Corporations",
+      "description": "How a fictional English gentleman of 1872 intuitively applied the principles that the modern Agile industry has commercialized, distorted, and sold back at a cost of billions",
+      "weight": 10,
+      "act": "I: Origins",
+      "act_opener": true,
+      "isApparatus": false,
+      "order": 10
+    },
+    {
+      "slug": "chapter-1-jules-verne",
+      "title": "Chapter 1: Jules Verne Programs",
+      "description": "How the adventure literature of the nineteenth century laid down the patterns of project management — from *Twenty Thousand Leagues* to the sprints of Silicon Valley.",
+      "weight": 20,
+      "act": "I: Origins",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 20
+    },
+    {
+      "slug": "chapter-2-frankenstein",
+      "title": "Chapter 2: Frankenstein Manages a Project",
+      "description": "How the novel by an eighteen-year-old Mary Shelley became the most precise post-mortem of corporate failure: from FBI Sentinel to Healthcare.gov.",
+      "weight": 30,
+      "act": "I: Origins",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 30
+    },
+    {
+      "slug": "chapter-3-holmes",
+      "title": "Chapter 3: Sherlock Holmes Makes a Diagnosis",
+      "description": "The deductive method for recognizing corporate pathologies: seven signs your project is dying — from Knight Capital to Target Canada.",
+      "weight": 40,
+      "act": "I: Origins",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 40
+    },
+    {
+      "slug": "intermezzo-1",
+      "title": "Intermezzo I. The Consulting Suite",
+      "description": "A satirical diagnosis of the agile theater through Carroll and Bulgakov. A consultancy where forty-three teams, two hundred and eight sprints, and twelve hundred retros a month do not produce a single product. Sprints for the sake of retros, retros for the sake of planning the next sprints. «Seven roles coordinating the work of one person with himself» — and that is called a mature process.",
+      "weight": 47,
+      "act": "Intermezzi",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 47
+    },
+    {
+      "slug": "chapter-4-borges",
+      "title": "Chapter 4: Borges Counts Story Points",
+      "description": "How measurements meant to make teams more agile turn into a lottery — from the Spotify Model to the OKR theater, from velocity gaming to the retrospective ritual.",
+      "weight": 50,
+      "act": "I: Origins",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 50
+    },
+    {
+      "slug": "chapter-5-nemo",
+      "title": "Chapter 5: Cyrus Smith Builds a Civilization",
+      "description": "Bootstrap leadership: how a small autonomous team outstrips corporate bureaucracy. The engineers of *The Mysterious Island* as the prototype of every successful tiger team.",
+      "weight": 60,
+      "act": "II: Transformation",
+      "act_opener": true,
+      "isApparatus": false,
+      "order": 60
+    },
+    {
+      "slug": "chapter-6-mina-harker",
+      "title": "Chapter 6: Mina Harker Takes the Notes",
+      "description": "The Victorian-era distributed team: phonograph, shorthand, telegraph, and one typewriter against an invisible enemy. The Crew of Light in Bram Stoker as an early prototype of the cross-functional team with a single source of truth.",
+      "weight": 70,
+      "act": "II: Transformation",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 70
+    },
+    {
+      "slug": "chapter-6-jekyll-hyde",
+      "title": "Chapter 6b: Doctor Jekyll and Doctor Lanyon — Corporate Duality from Stevenson to Argyris",
+      "description": "Corporate duality from Stevenson to Argyris. Dr Jekyll is the manifesto — corporate values on the meeting-room wall. Mr Hyde is what teams actually do at the third hour of a Friday sprint. Doctor Lanyon is the senior who sees both and does not survive the seeing. Argyris and Schön (1974), Goffman (1959) and Koreiko from The Little Golden Calf.",
+      "weight": 75,
+      "act": "II: Transformation",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 75
+    },
+    {
+      "slug": "chapter-7-don-quixote",
+      "title": "Chapter 7: Don Quixote and Sancho — The Birth of Team Myth",
+      "description": "The finale of Act II. Karl Weick showed in 1995 what Cervantes had shown in 1605: organizations are held together not by org structures and not by procedures, but by a shared story about who they are and where they are going. Four laws of team mythology, three modes (generative, defensive, reconciling), one Russian twin, and one death, in which Sancho weeps not for the loss of a partner but for the loss of a shared meaning.",
+      "weight": 80,
+      "act": "II: Transformation",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 80
+    },
+    {
+      "slug": "intermezzo-2",
+      "title": "Intermezzo II. The Production Basement",
+      "description": "A production basement: two hundred and thirty-seven bugs hanging, one hundred and eighty-nine P0s recoded to P1, P1 to P2, P2 to technical debt, technical debt to a workshop in the next quarter (which is still being planned). Agile methodology as the formalized avoidance of programming. Four huddles a day to synchronize a team that produces nothing between them. A satire sharper than any post-mortem.",
+      "weight": 85,
+      "act": "Intermezzi",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 85
+    },
+    {
+      "slug": "chapter-8-time-machine",
+      "title": "Chapter 8: H.G. Wells and the Horizons of Labor — *The Time Machine* as Diagnosis",
+      "description": "In 1895 Wells is describing not a journey to the year 802,701 but the mechanism by which labor is rearranged under the pressure of technology. The Eloi and the Morlocks are the logic of workforce differentiation carried to its limit. A century later economists rediscover the same mechanism under the names «job polarization» (Autor) and «political economy of distribution» (Acemoglu and Johnson). Platonov in 1930 adds a third reading: labor severed from its outcome turns into a pit that eats itself.",
+      "weight": 90,
+      "act": "III: Horizons",
+      "act_opener": true,
+      "isApparatus": false,
+      "order": 90
+    },
+    {
+      "slug": "chapter-9-niichavo",
+      "title": "Chapter 9: Monday Begins on Saturday — NIICHAVO as the Ideal Agile Team",
+      "description": "Four laws of a self-organizing R&D team from the Strugatsky brothers: meaning as entry filter, dual leadership, specialist against administrator, immersion instead of training. NIICHAVO as a utopia of meaningful labor and a diagnosis of bureaucracy in a team.",
+      "weight": 100,
+      "act": "III: Horizons",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 100
+    },
+    {
+      "slug": "chapter-10-chuma",
+      "title": "Chapter 10: The Plague — How a Team Forms in Sustained Crisis",
+      "description": "Albert Camus's *La Peste* (1947) — the *communauté* of Doctor Rieux, Tarrou, Castel, Rambert, Grand, and Paneloux: four laws of sustained work under crisis without a victory horizon — refusal as obligation, common decency instead of heroism, convergence without hierarchy, the discipline of continuation.",
+      "weight": 110,
+      "act": "III: Horizons — the Finale",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 110
+    },
+    {
+      "slug": "intermezzo-3",
+      "title": "Intermezzo III. The Transformation Elevator",
+      "description": "A one-hundred-and-twenty-seven-story elevator of agile transformation. They ascend one floor per iteration with a retrospective between each; «press the button for 127» is waterfall thinking. The apotheosis of agile absurdism: the vertical decomposition of movement, the adaptive planning of the simplest action. A caricature of digital transformation initiatives in which the process of transformation has become its only product.",
+      "weight": 120,
+      "act": "Intermezzi",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 120
+    }
+  ]
+}
