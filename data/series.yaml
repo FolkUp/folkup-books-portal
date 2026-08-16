@@ -59,7 +59,7 @@ books:
     slug_en_temp: agile-sapiens
     trilogy: svoimi_silami
     status: live
-    version: 1.0.25
+    version: 1.0.24
     launch_date: 2026-05-24
     date_relicensed: 2026-06-25
     date_patched: 2026-08-11  # v1.0.24 S6SCOOP cont+7 2026-08-11: build pipeline fixes per Iskra GLAZA-VERDIKTY (Д-2 EPUB spine linear=no + Д-4-final PDF plates derivePlate + Д-4-Chrome-headers off) + Д-2b epubcheck OPF-096 fix (nav.xhtml link on title.xhtml). Iskra S274 PROD-GATE-GO ADDENDUM: «номер остаётся v1.0.24 (публично не выкладывался, bump не нужен)». Content unchanged relative v1.0.23. PRs chain: agile-sapiens #235 05ed2a8 + #236 9a4e5dd CI-guard + #237 41bc924 Д-2b.
@@ -88,7 +88,7 @@ books:
     # v1.0.16 legacy: убрана метафора «вскрытий» + числа глав.
     # v1.0.15 legacy: EPUB awk pipeline fix.
     format_stale_note: |
-      Издание v1.0.25 · обновлено 16.08.2026
+      Издание v1.0.24 · обновлено 11.08.2026
     cover_v1: /covers/cover_kn1.svg
     covers:
       ru: /covers/cover_kn1.svg
@@ -100,7 +100,7 @@ books:
     translations:
       ru: live
       de: preparing
-      en: preview  # Iskra POMETKA-S288-01 «гибрид A′» + Andrey Q1(d) cont+22 S1PT: Vier-Augen 13/13 CONDITIONAL PASS оправдывает промежуточный preview до Batch14 apparatus+afterword close, preview→live только по сигналу Iskra
+      en: preparing
       pt: preparing
     isbn: null  # Pending Гутенберг + Bowker
 
