@@ -2,12 +2,18 @@
 /**
  * kn.1 reader manifest generator — pre-build step.
  *
- * Reads content/kn1/ru/chapters/**\/*.md, extracts frontmatter (title, weight, act, etc),
+ * Reads content/kn1/{lang}/chapters/**\/*.md, extracts frontmatter (title, weight, act, etc),
  * generates:
- *   1. content/kn1/ru/chapters-manifest.json — metadata only (~12 KB) для TOC + navigation
- *   2. content/kn1/ru/chapters-html/{slug}.js — pre-rendered HTML per chapter, ES modules
+ *   1. content/kn1/{lang}/chapters-manifest.json — metadata only (~12 KB) для TOC + navigation
+ *   2. content/kn1/{lang}/chapters-html/{slug}.js — pre-rendered HTML per chapter, ES modules
  *      с default export string. Loaded via dynamic import glob → each chapter own chunk
  *      (Vite splits automatically) → per-chunk under 60 KB gzip bundle gate.
+ *
+ * CLI:
+ *   node scripts/kn1-reader-manifest.mjs [--lang=<code>]
+ *   Default: --lang=ru (backward compat)
+ *   Supported: ru, pt, en (any lang with content/kn1/{lang}/chapters/ dir)
+ *   Graceful skip: if content/kn1/{lang}/chapters/ absent OR empty — script logs and exits 0.
  *
  * Rationale (VIT-KLB kn1 reader P0 fix cont+49):
  *   - Old async watcher pattern в Kn1ReadChapter.vue не suspend'ился SSR → HTML прибит
@@ -18,9 +24,9 @@
  *   - Per-chapter split keeps each chunk under 60 KB gzip gate (chapters range 5-50 KB
  *     raw HTML; gzip typically 30-40% of raw).
  *
- * Called: prebuild hook в package.json (npm run build → prebuild → build).
+ * Called: prebuild hook в package.json — invoked per lang (ru, pt, en).
  * Origin: reader restoration cont+30 S3SCOOP; bodyHtml pre-render + per-chapter split
- *   cont+49 Кочегар guidance (after eager JSON attempt hit CI bundle gate).
+ *   cont+49 Кочегар guidance. READER-UNIFY-1 cont+16: lang-parametrized (PT support).
  */
 
 import { readdirSync, readFileSync, writeFileSync, mkdirSync, rmSync, existsSync } from 'node:fs'
@@ -31,9 +37,19 @@ import { marked } from 'marked'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = dirname(__filename)
 const PROJECT_ROOT = resolve(__dirname, '..')
-const CHAPTERS_DIR = resolve(PROJECT_ROOT, 'content/kn1/ru/chapters')
-const MANIFEST_PATH = resolve(PROJECT_ROOT, 'content/kn1/ru/chapters-manifest.json')
-const BODIES_DIR = resolve(PROJECT_ROOT, 'content/kn1/ru/chapters-html')
+
+// --- CLI parsing ---
+function parseLangArg() {
+  for (const arg of process.argv.slice(2)) {
+    const match = arg.match(/^--lang=([a-z]{2})$/)
+    if (match) return match[1]
+  }
+  return 'ru' // backward-compat default
+}
+const LANG = parseLangArg()
+const CHAPTERS_DIR = resolve(PROJECT_ROOT, `content/kn1/${LANG}/chapters`)
+const MANIFEST_PATH = resolve(PROJECT_ROOT, `content/kn1/${LANG}/chapters-manifest.json`)
+const BODIES_DIR = resolve(PROJECT_ROOT, `content/kn1/${LANG}/chapters-html`)
 
 // Configure marked sync mode (default async в v18; forced sync via async: false)
 marked.setOptions({ async: false })
@@ -50,7 +66,9 @@ const APPARATUS_ORDER = [
 ]
 
 function parseFrontmatter(raw) {
-  const match = raw.match(/^---\n([\s\S]*?)\n---/)
+  // Normalize CRLF → LF for cross-platform frontmatter parsing (PT/EN files may use CRLF).
+  const normalized = raw.replace(/\r\n/g, '\n')
+  const match = normalized.match(/^---\n([\s\S]*?)\n---/)
   if (!match) return { title: '' }
   const fm = {}
   for (const line of match[1].split('\n')) {
@@ -81,10 +99,11 @@ function orderKey(slug, fm) {
 /** Files к skip — Hugo internal section indices, not reader content */
 const SKIP_FILES = new Set(['_index.md', '_index.ru.md'])
 
-/** Strip YAML frontmatter из raw markdown, return body only. */
+/** Strip YAML frontmatter из raw markdown, return body only. Normalizes CRLF → LF. */
 function stripFrontmatter(raw) {
-  const match = raw.match(/^---\n[\s\S]*?\n---\n?([\s\S]*)$/)
-  return match ? match[1] : raw
+  const normalized = raw.replace(/\r\n/g, '\n')
+  const match = normalized.match(/^---\n[\s\S]*?\n---\n?([\s\S]*)$/)
+  return match ? match[1] : normalized
 }
 
 /** Render markdown body к HTML via marked (sync). */
@@ -128,26 +147,28 @@ function collect() {
     bodies[slug] = renderBody(raw)
   }
 
-  // Apparatus subfolder
+  // Apparatus subfolder — optional (PT/EN may not have apparatus yet)
   const apparatusDir = resolve(CHAPTERS_DIR, 'apparatus')
-  for (const file of readdirSync(apparatusDir)) {
-    if (!file.endsWith('.md')) continue
-    if (SKIP_FILES.has(file)) continue
-    const baseSlug = file.replace(/\.md$/, '')
-    const slug = `apparatus-${baseSlug}`
-    const raw = readFileSync(resolve(apparatusDir, file), 'utf-8')
-    const fm = parseFrontmatter(raw)
-    entries.push({
-      slug,
-      title: fm.title || baseSlug,
-      description: fm.description || null,
-      weight: fm.weight ?? null,
-      act: null,
-      act_opener: false,
-      isApparatus: true,
-      order: orderKey(slug, fm),
-    })
-    bodies[slug] = renderBody(raw)
+  if (existsSync(apparatusDir)) {
+    for (const file of readdirSync(apparatusDir)) {
+      if (!file.endsWith('.md')) continue
+      if (SKIP_FILES.has(file)) continue
+      const baseSlug = file.replace(/\.md$/, '')
+      const slug = `apparatus-${baseSlug}`
+      const raw = readFileSync(resolve(apparatusDir, file), 'utf-8')
+      const fm = parseFrontmatter(raw)
+      entries.push({
+        slug,
+        title: fm.title || baseSlug,
+        description: fm.description || null,
+        weight: fm.weight ?? null,
+        act: null,
+        act_opener: false,
+        isApparatus: true,
+        order: orderKey(slug, fm),
+      })
+      bodies[slug] = renderBody(raw)
+    }
   }
 
   entries.sort((a, b) => a.order - b.order)
@@ -155,20 +176,33 @@ function collect() {
 }
 
 function main() {
-  console.log('[kn1-reader-manifest] Reading chapters from', CHAPTERS_DIR)
+  // Graceful skip if lang has no chapters dir (PT/EN scaffold pending)
+  if (!existsSync(CHAPTERS_DIR)) {
+    console.log(`[kn1-reader-manifest][${LANG}] Chapters dir absent: ${CHAPTERS_DIR}`)
+    console.log(`[kn1-reader-manifest][${LANG}] Graceful skip — no manifest generated.`)
+    return
+  }
+
+  console.log(`[kn1-reader-manifest][${LANG}] Reading chapters from ${CHAPTERS_DIR}`)
   const { entries, bodies } = collect()
-  console.log(`[kn1-reader-manifest] Collected ${entries.length} entries`)
+
+  if (entries.length === 0) {
+    console.log(`[kn1-reader-manifest][${LANG}] No chapters found — graceful skip.`)
+    return
+  }
+
+  console.log(`[kn1-reader-manifest][${LANG}] Collected ${entries.length} entries`)
 
   const generated = new Date().toISOString()
 
   const manifest = {
     generated,
     book: 'kn1',
-    locale: 'ru',
+    locale: LANG,
     entries,
   }
   writeFileSync(MANIFEST_PATH, JSON.stringify(manifest, null, 2), 'utf-8')
-  console.log(`[kn1-reader-manifest] Wrote ${MANIFEST_PATH} (${entries.length} entries)`)
+  console.log(`[kn1-reader-manifest][${LANG}] Wrote ${MANIFEST_PATH} (${entries.length} entries)`)
 
   // Per-chapter HTML modules — clean-write directory (deleted entries drop out).
   if (existsSync(BODIES_DIR)) rmSync(BODIES_DIR, { recursive: true, force: true })
@@ -188,10 +222,10 @@ function main() {
     }
   }
   console.log(
-    `[kn1-reader-manifest] Wrote ${Object.keys(bodies).length} chapter HTML modules to ${BODIES_DIR}`,
+    `[kn1-reader-manifest][${LANG}] Wrote ${Object.keys(bodies).length} chapter HTML modules to ${BODIES_DIR}`,
   )
   console.log(
-    `[kn1-reader-manifest]   total: ${(totalSize / 1024).toFixed(1)} KB, max: ${(maxSize / 1024).toFixed(1)} KB (${maxSlug})`,
+    `[kn1-reader-manifest][${LANG}]   total: ${(totalSize / 1024).toFixed(1)} KB, max: ${(maxSize / 1024).toFixed(1)} KB (${maxSlug})`,
   )
 }
 

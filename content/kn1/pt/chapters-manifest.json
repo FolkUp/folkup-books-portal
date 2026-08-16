@@ -1,0 +1,47 @@
+{
+  "generated": "2026-08-16T03:42:18.056Z",
+  "book": "kn1",
+  "locale": "pt",
+  "entries": [
+    {
+      "slug": "preface",
+      "title": "Prefácio: Sobre o método da análise literária da gestão",
+      "description": "Prefácio ao livro Agile Sapiens — sobre a metodologia Literary Analysis of Business e a razão pela qual a literatura clássica se revelou mais precisa do que qualquer consultor.",
+      "weight": 1,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 5
+    },
+    {
+      "slug": "chapter-0-pilot",
+      "title": "Filipe Fogg inventou o que destrói as empresas modernas",
+      "description": "Como um cavalheiro inglês ficcional de 1872 aplicou intuitivamente princípios que a indústria contemporânea dos métodos ágeis comercializou, distorceu e revende por mil milhões de dólares",
+      "weight": 10,
+      "act": "I: Origens",
+      "act_opener": true,
+      "isApparatus": false,
+      "order": 10
+    },
+    {
+      "slug": "intermezzo-1",
+      "title": "Intermezzo I. Apartamentos de Consultoria",
+      "description": "Mad Tea Party como agile dysfunction: medem métricas, mas não lançam produtos.",
+      "weight": 47,
+      "act": "Intermezzi",
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 47
+    },
+    {
+      "slug": "intermezzo-2",
+      "title": "Intermezzo II. Cave de Produção",
+      "description": null,
+      "weight": 85,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 85
+    }
+  ]
+}

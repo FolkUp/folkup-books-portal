@@ -19,20 +19,34 @@ import { computed, onServerPrefetch, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useHead } from '@unhead/vue'
 import {
-  useKn1ChapterMeta,
-  loadKn1ChapterBodyHtml,
+  useKn1ChapterMetaLang,
+  loadKn1ChapterBodyHtmlLang,
 } from '../composables/useKn1Chapters'
 
 const route = useRoute()
 const slug = computed(() => route.params.slug as string)
 
-const chapterData = computed(() => useKn1ChapterMeta(slug.value))
+// READER-UNIFY-1 cont+16: lang detected from route.meta.lang OR fallback to path parsing.
+// `/kn1/read/*` → 'ru' (backward compat, no lang segment, no meta.lang).
+// `/kn1/pt/read/*` → 'pt' (routes.ts sets meta.lang='pt').
+// `/kn1/en/read/*` → 'en' (routes.ts sets meta.lang='en').
+type Lang = 'ru' | 'pt' | 'en'
+const SUPPORTED_LANGS: Lang[] = ['ru', 'pt', 'en']
+const lang = computed<Lang>(() => {
+  const metaLang = route.meta.lang
+  if (typeof metaLang === 'string' && SUPPORTED_LANGS.includes(metaLang as Lang)) {
+    return metaLang as Lang
+  }
+  return 'ru'
+})
+
+const chapterData = computed(() => useKn1ChapterMetaLang(lang.value, slug.value))
 
 const renderedHtml = ref<string>('')
 
 // SSR: preload body before renderToString continues → body inlined в prerendered HTML.
 onServerPrefetch(async () => {
-  const html = await loadKn1ChapterBodyHtml(slug.value)
+  const html = await loadKn1ChapterBodyHtmlLang(lang.value, slug.value)
   if (html !== null) renderedHtml.value = html
 })
 
@@ -41,13 +55,13 @@ onServerPrefetch(async () => {
 if (typeof window !== 'undefined') {
   let hydrated = renderedHtml.value !== ''
   watch(
-    slug,
-    async (newSlug) => {
+    [lang, slug],
+    async ([newLang, newSlug]) => {
       if (hydrated) {
         hydrated = false // skip только первый call
         return
       }
-      const html = await loadKn1ChapterBodyHtml(newSlug)
+      const html = await loadKn1ChapterBodyHtmlLang(newLang, newSlug)
       renderedHtml.value = html ?? ''
     },
     { immediate: true },
@@ -56,30 +70,90 @@ if (typeof window !== 'undefined') {
 
 const SITE_URL = 'https://books.folkup.life'
 
+// URL path segment (RU has no lang segment, PT/EN do).
+const langSegment = computed(() => (lang.value === 'ru' ? '' : `/${lang.value}`))
+const bookHomePath = computed(() => (lang.value === 'ru' ? '/kn1' : `/kn1/${lang.value}`))
+const tocPath = computed(() => `/kn1${langSegment.value}/read`)
+
+// Localized navigation labels.
+const NAV_LABELS: Record<Lang, {
+  toc: string
+  prev: string
+  next: string
+  breadcrumbLibrary: string
+  breadcrumbToc: string
+  notFoundTitle: string
+  notFoundBody: string
+  notFoundLink: string
+  metaFallback: string
+  metaDescFallback: string
+}> = {
+  ru: {
+    toc: 'К оглавлению',
+    prev: '← Предыдущая',
+    next: 'Следующая →',
+    breadcrumbLibrary: 'Библиотека',
+    breadcrumbToc: 'Оглавление',
+    notFoundTitle: 'Глава не найдена',
+    notFoundBody: 'Проверьте адрес, или',
+    notFoundLink: 'вернитесь к оглавлению',
+    metaFallback: 'Читать',
+    metaDescFallback: 'Читать онлайн — глава книги «Agile Sapiens».',
+  },
+  pt: {
+    toc: 'Ao índice',
+    prev: '← Anterior',
+    next: 'Próximo →',
+    breadcrumbLibrary: 'Biblioteca',
+    breadcrumbToc: 'Índice',
+    notFoundTitle: 'Capítulo não encontrado',
+    notFoundBody: 'Verifique o endereço, ou',
+    notFoundLink: 'volte ao índice',
+    metaFallback: 'Ler',
+    metaDescFallback: 'Ler online — capítulo do livro «Agile Sapiens».',
+  },
+  en: {
+    toc: 'To contents',
+    prev: '← Previous',
+    next: 'Next →',
+    breadcrumbLibrary: 'Library',
+    breadcrumbToc: 'Contents',
+    notFoundTitle: 'Chapter not found',
+    notFoundBody: 'Check the address, or',
+    notFoundLink: 'return to contents',
+    metaFallback: 'Read',
+    metaDescFallback: 'Read online — chapter of «Agile Sapiens».',
+  },
+}
+const labels = computed(() => NAV_LABELS[lang.value])
+
 useHead({
   title: () =>
-    (chapterData.value.meta?.title || 'Читать') +
-    ' — Agile Sapiens — Библиотека FolkUp',
+    (chapterData.value.meta?.title || labels.value.metaFallback) +
+    ' — Agile Sapiens — FolkUp',
   meta: () => [
     {
       name: 'description',
       content:
         chapterData.value.meta?.description ||
         chapterData.value.meta?.title ||
-        'Читать онлайн — глава книги «Agile Sapiens».',
+        labels.value.metaDescFallback,
     },
     {
       property: 'og:title',
-      content: chapterData.value.meta?.title || 'Читать',
+      content: chapterData.value.meta?.title || labels.value.metaFallback,
     },
     { property: 'og:type', content: 'article' },
     {
       property: 'og:url',
-      content: `${SITE_URL}/kn1/read/${slug.value}/`,
+      content: `${SITE_URL}/kn1${langSegment.value}/read/${slug.value}/`,
     },
   ],
   link: () => [
-    { rel: 'canonical', href: `${SITE_URL}/kn1/read/${slug.value}/` },
+    {
+      rel: 'canonical',
+      href: `${SITE_URL}/kn1${langSegment.value}/read/${slug.value}/`,
+    },
   ],
 })
 </script>
@@ -87,13 +161,13 @@ useHead({
 <template>
   <main class="reader-chapter">
     <nav class="reader-chapter__breadcrumb" aria-label="Хлебные крошки">
-      <RouterLink to="/">Библиотека</RouterLink>
+      <RouterLink to="/">{{ labels.breadcrumbLibrary }}</RouterLink>
       <span>›</span>
-      <RouterLink to="/kn1">Agile Sapiens</RouterLink>
+      <RouterLink :to="bookHomePath">Agile Sapiens</RouterLink>
       <span>›</span>
-      <RouterLink to="/kn1/read">Оглавление</RouterLink>
+      <RouterLink :to="tocPath">{{ labels.breadcrumbToc }}</RouterLink>
       <span>›</span>
-      <span aria-current="page">{{ chapterData.chapter?.frontmatter.title }}</span>
+      <span aria-current="page">{{ chapterData.meta?.title }}</span>
     </nav>
 
     <article v-if="chapterData.meta" class="reader-chapter__body">
@@ -117,17 +191,17 @@ useHead({
       >
         <RouterLink
           v-if="chapterData.prev"
-          :to="`/kn1/read/${chapterData.prev.slug}`"
+          :to="`/kn1${langSegment}/read/${chapterData.prev.slug}`"
           class="reader-chapter__nav-link reader-chapter__nav-prev"
-        >← Предыдущая</RouterLink>
-        <RouterLink to="/kn1/read" class="reader-chapter__nav-link reader-chapter__nav-toc">
-          К оглавлению
+        >{{ labels.prev }}</RouterLink>
+        <RouterLink :to="tocPath" class="reader-chapter__nav-link reader-chapter__nav-toc">
+          {{ labels.toc }}
         </RouterLink>
         <RouterLink
           v-if="chapterData.next"
-          :to="`/kn1/read/${chapterData.next.slug}`"
+          :to="`/kn1${langSegment}/read/${chapterData.next.slug}`"
           class="reader-chapter__nav-link reader-chapter__nav-next"
-        >Следующая →</RouterLink>
+        >{{ labels.next }}</RouterLink>
       </nav>
 
       <!-- v-html: контент из trusted source (Iskra canonical body) pre-rendered by marked
@@ -137,23 +211,23 @@ useHead({
       <nav class="reader-chapter__nav" aria-label="Навигация по главам">
         <RouterLink
           v-if="chapterData.prev"
-          :to="`/kn1/read/${chapterData.prev.slug}`"
+          :to="`/kn1${langSegment}/read/${chapterData.prev.slug}`"
           class="reader-chapter__nav-link reader-chapter__nav-prev"
         >
-          <span class="reader-chapter__nav-label">← Предыдущая</span>
+          <span class="reader-chapter__nav-label">{{ labels.prev }}</span>
           <span class="reader-chapter__nav-title">{{
             chapterData.prev.title
           }}</span>
         </RouterLink>
-        <RouterLink to="/kn1/read" class="reader-chapter__nav-link reader-chapter__nav-toc">
-          К оглавлению
+        <RouterLink :to="tocPath" class="reader-chapter__nav-link reader-chapter__nav-toc">
+          {{ labels.toc }}
         </RouterLink>
         <RouterLink
           v-if="chapterData.next"
-          :to="`/kn1/read/${chapterData.next.slug}`"
+          :to="`/kn1${langSegment}/read/${chapterData.next.slug}`"
           class="reader-chapter__nav-link reader-chapter__nav-next"
         >
-          <span class="reader-chapter__nav-label">Следующая →</span>
+          <span class="reader-chapter__nav-label">{{ labels.next }}</span>
           <span class="reader-chapter__nav-title">{{
             chapterData.next.title
           }}</span>
@@ -162,10 +236,10 @@ useHead({
     </article>
 
     <div v-else class="reader-chapter__not-found">
-      <h1>Глава не найдена</h1>
+      <h1>{{ labels.notFoundTitle }}</h1>
       <p>
-        Проверьте адрес, или
-        <RouterLink to="/kn1/read">вернитесь к оглавлению</RouterLink>.
+        {{ labels.notFoundBody }}
+        <RouterLink :to="tocPath">{{ labels.notFoundLink }}</RouterLink>.
       </p>
     </div>
   </main>
