@@ -120,7 +120,7 @@ Borges anticipated the absurdity — the true cost of that absurdity is measured
 
 ## The Spotify Model: The Model That Does Not Work Even at Spotify
 
-The HR director of a major bank flies to Stockholm to study the "legendary model." 2019 — a delegation, a budget that would later have to be justified. The goal: to implement the Spotify Model in a Russian corporation.
+The HR director of a major bank flies to Stockholm to study the "legendary model." 2019 — a delegation, a budget that would later have to be justified. The goal: to implement the Spotify Model back home.
 
 On the plane she rereads the Kniberg–Ivarsson document: Squads, Tribes, Chapters, Guilds.⁶ The transformation plan is already drawn — HR has designed the new org chart, IT has commissioned an office redesign for the "tribal" model, top management is awaiting the result.
 
@@ -129,7 +129,7 @@ First day at Spotify. The guide — not Kniberg, he left three years ago — wal
 "And the Chapter Lead from the presentation?"
 "Ah, that role has transformed. We have a different structure now."
 
-She rereads the first paragraph of the document: "This article is only a snapshot of our current way of working… by the time you read this, it will have changed."⁶ A warning everybody ignores.
+She rereads the first paragraph of the document: "This article is only a snapshot of our current way of working… by the time you read this, things have already changed."⁶ A warning everybody ignores.
 
 In the hotel that evening she opens the analysis by Jeremiah Lee — a former PM at Spotify. The document describes an idealized state Spotify had not reached even at the moment of publication. The squads themselves were reorganizing, tribes shifting, guilds losing activity.⁷ Kniberg himself, for ten years after publication, kept reminding people: it is a snapshot, not a blueprint.
 

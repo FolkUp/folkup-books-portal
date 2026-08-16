@@ -73,7 +73,7 @@ Hold that thought. Now the evidence.
 
 ### Victorian England: Dickens and the Feedback Cycle
 
-In 1836, Charles Dickens publishes *The Posthumous Papers of the Pickwick Club* in twenty monthly installments. First print run: 400 copies. By the fourth installment: 40,000.²
+In 1836, Charles Dickens publishes *The Posthumous Papers of the Pickwick Club* in twenty monthly installments. First printing: 400 copies. Sales climbed after Sam Weller appeared in the fourth installment; by the series' end (November 1837), printings reached 40,000.²
 
 Dickens invented the feedback cycle long before the term appeared in management theory. Every installment was a hypothesis: "This plot turn will hold the audience." The next issue's print run became the confirmation. When the installment with Sam Weller lifted sales, Dickens immediately expanded his role² — a data-driven decision taken a century and a half before A/B testing.
 
@@ -300,7 +300,7 @@ Chapter 2: how *Frankenstein* predicted the crisis of corporate monsters, and wh
 
 ¹ Historical publishing records show that the *Magasin d'Éducation et de Récréation* used serialization to generate subscription revenue, with Hetzel's pricing strategy optimizing for subscriber retention over one-time book sales. See Dumas, Olivier. *Correspondance inédite de Jules Verne et de Pierre-Jules Hetzel* (1999–2002). Contemporary parallel: TAdviser Analytics, "The Russian SaaS Market" (2024). The subscription model in enterprise software showed a CAGR of 47 percent (2020–2024), gross revenue of ₽847 billion against ₽124 billion in one-time licenses.
 
-² Print-run figures for *The Pickwick Papers*: Robert L. Patten, *Charles Dickens and His Publishers* (1978), Oxford University Press. First installment about 400 copies, growth to roughly 40,000 by installments 4–5 following the introduction of Sam Weller.
+² Print-run figures for *The Pickwick Papers*: Robert L. Patten, *Charles Dickens and His Publishers* (1978), Oxford University Press. First installment about 400 copies; after the introduction of Sam Weller in the fourth installment, sales climbed, reaching roughly 40,000 by the series' end (November 1837).
 
 ³ Simon Lake described Verne's influence in his autobiography, *The Submarine in War and Peace* (1918). Verne personally congratulated Lake by telegram.
 
