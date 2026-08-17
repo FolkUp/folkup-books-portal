@@ -117,6 +117,18 @@ const readerUrl = computed<string>(() => {
 const hasLocalizedDownload = computed(
   () => book.value?.translations?.[locale.value as Locale] === 'live',
 )
+// LIVE-GATE-EN-1 G2 per Iskra KANON-VOROTA S289-07: resolve per-locale downloads
+// с RU fallback. `book.downloads[locale]?.epub` → per-locale nested block (EN v1.0.0
+// сейчас), `book.downloads.epub` → top-level default (RU URL, backward compat для
+// existing books that haven't migrated к per-locale schema).
+const localeDownloads = computed(() => {
+  const d = book.value?.downloads
+  const perLocale = d?.[locale.value as Locale]
+  return {
+    epub: perLocale?.epub ?? d?.epub,
+    pdf: perLocale?.pdf ?? d?.pdf,
+  }
+})
 const showDownloadNotice = computed(
   () =>
     isLive.value &&
@@ -272,17 +284,23 @@ if (book.value) {
             (артефакт на текущем языке существует). Иначе — плашка ниже.
           -->
           <template v-if="hasLocalizedDownload">
+            <!--
+              LIVE-GATE-EN-1 G2 per Iskra KANON-VOROTA S289-07: prefer per-locale
+              nested downloads (book.downloads[locale]), fallback к top-level (RU default).
+              When translations[locale]='live' + per-locale block exists → serves locale files.
+              When top-level only → serves default (RU) — backward compat для existing books.
+            -->
             <a
-              v-if="book.downloads?.epub"
-              :href="book.downloads.epub"
+              v-if="localeDownloads.epub"
+              :href="localeDownloads.epub"
               class="book-page__button"
               download
             >
               {{ t('portal.download_epub') }}
             </a>
             <a
-              v-if="book.downloads?.pdf"
-              :href="book.downloads.pdf"
+              v-if="localeDownloads.pdf"
+              :href="localeDownloads.pdf"
               class="book-page__button"
               download
             >

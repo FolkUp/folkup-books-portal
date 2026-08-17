@@ -29,6 +29,12 @@ export interface Book {
   downloads?: {
     epub?: string
     pdf?: string
+    // Per-locale nested downloads per Iskra KANON-VOROTA S289-07 LIVE-GATE-EN-1 G2.
+    // Vue lookup: `book.downloads?.[locale]?.epub ?? book.downloads?.epub` (RU fallback).
+    ru?: { epub?: string; pdf?: string }
+    en?: { epub?: string; pdf?: string }
+    de?: { epub?: string; pdf?: string }
+    pt?: { epub?: string; pdf?: string }
   }
   cover_v1?: string
   covers?: {
