@@ -7,6 +7,7 @@
 import { computed, onServerPrefetch, ref, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import { useHead } from '@unhead/vue'
+import { useI18n } from 'vue-i18n'
 import {
   useKn5ChapterMeta,
   loadKn5ChapterBodyHtml,
@@ -15,6 +16,38 @@ import {
 const route = useRoute()
 const slug = computed(() => route.params.slug as string)
 const chapterData = computed(() => useKn5ChapterMeta(slug.value))
+
+// HARDCODED-RU-STRINGS refactor S1PT cont+25: mirror Kn1ReadChapter.vue NAV_LABELS.
+// Inline dictionary reusing existing Kn1 translations verbatim (ru/pt/en, DE fallback к RU).
+const { locale } = useI18n()
+type Lang = 'ru' | 'pt' | 'en'
+const NAV_LABELS: Record<Lang, {
+  breadcrumbLibrary: string
+  breadcrumbToc: string
+  notFoundLink: string
+}> = {
+  ru: {
+    breadcrumbLibrary: 'Библиотека',
+    breadcrumbToc: 'Оглавление',
+    notFoundLink: 'вернитесь к оглавлению',
+  },
+  pt: {
+    breadcrumbLibrary: 'Biblioteca',
+    breadcrumbToc: 'Índice',
+    notFoundLink: 'volte ao índice',
+  },
+  en: {
+    breadcrumbLibrary: 'Library',
+    breadcrumbToc: 'Contents',
+    notFoundLink: 'return to contents',
+  },
+}
+const lang = computed<Lang>(() => {
+  const l = locale.value
+  if (l === 'pt' || l === 'en') return l
+  return 'ru'
+})
+const labels = computed(() => NAV_LABELS[lang.value])
 const renderedHtml = ref<string>('')
 
 onServerPrefetch(async () => {
@@ -71,11 +104,11 @@ useHead({
 <template>
   <main class="reader-chapter">
     <nav class="reader-chapter__breadcrumb" aria-label="Хлебные крошки">
-      <RouterLink to="/">Библиотека</RouterLink>
+      <RouterLink to="/">{{ labels.breadcrumbLibrary }}</RouterLink>
       <span>›</span>
       <RouterLink to="/kn5">Чужими руками</RouterLink>
       <span>›</span>
-      <RouterLink to="/kn5/read">Оглавление</RouterLink>
+      <RouterLink to="/kn5/read">{{ labels.breadcrumbToc }}</RouterLink>
       <span>›</span>
       <span aria-current="page">{{ chapterData.meta?.title }}</span>
     </nav>
@@ -112,7 +145,7 @@ useHead({
       <h1>Глава не найдена</h1>
       <p>
         Проверьте адрес, или
-        <RouterLink to="/kn5/read">вернитесь к оглавлению</RouterLink>.
+        <RouterLink to="/kn5/read">{{ labels.notFoundLink }}</RouterLink>.
       </p>
     </div>
   </main>
