@@ -86,6 +86,9 @@ const NAV_LABELS: Record<Lang, {
   next: string
   breadcrumbLibrary: string
   breadcrumbToc: string
+  breadcrumbAria: string
+  navChaptersTopAria: string
+  navChaptersBottomAria: string
   notFoundTitle: string
   notFoundBody: string
   notFoundLink: string
@@ -98,6 +101,9 @@ const NAV_LABELS: Record<Lang, {
     next: 'Следующая →',
     breadcrumbLibrary: 'Библиотека',
     breadcrumbToc: 'Оглавление',
+    breadcrumbAria: 'Хлебные крошки',
+    navChaptersTopAria: 'Навигация по главам (верх)',
+    navChaptersBottomAria: 'Навигация по главам',
     notFoundTitle: 'Глава не найдена',
     notFoundBody: 'Проверьте адрес, или',
     notFoundLink: 'вернитесь к оглавлению',
@@ -110,6 +116,9 @@ const NAV_LABELS: Record<Lang, {
     next: 'Próximo →',
     breadcrumbLibrary: 'Biblioteca',
     breadcrumbToc: 'Índice',
+    breadcrumbAria: 'Trilha de navegação',
+    navChaptersTopAria: 'Navegação de capítulos (topo)',
+    navChaptersBottomAria: 'Navegação de capítulos',
     notFoundTitle: 'Capítulo não encontrado',
     notFoundBody: 'Verifique o endereço, ou',
     notFoundLink: 'volte ao índice',
@@ -122,6 +131,9 @@ const NAV_LABELS: Record<Lang, {
     next: 'Next →',
     breadcrumbLibrary: 'Library',
     breadcrumbToc: 'Contents',
+    breadcrumbAria: 'Breadcrumbs',
+    navChaptersTopAria: 'Chapter navigation (top)',
+    navChaptersBottomAria: 'Chapter navigation',
     notFoundTitle: 'Chapter not found',
     notFoundBody: 'Check the address, or',
     notFoundLink: 'return to contents',
@@ -251,7 +263,7 @@ useHead({
 
 <template>
   <main class="reader-chapter">
-    <nav class="reader-chapter__breadcrumb" aria-label="Хлебные крошки">
+    <nav class="reader-chapter__breadcrumb" :aria-label="labels.breadcrumbAria">
       <RouterLink to="/">{{ labels.breadcrumbLibrary }}</RouterLink>
       <span>›</span>
       <RouterLink :to="bookHomePath">Agile Sapiens</RouterLink>
@@ -278,7 +290,7 @@ useHead({
       <!-- READER-NAV-1 cont+14: top nav mirror bottom nav (compact — labels only) -->
       <nav
         class="reader-chapter__nav reader-chapter__nav--top"
-        aria-label="Навигация по главам (верх)"
+        :aria-label="labels.navChaptersTopAria"
       >
         <RouterLink
           v-if="chapterData.prev"
@@ -299,7 +311,7 @@ useHead({
            at build time (см. scripts/kn1-reader-manifest.mjs). Sync render — SSR-safe. -->
       <div class="reader-chapter__content" v-html="renderedHtml"></div>
 
-      <nav class="reader-chapter__nav" aria-label="Навигация по главам">
+      <nav class="reader-chapter__nav" :aria-label="labels.navChaptersBottomAria">
         <RouterLink
           v-if="chapterData.prev"
           :to="`/kn1${langSegment}/read/${chapterData.prev.slug}`"
