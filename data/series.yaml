@@ -109,7 +109,7 @@ books:
     translations:
       ru: live
       de: preparing
-      en: preview
+      en: live  # 2026-08-17 flip preview→live per Iskra PRIKAZ-S290-10 + Andrey personal viza «флип GO приступай карт-бланш» + LIVE-GATE-EN-1 G1+G2+G3 closed (S1TREN PR #205 c63eb2f). BL-LAUNCH-1 trigger event.
       pt: preparing
     isbn: null  # Pending Гутенберг + Bowker
 
