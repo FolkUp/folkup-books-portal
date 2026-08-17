@@ -39,6 +39,8 @@ toc: true
 draft: false
 ---
 
+![Engraving for Chapter 10: NIICHAVO as the Ideal Agile Team](/kn1/images/chapters/agil-chapter-9-plate.webp)
+
 > *«The most interesting things began in the evening, when the Department of Linear Happiness had finished its work and a particular kind of silence settled over the institute — the silence that exists only in places where, day after day and year after year, people work without sitting on their hands.»*
 >
 > — A. and B. Strugatsky, *Monday Begins on Saturday* (1965), ch. 1¹

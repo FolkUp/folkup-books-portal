@@ -44,6 +44,8 @@ aliases:
   - "/chapters/chapter-6-holmes-watson"
 ---
 
+![Engraving for Chapter 6: Mina Harker Takes the Notes](/kn1/images/chapters/agil-chapter-6-mina-plate.webp)
+
 > **What this chapter does.** A distributed team of six people, scattered across London, Whitby, and Transylvania, hunts an invisible enemy in the age before electricity. Their secret weapon is not silver bullets or consecrated wafers, but a Remington typewriter, an Edison phonograph, Pitman shorthand, and one woman who at three in the morning assembles all the scattered diaries into a single document. Six archetypes, four laws of the distributed team, and why Bram Stoker's Crew of Light described — a hundred years before the Agile Manifesto — the very team modern corporations are now scrambling toward.
 
 ## Purfleet, Dr. Seward's Asylum, Early October 1893

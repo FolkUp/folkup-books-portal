@@ -35,6 +35,8 @@ reviewed_by: "Editorial Team"
 review_date: "2026-04-21"
 ---
 
+![Engraving for Chapter 3: Sherlock Holmes Makes a Diagnosis](/kn1/images/chapters/agil-chapter-3-plate.webp)
+
 > **What this chapter does.** The deductive method in project management. How to learn to see the invisible: seven diagnostic signs of a dying project, each verified against real catastrophes that could have been prevented.
 
 ## Southsea (Portsmouth), 1 Bush Villas, Spring 1886

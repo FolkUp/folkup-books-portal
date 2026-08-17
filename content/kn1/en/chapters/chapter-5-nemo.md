@@ -42,6 +42,8 @@ toc: true
 draft: false
 ---
 
+![Engraving for Chapter 5: Cyrus Smith Builds a Civilization](/kn1/images/chapters/agil-chapter-5-plate.webp)
+
 > **What this chapter does.** Bootstrap leadership as a weapon against corporate bureaucracy. How the engineering team of *The Mysterious Island* became the prototype of every successful tiger team — from Skunk Works to the first Macintosh crews — and why the companies that build "islands" outrun the ones that build "cruise liners."
 
 ## Amiens, 1873

@@ -42,6 +42,7 @@ toc: true
 draft: false
 ---
 
+![Engraving for Chapter 7: Doctor Jekyll and Mister Hyde](/kn1/images/chapters/agil-chapter-6-jekyll-plate.webp)
 
 > **What this chapter is about.** Corporate duality from Stevenson to Argyris. Dr. Jekyll is the manifesto — corporate values hung on the meeting-room wall. Mr. Hyde is what teams actually do at the third hour of a Friday sprint, when the deadline is running out and the board is waiting for numbers. Doctor Lanyon is the senior who sees both and does not survive the seeing. Argyris and Schön in 1974 named this gap the split between espoused theory and theory-in-use. Goffman in 1959 described it as the difference between front stage and back stage. And Koreiko from *The Little Golden Calf* had already played it out on a Soviet street exactly when the American academy was still looking for the terms.
 

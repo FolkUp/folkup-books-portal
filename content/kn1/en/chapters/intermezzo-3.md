@@ -26,6 +26,7 @@ toc: true
 draft: false
 ---
 
+![Engraving for Intermezzo III: The Transformation Elevator](/kn1/images/chapters/agil-intermezzo-3-plate.webp)
 
 > **What this intermezzo is about.** A one-hundred-and-twenty-seven-story elevator of agile transformation. They ascend one floor per iteration with a retrospective between each; «press the button for 127» is waterfall thinking. The apotheosis of agile absurdism: the vertical decomposition of movement, the adaptive planning of the simplest action. A caricature of digital transformation initiatives in which the process of transformation has become its only product.
 

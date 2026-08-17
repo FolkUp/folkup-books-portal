@@ -40,6 +40,8 @@ toc: true
 draft: false
 ---
 
+![Engraving for Chapter 11: The Plague — A Team in Sustained Crisis](/kn1/images/chapters/agil-chapter-10-plate.webp)
+
 > *«This is not heroism. It is a question of decency. Perhaps it will seem a laughable idea, but the only way to fight the plague is by decency.»*
 >
 > — Doctor Bernard Rieux. Albert Camus, *La Peste*, part two¹

@@ -33,6 +33,8 @@ reviewed_by: "Editorial Team"
 review_date: "2026-04-21"
 ---
 
+![Engraving for Chapter 1: Jules Verne Programs](/kn1/images/chapters/agil-chapter-1-plate.webp)
+
 > **What this chapter is about.** The literary DNA of contemporary project-management methodologies. How nineteenth-century serialization created the pattern of iterative delivery, and how the adventure novel became the prototype of the sprint cycle.
 
 ## A Paris Publishing House, March 1869

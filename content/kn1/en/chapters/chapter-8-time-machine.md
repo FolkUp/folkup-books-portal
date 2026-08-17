@@ -45,6 +45,7 @@ toc: true
 draft: false
 ---
 
+![Engraving for Chapter 9: The Time Machine and the Horizons of Labor](/kn1/images/chapters/agil-chapter-8-plate.webp)
 
 > «The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His grey eyes shone and twinkled, and his usually pale face was flushed and animated.»¹
 >

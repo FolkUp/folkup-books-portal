@@ -39,6 +39,8 @@ reviewed_by: "Editorial Team"
 review_date: "2026-04-21"
 ---
 
+![Engraving for Chapter 4: Borges Counts Story Points](/kn1/images/chapters/agil-chapter-4-plate.webp)
+
 > **What this chapter does.** The paradox of Agile measurement. How metrics meant to increase agility become a lottery — a system so complex that no one remembers why it started. From the Spotify Model to SAFe, from OKR theater to velocity gaming — an anatomy of the measurement madness.
 
 ## Meeting Room 7, Sprint Planning
