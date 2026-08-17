@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-16T17:53:48.707Z",
+  "generated": "2026-08-16T20:41:03.942Z",
   "book": "kn1",
   "locale": "en",
   "entries": [
@@ -162,6 +162,36 @@
       "act_opener": false,
       "isApparatus": false,
       "order": 120
+    },
+    {
+      "slug": "apparatus-sources",
+      "title": "Sources",
+      "description": "Full bibliography of sources used, grouped by chapter",
+      "weight": 20,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "order": 9020
+    },
+    {
+      "slug": "apparatus-transparency",
+      "title": "AI Transparency Statement",
+      "description": "Transparent disclosure of AI assistance in content creation per EU AI Act Article 50",
+      "weight": 40,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "order": 9050
+    },
+    {
+      "slug": "apparatus-colophon",
+      "title": "Colophon",
+      "description": "Publishing information — who, when, how this book was created",
+      "weight": 10,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "order": 9060
     }
   ]
 }
