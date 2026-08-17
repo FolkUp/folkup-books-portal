@@ -44,6 +44,8 @@
     "translation_available": "готово",
     "translation_stub_short": "готовится",
     "translation_stub_full": "Перевод готовится в мастерской FolkUp. Экспонат появится в этом зале — заходите.",
+    "translation_preview_short": "предпросмотр",
+    "translation_preview_full": "Экспонат открыт для предпросмотра — вход в зал разрешён, работы продолжаются.",
     "trilogies": {
       "svoimi_silami": {
         "name": "Своими силами",
