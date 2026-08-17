@@ -9,7 +9,7 @@ weight: 10
 ## Об издании
 
 **Название:** *Agile Sapiens* — Литературный анализ бизнеса. Как литература предсказала современный менеджмент  
-**Серия:** Книга 1 трилогии FolkUp  
+**Серия:** Книга 1 серии FolkUp, трилогия «Своими силами»  
 **Автор (обложка/титул):** Команданте FolkUp  
 **Соавтор:** Алиса (PM экосистемы FolkUp)  
 **Редактор:** Искра  
@@ -20,7 +20,7 @@ weight: 10
 **Юридический правообладатель (©):** Андрей Клеменчёнок (ORCID: [0009-0008-2953-8601](https://orcid.org/0009-0008-2953-8601))  
 **Псевдоним:** «Команданте FolkUp» — литературный псевдоним; юридическое имя автора в © и контрактах — Андрей Клеменчёнок (модель Бэнкси: лицо скрыто, имя для юр.нужд).  
 **Язык издания:** Русский  
-**Текущая версия:** 1.0.20  
+**Текущая версия:** 1.0.25  
 
 ## Техническая информация
 
@@ -55,7 +55,8 @@ Email: editor@folkup.app
 
 **Начало работы:** Март 2026  
 **Первая публикация:** 2026-05-26  
-**Последнее обновление:** 2026-08-03 (v1.0.20 — S2SCOOP cont+39 ЭШЕЛОН-2 kn.1 apply per Iskra S248 МАЯК-КАНОН-DEDUP: 11 патчей П6-П16 в мастерах portal + agile-sapiens (preface: удалена секция «Проблема парадокса интуитивности» + вставлен указатель абзац + удалено примечание «² Allied Market Research» + перенумерация ³→²/⁴→³ + 4 wording замены; chapter-0-pilot: «семнадцать программистов в горах Юты» → без числа, финал двух абзацев слит в один, «спустя после» → «через... после»; term-α EN «Literary Business Analysis» → «Literary Analysis of Business» body+description; §2 rename Иви→Искра preface + afterword + acknowledgments + colophon 2x. Slug-теги оставлены per URL-стабильность мой carte-blanche verdict. Post-checks Iskra §1.2 PASS.)  
+**Последнее обновление:** 2026-08-16 (v1.0.25 — S1TREN cont+5+6 CARTOUCHE L3 apply Iskra Vier-Augen VIZA-KASKAD Batch07-10 canon-quotes 13 fixes (Batch07 Мина Харкер board/committee + reformulate дневниковой цитаты per KN1-FAKTY-12 Q-C15 verdict / Batch08 Джекил canonical Стивенсон «I shall die» + «Others will follow» / Batch09 Дон Кихот canonical Ormsby «thirty or forty windmills» / Batch10 Time Machine title) через portal PR #190 + KN1-FAKTY-13 Стивенсон «тридцать четыре» не «тридцать пять» per Q-C16 verdict + EN-TITLE-RENUM-1 5 EN chapter titles alignment + niichavo chapter field drift 9→10 bonus catch через PR #192 + KAND-1 колофон trilogy naming ratify «Книга 1 серии FolkUp, трилогия „Своими силами"» + KAND-2 content version bump v1.0.20→v1.0.25 per Iskra VIZA-KASKAD S287-02 KANON VERSION-COLOPHON-1 «версия колофона соответствует контентной версии мастера».)  
+**Предыдущее обновление:** 2026-08-03 (v1.0.20 — S2SCOOP cont+39 ЭШЕЛОН-2 kn.1 apply per Iskra S248 МАЯК-КАНОН-DEDUP: 11 патчей П6-П16 в мастерах portal + agile-sapiens (preface: удалена секция «Проблема парадокса интуитивности» + вставлен указатель абзац + удалено примечание «² Allied Market Research» + перенумерация ³→²/⁴→³ + 4 wording замены; chapter-0-pilot: «семнадцать программистов в горах Юты» → без числа, финал двух абзацев слит в один, «спустя после» → «через... после»; term-α EN «Literary Business Analysis» → «Literary Analysis of Business» body+description; §2 rename Иви→Искра preface + afterword + acknowledgments + colophon 2x. Slug-теги оставлены per URL-стабильность мой carte-blanche verdict. Post-checks Iskra §1.2 PASS.)  
 **Предыдущее обновление:** 2026-07-29 (v1.0.19 — S2SCOOP cont+31 автономный patch по Андрея carte blanche: FACT#2 глава 3 L101 убрана формулировка «когда SEC потребовала снять его с боевой работы» (SEC Administrative Proceeding File No. 3-15570 от 16.10.2013 не содержит приказа SEC на снятие Power Peg; Knight Capital сам прекратил использование в 2003); обложка static/images/cover.webp = Frida canonical KANON v2 800×1200 (S1FRIDA PR#33+40 MERGED); колофон sync с package.json 1.0.19.)  
 **Предыдущее обновление:** 2026-07-29 (v1.0.18 — S3SCOOP cont+31: Iskra S233 evidence p5 колофон version bump + p6 гл.5 Немо dedicated plate + FACT#1 chapter-3-holmes «семилетней»→«девятилетней» + FACT#3 Digital.ai 2024→2023.)  
 **Предыдущее обновление:** 2026-07-29 (v1.0.17 — Iskra S232 3 хирургических правки Жюль Верн факт-паспорт: «пятнадцать месяцев» вместо «двадцать три выпуска», экономика фельетона 31 выпуск × 75 сантимов = 23 франка, маржинальность ~560% вместо 400%.)  
