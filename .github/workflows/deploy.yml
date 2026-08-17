@@ -157,6 +157,37 @@ jobs:
             done
           done
 
+      - name: Post-deploy smoke test — downloads URLs (LESSON-S288-2 defense)
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        run: |
+          # LESSON-S288-2 (Iskra VERDICT-S289-01 §4 · S1PT cont+24): защита от phantom
+          # downloads URLs. String-match тест version не гарантирует физическое
+          # существование файла. Precedent: PR #197 series.yaml v1.0.25 bump без
+          # физического rebuild pipeline output → user-facing 404 регрессия на prod.
+          # Динамически парсим series.yaml → все downloads.epub/pdf для status=live books.
+          python3 -c "
+          import yaml
+          with open('data/series.yaml', encoding='utf-8') as f:
+              data = yaml.safe_load(f)
+          for book in data.get('books', []):
+              if book.get('status') == 'live':
+                  downloads = book.get('downloads') or {}
+                  for kind in ('epub', 'pdf'):
+                      url = downloads.get(kind)
+                      if url:
+                          print(url)
+          " | while read -r url; do
+            for i in 1 2 3; do
+              STATUS=$(curl -sSL --max-time 15 -o /dev/null -w "%{http_code}" "$url")
+              if [ "$STATUS" = "200" ]; then
+                echo "✓ $url ($STATUS)"
+                break
+              fi
+              [ $i -eq 3 ] && (echo "❌ DOWNLOAD PHANTOM: $url ($STATUS)" && exit 1)
+              sleep 3
+            done
+          done
+
       - name: IndexNow ping (Bing + Yandex — Google не поддерживает)
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: |
