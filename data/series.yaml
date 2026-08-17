@@ -64,8 +64,8 @@ books:
     date_relicensed: 2026-06-25
     date_patched: 2026-08-16  # v1.0.25 S1TREN cont+5+6 CARTOUCHE L3 2026-08-16: КОНТЕНТНЫЙ bump per Iskra VIZA-KASKAD S287-02 KANON VERSION-COLOPHON-1 «версия колофона = контентной версии мастера». KN1-FAKTY-12 Мина Харкер дневниковая цитата reformulate + KN1-FAKTY-13 Стивенсон «тридцать четыре» + Batch07-10 canon-quotes cascade EN mirror (Мина board/committee + Джекил «I shall die» + Дон Кихот «thirty or forty» + Time Machine title) через PR #190 + EN-TITLE-RENUM-1 через PR #192 + KAND-1 колофон trilogy naming «Книга 1 серии FolkUp, трилогия „Своими силами"» + KAND-2 v1.0.25 bump. Downloads-файлы EPUB/PDF пересобрать при ближайшем build-цикле (правило Iskra «перевод не блокирует релиз»). Previous v1.0.24 S6SCOOP cont+7 2026-08-11: build pipeline fixes per Iskra GLAZA-VERDIKTY (Д-2 EPUB spine linear=no + Д-4-final PDF plates derivePlate + Д-4-Chrome-headers off) + Д-2b epubcheck OPF-096 fix (nav.xhtml link on title.xhtml). Iskra S274 PROD-GATE-GO ADDENDUM: «номер остаётся v1.0.24 (публично не выкладывался, bump не нужен)». Content unchanged relative v1.0.23. PRs chain: agile-sapiens #235 05ed2a8 + #236 9a4e5dd CI-guard + #237 41bc924 Д-2b.
     downloads:
-      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.24.epub
-      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.24.pdf
+      epub: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.25.epub
+      pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-v1.0.25.pdf
     # v1.0.20 cont+39/+44 S2SCOOP+S3SCOOP 2026-08-03: ЭШЕЛОН-2 dedup canon
     # per Iskra S248 МАЯК-КАНОН-DEDUP GO — 11 patches П6-П16 (dedup + rename
     # Иви→Искра + term-α EN form + hybrid П15 for portal absent ЭШЕЛОН-1).
