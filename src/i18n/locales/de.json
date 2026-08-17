@@ -45,6 +45,8 @@
     "translation_available": "verfügbar",
     "translation_stub_short": "in Arbeit",
     "translation_stub_full": "Die Übersetzung entsteht in der FolkUp-Werkstatt. Das Exponat wird bald in diesem Saal gezeigt.",
+    "translation_preview_short": "Vorschau",
+    "translation_preview_full": "Das Exponat ist zur Vorschau geöffnet — der Saal ist zugänglich, Arbeiten laufen weiter.",
     "trilogies": {
       "svoimi_silami": {
         "name": "Mit eigenen Kräften",

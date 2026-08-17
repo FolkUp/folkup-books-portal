@@ -149,6 +149,10 @@ const hasAnyPreparing = computed(() =>
   translationEntries.value.some((entry) => entry.status === 'preparing')
 )
 
+const hasAnyPreview = computed(() =>
+  translationEntries.value.some((entry) => entry.status === 'preview')
+)
+
 const SITE_URL = 'https://books.folkup.life'
 
 // Per-book og:image — PNG version для соцсетей (Iskra STOP-MAYAK S219 §2д:
@@ -375,6 +379,7 @@ if (book.value) {
               class="book-page__translation-item"
               :class="{
                 'book-page__translation-item--live': entry.status === 'live',
+                'book-page__translation-item--preview': entry.status === 'preview',
                 'book-page__translation-item--preparing': entry.status === 'preparing',
               }"
             >
@@ -383,14 +388,19 @@ if (book.value) {
                 class="book-page__translation-badge"
                 :class="{
                   'book-page__translation-badge--live': entry.status === 'live',
+                  'book-page__translation-badge--preview': entry.status === 'preview',
                   'book-page__translation-badge--preparing': entry.status === 'preparing',
                 }"
               >
                 <template v-if="entry.status === 'live'">{{ t('portal.translation_available') }}</template>
+                <template v-else-if="entry.status === 'preview'">{{ t('portal.translation_preview_short') }}</template>
                 <template v-else>{{ t('portal.translation_stub_short') }}</template>
               </span>
             </li>
           </ul>
+          <p v-if="hasAnyPreview" class="book-page__translation-stub-full">
+            {{ t('portal.translation_preview_full') }}
+          </p>
           <p v-if="hasAnyPreparing" class="book-page__translation-stub-full">
             {{ t('portal.translation_stub_full') }}
           </p>

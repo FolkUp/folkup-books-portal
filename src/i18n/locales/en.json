@@ -45,6 +45,8 @@
     "translation_available": "available",
     "translation_stub_short": "in progress",
     "translation_stub_full": "The translation is taking shape in the FolkUp workshop. The exhibit will soon appear in this hall — come in.",
+    "translation_preview_short": "preview",
+    "translation_preview_full": "The exhibit is open for preview — enter the hall, work continues.",
     "trilogies": {
       "svoimi_silami": {
         "name": "By Our Own Means",
