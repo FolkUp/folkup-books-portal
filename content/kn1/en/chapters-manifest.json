@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-16T20:41:03.942Z",
+  "generated": "2026-08-17T03:14:47.074Z",
   "book": "kn1",
   "locale": "en",
   "entries": [
@@ -162,6 +162,16 @@
       "act_opener": false,
       "isApparatus": false,
       "order": 120
+    },
+    {
+      "slug": "afterword",
+      "title": "Afterword. Eleven Questions",
+      "description": "Afterword to Agile Sapiens — a synthesis of twelve chapters into eleven diagnostic questions, with a frame from the pilot chapter. Not commands, but questions.",
+      "weight": 1000,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 8000
     },
     {
       "slug": "apparatus-sources",
