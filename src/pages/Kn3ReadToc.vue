@@ -4,11 +4,28 @@
  */
 import { computed } from 'vue'
 import { useHead } from '@unhead/vue'
+import { useI18n } from 'vue-i18n'
 import { useKn3Chapters } from '../composables/useKn3Chapters'
 
 const chapters = useKn3Chapters()
 
 const SITE_URL = 'https://books.folkup.life'
+
+// HARDCODED-RU-STRINGS refactor S1PT cont+25: mirror Kn1 NAV_LABELS pattern.
+// Inline dictionary reusing Kn1 translations verbatim (ru/pt/en, DE fallback к RU).
+const { locale } = useI18n()
+type Lang = 'ru' | 'pt' | 'en'
+const NAV_LABELS: Record<Lang, { breadcrumbLibrary: string }> = {
+  ru: { breadcrumbLibrary: 'Библиотека' },
+  pt: { breadcrumbLibrary: 'Biblioteca' },
+  en: { breadcrumbLibrary: 'Library' },
+}
+const lang = computed<Lang>(() => {
+  const l = locale.value
+  if (l === 'pt' || l === 'en') return l
+  return 'ru'
+})
+const labels = computed(() => NAV_LABELS[lang.value])
 
 useHead({
   title: 'Читать онлайн — Город Солнца — Библиотека FolkUp',
@@ -47,7 +64,7 @@ const sections = computed<TocSection[]>(() => {
 <template>
   <main class="reader-toc">
     <nav class="reader-toc__breadcrumb" aria-label="Хлебные крошки">
-      <RouterLink to="/">Библиотека</RouterLink>
+      <RouterLink to="/">{{ labels.breadcrumbLibrary }}</RouterLink>
       <span>›</span>
       <RouterLink to="/kn3">Город Солнца</RouterLink>
       <span>›</span>

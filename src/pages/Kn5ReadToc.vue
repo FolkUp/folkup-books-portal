@@ -1,11 +1,27 @@
 <script setup lang="ts">
 import { computed } from 'vue'
 import { useHead } from '@unhead/vue'
+import { useI18n } from 'vue-i18n'
 import { useKn5Chapters } from '../composables/useKn5Chapters'
 
 const chapters = useKn5Chapters()
 
 const SITE_URL = 'https://books.folkup.life'
+
+// HARDCODED-RU-STRINGS refactor S1PT cont+25: mirror Kn1 NAV_LABELS pattern.
+const { locale } = useI18n()
+type Lang = 'ru' | 'pt' | 'en'
+const NAV_LABELS: Record<Lang, { breadcrumbLibrary: string }> = {
+  ru: { breadcrumbLibrary: 'Библиотека' },
+  pt: { breadcrumbLibrary: 'Biblioteca' },
+  en: { breadcrumbLibrary: 'Library' },
+}
+const lang = computed<Lang>(() => {
+  const l = locale.value
+  if (l === 'pt' || l === 'en') return l
+  return 'ru'
+})
+const labels = computed(() => NAV_LABELS[lang.value])
 
 useHead({
   title: 'Читать онлайн — Чужими руками — Библиотека FolkUp',
@@ -40,7 +56,7 @@ const sections = computed<TocSection[]>(() => {
 <template>
   <main class="reader-toc">
     <nav class="reader-toc__breadcrumb" aria-label="Хлебные крошки">
-      <RouterLink to="/">Библиотека</RouterLink>
+      <RouterLink to="/">{{ labels.breadcrumbLibrary }}</RouterLink>
       <span>›</span>
       <RouterLink to="/kn5">Чужими руками</RouterLink>
       <span>›</span>
