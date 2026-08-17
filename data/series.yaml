@@ -100,7 +100,7 @@ books:
     translations:
       ru: live
       de: preparing
-      en: preparing
+      en: preview
       pt: preparing
     isbn: null  # Pending Гутенберг + Bowker
 
