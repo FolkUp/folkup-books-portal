@@ -15,10 +15,10 @@ const SITE_URL = 'https://books.folkup.life'
 // Inline dictionary reusing Kn1 translations verbatim (ru/pt/en, DE fallback к RU).
 const { locale } = useI18n()
 type Lang = 'ru' | 'pt' | 'en'
-const NAV_LABELS: Record<Lang, { breadcrumbLibrary: string }> = {
-  ru: { breadcrumbLibrary: 'Библиотека' },
-  pt: { breadcrumbLibrary: 'Biblioteca' },
-  en: { breadcrumbLibrary: 'Library' },
+const NAV_LABELS: Record<Lang, { breadcrumbLibrary: string; breadcrumbAria: string }> = {
+  ru: { breadcrumbLibrary: 'Библиотека', breadcrumbAria: 'Хлебные крошки' },
+  pt: { breadcrumbLibrary: 'Biblioteca', breadcrumbAria: 'Trilha de navegação' },
+  en: { breadcrumbLibrary: 'Library', breadcrumbAria: 'Breadcrumbs' },
 }
 const lang = computed<Lang>(() => {
   const l = locale.value
@@ -63,7 +63,7 @@ const sections = computed<TocSection[]>(() => {
 
 <template>
   <main class="reader-toc">
-    <nav class="reader-toc__breadcrumb" aria-label="Хлебные крошки">
+    <nav class="reader-toc__breadcrumb" :aria-label="labels.breadcrumbAria">
       <RouterLink to="/">{{ labels.breadcrumbLibrary }}</RouterLink>
       <span>›</span>
       <RouterLink to="/kn3">Город Солнца</RouterLink>
