@@ -31,8 +31,15 @@ const chapters = computed(() => useKn1ChaptersLang(lang.value).value)
 const { bookBySlug } = useSeriesData()
 
 const kn1 = computed(() => bookBySlug('kn1'))
-const epubHref = computed(() => kn1.value?.downloads?.epub ?? '/kn1')
-const pdfHref = computed(() => kn1.value?.downloads?.pdf ?? '/kn1')
+// Per-locale downloads resolve per Iskra KANON-VOROTA S289-07 LIVE-GATE-EN-1 G2:
+// `book.downloads?.[locale]?.epub` → per-locale nested (EN v1.0.0), fallback к
+// `book.downloads?.epub` (RU top-level). Mirror BookPage.vue localeDownloads pattern.
+const epubHref = computed(
+  () => kn1.value?.downloads?.[lang.value]?.epub ?? kn1.value?.downloads?.epub ?? '/kn1',
+)
+const pdfHref = computed(
+  () => kn1.value?.downloads?.[lang.value]?.pdf ?? kn1.value?.downloads?.pdf ?? '/kn1',
+)
 
 const SITE_URL = 'https://books.folkup.life'
 
