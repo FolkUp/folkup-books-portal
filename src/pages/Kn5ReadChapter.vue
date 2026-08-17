@@ -25,21 +25,29 @@ const NAV_LABELS: Record<Lang, {
   breadcrumbLibrary: string
   breadcrumbToc: string
   notFoundLink: string
+  breadcrumbAria: string
+  navChaptersAria: string
 }> = {
   ru: {
     breadcrumbLibrary: 'Библиотека',
     breadcrumbToc: 'Оглавление',
     notFoundLink: 'вернитесь к оглавлению',
+    breadcrumbAria: 'Хлебные крошки',
+    navChaptersAria: 'Навигация по главам',
   },
   pt: {
     breadcrumbLibrary: 'Biblioteca',
     breadcrumbToc: 'Índice',
     notFoundLink: 'volte ao índice',
+    breadcrumbAria: 'Trilha de navegação',
+    navChaptersAria: 'Navegação de capítulos',
   },
   en: {
     breadcrumbLibrary: 'Library',
     breadcrumbToc: 'Contents',
     notFoundLink: 'return to contents',
+    breadcrumbAria: 'Breadcrumbs',
+    navChaptersAria: 'Chapter navigation',
   },
 }
 const lang = computed<Lang>(() => {
@@ -103,7 +111,7 @@ useHead({
 
 <template>
   <main class="reader-chapter">
-    <nav class="reader-chapter__breadcrumb" aria-label="Хлебные крошки">
+    <nav class="reader-chapter__breadcrumb" :aria-label="labels.breadcrumbAria">
       <RouterLink to="/">{{ labels.breadcrumbLibrary }}</RouterLink>
       <span>›</span>
       <RouterLink to="/kn5">Чужими руками</RouterLink>
@@ -119,7 +127,7 @@ useHead({
       <!-- v-html: контент из trusted source pre-rendered by marked at build time
            (см. scripts/kn5-reader-manifest.mjs). Sync render — SSR-safe. -->
       <div class="reader-chapter__content" v-html="renderedHtml"></div>
-      <nav class="reader-chapter__nav" aria-label="Навигация по главам">
+      <nav class="reader-chapter__nav" :aria-label="labels.navChaptersAria">
         <RouterLink
           v-if="chapterData.prev"
           :to="`/kn5/read/${chapterData.prev.slug}`"

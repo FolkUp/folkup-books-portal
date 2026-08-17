@@ -11,10 +11,10 @@ const SITE_URL = 'https://books.folkup.life'
 // HARDCODED-RU-STRINGS refactor S1PT cont+25: mirror Kn1 NAV_LABELS pattern.
 const { locale } = useI18n()
 type Lang = 'ru' | 'pt' | 'en'
-const NAV_LABELS: Record<Lang, { breadcrumbLibrary: string }> = {
-  ru: { breadcrumbLibrary: 'Библиотека' },
-  pt: { breadcrumbLibrary: 'Biblioteca' },
-  en: { breadcrumbLibrary: 'Library' },
+const NAV_LABELS: Record<Lang, { breadcrumbLibrary: string; breadcrumbAria: string }> = {
+  ru: { breadcrumbLibrary: 'Библиотека', breadcrumbAria: 'Хлебные крошки' },
+  pt: { breadcrumbLibrary: 'Biblioteca', breadcrumbAria: 'Trilha de navegação' },
+  en: { breadcrumbLibrary: 'Library', breadcrumbAria: 'Breadcrumbs' },
 }
 const lang = computed<Lang>(() => {
   const l = locale.value
@@ -55,7 +55,7 @@ const sections = computed<TocSection[]>(() => {
 
 <template>
   <main class="reader-toc">
-    <nav class="reader-toc__breadcrumb" aria-label="Хлебные крошки">
+    <nav class="reader-toc__breadcrumb" :aria-label="labels.breadcrumbAria">
       <RouterLink to="/">{{ labels.breadcrumbLibrary }}</RouterLink>
       <span>›</span>
       <RouterLink to="/kn4">Где живёт новое</RouterLink>

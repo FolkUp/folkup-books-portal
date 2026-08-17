@@ -32,21 +32,33 @@ const NAV_LABELS: Record<Lang, {
   breadcrumbLibrary: string
   breadcrumbToc: string
   notFoundLink: string
+  breadcrumbAria: string
+  navChaptersTopAria: string
+  navChaptersBottomAria: string
 }> = {
   ru: {
     breadcrumbLibrary: 'Библиотека',
     breadcrumbToc: 'Оглавление',
     notFoundLink: 'вернитесь к оглавлению',
+    breadcrumbAria: 'Хлебные крошки',
+    navChaptersTopAria: 'Навигация по главам (верх)',
+    navChaptersBottomAria: 'Навигация по главам',
   },
   pt: {
     breadcrumbLibrary: 'Biblioteca',
     breadcrumbToc: 'Índice',
     notFoundLink: 'volte ao índice',
+    breadcrumbAria: 'Trilha de navegação',
+    navChaptersTopAria: 'Navegação de capítulos (topo)',
+    navChaptersBottomAria: 'Navegação de capítulos',
   },
   en: {
     breadcrumbLibrary: 'Library',
     breadcrumbToc: 'Contents',
     notFoundLink: 'return to contents',
+    breadcrumbAria: 'Breadcrumbs',
+    navChaptersTopAria: 'Chapter navigation (top)',
+    navChaptersBottomAria: 'Chapter navigation',
   },
 }
 const lang = computed<Lang>(() => {
@@ -114,7 +126,7 @@ useHead({
 
 <template>
   <main class="reader-chapter">
-    <nav class="reader-chapter__breadcrumb" aria-label="Хлебные крошки">
+    <nav class="reader-chapter__breadcrumb" :aria-label="labels.breadcrumbAria">
       <RouterLink to="/">{{ labels.breadcrumbLibrary }}</RouterLink>
       <span>›</span>
       <RouterLink to="/kn3">Город Солнца</RouterLink>
@@ -132,7 +144,7 @@ useHead({
       <!-- READER-NAV-1 cont+14: top nav mirror bottom nav (compact — labels only) -->
       <nav
         class="reader-chapter__nav reader-chapter__nav--top"
-        aria-label="Навигация по главам (верх)"
+        :aria-label="labels.navChaptersTopAria"
       >
         <RouterLink
           v-if="chapterData.prev"
@@ -153,7 +165,7 @@ useHead({
            (см. scripts/kn3-reader-manifest.mjs). Sync render — SSR-safe. -->
       <div class="reader-chapter__content" v-html="renderedHtml"></div>
 
-      <nav class="reader-chapter__nav" aria-label="Навигация по главам">
+      <nav class="reader-chapter__nav" :aria-label="labels.navChaptersBottomAria">
         <RouterLink
           v-if="chapterData.prev"
           :to="`/kn3/read/${chapterData.prev.slug}`"
