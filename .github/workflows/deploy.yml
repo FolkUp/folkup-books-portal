@@ -102,6 +102,17 @@ jobs:
       - name: Install Playwright browsers (все браузеры — playwright.config uses WebKit для mobile viewports)
         if: steps.paths.outputs.content-only != 'true'
         run: npx playwright install --with-deps chromium webkit
+        timeout-minutes: 10
+        continue-on-error: true
+        # EMERGENCY UNBLOCK per S1VITRINA cont+5 2026-08-18:
+        # runner infrastructure issue causing 50+ min stalls on this step
+        # (2 consecutive attempts stuck: #1 = 53 min, #2 = 1h 50m).
+        # GitHub Actions status «All Operational» — issue localized.
+        # timeout-minutes:10 caps stall, continue-on-error:true unblocks deploy.
+        # Playwright tests below already continue-on-error:true (line 113), so
+        # failure cascade non-blocking.
+        # TODO cont+6 (Кочегарь scope): permanent fix via actions/cache
+        # ~/.cache/ms-playwright/ + revert emergency mitigation after cache lands.
 
       # Playwright tests — full E2E + visual regression + a11y + Schema.
       # Skip для content-only PRs (chapter markdown / EPUB placement / series.yaml —
