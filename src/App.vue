@@ -93,8 +93,8 @@ watch(
 
 // buildLangUrl: строит адрес параллельной языковой версии текущей страницы.
 // Reader routes: /kn{N}/read ↔ /kn{N}/{lang}/read (chapter tail preserved).
-// Non-reader routes: возвращает currentPath (§2.5 «нет версии — переключатель ведёт на
-// существующий адрес», в нашем случае карточка книги уже соответствует RU-only).
+// Book-page routes: /kn{N} (RU default) OR /kn{N}/{lang} (pre-rendered locale, fast-follow).
+// Non-reader/unknown routes: возвращает currentPath (§2.5 fallback).
 function buildLangUrl(currentPath: string, targetLang: SupportedLocale): string {
   const withLangMatch = currentPath.match(/^\/(kn\d+)\/(ru|pt|en|de)\/read(\/.*)?$/)
   if (withLangMatch) {
@@ -108,6 +108,24 @@ function buildLangUrl(currentPath: string, targetLang: SupportedLocale): string 
     const [, book, tail = ''] = withoutLangMatch
     if (targetLang === 'ru') return currentPath
     return `/${book}/${targetLang}/read${tail}`
+  }
+
+  // Book-page routes: /kn{N} OR /kn{N}/{lang} (with optional trailing slash).
+  // Hotfix per Iskra S291-03 T2 INC-KN1-LANG-SWITCH-1 (scoped kn1 per explicit ticket
+  // wording «hotfix href на /kn1/en/read/»; «системный для будущих флипов DE/PT» handled
+  // когда те флипы happen с ticket 11 conditional render в place). Currently kn1=EN live
+  // (LIVE-GATE-EN-1 closed post-PR #207 flip), kn2-7 = EN «готовится» → /kn{N}/en/read = 404.
+  // TODO cont+6 (ticket 11 owner): implement conditional render — check series.yaml
+  // translations.[lang].status === 'live' pre-route (NOT hardcode per Iskra visa 6).
+  const bookPageMatch = currentPath.match(/^\/(kn\d+)(?:\/(?:ru|en|pt|de))?\/?$/)
+  if (bookPageMatch) {
+    const [, book] = bookPageMatch
+    if (targetLang === 'ru') return `/${book}`
+    // Kn1 EN currently live — safe to route к reader landing.
+    if (book === 'kn1' && targetLang === 'en') return `/${book}/en/read`
+    // Other books/langs: no confirmed translation live → silent stay preserves
+    // pre-hotfix UX (no 404 regression). Ticket 11 will make this conditional-render clean.
+    return currentPath
   }
 
   return currentPath
