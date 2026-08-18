@@ -93,8 +93,8 @@ watch(
 
 // buildLangUrl: строит адрес параллельной языковой версии текущей страницы.
 // Reader routes: /kn{N}/read ↔ /kn{N}/{lang}/read (chapter tail preserved).
-// Non-reader routes: возвращает currentPath (§2.5 «нет версии — переключатель ведёт на
-// существующий адрес», в нашем случае карточка книги уже соответствует RU-only).
+// Book-page routes: /kn{N} (RU default) OR /kn{N}/{lang} (pre-rendered locale, fast-follow).
+// Non-reader/unknown routes: возвращает currentPath (§2.5 fallback).
 function buildLangUrl(currentPath: string, targetLang: SupportedLocale): string {
   const withLangMatch = currentPath.match(/^\/(kn\d+)\/(ru|pt|en|de)\/read(\/.*)?$/)
   if (withLangMatch) {
@@ -108,6 +108,17 @@ function buildLangUrl(currentPath: string, targetLang: SupportedLocale): string 
     const [, book, tail = ''] = withoutLangMatch
     if (targetLang === 'ru') return currentPath
     return `/${book}/${targetLang}/read${tail}`
+  }
+
+  // Book-page routes: /kn{N} OR /kn{N}/{lang} (with optional trailing slash).
+  // Hotfix per Iskra S291-03 T2 INC-KN1-LANG-SWITCH-1: pre-rendered /kn{N}/{lang}/
+  // book page currently 404 → route EN/PT/DE switcher к reader landing /kn{N}/{lang}/read
+  // (200 verified). Full pre-rendered locale book pages = fast-follow P1.
+  const bookPageMatch = currentPath.match(/^\/(kn\d+)(?:\/(?:ru|en|pt|de))?\/?$/)
+  if (bookPageMatch) {
+    const [, book] = bookPageMatch
+    if (targetLang === 'ru') return `/${book}`
+    return `/${book}/${targetLang}/read`
   }
 
   return currentPath
