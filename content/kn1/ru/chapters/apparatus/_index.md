@@ -10,20 +10,20 @@ toc: false
 
 ## Разделы аппарата
 
-### [Выходные данные](/apparatus/colophon/)
+### [Выходные данные](/kn1/read/apparatus-colophon)
 Издательская информация — кто, когда, как создавал эту книгу.
 
-### [Методология](/apparatus/methodology/)  
+### [Методология](/kn1/read/apparatus-methodology)  
 Как проводилось исследование — принципы, стандарты, подходы к анализу.
 
-### [Источники](/apparatus/sources/)
+### [Источники](/kn1/read/apparatus-sources)
 Полная библиография всех использованных источников с группировкой по главам.
 
-### [Предметный указатель](/apparatus/predmetnyy-ukazatel/)
+### [Предметный указатель](/kn1/read/apparatus-predmetnyy-ukazatel)
 Алфавитный указатель ключевых понятий, персонажей и категорий книги — с отсылками к главам и приложениям.
 
-### [Прозрачность ИИ](/apparatus/transparency/)
+### [Прозрачность ИИ](/kn1/read/apparatus-transparency)
 Заявление о прозрачности использования ИИ в соответствии с EU AI Act Article 50.
 
-### [Благодарности](/apparatus/acknowledgments/)
+### [Благодарности](/kn1/read/apparatus-acknowledgments)
 Признательность всем, кто помогал в создании этой книги.

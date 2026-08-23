@@ -12,7 +12,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "prebuild": "node scripts/kn1-reader-manifest.mjs --lang=ru && node scripts/kn1-reader-manifest.mjs --lang=pt && node scripts/kn1-reader-manifest.mjs --lang=en && node scripts/kn3-reader-manifest.mjs && node scripts/kn4-reader-manifest.mjs && node scripts/kn5-reader-manifest.mjs",
+    "prebuild": "node scripts/build-marker.mjs && node scripts/kn1-reader-manifest.mjs --lang=ru && node scripts/kn1-reader-manifest.mjs --lang=pt && node scripts/kn1-reader-manifest.mjs --lang=en && node scripts/kn3-reader-manifest.mjs && node scripts/kn4-reader-manifest.mjs && node scripts/kn5-reader-manifest.mjs",
     "build": "cross-env NODE_OPTIONS=--experimental-require-module vite-ssg build",
     "preview": "vite preview",
     "test:unit": "vitest run",

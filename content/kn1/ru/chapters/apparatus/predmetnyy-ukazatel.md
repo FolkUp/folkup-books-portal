@@ -558,4 +558,4 @@ note: "Skeleton with chapter-level locators only. Page references will be added 
 
 ---
 
-*[← Назад к аппарату](/apparatus/)*
+*[← Назад к аппарату](/kn1/read)*

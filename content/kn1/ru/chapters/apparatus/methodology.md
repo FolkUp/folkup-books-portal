@@ -59,4 +59,4 @@ HTTPS, Content Security Policy, защищённые заголовки.
 
 ---
 
-*[← Назад к аппарату](/apparatus/) • [К оглавлению ↗](/chapters/)*
+*[К оглавлению ↗](/kn1/read)*
