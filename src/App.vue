@@ -128,6 +128,22 @@ function buildLangUrl(currentPath: string, targetLang: SupportedLocale): string 
     return currentPath
   }
 
+  // Legal + about + ai-disclosure — TICKET 9 P1 unblock BL-LAUNCH-1 per Iskra S291.
+  // Routes: /{page} (RU default) OR /en/{page}. EN i18n keys ALL preexist в en.json.
+  // PT+DE NOT currently mapped for legal (i18n keys present but нет ratified route decision) —
+  // future work по расширению spec.
+  const LEGAL_PAGES = ['ai-disclosure', 'about', 'privacy', 'terms', 'cookies', 'imprint']
+  const legalMatch = currentPath.match(/^(?:\/(en))?\/([\w-]+)\/?$/)
+  if (legalMatch) {
+    const [, currentLangPrefix, page] = legalMatch
+    if (LEGAL_PAGES.includes(page)) {
+      if (targetLang === 'ru') return `/${page}`
+      if (targetLang === 'en') return `/en/${page}`
+      // pt/de not yet supported for legal — silent stay preserves UX
+      return currentLangPrefix ? `/${currentLangPrefix}/${page}` : `/${page}`
+    }
+  }
+
   return currentPath
 }
 

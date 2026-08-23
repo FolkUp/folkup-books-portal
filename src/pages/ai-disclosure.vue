@@ -10,12 +10,23 @@
  * - Human editorial oversight gates
  * - License CC BY-SA 4.0
  */
+import { computed } from 'vue'
 import { useHead } from '@unhead/vue'
 import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
 
 const { t } = useI18n()
+const route = useRoute()
 
 const SITE_URL = 'https://books.folkup.life'
+
+// TICKET 9 P1 (S8SCOOP cont+0): dynamic canonical + hreflang alt EN per route.meta.lang.
+// /ai-disclosure (RU default) OR /en/ai-disclosure (EN variant). Both self-canonical для правильной
+// SEO indexation. hreflang cross-refs both variants + x-default → RU master.
+const currentLang = computed<string>(() => (route.meta.lang as string) || 'ru')
+const currentUrl = computed(() =>
+  currentLang.value === 'en' ? `${SITE_URL}/en/ai-disclosure/` : `${SITE_URL}/ai-disclosure/`,
+)
 
 useHead({
   title: () => t('ai_disclosure.title') + ' — ' + t('brand.name'),
@@ -25,36 +36,43 @@ useHead({
     { property: 'og:title', content: () => t('ai_disclosure.title') },
     { property: 'og:description', content: () => t('ai_disclosure.meta_description') },
     { property: 'og:type', content: 'website' },
-    { property: 'og:url', content: `${SITE_URL}/ai-disclosure/` },
+    { property: 'og:url', content: () => currentUrl.value },
     { name: 'twitter:card', content: 'summary' },
     { name: 'twitter:title', content: () => t('ai_disclosure.title') },
     { name: 'twitter:description', content: () => t('ai_disclosure.meta_description') },
   ],
   link: [
-    { rel: 'canonical', href: `${SITE_URL}/ai-disclosure/` },
+    { rel: 'canonical', href: () => currentUrl.value },
     { rel: 'alternate', hreflang: 'ru', href: `${SITE_URL}/ai-disclosure/` },
+    { rel: 'alternate', hreflang: 'en', href: `${SITE_URL}/en/ai-disclosure/` },
     { rel: 'alternate', hreflang: 'x-default', href: `${SITE_URL}/ai-disclosure/` },
   ],
   script: [
     {
       type: 'application/ld+json',
-      innerHTML: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'WebPage',
-        '@id': `${SITE_URL}/ai-disclosure/#webpage`,
-        name: 'Раскрытие использования ИИ — Библиотека FolkUp',
-        url: `${SITE_URL}/ai-disclosure/`,
-        description: 'AI usage disclosure per EU AI Act Article 50(4). Legal name of natural person responsible for editorial oversight: Andrei Klemenchenok.',
-        publisher: { '@id': `${SITE_URL}/#organization` },
-        mainEntity: {
-          '@type': 'Person',
-          name: 'Andrei Klemenchenok',
-          jobTitle: 'Editor / Publisher',
-          worksFor: { '@id': `${SITE_URL}/#organization` },
-          description: 'Natural person responsible для editorial oversight of AI-assisted content per EU AI Act Art. 50(4)(b). Publishes under pseudonym «Команданте FolkUp».',
-        },
-        inLanguage: 'ru',
-      }),
+      innerHTML: () =>
+        JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'WebPage',
+          '@id': `${currentUrl.value}#webpage`,
+          name:
+            currentLang.value === 'en'
+              ? 'AI Usage Disclosure — FolkUp Library'
+              : 'Раскрытие использования ИИ — Библиотека FolkUp',
+          url: currentUrl.value,
+          description:
+            'AI usage disclosure per EU AI Act Article 50(4). Legal name of natural person responsible for editorial oversight: Andrei Klemenchenok.',
+          publisher: { '@id': `${SITE_URL}/#organization` },
+          mainEntity: {
+            '@type': 'Person',
+            name: 'Andrei Klemenchenok',
+            jobTitle: 'Editor / Publisher',
+            worksFor: { '@id': `${SITE_URL}/#organization` },
+            description:
+              'Natural person responsible for editorial oversight of AI-assisted content per EU AI Act Art. 50(4)(b). Publishes under pseudonym «Команданте FolkUp».',
+          },
+          inLanguage: currentLang.value,
+        }),
     },
   ],
 })

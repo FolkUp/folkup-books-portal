@@ -170,6 +170,46 @@ export const routes: RouteRecordRaw[] = [
     component: () => import('../pages/legal/imprint.vue'),
     meta: { pageType: 'legal', pageKey: 'imprint' },
   },
+  // EN legal + about + ai-disclosure — TICKET 9 P1 unblock BL-LAUNCH-1
+  // per Iskra S291 «минимум /en/ai-disclosure и /en/about должны жить до постинга»
+  // EN i18n keys ALL preexist в en.json (RU parity 121/120 verified S8SCOOP cont+0).
+  // meta.lang='en' triggers App.vue watcher → i18n locale swap → EN content renders.
+  {
+    path: '/en/about',
+    name: 'about-en',
+    component: () => import('../pages/about.vue'),
+    meta: { pageType: 'about', lang: 'en' },
+  },
+  {
+    path: '/en/ai-disclosure',
+    name: 'ai-disclosure-en',
+    component: () => import('../pages/ai-disclosure.vue'),
+    meta: { pageType: 'ai-disclosure', lang: 'en' },
+  },
+  {
+    path: '/en/privacy',
+    name: 'privacy-en',
+    component: () => import('../pages/legal/privacy.vue'),
+    meta: { pageType: 'legal', pageKey: 'privacy', lang: 'en' },
+  },
+  {
+    path: '/en/terms',
+    name: 'terms-en',
+    component: () => import('../pages/legal/terms.vue'),
+    meta: { pageType: 'legal', pageKey: 'terms', lang: 'en' },
+  },
+  {
+    path: '/en/cookies',
+    name: 'cookies-en',
+    component: () => import('../pages/legal/cookies.vue'),
+    meta: { pageType: 'legal', pageKey: 'cookies', lang: 'en' },
+  },
+  {
+    path: '/en/imprint',
+    name: 'imprint-en',
+    component: () => import('../pages/legal/imprint.vue'),
+    meta: { pageType: 'legal', pageKey: 'imprint', lang: 'en' },
+  },
   {
     path: '/:pathMatch(.*)*',
     name: 'not-found',

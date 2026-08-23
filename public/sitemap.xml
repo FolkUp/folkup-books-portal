@@ -55,38 +55,110 @@
   </url>
   <url>
     <loc>https://books.folkup.life/about/</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/about/"/>
+  </url>
+  <url>
+    <loc>https://books.folkup.life/en/about/</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/about/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/about/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/about/"/>
   </url>
   <url>
     <loc>https://books.folkup.life/ai-disclosure/</loc>
-    <lastmod>2026-07-18</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/ai-disclosure/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/ai-disclosure/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/ai-disclosure/"/>
+  </url>
+  <url>
+    <loc>https://books.folkup.life/en/ai-disclosure/</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.4</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/ai-disclosure/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/ai-disclosure/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/ai-disclosure/"/>
   </url>
   <url>
     <loc>https://books.folkup.life/privacy/</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/privacy/"/>
+  </url>
+  <url>
+    <loc>https://books.folkup.life/en/privacy/</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/privacy/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/privacy/"/>
   </url>
   <url>
     <loc>https://books.folkup.life/terms/</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/terms/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/terms/"/>
+  </url>
+  <url>
+    <loc>https://books.folkup.life/en/terms/</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/terms/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/terms/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/terms/"/>
   </url>
   <url>
     <loc>https://books.folkup.life/cookies/</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/cookies/"/>
+  </url>
+  <url>
+    <loc>https://books.folkup.life/en/cookies/</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/cookies/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/cookies/"/>
   </url>
   <url>
     <loc>https://books.folkup.life/imprint/</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-08-23</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/imprint/"/>
+  </url>
+  <url>
+    <loc>https://books.folkup.life/en/imprint/</loc>
+    <lastmod>2026-08-23</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.3</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/imprint/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/imprint/"/>
   </url>
 </urlset>

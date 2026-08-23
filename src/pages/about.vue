@@ -6,12 +6,22 @@
  * Schema.org AboutPage per S174c primatka §4.
  * Illustration slots (S1/S2/S3) — placeholders, финал Фрида (canon S138 stamp).
  */
+import { computed } from 'vue'
 import { useHead } from '@unhead/vue'
 import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
 
 const { t } = useI18n()
+const route = useRoute()
 
 const SITE_URL = 'https://books.folkup.life'
+
+// TICKET 9 P1 (S8SCOOP cont+0): dynamic canonical + hreflang alt EN per route.meta.lang.
+// /about (RU default) OR /en/about (EN variant). Self-canonical per variant. hreflang cross-refs.
+const currentLang = computed<string>(() => (route.meta.lang as string) || 'ru')
+const currentUrl = computed(() =>
+  currentLang.value === 'en' ? `${SITE_URL}/en/about/` : `${SITE_URL}/about/`,
+)
 
 useHead({
   title: () => t('about.title') + ' — ' + t('brand.name'),
@@ -20,6 +30,7 @@ useHead({
     { property: 'og:title', content: () => t('about.title') },
     { property: 'og:description', content: () => t('about.meta_description') },
     { property: 'og:type', content: 'website' },
+    { property: 'og:url', content: () => currentUrl.value },
     { property: 'og:image', content: `${SITE_URL}/covers/cover_kn1.svg` },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: () => t('about.title') },
@@ -27,24 +38,32 @@ useHead({
     { name: 'twitter:image', content: `${SITE_URL}/covers/cover_kn1.svg` },
   ],
   link: [
-    { rel: 'canonical', href: `${SITE_URL}/about/` },
+    { rel: 'canonical', href: () => currentUrl.value },
     { rel: 'alternate', hreflang: 'ru', href: `${SITE_URL}/about/` },
+    { rel: 'alternate', hreflang: 'en', href: `${SITE_URL}/en/about/` },
     { rel: 'alternate', hreflang: 'x-default', href: `${SITE_URL}/about/` },
   ],
   script: [
     {
       type: 'application/ld+json',
-      innerHTML: JSON.stringify({
-        '@context': 'https://schema.org',
-        '@type': 'AboutPage',
-        '@id': `${SITE_URL}/about/#aboutpage`,
-        name: 'О проекте — Библиотека FolkUp',
-        url: `${SITE_URL}/about/`,
-        description: 'О Библиотеке FolkUp: свободные книги под CC BY-SA 4.0 — нон-фикшн серия о командах и людях. Редактирует человек вместе с ИИ; за каждое слово отвечает человек.',
-        publisher: { '@id': `${SITE_URL}/#organization` },
-        mainEntity: { '@id': `${SITE_URL}/#series` },
-        inLanguage: 'ru',
-      }),
+      innerHTML: () =>
+        JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'AboutPage',
+          '@id': `${currentUrl.value}#aboutpage`,
+          name:
+            currentLang.value === 'en'
+              ? 'About — FolkUp Library'
+              : 'О проекте — Библиотека FolkUp',
+          url: currentUrl.value,
+          description:
+            currentLang.value === 'en'
+              ? 'About FolkUp Library: free books under CC BY-SA 4.0 — non-fiction series on teams and people. Human editing alongside AI; humans are accountable for every word.'
+              : 'О Библиотеке FolkUp: свободные книги под CC BY-SA 4.0 — нон-фикшн серия о командах и людях. Редактирует человек вместе с ИИ; за каждое слово отвечает человек.',
+          publisher: { '@id': `${SITE_URL}/#organization` },
+          mainEntity: { '@id': `${SITE_URL}/#series` },
+          inLanguage: currentLang.value,
+        }),
     },
   ],
 })
