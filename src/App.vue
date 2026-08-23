@@ -28,7 +28,10 @@ const routeLang = (): OgLang => {
   return locale.value as OgLang
 }
 // Iskra STOP-MAYAK S219 §2д: соцсети капризны к SVG. Wave 2 PNG отдаём для превью.
-const DEFAULT_OG_IMAGE = `${SITE_URL}/covers/cover_kn1.png`
+// S1ILLUS cont+0 Frida OG integration (Iskra PAKET-19 S288 «Визирую пускай приступает» + Andrey verbatim pick cont+3):
+// Portal main OG теперь Ремедиос F-1 «Библиотека» (7 корешков + настольная лампа + Hammershøi mood) 1200×630 JPG.
+// Cover_kn1.png ещё используется в about.vue + per-book BookPage.vue — не трогать.
+const DEFAULT_OG_IMAGE = `${SITE_URL}/images/og/books-og-hires.jpg`
 // PT temporarily hidden from switcher pending pt.json translation + native-speaker review
 // per Iskra рекомендация S250 (Andrey verdict а 2026-08-03 cont+45). Type union и pt.json
 // файлы preserved. Downloads pt.epub/pt.pdf + PT reader /kn1/pt/read/* остаются доступны
@@ -157,9 +160,10 @@ useHead({
     { property: 'og:site_name', content: 'Библиотека FolkUp' },
     { property: 'og:url', content: currentUrl },
     { property: 'og:image', content: DEFAULT_OG_IMAGE },
-    { property: 'og:image:type', content: 'image/png' },
-    { property: 'og:image:width', content: '800' },
-    { property: 'og:image:height', content: '1200' },
+    { property: 'og:image:type', content: 'image/jpeg' },
+    { property: 'og:image:width', content: '1200' },
+    { property: 'og:image:height', content: '630' },
+    { property: 'og:image:alt', content: 'Ремедиос (Frida-форнит FolkUp): семь книжных корешков и настольная лампа — свет над Библиотекой' },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:image', content: DEFAULT_OG_IMAGE },
   ],
