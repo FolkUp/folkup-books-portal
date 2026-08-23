@@ -18,6 +18,16 @@ useHead({
       name: 'description',
       content: 'Запрошенной страницы в Библиотеке FolkUp нет. Пока — открытые залы серии.',
     },
+    // S1ILLUS cont+0 Frida OG: per-page override для 404 → Ремедиос F-3 «пустая полка с тёплым пятном света»
+    // (Andrey pick variant B «книгу забрали, но место осталось» — tender interpretation).
+    // Iskra PAKET-19 S288 «Визирую пускай приступает» + KVITANCIYA S1IMG cont+3 §3.
+    { property: 'og:image', content: 'https://books.folkup.life/images/og/404-og-hires.jpg' },
+    { property: 'og:image:type', content: 'image/jpeg' },
+    { property: 'og:image:width', content: '1200' },
+    { property: 'og:image:height', content: '630' },
+    { property: 'og:image:alt', content: 'Ремедиос: пустая книжная полка с тёплым пятном света — экспонат ушёл, место осталось' },
+    { name: 'twitter:image', content: 'https://books.folkup.life/images/og/404-og-hires.jpg' },
+    { name: 'twitter:image:alt', content: 'Ремедиос: пустая книжная полка с тёплым пятном света' },
   ],
 })
 </script>

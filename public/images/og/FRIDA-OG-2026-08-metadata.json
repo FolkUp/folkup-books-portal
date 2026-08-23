@@ -1,0 +1,183 @@
+{
+  "session": "S1IMG cont+3 Cartouche L3",
+  "date_shipped": "2026-08-17T02:14:00Z",
+  "iskra_mandate": "PAKET S288-19 F-1..F-5 «Визирую пускай приступает» (виза Andrey verbatim)",
+  "andrey_picks_verbatim": {
+    "F-1": "v2-seed-42",
+    "F-2": "v3-auto",
+    "F-3": "v3-seed-811-varB-polka",
+    "F-4": "v2-seed-42",
+    "F-5.1": "v3-auto",
+    "F-5.2": "v3-auto"
+  },
+  "total_cost_usd": 1.20,
+  "total_renders_in_arc": 18,
+  "shipped_finals_count": 6,
+  "reserved_for_future_count": 12,
+  "model": "black-forest-labs/flux-1.1-pro",
+  "aspect_ratio_final": "1200x630 exact (resized from 1216x640 flux native via ImageMagick 7.1.2 center-crop)",
+  "attribution_canon": "Ремедиос (Frida-форнит FolkUp, Flux 1.1 Pro), 2026-08",
+  "attribution_placement": "В колофоны профильных сайтов (books.folkup.life / declaration.folkup.app / underground.folkup.life) через отдельный тикет, НЕ под каждой картинкой",
+  "integration_scope": "Deploy к profile lines (S1VITRINA + books.folkup.life + underground.folkup.life) НЕ моё scope per PAKET S288-19 §Приёмка",
+  "andrey_mandate_reserve": "Не выбрасываем не-picked картинки — сохраняем на будущее, могут пригодиться где-нибудь (Andrey direct cont+3 2026-08-17)",
+  "finals": [
+    {
+      "position": "F-1",
+      "description": "Библиотека books.folkup.life",
+      "source_plate_archive": "plate-archive/FRIDA-OG-2026-08/F-1-Biblioteka/v2-seed-42.jpg",
+      "destination_public": "public/images/og/books-og-hires.jpg",
+      "seed": 42,
+      "source_size_kb": 412.3,
+      "final_size_kb": 371.2,
+      "dimensions_final": "1200x630"
+    },
+    {
+      "position": "F-2",
+      "description": "Декларация declaration.folkup.app",
+      "source_plate_archive": "plate-archive/FRIDA-OG-2026-08/F-2-Deklaraciya/v3-auto-.jpg",
+      "destination_public": "public/images/og/declaration-og-hires.jpg",
+      "seed": null,
+      "source_size_kb": 611.0,
+      "final_size_kb": 540.0,
+      "dimensions_final": "1200x630"
+    },
+    {
+      "position": "F-3",
+      "description": "404-образ экосистемы (variant B пустая полка)",
+      "source_plate_archive": "plate-archive/FRIDA-OG-2026-08/F-3-404/v3-seed-811-varB-polka.jpg",
+      "destination_public": "public/images/og/404-og-hires.jpg",
+      "seed": 811,
+      "source_size_kb": 191.4,
+      "final_size_kb": 160.6,
+      "dimensions_final": "1200x630"
+    },
+    {
+      "position": "F-4",
+      "description": "Underground underground.folkup.life (с silhouette наборщика)",
+      "source_plate_archive": "plate-archive/FRIDA-OG-2026-08/F-4-Underground/v2-seed-42.jpg",
+      "destination_public": "public/images/og/underground-og-hires.jpg",
+      "seed": 42,
+      "source_size_kb": 363.6,
+      "final_size_kb": 327.9,
+      "dimensions_final": "1200x630"
+    },
+    {
+      "position": "F-5.1",
+      "description": "Цикл «Уйти в сторонку» (silhouette back-to-viewer contemplative retreat)",
+      "source_plate_archive": "plate-archive/FRIDA-OG-2026-08/F-5-1-Uyti/v3-auto.jpg",
+      "destination_public": "public/images/og/underground-cycle-uyti-og-hires.jpg",
+      "seed": null,
+      "source_size_kb": 364.1,
+      "final_size_kb": 321.3,
+      "dimensions_final": "1200x630"
+    },
+    {
+      "position": "F-5.2",
+      "description": "Цикл «За переплётом» (открытый переплёт magic realism летящие листы)",
+      "source_plate_archive": "plate-archive/FRIDA-OG-2026-08/F-5-2-Perepletom/v3-auto.jpg",
+      "destination_public": "public/images/og/underground-cycle-perepletom-og-hires.jpg",
+      "seed": null,
+      "source_size_kb": 361.5,
+      "final_size_kb": 324.8,
+      "dimensions_final": "1200x630"
+    }
+  ],
+  "reserved_for_future": [
+    {
+      "position": "F-1",
+      "path": "plate-archive/FRIDA-OG-2026-08/F-1-Biblioteka/v1-seed-811.jpg",
+      "seed": 811,
+      "size_kb": 326.2,
+      "future_context": "Альтернативная библиотека — future books.folkup.life OG rotation OR seasonal variants OR другие книжные contexts",
+      "status": "archived_git_tracked_branch_audit_s1img_frida_gonzo_images"
+    },
+    {
+      "position": "F-1",
+      "path": "plate-archive/FRIDA-OG-2026-08/F-1-Biblioteka/v3-auto-.jpg",
+      "seed": null,
+      "size_kb": 357.3,
+      "future_context": "Альтернативная библиотека autoseed вариант",
+      "status": "archived_git_tracked"
+    },
+    {
+      "position": "F-2",
+      "path": "plate-archive/FRIDA-OG-2026-08/F-2-Deklaraciya/v1-seed-811.jpg",
+      "seed": 811,
+      "size_kb": 489.2,
+      "future_context": "Альтернативная декларация pastoral — для articles иллюстрации commons темы",
+      "status": "archived_git_tracked"
+    },
+    {
+      "position": "F-2",
+      "path": "plate-archive/FRIDA-OG-2026-08/F-2-Deklaraciya/v2-seed-42.jpg",
+      "seed": 42,
+      "size_kb": 549.1,
+      "future_context": "Альтернативная декларация seed 42",
+      "status": "archived_git_tracked"
+    },
+    {
+      "position": "F-3",
+      "path": "plate-archive/FRIDA-OG-2026-08/F-3-404/v1-seed-811-varA-fonar.jpg",
+      "seed": 811,
+      "size_kb": 204.2,
+      "future_context": "Universal 404 alt variant A фонарь — если Andrey захочет A вместо B в будущем ИЛИ для other темных страниц (loading errors, empty states)",
+      "status": "archived_git_tracked"
+    },
+    {
+      "position": "F-3",
+      "path": "plate-archive/FRIDA-OG-2026-08/F-3-404/v2-seed-42-varA-fonar.jpg",
+      "seed": 42,
+      "size_kb": 254.8,
+      "future_context": "Universal 404 alt variant A фонарь seed 42 — резерв для rotation",
+      "status": "archived_git_tracked"
+    },
+    {
+      "position": "F-4",
+      "path": "plate-archive/FRIDA-OG-2026-08/F-4-Underground/v1-seed-811.jpg",
+      "seed": 811,
+      "size_kb": 298.1,
+      "future_context": "Underground alt seed 811 — для future article headers на underground.folkup.life",
+      "status": "archived_git_tracked"
+    },
+    {
+      "position": "F-4",
+      "path": "plate-archive/FRIDA-OG-2026-08/F-4-Underground/v3-auto.jpg",
+      "seed": null,
+      "size_kb": 385.7,
+      "future_context": "Underground alt autoseed",
+      "status": "archived_git_tracked"
+    },
+    {
+      "position": "F-5.1",
+      "path": "plate-archive/FRIDA-OG-2026-08/F-5-1-Uyti/v1-seed-811.jpg",
+      "seed": 811,
+      "size_kb": 246.9,
+      "future_context": "«Уйти в сторонку» цикл alt seed 811 — резерв для sub-articles цикла",
+      "status": "archived_git_tracked"
+    },
+    {
+      "position": "F-5.1",
+      "path": "plate-archive/FRIDA-OG-2026-08/F-5-1-Uyti/v2-seed-42.jpg",
+      "seed": 42,
+      "size_kb": 360.5,
+      "future_context": "«Уйти в сторонку» цикл alt seed 42",
+      "status": "archived_git_tracked"
+    },
+    {
+      "position": "F-5.2",
+      "path": "plate-archive/FRIDA-OG-2026-08/F-5-2-Perepletom/v1-seed-811.jpg",
+      "seed": 811,
+      "size_kb": 270.8,
+      "future_context": "«За переплётом» цикл alt seed 811 — резерв для sub-articles цикла",
+      "status": "archived_git_tracked"
+    },
+    {
+      "position": "F-5.2",
+      "path": "plate-archive/FRIDA-OG-2026-08/F-5-2-Perepletom/v2-seed-42.jpg",
+      "seed": 42,
+      "size_kb": 371.8,
+      "future_context": "«За переплётом» цикл alt seed 42",
+      "status": "archived_git_tracked"
+    }
+  ]
+}
