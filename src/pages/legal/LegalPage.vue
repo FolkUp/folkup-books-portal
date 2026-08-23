@@ -12,7 +12,16 @@ import { useRoute } from 'vue-router'
 const { t, tm } = useI18n()
 const route = useRoute()
 
+const SITE_URL = 'https://books.folkup.life'
+
 const pageKey = computed<string>(() => (route.meta.pageKey as string) || 'privacy')
+
+// TICKET 9 P1 (S8SCOOP cont+0): dynamic canonical + hreflang alt EN per route.meta.lang.
+// /{pageKey} (RU default) OR /en/{pageKey} (EN variant). Self-canonical per variant.
+const currentLang = computed<string>(() => (route.meta.lang as string) || 'ru')
+const ruUrl = computed(() => `${SITE_URL}/${pageKey.value}/`)
+const enUrl = computed(() => `${SITE_URL}/en/${pageKey.value}/`)
+const currentUrl = computed(() => (currentLang.value === 'en' ? enUrl.value : ruUrl.value))
 
 const paragraphs = computed<string[]>(() => {
   const raw = tm(`legal.${pageKey.value}.content`) as unknown
@@ -30,9 +39,13 @@ useHead({
     { name: 'description', content: () => metaDescription.value },
     { property: 'og:title', content: () => pageTitle.value },
     { property: 'og:description', content: () => metaDescription.value },
+    { property: 'og:url', content: () => currentUrl.value },
   ],
   link: [
-    { rel: 'canonical', href: () => `https://books.folkup.life/${pageKey.value === 'imprint' ? 'imprint' : pageKey.value}` },
+    { rel: 'canonical', href: () => currentUrl.value },
+    { rel: 'alternate', hreflang: 'ru', href: () => ruUrl.value },
+    { rel: 'alternate', hreflang: 'en', href: () => enUrl.value },
+    { rel: 'alternate', hreflang: 'x-default', href: () => ruUrl.value },
   ],
 })
 </script>
