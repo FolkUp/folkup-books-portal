@@ -56,7 +56,7 @@ Critical analysis of content is performed by human reviewers.
 **Policy implementation date:** 2026-04-27
 **Applicable systems:** All those used in creating this edition
 **Compliance:** EU AI Act Article 50, including paragraph 4 (translation disclosure)
-**Contact:** editor@folkup.app
+**Contact:** info@folkup.app
 
 ## Policy Updates
 

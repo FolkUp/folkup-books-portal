@@ -31,11 +31,11 @@ useHead({
     { property: 'og:description', content: () => t('about.meta_description') },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: () => currentUrl.value },
-    { property: 'og:image', content: `${SITE_URL}/covers/cover_kn1.svg` },
+    { property: 'og:image', content: `${SITE_URL}/covers/cover_kn1.png` },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: () => t('about.title') },
     { name: 'twitter:description', content: () => t('about.meta_description') },
-    { name: 'twitter:image', content: `${SITE_URL}/covers/cover_kn1.svg` },
+    { name: 'twitter:image', content: `${SITE_URL}/covers/cover_kn1.png` },
   ],
   link: [
     { rel: 'canonical', href: () => currentUrl.value },
@@ -74,12 +74,6 @@ useHead({
     <article class="about-page__content">
       <h1>{{ t('about.h1') }}</h1>
 
-      <!-- S1 slot placeholder — hero «книги без замка» — Фрида финал, canon S138 stamp -->
-      <figure class="about-page__illustration about-page__illustration--pending" aria-label="Слот S1 hero: книги без замка (иллюстрация в работе)">
-        <div class="about-page__stamp">
-          <span>ЭКСПОНАТ НА РЕСТАВРАЦИИ</span>
-        </div>
-      </figure>
 
       <section>
         <h2>{{ t('about.section1.h2') }}</h2>

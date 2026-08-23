@@ -49,3 +49,6 @@ build/
 content/kn3/ru/chapters-generated/
 content/kn4/ru/chapters-generated/
 content/kn5/ru/chapters-generated/
+
+# build-marker artifact (тикет 25 BUILD-MARKER Iskra S296-15)
+public/build-info.json
