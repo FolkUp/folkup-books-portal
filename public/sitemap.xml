@@ -201,15 +201,51 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/imprint/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/imprint/"/>
   </url>
-  <!-- PRO-CHTO-EN-1 standalone route (Option A.3 per Alisa KVIT-22 → S299-14 DEFAULT-GO canon).
-       First implementation for kn.1 EN. Extendable pattern /kn{N}/{lang}/pro-chto/ per Iskra
-       Vier-Augen queue (kn.4/5/6 pending PASS per S299-12 §2). -->
+  <!-- PRO-CHTO standalone routes 4-lang parity (Option A.3 → S299-14 DEFAULT-GO + S301-10 §4 P1).
+       All 4 content files LIVE — RU (Iskra v3-BEZ-SCHYOTA S198) + EN (Лёлик S299-10) +
+       PT (Zeka S280-02) + DE (Bolik S246 term-cascade). ProChtoLangPage.vue reads route.meta.lang. -->
+  <url>
+    <loc>https://books.folkup.life/kn1/pro-chto/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/kn1/pro-chto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/kn1/en/pro-chto/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://books.folkup.life/kn1/pt/pro-chto/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://books.folkup.life/kn1/de/pro-chto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/kn1/pro-chto/"/>
+  </url>
   <url>
     <loc>https://books.folkup.life/kn1/en/pro-chto/</loc>
     <lastmod>2026-08-24</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/kn1/pro-chto/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/kn1/en/pro-chto/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://books.folkup.life/kn1/pt/pro-chto/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://books.folkup.life/kn1/de/pro-chto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/kn1/pro-chto/"/>
+  </url>
+  <url>
+    <loc>https://books.folkup.life/kn1/pt/pro-chto/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/kn1/pro-chto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/kn1/en/pro-chto/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://books.folkup.life/kn1/pt/pro-chto/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://books.folkup.life/kn1/de/pro-chto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/kn1/pro-chto/"/>
+  </url>
+  <url>
+    <loc>https://books.folkup.life/kn1/de/pro-chto/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/kn1/pro-chto/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/kn1/en/pro-chto/"/>
+    <xhtml:link rel="alternate" hreflang="pt-PT" href="https://books.folkup.life/kn1/pt/pro-chto/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://books.folkup.life/kn1/de/pro-chto/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/kn1/pro-chto/"/>
   </url>
 </urlset>
