@@ -1,15 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- SPA client-side locale switch — sitemap URLs единственны per route.
-     TODO(next batch): implement path-prefix routing per Дьюи P0-1 →
-     enable per-locale <xhtml:link rel="alternate" hreflang="{lang}"/>.
-     See BACKLOG ticket PORTAL-P0-HREFLANG-PATH-PREFIX. -->
+<!-- Path-prefix routing per Дьюи P0-1: RU = default (/), EN = /en/{path}.
+     EN home restored cont+7 S8SCOOP per Iskra ADDENDUM-1 (S297-07) EN-HOME-1.
+     Book pages (/kn{N}/) — single-lang RU per series.yaml translations gating
+     (только kn1 has EN reader live; kn2-7 EN pending native review).
+     Legal + about + ai-disclosure — RU + EN routes через hreflang alternates. -->
 <urlset xmlns="http://www.sitemap.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://books.folkup.life/</loc>
-    <lastmod>2026-07-04</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/"/>
+  </url>
+  <url>
+    <loc>https://books.folkup.life/en/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/"/>
   </url>
   <url>
     <loc>https://books.folkup.life/kn1/</loc>
