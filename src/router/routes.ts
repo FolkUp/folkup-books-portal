@@ -12,6 +12,16 @@ export const routes: RouteRecordRaw[] = [
     component: () => import('../pages/index.vue'),
     meta: { pageType: 'portal-home' },
   },
+  // EN-HOME-1 recovery (Iskra ADDENDUM-1 к TIKET-28, S297-07): восстановление 4-язычной
+  // главной, замурованной S250 (сужение SUPPORTED_LOCALES) + PR #193 (buildLangUrl fallback).
+  // EN-строки живы native-refined Лёликом (S1LOLIK cont+6 2026-08-02).
+  // meta.lang='en' triggers App.vue watcher → i18n locale swap → EN content renders.
+  {
+    path: '/en',
+    name: 'home-en',
+    component: () => import('../pages/index.vue'),
+    meta: { pageType: 'portal-home', lang: 'en' },
+  },
   {
     path: '/kn1',
     name: 'kn1',

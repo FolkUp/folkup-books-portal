@@ -125,8 +125,15 @@ function langsAvailableForBook(bookSlug: string): SupportedLocale[] {
 //   • homepage `/` → RU only (EN придёт в EN-HOME-1 второй такт)
 //   • unknown → active lang only (safe — one button, no dead link)
 function getAvailableLangs(currentPath: string): SupportedLocale[] {
-  if (currentPath === '/' || currentPath === '') {
-    return ['ru']
+  // EN-HOME-1 recovery (Iskra ADDENDUM-1 S297-07 cont+7 S8SCOOP): homepage теперь 2-язычная
+  // (RU + EN). PT/DE placeholder до PT-DE-HOME-RESTORE-1 после FREEZE.
+  if (
+    currentPath === '/' ||
+    currentPath === '' ||
+    currentPath === '/en' ||
+    currentPath === '/en/'
+  ) {
+    return SUPPORTED_LOCALES.filter((l) => l === 'ru' || l === 'en')
   }
 
   const readerLangMatch = currentPath.match(/^\/(kn\d+)\/(ru|pt|en|de)\/read(\/.*)?$/)
@@ -161,6 +168,15 @@ const availableLangs = computed(() => getAvailableLangs(route.path))
 // TIKET-28 data-driven refactor (cont+4 S295KONSOL): hardcoded kn1+en check заменён на
 // series.yaml translations per Iskra visa 6. Silent stay preserves UX (no 404 regression).
 function buildLangUrl(currentPath: string, targetLang: SupportedLocale): string {
+  // EN-HOME-1 recovery (Iskra ADDENDUM-1 S297-07 cont+7 S8SCOOP): `/` ↔ `/en` mapping.
+  // Placed FIRST — most specific match precedes book/reader/legal regex fallbacks.
+  if (currentPath === '/' || currentPath === '') {
+    return targetLang === 'en' ? '/en' : '/'
+  }
+  if (currentPath === '/en' || currentPath === '/en/') {
+    return targetLang === 'ru' ? '/' : '/en'
+  }
+
   const withLangMatch = currentPath.match(/^\/(kn\d+)\/(ru|pt|en|de)\/read(\/.*)?$/)
   if (withLangMatch) {
     const [, book, , tail = ''] = withLangMatch

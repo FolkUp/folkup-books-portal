@@ -1,12 +1,21 @@
 <script setup lang="ts">
 import { useHead } from '@unhead/vue'
 import { useI18n } from 'vue-i18n'
+import { useRoute } from 'vue-router'
 import { useSeriesData } from '../composables/useSeriesData'
 import { useBookSeriesSchema } from '../composables/useSchemaOrg'
 import BookCard from '../components/BookCard.vue'
 
 const { t, te } = useI18n()
+const route = useRoute()
 const { series, books, booksByTrilogy } = useSeriesData()
+
+// EN-HOME-1 recovery (Iskra ADDENDUM-1 S297-07 cont+7 S8SCOOP): per-locale canonical +
+// hreflang alternates. RU default `/`, EN restored `/en/`. PT/DE placeholder до
+// PT-DE-HOME-RESTORE-1 после FREEZE.
+const HOME_RU = 'https://books.folkup.life/'
+const HOME_EN = 'https://books.folkup.life/en/'
+const canonicalHref = () => (route.meta.lang === 'en' ? HOME_EN : HOME_RU)
 
 useHead({
   title: () => t('portal.title'),
@@ -16,7 +25,10 @@ useHead({
     { property: 'og:description', content: () => t('portal.hero') },
   ],
   link: [
-    { rel: 'canonical', href: 'https://books.folkup.life/' },
+    { rel: 'canonical', href: canonicalHref },
+    { rel: 'alternate', hreflang: 'ru', href: HOME_RU },
+    { rel: 'alternate', hreflang: 'en', href: HOME_EN },
+    { rel: 'alternate', hreflang: 'x-default', href: HOME_RU },
   ],
 })
 
