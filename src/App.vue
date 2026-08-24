@@ -140,6 +140,11 @@ const footerLangPrefix = computed(() => {
 // Простой pattern: strip existing lang prefix → add target lang prefix.
 // Reader routes (`/kn{N}/{lang}/read/*`) — special case (lang inside path, not prefix).
 // Missing lang combinations → LangNotReady stub OR real route depending on translations state.
+// S301-09 §3 Тикет 1 P0 fix (Iskra Vier-Augen 2026-08-24 cont+8 S8SCOOP): было fallthrough
+// `return currentPath` → 4 одинаковые ссылки на pro-chto странице (переключатель был мёртв).
+// Fix двухчастный: (a) pro-chto branch по образцу reader (b) systemic fallback к book-card/home
+// в target lang вместо currentPath. Iskra: «переключатель не имеет права рисовать ссылку на
+// самого себя: молчаливый провал выглядит как рабочая кнопка».
 function buildLangUrl(currentPath: string, targetLang: SupportedLocale): string {
   // Home root
   if (currentPath === '/' || currentPath === '') {
@@ -179,6 +184,29 @@ function buildLangUrl(currentPath: string, targetLang: SupportedLocale): string 
     return `/${targetLang}/${book}`
   }
 
+  // Pro-chto pages: /kn{N}/pro-chto (RU) OR /kn{N}/{lang}/pro-chto (per language).
+  // S301-09 §3 Тикет 1 P0 fix (Iskra Vier-Augen 2026-08-24 cont+8 S8SCOOP):
+  // routes.ts зарегистрировал все 4 kn1 pro-chto routes (S301-10 §4 P1 mandate, PR #228 EN
+  // + PR #234 RU/PT/DE). Переключатель теперь их использует. Series.yaml translations
+  // для pro-chto НЕ отражает реальность (все books de:preparing) — hardcode kn1 честнее.
+  // Other books (kn2-7) без pro-chto page → fallback к book card в целевом языке.
+  const withLangProChToMatch = currentPath.match(/^\/(kn\d+)\/(ru|pt|en|de)\/pro-chto\/?$/)
+  if (withLangProChToMatch) {
+    const [, book] = withLangProChToMatch
+    if (book === 'kn1') {
+      return targetLang === 'ru' ? `/${book}/pro-chto` : `/${book}/${targetLang}/pro-chto`
+    }
+    return targetLang === 'ru' ? `/${book}` : `/${targetLang}/${book}`
+  }
+  const withoutLangProChToMatch = currentPath.match(/^\/(kn\d+)\/pro-chto\/?$/)
+  if (withoutLangProChToMatch) {
+    const [, book] = withoutLangProChToMatch
+    if (book === 'kn1') {
+      return targetLang === 'ru' ? currentPath : `/${book}/${targetLang}/pro-chto`
+    }
+    return targetLang === 'ru' ? currentPath : `/${targetLang}/${book}`
+  }
+
   // Book page routes: /kn{N} OR /{lang}/kn{N}
   const bookPageMatch = currentPath.match(/^(?:\/(?:en|pt|de))?\/(kn\d+)\/?$/)
   if (bookPageMatch) {
@@ -195,7 +223,22 @@ function buildLangUrl(currentPath: string, targetLang: SupportedLocale): string 
     }
   }
 
-  return currentPath
+  // S301-09 §3 Тикет 1 P0 systemic fix (Iskra Vier-Augen 2026-08-24):
+  // `return currentPath` silently drops = fake button. Iskra dixit: «переключатель не имеет
+  // права рисовать ссылку на самого себя: молчаливый провал выглядит как рабочая кнопка».
+  // Fallback: если path содержит kn{N} → book card в target lang. Else → home в target lang.
+  // TODO(S301-09-test): build-time warning + test invariant «4 lang variants distinct».
+  if (typeof window !== 'undefined' && typeof console !== 'undefined') {
+    console.warn(
+      `[buildLangUrl] Unhandled path pattern: ${currentPath} → fallback к home/book-card в ${targetLang}`,
+    )
+  }
+  const anyBookMatch = currentPath.match(/\/(kn\d+)/)
+  if (anyBookMatch) {
+    const [, book] = anyBookMatch
+    return targetLang === 'ru' ? `/${book}` : `/${targetLang}/${book}`
+  }
+  return targetLang === 'ru' ? '/' : `/${targetLang}`
 }
 
 useHead({
