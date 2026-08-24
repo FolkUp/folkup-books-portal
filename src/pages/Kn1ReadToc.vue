@@ -113,7 +113,9 @@ const TOC_LABELS: Record<Lang, {
 }
 const labels = computed(() => TOC_LABELS[lang.value])
 
-// bookHomePath — /kn1 canonical (no lang landing pages exist yet; RU landing serves as fallback).
+// bookHomePath keeps '/kn1' fallback per pragmatic UX: /en/kn1 stub = LangNotReady disclosure
+// (confusing since user was reading EN chapters). '/kn1' RU book page shows real content.
+// Compromise until /en/kn1 promoted к real EN book page (BookPage.vue rendering EN i18n).
 const bookHomePath = computed(() => '/kn1')
 
 const chapterUrl = (slug: string) => `/kn1${langSegment.value}/read/${slug}`
