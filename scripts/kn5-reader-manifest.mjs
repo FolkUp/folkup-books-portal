@@ -105,11 +105,11 @@ function wireIllustrationRefs(html) {
       }
       return (
         `<figure class="reader-chapter__plate reader-chapter__plate--restoration" ` +
-        `role="img" aria-label="Экспонат на реставрации: иллюстрация ${nn} «${metaphor}» в процессе восстановления">` +
+        `role="img" aria-label="Иллюстрация ${nn} «${metaphor}» — готовится">` +
         `<div class="restoration-stub">` +
         `<span class="restoration-stub__label">ЭКСПОНАТ НА РЕСТАВРАЦИИ</span>` +
         `<span class="restoration-stub__metaphor">${metaphor}</span>` +
-        `<span class="restoration-stub__hint">иллюстрация в процессе создания</span>` +
+        `<span class="restoration-stub__hint">иллюстрация готовится</span>` +
         `</div>` +
         `</figure>`
       )
