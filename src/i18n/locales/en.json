@@ -158,7 +158,7 @@
     },
     "section3": {
       "h2": "EU AI Act Article 50(4) compliance",
-      "p1": "This page fulfils the requirement to disclose the natural person responsible for editorial oversight of AI-assisted content under EU AI Act Article 50(4)(b). Responsible person: Andrei Klemenchenok, Russian citizen, resident of Portugal.",
+      "p1": "This page fulfils the requirement to disclose the natural person responsible for editorial oversight of AI-assisted content under EU AI Act Article 50(4)(b). Responsible person: Andrei Klemenchenok, resident of Portugal.",
       "p2": "The pseudonym «Comandante FolkUp» is used on public surfaces (book pages, catalog, footer, metadata) — a Banksy-style convention for non-commercial brand identity. The pseudonym carries the series brand; this page provides the legal disclosure required by the AI Act."
     },
     "section4": {
@@ -245,15 +245,14 @@
     },
     "imprint": {
       "title": "Legal Notice / Imprint",
-      "meta_description": "Legal notice for books.folkup.life per §5 TMG and general EU practice. Publisher, contact, responsibility, licensing.",
+      "meta_description": "Legal notice for books.folkup.life. Publisher, contact, editorial responsibility, AI usage disclosure, licensing.",
       "content": [
-        "<p><em>Information provided in accordance with <strong>§5 TMG (Telemediengesetz, Germany)</strong> and general EU good practice for sites accessible across the European Union.</em></p>",
+        "<p><em>Legal notice: information about the service provider, editorial responsibility, and AI usage.</em></p>",
         "<h2>Service provider</h2>",
         "<p><strong>Andrei Klemenchenok</strong><br>Physical person, resident of Portugal<br>Contact: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a><br>Publishing under the pseudonym: <strong>Comandante FolkUp</strong></p>",
         "<p>This is a non-commercial hobbyist publishing project. It is <strong>not</strong> a registered company. There is no VAT identification number, no commercial register entry, and no chamber of commerce affiliation.</p>",
         "<h2>Responsibility for content</h2>",
-        "<p>Responsible for editorial content in accordance with <strong>§55 Abs. 2 RStV</strong> (Rundfunkstaatsvertrag, Germany):</p>",
-        "<p><strong>Andrei Klemenchenok</strong> — same address and contact as above.</p>",
+        "<p>Responsible for editorial content: Andrei Klemenchenok.</p>",
         "<h2>AI usage disclosure</h2>",
         "<p>In accordance with <strong>EU AI Act Regulation (EU) 2024/1689 Article 50(4)</strong>, AI-assisted content and tooling used in the production of works published here are disclosed on a dedicated page: <a href='/en/ai-disclosure'>AI Usage Disclosure</a>.</p>",
         "<h2>Copyright and licensing</h2>",
