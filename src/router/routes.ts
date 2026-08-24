@@ -316,12 +316,16 @@ export const routes: RouteRecordRaw[] = [
   { path: '/pt/imprint', name: 'imprint-pt', component: () => import('../pages/legal/imprint.vue'), meta: { pageType: 'legal', pageKey: 'imprint', lang: 'pt' } },
 
   // Legal pages DE stubs (6 pages)
-  { path: '/de/about', name: 'about-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'about', lang: 'de' } },
-  { path: '/de/ai-disclosure', name: 'ai-disclosure-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'ai-disclosure', lang: 'de' } },
-  { path: '/de/privacy', name: 'privacy-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'privacy', lang: 'de' } },
-  { path: '/de/terms', name: 'terms-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'terms', lang: 'de' } },
-  { path: '/de/cookies', name: 'cookies-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'cookies', lang: 'de' } },
-  { path: '/de/imprint', name: 'imprint-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'imprint', lang: 'de' } },
+  // Legal pages DE — real components (Bolik CASCADE-ADDENDUM applied peer PR #244 29bf1eb;
+  // Iskra Vier-Augen S301-15 PASS + S301-16 гражданство V2 verdict; routes stubs → real
+  // components симметрично PT pattern per PR #241. de.json теперь Iskra-ratified via PR #244
+  // — routes wire safe от phantom §5 TMG / §55 RStV.
+  { path: '/de/about', name: 'about-de', component: () => import('../pages/about.vue'), meta: { pageType: 'about', lang: 'de' } },
+  { path: '/de/ai-disclosure', name: 'ai-disclosure-de', component: () => import('../pages/ai-disclosure.vue'), meta: { pageType: 'ai-disclosure', lang: 'de' } },
+  { path: '/de/privacy', name: 'privacy-de', component: () => import('../pages/legal/privacy.vue'), meta: { pageType: 'legal', pageKey: 'privacy', lang: 'de' } },
+  { path: '/de/terms', name: 'terms-de', component: () => import('../pages/legal/terms.vue'), meta: { pageType: 'legal', pageKey: 'terms', lang: 'de' } },
+  { path: '/de/cookies', name: 'cookies-de', component: () => import('../pages/legal/cookies.vue'), meta: { pageType: 'legal', pageKey: 'cookies', lang: 'de' } },
+  { path: '/de/imprint', name: 'imprint-de', component: () => import('../pages/legal/imprint.vue'), meta: { pageType: 'legal', pageKey: 'imprint', lang: 'de' } },
 
   {
     path: '/:pathMatch(.*)*',
