@@ -305,13 +305,15 @@ export const routes: RouteRecordRaw[] = [
   { path: '/de/kn6', name: 'kn6-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn6', lang: 'de' } },
   { path: '/de/kn7', name: 'kn7-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn7', lang: 'de' } },
 
-  // Legal pages PT stubs (6 pages)
-  { path: '/pt/about', name: 'about-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'about', lang: 'pt' } },
-  { path: '/pt/ai-disclosure', name: 'ai-disclosure-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'ai-disclosure', lang: 'pt' } },
-  { path: '/pt/privacy', name: 'privacy-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'privacy', lang: 'pt' } },
-  { path: '/pt/terms', name: 'terms-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'terms', lang: 'pt' } },
-  { path: '/pt/cookies', name: 'cookies-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'cookies', lang: 'pt' } },
-  { path: '/pt/imprint', name: 'imprint-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'imprint', lang: 'pt' } },
+  // Legal pages PT — real components (Zeka native PT-EU refined S299-20 PASS + Iskra S300-01+S301-11
+  // Vier-Augen corrections applied 2026-08-24 via PR #239 PT-HOME + PR #240 PT-LEGAL; routes stubs
+  // → real components per DEFAULT-GO canon Iskra S299-14 §1 + Andrey «деплоим постоянно всё что исправляем»).
+  { path: '/pt/about', name: 'about-pt', component: () => import('../pages/about.vue'), meta: { pageType: 'about', lang: 'pt' } },
+  { path: '/pt/ai-disclosure', name: 'ai-disclosure-pt', component: () => import('../pages/ai-disclosure.vue'), meta: { pageType: 'ai-disclosure', lang: 'pt' } },
+  { path: '/pt/privacy', name: 'privacy-pt', component: () => import('../pages/legal/privacy.vue'), meta: { pageType: 'legal', pageKey: 'privacy', lang: 'pt' } },
+  { path: '/pt/terms', name: 'terms-pt', component: () => import('../pages/legal/terms.vue'), meta: { pageType: 'legal', pageKey: 'terms', lang: 'pt' } },
+  { path: '/pt/cookies', name: 'cookies-pt', component: () => import('../pages/legal/cookies.vue'), meta: { pageType: 'legal', pageKey: 'cookies', lang: 'pt' } },
+  { path: '/pt/imprint', name: 'imprint-pt', component: () => import('../pages/legal/imprint.vue'), meta: { pageType: 'legal', pageKey: 'imprint', lang: 'pt' } },
 
   // Legal pages DE stubs (6 pages)
   { path: '/de/about', name: 'about-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'about', lang: 'de' } },
