@@ -191,7 +191,7 @@
         "<ul><li><strong>Cloudflare, Inc.</strong> (CDN, DDoS-Abwehr, Hosting). Cloudflare ist DSGVO-konform; der Datenverarbeitungszusatz ist öffentlich verfügbar unter <a href='https://www.cloudflare.com/cloudflare-customer-dpa/' rel='noopener'>cloudflare.com/cloudflare-customer-dpa</a>.</li></ul>",
         "<p>Es werden keine Daten verkauft, an Werbetreibende weitergegeben oder an andere Dritte übermittelt.</p>",
         "<h2>Cookies</h2>",
-        "<p>Siehe unsere <a href='/cookies'>Cookie-Richtlinie</a>. Kurzfassung: keine Tracking-Cookies. Nur unbedingt erforderliche technische Cookies, die Cloudflare zur Bot-Verwaltung setzt.</p>",
+        "<p>Siehe unsere <a href='/de/cookies'>Cookie-Richtlinie</a>. Kurzfassung: keine Tracking-Cookies. Nur unbedingt erforderliche technische Cookies, die Cloudflare zur Bot-Verwaltung setzt.</p>",
         "<h2>Ihre Rechte nach der DSGVO</h2>",
         "<p>Nach der Verordnung (EU) 2016/679 (Datenschutz-Grundverordnung, DSGVO), Artikel 12–22, haben Sie folgende Rechte:</p>",
         "<ul><li><strong>Auskunft</strong> über personenbezogene Daten, die wir über Sie speichern</li><li><strong>Berichtigung</strong> unrichtiger Daten</li><li><strong>Löschung</strong> («Recht auf Vergessenwerden»)</li><li><strong>Datenübertragbarkeit</strong> in einem maschinenlesbaren Format</li><li><strong>Widerspruch</strong> gegen die Verarbeitung</li><li><strong>Beschwerde</strong> bei Ihrer nationalen Datenschutzaufsichtsbehörde (in Portugal: <a href='https://www.cnpd.pt/' rel='noopener'>CNPD</a>; in Deutschland: die zuständige Landesdatenschutzbehörde oder der <a href='https://www.bfdi.bund.de/' rel='noopener'>BfDI</a>)</li></ul>",
@@ -262,7 +262,7 @@
         "<p>Verantwortlich für redaktionelle Inhalte gemäß <strong>§55 Abs. 2 RStV</strong> (Rundfunkstaatsvertrag, Deutschland):</p>",
         "<p><strong>Andrei Klemenchenok</strong> — Anschrift und Kontakt wie oben.</p>",
         "<h2>Angaben zur KI-Nutzung</h2>",
-        "<p>Gemäß <strong>EU-KI-Verordnung (EU) 2024/1689, Artikel 50 Absatz 4</strong>, werden KI-gestützte Inhalte und Werkzeuge, die bei der Erstellung der hier veröffentlichten Werke eingesetzt wurden, auf einer eigenen Seite offengelegt: <a href='/ai-disclosure'>Angaben zur KI-Nutzung</a>.</p>",
+        "<p>Gemäß <strong>EU-KI-Verordnung (EU) 2024/1689, Artikel 50 Absatz 4</strong>, werden KI-gestützte Inhalte und Werkzeuge, die bei der Erstellung der hier veröffentlichten Werke eingesetzt wurden, auf einer eigenen Seite offengelegt: <a href='/de/ai-disclosure'>Angaben zur KI-Nutzung</a>.</p>",
         "<h2>Urheberrecht und Lizenzen</h2>",
         "<p>Ursprüngliche Textinhalte auf dieser Seite: <strong>© Andrei Klemenchenok</strong>, veröffentlicht unter <a href='https://creativecommons.org/licenses/by-sa/4.0/' rel='noopener'>Creative Commons Namensnennung — Weitergabe unter gleichen Bedingungen 4.0 International (CC BY-SA 4.0)</a>.</p>",
         "<p>Zugrunde liegender Quellcode: <strong>MIT-Lizenz</strong>.</p>",
@@ -272,7 +272,7 @@
         "<h2>Kontakt</h2>",
         "<ul><li>Allgemein / Redaktion: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a></li><li>Datenschutz / DSGVO-Anfragen: <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a></li></ul>",
         "<h2>Verwandte Dokumente</h2>",
-        "<ul><li><a href='/privacy'>Datenschutzerklärung</a></li><li><a href='/terms'>Nutzungsbedingungen</a></li><li><a href='/cookies'>Cookie-Richtlinie</a></li><li><a href='/ai-disclosure'>Angaben zur KI-Nutzung</a></li></ul>"
+        "<ul><li><a href='/de/privacy'>Datenschutzerklärung</a></li><li><a href='/de/terms'>Nutzungsbedingungen</a></li><li><a href='/de/cookies'>Cookie-Richtlinie</a></li><li><a href='/de/ai-disclosure'>Angaben zur KI-Nutzung</a></li></ul>"
       ]
     }
   }

@@ -184,7 +184,7 @@
         "<ul><li><strong>Cloudflare, Inc.</strong> (CDN, DDoS mitigation, hosting). Cloudflare is GDPR-compliant; their Data Processing Addendum is publicly available at <a href='https://www.cloudflare.com/cloudflare-customer-dpa/' rel='noopener'>cloudflare.com/cloudflare-customer-dpa</a>.</li></ul>",
         "<p>No data is sold, shared with advertisers, or transferred to any other third party.</p>",
         "<h2>Cookies</h2>",
-        "<p>See our <a href='/cookies'>Cookie Policy</a>. Short version: no tracking cookies. Only strictly necessary technical cookies set by Cloudflare for bot management.</p>",
+        "<p>See our <a href='/en/cookies'>Cookie Policy</a>. Short version: no tracking cookies. Only strictly necessary technical cookies set by Cloudflare for bot management.</p>",
         "<h2>Your rights under GDPR</h2>",
         "<p>Under Regulation (EU) 2016/679 (GDPR), Articles 12–22, you have the right to:</p>",
         "<ul><li><strong>Access</strong> any personal data we hold about you</li><li><strong>Rectification</strong> of inaccurate data</li><li><strong>Erasure</strong> («right to be forgotten»)</li><li><strong>Portability</strong> of your data in a machine-readable format</li><li><strong>Objection</strong> to processing</li><li><strong>Lodge a complaint</strong> with your national data protection authority (in Portugal: <a href='https://www.cnpd.pt/' rel='noopener'>CNPD</a>)</li></ul>",
@@ -255,7 +255,7 @@
         "<p>Responsible for editorial content in accordance with <strong>§55 Abs. 2 RStV</strong> (Rundfunkstaatsvertrag, Germany):</p>",
         "<p><strong>Andrei Klemenchenok</strong> — same address and contact as above.</p>",
         "<h2>AI usage disclosure</h2>",
-        "<p>In accordance with <strong>EU AI Act Regulation (EU) 2024/1689 Article 50(4)</strong>, AI-assisted content and tooling used in the production of works published here are disclosed on a dedicated page: <a href='/ai-disclosure'>AI Usage Disclosure</a>.</p>",
+        "<p>In accordance with <strong>EU AI Act Regulation (EU) 2024/1689 Article 50(4)</strong>, AI-assisted content and tooling used in the production of works published here are disclosed on a dedicated page: <a href='/en/ai-disclosure'>AI Usage Disclosure</a>.</p>",
         "<h2>Copyright and licensing</h2>",
         "<p>Original written content on this site: <strong>© Andrei Klemenchenok</strong>, published under <a href='https://creativecommons.org/licenses/by-sa/4.0/' rel='noopener'>Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a>.</p>",
         "<p>Underlying source code: <strong>MIT License</strong>.</p>",
@@ -265,7 +265,7 @@
         "<h2>Contact</h2>",
         "<ul><li>General / editorial: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a></li><li>Privacy / GDPR requests: <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a></li></ul>",
         "<h2>Related documents</h2>",
-        "<ul><li><a href='/privacy'>Privacy Policy</a></li><li><a href='/terms'>Terms of Use</a></li><li><a href='/cookies'>Cookie Policy</a></li><li><a href='/ai-disclosure'>AI Disclosure</a></li></ul>"
+        "<ul><li><a href='/en/privacy'>Privacy Policy</a></li><li><a href='/en/terms'>Terms of Use</a></li><li><a href='/en/cookies'>Cookie Policy</a></li><li><a href='/en/ai-disclosure'>AI Disclosure</a></li></ul>"
       ]
     }
   }
