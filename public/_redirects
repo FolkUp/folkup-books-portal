@@ -58,9 +58,10 @@
 /kn5/downloads/chuzhimi-rukami-v1.0.epub    /kn5/  301
 
 # ─────────────────────────────────────────────────────────────────
-# P1 Option A per Iskra S238 §1 (Andrey verdict cont+33 execute 2026-07-30)
-# Honest 404 для несуществующих локалей /de/ /en/ до перевода готов V-A (~15.08)
-# Preview-карточки на главной остаются, hreflang в App.vue уже clean (только x-default)
-# Transition к Option C (full локали) — после Bolik v0.9-retrofit shipped V-A pass
+# P1 Option A per Iskra S238 §1 (Andrey verdict cont+33 execute 2026-07-30) — DE only.
+# EN /en/* catch-all removed cont+7 S8SCOOP per Iskra ADDENDUM-1 S297-07 (EN-HOME-1 recovery):
+# EN home /en/ + EN legal /en/{page} restored (dist/en.html + dist/en/{page}.html direct).
+# DE placeholder держим до PT-DE-HOME-RESTORE-1 (P3 после FREEZE).
+# Vraga catch cont+7 CRIT-1: /en/* catch-all блокировал /en/ trailing slash =
+# canonical URL из index.vue reactive — фикс prevents 404 regression.
 /de/*  /404.html  404
-/en/*  /404.html  404
