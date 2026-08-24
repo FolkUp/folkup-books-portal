@@ -12,15 +12,31 @@ export const routes: RouteRecordRaw[] = [
     component: () => import('../pages/index.vue'),
     meta: { pageType: 'portal-home' },
   },
-  // EN-HOME-1 recovery (Iskra ADDENDUM-1 к TIKET-28, S297-07): восстановление 4-язычной
-  // главной, замурованной S250 (сужение SUPPORTED_LOCALES) + PR #193 (buildLangUrl fallback).
-  // EN-строки живы native-refined Лёликом (S1LOLIK cont+6 2026-08-02).
-  // meta.lang='en' triggers App.vue watcher → i18n locale swap → EN content renders.
+  // EN-HOME-1 recovery (Iskra ADDENDUM-1 к TIKET-28, S297-07 cont+7 S8SCOOP 2026-08-24):
+  // восстановление 4-язычной главной, замурованной S250 (сужение SUPPORTED_LOCALES) +
+  // PR #193 (buildLangUrl fallback). EN-строки native-refined Лёликом (S1LOLIK cont+6 2026-08-02).
+  // meta.lang triggers App.vue watcher → i18n locale swap → target lang content renders.
   {
     path: '/en',
     name: 'home-en',
     component: () => import('../pages/index.vue'),
     meta: { pageType: 'portal-home', lang: 'en' },
+  },
+  // TIKET-31 PORTAL-UI-LANG-DECOUPLE-1 (Iskra POMETKA-11 S299-11 GO cont+7 S8SCOOP 2026-08-24):
+  // 4-lang оболочка per §S299-05 PORTAL-LANG-PARITY-1 canon.
+  // PT-строки native-refined Zeka Quatro Olhos (pt.json 212 keys Iskra S214 §2/§3/§9).
+  // DE-строки native-refined Bolik Vier-Augen (de.json 234 keys Iskra S214 адаптация).
+  {
+    path: '/pt',
+    name: 'home-pt',
+    component: () => import('../pages/index.vue'),
+    meta: { pageType: 'portal-home', lang: 'pt' },
+  },
+  {
+    path: '/de',
+    name: 'home-de',
+    component: () => import('../pages/index.vue'),
+    meta: { pageType: 'portal-home', lang: 'de' },
   },
   {
     path: '/kn1',

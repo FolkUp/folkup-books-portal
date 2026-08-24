@@ -10,12 +10,20 @@ const { t, te } = useI18n()
 const route = useRoute()
 const { series, books, booksByTrilogy } = useSeriesData()
 
-// EN-HOME-1 recovery (Iskra ADDENDUM-1 S297-07 cont+7 S8SCOOP): per-locale canonical +
-// hreflang alternates. RU default `/`, EN restored `/en/`. PT/DE placeholder до
-// PT-DE-HOME-RESTORE-1 после FREEZE.
+// TIKET-31 PORTAL-UI-LANG-DECOUPLE-1 (Iskra POMETKA-11 S299-11 GO cont+7 S8SCOOP 2026-08-24):
+// per-locale canonical + hreflang alternates for all 4 langs (RU + EN + PT + DE).
+// Extended from EN-HOME-1 (Iskra ADDENDUM-1 S297-07 cont+7 EN-only) per §S299-05 canon.
 const HOME_RU = 'https://books.folkup.life/'
 const HOME_EN = 'https://books.folkup.life/en/'
-const canonicalHref = () => (route.meta.lang === 'en' ? HOME_EN : HOME_RU)
+const HOME_PT = 'https://books.folkup.life/pt/'
+const HOME_DE = 'https://books.folkup.life/de/'
+const canonicalHref = () => {
+  const lang = route.meta.lang
+  if (lang === 'en') return HOME_EN
+  if (lang === 'pt') return HOME_PT
+  if (lang === 'de') return HOME_DE
+  return HOME_RU
+}
 
 useHead({
   title: () => t('portal.title'),
@@ -28,6 +36,8 @@ useHead({
     { rel: 'canonical', href: canonicalHref },
     { rel: 'alternate', hreflang: 'ru', href: HOME_RU },
     { rel: 'alternate', hreflang: 'en', href: HOME_EN },
+    { rel: 'alternate', hreflang: 'pt', href: HOME_PT },
+    { rel: 'alternate', hreflang: 'de', href: HOME_DE },
     { rel: 'alternate', hreflang: 'x-default', href: HOME_RU },
   ],
 })

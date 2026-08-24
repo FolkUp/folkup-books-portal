@@ -58,10 +58,11 @@
 /kn5/downloads/chuzhimi-rukami-v1.0.epub    /kn5/  301
 
 # ─────────────────────────────────────────────────────────────────
-# P1 Option A per Iskra S238 §1 (Andrey verdict cont+33 execute 2026-07-30) — DE only.
-# EN /en/* catch-all removed cont+7 S8SCOOP per Iskra ADDENDUM-1 S297-07 (EN-HOME-1 recovery):
-# EN home /en/ + EN legal /en/{page} restored (dist/en.html + dist/en/{page}.html direct).
-# DE placeholder держим до PT-DE-HOME-RESTORE-1 (P3 после FREEZE).
-# Vraga catch cont+7 CRIT-1: /en/* catch-all блокировал /en/ trailing slash =
-# canonical URL из index.vue reactive — фикс prevents 404 regression.
-/de/*  /404.html  404
+# 4-lang home routes canonical (TIKET-31 cont+7 S8SCOOP 2026-08-24 per Iskra POMETKA-11 S299-11):
+# / (RU) + /en/ (EN) + /pt/ (PT) + /de/ (DE) — все pre-rendered SSG (dist/{lang}.html).
+# EN /en/* catch-all removed cont+7 EN-HOME-1 (Iskra ADDENDUM-1 S297-07).
+# DE /de/* catch-all removed TIKET-31 cont+7 (было placeholder до PT-DE-HOME-RESTORE-1;
+# теперь DE home + i18n оболочка native-refined Bolik Vier-Augen live).
+# Vraga catch cont+7 CRIT-1 pattern: catch-all rules блокируют pre-rendered trailing-slash routes.
+# Fallback для non-existent /{lang}/{path} routes: CF Pages default 404.html serving
+# (Vue router SPA fallback НЕ настроен — SSG pre-renders defined routes only).
