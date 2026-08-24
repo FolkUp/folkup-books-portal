@@ -69,6 +69,14 @@
   "footer": {
     "copyright": "© {year} Команданте FolkUp · Content CC BY-SA 4.0 · Code MIT"
   },
+  "lang_not_ready": {
+    "_translator_note": "TIKET-31 EXT canonical disclosure — draft Alisa cont+7 EXT 2026-08-24; retro-viza Lelik native EN pending.",
+    "title": "Translation of this page is in preparation",
+    "text": "We are working on the translation. In the meantime, please refer to the Russian original.",
+    "back_to_ru": "Read in Russian",
+    "home": "Home",
+    "book_note": "The book is available in Russian"
+  },
   "books": {
     "kn1": {
       "title": "Agile Sapiens",

@@ -68,6 +68,14 @@
   "footer": {
     "copyright": "© {year} Команданте FolkUp · Контент CC BY-SA 4.0 · Код MIT"
   },
+  "lang_not_ready": {
+    "_translator_note": "TIKET-31 EXT canonical disclosure texts. Draft Alisa cont+7 EXT 2026-08-24; retro-viza Iskra + native translators pending. Показывается на stub routes /{en,pt,de}/kn{N} + /{pt,de}/{legal} где контент ещё не переведён.",
+    "title": "Перевод этой страницы готовится",
+    "text": "Мы работаем над переводом. Пока — обратитесь к оригинальной русской версии.",
+    "back_to_ru": "Читать по-русски",
+    "home": "Главная",
+    "book_note": "Книга доступна по-русски"
+  },
   "books": {
     "kn1": { "title": "Agile Sapiens", "subtitle": "Литературный анализ бизнеса: Верн, Шелли, Холмс и Борхес ставили управленческие диагнозы задолго до консультантов" },
     "kn2": { "title": "Согласные без гласных", "subtitle": "Долгая война вокруг знания: одни его запирают, другие взламывают — открытость побеждает раз за разом" },

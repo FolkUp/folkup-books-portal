@@ -102,88 +102,31 @@ watch(
   { immediate: true },
 )
 
-// LEGAL_PAGES: static-page routes existing в RU (/{page}) + EN (/en/{page}) per routes.ts.
-// PT+DE legal routes НЕ добавлены в TIKET-31 scope — pending Bolik DE-LEGAL 6-pages ratify
-// (draft landed 11:42 UTC 2026-08-24, ждёт Iskra Vier-Augen) + Zeka PT-LEGAL strings.
-// Legal switcher показывает RU+EN только; home switcher — все 4 langs.
+// LEGAL_PAGES: static-page routes per routes.ts.
+// TIKET-31 EXT (Andrey mandate cont+7 2026-08-24 + Iskra §S299-05 canon):
+// PT+DE legal routes ДОБАВЛЕНЫ как stub → LangNotReady disclosure (native ratify pending
+// Bolik DE-LEGAL + Zeka PT-LEGAL). Switcher показывает все 4 langs везде.
 const LEGAL_PAGES = ['ai-disclosure', 'about', 'privacy', 'terms', 'cookies', 'imprint']
 
-// TIKET-28 P0 INC-PORTAL-LANG-SWITCH-HOME (Iskra S297-06 + ADDENDUM-1 S297-07) — closes
-// TODO ticket 11 per Iskra visa 6: data-driven check series.yaml translations[lang]==='live'
-// вместо hardcoded `book === 'kn1' && targetLang === 'en'` (S291-03 T2 scoped hotfix заменён).
-// Silent stay preserves UX (no 404 regression) если target lang НЕ live.
-function langsAvailableForBook(bookSlug: string): SupportedLocale[] {
-  const book = bookBySlug(bookSlug)
-  if (!book?.translations) return ['ru']
-  const result: SupportedLocale[] = []
-  for (const lang of SUPPORTED_LOCALES) {
-    if (book.translations[lang] === 'live') {
-      result.push(lang)
-    }
-  }
-  return result.length > 0 ? result : ['ru']
-}
-
-// getAvailableLangs: возвращает список langs, у которых current route имеет live-версию.
-// Iskra §1 mandate: «кнопка языка X показывается ТОЛЬКО если у текущего маршрута существует
-// X-версия». Активный язык всегда виден (safety fallback в конце).
-// Карта источников истины (TIKET-31 4-lang decouple cont+7 S8SCOOP 2026-08-24):
-//   • homepage / /en /pt /de → все 4 langs (SUPPORTED_LOCALES; i18n messages ready)
-//   • books/reader → series.yaml translations[lang]==='live' (gated by translation availability)
-//   • legal/about → routes.ts фактические маршруты (currently RU + EN; PT/DE pending Bolik+Zeka)
-//   • unknown → active lang only (safe — one button, no dead link)
-function getAvailableLangs(currentPath: string): SupportedLocale[] {
-  // TIKET-31 PORTAL-UI-LANG-DECOUPLE-1 (cont+7 S8SCOOP): homepage 4-язычная
-  // (RU + EN + PT + DE). Iskra §S299-05 PORTAL-LANG-PARITY-1 canon.
-  if (
-    currentPath === '/' ||
-    currentPath === '' ||
-    currentPath === '/en' ||
-    currentPath === '/en/' ||
-    currentPath === '/pt' ||
-    currentPath === '/pt/' ||
-    currentPath === '/de' ||
-    currentPath === '/de/'
-  ) {
-    return [...SUPPORTED_LOCALES]
-  }
-
-  const readerLangMatch = currentPath.match(/^\/(kn\d+)\/(ru|pt|en|de)\/read(\/.*)?$/)
-  if (readerLangMatch) {
-    return langsAvailableForBook(readerLangMatch[1])
-  }
-
-  const readerDefaultMatch = currentPath.match(/^\/(kn\d+)\/read(\/.*)?$/)
-  if (readerDefaultMatch) {
-    return langsAvailableForBook(readerDefaultMatch[1])
-  }
-
-  const bookPageMatch = currentPath.match(/^\/(kn\d+)(?:\/(?:ru|en|pt|de))?\/?$/)
-  if (bookPageMatch) {
-    return langsAvailableForBook(bookPageMatch[1])
-  }
-
-  const legalMatch = currentPath.match(/^(?:\/(en))?\/([\w-]+)\/?$/)
-  if (legalMatch && LEGAL_PAGES.includes(legalMatch[2])) {
-    // Legal routes: RU + EN через routes.ts. PT+DE pending Bolik DE-LEGAL + Zeka PT-LEGAL.
-    return SUPPORTED_LOCALES.filter((l) => l === 'ru' || l === 'en')
-  }
-
-  return [routeLang() as SupportedLocale]
+// getAvailableLangs: TIKET-31 EXT (Andrey mandate cont+7 2026-08-24 + Iskra §S299-05 canon):
+// ВСЕГДА возвращает все 4 langs. Кнопки языков visible везде.
+// Missing translations handled gracefully через LangNotReady disclosure component
+// (stub routes /{en,pt,de}/kn{N} + /{pt,de}/{legal_page} → LangNotReady.vue с disclosure text).
+// Reverses Iskra §1 NAV-1 cont+21 S1PT «hide button если не готов» — override per Andrey UX vision:
+// «на всём портале переключение на все 4 языка; если перевод не готов — просто пишем
+// перевод этой страницы готовится».
+function getAvailableLangs(_currentPath: string): SupportedLocale[] {
+  return [...SUPPORTED_LOCALES]
 }
 
 const availableLangs = computed(() => getAvailableLangs(route.path))
 
-// TIKET-29 4-lang footer extension (Iskra POMETKA-11 S299-11 passenger cont+7 S8SCOOP):
-// Legal routes existing только в RU (/{page}) + EN (/en/{page}) per routes.ts.
-// PT/DE users на home — footer links fallback к EN legal (nearest available lang).
-// TODO: расширить к /pt/ + /de/ legal когда Bolik DE-LEGAL 6-pages (Vier-Augen pending)
-// + Zeka PT-LEGAL strings landed. Отдельный ticket PT-DE-LEGAL-ROUTES-1 после Iskra ratify.
+// TIKET-31 EXT footer language prefix — generic per current lang (не EN fallback).
+// PT/DE legal routes ДОБАВЛЕНЫ как stub → LangNotReady disclosure (routes.ts /pt/{legal} + /de/{legal}).
+// Retro-viza Iskra + Zeka + Bolik + Lelik pending для canonical native disclosure text.
 const footerLangPrefix = computed(() => {
   const lang = routeLang()
-  if (lang === 'ru') return ''
-  if (lang === 'en') return '/en'
-  return '/en' // PT/DE fallback к EN legal until PT-DE-LEGAL-ROUTES-1
+  return lang === 'ru' ? '' : `/${lang}`
 })
 
 // buildLangUrl: строит адрес параллельной языковой версии текущей страницы.
@@ -191,57 +134,62 @@ const footerLangPrefix = computed(() => {
 // Book-page routes: /kn{N} (RU default) OR /kn{N}/{lang} (pre-rendered locale, fast-follow).
 // TIKET-28 data-driven refactor (cont+4 S295KONSOL): hardcoded kn1+en check заменён на
 // series.yaml translations per Iskra visa 6. Silent stay preserves UX (no 404 regression).
+// buildLangUrl: TIKET-31 EXT (Andrey mandate cont+7 2026-08-24).
+// Простой pattern: strip existing lang prefix → add target lang prefix.
+// Reader routes (`/kn{N}/{lang}/read/*`) — special case (lang inside path, not prefix).
+// Missing lang combinations → LangNotReady stub OR real route depending on translations state.
 function buildLangUrl(currentPath: string, targetLang: SupportedLocale): string {
-  // TIKET-31 4-lang decouple (cont+7 S8SCOOP 2026-08-24): `/` ↔ `/en` ↔ `/pt` ↔ `/de` mapping.
-  // Placed FIRST — most specific match precedes book/reader/legal regex fallbacks.
+  // Home root
   if (currentPath === '/' || currentPath === '') {
     return targetLang === 'ru' ? '/' : `/${targetLang}`
   }
+
+  // Home lang variants
   const homeLangMatch = currentPath.match(/^\/(en|pt|de)\/?$/)
   if (homeLangMatch) {
     return targetLang === 'ru' ? '/' : `/${targetLang}`
   }
 
-  const withLangMatch = currentPath.match(/^\/(kn\d+)\/(ru|pt|en|de)\/read(\/.*)?$/)
-  if (withLangMatch) {
-    const [, book, , tail = ''] = withLangMatch
+  // Reader chapter routes: /kn{N}/{lang}/read/* — lang в pathIDDLE не prefix
+  // (kn1 RU + PT + EN live; kn3-5 RU only; kn2/6/7 no reader). Если translation не live →
+  // fallback к RU reader OR home stub. Preserve existing chapter tail для UX continuity.
+  const withLangReaderMatch = currentPath.match(/^\/(kn\d+)\/(ru|pt|en|de)\/read(\/.*)?$/)
+  if (withLangReaderMatch) {
+    const [, book, , tail = ''] = withLangReaderMatch
     if (targetLang === 'ru') return `/${book}/read${tail}`
     const bookData = bookBySlug(book)
     if (bookData?.translations?.[targetLang] === 'live') {
       return `/${book}/${targetLang}/read${tail}`
     }
-    return currentPath
+    // Translation not ready → LangNotReady stub на book page уровне (не reader)
+    return `/${targetLang}/${book}`
   }
 
-  const withoutLangMatch = currentPath.match(/^\/(kn\d+)\/read(\/.*)?$/)
-  if (withoutLangMatch) {
-    const [, book, tail = ''] = withoutLangMatch
+  const withoutLangReaderMatch = currentPath.match(/^\/(kn\d+)\/read(\/.*)?$/)
+  if (withoutLangReaderMatch) {
+    const [, book, tail = ''] = withoutLangReaderMatch
     if (targetLang === 'ru') return currentPath
     const bookData = bookBySlug(book)
     if (bookData?.translations?.[targetLang] === 'live') {
       return `/${book}/${targetLang}/read${tail}`
     }
-    return currentPath
+    // Translation not ready → LangNotReady stub на book page уровне
+    return `/${targetLang}/${book}`
   }
 
-  const bookPageMatch = currentPath.match(/^\/(kn\d+)(?:\/(?:ru|en|pt|de))?\/?$/)
+  // Book page routes: /kn{N} OR /{lang}/kn{N}
+  const bookPageMatch = currentPath.match(/^(?:\/(?:en|pt|de))?\/(kn\d+)\/?$/)
   if (bookPageMatch) {
     const [, book] = bookPageMatch
-    if (targetLang === 'ru') return `/${book}`
-    const bookData = bookBySlug(book)
-    if (bookData?.translations?.[targetLang] === 'live') {
-      return `/${book}/${targetLang}/read`
-    }
-    return currentPath
+    return targetLang === 'ru' ? `/${book}` : `/${targetLang}/${book}`
   }
 
-  const legalMatch = currentPath.match(/^(?:\/(en))?\/([\w-]+)\/?$/)
+  // Legal routes: /{page} OR /{lang}/{page}
+  const legalMatch = currentPath.match(/^(?:\/(en|pt|de))?\/([\w-]+)\/?$/)
   if (legalMatch) {
-    const [, currentLangPrefix, page] = legalMatch
+    const [, , page] = legalMatch
     if (LEGAL_PAGES.includes(page)) {
-      if (targetLang === 'ru') return `/${page}`
-      if (targetLang === 'en') return `/en/${page}`
-      return currentLangPrefix ? `/${currentLangPrefix}/${page}` : `/${page}`
+      return targetLang === 'ru' ? `/${page}` : `/${targetLang}/${page}`
     }
   }
 
