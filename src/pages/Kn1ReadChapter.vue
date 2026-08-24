@@ -76,8 +76,10 @@ const SITE_URL = 'https://books.folkup.life'
 const langSegment = computed(() => (lang.value === 'ru' ? '' : `/${lang.value}`))
 // NAV-1 Ступень 2 cont+21 S1PT: reverted Ступень 1 hardcoding per Iskra POMETKA-10 §B
 // pt.1 acceptance — lang-aware TOC routes /kn1/en/read + /kn1/pt/read shipped this PR.
-// bookHomePath keeps '/kn1' fallback (no /kn1/{lang} landing pages yet — deferred scope).
-// tocPath now lang-aware — EN/PT chapter breadcrumb points к EN/PT TOC (no more RU fallback).
+// bookHomePath keeps '/kn1' fallback per pragmatic UX: /en/kn1 stub = LangNotReady disclosure
+// (confusing since user was reading EN chapters). '/kn1' RU book page shows real content.
+// Compromise until /en/kn1 promoted к real EN book page (BookPage.vue rendering EN i18n).
+// tocPath lang-aware — EN/PT chapter breadcrumb points к EN/PT TOC (no more RU fallback).
 const bookHomePath = computed(() => '/kn1')
 const tocPath = computed(() => `/kn1${langSegment.value}/read`)
 

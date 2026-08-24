@@ -14,10 +14,12 @@ import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 import { useHead } from '@unhead/vue'
 import { useSeriesData } from '../composables/useSeriesData'
+import { useLangUrl } from '../composables/useLangUrl'
 
 const { t } = useI18n()
 const route = useRoute()
 const { bookBySlug } = useSeriesData()
+const { langUrl } = useLangUrl()
 
 const bookSlug = route.meta.bookSlug as string | undefined
 const targetLang = (route.meta.lang || 'ru') as 'ru' | 'en' | 'pt' | 'de'
@@ -74,7 +76,7 @@ useHead({
         {{ t('lang_not_ready.back_to_ru') }}
       </RouterLink>
       <span class="lang-not-ready__sep" aria-hidden="true">·</span>
-      <RouterLink to="/" class="lang-not-ready__link">
+      <RouterLink :to="langUrl('/')" class="lang-not-ready__link">
         {{ t('lang_not_ready.home') }}
       </RouterLink>
     </nav>
