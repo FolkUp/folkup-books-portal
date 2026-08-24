@@ -201,4 +201,15 @@
     <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/imprint/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/imprint/"/>
   </url>
+  <!-- PRO-CHTO-EN-1 standalone route (Option A.3 per Alisa KVIT-22 → S299-14 DEFAULT-GO canon).
+       First implementation for kn.1 EN. Extendable pattern /kn{N}/{lang}/pro-chto/ per Iskra
+       Vier-Augen queue (kn.4/5/6 pending PASS per S299-12 §2). -->
+  <url>
+    <loc>https://books.folkup.life/kn1/en/pro-chto/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/kn1/en/pro-chto/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/kn1/pro-chto/"/>
+  </url>
 </urlset>
