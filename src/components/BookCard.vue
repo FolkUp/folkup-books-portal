@@ -26,7 +26,27 @@ const coverSrc = computed(() => {
   )
 })
 
+// Per-locale translation availability check (S295KONSOL cont+6 batch 9 2026-08-24).
+// Lelik EN coverage audit CRITICAL #1: portal /en /pt /de landing displayed all books as
+// «Read» clickable even когда translation status = 'preparing' (broken UX phantom).
+// Fix per Iskra ZAGLUSHKI S179 canon «перевод не блокирует релиз»: use per-locale
+// translations.{ru|en|de|pt}.status к override «Read» label с «Coming soon» + disable click
+// когда current locale translation still preparing. Matches svod_zakryt_pre_shit_v5 UX pattern.
+const translationStatus = computed<'live' | 'preparing' | undefined>(() => {
+  const currentLocale = locale.value as 'ru' | 'en' | 'de' | 'pt'
+  return props.book.translations?.[currentLocale]
+})
+
+const isTranslationPreparing = computed(() =>
+  props.book.status === 'live' && translationStatus.value === 'preparing'
+)
+
 const statusLabel = computed(() => {
+  // Translation preparing overrides «Read» с «Coming soon» для current locale
+  // (fixes Lelik audit CRITICAL #1 dead-clickable Read cards kn.2-kn.6 EN/PT/DE).
+  if (isTranslationPreparing.value) {
+    return t('portal.coming_soon')
+  }
   switch (props.book.status) {
     case 'live':
       // Iskra §6 VITRINNYY-PAKET S214: короткий лейбл «Читать» вместо «Читать книгу».
@@ -52,7 +72,10 @@ const statusLabel = computed(() => {
 const isDisabled = computed(
   () =>
     props.book.status === 'variant_b_pause' ||
-    props.book.status === 'svod_zakryt_pre_shit_v5'
+    props.book.status === 'svod_zakryt_pre_shit_v5' ||
+    // S295KONSOL cont+6 batch 9: also disable card click когда current locale translation preparing
+    // (matches svod_zakryt UX — «Coming soon» card без dead click).
+    isTranslationPreparing.value
 )
 </script>
 
