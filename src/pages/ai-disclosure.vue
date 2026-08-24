@@ -21,12 +21,28 @@ const route = useRoute()
 const SITE_URL = 'https://books.folkup.life'
 
 // TICKET 9 P1 (S8SCOOP cont+0): dynamic canonical + hreflang alt EN per route.meta.lang.
-// /ai-disclosure (RU default) OR /en/ai-disclosure (EN variant). Both self-canonical для правильной
-// SEO indexation. hreflang cross-refs both variants + x-default → RU master.
+// S295KONSOL cont+6 SEO extension 2026-08-24: 4-lang parity per Iskra KANON S301-08 LOCALE-DEFAULTS.
+// PT audience discoverability — Google finds /pt/ai-disclosure via hreflang cross-ref.
 const currentLang = computed<string>(() => (route.meta.lang as string) || 'ru')
-const currentUrl = computed(() =>
-  currentLang.value === 'en' ? `${SITE_URL}/en/ai-disclosure/` : `${SITE_URL}/ai-disclosure/`,
-)
+const ruUrl = `${SITE_URL}/ai-disclosure/`
+const enUrl = `${SITE_URL}/en/ai-disclosure/`
+const ptUrl = `${SITE_URL}/pt/ai-disclosure/`
+const deUrl = `${SITE_URL}/de/ai-disclosure/`
+const currentUrl = computed(() => {
+  switch (currentLang.value) {
+    case 'en': return enUrl
+    case 'pt': return ptUrl
+    case 'de': return deUrl
+    default: return ruUrl
+  }
+})
+const OG_LOCALES: Record<string, string> = {
+  ru: 'ru_RU',
+  en: 'en_US',
+  pt: 'pt_PT',
+  de: 'de_DE',
+}
+const ogLocale = computed(() => OG_LOCALES[currentLang.value] ?? 'ru_RU')
 
 useHead({
   title: () => t('ai_disclosure.title') + ' — ' + t('brand.name'),
@@ -37,15 +53,18 @@ useHead({
     { property: 'og:description', content: () => t('ai_disclosure.meta_description') },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: () => currentUrl.value },
+    { property: 'og:locale', content: () => ogLocale.value },
     { name: 'twitter:card', content: 'summary' },
     { name: 'twitter:title', content: () => t('ai_disclosure.title') },
     { name: 'twitter:description', content: () => t('ai_disclosure.meta_description') },
   ],
   link: [
     { rel: 'canonical', href: () => currentUrl.value },
-    { rel: 'alternate', hreflang: 'ru', href: `${SITE_URL}/ai-disclosure/` },
-    { rel: 'alternate', hreflang: 'en', href: `${SITE_URL}/en/ai-disclosure/` },
-    { rel: 'alternate', hreflang: 'x-default', href: `${SITE_URL}/ai-disclosure/` },
+    { rel: 'alternate', hreflang: 'ru', href: ruUrl },
+    { rel: 'alternate', hreflang: 'en', href: enUrl },
+    { rel: 'alternate', hreflang: 'pt', href: ptUrl },
+    { rel: 'alternate', hreflang: 'de', href: deUrl },
+    { rel: 'alternate', hreflang: 'x-default', href: ruUrl },
   ],
   script: [
     {
