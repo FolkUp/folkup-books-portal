@@ -88,15 +88,34 @@ export const routes: RouteRecordRaw[] = [
     meta: { pageType: 'reader-chapter', bookSlug: 'kn1', lang: 'en' },
     props: (route) => ({ ...route.params, lang: 'en' }),
   },
-  // PRO-CHTO-EN-1 standalone route (Option A.3 per Alisa KVIT-22 → S299-14 DEFAULT-GO canon apply).
-  // Standalone «What This Book Is About» page — Лёлик EN draft ratified Iskra Vier-Augen S299-10 PASS.
-  // Extendable pattern: /kn{N}/{lang}/pro-chto/ (kn.4/5/6 pending Iskra Vier-Augen queue per S299-12 §2).
+  // PRO-CHTO standalone routes (Option A.3 per Alisa KVIT-22 → S299-14 DEFAULT-GO canon apply).
+  // 4-lang parity per Iskra S301-10 §4 P1 mandate + S301-04 LOCALE-PERSISTENCE canon.
   // Preserves canon S242 §1 KANON1=β (inline pro-chto suppression в BookPage.vue untouched).
+  // Content: content/kn1/{lang}/pro-chto.md — RU (Iskra v3-BEZ-SCHYOTA S198) + EN (Лёлик S299-10) +
+  //   PT (Zeka S280-02) + DE (Bolik S246 term-cascade). Component reads route.meta.lang.
+  {
+    path: '/kn1/pro-chto',
+    name: 'kn1-pro-chto',
+    component: () => import('../pages/ProChtoLangPage.vue'),
+    meta: { pageType: 'pro-chto-page', bookSlug: 'kn1', lang: 'ru' },
+  },
   {
     path: '/kn1/en/pro-chto',
     name: 'kn1-en-pro-chto',
     component: () => import('../pages/ProChtoLangPage.vue'),
     meta: { pageType: 'pro-chto-page', bookSlug: 'kn1', lang: 'en' },
+  },
+  {
+    path: '/kn1/pt/pro-chto',
+    name: 'kn1-pt-pro-chto',
+    component: () => import('../pages/ProChtoLangPage.vue'),
+    meta: { pageType: 'pro-chto-page', bookSlug: 'kn1', lang: 'pt' },
+  },
+  {
+    path: '/kn1/de/pro-chto',
+    name: 'kn1-de-pro-chto',
+    component: () => import('../pages/ProChtoLangPage.vue'),
+    meta: { pageType: 'pro-chto-page', bookSlug: 'kn1', lang: 'de' },
   },
   {
     path: '/kn2',
