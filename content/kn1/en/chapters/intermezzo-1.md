@@ -29,7 +29,7 @@ draft: false
 
 > **What this intermezzo is about.** A satirical diagnosis of the agile theater through Carroll and Bulgakov. A consultancy where forty-three teams, two hundred and eight sprints, and twelve hundred retros a month do not produce a single product. Sprints for the sake of retros, retros for the sake of planning the next sprints. «Seven roles coordinating the work of one person with himself» — and that is called a mature process. A literary mirror for anyone who has ever sat through a Program Increment Planning.
 
-Alisa climbed the stairs to the sign «Center for Agile Transformation» in Moscow-City, tower «Federation,» forty-second floor, and found a spacious room with a panoramic view of the Ring Road: precisely the kind of room one expects in a place that transforms everything except results. Around a round table of Karelian birch sat three: an elegant consultant in a Bosco suit, a huge striped cat, and a short man with a nervous tic.
+Alice climbed the stairs to the sign «Center for Agile Transformation» in Moscow-City, tower «Federation,» forty-second floor, and found a spacious room with a panoramic view of the Ring Road: precisely the kind of room one expects in a place that transforms everything except results. Around a round table of Karelian birch sat three: an elegant consultant in a Bosco suit, a huge striped cat, and a short man with a nervous tic.
 
 The consultant gestured toward a Herman Miller chair.
 
@@ -39,13 +39,13 @@ The cat was importantly slicing a caviar sandwich with a knife and fork of Germa
 
 The consultant explained: «Behemoth is our chief technology officer. Korzhikov is our senior Scrum Master, certified, all that. And what is your name?»
 
-«Alisa. And what do you do here?»
+«Alice. And what do you do here?»
 
 Korzhikov twitched: the question had evidently caught him in the middle of especially complex reflections on process.
 
 «We roll out agile methodologies! We have forty-three teams, two hundred and eight sprints a month, twelve hundred retros.»
 
-Alisa asked with an innocence that in the agile environment is considered bad form:
+Alice asked with an innocence that in the agile environment is considered bad form:
 
 «And how many products do you ship?»
 
@@ -55,7 +55,7 @@ The cat purred without looking up from the sandwich: «Sire, the girl is asking 
 
 The consultant nodded: «Behemoth is right. We measure velocity metrics, burndown charts, story points. Products are waterfall thinking, an outdated approach for those who do not understand modern realities.»
 
-Alisa was baffled: «Then why the sprints?»
+Alice was baffled: «Then why the sprints?»
 
 Korzhikov explained joyfully: «To do retros! And retros so we can plan the next sprint!»
 
@@ -67,7 +67,7 @@ The consultant added importantly: «This is called continuous improvement. Yeste
 
 Korzhikov answered: «We plan the planning of the next planning. We have a very complex organizational structure, you see. Tribes, guilds, squads.»
 
-Alisa observed: «Like the middle ages.»
+Alice observed: «Like the middle ages.»
 
 The consultant corrected her: «Spotify model, dear. The most modern methodology. Every tribe has its Chapter Lead, every guild has a Guild Master, and they coordinate through a Tribe Lead by way of a matrix reporting structure that provides full transparency of decision-making processes.»
 
@@ -89,7 +89,7 @@ The cat chuckled and began to wash himself with a paw.
 
 The consultant waved his hand, and a huge board appeared on the wall: a work of contemporary management art. The columns: «To Do,» «In Progress,» «Code Review,» «Testing,» «Ready for Deployment,» «Blocked,» «Waiting for Approval,» «On Hold.»
 
-Alisa admitted: «Beautiful. And what is in the columns?»
+Alice admitted: «Beautiful. And what is in the columns?»
 
 «One task,» Korzhikov answered proudly. «"Set up the CI/CD pipeline." Has been hanging for eight months.»
 
@@ -105,7 +105,7 @@ Alisa admitted: «Beautiful. And what is in the columns?»
 
 «Korzhikov,» the cat answered, returning to the sandwich. «He observes himself. A very reflective process.»
 
-Alisa looked with confusion at the board, then at the trio at the table.
+Alice looked with confusion at the board, then at the trio at the table.
 
 «What if you tried just to do something useful? Without boards and retros?»
 
@@ -115,7 +115,7 @@ Korzhikov was horrified: «What do you mean, without boards?»
 
 «And very tasty sausage with breakfast,» the cat added, finishing the sandwich.
 
-Alisa carefully stood and headed toward the exit, trying not to disturb the quantum agile balance. Behind her came:
+Alice carefully stood and headed toward the exit, trying not to disturb the quantum agile balance. Behind her came:
 
 «Korzhikov, begin the retrospective. Let us discuss why the girl did not appreciate our transformation roadmap.»
 

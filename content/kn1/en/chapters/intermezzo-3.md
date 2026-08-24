@@ -29,19 +29,19 @@ draft: false
 
 > **What this intermezzo is about.** A one-hundred-and-twenty-seven-story elevator of agile transformation. They ascend one floor per iteration with a retrospective between each; «press the button for 127» is waterfall thinking. The apotheosis of agile absurdism: the vertical decomposition of movement, the adaptive planning of the simplest action. A caricature of digital transformation initiatives in which the process of transformation has become its only product.
 
-Alisa came up from the basement and found a Kone elevator with a gold sign «Digital Transformation — C-Level» in a lobby with marble columns, where every detail of the interior cost more than the entire annual IT budget of an average startup. The doors opened without sound, and she found herself in a glass cabin with a panoramic view of Moscow, alongside a short man in a Stefano Ricci suit and the same striped cat, who now held an iPad Pro in a Hermès leather case.
+Alice came up from the basement and found a Kone elevator with a gold sign «Digital Transformation — C-Level» in a lobby with marble columns, where every detail of the interior cost more than the entire annual IT budget of an average startup. The doors opened without sound, and she found herself in a glass cabin with a panoramic view of Moscow, alongside a short man in a Stefano Ricci suit and the same striped cat, who now held an iPad Pro in a Hermès leather case.
 
 «We are ascending to top management,» the man announced with the solemnity of a cosmonaut departing for distant stars. «My name is Transformator. Behemoth is running our digital roadmap.»
 
 The cat tapped importantly with his paw on the screen.
 
-«Where are we headed?» Alisa inquired.
+«Where are we headed?» Alice inquired.
 
 Transformator gestured solemnly toward the ceiling, as though conducting the symphony of corporate growth: «To the summits of strategic planning! There, where the decisions on agile transformation are born.»
 
 The elevator began its ascent with the ceremonial slowness of a coffin at the funeral of efficiency.
 
-Alisa looked at the panel: «Could it go faster?»
+Alice looked at the panel: «Could it go faster?»
 
 The cat, without looking up from the tablet, pronounced a philosophical truth: «Iteration is our credo. Floor by floor, like breathing: inhale — planning, exhale — retrospective.»
 
@@ -51,7 +51,7 @@ Transformator squared his shoulders with the pride of an architect of the Tower 
 
 The second floor greeted them with a stop worthy of a historical climax.
 
-Alisa looked inquiringly at the indicator.
+Alice looked inquiringly at the indicator.
 
 «A retrospective,» the cat pronounced with the reverence of an archaeologist studying the shards of an ancient civilization. «We are analyzing the successes of the ascent.»
 
@@ -79,7 +79,7 @@ The cat looked at her as though she had proposed to solve a quadratic equation w
 
 Transformator shuddered, as if from blasphemy: «Waterfall approach! Agility requires adaptivity at every step of the ascent.»
 
-Alisa looked closer at the elevator panel and discovered that in place of the usual floor numbers were the inscriptions: «Sprint 1,» «Sprint 2,» «Retrospective,» «Planning,» «Grooming,» «Demo.»
+Alice looked closer at the elevator panel and discovered that in place of the usual floor numbers were the inscriptions: «Sprint 1,» «Sprint 2,» «Retrospective,» «Planning,» «Grooming,» «Demo.»
 
 «How do you determine the moment of arrival?»
 
@@ -95,9 +95,9 @@ The cat lifted the tablet like a sacred artifact: «Definition of Done! The floo
 
 The fifth floor brought a new passenger: an elegant woman in a suit, exuding efficiency and expensive perfume.
 
-«Alisa! What a meeting!» An iPad rose in greeting. «Hella, agile methods coach. How are you finding the transformation process?»
+«Alice! What a meeting!» An iPad rose in greeting. «Hella, agile methods coach. How are you finding the transformation process?»
 
-The Sire from the Consulting Suite, if memory served, had been a man. But Alisa was beginning to understand the rules of this place: the retinue's names were passed out like conference badges — whoever grabbed first became Woland.
+The Sire from the Consulting Suite, if memory served, had been a man. But Alice was beginning to understand the rules of this place: the retinue's names were passed out like conference badges — whoever grabbed first became Woland.
 
 «Four floors in half an hour.»
 
@@ -113,7 +113,7 @@ The calculator worked in Hella's hands with the intensity of a quantum computer.
 
 The cat solemnly raised a paw: «A second elevator! Parallel streams will double productivity.»
 
-«But the movement is the same,» Alisa narrowed her eyes. «To the same floor synchronously.»
+«But the movement is the same,» Alice narrowed her eyes. «To the same floor synchronously.»
 
 Hella struck the pose of a military strategist: «Cross-functional teams! One stream plans, the other retrospects.»
 
@@ -141,7 +141,7 @@ Azazello lit up with startup fanaticism: «Fail-fast principle! Express validati
 
 «Pivot!» the cats sang in chorus the corporate mantra. «Horizontal movement as the new vector of development.»
 
-The display flickered with the seventh floor in the mood of cancelled flights. Alisa felt tired.
+The display flickered with the seventh floor in the mood of cancelled flights. Alice felt tired.
 
 «Could I get off and go on foot?»
 
@@ -159,7 +159,7 @@ Hella lit up with the inspiration of Columbus: «A moonshot project! Disruptive 
 
 «A discovery workshop for planning the research is scheduled,» Azazello took the air of Einstein. «In parallel we are conducting a feasibility study of the feasibility study itself.»
 
-Alisa reached for the red emergency button. The temple of agile philosophy required immediate departure.
+Alice reached for the red emergency button. The temple of agile philosophy required immediate departure.
 
 «Wait!» Transformator waved his arms. «We have not conducted the demo!»
 
@@ -177,15 +177,15 @@ The gazes of the interlocutors crossed in the astonishment of people who have be
 
 «An incorrect statement of the problem,» Transformator shook his head. «We focus on outcomes, not outputs.»
 
-«What outcome?» The word seemed to Alisa an exotic delicacy from a molecular gastronomy restaurant.
+«What outcome?» The word seemed to Alice an exotic delicacy from a molecular gastronomy restaurant.
 
 The cat raised his paws to the ceiling: «A sustainable transportation experience! A culture of vertical mobility, plus stakeholder engagement in the paradigm of continuous value delivery.»
 
-Without further ceremony Alisa slammed the red button. The elevator halted, the doors parted: the seventh floor.
+Without further ceremony Alice slammed the red button. The elevator halted, the doors parted: the seventh floor.
 
 «Emergency exit protocol,» Azazello brightened. «Required: an exit retrospective before the final procedure.»
 
-Alisa slipped from the elevator and discovered an ordinary staircase, without retrospectives, planning, or stakeholder mapping. Plain steps led upward. Behind her:
+Alice slipped from the elevator and discovered an ordinary staircase, without retrospectives, planning, or stakeholder mapping. Plain steps led upward. Behind her:
 
 «Azazello, a comprehensive post-mortem of the early exit!» Hella commanded. «Plus a lessons-learned session.»
 
@@ -197,7 +197,7 @@ Eighth floor, a landing window. Below stood the «Center for Agile Transformatio
 
 Next door a house was being built. Without boards, without sprints, without retrospectives. Brick to brick, wall to wall. The house was growing.
 
-«Interesting,» Alisa thought, «whether they know about velocity and burndown charts.»
+«Interesting,» Alice thought, «whether they know about velocity and burndown charts.»
 
 The builders were methodically continuing. Violating agile principles and unaware of it.
 

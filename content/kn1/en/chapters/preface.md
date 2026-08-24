@@ -133,7 +133,7 @@ And, finally, thanks to the writers themselves, from Jules Verne to Albert Camus
 ---
 
 *Comandante FolkUp*
-*Co-author: Alisa (PM, FolkUp ecosystem) · Editor: Iskra*
+*Co-author: Alice (PM, FolkUp ecosystem) · Editor: Iskra*
 *2026*
 
 ---
