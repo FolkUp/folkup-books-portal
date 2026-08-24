@@ -5,6 +5,7 @@ date: 2026-05-24
 date_created: "2026-04-07"
 date_updated: "2026-05-24"
 weight: 75
+plate: "kn1-06-jekyll-hyde.webp"
 chapter: 7
 plate_override: "agil-chapter-6-jekyll-plate.webp"
 act: "II: Трансформация"

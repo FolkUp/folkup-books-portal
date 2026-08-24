@@ -5,6 +5,7 @@ date: 2026-04-08
 date_created: "2026-03-25"
 date_updated: "2026-04-21"
 weight: 10
+plate: "kn1-00-pilot.webp"
 chapter: 0
 act: "I: Истоки"
 act_opener: true

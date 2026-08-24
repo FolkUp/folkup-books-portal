@@ -5,6 +5,7 @@ date: 2026-03-28
 date_created: "2026-03-28"
 date_updated: "2026-04-29"
 weight: 50
+plate: "kn1-04-borges.webp"
 chapter: 4
 act: "I: Истоки"
 category: "analysis"

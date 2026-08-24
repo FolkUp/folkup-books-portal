@@ -5,6 +5,7 @@ date: 2026-05-25
 date_created: "2026-04-08"
 date_updated: "2026-05-25"
 weight: 100
+plate: "kn1-09-niichavo.webp"
 chapter: 10
 act: "III: Горизонты"
 category: "team-self-organization"

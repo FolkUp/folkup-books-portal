@@ -5,6 +5,7 @@ date: 2026-04-04
 date_created: "2026-04-04"
 date_updated: "2026-04-21"
 weight: 60
+plate: "kn1-05-nemo.webp"
 chapter: 5
 act: "II: Трансформация"
 act_opener: true

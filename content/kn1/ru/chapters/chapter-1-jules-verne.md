@@ -5,6 +5,7 @@ date: 2026-03-26
 date_created: "2026-03-26"
 date_updated: "2026-04-21"
 weight: 20
+plate: "kn1-01-jules-verne.webp"
 chapter: 1
 act: "I: Истоки"
 category: analysis

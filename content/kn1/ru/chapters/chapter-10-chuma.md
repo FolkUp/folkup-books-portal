@@ -5,6 +5,7 @@ date: 2026-05-25
 date_created: "2026-04-08"
 date_updated: "2026-05-25"
 weight: 110
+plate: "kn1-10-chuma.webp"
 chapter: 11
 act: "III: Горизонты"
 category: "этика-кризиса"

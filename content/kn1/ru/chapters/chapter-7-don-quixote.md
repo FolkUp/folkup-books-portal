@@ -5,6 +5,7 @@ date: 2026-05-25
 date_created: "2026-04-07"
 date_updated: "2026-05-25"
 weight: 80
+plate: "kn1-07-don-quixote.webp"
 chapter: 8
 act: "II: Трансформация"
 category: "analysis"

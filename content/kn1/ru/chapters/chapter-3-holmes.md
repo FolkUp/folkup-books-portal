@@ -5,6 +5,7 @@ date: 2026-03-28
 date_created: "2026-03-28"
 date_updated: "2026-04-29"
 weight: 40
+plate: "kn1-03-holmes.webp"
 chapter: 3
 act: "I: Истоки"
 category: analysis

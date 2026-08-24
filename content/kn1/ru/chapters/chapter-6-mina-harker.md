@@ -5,6 +5,7 @@ date: 2026-05-24
 date_created: "2026-05-24"
 date_updated: "2026-05-24"
 weight: 70
+plate: "kn1-06-mina-harker.webp"
 chapter: 6
 plate_override: "agil-chapter-6-mina-plate.webp"
 act: "II: Трансформация"

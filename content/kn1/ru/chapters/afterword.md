@@ -3,6 +3,7 @@ title: "Послесловие. Одиннадцать вопросов"
 description: "Послесловие к книге *Agile Sapiens* — синтез двенадцати глав как одиннадцать диагностических вопросов и рамка от главы-пилота. Не команды, а вопросы."
 date: 2026-05-26
 weight: 1000
+plate: "kn1-afterword.webp"
 category: synthesis
 reading_time: "8 min"
 tags:
