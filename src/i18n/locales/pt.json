@@ -18,16 +18,16 @@
     "footer_contact": "editorial{'@'}folkup.app"
   },
   "portal": {
-    "_translator_note": "PLACEHOLDER — Iskra S214 §2/§3/§9 adaptado do cânone RU por Alice cont+20, aguarda parecer nativo de Lelik (tradutor PT-EU, Quatro Olhos). Regra §10: sem contagens, sem falsa urgência, sem datas prometidas. Nome da série «Pela Própria Cabeça» mantido do commit anterior como idioma tentativo; o tradutor pode refinar. PT-EU obrigatório, sem brasileirismos.",
+    "_translator_note": "Native-speaker refined by Zeka (PT-EU translator) 2026-08-24 per KANON+PRIKAZ Iskra S299-05 (PORTAL-LANG-PARITY). Hero, series_intro, 7 book subtitles, download notice, translation stubs re-synchronized with current RU canonical (previous PT used Alice cont+20 placeholder-adaptation of S214 §2/§3/§9 pending native review). KANON-FLAG P1 applied — public series name removed from series_intro (series does not carry a public name). Trilogy names preserved (KANON-FLAG P1 не покрывает названия трилогий). PT-EU obrigatório, sem brasileirismos, AO90 aplicado. Iskra Vier-Augen S299-20 PASS.",
     "title": "Biblioteca FolkUp",
-    "hero": "Biblioteca FolkUp — livros livres sobre equipa, conhecimento e entendimento: como as pessoas fazem o seu trabalho, como o conhecimento chega até elas sem distorção e porque entender-se é mais difícil do que parece.",
-    "series_intro": "Série «Pela Própria Cabeça» — livros sobre como orientar-se por si próprio. Os volumes abertos estão marcados com «Ler».",
+    "hero": "Livros sobre viver pela própria cabeça: método, acesso ao conhecimento, cidade, intermediários, testemunhos, diálogo. Coleção aberta — leia, copie, passe adiante.",
+    "series_intro": "Livros abertos marcados com «Ler». Outras salas em preparação — entre.",
     "read_book": "Ler livro",
     "read_book_short": "Ler",
     "read_online": "Ler online",
     "download_epub": "Descarregar EPUB",
     "download_pdf": "Descarregar PDF",
-    "download_ru_only_notice": "Descargas actualmente disponíveis apenas em russo. Edição portuguesa em preparação.",
+    "download_ru_only_notice": "Descargas atualmente disponíveis apenas em russo. Edição portuguesa em preparação na oficina FolkUp.",
     "download_ru_only_aria": "Descargas apenas em russo por enquanto",
     "download_ru_epub": "Descarregar EPUB (edição russa)",
     "download_ru_pdf": "Descarregar PDF (edição russa)",
@@ -44,9 +44,9 @@
     "translations_heading": "Versões linguísticas",
     "translation_available": "disponível",
     "translation_stub_short": "em preparação",
-    "translation_stub_full": "A tradução está a ganhar forma na oficina FolkUp. A peça chegará em breve a esta sala.",
+    "translation_stub_full": "A tradução ganha forma na oficina FolkUp. A peça chegará em breve a esta sala — entre.",
     "translation_preview_short": "pré-visualização",
-    "translation_preview_full": "O exemplar está aberto para pré-visualização — a sala está acessível, as obras continuam.",
+    "translation_preview_full": "A peça está aberta para pré-visualização — pode entrar na sala, as obras continuam.",
     "trilogies": {
       "svoimi_silami": {
         "name": "Pelas Próprias Mãos",
@@ -78,13 +78,13 @@
     "book_note": "O livro está disponível em russo"
   },
   "books": {
-    "kn1": { "title": "Agile Sapiens", "subtitle": "Como a literatura clássica previu a gestão moderna" },
-    "kn2": { "title": "Consoantes sem vogais", "subtitle": "Sobre os que falam; os que ouvem; os que escrevem entre linhas" },
-    "kn3": { "title": "Cidade do Sol", "subtitle": "Utopia de equipa: de Campanella às organizações digital-first" },
-    "kn4": { "title": "Onde vive o novo", "subtitle": "Topografia da inovação: porque o novo nasce nas periferias" },
-    "kn5": { "title": "Por mãos alheias", "subtitle": "Como a mão invisível do mercado se torna a mão visível do engenheiro" },
-    "kn6": { "title": "Com os próprios olhos", "subtitle": "Experiência pessoal como fonte de conhecimento: prática sem metodologia, mas com reflexão" },
-    "kn7": { "title": "Dificuldades do diálogo", "subtitle": "O final da coleção. Vem após o portão de qualidade." }
+    "kn1": { "title": "Agile Sapiens", "subtitle": "Uma análise literária do negócio: Verne, Shelley, Holmes e Borges diagnosticavam a gestão muito antes de os consultores chegarem." },
+    "kn2": { "title": "Consoantes sem vogais", "subtitle": "A longa guerra em torno do conhecimento: uns trancam-no, outros arrombam as fechaduras — a abertura vence, vez após vez." },
+    "kn3": { "title": "Cidade do Sol", "subtitle": "Cidades ideais — da Jerusalém celeste à Bauhaus — e a pergunta: é aqui confortável para uma pessoa comum, de sacos de compras nas mãos?" },
+    "kn4": { "title": "Onde vive o novo", "subtitle": "Regras e rutura não são uma alternativa: o cânone chega sempre tarde para nomear o novo. Três mil anos de exemplos vindos das margens." },
+    "kn5": { "title": "Por mãos alheias", "subtitle": "Entre o autor e nós há sempre alguém no meio: o copista, o censor, o editor, o revisor, o crítico — e agora o algoritmo." },
+    "kn6": { "title": "Com os próprios olhos", "subtitle": "O mundo está cheio de fantasmas — e a cada um deles se opõe alguém que foi verificar por si próprio, e pagou por isso." },
+    "kn7": { "title": "Dificuldades do diálogo", "subtitle": "Na cabeça toca uma orquestra — cá para fora sai apenas uma pancada. Um livro sobre as barreiras à compreensão e sobre como as atravessar." }
   },
   "ai_disclosure": {
     "title": "Divulgação de utilização de IA",
