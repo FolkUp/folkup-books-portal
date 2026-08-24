@@ -89,7 +89,7 @@
   "ai_disclosure": {
     "title": "Divulgação de utilização de IA",
     "h1": "Divulgação de utilização de IA",
-    "meta_description": "Conformidade com o Artigo 50(4) do Regulamento IA da UE. Nome legal da pessoa singular responsável pela supervisão editorial: Andrei Klemenchenok. Publicado sob o pseudónimo «Comandante FolkUp».",
+    "meta_description": "A FolkUp divulga voluntariamente a utilização de IA. Responsável editorial: Andrei Klemenchenok. Publicado sob o pseudónimo «Comandante FolkUp».",
     "section1": {
       "h2": "Responsabilidade editorial",
       "p1": "Os livros da Biblioteca FolkUp são assinados com o pseudónimo «Comandante FolkUp». Por trás do pseudónimo está uma pessoa viva: Andrei Klemenchenok, residente em Portugal, editor e revisor. O pseudónimo é um padrão de tipo Banksy para identidade de marca não comercial, não uma ocultação de responsabilidade.",
@@ -107,9 +107,9 @@
       "gate3": "Verificação de conformidade legal antes da publicação"
     },
     "section3": {
-      "h2": "Conformidade com o Artigo 50(4) do Regulamento IA da UE",
-      "p1": "Esta página cumpre o requisito de divulgação da pessoa singular responsável pela supervisão editorial de conteúdo assistido por IA nos termos do Artigo 50(4)(b) do Regulamento IA da UE. Pessoa responsável: Andrei Klemenchenok, cidadão russo, residente em Portugal.",
-      "p2": "O pseudónimo «Comandante FolkUp» é usado nas superfícies públicas (páginas dos livros, catálogo, rodapé, metadados) — padrão de tipo Banksy para identidade de marca não comercial. O pseudónimo mantém a marca da coleção; esta página fornece a divulgação legal nos termos do Regulamento IA."
+      "h2": "Isenção editorial ao abrigo do artigo 50.º, n.º 4 do Regulamento (UE) 2024/1689",
+      "p1": "A FolkUp divulga voluntariamente a utilização de IA na produção dos seus livros. Nos termos do artigo 50.º, n.º 4, segundo parágrafo, do Regulamento (UE) 2024/1689 (RIA), o dever de assinalar texto gerado por IA não se aplica quando o conteúdo tenha sido objeto de revisão humana ou controlo editorial e uma pessoa singular ou coletiva assuma a responsabilidade editorial pela publicação. Essa pessoa é Andrei Klemenchenok. Divulgamos ainda assim, por opção editorial.",
+      "p2": "O pseudónimo «Comandante FolkUp» é usado nas superfícies públicas (páginas dos livros, catálogo, rodapé, metadados) — padrão de tipo Banksy para identidade de marca não comercial. O pseudónimo mantém a marca da coleção; esta página fornece a divulgação legal nos termos do Regulamento (UE) 2024/1689."
     },
     "section4": {
       "h2": "Licença",
@@ -225,15 +225,13 @@
       "title": "Aviso Legal",
       "meta_description": "Aviso Legal do portal books.folkup.life — informações sobre o prestador de serviço, responsabilidade editorial e divulgação de utilização de IA nos termos do RIA.",
       "content": [
-        "<p><em>Informações prestadas em conformidade com o <strong>§5 TMG (Telemediengesetz, Alemanha)</strong> e as boas práticas gerais da UE aplicáveis a sítios acessíveis em todo o território da União Europeia.</em></p>",
         "<h2>Prestador de serviço</h2>",
         "<p><strong>Andrei Klemenchenok</strong><br>Pessoa singular, residente em Portugal<br>Contacto: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a><br>Publica sob o pseudónimo: <strong>Comandante FolkUp</strong></p>",
-        "<p>Trata-se de um projeto editorial amador, sem fins comerciais. <strong>Não</strong> é uma sociedade registada. Não existe número de identificação fiscal (NIF) para efeitos comerciais, nem inscrição no registo comercial, nem filiação em qualquer câmara de comércio.</p>",
+        "<p>Trata-se de um projeto editorial amador, sem fins comerciais. <strong>Não</strong> é uma sociedade registada. Não existe NIPC, nem inscrição no registo comercial, nem filiação em qualquer câmara de comércio.</p>",
         "<h2>Responsabilidade pelos conteúdos</h2>",
-        "<p>Responsável pelos conteúdos editoriais nos termos do <strong>§55 n.º 2 RStV</strong> (Rundfunkstaatsvertrag, Alemanha):</p>",
-        "<p><strong>Andrei Klemenchenok</strong> — morada e contacto conforme indicados acima.</p>",
+        "<p>Responsável pelos conteúdos editoriais: Andrei Klemenchenok</p>",
         "<h2>Divulgação da utilização de IA</h2>",
-        "<p>Em conformidade com o <strong>Regulamento (UE) 2024/1689 relativo à Inteligência Artificial (RIA), artigo 50.º, n.º 4</strong>, os conteúdos assistidos por IA e as ferramentas utilizadas na produção das obras aqui publicadas são divulgados numa página dedicada: <a href='/pt/ai-disclosure'>Divulgação de utilização de IA</a>.</p>",
+        "<p>Em conformidade com o <strong>Regulamento (UE) 2024/1689 relativo à Inteligência Artificial, artigo 50.º, n.º 4</strong>, os conteúdos assistidos por IA e as ferramentas utilizadas na produção das obras aqui publicadas são divulgados numa página dedicada: <a href='/pt/ai-disclosure'>Divulgação de utilização de IA</a>.</p>",
         "<h2>Direitos de autor e licenciamento</h2>",
         "<p>Conteúdos escritos originais neste sítio: <strong>© Andrei Klemenchenok</strong>, publicados ao abrigo de <a href='https://creativecommons.org/licenses/by-sa/4.0/' rel='noopener'>Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional (CC BY-SA 4.0)</a>.</p>",
         "<p>Código-fonte subjacente: <strong>Licença MIT</strong>.</p>",
