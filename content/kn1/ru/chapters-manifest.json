@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-23T22:14:30.545Z",
+  "generated": "2026-08-24T10:22:19.755Z",
   "book": "kn1",
   "locale": "ru",
   "entries": [
@@ -11,6 +11,7 @@
       "act": null,
       "act_opener": false,
       "isApparatus": false,
+      "plate": null,
       "order": 5
     },
     {
@@ -21,6 +22,7 @@
       "act": "I: Истоки",
       "act_opener": true,
       "isApparatus": false,
+      "plate": "kn1-00-pilot.webp",
       "order": 10
     },
     {
@@ -31,6 +33,7 @@
       "act": "I: Истоки",
       "act_opener": false,
       "isApparatus": false,
+      "plate": "kn1-01-jules-verne.webp",
       "order": 20
     },
     {
@@ -41,6 +44,7 @@
       "act": "I: Истоки",
       "act_opener": false,
       "isApparatus": false,
+      "plate": "kn1-02-frankenstein.webp",
       "order": 30
     },
     {
@@ -51,6 +55,7 @@
       "act": "I: Истоки",
       "act_opener": false,
       "isApparatus": false,
+      "plate": "kn1-03-holmes.webp",
       "order": 40
     },
     {
@@ -61,6 +66,7 @@
       "act": "Intermezzi",
       "act_opener": false,
       "isApparatus": false,
+      "plate": null,
       "order": 47
     },
     {
@@ -71,6 +77,7 @@
       "act": "I: Истоки",
       "act_opener": false,
       "isApparatus": false,
+      "plate": "kn1-04-borges.webp",
       "order": 50
     },
     {
@@ -81,6 +88,7 @@
       "act": "II: Трансформация",
       "act_opener": true,
       "isApparatus": false,
+      "plate": "kn1-05-nemo.webp",
       "order": 60
     },
     {
@@ -91,6 +99,7 @@
       "act": "II: Трансформация",
       "act_opener": false,
       "isApparatus": false,
+      "plate": "kn1-06-mina-harker.webp",
       "order": 70
     },
     {
@@ -101,6 +110,7 @@
       "act": "II: Трансформация",
       "act_opener": false,
       "isApparatus": false,
+      "plate": "kn1-06-jekyll-hyde.webp",
       "order": 75
     },
     {
@@ -111,6 +121,7 @@
       "act": "II: Трансформация",
       "act_opener": false,
       "isApparatus": false,
+      "plate": "kn1-07-don-quixote.webp",
       "order": 80
     },
     {
@@ -121,6 +132,7 @@
       "act": null,
       "act_opener": false,
       "isApparatus": false,
+      "plate": null,
       "order": 85
     },
     {
@@ -131,6 +143,7 @@
       "act": "III: Горизонты",
       "act_opener": true,
       "isApparatus": false,
+      "plate": "kn1-08-time-machine.webp",
       "order": 90
     },
     {
@@ -141,6 +154,7 @@
       "act": "III: Горизонты",
       "act_opener": false,
       "isApparatus": false,
+      "plate": "kn1-09-niichavo.webp",
       "order": 100
     },
     {
@@ -151,6 +165,7 @@
       "act": "III: Горизонты",
       "act_opener": false,
       "isApparatus": false,
+      "plate": "kn1-10-chuma.webp",
       "order": 110
     },
     {
@@ -161,6 +176,7 @@
       "act": null,
       "act_opener": false,
       "isApparatus": false,
+      "plate": null,
       "order": 120
     },
     {
@@ -171,6 +187,7 @@
       "act": null,
       "act_opener": false,
       "isApparatus": false,
+      "plate": "kn1-afterword.webp",
       "order": 8000
     },
     {
@@ -181,6 +198,7 @@
       "act": null,
       "act_opener": false,
       "isApparatus": true,
+      "plate": null,
       "order": 9000
     },
     {
@@ -191,6 +209,7 @@
       "act": null,
       "act_opener": false,
       "isApparatus": true,
+      "plate": null,
       "order": 9010
     },
     {
@@ -201,6 +220,7 @@
       "act": null,
       "act_opener": false,
       "isApparatus": true,
+      "plate": null,
       "order": 9020
     },
     {
@@ -211,6 +231,7 @@
       "act": null,
       "act_opener": false,
       "isApparatus": true,
+      "plate": null,
       "order": 9040
     },
     {
@@ -221,6 +242,7 @@
       "act": null,
       "act_opener": false,
       "isApparatus": true,
+      "plate": null,
       "order": 9050
     },
     {
@@ -231,6 +253,7 @@
       "act": null,
       "act_opener": false,
       "isApparatus": true,
+      "plate": null,
       "order": 9060
     }
   ]

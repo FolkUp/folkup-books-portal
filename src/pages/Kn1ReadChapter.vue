@@ -307,6 +307,22 @@ useHead({
         >{{ labels.next }}</RouterLink>
       </nav>
 
+      <!-- Chapter plate (cont+6 wiring; 13 плит flagship shipped cont+5 EXT-3 PR #219).
+           Plate URL от frontmatter `plate:` field via useKn1Chapters manifest. -->
+      <figure
+        v-if="chapterData.meta.plate"
+        class="reader-chapter__plate"
+      >
+        <img
+          :src="`/images/kn1-chapters/${chapterData.meta.plate}`"
+          :alt="`Иллюстрация: ${chapterData.meta.title}`"
+          loading="lazy"
+          decoding="async"
+          width="800"
+          height="1200"
+        />
+      </figure>
+
       <!-- v-html: контент из trusted source (Iskra canonical body) pre-rendered by marked
            at build time (см. scripts/kn1-reader-manifest.mjs). Sync render — SSR-safe. -->
       <div class="reader-chapter__content" v-html="renderedHtml"></div>
@@ -394,6 +410,26 @@ useHead({
   color: var(--color-text-muted, #555);
   margin: 0 auto;
   max-width: 520px;
+}
+
+/* Chapter plate — flagship kn.1 illustration (cont+6 wiring; 13 плит cont+5 EXT-3) */
+.reader-chapter__plate {
+  margin: 2rem auto 2.5rem;
+  max-width: 480px;
+  text-align: center;
+}
+.reader-chapter__plate img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+@media (max-width: 640px) {
+  .reader-chapter__plate {
+    max-width: 100%;
+    margin: 1.5rem auto 2rem;
+  }
 }
 
 /* Body typography — оптимизировано для длинного чтения */

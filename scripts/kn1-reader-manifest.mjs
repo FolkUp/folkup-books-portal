@@ -142,6 +142,7 @@ function collect() {
       act: fm.act || null,
       act_opener: fm.act_opener || false,
       isApparatus: false,
+      plate: fm.plate || null,
       order: orderKey(slug, fm),
     })
     bodies[slug] = renderBody(raw)
@@ -165,6 +166,7 @@ function collect() {
         act: null,
         act_opener: false,
         isApparatus: true,
+        plate: fm.plate || null,
         order: orderKey(slug, fm),
       })
       bodies[slug] = renderBody(raw)
