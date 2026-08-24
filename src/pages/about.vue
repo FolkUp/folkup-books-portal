@@ -19,11 +19,28 @@ const { langUrl } = useLangUrl()
 const SITE_URL = 'https://books.folkup.life'
 
 // TICKET 9 P1 (S8SCOOP cont+0): dynamic canonical + hreflang alt EN per route.meta.lang.
-// /about (RU default) OR /en/about (EN variant). Self-canonical per variant. hreflang cross-refs.
+// S295KONSOL cont+6 SEO extension 2026-08-24: 4-lang parity per Iskra KANON S301-08 LOCALE-DEFAULTS.
+// PT audience discoverability — Google finds /pt/about via hreflang cross-ref.
 const currentLang = computed<string>(() => (route.meta.lang as string) || 'ru')
-const currentUrl = computed(() =>
-  currentLang.value === 'en' ? `${SITE_URL}/en/about/` : `${SITE_URL}/about/`,
-)
+const ruUrl = `${SITE_URL}/about/`
+const enUrl = `${SITE_URL}/en/about/`
+const ptUrl = `${SITE_URL}/pt/about/`
+const deUrl = `${SITE_URL}/de/about/`
+const currentUrl = computed(() => {
+  switch (currentLang.value) {
+    case 'en': return enUrl
+    case 'pt': return ptUrl
+    case 'de': return deUrl
+    default: return ruUrl
+  }
+})
+const OG_LOCALES: Record<string, string> = {
+  ru: 'ru_RU',
+  en: 'en_US',
+  pt: 'pt_PT',
+  de: 'de_DE',
+}
+const ogLocale = computed(() => OG_LOCALES[currentLang.value] ?? 'ru_RU')
 
 useHead({
   title: () => t('about.title') + ' — ' + t('brand.name'),
@@ -33,6 +50,7 @@ useHead({
     { property: 'og:description', content: () => t('about.meta_description') },
     { property: 'og:type', content: 'website' },
     { property: 'og:url', content: () => currentUrl.value },
+    { property: 'og:locale', content: () => ogLocale.value },
     { property: 'og:image', content: `${SITE_URL}/covers/cover_kn1.png` },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:title', content: () => t('about.title') },
@@ -41,9 +59,11 @@ useHead({
   ],
   link: [
     { rel: 'canonical', href: () => currentUrl.value },
-    { rel: 'alternate', hreflang: 'ru', href: `${SITE_URL}/about/` },
-    { rel: 'alternate', hreflang: 'en', href: `${SITE_URL}/en/about/` },
-    { rel: 'alternate', hreflang: 'x-default', href: `${SITE_URL}/about/` },
+    { rel: 'alternate', hreflang: 'ru', href: ruUrl },
+    { rel: 'alternate', hreflang: 'en', href: enUrl },
+    { rel: 'alternate', hreflang: 'pt', href: ptUrl },
+    { rel: 'alternate', hreflang: 'de', href: deUrl },
+    { rel: 'alternate', hreflang: 'x-default', href: ruUrl },
   ],
   script: [
     {

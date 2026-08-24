@@ -17,11 +17,30 @@ const SITE_URL = 'https://books.folkup.life'
 const pageKey = computed<string>(() => (route.meta.pageKey as string) || 'privacy')
 
 // TICKET 9 P1 (S8SCOOP cont+0): dynamic canonical + hreflang alt EN per route.meta.lang.
-// /{pageKey} (RU default) OR /en/{pageKey} (EN variant). Self-canonical per variant.
+// S295KONSOL cont+6 SEO extension 2026-08-24: 4-lang parity per Iskra KANON S301-08 LOCALE-DEFAULTS
+// (portal keeps RU root + EN/PT/DE prefixed). All 4 hreflang cross-refs + og:locale reactive.
+// PT audience discoverability via search engines найти /pt/{pageKey} instead of /en (Google
+// hreflang cross-ref connects language variants properly).
 const currentLang = computed<string>(() => (route.meta.lang as string) || 'ru')
 const ruUrl = computed(() => `${SITE_URL}/${pageKey.value}/`)
 const enUrl = computed(() => `${SITE_URL}/en/${pageKey.value}/`)
-const currentUrl = computed(() => (currentLang.value === 'en' ? enUrl.value : ruUrl.value))
+const ptUrl = computed(() => `${SITE_URL}/pt/${pageKey.value}/`)
+const deUrl = computed(() => `${SITE_URL}/de/${pageKey.value}/`)
+const currentUrl = computed(() => {
+  switch (currentLang.value) {
+    case 'en': return enUrl.value
+    case 'pt': return ptUrl.value
+    case 'de': return deUrl.value
+    default: return ruUrl.value
+  }
+})
+const OG_LOCALES: Record<string, string> = {
+  ru: 'ru_RU',
+  en: 'en_US',
+  pt: 'pt_PT',
+  de: 'de_DE',
+}
+const ogLocale = computed(() => OG_LOCALES[currentLang.value] ?? 'ru_RU')
 
 const paragraphs = computed<string[]>(() => {
   const raw = tm(`legal.${pageKey.value}.content`) as unknown
@@ -40,11 +59,14 @@ useHead({
     { property: 'og:title', content: () => pageTitle.value },
     { property: 'og:description', content: () => metaDescription.value },
     { property: 'og:url', content: () => currentUrl.value },
+    { property: 'og:locale', content: () => ogLocale.value },
   ],
   link: [
     { rel: 'canonical', href: () => currentUrl.value },
     { rel: 'alternate', hreflang: 'ru', href: () => ruUrl.value },
     { rel: 'alternate', hreflang: 'en', href: () => enUrl.value },
+    { rel: 'alternate', hreflang: 'pt', href: () => ptUrl.value },
+    { rel: 'alternate', hreflang: 'de', href: () => deUrl.value },
     { rel: 'alternate', hreflang: 'x-default', href: () => ruUrl.value },
   ],
 })
