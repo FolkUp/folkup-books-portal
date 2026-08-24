@@ -22,8 +22,10 @@ import {
   useKn1ChapterMetaLang,
   loadKn1ChapterBodyHtmlLang,
 } from '../composables/useKn1Chapters'
+import { useLangUrl } from '../composables/useLangUrl'
 
 const route = useRoute()
+const { langUrl } = useLangUrl()
 const slug = computed(() => route.params.slug as string)
 
 // READER-UNIFY-1 cont+16: lang detected from route.meta.lang OR fallback to path parsing.
@@ -264,7 +266,7 @@ useHead({
 <template>
   <main class="reader-chapter">
     <nav class="reader-chapter__breadcrumb" :aria-label="labels.breadcrumbAria">
-      <RouterLink to="/">{{ labels.breadcrumbLibrary }}</RouterLink>
+      <RouterLink :to="langUrl('/')">{{ labels.breadcrumbLibrary }}</RouterLink>
       <span>›</span>
       <RouterLink :to="bookHomePath">Agile Sapiens</RouterLink>
       <span>›</span>

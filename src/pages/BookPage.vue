@@ -8,6 +8,9 @@ import { useHead } from '@unhead/vue'
 import { useI18n } from 'vue-i18n'
 import { useSeriesData, type Locale } from '../composables/useSeriesData'
 import { useBookSchema } from '../composables/useSchemaOrg'
+import { useLangUrl } from '../composables/useLangUrl'
+
+const { langUrl } = useLangUrl()
 
 // Long-form «Про что книга» annotations — per book, per locale (RU baseline + EN/DE/PT as они canonized).
 // Iskra canon v3-BEZ-SCHYOTA (S198 виза Andrey) — «файл на скачивание = та же информация что и на сайте».
@@ -276,7 +279,7 @@ if (book.value) {
 
       <article class="book-page__content">
         <p class="book-page__series">
-          <RouterLink to="/">{{ t('brand.name') }}</RouterLink><template v-if="trilogyName">&nbsp;&middot; {{ t('portal.crumb_trilogy', { name: trilogyName }) }}</template>
+          <RouterLink :to="langUrl('/')">{{ t('brand.name') }}</RouterLink><template v-if="trilogyName">&nbsp;&middot; {{ t('portal.crumb_trilogy', { name: trilogyName }) }}</template>
         </p>
 
         <h1 class="book-page__title">{{ title }}</h1>

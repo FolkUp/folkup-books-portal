@@ -75,16 +75,17 @@ useHead({
       </div>
 
       <div class="msg-secondary">
+        <!-- TIKET-31 EXT-2 lang persistence: each column links к its own lang home. -->
         <div class="lang" lang="en">
-          <p><strong>Not found.</strong> Try our <RouterLink to="/">homepage</RouterLink>?</p>
+          <p><strong>Not found.</strong> Try our <RouterLink to="/en">homepage</RouterLink>?</p>
           <p><em>The translation is taking shape in the FolkUp workshop.</em></p>
         </div>
         <div class="lang" lang="de">
-          <p><strong>Nicht gefunden.</strong> Vielleicht suchen Sie unsere <RouterLink to="/">Startseite</RouterLink>?</p>
+          <p><strong>Nicht gefunden.</strong> Vielleicht suchen Sie unsere <RouterLink to="/de">Startseite</RouterLink>?</p>
           <p><em>Die Übersetzung entsteht in der FolkUp-Werkstatt.</em></p>
         </div>
         <div class="lang" lang="pt">
-          <p><strong>Não encontrado.</strong> Talvez procure a nossa <RouterLink to="/">página inicial</RouterLink>?</p>
+          <p><strong>Não encontrado.</strong> Talvez procure a nossa <RouterLink to="/pt">página inicial</RouterLink>?</p>
           <p><em>A tradução está a ganhar forma na oficina FolkUp.</em></p>
         </div>
       </div>

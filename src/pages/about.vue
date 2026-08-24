@@ -10,9 +10,11 @@ import { computed } from 'vue'
 import { useHead } from '@unhead/vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
+import { useLangUrl } from '../composables/useLangUrl'
 
 const { t } = useI18n()
 const route = useRoute()
+const { langUrl } = useLangUrl()
 
 const SITE_URL = 'https://books.folkup.life'
 
@@ -109,7 +111,7 @@ useHead({
         <h2>{{ t('about.section4.h2') }}</h2>
         <i18n-t keypath="about.section4.p1" tag="p">
           <template #firstBookLink>
-            <RouterLink to="/kn1">{{ t('about.section4.first_book_link_text') }}</RouterLink>
+            <RouterLink :to="langUrl('/kn1')">{{ t('about.section4.first_book_link_text') }}</RouterLink>
           </template>
         </i18n-t>
       </section>
