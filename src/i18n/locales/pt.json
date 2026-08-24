@@ -163,7 +163,7 @@
         "<ul><li><strong>Cloudflare, Inc.</strong> (CDN, mitigação de DDoS, alojamento). A Cloudflare cumpre o RGPD; o respetivo Aditamento sobre Tratamento de Dados está publicamente disponível em <a href='https://www.cloudflare.com/cloudflare-customer-dpa/' rel='noopener'>cloudflare.com/cloudflare-customer-dpa</a>.</li></ul>",
         "<p>Nenhuns dados são vendidos, partilhados com anunciantes ou transferidos para qualquer outra entidade terceira.</p>",
         "<h2>Cookies</h2>",
-        "<p>Consulte a nossa <a href='/cookies'>Política de Cookies</a>. Em suma: sem cookies de rastreio. Apenas cookies técnicos estritamente necessários, definidos pela Cloudflare para gestão de bots.</p>",
+        "<p>Consulte a nossa <a href='/pt/cookies'>Política de Cookies</a>. Em suma: sem cookies de rastreio. Apenas cookies técnicos estritamente necessários, definidos pela Cloudflare para gestão de bots.</p>",
         "<h2>Os seus direitos ao abrigo do RGPD</h2>",
         "<p>Nos termos do Regulamento (UE) 2016/679 (RGPD), artigos 12.º a 22.º, assiste-lhe o direito de:</p>",
         "<ul><li><strong>Acesso</strong> a quaisquer dados pessoais que detenhamos a seu respeito</li><li><strong>Retificação</strong> de dados inexatos</li><li><strong>Apagamento</strong> («direito ao esquecimento»)</li><li><strong>Portabilidade</strong> dos seus dados num formato legível por máquina</li><li><strong>Oposição</strong> ao tratamento</li><li><strong>Apresentar reclamação</strong> junto da autoridade nacional de proteção de dados (em Portugal: <a href='https://www.cnpd.pt/' rel='noopener'>CNPD</a>)</li></ul>",
@@ -233,7 +233,7 @@
         "<p>Responsável pelos conteúdos editoriais nos termos do <strong>§55 n.º 2 RStV</strong> (Rundfunkstaatsvertrag, Alemanha):</p>",
         "<p><strong>Andrei Klemenchenok</strong> — morada e contacto conforme indicados acima.</p>",
         "<h2>Divulgação da utilização de IA</h2>",
-        "<p>Em conformidade com o <strong>Regulamento (UE) 2024/1689 relativo à Inteligência Artificial (RIA), artigo 50.º, n.º 4</strong>, os conteúdos assistidos por IA e as ferramentas utilizadas na produção das obras aqui publicadas são divulgados numa página dedicada: <a href='/ai-disclosure'>Divulgação de utilização de IA</a>.</p>",
+        "<p>Em conformidade com o <strong>Regulamento (UE) 2024/1689 relativo à Inteligência Artificial (RIA), artigo 50.º, n.º 4</strong>, os conteúdos assistidos por IA e as ferramentas utilizadas na produção das obras aqui publicadas são divulgados numa página dedicada: <a href='/pt/ai-disclosure'>Divulgação de utilização de IA</a>.</p>",
         "<h2>Direitos de autor e licenciamento</h2>",
         "<p>Conteúdos escritos originais neste sítio: <strong>© Andrei Klemenchenok</strong>, publicados ao abrigo de <a href='https://creativecommons.org/licenses/by-sa/4.0/' rel='noopener'>Creative Commons Atribuição-CompartilhaIgual 4.0 Internacional (CC BY-SA 4.0)</a>.</p>",
         "<p>Código-fonte subjacente: <strong>Licença MIT</strong>.</p>",
@@ -243,7 +243,7 @@
         "<h2>Contacto</h2>",
         "<ul><li>Geral / editorial: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a></li><li>Privacidade / pedidos ao abrigo do RGPD: <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a></li></ul>",
         "<h2>Documentos relacionados</h2>",
-        "<ul><li><a href='/privacy'>Política de Privacidade</a></li><li><a href='/terms'>Termos de Utilização</a></li><li><a href='/cookies'>Política de Cookies</a></li><li><a href='/ai-disclosure'>Divulgação de utilização de IA</a></li></ul>"
+        "<ul><li><a href='/pt/privacy'>Política de Privacidade</a></li><li><a href='/pt/terms'>Termos de Utilização</a></li><li><a href='/pt/cookies'>Política de Cookies</a></li><li><a href='/pt/ai-disclosure'>Divulgação de utilização de IA</a></li></ul>"
       ]
     }
   }
