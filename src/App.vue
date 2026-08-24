@@ -1,11 +1,13 @@
 <script setup lang="ts">
-import { watch } from 'vue'
+import { computed, watch } from 'vue'
 import { useHead } from '@unhead/vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
+import { useSeriesData } from './composables/useSeriesData'
 
 const { t, locale } = useI18n()
 const route = useRoute()
+const { bookBySlug } = useSeriesData()
 
 // Base head — augmented per-page via useHead в individual pages
 const SITE_URL = 'https://books.folkup.life'
@@ -94,55 +96,110 @@ watch(
   { immediate: true },
 )
 
+// LEGAL_PAGES: static-page routes existing в RU (/{page}) + EN (/en/{page}) per routes.ts.
+// PT+DE НЕ mapped для legal сейчас — placeholder до PT-DE-HOME-RESTORE-1 (Iskra ADDENDUM-1).
+const LEGAL_PAGES = ['ai-disclosure', 'about', 'privacy', 'terms', 'cookies', 'imprint']
+
+// TIKET-28 P0 INC-PORTAL-LANG-SWITCH-HOME (Iskra S297-06 + ADDENDUM-1 S297-07) — closes
+// TODO ticket 11 per Iskra visa 6: data-driven check series.yaml translations[lang]==='live'
+// вместо hardcoded `book === 'kn1' && targetLang === 'en'` (S291-03 T2 scoped hotfix заменён).
+// Silent stay preserves UX (no 404 regression) если target lang НЕ live.
+function langsAvailableForBook(bookSlug: string): SupportedLocale[] {
+  const book = bookBySlug(bookSlug)
+  if (!book?.translations) return ['ru']
+  const result: SupportedLocale[] = []
+  for (const lang of SUPPORTED_LOCALES) {
+    if (book.translations[lang] === 'live') {
+      result.push(lang)
+    }
+  }
+  return result.length > 0 ? result : ['ru']
+}
+
+// getAvailableLangs: возвращает список langs, у которых current route имеет live-версию.
+// Iskra §1 mandate: «кнопка языка X показывается ТОЛЬКО если у текущего маршрута существует
+// X-версия». Активный язык всегда виден (safety fallback в конце).
+// Карта источников истины:
+//   • books/reader → series.yaml translations[lang]==='live'
+//   • legal/about → routes.ts фактические маршруты (currently RU + EN)
+//   • homepage `/` → RU only (EN придёт в EN-HOME-1 второй такт)
+//   • unknown → active lang only (safe — one button, no dead link)
+function getAvailableLangs(currentPath: string): SupportedLocale[] {
+  if (currentPath === '/' || currentPath === '') {
+    return ['ru']
+  }
+
+  const readerLangMatch = currentPath.match(/^\/(kn\d+)\/(ru|pt|en|de)\/read(\/.*)?$/)
+  if (readerLangMatch) {
+    return langsAvailableForBook(readerLangMatch[1])
+  }
+
+  const readerDefaultMatch = currentPath.match(/^\/(kn\d+)\/read(\/.*)?$/)
+  if (readerDefaultMatch) {
+    return langsAvailableForBook(readerDefaultMatch[1])
+  }
+
+  const bookPageMatch = currentPath.match(/^\/(kn\d+)(?:\/(?:ru|en|pt|de))?\/?$/)
+  if (bookPageMatch) {
+    return langsAvailableForBook(bookPageMatch[1])
+  }
+
+  const legalMatch = currentPath.match(/^(?:\/(en))?\/([\w-]+)\/?$/)
+  if (legalMatch && LEGAL_PAGES.includes(legalMatch[2])) {
+    // RU + EN есть по routes.ts, PT+DE placeholder до PT-DE-HOME-RESTORE-1
+    return SUPPORTED_LOCALES.filter((l) => l === 'ru' || l === 'en')
+  }
+
+  return [routeLang() as SupportedLocale]
+}
+
+const availableLangs = computed(() => getAvailableLangs(route.path))
+
 // buildLangUrl: строит адрес параллельной языковой версии текущей страницы.
 // Reader routes: /kn{N}/read ↔ /kn{N}/{lang}/read (chapter tail preserved).
 // Book-page routes: /kn{N} (RU default) OR /kn{N}/{lang} (pre-rendered locale, fast-follow).
-// Non-reader/unknown routes: возвращает currentPath (§2.5 fallback).
+// TIKET-28 data-driven refactor (cont+4 S295KONSOL): hardcoded kn1+en check заменён на
+// series.yaml translations per Iskra visa 6. Silent stay preserves UX (no 404 regression).
 function buildLangUrl(currentPath: string, targetLang: SupportedLocale): string {
   const withLangMatch = currentPath.match(/^\/(kn\d+)\/(ru|pt|en|de)\/read(\/.*)?$/)
   if (withLangMatch) {
     const [, book, , tail = ''] = withLangMatch
     if (targetLang === 'ru') return `/${book}/read${tail}`
-    return `/${book}/${targetLang}/read${tail}`
+    const bookData = bookBySlug(book)
+    if (bookData?.translations?.[targetLang] === 'live') {
+      return `/${book}/${targetLang}/read${tail}`
+    }
+    return currentPath
   }
 
   const withoutLangMatch = currentPath.match(/^\/(kn\d+)\/read(\/.*)?$/)
   if (withoutLangMatch) {
     const [, book, tail = ''] = withoutLangMatch
     if (targetLang === 'ru') return currentPath
-    return `/${book}/${targetLang}/read${tail}`
+    const bookData = bookBySlug(book)
+    if (bookData?.translations?.[targetLang] === 'live') {
+      return `/${book}/${targetLang}/read${tail}`
+    }
+    return currentPath
   }
 
-  // Book-page routes: /kn{N} OR /kn{N}/{lang} (with optional trailing slash).
-  // Hotfix per Iskra S291-03 T2 INC-KN1-LANG-SWITCH-1 (scoped kn1 per explicit ticket
-  // wording «hotfix href на /kn1/en/read/»; «системный для будущих флипов DE/PT» handled
-  // когда те флипы happen с ticket 11 conditional render в place). Currently kn1=EN live
-  // (LIVE-GATE-EN-1 closed post-PR #207 flip), kn2-7 = EN «готовится» → /kn{N}/en/read = 404.
-  // TODO cont+6 (ticket 11 owner): implement conditional render — check series.yaml
-  // translations.[lang].status === 'live' pre-route (NOT hardcode per Iskra visa 6).
   const bookPageMatch = currentPath.match(/^\/(kn\d+)(?:\/(?:ru|en|pt|de))?\/?$/)
   if (bookPageMatch) {
     const [, book] = bookPageMatch
     if (targetLang === 'ru') return `/${book}`
-    // Kn1 EN currently live — safe to route к reader landing.
-    if (book === 'kn1' && targetLang === 'en') return `/${book}/en/read`
-    // Other books/langs: no confirmed translation live → silent stay preserves
-    // pre-hotfix UX (no 404 regression). Ticket 11 will make this conditional-render clean.
+    const bookData = bookBySlug(book)
+    if (bookData?.translations?.[targetLang] === 'live') {
+      return `/${book}/${targetLang}/read`
+    }
     return currentPath
   }
 
-  // Legal + about + ai-disclosure — TICKET 9 P1 unblock BL-LAUNCH-1 per Iskra S291.
-  // Routes: /{page} (RU default) OR /en/{page}. EN i18n keys ALL preexist в en.json.
-  // PT+DE NOT currently mapped for legal (i18n keys present but нет ratified route decision) —
-  // future work по расширению spec.
-  const LEGAL_PAGES = ['ai-disclosure', 'about', 'privacy', 'terms', 'cookies', 'imprint']
   const legalMatch = currentPath.match(/^(?:\/(en))?\/([\w-]+)\/?$/)
   if (legalMatch) {
     const [, currentLangPrefix, page] = legalMatch
     if (LEGAL_PAGES.includes(page)) {
       if (targetLang === 'ru') return `/${page}`
       if (targetLang === 'en') return `/en/${page}`
-      // pt/de not yet supported for legal — silent stay preserves UX
       return currentLangPrefix ? `/${currentLangPrefix}/${page}` : `/${page}`
     }
   }
@@ -191,7 +248,7 @@ useHead({
       </RouterLink>
       <nav class="lang-switcher" :aria-label="t('nav.language_label')">
         <RouterLink
-          v-for="lang in SUPPORTED_LOCALES"
+          v-for="lang in availableLangs"
           :key="lang"
           :to="buildLangUrl(route.path, lang)"
           class="lang-switcher__btn"
