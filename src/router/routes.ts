@@ -88,6 +88,16 @@ export const routes: RouteRecordRaw[] = [
     meta: { pageType: 'reader-chapter', bookSlug: 'kn1', lang: 'en' },
     props: (route) => ({ ...route.params, lang: 'en' }),
   },
+  // PRO-CHTO-EN-1 standalone route (Option A.3 per Alisa KVIT-22 → S299-14 DEFAULT-GO canon apply).
+  // Standalone «What This Book Is About» page — Лёлик EN draft ratified Iskra Vier-Augen S299-10 PASS.
+  // Extendable pattern: /kn{N}/{lang}/pro-chto/ (kn.4/5/6 pending Iskra Vier-Augen queue per S299-12 §2).
+  // Preserves canon S242 §1 KANON1=β (inline pro-chto suppression в BookPage.vue untouched).
+  {
+    path: '/kn1/en/pro-chto',
+    name: 'kn1-en-pro-chto',
+    component: () => import('../pages/ProChtoLangPage.vue'),
+    meta: { pageType: 'pro-chto-page', bookSlug: 'kn1', lang: 'en' },
+  },
   {
     path: '/kn2',
     name: 'kn2',
