@@ -32,6 +32,7 @@ export interface ChapterMeta {
   act: string | null
   act_opener: boolean
   isApparatus: boolean
+  plate: string | null
   order: number
 }
 
