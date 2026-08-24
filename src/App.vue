@@ -12,19 +12,23 @@ const { bookBySlug } = useSeriesData()
 // Base head — augmented per-page via useHead в individual pages
 const SITE_URL = 'https://books.folkup.life'
 
-// PT-READER-OG-LOCALE-1 fix (2026-08-16):
+// PT-READER-OG-LOCALE-1 fix (2026-08-16), extended TIKET-31 4-lang (2026-08-24 cont+7):
 // og:locale + htmlAttrs.lang reactive per route.meta.lang (reader routes set это в routes.ts).
-// Non-reader routes fall back к i18n locale.value (RU only per SUPPORTED_LOCALES).
+// Non-reader routes fall back к i18n locale.value (per SUPPORTED_LOCALES 4 langs).
 // Overrides могут прийти из per-page useHead (Kn1ReadChapter.vue) — они выигрывают.
-type OgLang = 'ru' | 'pt' | 'en'
+type OgLang = 'ru' | 'pt' | 'en' | 'de'
 const OG_LOCALE_MAP: Record<OgLang, string> = {
   ru: 'ru_RU',
   pt: 'pt_PT',
   en: 'en_US',
+  de: 'de_DE',
 }
 const routeLang = (): OgLang => {
   const metaLang = route.meta.lang
-  if (typeof metaLang === 'string' && (metaLang === 'ru' || metaLang === 'pt' || metaLang === 'en')) {
+  if (
+    typeof metaLang === 'string' &&
+    (metaLang === 'ru' || metaLang === 'pt' || metaLang === 'en' || metaLang === 'de')
+  ) {
     return metaLang
   }
   return locale.value as OgLang
@@ -34,18 +38,19 @@ const routeLang = (): OgLang => {
 // Portal main OG теперь Ремедиос F-1 «Библиотека» (7 корешков + настольная лампа + Hammershøi mood) 1200×630 JPG.
 // Cover_kn1.png ещё используется в about.vue + per-book BookPage.vue — не трогать.
 const DEFAULT_OG_IMAGE = `${SITE_URL}/images/og/books-og-hires.jpg`
-// PT temporarily hidden from switcher pending pt.json translation + native-speaker review
-// per Iskra рекомендация S250 (Andrey verdict а 2026-08-03 cont+45). Type union и pt.json
-// файлы preserved. Downloads pt.epub/pt.pdf + PT reader /kn1/pt/read/* остаются доступны
-// напрямую по URL. NAV-1 Ступень 2 cont+21 explicit «PT НЕ возвращать (S250 в силе)»
-// per Iskra POMETKA-10 §B pt.2.
-// LANG-404 HOTFIX Iskra S274 2026-08-11: EN + DE temporarily hidden from switcher.
-// DE остаётся hidden до Bolik cont+27+ portal DE-hero v2 через Vier-Augen ratify.
-// NAV-1 Ступень 2 cont+21 S1PT: EN restored per Iskra POMETKA-10 §B pt.2. switcher =
-// i18n locale-only (UI language change, NOT URL routing) — safe от S274 LANG-404 bug.
-// EN interface texts в en.json ready. EN book content /kn1/en/read/* live (Vier-Augen 9/13
-// CONDITIONAL PASS 2026-08-16). Landing /en waits Lolik cont+44+ portal EN-hero v2.
-const SUPPORTED_LOCALES = ['ru', 'en'] as const
+// TIKET-31 PORTAL-UI-LANG-DECOUPLE-1 (Iskra POMETKA-11 S299-11 GO cont+7 S8SCOOP 2026-08-24):
+// Оболочка 4 языка (RU + EN + PT + DE) per Iskra §S299-05 PORTAL-LANG-PARITY-1 canon.
+// i18n files ready: ru.json (212 keys) + en.json (227) + pt.json (212, Zeka Quatro Olhos)
+// + de.json (234, Bolik Vier-Augen). Home routes / /en /pt /de + legal routes RU+EN.
+// Legal PT+DE routes = separate ticket after Bolik DE-LEGAL + Zeka PT-LEGAL ratify.
+// Book content translations остаются gated per series.yaml translations[lang]==='live'
+// (currently kn1 EN live via Vier-Augen 9/13 CONDITIONAL PASS 2026-08-16;
+// PT/DE reader content shipping via separate translator tracks — S1TREN + Bolik + Lelik).
+// Historical decisions (superseded by TIKET-31):
+//   S250 (Andrey 2026-08-03 cont+45): PT hidden from switcher — REVERSED
+//   S274 LANG-404 HOTFIX Iskra 2026-08-11: DE hidden from switcher — REVERSED
+//   NAV-1 Ступень 2 cont+21 S1PT: EN restored — expanded к 4-lang
+const SUPPORTED_LOCALES = ['ru', 'en', 'pt', 'de'] as const
 type SupportedLocale = (typeof SUPPORTED_LOCALES)[number]
 
 // Current URL (per-route reactive)
@@ -74,11 +79,12 @@ const ORGANIZATION_JSONLD = {
   ],
 }
 
-// NAV-1 Ступень 3 cont+22 S1PT LANG-URL-CANON-1 (Iskra TIKET-S287-01):
+// NAV-1 Ступень 3 cont+22 S1PT LANG-URL-CANON-1 (Iskra TIKET-S287-01),
+// extended TIKET-31 4-lang decouple (cont+7 S8SCOOP 2026-08-24):
 // Язык — источник истины = маршрут (route.meta.lang). switchLocale() удалён, localStorage
 // упразднён (§2.3). Interface locale синхронизирован с route.meta.lang через watcher (§2.4).
-// PT temporarily fallback к RU для i18n (не в SUPPORTED_LOCALES per S250) но PT контент
-// главы остаётся доступен /kn1/pt/read/* (Kn1ReadChapter читает свой content по props.lang).
+// 4 langs (RU + EN + PT + DE) все в SUPPORTED_LOCALES; watcher применяет к interface locale.
+// Reader content per-book gated via series.yaml translations[lang]==='live' (см. langsAvailableForBook).
 watch(
   () => route.meta.lang,
   (metaLang) => {
@@ -97,7 +103,9 @@ watch(
 )
 
 // LEGAL_PAGES: static-page routes existing в RU (/{page}) + EN (/en/{page}) per routes.ts.
-// PT+DE НЕ mapped для legal сейчас — placeholder до PT-DE-HOME-RESTORE-1 (Iskra ADDENDUM-1).
+// PT+DE legal routes НЕ добавлены в TIKET-31 scope — pending Bolik DE-LEGAL 6-pages ratify
+// (draft landed 11:42 UTC 2026-08-24, ждёт Iskra Vier-Augen) + Zeka PT-LEGAL strings.
+// Legal switcher показывает RU+EN только; home switcher — все 4 langs.
 const LEGAL_PAGES = ['ai-disclosure', 'about', 'privacy', 'terms', 'cookies', 'imprint']
 
 // TIKET-28 P0 INC-PORTAL-LANG-SWITCH-HOME (Iskra S297-06 + ADDENDUM-1 S297-07) — closes
@@ -119,21 +127,25 @@ function langsAvailableForBook(bookSlug: string): SupportedLocale[] {
 // getAvailableLangs: возвращает список langs, у которых current route имеет live-версию.
 // Iskra §1 mandate: «кнопка языка X показывается ТОЛЬКО если у текущего маршрута существует
 // X-версия». Активный язык всегда виден (safety fallback в конце).
-// Карта источников истины:
-//   • books/reader → series.yaml translations[lang]==='live'
-//   • legal/about → routes.ts фактические маршруты (currently RU + EN)
-//   • homepage `/` → RU only (EN придёт в EN-HOME-1 второй такт)
+// Карта источников истины (TIKET-31 4-lang decouple cont+7 S8SCOOP 2026-08-24):
+//   • homepage / /en /pt /de → все 4 langs (SUPPORTED_LOCALES; i18n messages ready)
+//   • books/reader → series.yaml translations[lang]==='live' (gated by translation availability)
+//   • legal/about → routes.ts фактические маршруты (currently RU + EN; PT/DE pending Bolik+Zeka)
 //   • unknown → active lang only (safe — one button, no dead link)
 function getAvailableLangs(currentPath: string): SupportedLocale[] {
-  // EN-HOME-1 recovery (Iskra ADDENDUM-1 S297-07 cont+7 S8SCOOP): homepage теперь 2-язычная
-  // (RU + EN). PT/DE placeholder до PT-DE-HOME-RESTORE-1 после FREEZE.
+  // TIKET-31 PORTAL-UI-LANG-DECOUPLE-1 (cont+7 S8SCOOP): homepage 4-язычная
+  // (RU + EN + PT + DE). Iskra §S299-05 PORTAL-LANG-PARITY-1 canon.
   if (
     currentPath === '/' ||
     currentPath === '' ||
     currentPath === '/en' ||
-    currentPath === '/en/'
+    currentPath === '/en/' ||
+    currentPath === '/pt' ||
+    currentPath === '/pt/' ||
+    currentPath === '/de' ||
+    currentPath === '/de/'
   ) {
-    return SUPPORTED_LOCALES.filter((l) => l === 'ru' || l === 'en')
+    return [...SUPPORTED_LOCALES]
   }
 
   const readerLangMatch = currentPath.match(/^\/(kn\d+)\/(ru|pt|en|de)\/read(\/.*)?$/)
@@ -153,7 +165,7 @@ function getAvailableLangs(currentPath: string): SupportedLocale[] {
 
   const legalMatch = currentPath.match(/^(?:\/(en))?\/([\w-]+)\/?$/)
   if (legalMatch && LEGAL_PAGES.includes(legalMatch[2])) {
-    // RU + EN есть по routes.ts, PT+DE placeholder до PT-DE-HOME-RESTORE-1
+    // Legal routes: RU + EN через routes.ts. PT+DE pending Bolik DE-LEGAL + Zeka PT-LEGAL.
     return SUPPORTED_LOCALES.filter((l) => l === 'ru' || l === 'en')
   }
 
@@ -162,19 +174,32 @@ function getAvailableLangs(currentPath: string): SupportedLocale[] {
 
 const availableLangs = computed(() => getAvailableLangs(route.path))
 
+// TIKET-29 4-lang footer extension (Iskra POMETKA-11 S299-11 passenger cont+7 S8SCOOP):
+// Legal routes existing только в RU (/{page}) + EN (/en/{page}) per routes.ts.
+// PT/DE users на home — footer links fallback к EN legal (nearest available lang).
+// TODO: расширить к /pt/ + /de/ legal когда Bolik DE-LEGAL 6-pages (Vier-Augen pending)
+// + Zeka PT-LEGAL strings landed. Отдельный ticket PT-DE-LEGAL-ROUTES-1 после Iskra ratify.
+const footerLangPrefix = computed(() => {
+  const lang = routeLang()
+  if (lang === 'ru') return ''
+  if (lang === 'en') return '/en'
+  return '/en' // PT/DE fallback к EN legal until PT-DE-LEGAL-ROUTES-1
+})
+
 // buildLangUrl: строит адрес параллельной языковой версии текущей страницы.
 // Reader routes: /kn{N}/read ↔ /kn{N}/{lang}/read (chapter tail preserved).
 // Book-page routes: /kn{N} (RU default) OR /kn{N}/{lang} (pre-rendered locale, fast-follow).
 // TIKET-28 data-driven refactor (cont+4 S295KONSOL): hardcoded kn1+en check заменён на
 // series.yaml translations per Iskra visa 6. Silent stay preserves UX (no 404 regression).
 function buildLangUrl(currentPath: string, targetLang: SupportedLocale): string {
-  // EN-HOME-1 recovery (Iskra ADDENDUM-1 S297-07 cont+7 S8SCOOP): `/` ↔ `/en` mapping.
+  // TIKET-31 4-lang decouple (cont+7 S8SCOOP 2026-08-24): `/` ↔ `/en` ↔ `/pt` ↔ `/de` mapping.
   // Placed FIRST — most specific match precedes book/reader/legal regex fallbacks.
   if (currentPath === '/' || currentPath === '') {
-    return targetLang === 'en' ? '/en' : '/'
+    return targetLang === 'ru' ? '/' : `/${targetLang}`
   }
-  if (currentPath === '/en' || currentPath === '/en/') {
-    return targetLang === 'ru' ? '/' : '/en'
+  const homeLangMatch = currentPath.match(/^\/(en|pt|de)\/?$/)
+  if (homeLangMatch) {
+    return targetLang === 'ru' ? '/' : `/${targetLang}`
   }
 
   const withLangMatch = currentPath.match(/^\/(kn\d+)\/(ru|pt|en|de)\/read(\/.*)?$/)
@@ -240,12 +265,13 @@ useHead({
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:image', content: DEFAULT_OG_IMAGE },
   ],
-  // hreflang: per-page emission через Kn1ReadChapter.vue (reader routes уже path-prefixed
-  // /kn1/read/*, /kn1/pt/read/*, /kn1/en/read/*). Non-reader страницы — single-lang RU
-  // (SUPPORTED_LOCALES=['ru']), не нужны alternates. Stray x-default→self удалён per
-  // Оракул verdict Q23 (был self-referential bug; correct pattern — reader emits own alternates).
-  // Reader page Kn1ReadChapter.vue: emit `<link rel="alternate" hreflang="X" href="Y">` per
-  // available lang + x-default→RU, plus canonical URL.
+  // hreflang: per-page emission.
+  //   • Reader (Kn1ReadChapter.vue): emit `<link rel="alternate" hreflang="X" href="Y">` per
+  //     available lang + x-default→RU, plus canonical URL. Reader routes уже path-prefixed
+  //     /kn1/read/*, /kn1/pt/read/*, /kn1/en/read/*.
+  //   • Home (index.vue): emits hreflang alternates ru/en/pt/de + x-default→RU (TIKET-31 cont+7).
+  //   • Legal (about/privacy/terms/cookies/imprint/ai-disclosure): RU + EN alternates only.
+  // Stray x-default→self удалён per Оракул verdict Q23 (self-referential bug fixed).
   script: [
     {
       type: 'application/ld+json',
@@ -283,17 +309,17 @@ useHead({
 
     <footer class="site-footer">
       <nav class="site-footer__nav" :aria-label="t('nav.footer_about')">
-        <RouterLink :to="(routeLang() === 'en' ? '/en' : '') + '/about'">{{ t('nav.footer_about') }}</RouterLink>
+        <RouterLink :to="footerLangPrefix + '/about'">{{ t('nav.footer_about') }}</RouterLink>
         <span class="site-footer__sep" aria-hidden="true">·</span>
-        <RouterLink :to="(routeLang() === 'en' ? '/en' : '') + '/ai-disclosure'">{{ t('nav.footer_ai_disclosure') }}</RouterLink>
+        <RouterLink :to="footerLangPrefix + '/ai-disclosure'">{{ t('nav.footer_ai_disclosure') }}</RouterLink>
         <span class="site-footer__sep" aria-hidden="true">·</span>
-        <RouterLink :to="(routeLang() === 'en' ? '/en' : '') + '/privacy'">{{ t('nav.footer_privacy') }}</RouterLink>
+        <RouterLink :to="footerLangPrefix + '/privacy'">{{ t('nav.footer_privacy') }}</RouterLink>
         <span class="site-footer__sep" aria-hidden="true">·</span>
-        <RouterLink :to="(routeLang() === 'en' ? '/en' : '') + '/terms'">{{ t('nav.footer_terms') }}</RouterLink>
+        <RouterLink :to="footerLangPrefix + '/terms'">{{ t('nav.footer_terms') }}</RouterLink>
         <span class="site-footer__sep" aria-hidden="true">·</span>
-        <RouterLink :to="(routeLang() === 'en' ? '/en' : '') + '/cookies'">{{ t('nav.footer_cookies') }}</RouterLink>
+        <RouterLink :to="footerLangPrefix + '/cookies'">{{ t('nav.footer_cookies') }}</RouterLink>
         <span class="site-footer__sep" aria-hidden="true">·</span>
-        <RouterLink :to="(routeLang() === 'en' ? '/en' : '') + '/imprint'">{{ t('nav.footer_imprint') }}</RouterLink>
+        <RouterLink :to="footerLangPrefix + '/imprint'">{{ t('nav.footer_imprint') }}</RouterLink>
         <span class="site-footer__sep" aria-hidden="true">·</span>
         <a :href="`mailto:${t('nav.footer_contact')}`">{{ t('nav.footer_contact') }}</a>
       </nav>
