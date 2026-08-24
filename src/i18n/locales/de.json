@@ -117,7 +117,7 @@
   "ai_disclosure": {
     "title": "KI-Nutzungshinweis",
     "h1": "KI-Nutzungshinweis",
-    "meta_description": "EU-KI-Verordnung Artikel 50(4) Compliance. Rechtlicher Name der natürlichen Person mit redaktioneller Verantwortung: Andrei Klemenchenok. Veröffentlichung unter Pseudonym «Comandante FolkUp».",
+    "meta_description": "EU-KI-Verordnung Artikel 50 Absatz 4 — FolkUp legt die KI-Nutzung freiwillig offen. Redaktionell verantwortlich: Andrei Klemenchenok. Veröffentlichung unter Pseudonym «Comandante FolkUp».",
     "section1": {
       "h2": "Redaktionelle Verantwortung",
       "p1": "Die Bücher der FolkUp-Bibliothek sind mit dem Pseudonym «Comandante FolkUp» unterschrieben. Hinter dem Pseudonym steht ein lebender Mensch: Andrei Klemenchenok, Portugal-Resident, Verleger und Redakteur. Das Pseudonym ist ein Banksy-Muster für nicht-kommerzielle Markenidentität, keine Verschleierung der Verantwortung.",
@@ -135,8 +135,8 @@
       "gate3": "Rechtliche Compliance-Prüfung vor Veröffentlichung"
     },
     "section3": {
-      "h2": "EU-KI-Verordnung Artikel 50(4) Compliance",
-      "p1": "Diese Seite erfüllt die Anforderung, die natürliche Person offenzulegen, die für die redaktionelle Aufsicht über KI-gestützte Inhalte gemäß EU-KI-Verordnung Artikel 50(4)(b) verantwortlich ist. Verantwortliche Person: Andrei Klemenchenok, russischer Staatsbürger, Portugal-Resident.",
+      "h2": "EU-KI-Verordnung Artikel 50 Absatz 4 — freiwillige Offenlegung",
+      "p1": "FolkUp legt die Nutzung von KI in der Buchproduktion freiwillig offen. Nach Artikel 50 Absatz 4 Unterabsatz 2 der Verordnung (EU) 2024/1689 (KI-Verordnung) gilt die Pflicht zur Kennzeichnung KI-generierter Texte nicht, wenn der Inhalt einer menschlichen Überprüfung oder redaktionellen Kontrolle unterzogen wurde und eine natürliche oder juristische Person die redaktionelle Verantwortung für die Veröffentlichung übernimmt. Diese Person ist Andrei Klemenchenok, mit Wohnsitz in Portugal. Wir legen dennoch offen — als redaktionelle Entscheidung.",
       "p2": "Das Pseudonym «Comandante FolkUp» wird auf öffentlichen Oberflächen (Buchseiten, Katalog, Fußzeile, Metadaten) verwendet — Banksy-Muster für nicht-kommerzielle Markenidentität. Das Pseudonym trägt die Serienmarke; diese Seite liefert die rechtliche Offenlegung gemäß KI-Verordnung."
     },
     "section4": {
@@ -252,17 +252,17 @@
     },
     "imprint": {
       "title": "Impressum",
-      "meta_description": "Impressum gemäß §5 TMG. Verantwortlich: Andrei Klemenchenok, Portugal, veröffentlicht unter dem Pseudonym Comandante FolkUp.",
+      "meta_description": "Impressum: Redaktionelle Verantwortung Andrei Klemenchenok, mit Wohnsitz in Portugal, veröffentlicht unter dem Pseudonym Comandante FolkUp.",
       "content": [
-        "<p><em>Angaben gemäß <strong>§5 TMG (Telemediengesetz, Deutschland)</strong> und allgemeiner guter EU-Praxis für Seiten, die in der gesamten Europäischen Union abrufbar sind.</em></p>",
+        "<p><em>Rechtlicher Hinweis. Diese Seite gibt die redaktionelle und rechtliche Verantwortung für das Portal <strong>books.folkup.life</strong> transparent an.</em></p>",
         "<h2>Diensteanbieter</h2>",
         "<p><strong>Andrei Klemenchenok</strong><br>Natürliche Person, wohnhaft in Portugal<br>Kontakt: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a><br>Veröffentlichung unter dem Pseudonym: <strong>Comandante FolkUp</strong></p>",
         "<p>Dies ist ein nicht-kommerzielles Hobbyprojekt zur Buchveröffentlichung. Es ist <strong>kein</strong> eingetragenes Unternehmen. Es gibt keine Umsatzsteuer-Identifikationsnummer, keinen Handelsregistereintrag und keine Kammerzugehörigkeit.</p>",
         "<h2>Verantwortlich für den Inhalt</h2>",
-        "<p>Verantwortlich für redaktionelle Inhalte gemäß <strong>§55 Abs. 2 RStV</strong> (Rundfunkstaatsvertrag, Deutschland):</p>",
+        "<p>Verantwortlich für redaktionelle Inhalte:</p>",
         "<p><strong>Andrei Klemenchenok</strong> — Anschrift und Kontakt wie oben.</p>",
         "<h2>Angaben zur KI-Nutzung</h2>",
-        "<p>Gemäß <strong>EU-KI-Verordnung (EU) 2024/1689, Artikel 50 Absatz 4</strong>, werden KI-gestützte Inhalte und Werkzeuge, die bei der Erstellung der hier veröffentlichten Werke eingesetzt wurden, auf einer eigenen Seite offengelegt: <a href='/de/ai-disclosure'>Angaben zur KI-Nutzung</a>.</p>",
+        "<p>FolkUp legt die Nutzung von KI-Werkzeugen und -Assistenten in der Buchproduktion <strong>freiwillig</strong> offen. Nach Artikel 50 Absatz 4 der Verordnung (EU) 2024/1689 (KI-Verordnung) gilt die Kennzeichnungs-Pflicht nicht für Inhalte mit menschlicher redaktioneller Verantwortung. Ausführliche Angaben auf eigener Seite: <a href='/de/ai-disclosure'>Angaben zur KI-Nutzung</a>.</p>",
         "<h2>Urheberrecht und Lizenzen</h2>",
         "<p>Ursprüngliche Textinhalte auf dieser Seite: <strong>© Andrei Klemenchenok</strong>, veröffentlicht unter <a href='https://creativecommons.org/licenses/by-sa/4.0/' rel='noopener'>Creative Commons Namensnennung — Weitergabe unter gleichen Bedingungen 4.0 International (CC BY-SA 4.0)</a>.</p>",
         "<p>Zugrunde liegender Quellcode: <strong>MIT-Lizenz</strong>.</p>",
