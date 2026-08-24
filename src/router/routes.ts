@@ -22,6 +22,24 @@ export const routes: RouteRecordRaw[] = [
     component: () => import('../pages/index.vue'),
     meta: { pageType: 'portal-home', lang: 'en' },
   },
+  // TIKET-31 PORTAL-UI-LANG-DECOUPLE-1 (Iskra KANON PORTAL-LANG-PARITY-1 S299-05):
+  // PT + DE home routes — паритет оболочки. Портал даёт равный опыт на 4 языках.
+  // pt.json + de.json содержат native-quality portal.title/hero — рендер идёт из i18n
+  // catalogs. meta.lang='pt'/'de' triggers App.vue watcher → i18n locale swap.
+  // Zeka/Bolik могут refine post-ship, banners «перевод готовится» не нужны на homepage
+  // (Iskra S299-11 «строки главной portal PT/DE от Лёлика — образец, native-refined»).
+  {
+    path: '/pt',
+    name: 'home-pt',
+    component: () => import('../pages/index.vue'),
+    meta: { pageType: 'portal-home', lang: 'pt' },
+  },
+  {
+    path: '/de',
+    name: 'home-de',
+    component: () => import('../pages/index.vue'),
+    meta: { pageType: 'portal-home', lang: 'de' },
+  },
   {
     path: '/kn1',
     name: 'kn1',

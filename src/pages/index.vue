@@ -10,12 +10,22 @@ const { t, te } = useI18n()
 const route = useRoute()
 const { series, books, booksByTrilogy } = useSeriesData()
 
-// EN-HOME-1 recovery (Iskra ADDENDUM-1 S297-07 cont+7 S8SCOOP): per-locale canonical +
-// hreflang alternates. RU default `/`, EN restored `/en/`. PT/DE placeholder до
-// PT-DE-HOME-RESTORE-1 после FREEZE.
-const HOME_RU = 'https://books.folkup.life/'
-const HOME_EN = 'https://books.folkup.life/en/'
-const canonicalHref = () => (route.meta.lang === 'en' ? HOME_EN : HOME_RU)
+// TIKET-31 PORTAL-UI-LANG-DECOUPLE-1 (Iskra KANON PORTAL-LANG-PARITY-1 S299-05):
+// Per-locale canonical + hreflang alternates для 4 языков (RU/EN/PT/DE).
+// Оболочка портала даёт equal опыт во всех 4 langs; native-quality strings в pt.json/de.json.
+const HOMEPAGE_URLS: Record<'ru' | 'en' | 'pt' | 'de', string> = {
+  ru: 'https://books.folkup.life/',
+  en: 'https://books.folkup.life/en/',
+  pt: 'https://books.folkup.life/pt/',
+  de: 'https://books.folkup.life/de/',
+}
+const canonicalHref = () => {
+  const lang = route.meta.lang
+  if (typeof lang === 'string' && (lang === 'en' || lang === 'pt' || lang === 'de')) {
+    return HOMEPAGE_URLS[lang]
+  }
+  return HOMEPAGE_URLS.ru
+}
 
 useHead({
   title: () => t('portal.title'),
@@ -26,9 +36,11 @@ useHead({
   ],
   link: [
     { rel: 'canonical', href: canonicalHref },
-    { rel: 'alternate', hreflang: 'ru', href: HOME_RU },
-    { rel: 'alternate', hreflang: 'en', href: HOME_EN },
-    { rel: 'alternate', hreflang: 'x-default', href: HOME_RU },
+    { rel: 'alternate', hreflang: 'ru', href: HOMEPAGE_URLS.ru },
+    { rel: 'alternate', hreflang: 'en', href: HOMEPAGE_URLS.en },
+    { rel: 'alternate', hreflang: 'pt', href: HOMEPAGE_URLS.pt },
+    { rel: 'alternate', hreflang: 'de', href: HOMEPAGE_URLS.de },
+    { rel: 'alternate', hreflang: 'x-default', href: HOMEPAGE_URLS.ru },
   ],
 })
 

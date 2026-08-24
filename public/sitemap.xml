@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Path-prefix routing per Дьюи P0-1: RU = default (/), EN = /en/{path}.
-     EN home restored cont+7 S8SCOOP per Iskra ADDENDUM-1 (S297-07) EN-HOME-1.
-     Book pages (/kn{N}/) — single-lang RU per series.yaml translations gating
-     (только kn1 has EN reader live; kn2-7 EN pending native review).
-     Legal + about + ai-disclosure — RU + EN routes через hreflang alternates. -->
+<!-- Path-prefix routing per Дьюи P0-1: RU = default (/), EN = /en/, PT = /pt/, DE = /de/.
+     Homepage 4-lang parity per TIKET-31 PORTAL-UI-LANG-DECOUPLE-1 (Iskra KANON S299-05
+     PORTAL-LANG-PARITY-1). Native-quality strings в pt.json/de.json.
+     Book pages (/kn{N}/) — data-gated per series.yaml translations (только kn1 has EN reader).
+     Legal + about + ai-disclosure — RU + EN routes; PT/DE в TIKET-33 LEGAL-PT-DE-1. -->
 <urlset xmlns="http://www.sitemap.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
@@ -13,6 +13,8 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://books.folkup.life/pt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://books.folkup.life/de/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/"/>
   </url>
   <url>
@@ -22,6 +24,30 @@
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://books.folkup.life/pt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://books.folkup.life/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/"/>
+  </url>
+  <url>
+    <loc>https://books.folkup.life/pt/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://books.folkup.life/pt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://books.folkup.life/de/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/"/>
+  </url>
+  <url>
+    <loc>https://books.folkup.life/de/</loc>
+    <lastmod>2026-08-24</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://books.folkup.life/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://books.folkup.life/en/"/>
+    <xhtml:link rel="alternate" hreflang="pt" href="https://books.folkup.life/pt/"/>
+    <xhtml:link rel="alternate" hreflang="de" href="https://books.folkup.life/de/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://books.folkup.life/"/>
   </url>
   <url>
