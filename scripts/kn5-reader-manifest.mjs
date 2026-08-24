@@ -18,7 +18,7 @@
  *   «Колофон» → colophon (apparatus)
  */
 
-import { readFileSync, writeFileSync, mkdirSync, rmSync, existsSync } from 'node:fs'
+import { readFileSync, writeFileSync, mkdirSync, rmSync, existsSync, readdirSync } from 'node:fs'
 import { fileURLToPath } from 'node:url'
 import { resolve, dirname, join } from 'node:path'
 import { marked } from 'marked'
@@ -30,6 +30,39 @@ const MASTER_PATH = resolve(PROJECT_ROOT, 'content/kn5/ru/master.md')
 const CHAPTERS_DIR = resolve(PROJECT_ROOT, 'content/kn5/ru/chapters-generated')
 const MANIFEST_PATH = resolve(PROJECT_ROOT, 'content/kn5/ru/chapters-manifest.json')
 const BODIES_DIR = resolve(PROJECT_ROOT, 'content/kn5/ru/chapters-html')
+const PLATES_DIR = resolve(PROJECT_ROOT, 'public/images/kn5-chapters')
+
+const KN5_PLATE_METAPHORS = {
+  '01': 'Палимпсест',
+  '02': 'Скрипториум',
+  '03': 'Пробел на витрине',
+  '04': 'Бебельплац',
+  '05': 'Чикчи',
+  '06': 'Печатный станок',
+  '07': 'Вульф',
+  '08': 'Sacre du Printemps',
+  '09': 'Критик',
+  '10': 'Куратор',
+  '11': 'Платформа',
+  '12': 'Фронтиспис',
+  '13': 'Кода',
+}
+
+let _plateFilesCache = null
+function loadPlateFiles() {
+  if (_plateFilesCache) return _plateFilesCache
+  try {
+    _plateFilesCache = readdirSync(PLATES_DIR).filter((f) => /\.(webp|jpg|jpeg|png)$/i.test(f))
+  } catch {
+    _plateFilesCache = []
+  }
+  return _plateFilesCache
+}
+
+function findPlateFile(nn) {
+  const files = loadPlateFiles()
+  return files.find((f) => f.startsWith(`ill-${nn}-`) || f === `ill-${nn}.jpg` || f === `ill-${nn}.webp`) || null
+}
 
 // Configure marked sync mode + GFM (mirrors Kn5ReadChapter.vue prior client-side config)
 marked.setOptions({ async: false })
@@ -43,6 +76,45 @@ function stripLeadingH1(md) {
 /** Render markdown body к HTML via marked (sync). Strips leading H1. */
 function renderBody(rawMarkdown) {
   return marked.parse(stripLeadingH1(rawMarkdown))
+}
+
+/**
+ * Wire illustration text refs («Иллюстрация · ill-NN») к proper figure elements.
+ *
+ * — Existing plate file (ill-NN-*.{webp,jpg}) → <figure class="reader-chapter__plate"><img>
+ * — Missing plate (per README kn.5 §Illustrations «rejected en bloc per Frida brief 2026-06-12»
+ *   для ill-03/09/10/13) → restoration stub <figure class="reader-chapter__plate reader-chapter__plate--restoration">
+ *
+ * Regex matches marked-rendered pattern: <p>Иллюстрация · ill-NN  </p>
+ * (trailing double-space preserved by marked from source markdown pandoc output).
+ */
+function wireIllustrationRefs(html) {
+  return html.replace(
+    /<p>Иллюстрация\s*·\s*ill-(\d+)\s*<\/p>/g,
+    (_match, nn) => {
+      const metaphor = KN5_PLATE_METAPHORS[nn] || `ill-${nn}`
+      const file = findPlateFile(nn)
+      if (file) {
+        return (
+          `<figure class="reader-chapter__plate">` +
+          `<img src="/images/kn5-chapters/${file}" alt="Иллюстрация ${nn}: ${metaphor}" ` +
+          `loading="lazy" decoding="async">` +
+          `<figcaption>${metaphor}</figcaption>` +
+          `</figure>`
+        )
+      }
+      return (
+        `<figure class="reader-chapter__plate reader-chapter__plate--restoration" ` +
+        `role="img" aria-label="Экспонат на реставрации: иллюстрация ${nn} «${metaphor}» в процессе восстановления">` +
+        `<div class="restoration-stub">` +
+        `<span class="restoration-stub__label">ЭКСПОНАТ НА РЕСТАВРАЦИИ</span>` +
+        `<span class="restoration-stub__metaphor">${metaphor}</span>` +
+        `<span class="restoration-stub__hint">иллюстрация в процессе создания</span>` +
+        `</div>` +
+        `</figure>`
+      )
+    },
+  )
 }
 
 /** Serialize HTML string к safe ES module. precommit:allow-ai-mentions marker для index safety. */
@@ -225,7 +297,7 @@ function main() {
     const md = `# ${entry.title}\n\n${entry._body}\n`
     writeFileSync(join(CHAPTERS_DIR, `${entry.slug}.md`), md, 'utf-8')
 
-    const html = renderBody(md)
+    const html = wireIllustrationRefs(renderBody(md))
     const modContent = serializeHtmlModule(html)
     writeFileSync(join(BODIES_DIR, `${entry.slug}.js`), modContent, 'utf-8')
     const size = Buffer.byteLength(modContent, 'utf-8')

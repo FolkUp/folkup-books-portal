@@ -180,6 +180,14 @@ useHead({
 .reader-chapter__content :deep(figure) { margin: 1.5em 0; text-align: center; }
 .reader-chapter__content :deep(figure img) { max-width: 100%; height: auto; }
 .reader-chapter__content :deep(figcaption) { font-size: 0.9rem; color: var(--color-text-muted, #666); margin-top: 0.5em; font-style: italic; }
+.reader-chapter__content :deep(.reader-chapter__plate) { margin: 2em auto; max-width: 480px; }
+.reader-chapter__content :deep(.reader-chapter__plate img) { max-width: 100%; height: auto; border-radius: 4px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12); }
+.reader-chapter__content :deep(.reader-chapter__plate figcaption) { font-size: 0.9rem; color: var(--color-text-muted, #666); margin-top: 0.6em; font-style: italic; letter-spacing: 0.02em; }
+.reader-chapter__content :deep(.reader-chapter__plate--restoration) { max-width: 420px; }
+.reader-chapter__content :deep(.restoration-stub) { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.4em; padding: 3em 1.5em; border: 1px dashed var(--color-accent, #a04020); border-radius: 4px; background: linear-gradient(135deg, rgba(224, 213, 200, 0.15), rgba(224, 213, 200, 0.05)); color: var(--color-text-muted, #666); aspect-ratio: 3/2; }
+.reader-chapter__content :deep(.restoration-stub__label) { font-size: 0.75rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--color-accent, #a04020); font-weight: 600; }
+.reader-chapter__content :deep(.restoration-stub__metaphor) { font-size: 1.2rem; font-style: italic; color: var(--color-text, #1a1a1a); }
+.reader-chapter__content :deep(.restoration-stub__hint) { font-size: 0.85rem; color: var(--color-text-muted, #888); }
 .reader-chapter__nav { display: grid; grid-template-columns: 1fr auto 1fr; gap: 1rem; margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--color-border, #ddd); }
 .reader-chapter__nav-link { display: block; color: var(--color-link, #7a2e00); text-decoration: none; padding: 0.6rem 0.8rem; border-radius: 4px; transition: background 0.15s ease; }
 .reader-chapter__nav-link:hover { background: var(--color-hover, #f6f0e8); }
