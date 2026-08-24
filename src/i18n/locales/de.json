@@ -69,6 +69,14 @@
   "footer": {
     "copyright": "© {year} Команданте FolkUp · Inhalt CC BY-SA 4.0 · Code MIT"
   },
+  "lang_not_ready": {
+    "_translator_note": "TIKET-31 EXT canonical disclosure — draft Alisa cont+7 EXT 2026-08-24; retro-viza Bolik native DE Vier-Augen pending.",
+    "title": "Die Übersetzung dieser Seite wird vorbereitet",
+    "text": "Wir arbeiten an der Übersetzung. Bitte greifen Sie in der Zwischenzeit auf die russische Originalversion zurück.",
+    "back_to_ru": "Auf Russisch lesen",
+    "home": "Startseite",
+    "book_note": "Das Buch ist auf Russisch verfügbar"
+  },
   "books": {
     "kn1": {
       "title": "Agile Sapiens",

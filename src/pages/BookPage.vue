@@ -205,6 +205,33 @@ const localizedFormatStaleNote = computed<string | null>(() => {
   return t('portal.formats_stale_body', { version, date: dateFormatted })
 })
 
+// TIKET-31 EXT Bug #2 fix (cont+7 EXT 2026-08-24): book page hreflang emission.
+// Prior state: BookPage.vue emitted canonical но NOT hreflang alternates — SEO gap.
+// Now: hreflang alternates для каждого live translation per series.yaml translations[lang]==='live'
+// + x-default → RU baseline. Skip preparing translations (per Google guidance —
+// hreflang должен указывать только на реальные переведённые страницы).
+const bookHreflangLinks = computed(() => {
+  if (!book.value?.translations) return []
+  const links: Array<{ rel: string; hreflang: string; href: string }> = []
+  for (const lang of ['ru', 'en', 'pt', 'de'] as const) {
+    if (book.value.translations[lang] === 'live') {
+      const langPath = lang === 'ru' ? '' : `/${lang}`
+      links.push({
+        rel: 'alternate',
+        hreflang: lang,
+        href: `https://books.folkup.life${langPath}/${props.slug}/`,
+      })
+    }
+  }
+  // x-default → RU baseline
+  links.push({
+    rel: 'alternate',
+    hreflang: 'x-default',
+    href: `https://books.folkup.life/${props.slug}/`,
+  })
+  return links
+})
+
 useHead({
   title: () => title.value + ' — ' + t('brand.name'),
   meta: [
@@ -218,11 +245,12 @@ useHead({
     { name: 'twitter:description', content: () => metaDescription.value},
     { name: 'twitter:image', content: () => bookOgImage.value },
   ],
-  link: [
+  link: () => [
     {
       rel: 'canonical',
-      href: () => `https://books.folkup.life/${props.slug}/`,
+      href: `https://books.folkup.life/${props.slug}/`,
     },
+    ...bookHreflangLinks.value,
   ],
 })
 

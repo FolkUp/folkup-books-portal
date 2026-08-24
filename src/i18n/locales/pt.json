@@ -69,6 +69,14 @@
   "footer": {
     "copyright": "© {year} Команданте FolkUp · Conteúdo CC BY-SA 4.0 · Código MIT"
   },
+  "lang_not_ready": {
+    "_translator_note": "TIKET-31 EXT canonical disclosure — draft Alisa cont+7 EXT 2026-08-24; retro-viza Zeka native PT-EU Quatro Olhos pending. PT-EU obrigatório sem brasileirismos.",
+    "title": "A tradução desta página está em preparação",
+    "text": "Estamos a trabalhar na tradução. Por enquanto, consulte a versão russa original.",
+    "back_to_ru": "Ler em russo",
+    "home": "Início",
+    "book_note": "O livro está disponível em russo"
+  },
   "books": {
     "kn1": { "title": "Agile Sapiens", "subtitle": "Como a literatura clássica previu a gestão moderna" },
     "kn2": { "title": "Consoantes sem vogais", "subtitle": "Sobre os que falam; os que ouvem; os que escrevem entre linhas" },

@@ -236,6 +236,62 @@ export const routes: RouteRecordRaw[] = [
     component: () => import('../pages/legal/imprint.vue'),
     meta: { pageType: 'legal', pageKey: 'imprint', lang: 'en' },
   },
+  // ═══════════════════════════════════════════════════════════════════════════════
+  // TIKET-31 EXT — PORTAL-LANG-PARITY-1 stub routes (Andrey mandate cont+7 2026-08-24 +
+  // Iskra §S299-05 canon): 4-lang switcher visible everywhere; translation-missing pages
+  // render LangNotReady disclosure с honest text на target language.
+  //
+  // Total: 33 stub routes (21 book × 3 non-RU langs + 12 legal × 2 non-RU-non-EN langs).
+  // Reader stub routes НЕ добавляем (deep engagement — если reader translation отсутствует,
+  // switcher click с /kn{N}/{lang}/read/* fallback к book-level stub /{lang}/kn{N}).
+  //
+  // When native translation ratifies (Bolik DE + Zeka PT + Lelik EN):
+  // Just swap component: LangNotReady → real page component. Меm same URL, no route change.
+  // ═══════════════════════════════════════════════════════════════════════════════
+
+  // Book pages EN stubs (kn1-7)
+  { path: '/en/kn1', name: 'kn1-en', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn1', lang: 'en' } },
+  { path: '/en/kn2', name: 'kn2-en', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn2', lang: 'en' } },
+  { path: '/en/kn3', name: 'kn3-en', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn3', lang: 'en' } },
+  { path: '/en/kn4', name: 'kn4-en', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn4', lang: 'en' } },
+  { path: '/en/kn5', name: 'kn5-en', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn5', lang: 'en' } },
+  { path: '/en/kn6', name: 'kn6-en', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn6', lang: 'en' } },
+  { path: '/en/kn7', name: 'kn7-en', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn7', lang: 'en' } },
+
+  // Book pages PT stubs (kn1-7)
+  { path: '/pt/kn1', name: 'kn1-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn1', lang: 'pt' } },
+  { path: '/pt/kn2', name: 'kn2-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn2', lang: 'pt' } },
+  { path: '/pt/kn3', name: 'kn3-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn3', lang: 'pt' } },
+  { path: '/pt/kn4', name: 'kn4-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn4', lang: 'pt' } },
+  { path: '/pt/kn5', name: 'kn5-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn5', lang: 'pt' } },
+  { path: '/pt/kn6', name: 'kn6-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn6', lang: 'pt' } },
+  { path: '/pt/kn7', name: 'kn7-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn7', lang: 'pt' } },
+
+  // Book pages DE stubs (kn1-7)
+  { path: '/de/kn1', name: 'kn1-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn1', lang: 'de' } },
+  { path: '/de/kn2', name: 'kn2-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn2', lang: 'de' } },
+  { path: '/de/kn3', name: 'kn3-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn3', lang: 'de' } },
+  { path: '/de/kn4', name: 'kn4-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn4', lang: 'de' } },
+  { path: '/de/kn5', name: 'kn5-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn5', lang: 'de' } },
+  { path: '/de/kn6', name: 'kn6-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn6', lang: 'de' } },
+  { path: '/de/kn7', name: 'kn7-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn7', lang: 'de' } },
+
+  // Legal pages PT stubs (6 pages)
+  { path: '/pt/about', name: 'about-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'about', lang: 'pt' } },
+  { path: '/pt/ai-disclosure', name: 'ai-disclosure-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'ai-disclosure', lang: 'pt' } },
+  { path: '/pt/privacy', name: 'privacy-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'privacy', lang: 'pt' } },
+  { path: '/pt/terms', name: 'terms-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'terms', lang: 'pt' } },
+  { path: '/pt/cookies', name: 'cookies-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'cookies', lang: 'pt' } },
+  { path: '/pt/imprint', name: 'imprint-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'imprint', lang: 'pt' } },
+
+  // Legal pages DE stubs (6 pages)
+  { path: '/de/about', name: 'about-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'about', lang: 'de' } },
+  { path: '/de/ai-disclosure', name: 'ai-disclosure-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'ai-disclosure', lang: 'de' } },
+  { path: '/de/privacy', name: 'privacy-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'privacy', lang: 'de' } },
+  { path: '/de/terms', name: 'terms-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'terms', lang: 'de' } },
+  { path: '/de/cookies', name: 'cookies-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'cookies', lang: 'de' } },
+  { path: '/de/imprint', name: 'imprint-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'legal-stub', pageKey: 'imprint', lang: 'de' } },
+
   {
     path: '/:pathMatch(.*)*',
     name: 'not-found',
