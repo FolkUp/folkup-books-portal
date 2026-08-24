@@ -283,17 +283,17 @@ useHead({
 
     <footer class="site-footer">
       <nav class="site-footer__nav" :aria-label="t('nav.footer_about')">
-        <RouterLink :to="(currentLang === 'en' ? '/en' : '') + '/about'">{{ t('nav.footer_about') }}</RouterLink>
+        <RouterLink :to="(routeLang() === 'en' ? '/en' : '') + '/about'">{{ t('nav.footer_about') }}</RouterLink>
         <span class="site-footer__sep" aria-hidden="true">·</span>
-        <RouterLink :to="(currentLang === 'en' ? '/en' : '') + '/ai-disclosure'">{{ t('nav.footer_ai_disclosure') }}</RouterLink>
+        <RouterLink :to="(routeLang() === 'en' ? '/en' : '') + '/ai-disclosure'">{{ t('nav.footer_ai_disclosure') }}</RouterLink>
         <span class="site-footer__sep" aria-hidden="true">·</span>
-        <RouterLink :to="(currentLang === 'en' ? '/en' : '') + '/privacy'">{{ t('nav.footer_privacy') }}</RouterLink>
+        <RouterLink :to="(routeLang() === 'en' ? '/en' : '') + '/privacy'">{{ t('nav.footer_privacy') }}</RouterLink>
         <span class="site-footer__sep" aria-hidden="true">·</span>
-        <RouterLink :to="(currentLang === 'en' ? '/en' : '') + '/terms'">{{ t('nav.footer_terms') }}</RouterLink>
+        <RouterLink :to="(routeLang() === 'en' ? '/en' : '') + '/terms'">{{ t('nav.footer_terms') }}</RouterLink>
         <span class="site-footer__sep" aria-hidden="true">·</span>
-        <RouterLink :to="(currentLang === 'en' ? '/en' : '') + '/cookies'">{{ t('nav.footer_cookies') }}</RouterLink>
+        <RouterLink :to="(routeLang() === 'en' ? '/en' : '') + '/cookies'">{{ t('nav.footer_cookies') }}</RouterLink>
         <span class="site-footer__sep" aria-hidden="true">·</span>
-        <RouterLink :to="(currentLang === 'en' ? '/en' : '') + '/imprint'">{{ t('nav.footer_imprint') }}</RouterLink>
+        <RouterLink :to="(routeLang() === 'en' ? '/en' : '') + '/imprint'">{{ t('nav.footer_imprint') }}</RouterLink>
         <span class="site-footer__sep" aria-hidden="true">·</span>
         <a :href="`mailto:${t('nav.footer_contact')}`">{{ t('nav.footer_contact') }}</a>
       </nav>
