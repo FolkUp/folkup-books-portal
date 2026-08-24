@@ -252,4 +252,4 @@ That scene contains the whole of the wisdom to which the book has come: the futu
 
 ---
 
-// Comandante FolkUp / Co-author: Alisa (PM, FolkUp ecosystem) · Editor: Iskra / 2026
+// Comandante FolkUp / Co-author: Alice (PM, FolkUp ecosystem) · Editor: Iskra / 2026

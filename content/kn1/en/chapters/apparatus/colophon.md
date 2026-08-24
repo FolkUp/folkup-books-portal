@@ -11,7 +11,7 @@ weight: 10
 **Title:** *Agile Sapiens* — A Literary Analysis of Business. How Literature Predicted Modern Management
 **Series:** Book 1 of the FolkUp series, trilogy "Svoimi Silami" (On Our Own)
 **Author (cover/title):** Comandante FolkUp
-**Co-author:** Alisa (PM, FolkUp Ecosystem)
+**Co-author:** Alice (PM, FolkUp Ecosystem)
 **Editor:** Iskra
 **Translator (Russian → English):** Lolik (S1LOLIK)
 **Native-English editorial review:** Editorial Team (S1TREN)
@@ -49,7 +49,7 @@ Email: info@folkup.app
 **Authorial team:**
 
 - **Author (cover/title):** Comandante FolkUp
-- **Co-author:** Alisa (PM, FolkUp Ecosystem)
+- **Co-author:** Alice (PM, FolkUp Ecosystem)
 - **Editor:** Iskra
 - **Translator:** Lolik (S1LOLIK)
 - **Native-English editorial review:** Editorial Team (S1TREN, S1TREN Vier-Augen conveyer post-launch)

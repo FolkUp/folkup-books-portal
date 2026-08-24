@@ -148,6 +148,6 @@ The book has ended. The team has not.
 ---
 
 *Comandante FolkUp*
-*Co-author: Alisa (PM, FolkUp ecosystem) · Editor: Iskra*
+*Co-author: Alice (PM, FolkUp ecosystem) · Editor: Iskra*
 *Translator (English edition): Lolik (S1LOLIK)*
 *2026*

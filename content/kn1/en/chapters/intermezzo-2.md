@@ -29,13 +29,13 @@ draft: false
 
 > **What this intermezzo is about.** A production basement: two hundred and thirty-seven bugs hanging, one hundred and eighty-nine P0s recoded to P1, P1 to P2, P2 to technical debt, technical debt to a workshop in the next quarter (which is still being planned). Agile methodology as the formalized avoidance of programming. Four huddles a day to synchronize a team that produces nothing between them. A satire sharper than any post-mortem.
 
-The stairs down ended at a door with a sign «Production. Authorized Only.» Alisa found herself in a basement where servers hummed, diodes blinked, and cold pizza smelled. Behind the monitors sat three: a woman with the posture of an opera prima, a thin programmer in Ray-Ban glasses (a fake from the Sadovod market), and the familiar striped cat, tapping on the keyboard with all four paws at once.
+The stairs down ended at a door with a sign «Production. Authorized Only.» Alice found herself in a basement where servers hummed, diodes blinked, and cold pizza smelled. Behind the monitors sat three: a woman with the posture of an opera prima, a thin programmer in Ray-Ban glasses (a fake from the Sadovod market), and the familiar striped cat, tapping on the keyboard with all four paws at once.
 
 «Oh, the girl has come to the huddle!» the woman said. «My name is Margarita, I am the product owner. Behemoth maintains the legacy code.»
 
 «Legacy code cannot be maintained,» the cat purred without looking up. «You can only have a relationship with it. A complicated one.»
 
-«A huddle?» Alisa repeated. «But it is noon.»
+«A huddle?» Alice repeated. «But it is noon.»
 
 «The midday one!» the bespectacled man beamed. «We have four: morning at nine, midday at one, evening at five, and the midnight planning at half past eleven. For better synchronization.»
 
@@ -93,7 +93,7 @@ Margarita snapped her fingers, and a graph flashed on the wall with lines in all
 
 «Velocity has been rising for the third month in a row!»
 
-Alisa looked closer. The vertical axis showed «story points,» the horizontal, sprints.
+Alice looked closer. The vertical axis showed «story points,» the horizontal, sprints.
 
 «And what are story points?»
 
@@ -119,7 +119,7 @@ Silence again. The cat stopped typing.
 
 The cat chuckled and began to wash himself.
 
-«What if you tried,» Alisa suggested carefully, «just to make one small fix? Instead of all this planning?»
+«What if you tried,» Alice suggested carefully, «just to make one small fix? Instead of all this planning?»
 
 The faces of the programmers twisted in horror.
 
@@ -143,7 +143,7 @@ The faces of the programmers twisted in horror.
 
 «Once a quarter,» the cat said, returning to the keyboard. «We are currently planning the next meeting. The agenda: approval of the agenda.»
 
-Alisa slowly walked toward the stairs. Behind her came:
+Alice slowly walked toward the stairs. Behind her came:
 
 «Korzhikov was right,» Margarita sighed. «The girl does not understand corporate approaches.»
 
