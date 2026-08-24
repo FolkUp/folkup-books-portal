@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-24T10:22:19.960Z",
+  "generated": "2026-08-24T19:07:25.227Z",
   "book": "kn1",
   "locale": "pt",
   "entries": [
@@ -22,7 +22,7 @@
       "act": "I: Origens",
       "act_opener": true,
       "isApparatus": false,
-      "plate": null,
+      "plate": "kn1-00-pilot.webp",
       "order": 10
     },
     {

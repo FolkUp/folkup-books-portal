@@ -50,9 +50,49 @@ const LANG = parseLangArg()
 const CHAPTERS_DIR = resolve(PROJECT_ROOT, `content/kn1/${LANG}/chapters`)
 const MANIFEST_PATH = resolve(PROJECT_ROOT, `content/kn1/${LANG}/chapters-manifest.json`)
 const BODIES_DIR = resolve(PROJECT_ROOT, `content/kn1/${LANG}/chapters-html`)
+const PLATES_DIR = resolve(PROJECT_ROOT, 'public/images/kn1-chapters')
 
 // Configure marked sync mode (default async в v18; forced sync via async: false)
 marked.setOptions({ async: false })
+
+/**
+ * Auto-detect plate filename by chapter slug (Option C per Iskra S299-01 §4).
+ * Convention: kn1-chapters/kn1-NN-<topic>.webp matches slug chapter-N-<topic>.
+ * Special case: afterword → kn1-afterword.webp.
+ * preface + intermezzo-N never match — returns null (correctly excluded per Iskra Q2 canon).
+ * Cached — loaded once per script invocation.
+ * Frontmatter `plate:` field remains explicit override (source of truth per Iskra §4 §1).
+ */
+let plateFilesCache = null
+function loadPlateFiles() {
+  if (plateFilesCache) return plateFilesCache
+  try {
+    plateFilesCache = readdirSync(PLATES_DIR).filter((f) => /\.(webp|jpg|jpeg|png)$/i.test(f))
+  } catch {
+    plateFilesCache = []
+    console.warn(`[kn1-reader-manifest] plate dir absent OR empty: ${PLATES_DIR}`)
+  }
+  return plateFilesCache
+}
+
+function detectPlate(slug) {
+  // Regular chapter-N-<topic> → kn1-NN-<topic>.ext
+  const chapterMatch = slug.match(/^chapter-(\d+)-(.+)$/)
+  if (chapterMatch) {
+    const [, num, topic] = chapterMatch
+    const numPadded = num.padStart(2, '0')
+    const stem = `kn1-${numPadded}-${topic}`
+    const files = loadPlateFiles()
+    return files.find((f) => f.startsWith(`${stem}.`)) || null
+  }
+  // Special case: afterword → kn1-afterword.ext
+  if (slug === 'afterword') {
+    const files = loadPlateFiles()
+    return files.find((f) => f.startsWith('kn1-afterword.')) || null
+  }
+  // preface, intermezzo-N — no plate per Iskra RATIFIKACIYA Q2 canon
+  return null
+}
 
 /** Apparatus reading order (canonical, matches epub-generator.sh convention) */
 const APPARATUS_ORDER = [
@@ -142,7 +182,7 @@ function collect() {
       act: fm.act || null,
       act_opener: fm.act_opener || false,
       isApparatus: false,
-      plate: fm.plate || null,
+      plate: fm.plate || detectPlate(slug),
       order: orderKey(slug, fm),
     })
     bodies[slug] = renderBody(raw)
