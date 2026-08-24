@@ -14,8 +14,10 @@ import { useRoute } from 'vue-router'
 import { useHead } from '@unhead/vue'
 import { useKn1ChaptersLang } from '../composables/useKn1Chapters'
 import { useSeriesData } from '../composables/useSeriesData'
+import { useLangUrl } from '../composables/useLangUrl'
 
 const route = useRoute()
+const { langUrl } = useLangUrl()
 
 type Lang = 'ru' | 'pt' | 'en'
 const SUPPORTED_LANGS: Lang[] = ['ru', 'pt', 'en']
@@ -155,7 +157,7 @@ const sections = computed<TocSection[]>(() => {
 <template>
   <main class="reader-toc">
     <nav class="reader-toc__breadcrumb" :aria-label="labels.breadcrumbCurrent">
-      <RouterLink to="/">{{ labels.breadcrumbLibrary }}</RouterLink>
+      <RouterLink :to="langUrl('/')">{{ labels.breadcrumbLibrary }}</RouterLink>
       <span>›</span>
       <RouterLink :to="bookHomePath">{{ labels.breadcrumbBook }}</RouterLink>
       <span>›</span>

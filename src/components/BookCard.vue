@@ -2,12 +2,14 @@
 import { computed } from 'vue'
 import { useI18n } from 'vue-i18n'
 import type { Book } from '../composables/useSeriesData'
+import { useLangUrl } from '../composables/useLangUrl'
 
 const props = defineProps<{
   book: Book
 }>()
 
 const { t, locale } = useI18n()
+const { langUrl } = useLangUrl()
 
 const bookTitle = computed(() => t(`books.${props.book.slug}.title`))
 const bookSubtitle = computed(() => t(`books.${props.book.slug}.subtitle`))
@@ -61,7 +63,7 @@ const isDisabled = computed(
     :aria-labelledby="`book-${book.slug}-title`"
   >
     <RouterLink
-      :to="`/${book.slug}`"
+      :to="langUrl(`/${book.slug}`)"
       class="book-card__link"
       :class="{ 'book-card__link--disabled': isDisabled }"
       :aria-disabled="isDisabled"

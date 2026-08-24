@@ -4,10 +4,12 @@ import { useHead } from '@unhead/vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 import { useSeriesData } from './composables/useSeriesData'
+import { useLangUrl } from './composables/useLangUrl'
 
 const { t, locale } = useI18n()
 const route = useRoute()
 const { bookBySlug } = useSeriesData()
+const { langUrl } = useLangUrl()
 
 // Base head — augmented per-page via useHead в individual pages
 const SITE_URL = 'https://books.folkup.life'
@@ -232,7 +234,7 @@ useHead({
 <template>
   <div class="app">
     <header class="site-header">
-      <RouterLink to="/" class="brand-mark">
+      <RouterLink :to="langUrl('/')" class="brand-mark">
         <img src="/brand-mark.svg" alt="" aria-hidden="true" class="brand-mark__icon" />
         <span class="brand-mark__text">{{ t('brand.name') }}</span>
       </RouterLink>
