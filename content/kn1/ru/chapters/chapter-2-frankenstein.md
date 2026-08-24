@@ -5,6 +5,7 @@ date: 2026-03-27
 date_created: "2026-03-27"
 date_updated: "2026-05-13"
 weight: 30
+plate: "kn1-02-frankenstein.webp"
 chapter: 2
 act: "I: Истоки"
 category: analysis

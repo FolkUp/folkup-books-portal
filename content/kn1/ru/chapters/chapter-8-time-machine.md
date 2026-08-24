@@ -5,6 +5,7 @@ date: 2026-05-25
 date_created: "2026-04-08"
 date_updated: "2026-05-25"
 weight: 90
+plate: "kn1-08-time-machine.webp"
 chapter: 9
 act: "III: Горизонты"
 act_opener: true
