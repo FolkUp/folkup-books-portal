@@ -67,7 +67,7 @@
     "feedback_link_text": "github.com/FolkUp/books-feedback"
   },
   "footer": {
-    "copyright": "© {year} Команданте FolkUp · Inhalt CC BY-SA 4.0 · Code MIT"
+    "copyright": "© {year} Comandante FolkUp · Inhalt CC BY-SA 4.0 · Code MIT"
   },
   "lang_not_ready": {
     "_translator_note": "TIKET-31 EXT canonical disclosure — draft Alisa cont+7 EXT 2026-08-24; retro-viza Bolik native DE Vier-Augen pending.",
@@ -117,10 +117,10 @@
   "ai_disclosure": {
     "title": "KI-Nutzungshinweis",
     "h1": "KI-Nutzungshinweis",
-    "meta_description": "EU-KI-Verordnung Artikel 50(4) Compliance. Rechtlicher Name der natürlichen Person mit redaktioneller Verantwortung: Andrei Klemenchenok. Veröffentlichung unter Pseudonym «Команданте FolkUp».",
+    "meta_description": "EU-KI-Verordnung Artikel 50(4) Compliance. Rechtlicher Name der natürlichen Person mit redaktioneller Verantwortung: Andrei Klemenchenok. Veröffentlichung unter Pseudonym «Comandante FolkUp».",
     "section1": {
       "h2": "Redaktionelle Verantwortung",
-      "p1": "Die Bücher der FolkUp-Bibliothek sind mit dem Pseudonym «Команданте FolkUp» unterschrieben. Hinter dem Pseudonym steht ein lebender Mensch: Andrei Klemenchenok, Portugal-Resident, Verleger und Redakteur. Das Pseudonym ist ein Banksy-Muster für nicht-kommerzielle Markenidentität, keine Verschleierung der Verantwortung.",
+      "p1": "Die Bücher der FolkUp-Bibliothek sind mit dem Pseudonym «Comandante FolkUp» unterschrieben. Hinter dem Pseudonym steht ein lebender Mensch: Andrei Klemenchenok, Portugal-Resident, Verleger und Redakteur. Das Pseudonym ist ein Banksy-Muster für nicht-kommerzielle Markenidentität, keine Verschleierung der Verantwortung.",
       "p2": "Redaktioneller und rechtlicher Kontakt: editorial&#64;folkup.app"
     },
     "section2": {
@@ -137,7 +137,7 @@
     "section3": {
       "h2": "EU-KI-Verordnung Artikel 50(4) Compliance",
       "p1": "Diese Seite erfüllt die Anforderung, die natürliche Person offenzulegen, die für die redaktionelle Aufsicht über KI-gestützte Inhalte gemäß EU-KI-Verordnung Artikel 50(4)(b) verantwortlich ist. Verantwortliche Person: Andrei Klemenchenok, russischer Staatsbürger, Portugal-Resident.",
-      "p2": "Das Pseudonym «Команданте FolkUp» wird auf öffentlichen Oberflächen (Buchseiten, Katalog, Fußzeile, Metadaten) verwendet — Banksy-Muster für nicht-kommerzielle Markenidentität. Das Pseudonym trägt die Serienmarke; diese Seite liefert die rechtliche Offenlegung gemäß KI-Verordnung."
+      "p2": "Das Pseudonym «Comandante FolkUp» wird auf öffentlichen Oberflächen (Buchseiten, Katalog, Fußzeile, Metadaten) verwendet — Banksy-Muster für nicht-kommerzielle Markenidentität. Das Pseudonym trägt die Serienmarke; diese Seite liefert die rechtliche Offenlegung gemäß KI-Verordnung."
     },
     "section4": {
       "h2": "Lizenz",
@@ -181,7 +181,7 @@
       "meta_description": "Wie wir mit Daten auf books.folkup.life umgehen. Kurze Antwort: Wir erheben nichts Persönliches. Ausführliche Angaben zu Verantwortlichem, technischen Protokollen, Cookies und Ihren DSGVO-Rechten.",
       "content": [
         "<h2>Wer diese Seite betreibt</h2>",
-        "<p>Dieses Portal wird betrieben von <strong>Andrei Klemenchenok</strong>, einer natürlichen Person mit Wohnsitz in Portugal, die Bücher unter dem Pseudonym «Команданте FolkUp» veröffentlicht. Es handelt sich um ein nicht-kommerzielles Hobbyprojekt zur Buchveröffentlichung.</p>",
+        "<p>Dieses Portal wird betrieben von <strong>Andrei Klemenchenok</strong>, einer natürlichen Person mit Wohnsitz in Portugal, die Bücher unter dem Pseudonym «Comandante FolkUp» veröffentlicht. Es handelt sich um ein nicht-kommerzielles Hobbyprojekt zur Buchveröffentlichung.</p>",
         "<p>Kontakt für Datenschutzangelegenheiten: <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a><br>Allgemeiner redaktioneller Kontakt: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a></p>",
         "<h2>Welche Daten wir erheben</h2>",
         "<p><strong>Persönlich: keine.</strong></p>",
@@ -207,14 +207,14 @@
       "meta_description": "Bedingungen für die Nutzung von books.folkup.life. Inhalte unter CC BY-SA 4.0, kostenlos zu lesen und zu teilen. Portugiesisches Recht.",
       "content": [
         "<h2>Was diese Seite ist</h2>",
-        "<p><strong>books.folkup.life</strong> ist ein kostenloses Portal, das Bücher von Команданте FolkUp (dem Pseudonym von Andrei Klemenchenok, Portugal) veröffentlicht. Online lesen, herunterladen, teilen.</p>",
+        "<p><strong>books.folkup.life</strong> ist ein kostenloses Portal, das Bücher von Comandante FolkUp (dem Pseudonym von Andrei Klemenchenok, Portugal) veröffentlicht. Online lesen, herunterladen, teilen.</p>",
         "<p>Dies ist ein nicht-kommerzielles Hobbyprojekt. Es gibt keine kostenpflichtigen Funktionen, keine Konten, keine Abonnements.</p>",
         "<h2>Lizenz für die Inhalte</h2>",
         "<p>Alle Bücher und Textinhalte auf diesem Portal werden unter der <strong>Creative Commons Attribution-ShareAlike 4.0 International License</strong> (<a href='https://creativecommons.org/licenses/by-sa/4.0/' rel='noopener'>CC BY-SA 4.0</a>) veröffentlicht.</p>",
         "<p>Es ist Ihnen gestattet:</p>",
         "<ul><li><strong>Teilen</strong> — das Material in jedem Medium und Format zu vervielfältigen und weiterzuverbreiten</li><li><strong>Bearbeiten</strong> — das Material zu remixen, zu verändern und darauf aufzubauen, für beliebige Zwecke, sogar kommerziell</li></ul>",
         "<p>Unter folgenden Bedingungen:</p>",
-        "<ul><li><strong>Namensnennung</strong> — Sie müssen «Команданте FolkUp» angemessen nennen, einen Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden</li><li><strong>Weitergabe unter gleichen Bedingungen</strong> — wenn Sie das Material remixen oder darauf aufbauen, müssen Sie Ihre Beiträge unter derselben Lizenz verbreiten</li></ul>",
+        "<ul><li><strong>Namensnennung</strong> — Sie müssen «Comandante FolkUp» angemessen nennen, einen Link zur Lizenz beifügen und angeben, ob Änderungen vorgenommen wurden</li><li><strong>Weitergabe unter gleichen Bedingungen</strong> — wenn Sie das Material remixen oder darauf aufbauen, müssen Sie Ihre Beiträge unter derselben Lizenz verbreiten</li></ul>",
         "<p>Das Entfernen der Namensnennung oder die Neulizenzierung abgeleiteter Werke unter unvereinbaren Bedingungen verstößt gegen die Lizenz und gegen portugiesisches Urheberrecht.</p>",
         "<h2>Infrastrukturcode</h2>",
         "<p>Jeglicher Quellcode, der diesem Portal zugrunde liegt (Seitenvorlagen, Build-Skripte), ist gesondert unter der <strong>MIT-Lizenz</strong> lizenziert und in unseren öffentlichen Repositorien verfügbar.</p>",
@@ -252,11 +252,11 @@
     },
     "imprint": {
       "title": "Impressum",
-      "meta_description": "Impressum gemäß §5 TMG. Verantwortlich: Andrei Klemenchenok, Portugal, veröffentlicht unter dem Pseudonym Команданте FolkUp.",
+      "meta_description": "Impressum gemäß §5 TMG. Verantwortlich: Andrei Klemenchenok, Portugal, veröffentlicht unter dem Pseudonym Comandante FolkUp.",
       "content": [
         "<p><em>Angaben gemäß <strong>§5 TMG (Telemediengesetz, Deutschland)</strong> und allgemeiner guter EU-Praxis für Seiten, die in der gesamten Europäischen Union abrufbar sind.</em></p>",
         "<h2>Diensteanbieter</h2>",
-        "<p><strong>Andrei Klemenchenok</strong><br>Natürliche Person, wohnhaft in Portugal<br>Kontakt: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a><br>Veröffentlichung unter dem Pseudonym: <strong>Команданте FolkUp</strong></p>",
+        "<p><strong>Andrei Klemenchenok</strong><br>Natürliche Person, wohnhaft in Portugal<br>Kontakt: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a><br>Veröffentlichung unter dem Pseudonym: <strong>Comandante FolkUp</strong></p>",
         "<p>Dies ist ein nicht-kommerzielles Hobbyprojekt zur Buchveröffentlichung. Es ist <strong>kein</strong> eingetragenes Unternehmen. Es gibt keine Umsatzsteuer-Identifikationsnummer, keinen Handelsregistereintrag und keine Kammerzugehörigkeit.</p>",
         "<h2>Verantwortlich für den Inhalt</h2>",
         "<p>Verantwortlich für redaktionelle Inhalte gemäß <strong>§55 Abs. 2 RStV</strong> (Rundfunkstaatsvertrag, Deutschland):</p>",
