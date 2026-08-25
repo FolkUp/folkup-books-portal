@@ -43,9 +43,32 @@ All Frida plates — Victorian steel engraving canon (mirrors kn.6 series identi
 
 ## Downstream integration
 
-- **Iskra editorial:** verify каждый plate placement fit к точным местам в тексте главы (ярус паспорта финальный)
-- **Andrey visa:** quality gate + zerkalce Andrey selection final approved
+- **Iskra editorial:** verify каждый plate placement fit к точным местам в тексте главы (ярус паспорта финальный) — **PRINYATA cont+7 (Iskra S299-01)**
+- **Andrey visa:** quality gate + zerkalce Andrey selection final approved cont+5..+7
 - **Attribution:** per BRIEF §9 canonical — «Иллюстрации chapter plates: Ремедиос (Frida-форнит FolkUp, Flux 1.1 Pro), 2026-08. Style canon Victorian steel engraving по прецеденту кн.6. Лицензия CC BY-SA 4.0» — добавлено в аппарат книги (colophon.md)
-- **Reader integration:** frontmatter `plate: kn1-NN-<slug>.webp` declared в 13 md-файлах глав — reader component wiring (Vue3 Kn1ReadChapter.vue) может быть отдельным follow-up тикетом (Johnny scope) если auto-detection по convention не работает
+- **Reader integration Option B (SHIPPED cont+6, PR #222 MERGED 2026-08-24 10:40 UTC):** frontmatter `plate: kn1-NN-<slug>.webp` declared в 13 RU md-файлах глав → Vue3 Kn1ReadChapter.vue renders `<figure class="reader-chapter__plate">` conditionally per `chapterData.meta.plate`. Live prod: `books.folkup.life/kn1/read/chapter-N` (RU only currently).
+- **Reader integration Option C (PREP cont+9, awaits Iskra P2 ticket registration + Johnny availability):** filesystem-based auto-detection в `scripts/kn1-reader-manifest.mjs` (`detectPlate()` function) — plates auto-wire for PT/EN/DE readers когда chapter slugs match filename convention (see §Filename convention ниже). Branch `feat/s1illus-cont9-kn1-reader-option-c-prep` SHA `7a08443` local, ready to push после ratify. Iskra §4 §1 explicit override preserved (frontmatter `plate:` field остаётся source of truth).
 
-**Session:** S1ILLUS cont+5 EXT-3 · Cartouche L3 Autonome Andrey max-autonomy carte-blanche · Iskra Vier-Augen PASS + Fonarshchik mental /brand-visual own PASS (implicit-go 4h window per §1.4)
+## Filename convention for auto-detection (Option C)
+
+Для acceleration future plate additions без per-language frontmatter edits — filename discipline enables `detectPlate()` auto-wire:
+
+| Slug pattern | Plate filename convention | Extension |
+|---|---|---|
+| `chapter-N-<topic>` (N = 0..99) | `kn1-NN-<topic>.<ext>` (N zero-padded) | `.webp` \| `.jpg` \| `.jpeg` \| `.png` |
+| `afterword` (special case) | `kn1-afterword.<ext>` | same |
+| `preface` (canon: НО plate) | — (не auto-wire) | — |
+| `intermezzo-N` (canon: НО plate) | — (не auto-wire) | — |
+| `apparatus-*` (colophon/methodology/etc) | — (не auto-wire) | — |
+
+**Example:** slug `chapter-6-jekyll-hyde` → filename `kn1-06-jekyll-hyde.webp` (both stems must match after zero-pad).
+
+**Explicit override:** frontmatter `plate: <custom-filename>.webp` supersedes auto-detection (Iskra §4 §1 canon — source of truth preserved). Use для edge cases когда filename не совпадает slug convention.
+
+**Cross-lang status (post-Option C activation):**
+- **RU:** 13/13 (explicit frontmatter, backward compat baseline)
+- **PT:** 1/4 auto-detected (chapter-0-pilot; +12 когда Bolik ships remaining chapters)
+- **EN:** 13/13 auto-detected (все chapters + afterword auto-wire)
+- **DE:** graceful skip (chapters dir absent; активируется когда Bolik ships DE routes)
+
+**Session:** S1ILLUS cont+5 EXT-3 generation · cont+6 Option B reader wiring shipped · cont+7 Iskra PRINYATA + Option C recommend · cont+9 Option C prep branch ready · Cartouche L3 Autonome Andrey max-autonomy carte-blanche
