@@ -139,7 +139,7 @@
   "ai_disclosure": {
     "title": "AI Usage Disclosure",
     "h1": "AI Usage Disclosure",
-    "meta_description": "EU AI Act Article 50(4) compliance. Legal name of natural person responsible for editorial oversight: Andrei Klemenchenok. Published under pseudonym «Comandante FolkUp».",
+    "meta_description": "Voluntary disclosure of AI use. Natural person holding editorial responsibility: Andrei Klemenchenok, resident of Portugal. Published under the pseudonym «Comandante FolkUp».",
     "section1": {
       "h2": "Editorial responsibility",
       "p1": "FolkUp Library books are signed with the pseudonym «Comandante FolkUp». Behind the pseudonym stands one living person: Andrei Klemenchenok, a resident of Portugal, publisher and editor. The pseudonym is a Banksy-style convention for non-commercial brand identity, not a way to hide responsibility.",
@@ -157,9 +157,9 @@
       "gate3": "Legal compliance check before publication"
     },
     "section3": {
-      "h2": "EU AI Act Article 50(4) compliance",
-      "p1": "This page fulfils the requirement to disclose the natural person responsible for editorial oversight of AI-assisted content under EU AI Act Article 50(4)(b). Responsible person: Andrei Klemenchenok, resident of Portugal.",
-      "p2": "The pseudonym «Comandante FolkUp» is used on public surfaces (book pages, catalog, footer, metadata) — a Banksy-style convention for non-commercial brand identity. The pseudonym carries the series brand; this page provides the legal disclosure required by the AI Act."
+      "h2": "Use of AI — voluntary disclosure",
+      "p1": "FolkUp voluntarily discloses the use of AI in the production of its books. Under Article 50(4), second subparagraph, of Regulation (EU) 2024/1689 (AI Act), the obligation to label AI-generated text does not apply where the content has undergone a process of human review or editorial control and a natural or legal person holds editorial responsibility for its publication. That person is Andrei Klemenchenok. We disclose it nonetheless, as an editorial choice.",
+      "p2": "The pseudonym «Comandante FolkUp» is used on public surfaces (book pages, catalog, footer, metadata) — a Banksy-style convention for non-commercial brand identity. The pseudonym carries the series brand; this page is a voluntary editorial disclosure, not a label required by law."
     },
     "section4": {
       "h2": "License",
