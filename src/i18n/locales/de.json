@@ -117,10 +117,10 @@
   "ai_disclosure": {
     "title": "KI-Nutzungshinweis",
     "h1": "KI-Nutzungshinweis",
-    "meta_description": "EU-KI-Verordnung Artikel 50 Absatz 4 — FolkUp legt die KI-Nutzung freiwillig offen. Redaktionell verantwortlich: Andrei Klemenchenok. Veröffentlichung unter Pseudonym «Comandante FolkUp».",
+    "meta_description": "Freiwillige Offenlegung der KI-Nutzung. Natürliche Person mit redaktioneller Verantwortung: Andrei Klemenchenok, mit Wohnsitz in Portugal. Veröffentlichung unter dem Pseudonym «Comandante FolkUp».",
     "section1": {
       "h2": "Redaktionelle Verantwortung",
-      "p1": "Die Bücher der FolkUp-Bibliothek sind mit dem Pseudonym «Comandante FolkUp» unterschrieben. Hinter dem Pseudonym steht ein lebender Mensch: Andrei Klemenchenok, Portugal-Resident, Verleger und Redakteur. Das Pseudonym ist ein Banksy-Muster für nicht-kommerzielle Markenidentität, keine Verschleierung der Verantwortung.",
+      "p1": "Die Bücher der FolkUp-Bibliothek sind mit dem Pseudonym «Comandante FolkUp» unterschrieben. Hinter dem Pseudonym steht ein lebender Mensch: Andrei Klemenchenok, mit Wohnsitz in Portugal, Verleger und Redakteur. Das Pseudonym ist ein Banksy-Muster für nicht-kommerzielle Markenidentität, keine Verschleierung der Verantwortung.",
       "p2": "Redaktioneller und rechtlicher Kontakt: editorial&#64;folkup.app"
     },
     "section2": {
@@ -132,12 +132,12 @@
       "p2": "Jedes veröffentlichte Buch durchläuft menschliche Kontrollstufen:",
       "gate1": "Redaktions-Gate — Manuskriptzusammenstellung, Qualitätskontrolle ЩИТ v5.0",
       "gate2": "Muttersprachler-Review für nicht-russische Übersetzungen (Vier-Augen-Prinzip)",
-      "gate3": "Rechtliche Compliance-Prüfung vor Veröffentlichung"
+      "gate3": "Rechtliche Prüfung vor Veröffentlichung"
     },
     "section3": {
-      "h2": "EU-KI-Verordnung Artikel 50 Absatz 4 — freiwillige Offenlegung",
+      "h2": "KI-Nutzung — freiwillige Offenlegung",
       "p1": "FolkUp legt die Nutzung von KI in der Buchproduktion freiwillig offen. Nach Artikel 50 Absatz 4 Unterabsatz 2 der Verordnung (EU) 2024/1689 (KI-Verordnung) gilt die Pflicht zur Kennzeichnung KI-generierter Texte nicht, wenn der Inhalt einer menschlichen Überprüfung oder redaktionellen Kontrolle unterzogen wurde und eine natürliche oder juristische Person die redaktionelle Verantwortung für die Veröffentlichung übernimmt. Diese Person ist Andrei Klemenchenok, mit Wohnsitz in Portugal. Wir legen dennoch offen — als redaktionelle Entscheidung.",
-      "p2": "Das Pseudonym «Comandante FolkUp» wird auf öffentlichen Oberflächen (Buchseiten, Katalog, Fußzeile, Metadaten) verwendet — Banksy-Muster für nicht-kommerzielle Markenidentität. Das Pseudonym trägt die Serienmarke; diese Seite liefert die rechtliche Offenlegung gemäß KI-Verordnung."
+      "p2": "Das Pseudonym «Comandante FolkUp» wird auf öffentlichen Oberflächen (Buchseiten, Katalog, Fußzeile, Metadaten) verwendet — Banksy-Muster für nicht-kommerzielle Markenidentität. Das Pseudonym trägt die Serienmarke; diese Seite ist eine freiwillige redaktionelle Offenlegung, keine gesetzlich vorgeschriebene Kennzeichnung."
     },
     "section4": {
       "h2": "Lizenz",
