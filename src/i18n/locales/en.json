@@ -125,7 +125,7 @@
     "section3": {
       "h2": "Why all this",
       "p1": "We believe that knowledge locked behind a paywall works worse than knowledge that circulates from hand to hand. This idea is set out in the {declarationLink} — the manifesto of our ecosystem. The library is its practical proof: not a call to share, but the act of sharing itself.",
-      "declaration_link_text": "Declaration of Unfenced Knowledge",
+      "declaration_link_text": "Declaration of Unenclosed Knowledge",
       "p2": "The FolkUp ecosystem grows around the library: {articlesLink} on what stayed outside the covers of the books, and {encyclopediasLink} — open collections of knowledge on the series' topics. All under the same free licenses.",
       "articles_link_text": "articles",
       "encyclopedias_link_text": "encyclopedias"
@@ -154,7 +154,7 @@
       "p2": "Every published book passes through human review gates:",
       "gate1": "Editorial gate — manuscript assembly, ЩИТ v5.0 quality control",
       "gate2": "Native-speaker review for non-Russian translations (Vier-Augen / Quatro Olhos / Four-Eyes principle)",
-      "gate3": "Legal compliance check before publication"
+      "gate3": "Legal review before publication"
     },
     "section3": {
       "h2": "Use of AI — voluntary disclosure",
