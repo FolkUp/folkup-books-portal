@@ -305,6 +305,57 @@ export const routes: RouteRecordRaw[] = [
   { path: '/de/kn6', name: 'kn6-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn6', lang: 'de' } },
   { path: '/de/kn7', name: 'kn7-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn7', lang: 'de' } },
 
+  // ═══════════════════════════════════════════════════════════════════════════════
+  // PORTAL-LANG-PARITY-1 mirror redirects (S8SCOOP cont+10 2026-08-25 per Iskra S303-03 §1 п.5).
+  //
+  // Problem: /kn*/lang URLs (mirror scheme where lang is 2nd segment) return HTTP 404
+  // Russian «Экспонат на реставрации» because no route matches — direct violation of
+  // PORTAL-LANG-PARITY canon (Iskra S299/S301): «where the book is not in the guest's language
+  // — honest note in the guest's language, not «exhibit under restoration» in Russian».
+  //
+  // Fix: 21 redirect routes /kn1..kn7/{en,pt,de} → /{en,pt,de}/kn1..kn7 (canonical scheme).
+  // User lands на canonical URL с proper localized LangNotReady disclosure. Same result
+  // as if user typed canonical URL directly. SEO-clean (single canonical URL per lang stub).
+  //
+  // When native translation ratifies: real component swap на /{lang}/kn* stub route,
+  // mirror redirect keeps working — user lands on real content instead of stub.
+  // ═══════════════════════════════════════════════════════════════════════════════
+
+  // Kn1 mirror redirects
+  { path: '/kn1/en', redirect: '/en/kn1' },
+  { path: '/kn1/pt', redirect: '/pt/kn1' },
+  { path: '/kn1/de', redirect: '/de/kn1' },
+
+  // Kn2 mirror redirects
+  { path: '/kn2/en', redirect: '/en/kn2' },
+  { path: '/kn2/pt', redirect: '/pt/kn2' },
+  { path: '/kn2/de', redirect: '/de/kn2' },
+
+  // Kn3 mirror redirects
+  { path: '/kn3/en', redirect: '/en/kn3' },
+  { path: '/kn3/pt', redirect: '/pt/kn3' },
+  { path: '/kn3/de', redirect: '/de/kn3' },
+
+  // Kn4 mirror redirects
+  { path: '/kn4/en', redirect: '/en/kn4' },
+  { path: '/kn4/pt', redirect: '/pt/kn4' },
+  { path: '/kn4/de', redirect: '/de/kn4' },
+
+  // Kn5 mirror redirects
+  { path: '/kn5/en', redirect: '/en/kn5' },
+  { path: '/kn5/pt', redirect: '/pt/kn5' },
+  { path: '/kn5/de', redirect: '/de/kn5' },
+
+  // Kn6 mirror redirects
+  { path: '/kn6/en', redirect: '/en/kn6' },
+  { path: '/kn6/pt', redirect: '/pt/kn6' },
+  { path: '/kn6/de', redirect: '/de/kn6' },
+
+  // Kn7 mirror redirects
+  { path: '/kn7/en', redirect: '/en/kn7' },
+  { path: '/kn7/pt', redirect: '/pt/kn7' },
+  { path: '/kn7/de', redirect: '/de/kn7' },
+
   // Legal pages PT — real components (Zeka native PT-EU refined S299-20 PASS + Iskra S300-01+S301-11
   // Vier-Augen corrections applied 2026-08-24 via PR #239 PT-HOME + PR #240 PT-LEGAL; routes stubs
   // → real components per DEFAULT-GO canon Iskra S299-14 §1 + Andrey «деплоим постоянно всё что исправляем»).
