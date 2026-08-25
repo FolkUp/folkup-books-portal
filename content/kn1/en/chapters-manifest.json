@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-24T19:07:25.481Z",
+  "generated": "2026-08-25T13:57:22.436Z",
   "book": "kn1",
   "locale": "en",
   "entries": [
@@ -200,6 +200,17 @@
       "isApparatus": true,
       "plate": null,
       "order": 9020
+    },
+    {
+      "slug": "apparatus-subject-index",
+      "title": "Subject Index",
+      "description": "Alphabetical index of key concepts, characters, and categories from Agile Sapiens — with references to chapters and appendices",
+      "weight": 30,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "plate": null,
+      "order": 9030
     },
     {
       "slug": "apparatus-transparency",
