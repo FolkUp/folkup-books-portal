@@ -15,7 +15,8 @@
 # S3SCOOP cont+46 v1.0.21 REWORK: v1.0.20 добавлен per Iskra S252 vskrytie 2026-08-03.
 # S4SCOOP cont+1 F POST-SEAL 2026-08-09: v1.0.21 добавлен per v1.0.22 release (colophon no-numbers fix + chapter-8 plate canon closed).
 # S6SCOOP cont+1 2026-08-10: v1.0.22 добавлен per v1.0.23 release (Wave 2 canonical cover apply — Iskra REVERSE S265 D-1/D-3 fix after Andrey physical vскрытия v1.0.22 нашёл старую обложку v1.0.19 наследие).
-# ВНИМАНИЕ: при следующем релизе — добавить v1.0.23 в список ниже.
+# S1ILLUS cont+11 2026-08-25: v1.0.23 добавлен per v1.0.24 current LIVE release (cont+6 SEAL S6SCOOP D-4-final PDF plates + Chrome-headers off; per BOOK-KN1-DOWNLOADS-404-FALLBACK-STUB-CONT27 canon «в обороте только последняя редакция»).
+# ВНИМАНИЕ: при следующем релизе — добавить v1.0.24 в список ниже.
 
 /kn1/downloads/agile-sapiens-v1.0.7.epub    /kn1/  301
 /kn1/downloads/agile-sapiens-v1.0.7.pdf     /kn1/  301
@@ -49,6 +50,8 @@
 /kn1/downloads/agile-sapiens-v1.0.21.pdf    /kn1/  301
 /kn1/downloads/agile-sapiens-v1.0.22.epub   /kn1/  301
 /kn1/downloads/agile-sapiens-v1.0.22.pdf    /kn1/  301
+/kn1/downloads/agile-sapiens-v1.0.23.epub   /kn1/  301
+/kn1/downloads/agile-sapiens-v1.0.23.pdf    /kn1/  301
 
 # ─────────────────────────────────────────────────────────────────
 # BOOK-KN5-V1.0-DEFEKT-REDIRECT (S2SCOOP cont+40 2026-08-03)

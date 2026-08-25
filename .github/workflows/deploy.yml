@@ -201,11 +201,11 @@ jobs:
 
       - name: IndexNow ping (Bing + Yandex — Google не поддерживает)
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        run: |
-          echo "TODO: IndexNow ping after key file setup"
-          # curl -X POST https://api.indexnow.org/indexnow \
-          #   -H "Content-Type: application/json" \
-          #   -d '{"host":"books.folkup.life","key":"KEY","urlList":["..."]}'
+        # S1ILLUS cont+11 · PORTAL-P1-INDEXNOW-PING-SETUP-CONT17-S2SCOOP closed 2026-08-25.
+        # Reads dist/sitemap.xml + POSTs URL list к api.indexnow.org + bing.com/indexnow +
+        # yandex.com/indexnow. Key: public/12ef3e86da69506c06767a28180bd986.txt.
+        run: node scripts/indexnow-ping.mjs
+        continue-on-error: true  # SEO signal, не блокер deploy если endpoints down
 
   preview-headers:
     # Preview branches получают X-Robots-Tag: noindex, nofollow
