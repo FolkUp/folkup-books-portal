@@ -103,11 +103,23 @@ function wireIllustrationRefs(html) {
           `</figure>`
         )
       }
+      // Canon Iskra S138 seal «ЭКСПОНАТ НА РЕСТАВРАЦИИ · 2026» reused from 404/about.
+      // Unique textPath id per plate (kn5-NN) avoids collision if multiple stubs render on one page.
       return (
         `<figure class="reader-chapter__plate reader-chapter__plate--restoration" ` +
         `role="img" aria-label="Иллюстрация ${nn} «${metaphor}» — готовится">` +
         `<div class="restoration-stub">` +
-        `<span class="restoration-stub__label">ЭКСПОНАТ НА РЕСТАВРАЦИИ</span>` +
+        `<svg class="restoration-stub__seal" viewBox="0 0 220 220" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">` +
+        `<defs>` +
+        `<path id="stamp-ring-kn5-${nn}" d="M 110,110 m -85,0 a 85,85 0 1,1 170,0 a 85,85 0 1,1 -170,0" />` +
+        `</defs>` +
+        `<circle cx="110" cy="110" r="100" fill="none" stroke="#7D4450" stroke-width="3" />` +
+        `<circle cx="110" cy="110" r="93" fill="none" stroke="#7D4450" stroke-width="1.5" />` +
+        `<text font-family="Vollkorn, Georgia, serif" font-size="15" font-weight="700" fill="#7D4450" letter-spacing="2">` +
+        `<textPath href="#stamp-ring-kn5-${nn}" startOffset="0">ЭКСПОНАТ НА РЕСТАВРАЦИИ · ЭКСПОНАТ НА РЕСТАВРАЦИИ · </textPath>` +
+        `</text>` +
+        `<text x="110" y="120" font-family="Playfair Display, Georgia, serif" font-size="42" font-weight="700" fill="#7D4450" text-anchor="middle">2026</text>` +
+        `</svg>` +
         `<span class="restoration-stub__metaphor">${metaphor}</span>` +
         `<span class="restoration-stub__hint">иллюстрация готовится</span>` +
         `</div>` +
