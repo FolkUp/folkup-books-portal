@@ -79,7 +79,7 @@ Quixote não se torna imediatamente Quixote. Cervantes dedica um capítulo intei
 
 O mito fundador não é uma história sobre o que a equipa faz, mas sobre *quem ela é*. No folclore empresarial isto é «começámos numa garagem», «decidimos que os serviços bancários deveriam ser mais humanos», «quisemos mudar a forma como o mundo olha para a roupa». Edgar Schein em *Organizational Culture and Leadership* (1985) mostrou que as ideias obsessivas dos fundadores tornam-se pressupostos básicos da cultura organizacional durante décadas⁴. Yvon Chouinard fundou a Patagonia em 1973 com o mito «fazemos equipamento para alpinistas, porque nós mesmos somos alpinistas». Meio século depois, o activismo ambiental da empresa ainda se deduz diretamente deste mito — não da estratégia, não da moda ESG, mas da autodefinição que o fundador estabeleceu.
 
-O mito fundador não é posicionamento de *marketing*. O *marketing* responde à pergunta «o que vendemos». O mito fundador responde à pergunta «porque estamos aqui reunidos». Uma equipa sem resposta a esta pergunta não é equipa — é um grupo de projecto que coexiste temporariamente numa agenda comum.
+O mito fundador não é posicionamento de *marketing*. O *marketing* responde à pergunta «o que vendemos». O mito fundador responde à pergunta «porque estamos aqui reunidos». Uma equipa sem resposta a esta pergunta não é equipa — é um grupo de projeto que coexiste temporariamente numa agenda comum.
 
 ### Lei segunda: o dueto do visionário e do pragmático
 
@@ -97,7 +97,7 @@ Quixote não se limita a ver gigantes. Inscreve cada confronto numa história ma
 
 Não é loucura. É o trabalho básico de produção de sentido, que Joseph Campbell em 1949 descreveu como monomito: a estrutura recorrente do caminho heróico em que as culturas humanas, ao longo de milénios, arrumam as suas histórias⁵. O chamamento à aventura. O encontro com o limiar. Provas e aliados. A batalha com a sombra. O regresso com o troféu. Todas as equipas de trabalho, independentemente da indústria, contam a sua experiência nos termos desta estrutura — porque de outro modo a consciência humana simplesmente não sabe compor acontecimentos.
 
-A mitologia empresarial explora abertamente esta estrutura. Os OKR trimestrais são «batalhas». Os concorrentes são «gigantes» ou «dragões». O lançamento de um produto é «uma aventura». O cliente salvo de uma má experiência é o «Andrés libertado»⁶. Os formadores empresariais transformaram isto em cliché, mas o cliché não anula o fenómeno. Uma equipa que não sabe contar a história da sua própria aventura perde a vontade de agir. Isto vê-se em qualquer grupo de projecto que se instalou no modo de despacho do *backlog*: as tarefas fazem-se, os *sprints* fecham-se, e a sensação de movimento não existe. A narrativa está partida.
+A mitologia empresarial explora abertamente esta estrutura. Os OKR trimestrais são «batalhas». Os concorrentes são «gigantes» ou «dragões». O lançamento de um produto é «uma aventura». O cliente salvo de uma má experiência é o «Andrés libertado»⁶. Os formadores empresariais transformaram isto em cliché, mas o cliché não anula o fenómeno. Uma equipa que não sabe contar a história da sua própria aventura perde a vontade de agir. Isto vê-se em qualquer grupo de projeto que se instalou no modo de despacho do *backlog*: as tarefas fazem-se, os *sprints* fecham-se, e a sensação de movimento não existe. A narrativa está partida.
 
 ### Lei quarta: o choque do mito com a realidade
 

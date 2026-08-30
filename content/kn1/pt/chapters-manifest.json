@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-30T14:21:42.563Z",
+  "generated": "2026-08-30T14:35:20.836Z",
   "book": "kn1",
   "locale": "pt",
   "entries": [
@@ -134,6 +134,17 @@
       "isApparatus": false,
       "plate": null,
       "order": 85
+    },
+    {
+      "slug": "chapter-8-time-machine",
+      "title": "Capítulo 9: A Máquina do Tempo e os horizontes do trabalho",
+      "description": "«A Máquina do Tempo» de Wells como diagnóstico da estratificação laboral do século XXI: os Eloi da classe cognitiva e os Morlocks das operações. David Autor sobre a polarização das competências, Acemoglu e Johnson sobre as instituições, Karl Polanyi sobre o duplo movimento do mercado, Platónov sobre o preço do projeto visto de baixo.",
+      "weight": 90,
+      "act": "III: Horizontes",
+      "act_opener": true,
+      "isApparatus": false,
+      "plate": "kn1-08-time-machine.webp",
+      "order": 90
     },
     {
       "slug": "intermezzo-3",
