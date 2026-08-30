@@ -12,7 +12,6 @@ act: "II: Transformação"
 category: "analysis"
 status: "verified"
 confidence: "high"
-authors: ["Andrei Klemenchenok"]
 reviewed_by: "Borges (arquitetura literária), CyberGonzo (verificação OSINT)"
 review_date: "2026-08-25"
 tags:

@@ -10,7 +10,6 @@ category: synthesis
 reading_time: "8 min"
 status: verified
 confidence: high
-authors: ["Andrei Klemenchenok"]
 translator: "Lolik (S1LOLIK)"
 reviewed_by: "Editorial Team"
 review_date: "2026-08-17"

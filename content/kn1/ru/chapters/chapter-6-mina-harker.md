@@ -12,7 +12,6 @@ act: "II: Трансформация"
 category: "analysis"
 status: "verified"
 confidence: "high"
-authors: ["Андрей Клеменчёнок"]
 reviewed_by: "Editorial Team"
 review_date: "2026-05-24"
 tags:
