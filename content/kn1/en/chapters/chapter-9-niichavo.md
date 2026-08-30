@@ -11,7 +11,6 @@ category: team-self-organization
 reading_time: "20 min"
 status: verified
 confidence: high
-authors: ["Andrei Klemenchenok"]
 reviewed_by: "Editorial Team"
 review_date: "2026-08-16"
 tags:

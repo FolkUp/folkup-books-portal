@@ -12,7 +12,6 @@ category: analysis
 reading_time: "22 min"
 status: verified
 confidence: high
-authors: ["Andrei Klemenchenok"]
 reviewed_by: "Editorial Team"
 review_date: "2026-08-16"
 tags:
