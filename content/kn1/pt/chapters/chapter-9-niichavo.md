@@ -16,7 +16,7 @@ sources:
   - "Howell, Yvonne. *Apocalyptic Realism: The Science Fiction of Arkady and Boris Strugatsky.* New York: Peter Lang, 1994."
   - "Polanyi, Michael. *The Tacit Dimension.* Chicago: University of Chicago Press, 1966."
   - "Gertner, Jon. *The Idea Factory: Bell Labs and the Great Age of American Innovation.* New York: Penguin, 2012."
-  - "Strugatski A., Strugatski B. «Conto sobre a Tróica.» *Angara* (Irkutsk), №4-5, 1968."
+  - "Strugatski A., Strugatski B. «Conto sobre a Tróica.» *Angara* (Irkutsk), n.º 4-5, 1968."
 confidence: "high"
 reading_time: "20 min"
 reviewed_by: "Editorial Team"
@@ -182,4 +182,4 @@ Os Strugatski mostram uma equipa que funciona porque está formada por pessoas p
 
 ⁸ Polanyi, Michael. *The Tacit Dimension.* Chicago: University of Chicago Press, 1966. *Atenção:* Michael Polanyi (1891-1976) foi químico e filósofo da ciência, irmão de Karl Polanyi (1886-1964), autor de *A Grande Transformação*, mencionada no capítulo 8. São duas tradições intelectuais distintas; confundir os irmãos é um erro frequente na literatura.
 
-⁹ Strugatski A., Strugatski B. *Conto sobre a Tróica.* Primeira publicação — revista *Angara* (Irkutsk), №4-5, 1968. Texto integral publicado na URSS apenas em 1989. Continuação argumentativa de «A Segunda-feira»: o mesmo instituto, alguns anos depois, sob a administração da Tróica de racionalização e utilização de fenómenos inexplicados. Diagnóstico artístico de como se destrói a utopia científica do livro anterior.
+⁹ Strugatski A., Strugatski B. *Conto sobre a Tróica.* Primeira publicação — revista *Angara* (Irkutsk), n.º 4-5, 1968. Texto integral publicado na URSS apenas em 1989. Continuação argumentativa de «A Segunda-feira»: o mesmo instituto, alguns anos depois, sob a administração da Tróica de racionalização e utilização de fenómenos inexplicados. Diagnóstico artístico de como se destrói a utopia científica do livro anterior.

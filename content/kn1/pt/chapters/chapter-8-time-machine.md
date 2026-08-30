@@ -127,7 +127,7 @@ Em Dezembro de 1929, Andrei Platónov — ferroviário, drenador, engenheiro por
 
 O enredo, se se resumir formalmente, é simples. Um grupo de trabalhadores escava uma cova para os alicerces de uma casa enorme, na qual, segundo o plano, se instalará todo o proletariado local. Quanto mais escavam — maior se torna a cova. A casa nunca chega a começar-se. Um dos trabalhadores, Vochtchev, agita-se em busca do sentido do trabalho: para quê escavamos, para quem escavamos, o que deve resultar. Ninguém responde. Uma menina de nome Nástia, que os trabalhadores levam consigo para que o trabalho tenha um destinatário — morre. No final, o seu corpo é enterrado no fundo da cova. A casa não será construída.
 
-Platónov não escreveu um panfleto antissoviético, como se tentou ler durante muito tempo na emigração. Escreveu algo mais universal: **o que acontece com o trabalho quando este se arranca ao seu próprio resultado**. Quando escavar se torna uma actividade autónoma, sem necessidade da casa. Quando a cova cresce não porque os alicerces o exijam, mas porque escavar é a única coisa que resta fazer. Os trabalhadores de Platónov não são preguiçosos nem cínicos, trabalham honestamente até à exaustão. Mas a direção do trabalho perdeu-se, e o trabalho começa a devorar-se a si próprio.
+Platónov não escreveu um panfleto antissoviético, como se tentou ler durante muito tempo na emigração. Escreveu algo mais universal: **o que acontece com o trabalho quando este se arranca ao seu próprio resultado**. Quando escavar se torna uma atividade autónoma, sem necessidade da casa. Quando a cova cresce não porque os alicerces o exijam, mas porque escavar é a única coisa que resta fazer. Os trabalhadores de Platónov não são preguiçosos nem cínicos, trabalham honestamente até à exaustão. Mas a direção do trabalho perdeu-se, e o trabalho começa a devorar-se a si próprio.
 
 É a mesma figura que os Morlocks de Wells nos salões subterrâneos das máquinas: pessoas que mantêm o funcionamento do sistema cujo sentido já não compreendem. Os Morlocks alimentam máquinas que outrora foram concebidas para conforto dos Eloi — mas os Eloi degradaram-se há muito, as máquinas giram no regime de autorreprodução, e o trabalho dos Morlocks passou de serviço a ritual. Em Platónov isto está feito sem fantasia, sobre o material do primeiro Plano Quinquenal: a cova, a casa, a menina, a morte, o fim.
 
@@ -173,7 +173,7 @@ Sobre isso — o [próximo capítulo](/kn1/read/chapter-9-niichavo).
 
 ³ Sobre as ligações fabianas de Wells: McKenzie, Norman, McKenzie, Jeanne. *The Time Traveller: The Life of H.G. Wells.* London: Weidenfeld & Nicolson, 1973; sobre a sua colaboração com a *New Review* de W.E. Henley — nas cartas do próprio Wells (Wells H.G. *Experiment in Autobiography*, 1934, vol. II, livro VIII).
 
-⁴ Wells H.G. *The Discovery of the Future.* Palestra proferida na Royal Institution em 24 de Janeiro de 1902; publicada em: *Nature*, 6 de Fevereiro de 1902.
+⁴ Wells H.G. *The Discovery of the Future.* Palestra proferida na Royal Institution em 24 de janeiro de 1902; publicada em: *Nature*, 6 de fevereiro de 1902.
 
 ⁵ Dados sobre o serviço doméstico britânico e as minas de carvão do final do século XIX — segundo: Mitchell, B.R. *British Historical Statistics.* Cambridge: Cambridge University Press, 1988, secções V (trabalho) e VIII (indústria extractiva).
 
