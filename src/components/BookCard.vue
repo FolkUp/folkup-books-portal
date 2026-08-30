@@ -95,7 +95,7 @@ const isDisabled = computed(
         <img
           v-if="coverSrc"
           :src="coverSrc"
-          :alt="`Обложка книги ${bookTitle}`"
+          :alt="t('book_card.cover_alt', { title: bookTitle })"
           width="240"
           height="360"
           loading="lazy"

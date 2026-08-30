@@ -16,6 +16,7 @@
  *   client picks it up на initial mount → no flash of loading, byte-match render.
  */
 import { computed, onServerPrefetch, ref, watch } from 'vue'
+import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 import { useHead } from '@unhead/vue'
 import {
@@ -23,6 +24,8 @@ import {
   loadKn1ChapterBodyHtmlLang,
 } from '../composables/useKn1Chapters'
 import { useLangUrl } from '../composables/useLangUrl'
+
+const { t } = useI18n()
 
 const route = useRoute()
 const { langUrl } = useLangUrl()
@@ -319,7 +322,7 @@ useHead({
       >
         <img
           :src="`/images/kn1-chapters/${chapterData.meta.plate}`"
-          :alt="`Иллюстрация: ${chapterData.meta.title}`"
+          :alt="t('book_reader.illustration_alt', { title: chapterData.meta.title })"
           loading="lazy"
           decoding="async"
           width="800"

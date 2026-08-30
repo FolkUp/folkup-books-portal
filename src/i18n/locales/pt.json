@@ -3,6 +3,9 @@
     "name": "Biblioteca FolkUp",
     "tagline": "Livros sobre equipas, liderança, diálogo"
   },
+  "meta": {
+    "og_image_alt": "Remedios (Frida-fornit FolkUp): sete lombadas de livros e um candeeiro de mesa — luz sobre a Biblioteca"
+  },
   "nav": {
     "language_label": "Idioma",
     "language_ru": "RU",
@@ -78,13 +81,40 @@
     "book_note": "O livro está disponível em russo"
   },
   "books": {
-    "kn1": { "title": "Agile Sapiens", "subtitle": "Uma análise literária do negócio: Verne, Shelley, Holmes e Borges diagnosticavam a gestão muito antes de os consultores chegarem." },
-    "kn2": { "title": "Consoantes sem vogais", "subtitle": "A longa guerra em torno do conhecimento: uns trancam-no, outros arrombam as fechaduras — a abertura vence, vez após vez." },
-    "kn3": { "title": "Cidade do Sol", "subtitle": "Cidades ideais — da Jerusalém celeste à Bauhaus — e a pergunta: é aqui confortável para uma pessoa comum, de sacos de compras nas mãos?" },
-    "kn4": { "title": "Onde vive o novo", "subtitle": "Regras e rutura não são uma alternativa: o cânone chega sempre tarde para nomear o novo. Três mil anos de exemplos vindos das margens." },
-    "kn5": { "title": "Por mãos alheias", "subtitle": "Entre o autor e nós há sempre alguém no meio: o copista, o censor, o editor, o revisor, o crítico — e agora o algoritmo." },
-    "kn6": { "title": "Com os próprios olhos", "subtitle": "O mundo está cheio de fantasmas — e a cada um deles se opõe alguém que foi verificar por si próprio, e pagou por isso." },
-    "kn7": { "title": "Dificuldades do diálogo", "subtitle": "Na cabeça toca uma orquestra — cá para fora sai apenas uma pancada. Um livro sobre as barreiras à compreensão e sobre como as atravessar." }
+    "kn1": {
+      "title": "Agile Sapiens",
+      "subtitle": "Uma análise literária do negócio: Verne, Shelley, Holmes e Borges diagnosticavam a gestão muito antes de os consultores chegarem."
+    },
+    "kn2": {
+      "title": "Consoantes sem vogais",
+      "subtitle": "A longa guerra em torno do conhecimento: uns trancam-no, outros arrombam as fechaduras — a abertura vence, vez após vez."
+    },
+    "kn3": {
+      "title": "Cidade do Sol",
+      "subtitle": "Cidades ideais — da Jerusalém celeste à Bauhaus — e a pergunta: é aqui confortável para uma pessoa comum, de sacos de compras nas mãos?"
+    },
+    "kn4": {
+      "title": "Onde vive o novo",
+      "subtitle": "Regras e rutura não são uma alternativa: o cânone chega sempre tarde para nomear o novo. Três mil anos de exemplos vindos das margens."
+    },
+    "kn5": {
+      "title": "Por mãos alheias",
+      "subtitle": "Entre o autor e nós há sempre alguém no meio: o copista, o censor, o editor, o revisor, o crítico — e agora o algoritmo."
+    },
+    "kn6": {
+      "title": "Com os próprios olhos",
+      "subtitle": "O mundo está cheio de fantasmas — e a cada um deles se opõe alguém que foi verificar por si próprio, e pagou por isso."
+    },
+    "kn7": {
+      "title": "Dificuldades do diálogo",
+      "subtitle": "Na cabeça toca uma orquestra — cá para fora sai apenas uma pancada. Um livro sobre as barreiras à compreensão e sobre como as atravessar."
+    }
+  },
+  "book_card": {
+    "cover_alt": "Capa do livro «{title}»"
+  },
+  "book_reader": {
+    "illustration_alt": "Ilustração: {title}"
   },
   "ai_disclosure": {
     "title": "Divulgação de utilização de IA",

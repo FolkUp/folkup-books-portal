@@ -3,6 +3,9 @@
     "name": "FolkUp-Bibliothek",
     "tagline": "Bücher über Teams, Führung, Dialog"
   },
+  "meta": {
+    "og_image_alt": "Remedios (Frida-Fornit FolkUp): sieben Buchrücken und eine Tischlampe — Licht über der Bibliothek"
+  },
   "nav": {
     "language_label": "Sprache",
     "language_ru": "RU",
@@ -113,6 +116,12 @@
       "subtitle": "Das Finale der Reihe. Kommt nach dem Qualitäts-Gate.",
       "description": "Trommeln Sie mit dem Finger eine vertraute Melodie — und beobachten Sie, wie Ihr Nachbar sie nicht errät. In Ihrem Kopf spielt ein Orchester, nach draußen dringt Klopfen auf dem Tisch. Aus dieser Kluft ist ein Buch gewachsen — über die Barrieren des Verstehens zwischen Völkern, Berufen, zwei Menschen an einem Tisch und, zum Schluss, zwischen Mensch und Maschine."
     }
+  },
+  "book_card": {
+    "cover_alt": "Buchcover „{title}“"
+  },
+  "book_reader": {
+    "illustration_alt": "Illustration: {title}"
   },
   "ai_disclosure": {
     "title": "KI-Nutzungshinweis",

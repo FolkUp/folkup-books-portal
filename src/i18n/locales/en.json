@@ -3,6 +3,9 @@
     "name": "FolkUp Library",
     "tagline": "Books on teams, leadership, dialogue"
   },
+  "meta": {
+    "og_image_alt": "Remedios (Frida-fornit FolkUp): seven book spines and a table lamp — light over the Library"
+  },
   "nav": {
     "language_label": "Language",
     "language_ru": "RU",
@@ -106,6 +109,12 @@
       "title": "Lost in Conversation",
       "subtitle": "An orchestra plays inside your head — what comes out is a knock. A book about the barriers to understanding and how to break through them."
     }
+  },
+  "book_card": {
+    "cover_alt": "Cover of “{title}”"
+  },
+  "book_reader": {
+    "illustration_alt": "Illustration: {title}"
   },
   "about": {
     "title": "About",
@@ -268,4 +277,4 @@
       ]
     }
   }
-}
+}
