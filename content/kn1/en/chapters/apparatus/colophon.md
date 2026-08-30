@@ -56,7 +56,7 @@ Email: info@folkup.app
 - **Illustrator:** Frida
 - **Legal copyright holder (©):** Andrei Klemenchenok (ORCID: 0009-0008-2953-8601)
 
-**Editorial tools (automation):** OSINT verification, technical proofreading, poetic rhythm analysis, adversarial review — performed by specialized AI assistants within the FolkUp editorial ecosystem. Detailed disclosure — on the [AI Transparency page](/kn1/en/read/apparatus/transparency/).
+**Editorial tools (automation):** OSINT verification, technical proofreading, poetic rhythm analysis, adversarial review — performed by specialized AI assistants within the FolkUp editorial ecosystem. Detailed disclosure — on the [AI Transparency page](/kn1/en/read/apparatus-transparency).
 
 ## Edition Dates
 
@@ -72,4 +72,4 @@ Email: info@folkup.app
 
 ---
 
-*[← Back to apparatus](/kn1/en/read/apparatus/) • [Table of contents ↗](/kn1/en/read/)*
+*[Table of contents →](/kn1/en/read)*

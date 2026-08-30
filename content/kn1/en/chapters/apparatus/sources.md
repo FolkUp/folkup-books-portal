@@ -26,8 +26,8 @@ The sources section will be organized following the Russian master edition struc
 Until this file is finalized, canonical references are available in:
 
 - End-of-chapter footnotes (all 16 chapters): [Chapters →](/kn1/en/read/)
-- Russian master edition sources: [Russian sources ↗](https://books.folkup.life/kn1/read/apparatus/sources/) (main reference)
+- Russian master edition sources: [Russian sources →](/kn1/read/apparatus-sources) (main reference)
 
 ---
 
-*[← Back to apparatus](/kn1/en/read/apparatus/) • [Table of contents ↗](/kn1/en/read/)*
+*[Table of contents →](/kn1/en/read)*

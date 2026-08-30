@@ -279,7 +279,7 @@ export const routes: RouteRecordRaw[] = [
   // ═══════════════════════════════════════════════════════════════════════════════
 
   // Book pages EN stubs (kn1-7)
-  { path: '/en/kn1', name: 'kn1-en', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn1', lang: 'en' } },
+  { path: '/en/kn1', name: 'kn1-en', component: () => import('../pages/kn1.vue'), meta: { pageType: 'book', bookSlug: 'kn1', lang: 'en' } },
   { path: '/en/kn2', name: 'kn2-en', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn2', lang: 'en' } },
   { path: '/en/kn3', name: 'kn3-en', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn3', lang: 'en' } },
   { path: '/en/kn4', name: 'kn4-en', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn4', lang: 'en' } },
