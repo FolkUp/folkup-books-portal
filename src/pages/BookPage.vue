@@ -168,6 +168,14 @@ const hasAnyPreview = computed(() =>
   translationEntries.value.some((entry) => entry.status === 'preview')
 )
 
+// Iskra VIER-AUGEN-S305-03 §4-3 fix: on live-lang page (EN/RU with translation=='live')
+// the «translation is taking shape... come in this hall» stub-note misleads
+// (this hall IS live). Hide stub-note on live-lang page; badges в списке уже показывают
+// preparing statuses соседних языков.
+const isCurrentLangLive = computed(
+  () => book.value?.translations?.[locale.value as Locale] === 'live',
+)
+
 const SITE_URL = 'https://books.folkup.life'
 
 // Per-book og:image — PNG version для соцсетей (Iskra STOP-MAYAK S219 §2д:
@@ -249,17 +257,20 @@ useHead({
     { name: 'twitter:image', content: () => bookOgImage.value },
   ],
   link: () => [
+    // Iskra VIER-AUGEN-S305-03 §4-1 fix: canonical per-locale — was hardcoded к RU URL,
+    // EN page declared себя дубликатом русской. Now RU stays baseline, other langs get
+    // /{locale}/{slug}/ canonical matching hreflang emission above.
     {
       rel: 'canonical',
-      href: `https://books.folkup.life/${props.slug}/`,
+      href: `https://books.folkup.life${locale.value === 'ru' ? '' : `/${locale.value}`}/${props.slug}/`,
     },
     ...bookHreflangLinks.value,
   ],
 })
 
-// Book Schema.org markup
+// Book Schema.org markup — Iskra VIER-AUGEN-S305-03 §3: pass locale для per-locale inLanguage + workExample.
 if (book.value) {
-  useBookSchema(book.value, series.value, title.value)
+  useBookSchema(book.value, series.value, title.value, locale.value)
 }
 </script>
 
@@ -450,7 +461,10 @@ if (book.value) {
           <p v-if="hasAnyPreview" class="book-page__translation-stub-full">
             {{ t('portal.translation_preview_full') }}
           </p>
-          <p v-if="hasAnyPreparing" class="book-page__translation-stub-full">
+          <p
+            v-if="hasAnyPreparing && !isCurrentLangLive"
+            class="book-page__translation-stub-full"
+          >
             {{ t('portal.translation_stub_full') }}
           </p>
         </section>
