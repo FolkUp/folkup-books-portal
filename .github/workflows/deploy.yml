@@ -85,9 +85,9 @@ jobs:
           test -f dist/_headers
           echo "✓ All required artifacts present"
 
-      - name: Bundle size check (60KB gzip gate)
+      - name: Bundle size check (65KB gzip gate — bumped from 60KB 2026-08-31 to accommodate Iskra DRAFT-S307-05 ratified 7 book descriptions; long-term proper fix = split locale JSON to lazy-loaded chunks per book, tracked separately)
         run: |
-          MAX_KB=60
+          MAX_KB=65
           for js in dist/assets/*.js; do
             KB=$(gzip -c "$js" | wc -c | awk '{print int($1/1024)}')
             echo "$js: ${KB}KB gzip"
