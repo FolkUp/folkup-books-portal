@@ -106,7 +106,7 @@ E, a poucos dias da partida, dirige-se a Rieux e diz que fica. Não porque o pla
 
 Não é heroísmo. Não é uma escolha em sentido elevado. Rambert não jura, não assina contrato, não entra em nenhuma organização. Simplesmente inverte a decisão que já tinha tomado. E, a partir desse momento, faz parte da *communauté*. Não porque alguém o tenha aceite, mas porque a recusa em partir faz automaticamente da pessoa um participante.
 
-**Moderno.** A seleção-pela-recusa é o mecanismo mais subestimado de formação de equipas em crises prolongadas. As equipas hospitalares da primeira vaga da COVID em Março de 2020 formaram-se não por recrutamento, mas pelos que não se demitiram. As brigadas médicas ucranianas depois de Fevereiro de 2022 — os que não partiram. As equipas de liquidação das consequências de Fukushima — os que ficaram a trabalhar após o alerta radiológico. Nos três casos, a seleção de princípio ocorreu não à entrada, mas à saída: a equipa é constituída pelos que se recusaram a partir quando partir era razoável.
+**Moderno.** A seleção-pela-recusa é o mecanismo mais subestimado de formação de equipas em crises prolongadas. As equipas hospitalares da primeira vaga da COVID em março de 2020 formaram-se não por recrutamento, mas pelos que não se demitiram. As brigadas médicas ucranianas depois de fevereiro de 2022 — os que não partiram. As equipas de liquidação das consequências de Fukushima — os que ficaram a trabalhar após o alerta radiológico. Nos três casos, a seleção de princípio ocorreu não à entrada, mas à saída: a equipa é constituída pelos que se recusaram a partir quando partir era razoável.
 
 ### Lei 2. A decência comum em vez do heroísmo
 
@@ -198,7 +198,7 @@ O que se compõe desta sequência discute-se no posfácio. Mas uma tese cabe for
 
 ## Epílogo. O regresso de Phileas Fogg
 
-**Reform Club, Londres, 21 de Dezembro de 1872, 20:44.**
+**Reform Club, Londres, 21 de dezembro de 1872, 20:44.**
 
 Cinco cavalheiros junto à lareira seguem o ponteiro. Fogg não está. Falhou o navio de Liverpool — Londres inteira o sabe; a aposta, pensam todos, está perdida. Aos cinquenta e sete segundos, a porta do salão abre-se: «Aqui estou, meus senhores.» Margem — três segundos. Vinte mil libras ganhas; dezanove gastas em viagem; lucro líquido — cerca de mil, que Fogg dividirá entre Passepartout e o infeliz detetive. Como empreendimento financeiro — quase deficitário.
 
@@ -232,7 +232,7 @@ As equipas que pensam que escolhem entre metodologias não escolhem nada — tro
 
 ## Regresso ao Reform Club. A aposta verdadeira
 
-**20:44:57, 21 de Dezembro de 1872.**
+**20:44:57, 21 de dezembro de 1872.**
 
 Fogg ganha a aposta com margem de três segundos — porque, sem o saber, atravessou a linha internacional de mudança de data e trouxe para casa um dia a mais. Mas a vitória verdadeira não está nas vinte mil libras. Provou que a abordagem sistemática, combinada com a capacidade humana de adaptação, supera qualquer desafio — mas só sob uma condição: que a pessoa que a aplica esteja pronta a, no momento certo, abandonar o plano por algo mais importante do que o plano.
 
@@ -252,11 +252,11 @@ Esta cena contém toda a sabedoria a que o livro chegou: o futuro não é destin
 
 ¹ Camus, Albert. *La Peste.* Paris: Gallimard, 1947, partie II. Conversa de Rieux com Rambert, na presença de Tarrou. No original: *«la seule façon de lutter contre la peste, c'est l'honnêteté»* — *«être honnête, c'est faire son métier»*. Na tradução portuguesa canónica (Livros do Brasil, Lisboa), *honnêteté* é vertido como «honestidade» — esta forma literal é a que damos nas citações. Ao mesmo tempo, este capítulo mantém a palavra «decência» na moldura conceptual (título da lei 2, tese final), sublinhando o parentesco com a tradição anglófona de *common decency* de Orwell: é uma opção autoral consciente de tradução, não uma substituição da citação canónica.
 
-² Camus, Albert. Carta a Roland Barthes, 11 de Janeiro de 1955. Resposta de Camus à recensão de Barthes no *Club, le journal du meilleur livre* (Janeiro de 1955), onde Barthes lera «A Peste» como alegoria «anti-histórica». Camus na carta insiste que a peste não é apenas o nazismo; o romance fala de resistência a qualquer tirania, a qualquer terror [nota fatual: fórmula exata pela Pléiade]. Carta publicada em: Camus, Albert. *Théâtre, récits, nouvelles.* Edição de Roger Quilliot, Bibliothèque de la Pléiade. Paris: Gallimard, 1962, pp. 1965–1967.
+² Camus, Albert. Carta a Roland Barthes, 11 de janeiro de 1955. Resposta de Camus à recensão de Barthes no *Club, le journal du meilleur livre* (janeiro de 1955), onde Barthes lera «A Peste» como alegoria «anti-histórica». Camus na carta insiste que a peste não é apenas o nazismo; o romance fala de resistência a qualquer tirania, a qualquer terror [nota fatual: fórmula exata pela Pléiade]. Carta publicada em: Camus, Albert. *Théâtre, récits, nouvelles.* Edição de Roger Quilliot, Bibliothèque de la Pléiade. Paris: Gallimard, 1962, pp. 1965–1967.
 
 ³ Weick, Karl E.; Sutcliffe, Kathleen M. *Managing the Unexpected: Assuring High Performance in an Age of Complexity.* San Francisco: Jossey-Bass, 2001. Capítulo 1 sobre os princípios da *high-reliability organization*. Tese central: a resistência a cargas não previstas garante-se não pelos indivíduos excecionais, mas pela permanente disciplina do pessoal no pequeno — *preoccupation with failure*, *reluctance to simplify*, *sensitivity to operations*.
 
-⁴ O conceito de *Incident Command System* surgiu na Califórnia entre 1970 e 1972 no âmbito do programa FIRESCOPE (FIrefighting RESources of Southern California Organized for Potential Emergencies), desenvolvido depois da série destrutiva de fogos florestais de 1970. Formalizou-se como norma nacional dos EUA no âmbito do *National Incident Management System* (NIMS) pela *Homeland Security Presidential Directive 5* de 28 de Fevereiro de 2003. Aplicar o ICS como analogia retrospetiva a Oran de 1947 é anacronismo; a *communauté* de Rieux é precursora orgânica, não realização de modelo.
+⁴ O conceito de *Incident Command System* surgiu na Califórnia entre 1970 e 1972 no âmbito do programa FIRESCOPE (FIrefighting RESources of Southern California Organized for Potential Emergencies), desenvolvido depois da série destrutiva de fogos florestais de 1970. Formalizou-se como norma nacional dos EUA no âmbito do *National Incident Management System* (NIMS) pela *Homeland Security Presidential Directive 5* de 28 de fevereiro de 2003. Aplicar o ICS como analogia retrospetiva a Oran de 1947 é anacronismo; a *communauté* de Rieux é precursora orgânica, não realização de modelo.
 
 ⁵ Camus, *La Peste,* partie V, parágrafo final do romance. No original: *«Car il savait ce que cette foule en joie ignorait, et qu'on peut lire dans les livres, que le bacille de la peste ne meurt ni ne disparaît jamais, qu'il peut rester pendant des dizaines d'années endormi dans les meubles et le linge, qu'il attend patiemment dans les chambres, les caves, les malles, les mouchoirs et les paperasses, et que, peut-être, le jour viendrait où, pour le malheur et l'enseignement des hommes, la peste réveillerait ses rats et les enverrait mourir dans une cité heureuse.»* Tradução portuguesa canónica: Livros do Brasil, Lisboa.
 

@@ -16,7 +16,7 @@ sources:
   - "Weick, Karl E. «The Collapse of Sensemaking in Organizations: The Mann Gulch Disaster». *Administrative Science Quarterly* 38, no. 4 (1993): 628–652."
   - "Campbell, Joseph. *The Hero with a Thousand Faces* (1949). Bollingen Series XVII, Pantheon Books, New York."
   - "Goleman, Daniel. *Emotional Intelligence: Why It Matters More Than IQ* (1995). Bantam Books, New York."
-  - "Ilf, Ilya e Yevgeny Petrov. «Doze Cadeiras» (1928). Revista «30 dias», Moscovo."
+  - "Ilf, Iliá e Ievguéni Petrov. «As Doze Cadeiras» (1928). Revista «30 dias», Moscovo."
 confidence: "high"
 reading_time: "18 min"
 reviewed_by: "Editorial Team"
@@ -135,7 +135,7 @@ A inteligência emocional, descrita por Daniel Goleman em 1995¹², nesta imagem
 
 ## CASO: Bender e Vorobyaninov — a equipa russa de Quixote e Sancho
 
-Ilf e Petrov em 1928 publicaram um romance que a crítica soviética leu como sátira da intelectualidade da NEP, e dez anos depois — como caricatura da emigração. Mas *Doze Cadeiras* é, antes de mais, a história de uma equipa com um mito¹³.
+Ilf e Petrov em 1928 publicaram um romance que a crítica soviética leu como sátira da intelectualidade da NEP, e dez anos depois — como caricatura da emigração. Mas *As Doze Cadeiras* é, antes de mais, a história de uma equipa com um mito¹³.
 
 Ostap Bender é um visionário puro. Encontra no antigo marechal da nobreza Ippolit Matveievich Vorobyaninov um fragmento de informação: a sogra de Vorobyaninov, antes de morrer, confessou que tinha cosido brilhantes de família no forro de uma das doze cadeiras da mobília da sala. As cadeiras foram requisitadas, dispersaram-se por novos donos, espalharam-se pela URSS. Bender cunha imediatamente o mito — *cadeira, brilhantes, vida nova* — e este mito organiza as duzentas páginas seguintes de ação — viagens, aldrabices, encenações, penetrações, disfarces, extorsões.
 
@@ -205,7 +205,7 @@ O terceiro ato aguarda.
 
 ⁶ Cervantes, *Don Quixote* (1605), parte primeira, capítulo IV: libertação por Dom Quixote do adolescente pastor Andrés do dono que o batia. Um dos episódios iniciais em que «salvar o oprimido» se torna parte da narrativa cavaleiresca de Quixote. O episódio termina com desfecho irónico no capítulo XXXI da mesma primeira parte: o dono espancou Andrés ainda mais, assim que Quixote galopou dali — o que o pragmático Sancho poderia ter previsto.
 
-⁷ Weick, Karl E. «The Collapse of Sensemaking in Organizations: The Mann Gulch Disaster». *Administrative Science Quarterly* 38, no. 4 (Dezembro 1993): 628–652. Análise da catástrofe de 5 de Agosto de 1949 no desfiladeiro de Mann Gulch (Montana, EUA): morreram treze de dezasseis pessoas encontradas no barranco; além de Dodge, sobreviveram apenas dois para-quedistas que conseguiram atravessar a crista. O capataz Wag Dodge sobreviveu, inventando em andamento a técnica do contra-fogo, que na sua preparação não existia.
+⁷ Weick, Karl E. «The Collapse of Sensemaking in Organizations: The Mann Gulch Disaster». *Administrative Science Quarterly* 38, no. 4 (dezembro 1993): 628–652. Análise da catástrofe de 5 de agosto de 1949 no desfiladeiro de Mann Gulch (Montana, EUA): morreram treze de dezasseis pessoas encontradas no barranco; além de Dodge, sobreviveram apenas dois para-quedistas que conseguiram atravessar a crista. O capataz Wag Dodge sobreviveu, inventando em andamento a técnica do contra-fogo, que na sua preparação não existia.
 
 ⁸ Argyris, Chris & Donald Schön. *Organizational Learning: A Theory of Action Perspective* (1978). Addison-Wesley, Reading, MA. Conceito do *double-loop learning* discutido em detalhe no [capítulo 6, parte 2]({{< relref "/chapters/chapter-6-jekyll-hyde" >}}) na aplicação ao dualismo empresarial.
 
@@ -217,6 +217,6 @@ O terceiro ato aguarda.
 
 ¹² Goleman, Daniel. *Emotional Intelligence: Why It Matters More Than IQ* (1995). Bantam Books, New York. Cinco componentes da inteligência emocional: autoconsciência, autorregulação, motivação, empatia, competências sociais.
 
-¹³ Ilf, Ilya e Yevgeny Petrov. «Doze Cadeiras» (1928). Primeira publicação — revista «30 dias», Moscovo, Janeiro-Julho de 1928. Em volume separado — «Terra e Fábrica», 1928. Na sequela «O Vitelo de Ouro» (1931), Bender revela-se sobrevivente: a ferida não era mortal, foi salvo no hospital. Esta correcção autoral não anula o efeito literário do final de *Doze Cadeiras*.
+¹³ Ilf, Iliá e Ievguéni Petrov. «As Doze Cadeiras» (1928). Primeira publicação — revista «30 dias», Moscovo, janeiro-julho de 1928. Em volume separado — «Terra e Fábrica», 1928. Na sequela «O Vitelo de Ouro» (1931), Bender revela-se sobrevivente: a ferida não era mortal, foi salvo no hospital. Esta correcção autoral não anula o efeito literário do final de *As Doze Cadeiras*.
 
 ¹⁴ Cervantes, *Don Quixote* (1615). Parte segunda, capítulo LXXIV: «Soy Alonso Quijano el Bueno» / «Sou Alonso Quixano o Bom». Cena de abdicação de Dom Quixote do mito cavaleiresco e da sua morte. Referências à edição clássica.
