@@ -248,7 +248,9 @@ useHead({
   meta: [
     { property: 'og:locale', content: () => OG_LOCALE_MAP[routeLang()] },
     { property: 'og:type', content: 'website' },
-    { property: 'og:site_name', content: 'Библиотека FolkUp' },
+    // Iskra VIER-AUGEN-S305-03 §4-2 fix: og:site_name per-locale via i18n
+    // (was hardcoded RU «Библиотека FolkUp» on EN/PT/DE pages).
+    { property: 'og:site_name', content: () => t('brand.name') },
     { property: 'og:url', content: currentUrl },
     { property: 'og:image', content: DEFAULT_OG_IMAGE },
     { property: 'og:image:type', content: 'image/jpeg' },
