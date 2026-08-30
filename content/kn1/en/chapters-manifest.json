@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-25T13:57:22.436Z",
+  "generated": "2026-08-30T11:35:00.000Z",
   "book": "kn1",
   "locale": "en",
   "entries": [
@@ -189,6 +189,28 @@
       "isApparatus": false,
       "plate": "kn1-afterword.webp",
       "order": 8000
+    },
+    {
+      "slug": "apparatus-acknowledgments",
+      "title": "Acknowledgments",
+      "description": "Recognition of all who helped in the making of this book",
+      "weight": 50,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "plate": null,
+      "order": 9000
+    },
+    {
+      "slug": "apparatus-methodology",
+      "title": "Methodology",
+      "description": "Principles of research, standards of verification, approaches to analysis",
+      "weight": 20,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "plate": null,
+      "order": 9010
     },
     {
       "slug": "apparatus-sources",
