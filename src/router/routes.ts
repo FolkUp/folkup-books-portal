@@ -287,8 +287,8 @@ export const routes: RouteRecordRaw[] = [
   { path: '/en/kn6', name: 'kn6-en', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn6', lang: 'en' } },
   { path: '/en/kn7', name: 'kn7-en', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn7', lang: 'en' } },
 
-  // Book pages PT stubs (kn1-7)
-  { path: '/pt/kn1', name: 'kn1-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn1', lang: 'pt' } },
+  // Book pages PT stubs (kn1-7) — /pt/kn1 flipped stub→wrapper per Iskra VERDIKT-S307-03 §1 Q4 (S1DEFIX cont+2 2026-08-31) + Andrey S306 «флип без вето». Preview state per series.yaml translations.pt='preview' — reader `/kn1/pt/read/*` LIVE 4 chapters (Zeka batch 8 waves 1-4), downloads pending. Pattern mirrors /en/kn1 flip PR #255 (Iskra VIZA-VERDIKT-S304-01 §1).
+  { path: '/pt/kn1', name: 'kn1-pt', component: () => import('../pages/kn1.vue'), meta: { pageType: 'book', bookSlug: 'kn1', lang: 'pt' } },
   { path: '/pt/kn2', name: 'kn2-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn2', lang: 'pt' } },
   { path: '/pt/kn3', name: 'kn3-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn3', lang: 'pt' } },
   { path: '/pt/kn4', name: 'kn4-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn4', lang: 'pt' } },
