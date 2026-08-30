@@ -256,7 +256,10 @@ useHead({
     { property: 'og:image:type', content: 'image/jpeg' },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
-    { property: 'og:image:alt', content: 'Ремедиос (Frida-форнит FolkUp): семь книжных корешков и настольная лампа — свет над Библиотекой' },
+    // Iskra VIER-AUGEN-S305-03 §4-2 + VIZA-PAKET-S305-04 §3 Item 2 fix: og:image:alt per-locale
+    // via i18n meta.og_image_alt (was hardcoded RU on EN/PT/DE pages). PT: «Remedios» без акута
+    // per F-1 fornit canon (PR #237) — имена форнитов не локализуются.
+    { property: 'og:image:alt', content: () => t('meta.og_image_alt') },
     { name: 'twitter:card', content: 'summary_large_image' },
     { name: 'twitter:image', content: DEFAULT_OG_IMAGE },
   ],
