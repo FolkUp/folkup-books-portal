@@ -28,7 +28,7 @@ Referências: Bulgakov «Mestre e Margarita» canon Antonio Pescada (Presença) 
 Terminologia crítica ver §2.2 do DRAFT acompanhante. Q6-Q9 embedded §3 para Iskra Vier-Augen.
 Licença: CC BY-SA 4.0. -->
 
-![Gravura ao intermezzo I: Apartamentos de Consultoria](/kn1/images/chapters/agil-intermezzo-1-plate.webp)
+![Gravura do intermezzo I: Apartamentos de Consultoria](/kn1/images/chapters/agil-intermezzo-1-plate.webp)
 
 > **De que trata este intermezzo.** Diagnóstico satírico do teatro Agile através de Carroll + Bulgakov. Consultoria onde 43 equipas, 208 sprints e 1200 retros por mês não produzem um único produto. Sprints para retros, retros para planear os próximos sprints. «Sete papéis coordenam o trabalho de uma pessoa consigo mesma» — e a isto chama-se processo maduro. Espelho literário para todos os que já conduziram uma Program Increment Planning.
 

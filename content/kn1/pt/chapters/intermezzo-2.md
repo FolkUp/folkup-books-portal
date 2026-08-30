@@ -22,7 +22,7 @@ Referências: continuidade Bulgakov «Mestre e Margarita» canon Antonio Pescada
 Terminologia crítica ver §2.2 do DRAFT acompanhante. Q6-Q10 embedded §3 para Iskra Vier-Augen.
 Licença: CC BY-SA 4.0. -->
 
-![Gravura ao intermezzo II: Cave de Produção](/kn1/images/chapters/agil-intermezzo-2-plate.webp)
+![Gravura do intermezzo II: Cave de Produção](/kn1/images/chapters/agil-intermezzo-2-plate.webp)
 
 > **De que trata este intermezzo.** Cave de produção: 237 bugs pendurados, 189 P0 são recodificados em P1, P1 em P2, P2 em dívida técnica, dívida técnica — em workshop do próximo trimestre (que ainda estão a planear). Metodologia ágil como evitação formalizada da programação. Quatro stand-ups por dia para sincronizar uma equipa que nada produz entre stand-ups. Sátira mais afiada do que qualquer análise post-mortem.
 
