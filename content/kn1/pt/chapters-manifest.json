@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-30T14:35:20.836Z",
+  "generated": "2026-08-30T14:42:43.801Z",
   "book": "kn1",
   "locale": "pt",
   "entries": [
@@ -145,6 +145,17 @@
       "isApparatus": false,
       "plate": "kn1-08-time-machine.webp",
       "order": 90
+    },
+    {
+      "slug": "chapter-9-niichavo",
+      "title": "Capítulo 10: A Segunda-feira Começa ao Sábado. NIICHAVO como equipa Agile ideal",
+      "description": "Quatro leis da equipa de I&D auto-organizada segundo os Strugatski: o sentido como filtro de entrada, a liderança dupla, o especialista contra o administrador, a imersão em vez da formação. NIICHAVO como utopia do trabalho com sentido e diagnóstico da burocracia numa equipa.",
+      "weight": 100,
+      "act": "III: Horizontes",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-09-niichavo.webp",
+      "order": 100
     },
     {
       "slug": "intermezzo-3",

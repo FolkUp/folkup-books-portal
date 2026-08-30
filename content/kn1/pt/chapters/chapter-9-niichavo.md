@@ -1,0 +1,185 @@
+---
+title: "Capítulo 10: A Segunda-feira Começa ao Sábado. NIICHAVO como equipa Agile ideal"
+description: "Quatro leis da equipa de I&D auto-organizada segundo os Strugatski: o sentido como filtro de entrada, a liderança dupla, o especialista contra o administrador, a imersão em vez da formação. NIICHAVO como utopia do trabalho com sentido e diagnóstico da burocracia numa equipa."
+date: 2026-05-25
+date_created: "2026-04-08"
+date_updated: "2026-08-30"
+weight: 100
+plate: "kn1-09-niichavo.webp"
+chapter: 10
+act: "III: Horizontes"
+category: "team-self-organization"
+status: "verified"
+sources:
+  - "Strugatski A., Strugatski B. «A Segunda-feira Começa ao Sábado.» Moscovo: Detskaia Literatura, 1965."
+  - "Strugatski B.N. «Comentários ao percorrido.» São Petersburgo: Anfora, 2003."
+  - "Howell, Yvonne. *Apocalyptic Realism: The Science Fiction of Arkady and Boris Strugatsky.* New York: Peter Lang, 1994."
+  - "Polanyi, Michael. *The Tacit Dimension.* Chicago: University of Chicago Press, 1966."
+  - "Gertner, Jon. *The Idea Factory: Bell Labs and the Great Age of American Innovation.* New York: Penguin, 2012."
+  - "Strugatski A., Strugatski B. «Conto sobre a Tróica.» *Angara* (Irkutsk), №4-5, 1968."
+confidence: "high"
+reading_time: "20 min"
+reviewed_by: "Editorial Team"
+review_date: "2026-05-25"
+tags:
+  - strugatsky-brothers
+  - niichavo
+  - self-organizing-teams
+  - meaningful-labor
+  - dual-leadership
+  - tacit-knowledge
+  - administrative-overhead
+  - methodology-theater
+aliases:
+  - /chapters/chapter-9-three-scenarios/
+related:
+  - chapter-8-time-machine
+  - chapter-10-chuma
+  - chapter-0-pilot
+  - _act-iii-architecture
+keywords: ["Strugatski", "A Segunda-feira Começa ao Sábado", "NIICHAVO", "auto-organização da equipa", "equipa de I&D", "Junta", "Kamnoiedov", "Privalov", "trabalho com sentido"]
+og_title: "Capítulo 10: NIICHAVO como equipa Agile ideal"
+og_description: "Quatro leis da equipa de I&D auto-organizada segundo os Strugatski — o sentido como filtro de entrada, liderança dupla, especialista contra administrador, imersão em vez de formação."
+twitter_description: "Os Strugatski, NIICHAVO e as quatro leis da equipa auto-organizada: o que torna um coletivo de I&D vivo e o que o mata."
+---
+
+![Gravura do capítulo: NIICHAVO como equipa Agile ideal](/kn1/images/chapters/agil-chapter-9-plate.webp)
+
+> «O mais interessante começou à noite, quando o Departamento da Felicidade Linear acabou o trabalho e no instituto se instalou o silêncio — aquele silêncio particular que só existe nas instituições em que, dia após dia, durante anos, se trabalha sem cruzar os braços.»
+>
+> — A. e B. Strugatski, «A Segunda-feira Começa ao Sábado» (1965), cap. 1¹
+
+> **Sobre o que trata este capítulo.** «A Segunda-feira Começa ao Sábado» (1965) é uma novela sobre o Instituto Científico-Investigativo de Bruxaria e Magia (NIICHAVO). Nos comentários autorais, Boris Strugatski chamou-lhe retrato «das pessoas que quisemos ser»², e na literatura académica NIICHAVO lê-se como utopia da intelectualidade científico-técnica soviética³: um lugar onde a criação científica não é abafada pela lógica administrativa. Se se ler o livro como diagnóstico, e não como conto de fadas, ele dá quatro leis da equipa de I&D auto-organizada: o sentido como filtro de entrada, a liderança dupla, o especialista contra o administrador, a imersão em vez da formação. Paralelamente, mostra o que destrói essa equipa (Vybegalo, o teatro metodológico) e para onde ela cai quando os mecanismos de defesa falham (continuação — «Conto sobre a Tróica», 1968).
+
+## HOOK: Leninegrado — Moscovo, 1964
+
+Em 1964, os irmãos Strugatski terminavam «Um conto para trabalhadores científicos de menor idade»⁴. Boris Strugatski era astrónomo do Observatório de Pulkovo, Arkadi era tradutor de japonês em Moscovo. O que descreviam em NIICHAVO — um instituto onde magos-cientistas trabalham sobre «o que tem sentido» — era um retrato estilizado do que Boris via todos os dias em Pulkovo, e do que Arkadi ouvia dos amigos dos institutos académicos de Moscovo.
+
+O título surgiu da caderneta de anotações do escritor. A frase «a segunda-feira começa ao sábado» reflecte não o calendário, mas uma propriedade das pessoas de um certo tipo: para elas o trabalho não está separado da vida, e por isso a segunda-feira começa quando um empregado normal termina a sua semana laboral. Quando os irmãos acabaram o manuscrito, compreenderam que a novela estava a ser escrita precisamente sobre pessoas assim — e o título encaixou.
+
+O livro saiu na «Detskaia Literatura» em 1965, com tiragem de cem mil exemplares e ilustrações de Yevgeny Migunov. Os leitores de então reconheceram em NIICHAVO os seus próprios institutos de investigação. Os leitores de hoje reconhecem nele a equipa que gostariam de dirigir e onde gostariam de trabalhar.
+
+## Utopia ou diagnóstico?
+
+A leitura padrão de «A Segunda-feira» é a de conto de fadas de fuga, conto soviético para intelectuais, nostalgia. A esta leitura a novela resiste por duas razões.
+
+A primeira — o auto-testemunho dos autores. Em «Comentários ao percorrido» (2003), Boris Strugatski descreve o projeto não como fuga, mas como tentativa de mostrar «as pessoas que quisemos ser»². Gostariam de ser Privalov, Kornéiev, Edik Amperián, Gian Giacomo. Não é um conto sobre magos — é um autorretrato da intelectualidade científico-técnica dos anos 1960 no modo «como podíamos trabalhar se nos não estorvassem».
+
+A segunda — a estrutura do texto. Se se ler apenas a parte utópica (Junta, Kivrin, Privalov, a vigília da noite de Ano Novo), obtém-se um conto de fadas. Mas no mesmo livro há Modest Matvéievitch Kamnoiedov — chefe da divisão administrativo-económica, que não é um vilão, mas uma necessidade administrativa. E há o professor A. A. Vybegalo — cientista-carreirista que imita ciência. Os Strugatski mostram a equipa E as forças que a destroem, no mesmo livro.
+
+Yvonne Howell, em *Apocalyptic Realism* (1994), examina NIICHAVO como o lugar onde toda uma geração de leitores sonhou trabalhar³. O leitor de hoje acrescentaria: tal como os leitores de Rowling sonham estudar em Hogwarts. Mas Hogwarts é uma escola fechada de magia. NIICHAVO é um instituto aberto, ao qual chega um programador comum de Leninegrado e descobre que a diferença entre a utopia e a sua vida anterior é administrativa-organizativa, e não ontológica.
+
+«A Segunda-feira» não é sobre como uma equipa não pode ser. É sobre como ela raramente é — e porquê.
+
+## Quatro leis da equipa de I&D auto-organizada
+
+### Lei 1. O sentido como filtro de entrada
+
+Aleksandr Ivanovich Privalov, programador de Leninegrado, viaja num «Moskvitch» de férias pelo Noroeste. Apanha dois autostopistas — Volódia Potchkin e Roman Oira-Oira. Estes levam-no a um edifício discreto na cidade de Solovets com uma placa «NIICHAVO». Privalov fica. Nenhuma entrevista. Descobre-se apenas que é programador — e que a máquina lhe interessa mais do que as próprias férias. É por isso que reconhecem um dos seus.
+
+Os Strugatski descrevem o instituto por um único critério de pertença: para um funcionário de NIICHAVO, a semana de trabalho não tem princípio nem fim. A segunda-feira começa ao sábado, porque ele não distingue «trabalho» de «vida». O lema do instituto não é KPI, mas um modo de existir. É esse o filtro de entrada.
+
+A selecção por sentido torna o modelo comando-e-controlo mecanicamente impossível. Não se pode comandar uma pessoa que não trabalha por ordem. Não se pode «dar tarefas» a Kornéiev — ele próprio escolhe sobre o que trabalha, e trabalha nisso vinte e quatro horas por dia. Não se pode «aprovar um prazo» a Gian Giacomo — ele terminará quando a tarefa estiver resolvida. Um funcionário de NIICHAVO está feito de tal modo que uma ordem é para ele um estorvo externo, e não a fonte do trabalho.
+
+Análogos contemporâneos: projetos de código aberto (kernel Linux, PostgreSQL), laboratórios académicos como Bell Labs⁵ e Xerox PARC⁶ no seu período produtivo, equipas Agile iniciais antes da institucionalização — XP no Chrysler Comprehensive Compensation em 1996, Spotify squads 2008-2012⁷. Todos eles se mantiveram pela selecção, não pela disciplina. Assim que a selecção enfraquecia e a equipa era completada por critérios neutros, o filtro dissolvia-se — e o trabalho transformava-se em escritório.
+
+### Lei 2. Liderança dupla — A-Janus e U-Janus
+
+Director de NIICHAVO — Janus Poluéktovitch Nevstruiev. É uma pessoa, mas em dois modos: A-Janus e U-Janus. A-Janus lê o tempo para a frente: assina papéis, aprova planos, responde pela continuidade e pela função executiva. U-Janus lê o tempo para trás: sabe o que vai acontecer, porque para ele já aconteceu, e traz as lições de estados futuros para decisões presentes. Cada meia-noite os modos trocam de lugar.
+
+Os Strugatski mostram: uma direção eficaz de uma equipa de I&D requer os dois modos. Sem A-Janus não há recursos, aprovações, defesa do mundo exterior. Sem U-Janus não há visão, retrospectiva, capacidade de ver as consequências das decisões antes de serem tomadas. Numa só pessoa isto combina-se com dificuldade, e por isso os irmãos fizeram de Janus, literalmente, duas pessoas numa só.
+
+Paralelo contemporâneo — o conflito entre CTO e VPE em organizações de engenharia, a divisão entre *product-lead* e *tech-lead*, ou a tensão clássica «make AND ship» nas *startups*: uma só pessoa raramente aguenta os dois regimes. As boas organizações de I&D não tentam combiná-los, mas separam-nos explicitamente — e dão aos dois modos legitimidade igual. As más — tentam fundir tudo numa só figura e perdem ou a retrospectiva ou a execução.
+
+### Lei 3. Especialista contra administrador — Junta contra Kamnoiedov
+
+Cristóbal Josévitch Junta — chefe do Departamento do Sentido da Vida. Pela biografia — antigo Grande Inquisidor da Inquisição espanhola. Pelo carácter — cientista para quem o padrão interno do trabalho é mais importante do que quaisquer regras externas. Junta trabalha sobre tarefas cuja formulação nem sabe explicar à administração. Quando Kamnoiedov exige a Junta um relatório de resultados, Junta sai em silêncio.
+
+Modest Matvéievitch Kamnoiedov — vice-director para a parte administrativo-económica. Não é vilão: o instituto precisa de alguém que trate da electricidade, pague as facturas, emita as ordens de missão, apresente contas ao ministério. Os Strugatski não fazem dele uma caricatura. Mostram outra coisa: a função administrativa é necessária, mas não deve comandar o conteúdo.
+
+A lei está formulada numa das cenas mais conhecidas. Kamnoiedov exige que todos os funcionários, na noite de Ano Novo, entreguem as chaves e saiam do instituto. Junta, Kivrin, Kornéiev, Edik ignoram a ordem — porque nesse momento têm uma experiência em curso. Não se revoltam. Trabalham. E o seu trabalho é mais importante do que a ordem administrativa.
+
+Ali mesmo aparece Vybegalo — carreirista com vestes de cientista. Compreendeu que a classe administrativa avalia o trabalho pela forma, e não pelo conteúdo, e aprendeu a produzir a forma. O seu «modelo do consumidor universal» — o Cadáver, que come arenque e rebenta — é uma paródia de resultado científico, dirigida não aos colegas, mas ao chefe e à imprensa. Vybegalo é um personagem diagnóstico: mostra o que acontece a uma equipa quando o equilíbrio «especialista *vs* administrador» se desequilibra a favor da administração.
+
+O equivalente contemporâneo de Vybegalo é o «teatro metodológico». Equipas em que os rituais Agile (*stand-ups*, retrospectivas, demonstrações) estão presentes, mas o conteúdo se perdeu: mediu-se a *velocity*, cascatearam-se os OKR, fez-se a *demo*, não se fez nada. Vybegalo não é uma violação da metodologia — é a sua consumação em condições em que o especialista cedeu ao administrador.
+
+### Lei 4. Imersão em vez de formação — o arco de Privalov
+
+Privalov chega a NIICHAVO por acaso. Ninguém o «faz o *onboarding*». Nenhuns cursos, nenhuns pacotes de boas-vindas, nenhuns programas de mentoria. Dão-lhe uma cama no museu do instituto (uma isbá sobre patas de galinha), acesso a todos os pisos e a todas as pessoas. Ao fim de alguns capítulos já está a trabalhar com a máquina electrónica «Aldan», tendo compreendido por si só as tarefas e os colegas.
+
+Os Strugatski mostram: as melhores equipas de I&D formam os novos não com palestras, mas com o acesso ao trabalho real. Privalov aprende com Kornéiev, porque Kornéiev está ali e pode ser interrompido por uma pergunta. Aprende com Edik, porque Edik não recusa discutir a sua metodologia. Aprende com Junta, porque Junta o deixa entrar no seu departamento.
+
+É aquilo a que Michael Polanyi (irmão de Karl Polanyi do capítulo 8) chamou *tacit knowledge* — o conhecimento tácito que se transmite apenas pela co-presença e não cabe em instruções⁸. Para o novato se tornar parte da equipa não precisa de estudar a «metodologia da equipa». Precisa de ser admitido ao trabalho e às pessoas que o fazem. O resto cresce por si.
+
+Paralelos contemporâneos — o modelo do aprendiz nos laboratórios de investigação, o *pair programming* em XP, os primeiros *bootcamps* da Google antes da sua formalização. Todos eles funcionaram enquanto se manteve o princípio: o novato aprende não com a documentação, mas com as pessoas que estão ao lado a fazer trabalho real.
+
+## CASO: os departamentos do instituto e a vigília de Ano Novo
+
+O instituto está composto por departamentos, cada um com a sua lógica:
+
+- **Departamento da Felicidade Linear** (Fiódor Simeónovitch Kivrin) — vertente aplicada optimista, instrumentos da felicidade humana. Análogo à equipa de produto.
+- **Departamento do Sentido da Vida** (Cristóbal Junta) — investigação fundamental, inacessível à administração nas formulações. Análogo à função de *research*.
+- **Departamento das Transformações Universais** (Gian Giacomo; aqui trabalha Víktor Kornéiev) — engenharia profunda da matéria. Análogo à equipa de plataforma.
+- **Centro Computacional** (Aleksandr Privalov) — função horizontal, que serve todos os departamentos.
+
+Mais duas forças fora da linha científica: a **divisão administrativo-económica de Modest Kamnoiedov** — serviço administrativo-económico, necessário mas com fronteiras vigiadas — e o **laboratório do professor Vybegalo** — teatro metodológico que existe no instituto como advertência permanente.
+
+Coordenação — horizontal. Nenhum planeamento central. Nenhuns *stand-ups*. Mas acontecem naturalmente: as pessoas encontram-se nos corredores, entram nos gabinetes umas das outras, discutem tarefas ao pé das máquinas de água com gás, interrompem-se com perguntas, ajudam-se. Kornéiev precisa de Privalov e de tempo de máquina no «Aldan»; Privalov precisa de Oira-Oira para uma consultoria teórica; Oira-Oira — de Edik, para verificar um cálculo. A cadeia surge por necessidade e desfaz-se quando a tarefa está resolvida.
+
+A ilustração culminante é a segunda parte, «Vaidade das Vaidades». Privalov, na noite de Ano Novo, fica de serviço no instituto. Kamnoiedov, antes de sair, distribui instruções e recordações. Meia hora depois da saída de Kamnoiedov, todos os funcionários que «deveriam» ter saído são descobertos nos seus postos de trabalho: Junta no laboratório, Kornéiev com os magos, Edik com os livros, Gian Giacomo nos cálculos. Ninguém chamou ninguém. Trabalham na noite de Ano Novo porque têm experiências em curso. Privalov, como formalmente de serviço, descobre que não há nada para gerir — o instituto funciona sozinho.
+
+Este é o retrato da equipa auto-organizada: mantém-se não pelo horário nem pelas ordens, mas por cada um ter dentro de si uma tarefa em que não consegue não trabalhar.
+
+## LADO OBSCURO: o que destrói a equipa
+
+Em «A Segunda-feira», Vybegalo é um caso à parte, em que o equilíbrio ainda se mantém. Em «Conto sobre a Tróica» (1968)⁹ — continuação da história de NIICHAVO — o equilíbrio já foi partido. Aí a função administrativa comanda por inteiro o conteúdo: a Tróica de racionalização e utilização de fenómenos inexplicados (órgão administrativo) governa em Kitéjgrad, colónia de fenómenos inexplicados do instituto, e decide que investigações são admissíveis, por critérios de lealdade, responsabilização e inteligibilidade.
+
+Os Strugatski escreveram a «Tróica» três anos depois da «Segunda-feira» — e deram, de facto, o diagnóstico de como se destrói a utopia do livro anterior. A Tróica de racionalização e utilização de fenómenos inexplicados — órgão administrativo que tomou o poder sobre a colónia do instituto em Kitéjgrad — decide a que fenómenos é permitido existir, por critérios de lealdade, responsabilização e inteligibilidade. Vybegalo, junto à Tróica, é conselheiro científico: o teatro metodológico tornou-se norma e obteve cargo. Privalov e Edik Amperián, destacados do instituto, atolam-se em reuniões, actas e regulamentos. Na redacção angariana da revista o final salva um *deus ex machina*: Junta e Kivrin surgem e dispersam a Tróica pelo poder de magos superiores. Mas o próprio gesto é significativo: de dentro do sistema em que o administrador venceu o especialista, já não há saída — é necessária uma força externa. Não é uma história alternativa nem uma sátira de fora. É o segundo ato da mesma história, contado sem óculos cor-de-rosa.
+
+O que destrói a equipa, segundo os Strugatski:
+
+- **Perda do filtro de entrada** — entra-se no instituto por competência e por ligações, não por sentido.
+- **Fusão dos dois Janus num só** — a liderança deixa de segurar a retrospectiva e perde a capacidade de aprender.
+- **Vitória do administrador sobre o especialista** — os padrões internos do ofício cedem aos normativos externos de responsabilização.
+- **Substituição da imersão por programas de formação** — ensinam-se aos novatos a «metodologia da equipa» em vez de os admitir ao trabalho.
+- **Legalização de Vybegalo** — o teatro metodológico torna-se critério de avaliação.
+
+A «Tróica» não é uma previsão. É a descrição de um padrão. Qualquer equipa de I&D passa por este cenário, se não se defender explicitamente.
+
+## INSIGHT: hierarquia de decisões para uma equipa de I&D auto-organizada
+
+Das quatro leis dos Strugatski deduz-se uma sequência prática:
+
+1. **A selecção é mais importante do que a formação.** Filtre as pessoas por como se relacionam com o trabalho, não pela sua competência no momento. A competência ganha-se; a relação com o trabalho — não.
+2. **A liderança dupla, separem-na explicitamente.** Designem quem responde pela função A (execução, recursos, defesa) e quem — pela função U (retrospectiva, sentido, direção). Não tentem combinar numa só cabeça.
+3. **Os padrões internos do ofício, defendam-nos do controlo externo.** A pessoa do saber responde não à responsabilização, mas aos colegas e ao próprio padrão. A função administrativa é necessária, mas não deve comandar o conteúdo.
+4. **Imersão, não formações.** Não se ensina o novato — dá-se-lhe acesso ao trabalho e às pessoas. O conhecimento tácito transmite-se apenas assim.
+5. **Vigiem Vybegalo.** Reparem quando a forma começa a existir sem conteúdo. Rituais sem entrega. *Velocity* sem resultado. *Stand-up* sem trabalho. É o primeiro sinal de que o equilíbrio «especialista *vs* administrador» derrapou.
+
+O quinto ponto é o mais importante, porque a destruição da equipa raramente acontece por decisão explícita. Acontece pela acumulação gradual de forma sem conteúdo, até que um dia a equipa se descobre em «Conto sobre a Tróica».
+
+## BRIDGE
+
+Os Strugatski mostram uma equipa que funciona porque está formada por pessoas para quem o trabalho é a vida. É um caso raro. Mas o que fazer quando essa equipa não se formou, os mecanismos de defesa falharam e a crise já está em curso? O final do livro é sobre o trabalho em regime de crise prolongada, quando a equipa se forma *ad hoc* e se mantém não no sentido nem no amor ao ofício, mas na disciplina do serviço e na recusa em partir.
+
+---
+
+## Fontes e notas
+
+¹ Strugatski A., Strugatski B. *A Segunda-feira Começa ao Sábado.* Moscovo: Detskaia Literatura, 1965, cap. 1. Citação segundo a primeira edição separada; a novela foi concluída pelos autores em 1964, tiragem da primeira edição — 100 000 exemplares, ilustrações de Yevgeny Migunov.
+
+² Strugatski B.N. *Comentários ao percorrido.* São Petersburgo: Anfora, 2003. Secção sobre «A Segunda-feira Começa ao Sábado» — reconstrução autoral do projeto da novela e da atmosfera da sua escrita em 1963-1964.
+
+³ Howell, Yvonne. *Apocalyptic Realism: The Science Fiction of Arkady and Boris Strugatsky.* New York: Peter Lang, 1994. Monografia académica anglófona sobre a obra dos irmãos; examina «A Segunda-feira» no contexto das aspirações utópicas da intelectualidade científico-técnica soviética dos anos 1960 e compara o instituto NIICHAVO com outros «lugares onde apetece viver» na literatura.
+
+⁴ Detalhes biográficos — segundo: «Strugatski. Materiais para investigação» (org. S. Bondarenko). Volgogrado, 2008-2014, vol. 1-9; Skalandis A. *Irmãos Strugatski.* Moscovo: AST, 2008. Boris Natánovitch Strugatski trabalhou no Observatório de Pulkovo entre 1955 e 1966, Arkadi Natánovitch — como tradutor de japonês em Moscovo. O trabalho conjunto dos irmãos era feito em encontros em Leninegrado e Moscovo e por correspondência permanente.
+
+⁵ Sobre a prática de Bell Labs no seu período produtivo (1925-1984) — ver: Gertner, Jon. *The Idea Factory: Bell Labs and the Great Age of American Innovation.* New York: Penguin Press, 2012. Tese autoral: o sucesso de Bell Labs assentou não numa hierarquia nem em KPI, mas na selecção de investigadores por interesse em tarefas fundamentais e na colaboração horizontal.
+
+⁶ Sobre Xerox PARC no período 1970-1983 — ver: Hiltzik, Michael A. *Dealers of Lightning: Xerox PARC and the Dawn of the Computer Age.* New York: HarperBusiness, 1999. Padrão semelhante: equipa seleccionada por sentido, coordenação horizontal, destruída pela intervenção administrativa da corporação-mãe.
+
+⁷ Beck, Kent. *Extreme Programming Explained: Embrace Change.* Boston: Addison-Wesley, 1999. Sobre o projeto Chrysler Comprehensive Compensation (C3, 1996-2000) — cap. 1; XP foi formalizado sobre ele, mas a equipa trabalhou antes de a metodologia ter nome. Análise comparativa de equipas Agile iniciais: Cohn, Mike. *Succeeding with Agile.* Boston: Addison-Wesley, 2009, parte III.
+
+⁸ Polanyi, Michael. *The Tacit Dimension.* Chicago: University of Chicago Press, 1966. *Atenção:* Michael Polanyi (1891-1976) foi químico e filósofo da ciência, irmão de Karl Polanyi (1886-1964), autor de *A Grande Transformação*, mencionada no capítulo 8. São duas tradições intelectuais distintas; confundir os irmãos é um erro frequente na literatura.
+
+⁹ Strugatski A., Strugatski B. *Conto sobre a Tróica.* Primeira publicação — revista *Angara* (Irkutsk), №4-5, 1968. Texto integral publicado na URSS apenas em 1989. Continuação argumentativa de «A Segunda-feira»: o mesmo instituto, alguns anos depois, sob a administração da Tróica de racionalização e utilização de fenómenos inexplicados. Diagnóstico artístico de como se destrói a utopia científica do livro anterior.
