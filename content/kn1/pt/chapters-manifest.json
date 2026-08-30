@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-30T12:32:39.644Z",
+  "generated": "2026-08-30T14:21:42.563Z",
   "book": "kn1",
   "locale": "pt",
   "entries": [
@@ -112,6 +112,17 @@
       "isApparatus": false,
       "plate": "kn1-06-jekyll-hyde.webp",
       "order": 75
+    },
+    {
+      "slug": "chapter-7-don-quixote",
+      "title": "Capítulo 8: Dom Quixote e Sancho — o nascimento do mito de equipa",
+      "description": "Porque as equipas se mantêm não em organogramas nem em KPI, mas num mito partilhado. Do juramento cavaleiresco de Dom Quixote à mitologia fundadora da Patagonia, da Theranos e do dueto Bender-Vorobyaninov. Karl Weick, sensemaking, quatro leis da mitologia de equipa — e duas mortes, quando o mito se desfaz.",
+      "weight": 80,
+      "act": "II: Transformação",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-07-don-quixote.webp",
+      "order": 80
     },
     {
       "slug": "intermezzo-2",
