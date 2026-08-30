@@ -6,7 +6,7 @@ weight: 30
 
 # Subject Index
 
-Assembled English edition per Iskra VIZA-S303-11 verdict (§A alphabet, §B editorial residue snipped, §C surname-first naming rule, §D-2 «Kommentarii k proidennomu» transliteration precedent). Sourced from Russian master edition `predmetnyy-ukazatel.md` (~562 entries across three sections). English-alphabetized independently per §1 «Alphabet» verdict (Iskra VIZA-S301-17). Cross-references target only English forms per §3 explicit «in the English edition no `see` may lead to a Russian formulation».
+*Alphabetical index of key concepts, characters, and sources of the book. Compiled from the Russian master edition.*
 
 ## I. Subject Index
 
@@ -373,7 +373,7 @@ Assembled English edition per Iskra VIZA-S303-11 verdict (§A alphabet, §B edit
 
 ### Works
 
-*(Article «The/A/Le/La» not counted in sort order — per Iskra §A canon.)*
+*(The articles «The/A/Le/La» are not counted in sort order.)*
 
 - «The Adventures of Sherlock Holmes» (Doyle) — Chapter 3
 - *Albert Camus the Algerian* (David Carroll) — Chapter 10
@@ -575,4 +575,4 @@ Assembled English edition per Iskra VIZA-S303-11 verdict (§A alphabet, §B edit
 
 ---
 
-*[← Back to apparatus](/kn1/en/read/apparatus/) • [Table of contents ↗](/kn1/en/read/)*
+*[Table of contents →](/kn1/en/read)*
