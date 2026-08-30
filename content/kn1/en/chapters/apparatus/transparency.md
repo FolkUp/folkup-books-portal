@@ -60,8 +60,8 @@ Critical analysis of content is performed by human reviewers.
 
 ## Policy Updates
 
-This statement is updated as the use of AI tools changes. The current version is always available at [/kn1/en/read/apparatus/transparency/](/kn1/en/read/apparatus/transparency/).
+This statement is updated as the use of AI tools changes. The current version is always available at [/kn1/en/read/apparatus-transparency](/kn1/en/read/apparatus-transparency).
 
 ---
 
-*[← Back to apparatus](/kn1/en/read/apparatus/) • [Table of contents ↗](/kn1/en/read/)*
+*[Table of contents →](/kn1/en/read)*
