@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-24T19:07:25.227Z",
+  "generated": "2026-08-30T12:32:39.644Z",
   "book": "kn1",
   "locale": "pt",
   "entries": [
@@ -26,6 +26,39 @@
       "order": 10
     },
     {
+      "slug": "chapter-1-jules-verne",
+      "title": "Capítulo 1: Jules Verne programa",
+      "description": "Como a literatura de aventuras do século XIX estabeleceu os padrões de gestão de projetos — de *Vinte Mil Léguas Submarinas* aos ciclos de desenvolvimento (sprints) do Silicon Valley.",
+      "weight": 20,
+      "act": "I: Origens",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-01-jules-verne.webp",
+      "order": 20
+    },
+    {
+      "slug": "chapter-2-frankenstein",
+      "title": "Capítulo 2: Frankenstein gere um projeto",
+      "description": "Como o romance da jovem Mary Shelley, aos dezoito anos, se tornou a análise pós-mortem mais precisa dos fracassos corporativos: do FBI Sentinel ao Healthcare.gov.",
+      "weight": 30,
+      "act": "I: Origens",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-02-frankenstein.webp",
+      "order": 30
+    },
+    {
+      "slug": "chapter-3-holmes",
+      "title": "Capítulo 3: Sherlock Holmes faz o diagnóstico",
+      "description": "O método dedutivo de reconhecimento das patologias corporativas: sete sinais de que o seu projeto está a morrer — de Knight Capital a Target Canada.",
+      "weight": 40,
+      "act": "I: Origens",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-03-holmes.webp",
+      "order": 40
+    },
+    {
       "slug": "intermezzo-1",
       "title": "Intermezzo I. Apartamentos de Consultoria",
       "description": "Mad Tea Party como agile dysfunction: medem métricas, mas não lançam produtos.",
@@ -37,6 +70,50 @@
       "order": 47
     },
     {
+      "slug": "chapter-4-borges",
+      "title": "Capítulo 4: Borges conta story points",
+      "description": "Como as medições, destinadas a tornar as equipas mais ágeis, se transformam em lotaria: da Spotify Model ao teatro OKR, do jogo com a velocity ao ritual retrospetivo.",
+      "weight": 50,
+      "act": "I: Origens",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-04-borges.webp",
+      "order": 50
+    },
+    {
+      "slug": "chapter-5-nemo",
+      "title": "Capítulo 5: Ciro Smith constrói a civilização",
+      "description": "Bootstrap leadership: como uma equipa pequena e autónoma supera a burocracia corporativa. Os engenheiros de A Ilha Misteriosa como protótipo de cada equipa-tigre bem sucedida.",
+      "weight": 60,
+      "act": "II: Transformação",
+      "act_opener": true,
+      "isApparatus": false,
+      "plate": "kn1-05-nemo.webp",
+      "order": 60
+    },
+    {
+      "slug": "chapter-6-mina-harker",
+      "title": "Capítulo 6: Mina Harker recolhe a informação",
+      "description": "Equipa distribuída da era vitoriana: fonógrafo, estenografia, telégrafo e uma máquina de escrever contra um inimigo invisível. A Equipa da Luz de Bram Stoker como protótipo inicial de equipa cross-functional (transversal) com uma única fonte da verdade.",
+      "weight": 70,
+      "act": "II: Transformação",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-06-mina-harker.webp",
+      "order": 70
+    },
+    {
+      "slug": "chapter-6-jekyll-hyde",
+      "title": "Capítulo 7: Doutor Jekyll",
+      "description": "Dualidade corporativa de Stevenson a Argyris: por que aquilo que a empresa declara e o que os seus funcionários fazem na terceira hora do sprint de sexta-feira à noite são dois seres diferentes num mesmo corpo. Jekyll, Hyde e o desaparecido doutor Lanyon.",
+      "weight": 75,
+      "act": "II: Transformação",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-06-jekyll-hyde.webp",
+      "order": 75
+    },
+    {
       "slug": "intermezzo-2",
       "title": "Intermezzo II. Cave de Produção",
       "description": null,
@@ -46,6 +123,17 @@
       "isApparatus": false,
       "plate": null,
       "order": 85
+    },
+    {
+      "slug": "intermezzo-3",
+      "title": "Intermezzo III. O Elevador da Transformação",
+      "description": null,
+      "weight": 120,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": null,
+      "order": 120
     }
   ]
 }
