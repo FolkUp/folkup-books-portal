@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-30T14:42:43.801Z",
+  "generated": "2026-08-30T19:09:54.974Z",
   "book": "kn1",
   "locale": "pt",
   "entries": [
@@ -156,6 +156,17 @@
       "isApparatus": false,
       "plate": "kn1-09-niichavo.webp",
       "order": 100
+    },
+    {
+      "slug": "chapter-10-chuma",
+      "title": "Capítulo 11: A Peste. Como se forma uma equipa em regime de crise prolongada",
+      "description": "Albert Camus «A Peste» 1947 — a communauté do doutor Rieux, Tarrou, Castel, Rambert, Grand e Paneloux: quatro leis do trabalho prolongado sob uma crise sem horizonte de vitória — a recusa como compromisso, a decência comum em vez do heroísmo, a convergência sem hierarquia, a disciplina da continuação.",
+      "weight": 110,
+      "act": "III: Horizontes",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-10-chuma.webp",
+      "order": 110
     },
     {
       "slug": "intermezzo-3",
