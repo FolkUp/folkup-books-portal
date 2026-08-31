@@ -42,7 +42,7 @@ review_date: "2026-08-25"
 
 A chuva não para há três semanas — sobre a Europa paira a cinza do Tambora, o vulcão do outro lado do planeta que lançou para a estratosfera tanto enxofre que o verão foi cancelado para sempre. Os historiadores chamarão a 1816 «o ano sem verão», mas a jovem Mary Godwin, de dezoito anos (ainda não é Shelley), está sentada junto à lareira da Villa Diodati e ouve Byron e Percy discutirem galvanismo com a fervura de cientistas prontos a reescrever as leis da natureza.
 
-Poderá a eletricidade dar vida a tecido morto — pergunta que já recebera resposta sinistra nas demonstrações londrinas de Giovanni Aldini: os membros de criminosos executados estremeciam, as mandíbulas abriam-se¹. Os espectadores caíam desmaiados de horror. Os mortos não ressuscitavam, mas as fronteiras do possível deslocaram-se para sempre.
+Poderá a eletricidade dar vida a tecido morto — pergunta que já recebera resposta sinistra nas demonstrações londrinas de Giovanni Aldini: os membros de criminosos executados estremeciam, as mandíbulas abriam-se¹. Os espetadores caíam desmaiados de horror. Os mortos não ressuscitavam, mas as fronteiras do possível deslocaram-se para sempre.
 
 Byron propõe uma aposta — cada um escreverá uma história de terror nesta villa amaldiçoada, onde a chuva apagou o verão do mapa do mundo. Percy e Polidori compõem as suas histórias e abandonam-nas ao fim de poucos dias, Byron também recuará, mas a jovem Mary, de dezoito anos, criará um romance que sobreviverá a todos eles e se tornará texto profético para uma época ainda por nascer.
 
@@ -168,7 +168,7 @@ A implementação clássica de métodos ágeis assenta numa lógica sedutorament
 
 Três problemas.
 
-**Problema primeiro: o eletrochoque não cria vida.** Aldini fazia estremecer membros mortos. Os espectadores tomavam isto por reanimação. O corpo estremecia, mas não vivia. Uma organização que passou por «transformação» estremece — faz stand-ups, preenche quadros, vai a retrospetivas. Mas se a cultura não mudou, isto é galvanismo: aparência de movimento sem vida.
+**Problema primeiro: o eletrochoque não cria vida.** Aldini fazia estremecer membros mortos. Os espetadores tomavam isto por reanimação. O corpo estremecia, mas não vivia. Uma organização que passou por «transformação» estremece — faz stand-ups, preenche quadros, vai a retrospetivas. Mas se a cultura não mudou, isto é galvanismo: aparência de movimento sem vida.
 
 **Problema segundo: o criador foge solenemente após a cerimónia.** A empresa de consultoria realiza uma implementação em grande escala em seis a doze meses, recebe agradecimentos e o cheque, após o que desaparece elegantemente do horizonte. A organização fica sozinha com processos brilhantes e novos que nenhum dos funcionários compreende com profundidade suficiente para os adaptar às condições reais de trabalho. Victor Frankenstein em fato corporativo, saindo solenemente do laboratório com as palavras: «Demos à sua empresa nova vida, agora desenvolvam-se sozinhos».
 

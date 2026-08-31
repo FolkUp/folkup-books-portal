@@ -153,7 +153,7 @@ Cervantes deu-nos o visionário ideal, que viveu até à abdicação e morreu na
 
 Setuagésimo quarto capítulo da segunda parte — uma das cenas mais tristes da literatura mundial. Quixote regressa a casa espancado, tendo perdido o último duelo. Deita-se na cama e durante alguns dias diz: «Fui louco, e agora estou de juízo são; fui Dom Quixote de La Mancha, e agora, repito, sou Alonso Quixano o Bom»¹⁴.
 
-A sobrinha e a governanta alegram-se: o tio recuperou. O padre está satisfeito: os romances de cavalaria deixaram de envenenar o juízo. O médico abana a cabeça. Todos à volta vêem a recuperação.
+A sobrinha e a governanta alegram-se: o tio recuperou. O padre está satisfeito: os romances de cavalaria deixaram de envenenar o juízo. O médico abana a cabeça. Todos à volta veem a recuperação.
 
 Só Sancho chora. Senta-se junto à cama e suplica:
 
@@ -173,7 +173,7 @@ O pensamento de Karl Weick pode comprimir-se assim: gerir é antes de mais gerir
 
 Filipe Fogg mostrou a iteração como bom senso de equipa. Frankenstein — a responsabilidade do criador pelos abandonados. Holmes e Watson — a força da parceria analítica. Capitão Nemo — os limites da autonomia sem correção colegial. Mina Harker — o conhecimento distribuído, colado num relatório único. Doutor Jekyll e doutor Lanyon — a fenda entre a cultura declarada e a operação real. Dom Quixote e Sancho — a mitologia que torna possíveis os seis primeiros arquétipos.
 
-Todos os seis arquétipos anteriores funcionam apenas numa equipa que tem uma interpretação partilhada do que faz. Sem essa interpretação, Holmes permanece um toxicodependente solitário, Nemo — um misantropo terrorista, Mina — uma secretária com um fonógrafo, Jekyll — um director de clínica que leva vida dupla. O mito não é complemento do trabalho de equipa. O mito é a sua estrutura portante.
+Todos os seis arquétipos anteriores funcionam apenas numa equipa que tem uma interpretação partilhada do que faz. Sem essa interpretação, Holmes permanece um toxicodependente solitário, Nemo — um misantropo terrorista, Mina — uma secretária com um fonógrafo, Jekyll — um diretor de clínica que leva vida dupla. O mito não é complemento do trabalho de equipa. O mito é a sua estrutura portante.
 
 O mundo empresarial, nos últimos trinta anos, trata a mitologia com ceticismo. As palavras «narrativa», «história», «sentido», «missão» estão gastas a um estado em que provocam revirar reflexo de olhos. É uma reação compreensível — a mitologia é falsificada mais frequentemente do que qualquer outra coisa na comunicação empresarial. Mas se se retirarem os mitos falsificados, restará não vazio, mas mitos reais em que cada equipa que funciona se mantém. Uma equipa que nega ter mitologia geralmente apenas não se apercebe dela. O que significa que o seu mito ou não se revê, ou se destrói sem defesa consciente.
 

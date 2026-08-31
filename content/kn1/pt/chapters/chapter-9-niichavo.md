@@ -87,25 +87,25 @@ Análogos contemporâneos: projetos de código aberto (kernel Linux, PostgreSQL)
 
 Director de NIICHAVO — Janus Poluéktovitch Nevstruiev. É uma pessoa, mas em dois modos: A-Janus e U-Janus. A-Janus lê o tempo para a frente: assina papéis, aprova planos, responde pela continuidade e pela função executiva. U-Janus lê o tempo para trás: sabe o que vai acontecer, porque para ele já aconteceu, e traz as lições de estados futuros para decisões presentes. Cada meia-noite os modos trocam de lugar.
 
-Os Strugatski mostram: uma direção eficaz de uma equipa de I&D requer os dois modos. Sem A-Janus não há recursos, aprovações, defesa do mundo exterior. Sem U-Janus não há visão, retrospectiva, capacidade de ver as consequências das decisões antes de serem tomadas. Numa só pessoa isto combina-se com dificuldade, e por isso os irmãos fizeram de Janus, literalmente, duas pessoas numa só.
+Os Strugatski mostram: uma direção eficaz de uma equipa de I&D requer os dois modos. Sem A-Janus não há recursos, aprovações, defesa do mundo exterior. Sem U-Janus não há visão, retrospetiva, capacidade de ver as consequências das decisões antes de serem tomadas. Numa só pessoa isto combina-se com dificuldade, e por isso os irmãos fizeram de Janus, literalmente, duas pessoas numa só.
 
-Paralelo contemporâneo — o conflito entre CTO e VPE em organizações de engenharia, a divisão entre *product-lead* e *tech-lead*, ou a tensão clássica «make AND ship» nas *startups*: uma só pessoa raramente aguenta os dois regimes. As boas organizações de I&D não tentam combiná-los, mas separam-nos explicitamente — e dão aos dois modos legitimidade igual. As más — tentam fundir tudo numa só figura e perdem ou a retrospectiva ou a execução.
+Paralelo contemporâneo — o conflito entre CTO e VPE em organizações de engenharia, a divisão entre *product-lead* e *tech-lead*, ou a tensão clássica «make AND ship» nas *startups*: uma só pessoa raramente aguenta os dois regimes. As boas organizações de I&D não tentam combiná-los, mas separam-nos explicitamente — e dão aos dois modos legitimidade igual. As más — tentam fundir tudo numa só figura e perdem ou a retrospetiva ou a execução.
 
 ### Lei 3. Especialista contra administrador — Junta contra Kamnoiedov
 
 Cristóbal Josévitch Junta — chefe do Departamento do Sentido da Vida. Pela biografia — antigo Grande Inquisidor da Inquisição espanhola. Pelo carácter — cientista para quem o padrão interno do trabalho é mais importante do que quaisquer regras externas. Junta trabalha sobre tarefas cuja formulação nem sabe explicar à administração. Quando Kamnoiedov exige a Junta um relatório de resultados, Junta sai em silêncio.
 
-Modest Matvéievitch Kamnoiedov — vice-director para a parte administrativo-económica. Não é vilão: o instituto precisa de alguém que trate da electricidade, pague as facturas, emita as ordens de missão, apresente contas ao ministério. Os Strugatski não fazem dele uma caricatura. Mostram outra coisa: a função administrativa é necessária, mas não deve comandar o conteúdo.
+Modest Matvéievitch Kamnoiedov — vice-diretor para a parte administrativo-económica. Não é vilão: o instituto precisa de alguém que trate da eletricidade, pague as facturas, emita as ordens de missão, apresente contas ao ministério. Os Strugatski não fazem dele uma caricatura. Mostram outra coisa: a função administrativa é necessária, mas não deve comandar o conteúdo.
 
 A lei está formulada numa das cenas mais conhecidas. Kamnoiedov exige que todos os funcionários, na noite de Ano Novo, entreguem as chaves e saiam do instituto. Junta, Kivrin, Kornéiev, Edik ignoram a ordem — porque nesse momento têm uma experiência em curso. Não se revoltam. Trabalham. E o seu trabalho é mais importante do que a ordem administrativa.
 
 Ali mesmo aparece Vybegalo — carreirista com vestes de cientista. Compreendeu que a classe administrativa avalia o trabalho pela forma, e não pelo conteúdo, e aprendeu a produzir a forma. O seu «modelo do consumidor universal» — o Cadáver, que come arenque e rebenta — é uma paródia de resultado científico, dirigida não aos colegas, mas ao chefe e à imprensa. Vybegalo é um personagem diagnóstico: mostra o que acontece a uma equipa quando o equilíbrio «especialista *vs* administrador» se desequilibra a favor da administração.
 
-O equivalente contemporâneo de Vybegalo é o «teatro metodológico». Equipas em que os rituais Agile (*stand-ups*, retrospectivas, demonstrações) estão presentes, mas o conteúdo se perdeu: mediu-se a *velocity*, cascatearam-se os OKR, fez-se a *demo*, não se fez nada. Vybegalo não é uma violação da metodologia — é a sua consumação em condições em que o especialista cedeu ao administrador.
+O equivalente contemporâneo de Vybegalo é o «teatro metodológico». Equipas em que os rituais Agile (*stand-ups*, retrospetivas, demonstrações) estão presentes, mas o conteúdo se perdeu: mediu-se a *velocity*, cascatearam-se os OKR, fez-se a *demo*, não se fez nada. Vybegalo não é uma violação da metodologia — é a sua consumação em condições em que o especialista cedeu ao administrador.
 
 ### Lei 4. Imersão em vez de formação — o arco de Privalov
 
-Privalov chega a NIICHAVO por acaso. Ninguém o «faz o *onboarding*». Nenhuns cursos, nenhuns pacotes de boas-vindas, nenhuns programas de mentoria. Dão-lhe uma cama no museu do instituto (uma isbá sobre patas de galinha), acesso a todos os pisos e a todas as pessoas. Ao fim de alguns capítulos já está a trabalhar com a máquina electrónica «Aldan», tendo compreendido por si só as tarefas e os colegas.
+Privalov chega a NIICHAVO por acaso. Ninguém o «faz o *onboarding*». Nenhuns cursos, nenhuns pacotes de boas-vindas, nenhuns programas de mentoria. Dão-lhe uma cama no museu do instituto (uma isbá sobre patas de galinha), acesso a todos os pisos e a todas as pessoas. Ao fim de alguns capítulos já está a trabalhar com a máquina eletrónica «Aldan», tendo compreendido por si só as tarefas e os colegas.
 
 Os Strugatski mostram: as melhores equipas de I&D formam os novos não com palestras, mas com o acesso ao trabalho real. Privalov aprende com Kornéiev, porque Kornéiev está ali e pode ser interrompido por uma pergunta. Aprende com Edik, porque Edik não recusa discutir a sua metodologia. Aprende com Junta, porque Junta o deixa entrar no seu departamento.
 
@@ -139,7 +139,7 @@ Os Strugatski escreveram a «Tróica» três anos depois da «Segunda-feira» �
 O que destrói a equipa, segundo os Strugatski:
 
 - **Perda do filtro de entrada** — entra-se no instituto por competência e por ligações, não por sentido.
-- **Fusão dos dois Janus num só** — a liderança deixa de segurar a retrospectiva e perde a capacidade de aprender.
+- **Fusão dos dois Janus num só** — a liderança deixa de segurar a retrospetiva e perde a capacidade de aprender.
 - **Vitória do administrador sobre o especialista** — os padrões internos do ofício cedem aos normativos externos de responsabilização.
 - **Substituição da imersão por programas de formação** — ensinam-se aos novatos a «metodologia da equipa» em vez de os admitir ao trabalho.
 - **Legalização de Vybegalo** — o teatro metodológico torna-se critério de avaliação.
@@ -151,7 +151,7 @@ A «Tróica» não é uma previsão. É a descrição de um padrão. Qualquer eq
 Das quatro leis dos Strugatski deduz-se uma sequência prática:
 
 1. **A seleção é mais importante do que a formação.** Filtre as pessoas por como se relacionam com o trabalho, não pela sua competência no momento. A competência ganha-se; a relação com o trabalho — não.
-2. **A liderança dupla, separem-na explicitamente.** Designem quem responde pela função A (execução, recursos, defesa) e quem — pela função U (retrospectiva, sentido, direção). Não tentem combinar numa só cabeça.
+2. **A liderança dupla, separem-na explicitamente.** Designem quem responde pela função A (execução, recursos, defesa) e quem — pela função U (retrospetiva, sentido, direção). Não tentem combinar numa só cabeça.
 3. **Os padrões internos do ofício, defendam-nos do controlo externo.** A pessoa do saber responde não à responsabilização, mas aos colegas e ao próprio padrão. A função administrativa é necessária, mas não deve comandar o conteúdo.
 4. **Imersão, não formações.** Não se ensina o novato — dá-se-lhe acesso ao trabalho e às pessoas. O conhecimento tácito transmite-se apenas assim.
 5. **Vigiem Vybegalo.** Reparem quando a forma começa a existir sem conteúdo. Rituais sem entrega. *Velocity* sem resultado. *Stand-up* sem trabalho. É o primeiro sinal de que o equilíbrio «especialista *vs* administrador» derrapou.
