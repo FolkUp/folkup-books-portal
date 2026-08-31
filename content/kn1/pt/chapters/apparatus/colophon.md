@@ -9,7 +9,7 @@ weight: 10
 ## Sobre Esta Edição
 
 **Título:** *Agile Sapiens* — Análise Literária da Gestão. Como a Literatura Previu a Gestão Moderna
-**Série:** Livro 1 da série FolkUp, trilogia «Svoimi Silami» (Pelas Nossas Próprias Forças)
+**Série:** Livro 1 da série FolkUp, trilogia «Svoimi Silami» (Pelos Nossos Meios)
 **Autor (capa/título):** Comandante FolkUp
 **Coautora:** Alice (PM, Ecossistema FolkUp)
 **Editora:** Iskra
@@ -17,7 +17,7 @@ weight: 10
 **Revisão editorial e Vier-Augen (padrões PT-EU):** Iskra (Priberam · Infopédia · Academia das Ciências de Lisboa · Ciberdúvidas)
 **Ilustradora:** Frida (ilustradora FolkUp, Replicate Flux 1.1 Pro / Flux 2, 2026)
 
-**Divulgação sobre tradução:** Esta edição portuguesa é uma tradução do texto-fonte russo. A tradução foi realizada por assistente de IA (Zeka, pipeline S2PT), aplicando o cânone estilístico do português europeu (Sophia de Mello Breyner 35% + Saramago 30% + Eça de Queirós 20% + Pessoa 15%) e a ortografia do Acordo Ortográfico de 1990, seguida de revisão editorial e Vier-Augen (quatro olhos) por Iskra. *(A divulgação cumpre os requisitos do Regulamento (UE) 2024/1689, artigo 50.º, n.º 4 — «Regulamento sobre IA da UE».)*
+**Divulgação sobre tradução:** Esta edição portuguesa é uma tradução do texto-fonte russo. A tradução foi realizada por assistente de IA (Zeka), aplicando um registo de português europeu inspirado em Sophia de Mello Breyner, Saramago, Eça de Queirós e Pessoa, e a ortografia do Acordo Ortográfico de 1990. Revisão editorial por Iskra. *(A divulgação cumpre os requisitos do Regulamento (UE) 2024/1689, artigo 50.º, n.º 4 — «Regulamento sobre IA da UE».)*
 
 **Divulgação sobre ilustrações:** As ilustrações do livro foram geradas com recurso a uma ferramenta de IA (Replicate Flux 1.1 Pro / Flux 2) sob a direção artística de Frida (ilustradora FolkUp). A responsabilidade artística, a curadoria e a decisão final sobre cada ilustração pertencem à equipa editorial FolkUp. *(A divulgação cumpre os requisitos do Regulamento (UE) 2024/1689, artigo 50.º, n.º 4 — «Regulamento sobre IA da UE».)*
 
@@ -25,7 +25,7 @@ weight: 10
 **Pseudónimo:** «Comandante FolkUp» é um pseudónimo; o nome legal do autor para © e contratos é Andrei Klemenchenok (modelo Banksy: rosto oculto, nome legal para necessidades jurídicas).
 **Língua da edição:** Português europeu (norma de Portugal, ortografia AO1990)
 **Traduzido a partir de:** edição-mãe russa, v1.0.25 (2026-08-16)
-**Versão atual:** 0.9 (pré-lançamento — Vier-Augen em curso; v1.0.0 estável após conclusão da onda 7 e ratificação integral de Iskra)
+**Versão atual:** 0.9 (pré-lançamento — a revisão editorial está em curso; a versão 1.0.0 será publicada após a conclusão do índice remissivo)
 
 ## Informação Técnica
 
@@ -68,7 +68,7 @@ Email: info@folkup.app
 
 **Histórico de versões da edição portuguesa:**
 
-- **v0.9** (2026-08 pré-lançamento) — Ondas 1-6 entregues por Zeka (pipeline S2PT) a partir da edição-mãe russa v1.0.25 (2026-08-16), aplicando cânone estilístico português europeu (Sophia de Mello 35% + Saramago 30% + Eça de Queirós 20% + Pessoa 15%) e ortografia AO1990. Ondas 1-4: capítulos 7-10 (*Dom Quixote* / *A Máquina do Tempo* / NIICHAVO / *A Peste*), integrando as correções VIER-AUGEN-S307-04 §1+§2 de Iskra (13 correções — meses AO90 minúsculas + sinal «n.º» + nomes próprios PT-EU Iliá/Ievguéni Petrov + *As Doze Cadeiras*). Onda 5: posfácio «Onze perguntas» (síntese de doze capítulos em onze perguntas diagnósticas — de Verne a Camus). Onda 6: aparato editorial ×5 (colofão + metodologia + fontes esboço + transparência + agradecimentos + índice das secções). Vier-Augen de Iskra sobre ondas 1-5 em curso ao ritmo da editora (canon DEPLOY-OVER-HOLE-1). Onda 7 (índice remissivo) e ratificação integral pendentes — v1.0.0 estável após conclusão.
+- **v0.9** (agosto de 2026, pré-lançamento) — primeira entrega da edição portuguesa, traduzida a partir da edição-mãe russa v1.0.25 (2026-08-16): prefácio, capítulos 0-11, intermezzos, posfácio «Onze perguntas» e aparato editorial. A revisão editorial continua; o texto atual reflete todas as passagens editoriais até à data. O índice remissivo e a versão 1.0.0 seguem-se.
 
 ---
 

@@ -24,7 +24,7 @@ Foram usadas ferramentas de IA para verificação gramatical, edição estilíst
 Foram usados sistemas automatizados para a geração de código web, otimização de desempenho do site e garantia de acessibilidade.
 
 **Tradução a partir do original russo**
-Esta edição portuguesa é uma tradução do texto-fonte russo. A tradução foi realizada por assistente de IA (Zeka, pipeline S2PT), aplicando o cânone estilístico do português europeu (Sophia de Mello Breyner 35% + Saramago 30% + Eça de Queirós 20% + Pessoa 15%) e a ortografia do Acordo Ortográfico de 1990. Revisão editorial e verificação por Iskra (Vier-Augen — quatro olhos). Divulgação integral do tradutor em conformidade com o artigo 50.º, n.º 4 do Regulamento sobre IA da UE.
+Esta edição portuguesa é uma tradução do texto-fonte russo. A tradução foi realizada por assistente de IA (Zeka), aplicando um registo de português europeu inspirado em Sophia de Mello Breyner, Saramago, Eça de Queirós e Pessoa, e a ortografia do Acordo Ortográfico de 1990. Revisão editorial por Iskra. Divulgação integral do tradutor em conformidade com o artigo 50.º, n.º 4 do Regulamento sobre IA da UE.
 
 **Ilustrações**
 As ilustrações do livro foram geradas com recurso a uma ferramenta de IA (Replicate Flux 1.1 Pro / Flux 2) sob a direção artística de Frida (ilustradora FolkUp). A responsabilidade artística, a curadoria e a decisão final sobre cada ilustração pertencem à equipa editorial FolkUp. *(A divulgação cumpre os requisitos do Regulamento (UE) 2024/1689, artigo 50.º, n.º 4 — «Regulamento sobre IA da UE».)*

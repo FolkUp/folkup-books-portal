@@ -103,7 +103,7 @@ O texto canónico de Stoker diz o contrário. Van Helsing, isolado, sofre a derr
 
 ### O caso de Lucy Westenra: enquanto a equipa não está formada, o perito perde
 
-Setembro de 1893. Lucy Westenra — amiga íntima de Mina, noiva de Arthur Holmwood — apaga-se lentamente em Hillingham sob a observação do doutor Seward. Seward não consegue estabelecer diagnóstico e chama o seu antigo mentor Van Helsing de Amesterdão. Van Helsing chega, examina a paciente e compreende: trata-se de vampirismo. É o momento da verdade. O perito reconheceu a ameaça.
+setembro de 1893. Lucy Westenra — amiga íntima de Mina, noiva de Arthur Holmwood — apaga-se lentamente em Hillingham sob a observação do doutor Seward. Seward não consegue estabelecer diagnóstico e chama o seu antigo mentor Van Helsing de Amesterdão. Van Helsing chega, examina a paciente e compreende: trata-se de vampirismo. É o momento da verdade. O perito reconheceu a ameaça.
 
 Mas depois Van Helsing comete um erro que custa a vida a Lucy. *Não partilha* a compreensão com Seward. Não explica o diagnóstico. Não avisa a mãe de Lucy. Age isolado — encomenda alho, pendura grinaldas no quarto da doente, faz quatro transfusões de sangue de quatro dadores diferentes. Cada ação é justificada por referências vagas ao «seu método». A equipa em torno de Lucy (Seward, Arthur, Quincey, a mãe de Lucy, os criados) executa as instruções, mas não compreende o seu sentido⁶.
 
