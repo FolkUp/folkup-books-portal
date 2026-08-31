@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31T11:07:04.544Z",
+  "generated": "2026-08-31T13:01:35.309Z",
   "book": "kn1",
   "locale": "pt",
   "entries": [
@@ -222,6 +222,17 @@
       "isApparatus": true,
       "plate": null,
       "order": 9020
+    },
+    {
+      "slug": "apparatus-subject-index",
+      "title": "Índice Remissivo",
+      "description": "Índice alfabético dos conceitos-chave, personagens e categorias de «Agile Sapiens» — com referências aos capítulos e aos apêndices",
+      "weight": 30,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "plate": null,
+      "order": 9030
     },
     {
       "slug": "apparatus-transparency",
