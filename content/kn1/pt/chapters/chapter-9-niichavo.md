@@ -79,9 +79,9 @@ Aleksandr Ivanovich Privalov, programador de Leninegrado, viaja num «Moskvitch�
 
 Os Strugatski descrevem o instituto por um único critério de pertença: para um funcionário de NIICHAVO, a semana de trabalho não tem princípio nem fim. A segunda-feira começa ao sábado, porque ele não distingue «trabalho» de «vida». O lema do instituto não é KPI, mas um modo de existir. É esse o filtro de entrada.
 
-A selecção por sentido torna o modelo comando-e-controlo mecanicamente impossível. Não se pode comandar uma pessoa que não trabalha por ordem. Não se pode «dar tarefas» a Kornéiev — ele próprio escolhe sobre o que trabalha, e trabalha nisso vinte e quatro horas por dia. Não se pode «aprovar um prazo» a Gian Giacomo — ele terminará quando a tarefa estiver resolvida. Um funcionário de NIICHAVO está feito de tal modo que uma ordem é para ele um estorvo externo, e não a fonte do trabalho.
+A seleção por sentido torna o modelo comando-e-controlo mecanicamente impossível. Não se pode comandar uma pessoa que não trabalha por ordem. Não se pode «dar tarefas» a Kornéiev — ele próprio escolhe sobre o que trabalha, e trabalha nisso vinte e quatro horas por dia. Não se pode «aprovar um prazo» a Gian Giacomo — ele terminará quando a tarefa estiver resolvida. Um funcionário de NIICHAVO está feito de tal modo que uma ordem é para ele um estorvo externo, e não a fonte do trabalho.
 
-Análogos contemporâneos: projetos de código aberto (kernel Linux, PostgreSQL), laboratórios académicos como Bell Labs⁵ e Xerox PARC⁶ no seu período produtivo, equipas Agile iniciais antes da institucionalização — XP no Chrysler Comprehensive Compensation em 1996, Spotify squads 2008-2012⁷. Todos eles se mantiveram pela selecção, não pela disciplina. Assim que a selecção enfraquecia e a equipa era completada por critérios neutros, o filtro dissolvia-se — e o trabalho transformava-se em escritório.
+Análogos contemporâneos: projetos de código aberto (kernel Linux, PostgreSQL), laboratórios académicos como Bell Labs⁵ e Xerox PARC⁶ no seu período produtivo, equipas Agile iniciais antes da institucionalização — XP no Chrysler Comprehensive Compensation em 1996, Spotify squads 2008-2012⁷. Todos eles se mantiveram pela seleção, não pela disciplina. Assim que a seleção enfraquecia e a equipa era completada por critérios neutros, o filtro dissolvia-se — e o trabalho transformava-se em escritório.
 
 ### Lei 2. Liderança dupla — A-Janus e U-Janus
 
@@ -150,7 +150,7 @@ A «Tróica» não é uma previsão. É a descrição de um padrão. Qualquer eq
 
 Das quatro leis dos Strugatski deduz-se uma sequência prática:
 
-1. **A selecção é mais importante do que a formação.** Filtre as pessoas por como se relacionam com o trabalho, não pela sua competência no momento. A competência ganha-se; a relação com o trabalho — não.
+1. **A seleção é mais importante do que a formação.** Filtre as pessoas por como se relacionam com o trabalho, não pela sua competência no momento. A competência ganha-se; a relação com o trabalho — não.
 2. **A liderança dupla, separem-na explicitamente.** Designem quem responde pela função A (execução, recursos, defesa) e quem — pela função U (retrospectiva, sentido, direção). Não tentem combinar numa só cabeça.
 3. **Os padrões internos do ofício, defendam-nos do controlo externo.** A pessoa do saber responde não à responsabilização, mas aos colegas e ao próprio padrão. A função administrativa é necessária, mas não deve comandar o conteúdo.
 4. **Imersão, não formações.** Não se ensina o novato — dá-se-lhe acesso ao trabalho e às pessoas. O conhecimento tácito transmite-se apenas assim.
@@ -174,7 +174,7 @@ Os Strugatski mostram uma equipa que funciona porque está formada por pessoas p
 
 ⁴ Detalhes biográficos — segundo: «Strugatski. Materiais para investigação» (org. S. Bondarenko). Volgogrado, 2008-2014, vol. 1-9; Skalandis A. *Irmãos Strugatski.* Moscovo: AST, 2008. Boris Natánovitch Strugatski trabalhou no Observatório de Pulkovo entre 1955 e 1966, Arkadi Natánovitch — como tradutor de japonês em Moscovo. O trabalho conjunto dos irmãos era feito em encontros em Leninegrado e Moscovo e por correspondência permanente.
 
-⁵ Sobre a prática de Bell Labs no seu período produtivo (1925-1984) — ver: Gertner, Jon. *The Idea Factory: Bell Labs and the Great Age of American Innovation.* New York: Penguin Press, 2012. Tese autoral: o sucesso de Bell Labs assentou não numa hierarquia nem em KPI, mas na selecção de investigadores por interesse em tarefas fundamentais e na colaboração horizontal.
+⁵ Sobre a prática de Bell Labs no seu período produtivo (1925-1984) — ver: Gertner, Jon. *The Idea Factory: Bell Labs and the Great Age of American Innovation.* New York: Penguin Press, 2012. Tese autoral: o sucesso de Bell Labs assentou não numa hierarquia nem em KPI, mas na seleção de investigadores por interesse em tarefas fundamentais e na colaboração horizontal.
 
 ⁶ Sobre Xerox PARC no período 1970-1983 — ver: Hiltzik, Michael A. *Dealers of Lightning: Xerox PARC and the Dawn of the Computer Age.* New York: HarperBusiness, 1999. Padrão semelhante: equipa seleccionada por sentido, coordenação horizontal, destruída pela intervenção administrativa da corporação-mãe.
 

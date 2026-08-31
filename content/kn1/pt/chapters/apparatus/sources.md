@@ -27,7 +27,7 @@ A secção de fontes será organizada seguindo a estrutura da edição-mãe russ
 Até este ficheiro ser finalizado, as referências canónicas estão disponíveis em:
 
 - Notas de rodapé no fim de cada capítulo (todos os 12 capítulos + posfácio): [Capítulos →](/kn1/pt/read/)
-- Fontes da edição-mãe russa: [Fontes em russo →](/kn1/read/apparatus-sources) (referência principal)
+- Fontes da edição-mãe russa: [Fontes em russo →](/kn1/pt/read/apparatus-sources) (referência principal)
 
 ---
 
