@@ -27,6 +27,8 @@ draft: false
 ---
 
 
+![Intermezzo plate III: The Transformation Elevator](/kn1/images/chapters/agil-intermezzo-3-plate.webp)
+
 > **What this intermezzo is about.** A one-hundred-and-twenty-seven-story elevator of agile transformation. They ascend one floor per iteration with a retrospective between each; «press the button for 127» is waterfall thinking. The apotheosis of agile absurdism: the vertical decomposition of movement, the adaptive planning of the simplest action. A caricature of digital transformation initiatives in which the process of transformation has become its only product.
 
 Alice came up from the basement and found a Kone elevator with a gold sign «Digital Transformation — C-Level» in a lobby with marble columns, where every detail of the interior cost more than the entire annual IT budget of an average startup. The doors opened without sound, and she found herself in a glass cabin with a panoramic view of Moscow, alongside a short man in a Stefano Ricci suit and the same striped cat, who now held an iPad Pro in a Hermès leather case.

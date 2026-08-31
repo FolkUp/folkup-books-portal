@@ -27,6 +27,8 @@ draft: false
 ---
 
 
+![Intermezzo plate I: The Consulting Apartments](/kn1/images/chapters/agil-intermezzo-1-plate.webp)
+
 > **What this intermezzo is about.** A satirical diagnosis of the agile theater through Carroll and Bulgakov. A consultancy where forty-three teams, two hundred and eight sprints, and twelve hundred retros a month do not produce a single product. Sprints for the sake of retros, retros for the sake of planning the next sprints. «Seven roles coordinating the work of one person with himself» — and that is called a mature process. A literary mirror for anyone who has ever sat through a Program Increment Planning.
 
 Alice climbed the stairs to the sign «Center for Agile Transformation» in Moscow-City, tower «Federation,» forty-second floor, and found a spacious room with a panoramic view of the Ring Road: precisely the kind of room one expects in a place that transforms everything except results. Around a round table of Karelian birch sat three: an elegant consultant in a Bosco suit, a huge striped cat, and a short man with a nervous tic.

@@ -41,6 +41,8 @@ draft: false
 ---
 
 
+![Chapter plate: Don Quixote and Sancho — the birth of the team myth](/kn1/images/chapters/agil-chapter-7-plate.webp)
+
 > **What this chapter is about.** The finale of Act II. Karl Weick showed in 1995 what Cervantes had shown in 1605: organizations are held together not by org structures and not by procedures, but by a shared story about who they are and where they are going. The team of Quixote and Sancho is not a madman with a voice of reason beside him but the first literary portrait of team mythology: the visionary composes the challenge, the pragmatist translates the myth into action, windmills turn into giants, action into collective meaning. Four laws of team mythology, three of its modes (generative, defensive, reconciling), one Russian twin, and one death, in which Sancho weeps not for the loss of a partner but for the loss of a shared meaning.
 
 ## Cervantes, La Mancha, 1605
