@@ -32,6 +32,8 @@ reviewed_by: "Editorial Team"
 review_date: "2026-05-13"
 ---
 
+![Chapter plate: Frankenstein manages a project](/kn1/images/chapters/agil-chapter-2-plate.webp)
+
 > **What this chapter is about.** The dark side of creation. How the pattern "brilliant idea → flight from the consequences" runs like a red thread from Mary Shelley's novel to the largest failures of digital transformation. Why the most dangerous systems are built with the best of intentions, and what happens when the creator walks away.
 
 ## Villa Diodati, 16 June 1816

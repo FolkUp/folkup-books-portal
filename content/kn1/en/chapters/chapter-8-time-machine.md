@@ -45,6 +45,8 @@ draft: false
 ---
 
 
+![Chapter plate: The Time Machine and the horizons of labor](/kn1/images/chapters/agil-chapter-8-plate.webp)
+
 > «The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His grey eyes shone and twinkled, and his usually pale face was flushed and animated.»¹
 >
 > — H.G. Wells, *The Time Machine* (1895), chapter I

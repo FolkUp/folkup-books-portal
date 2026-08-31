@@ -27,6 +27,8 @@ draft: false
 ---
 
 
+![Intermezzo plate II: The Production Basement](/kn1/images/chapters/agil-intermezzo-2-plate.webp)
+
 > **What this intermezzo is about.** A production basement: two hundred and thirty-seven bugs hanging, one hundred and eighty-nine P0s recoded to P1, P1 to P2, P2 to technical debt, technical debt to a workshop in the next quarter (which is still being planned). Agile methodology as the formalized avoidance of programming. Four huddles a day to synchronize a team that produces nothing between them. A satire sharper than any post-mortem.
 
 The stairs down ended at a door with a sign «Production. Authorized Only.» Alice found herself in a basement where servers hummed, diodes blinked, and cold pizza smelled. Behind the monitors sat three: a woman with the posture of an opera prima, a thin programmer in Ray-Ban glasses (a fake from the Sadovod market), and the familiar striped cat, tapping on the keyboard with all four paws at once.
