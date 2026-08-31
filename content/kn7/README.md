@@ -2,7 +2,7 @@
 # кн.7 «Трудности диалога»
 
 **Position:** 7 из 7 (финал трилогии FolkUp — Variant B жёсткий)
-**Author:** Андрей Клеменчёнок · «Команданте FolkUp»
+**Author:** Команданте FolkUp
 **License:** CC BY-SA 4.0
 **Status:** СВОД ЗАКРЫТ 2026-07-02 (Ивин S151 verdict Андрея) · ЩИТ v5.0 gates PENDING · release BLOCKED pending кн.3 close-out
 
