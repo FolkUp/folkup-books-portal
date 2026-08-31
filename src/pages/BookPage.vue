@@ -96,7 +96,7 @@ const isLive = computed(() => book.value?.status === 'live')
 // kn.5 held back cont+31 per Iskra AKT-PRIEMKI S230 §1 P1-4: apparat consolidation
 // не диспатчена, книга ещё не издана. Директива Андрея: если книги нет а «Читать»
 // есть — ошибка. Restore после Batch B (kn.5 v1.0 build + Iskra PASS).
-const READER_ENABLED_BOOKS = ['kn1', 'kn3', 'kn4']
+const READER_ENABLED_BOOKS = ['kn1', 'kn3', 'kn4', 'kn5']
 const hasReader = computed(() => READER_ENABLED_BOOKS.includes(props.slug) && isLive.value)
 const isPause = computed(() => book.value?.status === 'variant_b_pause')
 
