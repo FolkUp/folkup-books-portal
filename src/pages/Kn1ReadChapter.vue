@@ -287,6 +287,22 @@ useHead({
     </nav>
 
     <article v-if="chapterData.meta" class="reader-chapter__body">
+      <!-- Act opener plate (S311-10 §2.2 + S311-11 PARITET-IZDANIY-1 canon).
+           Rendered only на первых главах каждого акта (3 out of 23 chapters kn.1):
+           act I → chapter-0-pilot, act II → chapter-5-nemo, act III → chapter-8-time-machine.
+           Files language-neutral, alt текст локализован. -->
+      <figure
+        v-if="chapterData.meta.act_opener && chapterData.meta.act"
+        class="reader-chapter__act-opener"
+      >
+        <img
+          :src="`/kn1/images/chapters/agil-act-opener-${chapterData.meta.act.split(':')[0].trim()}.webp`"
+          :alt="t('book_reader.act_opener_alt', { act: chapterData.meta.act })"
+          loading="lazy"
+          decoding="async"
+        />
+      </figure>
+
       <header class="reader-chapter__header">
         <p v-if="chapterData.meta.act" class="reader-chapter__act">
           {{ chapterData.meta.act }}
@@ -442,6 +458,28 @@ useHead({
   .reader-chapter__plate {
     max-width: 100%;
     margin: 1.5rem auto 2rem;
+  }
+}
+
+/* Act opener plate — визуальный маркер начала каждого акта книги (S311-10 §2.2).
+   Крупнее chapter plate — работает как section divider для читателя.
+   Ratified S311-11 PARITET-IZDANIY-1 canon: файл language-neutral, alt локализован. */
+.reader-chapter__act-opener {
+  margin: 0 auto 2.5rem;
+  max-width: 640px;
+  text-align: center;
+}
+.reader-chapter__act-opener img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+  box-shadow: 0 6px 28px rgba(0, 0, 0, 0.16);
+}
+@media (max-width: 640px) {
+  .reader-chapter__act-opener {
+    max-width: 100%;
+    margin: 0 auto 1.5rem;
   }
 }
 
