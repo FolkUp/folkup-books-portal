@@ -94,16 +94,30 @@ function detectPlate(slug) {
   return null
 }
 
-/** Apparatus reading order (canonical, matches epub-generator.sh convention) */
-const APPARATUS_ORDER = [
-  'apparatus-acknowledgments',
-  'apparatus-methodology',
-  'apparatus-sources',
-  'apparatus-slovar-terminov',
-  'apparatus-predmetnyy-ukazatel',
-  'apparatus-transparency',
-  'apparatus-colophon',
-]
+/** Apparatus reading order (canonical, matches epub-generator.sh convention)
+ *
+ * Wave C EN parametrization (Kochegar cont+6 per S1ENFIX URGENT supplement 30.08):
+ * Explicit weight map вместо ordinal indexing — subject-index EN получает 9030 без
+ * сдвига RU items (transparency 9050 / colophon 9060 preserved). Prebuild регенерирует
+ * manifest.json на каждый CF Pages `npm run build` — subject-index EN был в fallback
+ * bucket 9999 до этого fix (RU-only APPARATUS_ORDER не содержал EN slug), TOC position
+ * landed на самом конце вместо после sources.
+ *
+ * Каждая locale видит только свой subset (RU: slovar-terminov + predmetnyy-ukazatel;
+ * EN: subject-index) — так что дублирование weight 9030 across locales безопасно.
+ */
+const APPARATUS_WEIGHTS = {
+  'apparatus-acknowledgments': 9000,
+  'apparatus-methodology': 9010,
+  'apparatus-sources': 9020,
+  'apparatus-subject-index': 9030,       // EN (subject-index)
+  'apparatus-slovar-terminov': 9030,     // RU (glossary) — не conflict, разные locale manifests
+  'apparatus-predmetnyy-ukazatel': 9040, // RU (subject index)
+  'apparatus-transparency': 9050,
+  'apparatus-colophon': 9060,
+}
+// Backward-compat: keep APPARATUS_ORDER array для any external code that reads it.
+const APPARATUS_ORDER = Object.keys(APPARATUS_WEIGHTS)
 
 function parseFrontmatter(raw) {
   // Normalize CRLF → LF for cross-platform frontmatter parsing (PT/EN files may use CRLF).
@@ -130,8 +144,9 @@ function orderKey(slug, fm) {
   if (slug === 'preface') return 5
   if (slug === 'afterword') return 8000
   if (slug.startsWith('apparatus-')) {
-    const idx = APPARATUS_ORDER.indexOf(slug)
-    return 9000 + (idx >= 0 ? idx * 10 : 999)
+    // Wave C fix (Kochegar cont+6): explicit weight lookup вместо ordinal indexing —
+    // subject-index EN получает 9030 без сдвига RU items. Fallback 9999 (был 9000+999).
+    return APPARATUS_WEIGHTS[slug] ?? 9999
   }
   return typeof fm.weight === 'number' ? fm.weight : 9999
 }
