@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-04T20:17:33.419Z",
+  "generated": "2026-08-31T21:13:21.418Z",
   "book": "kn4",
   "locale": "ru",
   "entries": [
@@ -13,7 +13,7 @@
     {
       "slug": "colophon",
       "title": "Колофон",
-      "description": "© Андрей Клеменчёнок, 2026",
+      "description": "© Команданте FolkUp, 2026",
       "order": 20,
       "isApparatus": true
     },
