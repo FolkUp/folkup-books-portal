@@ -2,7 +2,7 @@
 # кн.2 «Согласные без гласных»
 
 **Position:** 2 из 7 (трилогия FolkUp)
-**Author:** Андрей Клеменчёнок
+**Author:** Команданте FolkUp
 **License:** CC BY-SA 4.0
 **Status:** RU-эталон ЩИТ v5.0 PASS · pending EN/DE/PT clones + publish gates
 
