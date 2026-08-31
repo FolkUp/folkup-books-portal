@@ -298,8 +298,11 @@ useHead({
         <img
           :src="`/kn1/images/chapters/agil-act-opener-${chapterData.meta.act.split(':')[0].trim()}.webp`"
           :alt="t('book_reader.act_opener_alt', { act: chapterData.meta.act })"
-          loading="lazy"
+          loading="eager"
+          fetchpriority="high"
           decoding="async"
+          width="1664"
+          height="2262"
         />
       </figure>
 
