@@ -73,8 +73,8 @@ books:
       # translations.en flip'ается preview→live per Q-C26 canon Andrey personal browser check.
       # Vue lookup: `book.downloads?.[locale]?.epub ?? book.downloads?.epub` (RU fallback).
       en:
-        epub: https://books.folkup.life/kn1/downloads/agile-sapiens-en-v1.0.0.epub
-        pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-en-v1.0.0.pdf
+        epub: https://books.folkup.life/kn1/downloads/agile-sapiens-en-v1.0.1.epub
+        pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-en-v1.0.1.pdf
     # v1.0.20 cont+39/+44 S2SCOOP+S3SCOOP 2026-08-03: ЭШЕЛОН-2 dedup canon
     # per Iskra S248 МАЯК-КАНОН-DEDUP GO — 11 patches П6-П16 (dedup + rename
     # Иви→Искра + term-α EN form + hybrid П15 for portal absent ЭШЕЛОН-1).
