@@ -25,7 +25,7 @@ weight: 10
 **Pseudónimo:** «Comandante FolkUp» é um pseudónimo; o nome legal do autor para © e contratos é Andrei Klemenchenok (modelo Banksy: rosto oculto, nome legal para necessidades jurídicas).
 **Língua da edição:** Português europeu (norma de Portugal, ortografia AO1990)
 **Traduzido a partir de:** edição-mãe russa, v1.0.25 (2026-08-16)
-**Versão atual:** 0.9 (pré-lançamento — a revisão editorial está em curso; a versão 1.0.0 será publicada após a conclusão do índice remissivo)
+**Versão atual:** 1.0.0 (edição estável, setembro de 2026)
 
 ## Informação Técnica
 
@@ -68,7 +68,8 @@ Email: info@folkup.app
 
 **Histórico de versões da edição portuguesa:**
 
-- **v0.9** (agosto de 2026, pré-lançamento) — primeira entrega da edição portuguesa, traduzida a partir da edição-mãe russa v1.0.25 (2026-08-16): prefácio, capítulos 0-11, intermezzos, posfácio «Onze perguntas» e aparato editorial. A revisão editorial continua; o texto atual reflete todas as passagens editoriais até à data. O índice remissivo e a versão 1.0.0 seguem-se.
+- **v1.0.0** (setembro de 2026) — edição estável. Ratificação integral da revisão editorial (Iskra) após conclusão do índice remissivo e da atribuição honesta das citações francesas («Tradução nossa a partir do original francês»). Contém: prefácio, piloto, capítulos 1-11, intermezzos, posfácio «Onze perguntas», aparato editorial completo (colofão, metodologia, fontes, transparência, agradecimentos, índice remissivo).
+- **v0.9** (agosto de 2026, pré-lançamento) — primeira entrega da edição portuguesa, traduzida a partir da edição-mãe russa v1.0.25 (2026-08-16): prefácio, capítulos 0-11, intermezzos, posfácio «Onze perguntas» e aparato editorial em revisão.
 
 ---
 
