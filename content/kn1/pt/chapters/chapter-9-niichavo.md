@@ -85,7 +85,7 @@ Análogos contemporâneos: projetos de código aberto (kernel Linux, PostgreSQL)
 
 ### Lei 2. Liderança dupla — A-Janus e U-Janus
 
-Director de NIICHAVO — Janus Poluéktovitch Nevstruiev. É uma pessoa, mas em dois modos: A-Janus e U-Janus. A-Janus lê o tempo para a frente: assina papéis, aprova planos, responde pela continuidade e pela função executiva. U-Janus lê o tempo para trás: sabe o que vai acontecer, porque para ele já aconteceu, e traz as lições de estados futuros para decisões presentes. Cada meia-noite os modos trocam de lugar.
+Diretor de NIICHAVO — Janus Poluéktovitch Nevstruiev. É uma pessoa, mas em dois modos: A-Janus e U-Janus. A-Janus lê o tempo para a frente: assina papéis, aprova planos, responde pela continuidade e pela função executiva. U-Janus lê o tempo para trás: sabe o que vai acontecer, porque para ele já aconteceu, e traz as lições de estados futuros para decisões presentes. Cada meia-noite os modos trocam de lugar.
 
 Os Strugatski mostram: uma direção eficaz de uma equipa de I&D requer os dois modos. Sem A-Janus não há recursos, aprovações, defesa do mundo exterior. Sem U-Janus não há visão, retrospetiva, capacidade de ver as consequências das decisões antes de serem tomadas. Numa só pessoa isto combina-se com dificuldade, e por isso os irmãos fizeram de Janus, literalmente, duas pessoas numa só.
 
