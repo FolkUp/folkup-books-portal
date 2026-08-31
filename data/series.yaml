@@ -110,7 +110,7 @@ books:
       ru: live
       de: preparing
       en: live  # 2026-08-17 flip preview→live per Iskra PRIKAZ-S290-10 + Andrey personal viza «флип GO приступай карт-бланш» + LIVE-GATE-EN-1 G1+G2+G3 closed (S1TREN PR #205 c63eb2f). BL-LAUNCH-1 trigger event.
-      pt: preparing
+      pt: preview  # 2026-08-31 preparing→preview per Iskra VERDIKT-S307-03 §1 Q4 «PT-reader-flip GO» + Andrey S306 «флип без вето». Zeka batch 8 waves 1-4 shipped: chapter-7/8/9/10 LIVE `/kn1/pt/read/*` HTTP 200. Downloads (EPUB/PDF) pending. Route flip: /pt/kn1 stub→wrapper (S1DEFIX cont+2).
     isbn: null  # Pending Гутенберг + Bowker
 
   - position: 2
