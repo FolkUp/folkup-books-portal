@@ -17,7 +17,7 @@ category: "labor-horizons"
 status: "verified"
 sources:
   - "Wells, H.G. The Time Machine. London: William Heinemann, 1895."
-  - "Platónov, A.P. A Escavação. Escrita em 1929-1930; publicada em: Novy Mir №6, 1987."
+  - "Platónov, A.P. A Escavação. Escrita em 1929-1930; publicada em: Novy Mir n.º 6, 1987."
   - "Autor, D.H., Levy, F., Murnane, R.J. «The Skill Content of Recent Technological Change.» Quarterly Journal of Economics 118(4), 2003, pp. 1279-1333."
   - "Autor, D.H. «Why Are There Still So Many Jobs? The History and Future of Workplace Automation.» Journal of Economic Perspectives 29(3), 2015, pp. 3-30."
   - "Acemoglu, D., Johnson, S. Power and Progress: Our Thousand-Year Struggle Over Technology and Prosperity. New York: PublicAffairs, 2023."
@@ -123,7 +123,7 @@ De Polanyi decorre o que não decorre nem de Wells, nem de Autor, nem de Acemogl
 
 ## CASO: Platónov e o poço que devora o trabalho
 
-Em Dezembro de 1929, Andrei Platónov — ferroviário, drenador, engenheiro por formação — começa a escrever uma novela. Termina-a em Abril de 1930. Chama-lhe *A Escavação*¹³.
+Em dezembro de 1929, Andrei Platónov — ferroviário, drenador, engenheiro por formação — começa a escrever uma novela. Termina-a em abril de 1930. Chama-lhe *A Escavação*¹³.
 
 O enredo, se se resumir formalmente, é simples. Um grupo de trabalhadores escava uma cova para os alicerces de uma casa enorme, na qual, segundo o plano, se instalará todo o proletariado local. Quanto mais escavam — maior se torna a cova. A casa nunca chega a começar-se. Um dos trabalhadores, Vochtchev, agita-se em busca do sentido do trabalho: para quê escavamos, para quem escavamos, o que deve resultar. Ninguém responde. Uma menina de nome Nástia, que os trabalhadores levam consigo para que o trabalho tenha um destinatário — morre. No final, o seu corpo é enterrado no fundo da cova. A casa não será construída.
 
@@ -191,4 +191,4 @@ Sobre isso — o [próximo capítulo](/kn1/read/chapter-9-niichavo).
 
 ¹² Polanyi, Karl. *The Great Transformation: The Political and Economic Origins of Our Time.* New York: Farrar & Rinehart, 1944. Prefácio — R.M. MacIver. O conceito de «duplo movimento» é desenvolvido na parte II, cap. 11-13. Sobre o período de Bennington de Polanyi: Dale, Gareth. *Karl Polanyi: A Life on the Left.* New York: Columbia University Press, 2016, cap. 5.
 
-¹³ Platónov A.P. «A Escavação.» Escrita entre Dezembro de 1929 e Abril de 1930. Primeira publicação — revistas emigradas *Grani* (Frankfurt am Main), №70, 1969, e *Student* (Londres), №13-14, 1969. Na URSS foi publicada na revista *Novy Mir*, №6, 1987. Citação segundo: Platónov A.P. *Kotlován. Texto, materiais da história criativa.* São Petersburgo: Nauka, 2000 (edição académica).
+¹³ Platónov A.P. «A Escavação.» Escrita entre dezembro de 1929 e abril de 1930. Primeira publicação — revistas emigradas *Grani* (Frankfurt am Main), n.º 70, 1969, e *Student* (Londres), n.º 13-14, 1969. Na URSS foi publicada na revista *Novy Mir*, n.º 6, 1987. Citação segundo: Platónov A.P. *Kotlován. Texto, materiais da história criativa.* São Petersburgo: Nauka, 2000 (edição académica).
