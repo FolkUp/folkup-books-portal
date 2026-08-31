@@ -68,7 +68,7 @@ twitter_description: "Final do livro: Camus mostra a equipa que se sustenta pela
 
 > **Sobre o que trata este capítulo.** O capítulo 10 mostrou uma equipa reunida porque, para as suas pessoas, não existia fronteira entre o trabalho e a vida — o NIICHAVO dos Strugatski como seleção-pelo-sentido. O capítulo 11 mostra uma equipa reunida pelo princípio oposto: as pessoas unem-se porque se recusaram a partir. A *communauté* do doutor Rieux em Oran é uma seleção-pela-recusa. A mesma força (o filtro), dirigida em sentido contrário. Desta inversão extraem-se quatro leis do trabalho sob uma crise prolongada que não tem horizonte de vitória.
 
-## HOOK. Oran, Abril de 194_
+## HOOK. Oran, abril de 194_
 
 De manhã, o doutor Bernard Rieux sai do consultório e pisa um rato morto. É o primeiro fotograma do romance de Camus.
 
@@ -84,7 +84,7 @@ Do seu trabalho conjunto — fragmentário, descoordenado, sem estratégia — f
 
 ## CONTROVERSY. Uma leitura que sai do cânone
 
-A leitura padrão de «A Peste» é uma alegoria da Resistência francesa à ocupação de 1940–1944. Essa leitura é biograficamente apoiada: uma parte significativa do romance foi escrita em Le Panelier (perto de Le Chambon-sur-Lignon) em 1942–1943, durante uma convalescença de tuberculose; mais tarde, em Paris, Camus tornou-se redator do jornal clandestino *Combat*; a experiência da ocupação está evidentemente presente no livro. Mas em Janeiro de 1955, numa carta a Roland Barthes, Camus limitou ele próprio essa leitura: insistiu que a peste não é só o nazismo; o romance fala de resistência a qualquer tirania, a qualquer terror². Por outras palavras: a leitura inicial é justa, mas incompleta.
+A leitura padrão de «A Peste» é uma alegoria da Resistência francesa à ocupação de 1940–1944. Essa leitura é biograficamente apoiada: uma parte significativa do romance foi escrita em Le Panelier (perto de Le Chambon-sur-Lignon) em 1942–1943, durante uma convalescença de tuberculose; mais tarde, em Paris, Camus tornou-se redator do jornal clandestino *Combat*; a experiência da ocupação está evidentemente presente no livro. Mas em janeiro de 1955, numa carta a Roland Barthes, Camus limitou ele próprio essa leitura: insistiu que a peste não é só o nazismo; o romance fala de resistência a qualquer tirania, a qualquer terror². Por outras palavras: a leitura inicial é justa, mas incompleta.
 
 Outras camadas canónicas: a antiteodiceia (o romance como resposta a Dostoiévski sobre o sofrimento da criança), a filosofia do absurdo («A Peste» como comentário prático a «O Mito de Sísifo», de 1942), a moral da ação sem esperança. Todas elas estão sustentadas pela literatura académica — veja-se Tony Judt, *The Burden of Responsibility* (1998), e David Carroll, *Albert Camus the Algerian* (2007).
 
@@ -204,7 +204,7 @@ Cinco cavalheiros junto à lareira seguem o ponteiro. Fogg não está. Falhou o 
 
 Mas o que ganhou Fogg de facto?
 
-Em 1872 começou a viagem como incarnação da precisão mecânica — um homem que vive por horário, otimizado para a execução sistemática. Em Dezembro é ainda metódico, mas já não mecanicista. Na Índia, uma missão de salvamento não planeada da princesa Aouda perturbou o itinerário otimizado. Em Hong Kong, a intriga do detetive Fix custou-lhe o vapor — e Fogg pela primeira vez comprou um barco em vez de um bilhete. Na América, as situações fronteiriças exigiram improviso.
+Em 1872 começou a viagem como incarnação da precisão mecânica — um homem que vive por horário, otimizado para a execução sistemática. Em dezembro é ainda metódico, mas já não mecanicista. Na Índia, uma missão de salvamento não planeada da princesa Aouda perturbou o itinerário otimizado. Em Hong Kong, a intriga do detetive Fix custou-lhe o vapor — e Fogg pela primeira vez comprou um barco em vez de um bilhete. Na América, as situações fronteiriças exigiram improviso.
 
 Cada continente ensinou a mesma lição: a eficácia é um instrumento poderoso, mas insuficiente para navegar na realidade complexa. O atrito humano não é um *bug*, é estrutura.
 
@@ -212,7 +212,7 @@ Fogg, no fim da viagem, é ainda sistemático por hábito, mas já não dogmáti
 
 **Paralelo do livro.** O livro *Agile Sapiens* começou como tentativa de ler a literatura dos séculos XIX–XX como um manual de navegação nas crises contemporâneas de gestão. O Ato I mostrou as origens — o otimismo científico de Verne, a responsabilidade de Shelley, a dedução sistemática de Doyle, a medida de Borges. O Ato II revelou a transformação — Cyrus Smith e os seus quatro companheiros de fuga da *Ilha Misteriosa* como arquétipo positivo de uma equipa a partir do zero, o Capitão Nemo como o seu antipadrão (o mono-recurso do solitário); Stoker descreve a base de conhecimento distribuída da Equipa da Luz; Stevenson diagnostica o dualismo corporativo entre cultura declarada e cultura praticada; Cervantes — a mitologia da equipa e a sua ambivalência.
 
-[O Ato III explorou a arquitetura das mudanças prolongadas](/pt/kn1/read/chapter-8-time-machine): Wells mostrou os horizontes da transformação do trabalho; [os Strugatski](/pt/kn1/read/chapter-9-niichavo) — a seleção pelo sentido como condição de uma equipa auto-organizada; e agora este livro, pela voz do doutor Rieux, descreve a ética da recusa como condição de uma equipa que se forma numa crise prolongada.
+[O Ato III explorou a arquitetura das mudanças prolongadas](/kn1/pt/read/chapter-8-time-machine): Wells mostrou os horizontes da transformação do trabalho; [os Strugatski](/kn1/pt/read/chapter-9-niichavo) — a seleção pelo sentido como condição de uma equipa auto-organizada; e agora este livro, pela voz do doutor Rieux, descreve a ética da recusa como condição de uma equipa que se forma numa crise prolongada.
 
 **Descoberta do livro.** A arquitetura da escolha é mais importante do que as escolhas individuais. O modo como pensas o trabalho define aquilo em que te tornas muito mais poderosamente do que os instrumentos concretos que utilizas.
 

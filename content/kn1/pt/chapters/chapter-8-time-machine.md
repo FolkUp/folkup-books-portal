@@ -51,7 +51,7 @@ related:
 
 > **Sobre o que trata este capítulo.** Wells em 1895 descreve não uma viagem ao ano 802 701, mas o mecanismo pelo qual o trabalho se reorganiza sob a pressão da tecnologia. Os Eloi e os Morlocks não são ficção do futuro, mas a lógica da estratificação da força de trabalho em classes de lazer e subterrânea, levada ao seu limite. Cem anos depois, o mesmo mecanismo será redescoberto por economistas sob a forma de «polarização do trabalho» (Autor) e «economia política da distribuição» (Acemoglu, Johnson). Platónov em 1930 acrescenta uma terceira leitura: o trabalho arrancado ao seu próprio resultado transforma-se num poço que se devora a si mesmo. O capítulo introduz quatro leis dos horizontes do trabalho — a estrutura sobre a qual assentam os capítulos finais.
 
-## Londres, Outubro de 1894
+## Londres, outubro de 1894
 
 Chuva no vidro do quarto alugado. Herbert George Wells, de vinte e oito anos — biólogo mal-formado, professor falhado, jornalista iniciante — reescreve mais uma vez o manuscrito que os editores rejeitam há quatro anos². Primeiro chamava-se «The Chronic Argonauts» e foi publicado no jornal estudantil do Royal College of Science em 1888. Depois foi reescrito como novela de revista. Depois outra vez. No Outono de 1894 é já quase *A Máquina do Tempo* — mas Wells ainda não compreende que livro está a escrever.
 
@@ -99,7 +99,7 @@ Disto não decorre o «desemprego em massa» que os tecnopessimistas anunciavam 
 
 Doze anos depois, Autor voltou ao tema no *Journal of Economic Perspectives* com um artigo de título provocador: «Porque ainda existem tantos empregos?»¹⁰ A resposta — porque a automatização de uma tarefa aumenta o valor das tarefas não-rotineiras ligadas a ela. O radiologista, a quem o algoritmo marca a imagem, não desaparece — o seu tempo de trabalho redistribui-se em favor de casos complexos, explicação do diagnóstico ao doente, discussão interdisciplinar. O advogado, a quem a busca de precedentes está automatizada, gasta mais horas em estratégia e negociações. O consultor financeiro, a quem o reequilíbrio da carteira está automatizado, gasta mais tempo em conversas com o cliente sobre as suas decisões de vida.
 
-Mas — e esta é a segunda parte da lei — **a vantagem dessa redistribuição não a recebem todos**. Recebem-na aqueles que têm uma superestrutura analítica não-rotineira sobre a rotina automatizada. Aqueles que não a têm — o diplomado do ensino secundário que trabalhava como empregado administrativo — são empurrados para o sector não-rotineiro motor com o seu tecto salarial limitado. A polarização não é o movimento uniforme de toda a curva para cima, é a sua distensão em ambos os sentidos.
+Mas — e esta é a segunda parte da lei — **a vantagem dessa redistribuição não a recebem todos**. Recebem-na aqueles que têm uma superestrutura analítica não-rotineira sobre a rotina automatizada. Aqueles que não a têm — o diplomado do ensino secundário que trabalhava como empregado administrativo — são empurrados para o setor não-rotineiro motor com o seu tecto salarial limitado. A polarização não é o movimento uniforme de toda a curva para cima, é a sua distensão em ambos os sentidos.
 
 ### Lei terceira: a distribuição é uma escolha política
 
@@ -161,7 +161,7 @@ No horizonte de 2026-2040, a primeira lei já funciona neste momento: a reorgani
 
 Wells mostra o mecanismo. Autor mede a polarização. Acemoglu e Johnson apresentam as alavancas. Polanyi fala do contra-movimento. Platónov diagnostica o que sente o trabalho quando o sentido se vai. Todos permanecem ao nível das leis e das tendências — mas o horizonte da década de 2030 exige outra coisa: **decisões concretas de uma equipa concreta sobre a sua própria arquitetura — como está construída, sobre que princípio se reuniu, o que a mantém viva**. Não no economista, não no político — mas na equipa concreta que se senta à mesa e decide como quer viver e trabalhar nos próximos cinco anos.
 
-Sobre isso — o [próximo capítulo](/kn1/read/chapter-9-niichavo).
+Sobre isso — o [próximo capítulo](/kn1/pt/read/chapter-9-niichavo).
 
 ---
 
@@ -169,7 +169,7 @@ Sobre isso — o [próximo capítulo](/kn1/read/chapter-9-niichavo).
 
 ¹ Wells H.G. *The Time Machine.* London: William Heinemann, 1895, cap. I, p. 1. Tradução do autor: «O Viajante no Tempo (assim será conveniente chamar-lhe) expunha-nos uma matéria recôndita. Os seus olhos cinzentos brilhavam e cintilavam, e o seu rosto habitualmente pálido estava corado e animado.»
 
-² Detalhes biográficos — segundo: Smith, David C. *H.G. Wells: Desperately Mortal.* New Haven: Yale University Press, 1986; Parrinder, Patrick (ed.). *H.G. Wells: The Critical Heritage.* London: Routledge, 1972. A versão inicial de «The Chronic Argonauts» saiu no *Science Schools Journal* entre Abril e Junho de 1888.
+² Detalhes biográficos — segundo: Smith, David C. *H.G. Wells: Desperately Mortal.* New Haven: Yale University Press, 1986; Parrinder, Patrick (ed.). *H.G. Wells: The Critical Heritage.* London: Routledge, 1972. A versão inicial de «The Chronic Argonauts» saiu no *Science Schools Journal* entre abril e junho de 1888.
 
 ³ Sobre as ligações fabianas de Wells: McKenzie, Norman, McKenzie, Jeanne. *The Time Traveller: The Life of H.G. Wells.* London: Weidenfeld & Nicolson, 1973; sobre a sua colaboração com a *New Review* de W.E. Henley — nas cartas do próprio Wells (Wells H.G. *Experiment in Autobiography*, 1934, vol. II, livro VIII).
 
@@ -181,7 +181,7 @@ Sobre isso — o [próximo capítulo](/kn1/read/chapter-9-niichavo).
 
 ⁷ Bertot, John Carlo, et al. *Public Libraries and the Internet.* Série de relatórios anuais da American Library Association, 1994-2012. A mudança sistemática do serviço de referência para os programas de literacia digital está documentada nos números de 2006-2010.
 
-⁸ Autor, David H., Levy, Frank, Murnane, Richard J. «The Skill Content of Recent Technological Change: An Empirical Exploration.» *Quarterly Journal of Economics* 118(4), Novembro 2003, pp. 1279-1333. Pré-publicação: NBER Working Paper No. 8337, 2001.
+⁸ Autor, David H., Levy, Frank, Murnane, Richard J. «The Skill Content of Recent Technological Change: An Empirical Exploration.» *Quarterly Journal of Economics* 118(4), novembro de 2003, pp. 1279-1333. Pré-publicação: NBER Working Paper No. 8337, 2001.
 
 ⁹ Confirmações empíricas da polarização do trabalho nos EUA e na Europa Ocidental: Goos, Maarten, Manning, Alan. «Lousy and Lovely Jobs: The Rising Polarization of Work in Britain.» *Review of Economics and Statistics* 89(1), 2007, pp. 118-133; Goos, Maarten, Manning, Alan, Salomons, Anna. «Explaining Job Polarization: Routine-Biased Technological Change and Offshoring.» *American Economic Review* 104(8), 2014, pp. 2509-2526.
 
