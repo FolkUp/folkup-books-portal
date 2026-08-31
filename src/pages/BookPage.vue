@@ -34,12 +34,15 @@ const subtitle = computed(() => t(`books.${props.slug}.subtitle`))
 
 // Extended annotation ~50-100 words for SEO meta description / social cards.
 // DE ratified per Iskra S252 §1 (Bolik S15BOLIK annotation-tier, RU v3 S209 canonical mirror).
-// Other locales fallback к subtitle когда description absent (vue-i18n returns key path on miss).
+// Iskra S309-03 §2 fix: `te(key, locale)` проверяет наличие ключа в текущей локали БЕЗ fallback.
+// Prior guard `val !== descriptionKey.value` ловил только «key returned as key»,
+// но при fallbackLocale='ru' vue-i18n возвращал русскую строку — она уходила в <meta name="description">,
+// og:description, twitter:description на /en/kn* и /pt/kn* (регрессия PR #267 30.08).
+// Guard остаётся и после наполнения EN/PT — защита будущих книг/языков.
 const descriptionKey = computed(() => `books.${props.slug}.description`)
-const metaDescription = computed(() => {
-  const val = t(descriptionKey.value)
-  return val && val !== descriptionKey.value ? val : subtitle.value
-})
+const metaDescription = computed(() =>
+  te(descriptionKey.value, locale.value) ? t(descriptionKey.value) : subtitle.value
+)
 
 // Canon v2 Iskra S214 §2+§4: витрина несёт принадлежность («Серия „Своим умом" · трилогия „X"»),
 // не счёт («Книга N» упразднена). Trilogy name resolved: i18n key first (per-locale),
