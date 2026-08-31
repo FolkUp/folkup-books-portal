@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-30T19:09:54.974Z",
+  "generated": "2026-08-30T23:49:51.161Z",
   "book": "kn1",
   "locale": "pt",
   "entries": [
@@ -178,6 +178,17 @@
       "isApparatus": false,
       "plate": null,
       "order": 120
+    },
+    {
+      "slug": "afterword",
+      "title": "Posfácio. Onze perguntas",
+      "description": "Posfácio ao livro *Agile Sapiens* — síntese dos doze capítulos em onze perguntas diagnósticas e uma moldura do capítulo-piloto. Não comandos, mas perguntas.",
+      "weight": 1000,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-afterword.webp",
+      "order": 8000
     }
   ]
 }
