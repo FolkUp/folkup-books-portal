@@ -24,7 +24,7 @@
     "_translator_note": "Native-speaker refined by S1LOLIK cont+6 (2026-08-02) per _translator_note invitation. Iskra S239 KANON-FLAG P1 applied — public series name removed from series_intro per canon (series does not carry a public name). 4 book subtitles (kn2/kn3/kn5/kn6) resynchronized with current RU canonical (previous EN used older RU drafts). kn.7 placeholder replaced with full canonical translation. NEW about section translated (was missing entirely). Awaits Iskra light-review Vier-Augen. | Applied by Alisa cont+38 2026-08-02 per Iskra S240 §3 GO verdict; §4 KANON-FLAG P1 grep-clean applied inline.",
     "title": "FolkUp Library",
     "hero": "FolkUp Library — free books about teams, knowledge, and understanding: how people get their work done, how knowledge reaches us intact, and why finding common ground is harder than it seems.",
-    "series_intro": "Open volumes are marked «Read». Other halls are still being prepared — come in.",
+    "series_intro": "Open volumes are marked “Read”. Other halls are still being prepared — come in.",
     "read_book": "Read book",
     "read_book_short": "Read",
     "read_online": "Read online",
@@ -37,14 +37,14 @@
     "coming_soon": "Coming soon",
     "in_pause": "Paused",
     "cover_alt": "Book cover {title}",
-    "crumb_trilogy": "trilogy «{name}»",
+    "crumb_trilogy": "trilogy “{name}”",
     "author_label": "Author:",
     "author_display": "Comandante FolkUp",
     "formats_stale_heading": "Formats under restoration.",
     "formats_stale_aria": "Note about formats under restoration",
     "formats_stale_body": "Edition v{version} · updated {date}",
     "pro_chto_heading": "About This Book",
-    "pro_chto_aria": "About the book «{title}»",
+    "pro_chto_aria": "About the book “{title}”",
     "translations_heading": "Language editions",
     "translation_available": "available",
     "translation_stub_short": "in progress",
@@ -95,7 +95,7 @@
     "kn3": {
       "title": "City of the Sun",
       "subtitle": "Ideal cities — from the heavenly Jerusalem to the Bauhaus — and the question: is it comfortable here for an ordinary person carrying grocery bags?",
-      "description": "Four hundred years ago Campanella devised an ideal city where everything was provided for — except the wish to leave. The book walks through the utopias from the heavenly Jerusalem to the Bauhaus and Brasília, testing each with one simple litmus: is it comfortable here for an ordinary person carrying grocery bags? The closing formula: the City of the Sun is not built — it is practised. And it spreads not by scaling, but by contagion."
+      "description": "Four hundred years ago Campanella devised an ideal city where everything was provided for — except the wish to leave. The book walks through the utopias from the heavenly Jerusalem to the Bauhaus and Brasília, testing each with one simple litmus: is it comfortable here for an ordinary person carrying grocery bags? The closing formula: the City of the Sun is not built — it is practiced. And it spreads not by scaling, but by contagion."
     },
     "kn4": {
       "title": "Where the New Lives",
@@ -108,9 +108,9 @@
       "description": "There is a prayer book beneath whose lines the erased drawings of Archimedes show through: a monk needed the parchment. This book is about those who stand between the author and us: the scribe, the censor, the publisher, the editor, the critic — and now the algorithm. The same role both delivers and decides; the whole plot lies in that duality. What remains afterwards is a habit: look at a thing and count how many hands it passed through on its way to you."
     },
     "kn6": {
-      "title": "Own Eyes",
+      "title": "With Our Own Eyes",
       "subtitle": "The world is full of phantoms — and against each one stands someone who went and checked for themselves, and paid the price.",
-      "description": "«I saw it myself» seems like the final authority — but the floor is false: a few calm voices are enough for the obvious to stop being obvious. Eight ways in which sight, memory and faith in the obvious let us down — from the Moon and MKULTRA to Dyatlov and Babchenko. And against every phantom, someone who went and checked for themselves. The coda is about what is worth carrying with you when you go to see."
+      "description": "“I saw it myself” seems like the final authority — but the floor is false: a few calm voices are enough for the obvious to stop being obvious. Eight ways in which sight, memory and faith in the obvious let us down — from the Moon and MKULTRA to Dyatlov and Babchenko. And against every phantom, someone who went and checked for themselves. The coda is about what is worth carrying with you when you go to see."
     },
     "kn7": {
       "title": "Lost in Conversation",
@@ -131,7 +131,7 @@
     "section1": {
       "h2": "What kind of library this is",
       "p1": "Here you find books that cannot be locked away.",
-      "p2": "Each one is published under the free CC BY-SA 4.0 license — read them, download them, share them, translate them, republish them. The only requirement: name the source and pass the freedom on. There is no «full version for a fee»: what you see is the full version.",
+      "p2": "Each one is published under the free CC BY-SA 4.0 license — read them, download them, share them, translate them, republish them. The only requirement: name the source and pass the freedom on. There is no “full version for a fee”: what you see is the full version.",
       "p3": "The series is written in full and released as each book becomes ready — the way books used to be published before the age of deadlines: when the text is ready, not when the calendar demands. Each book passes through an editorial pipeline: sources checked against originals, quotations verified word by word, footnotes kept honest. If we've made a mistake somewhere, write to us — we'll fix it and thank you in the next version. Free books have a luxury unavailable to paper: they can get better after publication."
     },
     "section2": {
@@ -156,10 +156,10 @@
   "ai_disclosure": {
     "title": "AI Usage Disclosure",
     "h1": "AI Usage Disclosure",
-    "meta_description": "Voluntary disclosure of AI use. Natural person holding editorial responsibility: Andrei Klemenchenok, resident of Portugal. Published under the pseudonym «Comandante FolkUp».",
+    "meta_description": "Voluntary disclosure of AI use. Natural person holding editorial responsibility: Andrei Klemenchenok, resident of Portugal. Published under the pseudonym “Comandante FolkUp”.",
     "section1": {
       "h2": "Editorial responsibility",
-      "p1": "FolkUp Library books are signed with the pseudonym «Comandante FolkUp». Behind the pseudonym stands one living person: Andrei Klemenchenok, a resident of Portugal, publisher and editor. The pseudonym is a Banksy-style convention for non-commercial brand identity, not a way to hide responsibility.",
+      "p1": "FolkUp Library books are signed with the pseudonym “Comandante FolkUp”. Behind the pseudonym stands one living person: Andrei Klemenchenok, a resident of Portugal, publisher and editor. The pseudonym is a Banksy-style convention for non-commercial brand identity, not a way to hide responsibility.",
       "p2": "Editorial and legal contact: editorial&#64;folkup.app"
     },
     "section2": {
@@ -176,7 +176,7 @@
     "section3": {
       "h2": "Use of AI — voluntary disclosure",
       "p1": "FolkUp voluntarily discloses the use of AI in the production of its books. Under Article 50(4), second subparagraph, of Regulation (EU) 2024/1689 (AI Act), the obligation to label AI-generated text does not apply where the content has undergone a process of human review or editorial control and a natural or legal person holds editorial responsibility for its publication. That person is Andrei Klemenchenok. We disclose it nonetheless, as an editorial choice.",
-      "p2": "The pseudonym «Comandante FolkUp» is used on public surfaces (book pages, catalog, footer, metadata) — a Banksy-style convention for non-commercial brand identity. The pseudonym carries the series brand; this page is a voluntary editorial disclosure, not a label required by law."
+      "p2": "The pseudonym “Comandante FolkUp” is used on public surfaces (book pages, catalog, footer, metadata) — a Banksy-style convention for non-commercial brand identity. The pseudonym carries the series brand; this page is a voluntary editorial disclosure, not a label required by law."
     },
     "section4": {
       "h2": "License",
@@ -191,12 +191,12 @@
       "meta_description": "How we handle data on books.folkup.life. Short answer: we collect nothing personal. Full details on data controller, technical logs, cookies, and your GDPR rights.",
       "content": [
         "<h2>Who runs this site</h2>",
-        "<p>This portal is operated by <strong>Andrei Klemenchenok</strong>, a physical person and resident of Portugal, publishing books under the pseudonym «Comandante FolkUp». This is a non-commercial hobbyist publishing project.</p>",
+        "<p>This portal is operated by <strong>Andrei Klemenchenok</strong>, a physical person and resident of Portugal, publishing books under the pseudonym “Comandante FolkUp”. This is a non-commercial hobbyist publishing project.</p>",
         "<p>Contact for privacy matters: <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a><br>General editorial contact: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a></p>",
         "<h2>What data we collect</h2>",
         "<p><strong>Personally: nothing.</strong></p>",
-        "<ul><li>No user accounts, no registration</li><li>No forms, no comments, no purchases</li><li>No newsletter, no tracking pixels</li><li>No behavioural analytics</li></ul>",
-        "<p><strong>Technically:</strong> Cloudflare (our infrastructure provider) processes standard HTTP request logs — your IP address, timestamp, requested URL, and user agent. This is required for basic operation and DDoS protection. We do not access, aggregate, or analyse these logs. Cloudflare retains them for approximately 90 days per their standard policy.</p>",
+        "<ul><li>No user accounts, no registration</li><li>No forms, no comments, no purchases</li><li>No newsletter, no tracking pixels</li><li>No behavioral analytics</li></ul>",
+        "<p><strong>Technically:</strong> Cloudflare (our infrastructure provider) processes standard HTTP request logs — your IP address, timestamp, requested URL, and user agent. This is required for basic operation and DDoS protection. We do not access, aggregate, or analyze these logs. Cloudflare retains them for approximately 90 days per their standard policy.</p>",
         "<h2>Who else sees your data</h2>",
         "<ul><li><strong>Cloudflare, Inc.</strong> (CDN, DDoS mitigation, hosting). Cloudflare is GDPR-compliant; their Data Processing Addendum is publicly available at <a href='https://www.cloudflare.com/cloudflare-customer-dpa/' rel='noopener'>cloudflare.com/cloudflare-customer-dpa</a>.</li></ul>",
         "<p>No data is sold, shared with advertisers, or transferred to any other third party.</p>",
@@ -204,12 +204,12 @@
         "<p>See our <a href='/en/cookies'>Cookie Policy</a>. Short version: no tracking cookies. Only strictly necessary technical cookies set by Cloudflare for bot management.</p>",
         "<h2>Your rights under GDPR</h2>",
         "<p>Under Regulation (EU) 2016/679 (GDPR), Articles 12–22, you have the right to:</p>",
-        "<ul><li><strong>Access</strong> any personal data we hold about you</li><li><strong>Rectification</strong> of inaccurate data</li><li><strong>Erasure</strong> («right to be forgotten»)</li><li><strong>Portability</strong> of your data in a machine-readable format</li><li><strong>Objection</strong> to processing</li><li><strong>Lodge a complaint</strong> with your national data protection authority (in Portugal: <a href='https://www.cnpd.pt/' rel='noopener'>CNPD</a>)</li></ul>",
+        "<ul><li><strong>Access</strong> any personal data we hold about you</li><li><strong>Rectification</strong> of inaccurate data</li><li><strong>Erasure</strong> (“right to be forgotten”)</li><li><strong>Portability</strong> of your data in a machine-readable format</li><li><strong>Objection</strong> to processing</li><li><strong>Lodge a complaint</strong> with your national data protection authority (in Portugal: <a href='https://www.cnpd.pt/' rel='noopener'>CNPD</a>)</li></ul>",
         "<p>Since we do not maintain a database of personal data, most of these rights have limited practical effect on this site — but they are yours. Contact <a href='mailto:rights&#64;folkup.app'>rights&#64;folkup.app</a> to exercise them.</p>",
         "<h2>No profiling, no automated decisions</h2>",
         "<p>We do not profile visitors and do not make automated decisions about you.</p>",
         "<h2>Changes</h2>",
-        "<p>If this policy changes, the «Last updated» date at the top will reflect that. Material changes will be noted on the site's homepage for at least 30 days.</p>"
+        "<p>If this policy changes, the “Last updated” date at the top will reflect that. Material changes will be noted on the site's homepage for at least 30 days.</p>"
       ]
     },
     "terms": {
@@ -224,12 +224,12 @@
         "<p>You are free to:</p>",
         "<ul><li><strong>Share</strong> — copy and redistribute the material in any medium or format</li><li><strong>Adapt</strong> — remix, transform, and build upon the material for any purpose, even commercially</li></ul>",
         "<p>Under the following terms:</p>",
-        "<ul><li><strong>Attribution</strong> — you must give appropriate credit to «Comandante FolkUp», provide a link to the license, and indicate if changes were made</li><li><strong>ShareAlike</strong> — if you remix or build upon the material, you must distribute your contributions under the same license</li></ul>",
+        "<ul><li><strong>Attribution</strong> — you must give appropriate credit to “Comandante FolkUp”, provide a link to the license, and indicate if changes were made</li><li><strong>ShareAlike</strong> — if you remix or build upon the material, you must distribute your contributions under the same license</li></ul>",
         "<p>Removing attribution or relicensing derivative works under incompatible terms violates the license and Portuguese copyright law.</p>",
         "<h2>Infrastructure code</h2>",
         "<p>Any source code underlying this portal (site templates, build scripts) is separately licensed under the <strong>MIT License</strong> and available in our public repositories.</p>",
         "<h2>No warranties</h2>",
-        "<p>The content is provided <strong>«as is»</strong>, without warranty of any kind. This is an amateur publishing project — we do our best, but we don't guarantee accuracy, completeness, or fitness for any particular purpose.</p>",
+        "<p>The content is provided <strong>“as is”</strong>, without warranty of any kind. This is an amateur publishing project — we do our best, but we don't guarantee accuracy, completeness, or fitness for any particular purpose.</p>",
         "<h2>Limitation of liability</h2>",
         "<p>To the maximum extent permitted by Portuguese law, Andrei Klemenchenok is not liable for any direct, indirect, incidental, or consequential damages arising from your use of this site or its content.</p>",
         "<h2>Your obligations</h2>",
@@ -237,7 +237,7 @@
         "<h2>Governing law and jurisdiction</h2>",
         "<p>These terms are governed by <strong>Portuguese law</strong>. Any disputes fall under the exclusive jurisdiction of Portuguese courts, subject to any mandatory consumer protection rights you may have as an EU resident.</p>",
         "<h2>Changes</h2>",
-        "<p>Terms may be updated. The «Last updated» date at the top reflects the current version.</p>"
+        "<p>Terms may be updated. The “Last updated” date at the top reflects the current version.</p>"
       ]
     },
     "cookies": {
@@ -246,7 +246,7 @@
       "content": [
         "<h2>Short version</h2>",
         "<p><strong>This site does not use tracking cookies, analytics cookies, or advertising cookies.</strong></p>",
-        "<p>That is why you do not see a cookie consent banner — under the ePrivacy Directive 2002/58/EC (as amended) and Recital 66, consent is not required for cookies that are «strictly necessary» to deliver a service the user requested.</p>",
+        "<p>That is why you do not see a cookie consent banner — under the ePrivacy Directive 2002/58/EC (as amended) and Recital 66, consent is not required for cookies that are “strictly necessary” to deliver a service the user requested.</p>",
         "<h2>What cookies may be set</h2>",
         "<p>The only cookies that may appear in your browser when visiting this site are set by <strong>Cloudflare</strong>, our infrastructure provider, for security and abuse-prevention purposes:</p>",
         "<table><thead><tr><th>Cookie</th><th>Set by</th><th>Purpose</th><th>Duration</th></tr></thead><tbody><tr><td><code>__cf_bm</code></td><td>Cloudflare</td><td>Bot management — distinguishes humans from automated traffic to protect against abuse</td><td>30 minutes</td></tr><tr><td><code>cf_clearance</code></td><td>Cloudflare</td><td>Records that a visitor passed a security challenge (only set if challenge is triggered)</td><td>30 days</td></tr></tbody></table>",
@@ -275,7 +275,7 @@
         "<h2>Copyright and licensing</h2>",
         "<p>Original written content on this site: <strong>© Andrei Klemenchenok</strong>, published under <a href='https://creativecommons.org/licenses/by-sa/4.0/' rel='noopener'>Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)</a>.</p>",
         "<p>Underlying source code: <strong>MIT License</strong>.</p>",
-        "<p>The «FolkUp» name and associated branding are used by Andrei Klemenchenok as part of the FolkUp ecosystem.</p>",
+        "<p>The “FolkUp” name and associated branding are used by Andrei Klemenchenok as part of the FolkUp ecosystem.</p>",
         "<h2>Disclaimer for external links</h2>",
         "<p>This site may contain links to external websites. We have no control over the content of external sites and accept no responsibility for their content or privacy practices. When you follow an external link, you leave the scope of this policy and are subject to the destination site's terms.</p>",
         "<h2>Contact</h2>",
