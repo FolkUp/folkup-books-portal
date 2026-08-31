@@ -61,11 +61,12 @@ describe('hasReaderEntryInLang — manifest-driven existence check', () => {
     expect(hasReaderEntryInLang('kn1', 'en', 'apparatus-subject-index')).toBe(true)
   })
 
-  it('kn1 PT manifest НЕ содержит указатель (нет ни apparatus-predmetnyy-ukazatel ни apparatus-subject-index) → fallback', () => {
+  it('kn1 PT manifest содержит apparatus-subject-index (shipped S2PT cont+5 wave 7 PR #278)', () => {
+    expect(hasReaderEntryInLang('kn1', 'pt', 'apparatus-subject-index')).toBe(true)
+    // RU-slug «apparatus-predmetnyy-ukazatel» не в PT manifest (PT использует EN-slug canonical)
     expect(
       hasReaderEntryInLang('kn1', 'pt', 'apparatus-predmetnyy-ukazatel'),
     ).toBe(false)
-    expect(hasReaderEntryInLang('kn1', 'pt', 'apparatus-subject-index')).toBe(false)
   })
 
   it('kn1 apparatus-sources присутствует во всех трёх manifests', () => {
