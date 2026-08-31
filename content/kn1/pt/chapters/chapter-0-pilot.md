@@ -73,7 +73,7 @@ Três à mesa comentam a notícia matinal como mais uma curiosidade jornalístic
 
 «Aposto vinte mil libras esterlinas [...] em como darei a volta à Terra em não mais de oitenta dias, ou seja, em mil novecentas e vinte horas, ou em cento e quinze mil e duzentos minutos»¹.
 
-Vinte mil libras esterlinas de 1872, reconvertidas pela indexação da inflação, equivalem a cerca de £2,9 milhões (≈ $3,5 milhões) em poder de compra actual². De uma aposta assim ninguém desiste, e ninguém a esquece.
+Vinte mil libras esterlinas de 1872, reconvertidas pela indexação da inflação, equivalem a cerca de £2,9 milhões (≈ $3,5 milhões) em poder de compra atual². De uma aposta assim ninguém desiste, e ninguém a esquece.
 
 O que torna esta cena notável não é a soma, mas a forma como Fogg formula o desafio. Não diz: «Vou preparar um plano detalhado da rota». Também não diz que precisará de uma comissão de especialistas, de consultores em logística e de meio ano de preparação. Simplesmente pega no jornal, monta a rota a partir dos horários de transporte disponíveis e sai do clube nessa mesma noite.
 
@@ -177,7 +177,7 @@ O primeiro é a velocidade da decisão, baseada na suficiência, não no ótimo.
 
 O segundo é a reação à informação falsa proveniente de uma fonte em que se costuma confiar. Os jornais anunciaram a estrada pronta. A estrada não está pronta. Fogg não se queixa, não exige compensação, não acusa publicamente. Aceita instantaneamente a realidade tal como ela é e age a partir dela. Não é estoicismo, é pragmatismo operacional em estado puro. O mapa diverge do território, deita fora o mapa.
 
-Em 2000, Dave Snowden formalizou esta intuição como o quadro de referência Cynefin: um modelo que divide os contextos de tomada de decisão em quatro esferas (domains)¹¹. Domínio simples: causas e efeitos são óbvios, a resposta é padrão e aplica-se sem discussão. Domínio complicado: causas e efeitos podem estabelecer-se por análise, é preciso um especialista com experiência acumulada. Domínio complexo: causas e efeitos só se vêem retrospetivamente, é preciso experimentar em condições reais. Domínio caótico: causas e efeitos não existem de todo, é preciso agir imediatamente para criar alguma estrutura para uma análise posterior.
+Em 2000, Dave Snowden formalizou esta intuição como o quadro de referência Cynefin: um modelo que divide os contextos de tomada de decisão em quatro esferas (domains)¹¹. Domínio simples: causas e efeitos são óbvios, a resposta é padrão e aplica-se sem discussão. Domínio complicado: causas e efeitos podem estabelecer-se por análise, é preciso um especialista com experiência acumulada. Domínio complexo: causas e efeitos só se veem retrospetivamente, é preciso experimentar em condições reais. Domínio caótico: causas e efeitos não existem de todo, é preciso agir imediatamente para criar alguma estrutura para uma análise posterior.
 
 A ferrovia pertence ao sistema complicado, segundo Snowden — presta-se à análise pericial. Horário, carris, estações: um olhar experiente analisa e obtém-se um resultado previsível. Mas uma ferrovia que existe no jornal, mas não existe no terreno, é já um sistema complexo de outra ordem. Não há horário em que confiar; não há especialista que diga quando os carris aparecerão; há apenas a realidade, cinquenta milhas, um elefante e dois dias de reserva.
 
@@ -201,7 +201,7 @@ Fogg, o homem-máquina, o homem-576-passos, o homem cujo trajeto diário está c
 
 Fogg tem, e é aí que se abre toda a bifurcação da cena. Prosseguir o caminho, e o horário cumpre-se. Parar, e o horário fica imediatamente em risco de ruptura. Vinte mil libras esterlinas; £2 935 637 em poder de compra atual, uma soma imponente mesmo para os padrões de hoje. Oitenta dias, e cada hora conta para um relojoeiro dos seus próprios horários.
 
-Fogg pára.
+Fogg para.
 
 «Tenho ainda doze horas de reserva. Posso sacrificá-las»¹⁴.
 

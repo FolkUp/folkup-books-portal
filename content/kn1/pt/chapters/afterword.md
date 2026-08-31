@@ -45,7 +45,7 @@ Doze capítulos dão onze arquétipos — e onze perguntas. A pergunta não pres
 
 ### Moldura. Fogg. O mapa e o território
 
-No [capítulo-piloto](/kn1/pt/read/chapter-0-pilot), Fogg descobre na estação de Kolby que o caminho de ferro, dado por pronto pelos jornais, se interrompe no meio da selva — e em poucos minutos compra um elefante. Não se queixa nem exige indemnização: o mapa afastou-se do território, o mapa deita-se fora. A Boeing continuou a rodar sobre trilhos inexistentes de certificação formal; Fogg mudou de domínio e passou a rodar sobre a realidade. Pergunta: **quando o plano se afasta da realidade, redesenhamos o mapa — ou compramos um elefante?**
+No [capítulo-piloto](/kn1/pt/read/chapter-0-pilot), Fogg descobre na estação de Kholby que o caminho de ferro, dado por pronto pelos jornais, se interrompe no meio da selva — e em poucos minutos compra um elefante. Não se queixa nem exige indemnização: o mapa afastou-se do território, o mapa deita-se fora. A Boeing continuou a rodar sobre trilhos inexistentes de certificação formal; Fogg mudou de domínio e passou a rodar sobre a realidade. Pergunta: **quando o plano se afasta da realidade, redesenhamos o mapa — ou compramos um elefante?**
 
 ### 1. Verne. Iteração
 
@@ -69,7 +69,7 @@ No [quinto capítulo](/kn1/pt/read/chapter-5-nemo) o arquétipo positivo não é
 
 ### 6. Mina Harker. Conhecimento distribuído
 
-A [Equipa da Luz de Stoker](/kn1/pt/read/chapter-6-mina-harker) não teria hipótese contra Drácula sem o relatório dactilografado de Mina. Seis pessoas, seis fragmentos da verdade, mais um documento em que os fragmentos são reunidos e redistribuídos pela equipa. Antes da datilografia — seis verdades separadas; depois — contexto comum. Pergunta: **onde se guarda a fonte única da verdade — e quem responde pela reunião dos fragmentos?**
+A [Equipa da Luz de Stoker](/kn1/pt/read/chapter-6-mina-harker) não teria hipótese contra Drácula sem o relatório datilografado de Mina. Seis pessoas, seis fragmentos da verdade, mais um documento em que os fragmentos são reunidos e redistribuídos pela equipa. Antes da datilografia — seis verdades separadas; depois — contexto comum. Pergunta: **onde se guarda a fonte única da verdade — e quem responde pela reunião dos fragmentos?**
 
 ### 7. Jekyll. O declarado e o executado
 
@@ -107,7 +107,7 @@ Este livro não nega as metodologias ágeis. *Stand-ups*, retrospetivas, *demos*
 
 Este livro não propõe «ser como Holmes», «ser como Rieux» ou «ser como Smith». A literatura não dá modelos de papel — dá espelhos. Holmes é eficaz porque é Holmes. A equipa que tentar tornar-se Holmes deixará de ser ela própria e não se tornará Holmes.
 
-Este livro não sente nostalgia pelo «gestão verdadeira». O século XIX não foi a era do senso comum — foi a era das crianças de fábrica, das minas de carvão e das empresas coloniais. A literatura que lemos foi escrita *contra* a gestão que a rodeava e permaneceu atual precisamente porque os seus autores viam o que os seus contemporâneos preferiam não notar.
+Este livro não sente nostalgia pela «gestão verdadeira». O século XIX não foi a era do senso comum — foi a era das crianças de fábrica, das minas de carvão e das empresas coloniais. A literatura que lemos foi escrita *contra* a gestão que a rodeava e permaneceu atual precisamente porque os seus autores viam o que os seus contemporâneos preferiam não notar.
 
 ## Para onde vai o elevador
 

@@ -284,7 +284,7 @@ weight: 30
 - redução da equipa como filtro por recusa (Camus) — Capítulos 10, 11
 - regime de extração / regime de distribuição (Acemoglu-Johnson canon) — Capítulo 9
 - regresso à média — Capítulos 5, 7
-- retrospectiva — Capítulos 2, 3, 5
+- retrospetiva — Capítulos 2, 3, 5
 - Rieux, Bernard (médico, protagonista de «A Peste») — Capítulo 11
 - ritmo do trabalho, disciplina — Capítulos 4, 5
 - ritual da equipa — Capítulos 2, 3, 5
@@ -345,7 +345,7 @@ weight: 30
 
 **U**
 
-- U-Ianus (modo científico, retrospectivo, do diretor de NIICHAVO) — ver «Ianus Poluéctovich»
+- U-Ianus (modo científico, retrospetivo, do diretor de NIICHAVO) — ver «Ianus Poluéctovich»
 - undiscussables — ver secção III
 - utilizador, experiência do (UX) — Capítulo 2
 
