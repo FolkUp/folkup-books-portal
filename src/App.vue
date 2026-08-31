@@ -5,6 +5,10 @@ import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 import { useSeriesData } from './composables/useSeriesData'
 import { useLangUrl } from './composables/useLangUrl'
+import {
+  localizeReaderSlug,
+  hasReaderEntryInLang,
+} from './composables/readerSlugAlias'
 
 const { t, locale } = useI18n()
 const route = useRoute()
@@ -149,6 +153,13 @@ const footerLangPrefix = computed(() => {
 // Fix двухчастный: (a) pro-chto branch по образцу reader (b) systemic fallback к book-card/home
 // в target lang вместо currentPath. Iskra: «переключатель не имеет права рисовать ссылку на
 // самого себя: молчаливый провал выглядит как рабочая кнопка».
+// S309-12 P1 fix (Iskra TIKET-PATCH 2026-08-31 S1DEFIX cont+4): reader slug alias между
+// языками + manifest check вынесены в `composables/readerSlugAlias.ts` для testability.
+// Помимо alias — `buildLangUrl` теперь проверяет существование slug в manifest target lang
+// и делает fallback к оглавлению `/kn{N}/{lang}/read` если slug отсутствует. Preview state
+// тоже даёт reader если route существует (Option B extension per Iskra S309-12 §2.5 —
+// kn1 PT preview + reader live).
+
 function buildLangUrl(currentPath: string, targetLang: SupportedLocale): string {
   // Home root
   if (currentPath === '/' || currentPath === '') {
@@ -164,13 +175,36 @@ function buildLangUrl(currentPath: string, targetLang: SupportedLocale): string 
   // Reader chapter routes: /kn{N}/{lang}/read/* — lang в pathIDDLE не prefix
   // (kn1 RU + PT + EN live; kn3-5 RU only; kn2/6/7 no reader). Если translation не live →
   // fallback к RU reader OR home stub. Preserve existing chapter tail для UX continuity.
+  // S309-12: tail проходит через alias-map + manifest check target lang → fallback к оглавлению.
   const withLangReaderMatch = currentPath.match(/^\/(kn\d+)\/(ru|pt|en|de)\/read(\/.*)?$/)
   if (withLangReaderMatch) {
     const [, book, , tail = ''] = withLangReaderMatch
-    if (targetLang === 'ru') return `/${book}/read${tail}`
+    const slugMatch = tail.match(/^\/([^/]+)$/)
+    const slug = slugMatch ? slugMatch[1] : null
+
+    if (targetLang === 'ru') {
+      if (slug) {
+        const localized = localizeReaderSlug(slug, 'ru')
+        if (hasReaderEntryInLang(book, 'ru', localized)) {
+          return `/${book}/read/${localized}`
+        }
+        return `/${book}/read` // fallback к оглавлению
+      }
+      return `/${book}/read`
+    }
+
     const bookData = bookBySlug(book)
-    if (bookData?.translations?.[targetLang] === 'live') {
-      return `/${book}/${targetLang}/read${tail}`
+    const status = bookData?.translations?.[targetLang]
+    // S308-05 Option B extension + S309-12 §2.5: preview state тоже даёт reader если route существует.
+    if (status === 'live' || status === 'preview') {
+      if (slug) {
+        const localized = localizeReaderSlug(slug, targetLang)
+        if (hasReaderEntryInLang(book, targetLang, localized)) {
+          return `/${book}/${targetLang}/read/${localized}`
+        }
+        return `/${book}/${targetLang}/read` // fallback к оглавлению
+      }
+      return `/${book}/${targetLang}/read`
     }
     // Translation not ready → LangNotReady stub на book page уровне (не reader)
     return `/${targetLang}/${book}`
@@ -179,10 +213,23 @@ function buildLangUrl(currentPath: string, targetLang: SupportedLocale): string 
   const withoutLangReaderMatch = currentPath.match(/^\/(kn\d+)\/read(\/.*)?$/)
   if (withoutLangReaderMatch) {
     const [, book, tail = ''] = withoutLangReaderMatch
+    const slugMatch = tail.match(/^\/([^/]+)$/)
+    const slug = slugMatch ? slugMatch[1] : null
+
     if (targetLang === 'ru') return currentPath
+
     const bookData = bookBySlug(book)
-    if (bookData?.translations?.[targetLang] === 'live') {
-      return `/${book}/${targetLang}/read${tail}`
+    const status = bookData?.translations?.[targetLang]
+    // S308-05 Option B extension + S309-12 §2.5: preview state тоже даёт reader если route существует.
+    if (status === 'live' || status === 'preview') {
+      if (slug) {
+        const localized = localizeReaderSlug(slug, targetLang)
+        if (hasReaderEntryInLang(book, targetLang, localized)) {
+          return `/${book}/${targetLang}/read/${localized}`
+        }
+        return `/${book}/${targetLang}/read` // fallback к оглавлению
+      }
+      return `/${book}/${targetLang}/read`
     }
     // Translation not ready → LangNotReady stub на book page уровне
     return `/${targetLang}/${book}`
