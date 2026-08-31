@@ -210,10 +210,17 @@ const SITE_URL = 'https://books.folkup.life'
 // Per-book og:image — PNG version для соцсетей (Iskra STOP-MAYAK S219 §2д:
 // «соцсети капризны к SVG, превью отдавать растровым»). Wave 2 PNG variants
 // живут рядом с SVG (cover_knN.png). SVG остаётся для страничного рендера.
+//
+// Iskra S310-15 §3.3 + Kочегар POMETKA cont+8-01 §3 (2026-08-31):
+// per-locale + `.v3` suffix (kn1-6 rebuild из SVG raster PR #283 24 covers);
+// kn7 keep v1 per Kочегар Option (c) — no .v3 (kn7 SVG source embedded raster
+// 413×438 vs canonical 800×1200, regression risk если ship v3). Naming per locale:
+// RU baseline (no suffix), EN/PT/DE = `_<lang>` suffix.
 const bookOgImage = computed(() => {
-  const coverPath = book.value?.cover_v1 || '/covers/cover_kn1.svg'
-  const pngPath = coverPath.replace(/\.svg$/, '.png')
-  return pngPath.startsWith('http') ? pngPath : `${SITE_URL}${pngPath}`
+  const lang = locale.value as Locale
+  const langSuffix = lang === 'ru' ? '' : `_${lang}`
+  const versionSuffix = props.slug === 'kn7' ? '' : '.v3'
+  return `${SITE_URL}/covers/cover_${props.slug}${langSuffix}${versionSuffix}.png`
 })
 
 // Iskra M-P0 S254 (2026-08-04): locale-aware cover per active language.
