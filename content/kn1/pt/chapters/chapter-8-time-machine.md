@@ -139,7 +139,7 @@ No final de *A Máquina do Tempo*, o Viajante regressa à sua própria mesa de j
 
 Wells não fecha o livro com uma previsão. Fecha-o com a **passagem da pergunta**. Os Eloi e os Morlocks são um resultado **possível**, não inevitável. O Viajante não sabe que decisões concretas levarão a esse resultado, quais o afastarão. Sabe apenas que a direção em que se move a sua própria sociedade vitoriana pode, no limite, dar precisamente esta imagem.
 
-O mesmo procedimento, sem convenções literárias, fazem Acemoglu e Johnson. Nas últimas cem páginas de *Power and Progress* não prevêem, mas enumeram **alavancas**: direito antitrust, política fiscal, investimentos públicos em ciência fundamental, poder negocial dos trabalhadores. Cada alavanca é real, historicamente usada, com um mecanismo compreensível. Usá-las ou não é uma escolha da comunidade política, e não uma inevitabilidade do ciclo económico.
+O mesmo procedimento, sem convenções literárias, fazem Acemoglu e Johnson. Nas últimas cem páginas de *Power and Progress* não preveem, mas enumeram **alavancas**: direito antitrust, política fiscal, investimentos públicos em ciência fundamental, poder negocial dos trabalhadores. Cada alavanca é real, historicamente usada, com um mecanismo compreensível. Usá-las ou não é uma escolha da comunidade política, e não uma inevitabilidade do ciclo económico.
 
 Wells faz o mesmo em forma literária cento e vinte e oito anos antes deles. *A Máquina do Tempo* não é uma previsão da divisão em Eloi e Morlocks. É um instrumento diagnóstico: eis a tendência levada ao limite; decidam se querem esse limite ou não.
 
