@@ -95,7 +95,7 @@ weight: 30
 - Fogg's route — Chapters 0, 1, 11
 - Fogg's wager — Chapters 0, 1, 11
 - *formations sanitaires* — see Section III
-- foundation pit (metaphor of labour without a purpose; also A. Platonov novel «The Foundation Pit») — Chapter 9
+- foundation pit (metaphor of labor without a purpose; also A. Platonov novel «The Foundation Pit») — Chapter 9
 - founding myth — Chapter 8
 - Frankenstein (metaphor of unmanageable project) — Chapters 2, 11
 
@@ -116,7 +116,7 @@ weight: 30
 - Holmes's method — see «deductive method»
 - Holmes's model of thinking — Chapter 3
 - *honnêteté* — see Section III
-- horizons of labour — 4 laws (amplification / polarization / distribution as political choice / Polanyi double movement) — Chapter 9
+- horizons of labor — 4 laws (amplification / polarization / distribution as political choice / Polanyi double movement) — Chapter 9
 - horizontal coordination (self-organizing R&D team) — Chapter 10
 - hybrid construction (language antipattern) — Chapters 4, 6
 
@@ -149,7 +149,7 @@ weight: 30
 **L**
 
 - *La Peste* — see Section II («The Plague»)
-- labour market polarization (Autor canon) — Chapter 9
+- labor market polarization (Autor canon) — Chapter 9
 - labyrinth (as metaphor) — Chapters 4, 11
 - Lanyon, Doctor Hastie (witness to the rupture, archetype of burned-out senior) — Chapter 7
 - lean startup — see also «MVP» — Chapters 1, 2
