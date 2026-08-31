@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31T00:59:29.026Z",
+  "generated": "2026-08-31T01:58:11.341Z",
   "book": "kn1",
   "locale": "pt",
   "entries": [
@@ -189,6 +189,61 @@
       "isApparatus": false,
       "plate": "kn1-afterword.webp",
       "order": 8000
+    },
+    {
+      "slug": "apparatus-acknowledgments",
+      "title": "Agradecimentos",
+      "description": "Reconhecimento a todos os que ajudaram na criação deste livro",
+      "weight": 50,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "plate": null,
+      "order": 9000
+    },
+    {
+      "slug": "apparatus-methodology",
+      "title": "Metodologia",
+      "description": "Princípios de investigação, padrões de verificação, abordagens de análise",
+      "weight": 20,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "plate": null,
+      "order": 9010
+    },
+    {
+      "slug": "apparatus-sources",
+      "title": "Fontes",
+      "description": "Bibliografia completa das fontes utilizadas, agrupadas por capítulo",
+      "weight": 30,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "plate": null,
+      "order": 9020
+    },
+    {
+      "slug": "apparatus-transparency",
+      "title": "Declaração de Transparência sobre IA",
+      "description": "Divulgação transparente da assistência de IA na criação de conteúdos, nos termos do artigo 50.º do Regulamento sobre IA da UE",
+      "weight": 40,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "plate": null,
+      "order": 9050
+    },
+    {
+      "slug": "apparatus-colophon",
+      "title": "Colofão",
+      "description": "Informação editorial — quem, quando, como este livro foi criado",
+      "weight": 10,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "plate": null,
+      "order": 9060
     }
   ]
 }
