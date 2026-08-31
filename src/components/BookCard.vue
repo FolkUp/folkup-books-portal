@@ -69,13 +69,17 @@ const statusLabel = computed(() => {
   }
 })
 
+// Iskra VERDIKT S308-01 §3.8 (S1DEFIX cont+3 2026-08-31): «мёртвые кнопки» fix.
+// Removed `isTranslationPreparing.value` — Iskra explicit «кнопки не скрывать
+// (PORTAL-LANG-PARITY), клик по-прежнему ведёт на честную заглушку LangNotReady
+// (там есть ход к RU-оригиналу — не тупик)». Label «Coming soon» уже показывает
+// «перевод готовится» на языке гостя (visual dim через book-card--{status} class).
+// Prior: S295KONSOL cont+6 batch 9 disabled click for translation preparing —
+// overturned by Iskra §3.8 verdict per LangNotReady stub having RU-fallback link.
 const isDisabled = computed(
   () =>
     props.book.status === 'variant_b_pause' ||
-    props.book.status === 'svod_zakryt_pre_shit_v5' ||
-    // S295KONSOL cont+6 batch 9: also disable card click когда current locale translation preparing
-    // (matches svod_zakryt UX — «Coming soon» card без dead click).
-    isTranslationPreparing.value
+    props.book.status === 'svod_zakryt_pre_shit_v5',
 )
 </script>
 

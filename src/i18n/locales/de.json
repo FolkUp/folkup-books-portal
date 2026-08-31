@@ -21,10 +21,10 @@
     "footer_contact": "editorial{'@'}folkup.app"
   },
   "portal": {
-    "_translator_note": "PLATZHALTER — Iskra S214 §2/§3/§9 adaptiert aus RU-Kanon von Alice cont+20, wartet auf muttersprachliches Urteil von Bolik (DE-Übersetzer, Vier-Augen). §10-Regel: keine Zählungen, keine falsche Dringlichkeit, keine versprochenen Termine. Reihenname per Iskra S239 KANON-FLAG P1 entfernt — die Reihe trägt keinen öffentlichen Namen (Alisa cont+38 2026-08-02 §4 grep-clean).",
+    "_translator_note": "Iskra retro-viza S309-01 PASS (3 fixes applied); Knut Vier-Augen on prod. DE descriptions + subtitles kn1-7 re-synced к RU canon per Iskra S308-08/09 (S1DEFIX cont+3 2026-08-31).",
     "title": "FolkUp-Bibliothek",
     "hero": "FolkUp-Bibliothek — freie Bücher über Team, Wissen und Verständigung: wie Menschen ihre Arbeit tun, wie Wissen sie unverfälscht erreicht und warum es schwieriger ist, sich zu einigen, als es scheint.",
-    "series_intro": "Bücher darüber, wie man selbst zurechtkommt. Offene Bände sind mit «Lesen» markiert. Andere Säle werden noch vorbereitet — kommen Sie herein.",
+    "series_intro": "Offene Bände sind mit «Lesen» markiert. Andere Säle werden noch vorbereitet — kommen Sie herein.",
     "read_book": "Buch lesen",
     "read_book_short": "Lesen",
     "read_online": "Online lesen",
@@ -32,13 +32,14 @@
     "download_pdf": "PDF herunterladen",
     "download_ru_only_notice": "Herunterladen zurzeit nur auf Russisch verfügbar. Deutsche Ausgabe in Vorbereitung.",
     "download_ru_only_aria": "Herunterladen zurzeit nur auf Russisch verfügbar",
-    "download_ru_epub": "Herunterladen EPUB (russische Ausgabe)",
-    "download_ru_pdf": "Herunterladen PDF (russische Ausgabe)",
+    "download_ru_epub": "EPUB herunterladen (russische Ausgabe)",
+    "download_ru_pdf": "PDF herunterladen (russische Ausgabe)",
     "coming_soon": "Bald verfügbar",
     "in_pause": "Pausiert",
     "cover_alt": "Buchcover {title}",
     "crumb_trilogy": "Trilogie „{name}“",
     "author_label": "Autor:",
+    "author_display": "Comandante FolkUp",
     "formats_stale_heading": "Formate in Restaurierung.",
     "formats_stale_aria": "Hinweis zu Formaten in Restaurierung",
     "formats_stale_body": "Ausgabe v{version} · aktualisiert am {date}",
@@ -47,7 +48,7 @@
     "translations_heading": "Sprachfassungen",
     "translation_available": "verfügbar",
     "translation_stub_short": "in Arbeit",
-    "translation_stub_full": "Die Übersetzung entsteht in der FolkUp-Werkstatt. Das Exponat wird bald in diesem Saal gezeigt.",
+    "translation_stub_full": "Die Übersetzung entsteht in der FolkUp-Werkstatt. Das Exponat wird bald in diesem Saal gezeigt — kommen Sie herein.",
     "translation_preview_short": "Vorschau",
     "translation_preview_full": "Das Exponat ist zur Vorschau geöffnet — der Saal ist zugänglich, Arbeiten laufen weiter.",
     "trilogies": {
@@ -73,7 +74,7 @@
     "copyright": "© {year} Comandante FolkUp · Inhalt CC BY-SA 4.0 · Code MIT"
   },
   "lang_not_ready": {
-    "_translator_note": "TIKET-31 EXT canonical disclosure — draft Alisa cont+7 EXT 2026-08-24; retro-viza Bolik native DE Vier-Augen pending.",
+    "_translator_note": "Iskra retro-viza S309-01 PASS (3 fixes applied); Knut Vier-Augen on prod. DE descriptions + subtitles kn1-7 re-synced к RU canon per Iskra S308-08/09 (S1DEFIX cont+3 2026-08-31).",
     "title": "Die Übersetzung dieser Seite wird vorbereitet",
     "text": "Wir arbeiten an der Übersetzung. Bitte greifen Sie in der Zwischenzeit auf die russische Originalversion zurück.",
     "back_to_ru": "Auf Russisch lesen",
@@ -83,38 +84,38 @@
   "books": {
     "kn1": {
       "title": "Agile Sapiens",
-      "subtitle": "Wie klassische Literatur modernes Management vorhersagte",
-      "description": "Die Wendigkeit, die heute als Unternehmens-Methodologie verkauft wird, hat die Menschheit immer schon beherrscht — von Märchen bis zu Jules Verne. Dieses Buch gibt den einfachen menschlichen Instinkt jenen zurück, denen ihn die Trainingsindustrie genommen hat: in kleinen Schritten handeln, günstig irren, ehrlich umbauen. Erstes Buch der Trilogie darüber, wie man klug und frei lebt."
+      "subtitle": "Literarische Analyse des Business: Verne, Shelley, Holmes und Borges stellten Management-Diagnosen lange vor den Beratern",
+      "description": "Die Wendigkeit, die heute als Methodologie verkauft wird, hat die Literatur anderthalb Jahrhunderte vor den Beratern beschrieben. Verne, Shelley, Holmes und Borges stellten Management-Diagnosen, ohne Zertifikate oder Trainings zu verkaufen — darum ist ihr Zeugnis unverfälscht. Das Buch zerlegt moderne Führungssysteme in literarische Archetypen. Tritt ein Prinzip dort zutage, wo niemand es verkaufen wollte, ist es ein Prinzip — und keine Verpackung."
     },
     "kn2": {
       "title": "Konsonanten ohne Vokale",
-      "subtitle": "Über die, die sprechen; die hören; die zwischen den Zeilen schreiben",
-      "description": "Die Geschichte eines langen Krieges um Wissen: die einen sperrten es weg — Priester, Zünfte, Urheberrecht, Konzerne —, die anderen brachen die Schlösser auf — Wissenschaftler, Ingenieure, quelloffene Werkstätten. Die Offenheit gewinnt Mal um Mal, und jedes ihrer Siege wird sofort rückgängig zu machen versucht. Ein Buch darüber, warum Wissen nur so lange lebendig bleibt, wie es weitergegeben, geprüft — und weitergegeben wird."
+      "subtitle": "Ein langer Krieg um das Wissen: Die einen sperren es weg, die anderen brechen es auf — die Offenheit siegt Mal um Mal",
+      "description": "Eine Torarolle wird ohne Vokale geschrieben: Der Text steht sperrangelweit offen, und doch lässt er sich allein nicht lesen — die Vokale wohnen im Kopf dessen, der lesen kann. So gibt man Wissen weiter und behält den Schlüssel. Dreitausend Jahre dieses Hin und Her: Prometheus, die Masoreten, Gutenberg, Murano, Stallman, Swartz. Am Ende wandert das Schloss von der Tür in den Kopf dessen, der vor ihr steht — und die Offenheit siegt Mal um Mal."
     },
     "kn3": {
       "title": "Sonnenstaat",
-      "subtitle": "Team-Utopie: von Campanella zu digital-first Organisationen",
-      "description": "Vor vierhundert Jahren erdachte Campanella die Stadt der Sonne, in der eines nicht vorgesehen war — der Wunsch, sie zu verlassen. Das Buch durchmisst die Geschichte der idealen Städte, erdachter und gebauter — vom himmlischen Jerusalem bis zum Bauhaus und den Kommune-Häusern —, mit einer Frage: ist es hier bequem für den gewöhnlichen Menschen mit Einkaufstaschen und Kind? Über die Kluft zwischen dem Bild einer Stadt und ihrem Projekt — und darüber, was geschieht, wenn das Projekt siegt. Drittes Buch der Trilogie darüber, wie man klug und frei lebt: Methode, Zugang — und nun das Umfeld."
+      "subtitle": "Ideale Städte — vom himmlischen Jerusalem bis zum Bauhaus — und die Frage: Ist es hier bequem für den gewöhnlichen Menschen mit Einkaufstaschen?",
+      "description": "Vor vierhundert Jahren erdachte Campanella eine ideale Stadt, in der alles vorgesehen war — außer dem Wunsch, sie zu verlassen. Das Buch durchmisst die Utopien vom himmlischen Jerusalem bis zum Bauhaus und Brasília und legt an jede denselben Lackmustest an: Ist es hier bequem für den gewöhnlichen Menschen mit Einkaufstaschen? Die Formel am Ende: Der Sonnenstaat wird nicht gebaut — er wird praktiziert. Und er verbreitet sich nicht durch Skalierung, sondern durch Ansteckung."
     },
     "kn4": {
       "title": "Wo das Neue lebt",
-      "subtitle": "Topographie der Innovation: warum Neues an den Rändern geboren wird",
-      "description": "Stimmt es, dass Zucht und Gabe in verschiedene Richtungen ziehen? Die Weggabelung ist falsch: zu fragen, was wichtiger sei — Kanon oder Durchbruch —, ist wie zu fragen, was für einen Fluss wichtiger sei, das Bett oder die Strömung. Dreitausend Jahre Beispiele für einen Ort — die Grenze, an der die Regel noch gilt, aber schon drückt — und ein Gesetz: der Kanon kommt immer zu spät, das Neue zu benennen. Eine Antwort geben zwei, die zu zweit sein mussten, damit einer entstehen konnte. Eröffnet die Trilogie über den Weg des Neuen zum Menschen."
+      "subtitle": "Regeln und Durchbruch sind keine Wahl: Der Kanon kommt immer zu spät, das Neue zu benennen. Dreitausend Jahre Beispiele von der Grenze",
+      "description": "Stimmt es, dass Schulung und Begabung in verschiedene Richtungen ziehen? Die Weggabelung ist falsch: Zu fragen, was wichtiger sei — Kanon oder Durchbruch —, ist wie zu fragen, was für einen Fluss wichtiger sei, das Bett oder die Strömung. Dreitausend Jahre Beispiele für ein und denselben Ort — die Grenze, an der die Regel noch gilt, aber schon drückt — und ein Gesetz: Der Kanon kommt immer zu spät, das Neue zu benennen."
     },
     "kn5": {
       "title": "Mit fremden Händen",
-      "subtitle": "Wie die unsichtbare Hand des Marktes zur sichtbaren Hand des Ingenieurs wird",
-      "description": "Zwischen dem Autor und uns steht immer jemand: Abschreiber, Zensor, Verleger, Lektor, Kritiker, und jetzt der Algorithmus. Er entscheidet, was uns erreicht und was verschwindet — und bleibt fast immer unsichtbar. Das Buch lehrt eine einfache Gewohnheit: die Hände zu zählen, durch die jede zu uns gelangte Sache gegangen ist. Vom mittelalterlichen Mönch bis zu den Plattformen — und darüber, wie aus einem lebendigen Menschen ein Zeichen auf einem T-Shirt wird."
+      "subtitle": "Zwischen dem Autor und uns steht immer jemand: Abschreiber, Zensor, Verleger, Lektor, Kritiker — und jetzt der Algorithmus",
+      "description": "Es gibt ein Gebetbuch, unter dessen Zeilen abgeschabte Zeichnungen des Archimedes durchscheinen: Ein Mönch brauchte Pergament. Das Buch handelt von denen, die zwischen dem Autor und uns stehen: Abschreiber, Zensor, Verleger, Lektor, Kritiker — und jetzt der Algorithmus. Ein und dieselbe Rolle überbringt und verfügt zugleich; in dieser Doppelheit steckt die ganze Geschichte. Was bleibt, ist eine Gewohnheit: Sieh dir eine Sache an — und zähl die Hände, durch die sie zu dir gelangt ist."
     },
     "kn6": {
       "title": "Mit eigenen Augen",
-      "subtitle": "Persönliche Erfahrung als Wissensquelle: Praxis ohne Methodologie, aber mit Reflexion",
-      "description": "Die Welt ist voller Phantome, an die alle glauben, weil «alle es doch wissen»: gefälschte Urkunden, Hexen, auf die Hunderte von Augenzeugen zeigten, aus echten Papieren zusammengenähte Dossiers. Gegen jedes steht ein Mensch, der hingegangen ist und selbst nachgeprüft hat — und dafür bezahlte: je näher ein Phantom der Macht, desto teurer der Blick darauf. Ein Buch darüber, wie sich der Entlarver vom Denunzianten unterscheidet, und darüber, dass selbst die eigenen Augen ein Instrument mit Fehlerspielraum sind. Beschließt die Trilogie über den Weg des Neuen zum Menschen."
+      "subtitle": "Die Welt ist voller Phantome — gegen jedes steht einer, der hingegangen ist, selbst nachgeprüft und dafür bezahlt hat",
+      "description": "„Ich habe es selbst gesehen“ scheint die letzte Instanz zu sein — doch dieser Boden ist doppelt: Ein paar ruhige Stimmen genügen, und das Offensichtliche ist nicht mehr offensichtlich. Acht Arten, auf die Sehen, Gedächtnis und der Glaube ans Offensichtliche versagen — vom Mond und MKULTRA bis zu Djatlow und Babtschenko. Und gegen jedes Phantom steht einer, der hingegangen ist und selbst nachgeprüft hat. Die Coda: was man bei sich tragen sollte, wenn man hingeht, um zu sehen."
     },
     "kn7": {
       "title": "Schwierigkeiten des Dialogs",
-      "subtitle": "Das Finale der Reihe. Kommt nach dem Qualitäts-Gate.",
-      "description": "Trommeln Sie mit dem Finger eine vertraute Melodie — und beobachten Sie, wie Ihr Nachbar sie nicht errät. In Ihrem Kopf spielt ein Orchester, nach draußen dringt Klopfen auf dem Tisch. Aus dieser Kluft ist ein Buch gewachsen — über die Barrieren des Verstehens zwischen Völkern, Berufen, zwei Menschen an einem Tisch und, zum Schluss, zwischen Mensch und Maschine."
+      "subtitle": "Im Kopf spielt ein Orchester — nach draußen dringt ein Klopfen. Ein Buch über die Barrieren des Verstehens und darüber, wie man sie durchbricht",
+      "description": "Klopfen Sie mit dem Finger eine vertraute Melodie — der Zuhörer hört nur Klopfen. Ein Buch über die Kluft zwischen dem, was innen klingt, und dem, was beim anderen ankommt: Barrieren zwischen Kulturen, Berufen, zwei Menschen — und zum Schluss zwischen Mensch und Maschine. Die gefährlichsten Barrieren tarnen sich als Verständnis. Sechs Bücher der Reihe beruhten auf der Annahme, dass wir einander hören können; das siebte prüft die Annahme selbst."
     }
   },
   "book_card": {

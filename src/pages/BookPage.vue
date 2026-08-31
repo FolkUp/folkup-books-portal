@@ -102,13 +102,14 @@ const isPause = computed(() => book.value?.status === 'variant_b_pause')
 
 // NAV-1 Ступень 3 cont+22 S1PT FIX-3 (Iskra TIKET-S287-01 §3): «Читать онлайн» lang-aware.
 // Pattern per Iskra: translations?.[lang]==='live' → /${slug}/${lang}/read, иначе /${slug}/read.
-// Currently locale.value на /kn{N} card = 'ru' (watcher fallback bez meta.lang), поэтому
-// сейчас всегда возвращает /${slug}/read. Rails готовы для future /en/kn{N} card + series.yaml
-// en=live flip: EN-locale user click ведёт к EN reader без hardcoded RU fallback.
+// Option B extension per Iskra VERDIKT S308-01 §1 + PRIEMKA S308-05 (S1DEFIX cont+3):
+// KANON-VOROTA S289-07 расширен — «preview» state тоже получает per-locale читалку, когда она
+// подключена (напр. /kn1/pt/read/* LIVE 4 главы Zeka batch 8 waves 1-4 pre-Iskra S308-05).
+// Download files остаются на RU-fallback с честной плашкой (G2/G3 downstream не трогаем).
 const readerUrl = computed<string>(() => {
   const currentLocale = locale.value as Locale
-  const translations = book.value?.translations
-  if (currentLocale !== 'ru' && translations?.[currentLocale] === 'live') {
+  const st = book.value?.translations?.[currentLocale]
+  if (currentLocale !== 'ru' && (st === 'live' || st === 'preview')) {
     return `/${props.slug}/${currentLocale}/read`
   }
   return `/${props.slug}/read`
@@ -156,11 +157,36 @@ const showLongProChto = computed(() => hasProChto.value && !hasAccessMethod.valu
 // Language positions per Iskra ZAGLUSHKI canon S179 — order fixed (RU first, then DE/EN/PT echelon)
 const LANGUAGE_ORDER: Locale[] = ['ru', 'de', 'en', 'pt']
 
+// Iskra VERDIKT S308-01 §3.10 (S1DEFIX cont+3): kn5 «RU готово» honesty fix.
+// Если для языка translations[lang]='live' но нет ни читалки, ни файлов —
+// downgrade к 'preparing' в списке языков (БЕЗ-СЧЁТА / витрина honest).
+// Precedent: kn5 status='live' + translations.ru='live', НО не в READER_ENABLED_BOOKS
+// AND downloads.epub commented out (S248 P0 defekt — no dedication) → показывали «RU готово»,
+// гость не может ничего с ней сделать. Fix переходное состояние «на реставрации» до v1.0.1 rebuild.
+const langHasReaderFor = (lang: Locale): boolean => {
+  if (!READER_ENABLED_BOOKS.includes(props.slug)) return false
+  if (lang === 'ru') return isLive.value
+  return book.value?.translations?.[lang] === 'live'
+}
+const langHasFilesFor = (lang: Locale): boolean => {
+  const d = book.value?.downloads
+  if (!d) return false
+  const perLoc = d[lang]
+  if (perLoc?.epub || perLoc?.pdf) return true
+  // RU baseline uses top-level downloads
+  if (lang === 'ru' && (d.epub || d.pdf)) return true
+  return false
+}
+
 const translationEntries = computed(() =>
-  LANGUAGE_ORDER.map((lang) => ({
-    lang,
-    status: book.value?.translations?.[lang] ?? 'preparing',
-  }))
+  LANGUAGE_ORDER.map((lang) => {
+    const rawStatus = book.value?.translations?.[lang] ?? 'preparing'
+    // §3.10 kn5 fix — don't claim 'live' if no reader AND no files for this lang
+    if (rawStatus === 'live' && !langHasReaderFor(lang) && !langHasFilesFor(lang)) {
+      return { lang, status: 'preparing' as const }
+    }
+    return { lang, status: rawStatus }
+  })
 )
 
 const hasAnyPreparing = computed(() =>
@@ -473,8 +499,16 @@ if (book.value) {
         </section>
 
         <footer class="book-page__meta">
+          <!--
+            Iskra VERDIKT S308-02 §2 п.1 (Andrey ratified «Да по автору» 2026-08-31):
+            author display per-locale i18n — RU «Команданте FolkUp» кириллицей,
+            EN/PT/DE «Comandante FolkUp» латиницей (Banksy-модель псевдонима).
+            Источник series.yaml:20 не трогаем — канон псевдонима S178b.
+            © строка использует series.author (pseudonym canonical) — единая для всех локалей
+            per S178b canon; локализуется только «visible display», не canonical identifier.
+          -->
           <p>
-            <strong>{{ t('portal.author_label') }}</strong> Команданте FolkUp
+            <strong>{{ t('portal.author_label') }}</strong> {{ t('portal.author_display') }}
           </p>
           <p>
             <strong>©</strong> {{ series.author }} ·

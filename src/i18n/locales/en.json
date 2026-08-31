@@ -39,6 +39,7 @@
     "cover_alt": "Book cover {title}",
     "crumb_trilogy": "trilogy «{name}»",
     "author_label": "Author:",
+    "author_display": "Comandante FolkUp",
     "formats_stale_heading": "Formats under restoration.",
     "formats_stale_aria": "Note about formats under restoration",
     "formats_stale_body": "Edition v{version} · updated {date}",

@@ -24,8 +24,10 @@ import {
   loadKn1ChapterBodyHtmlLang,
 } from '../composables/useKn1Chapters'
 import { useLangUrl } from '../composables/useLangUrl'
+import { useSeriesData } from '../composables/useSeriesData'
 
 const { t } = useI18n()
+const { series } = useSeriesData()
 
 const route = useRoute()
 const { langUrl } = useLangUrl()
@@ -200,9 +202,13 @@ const articleJsonLd = computed(() => {
       '@id': `${SITE_URL}/kn1/#book`,
       name: 'Agile Sapiens',
     },
+    // Iskra VERDIKT S308-02 §2 п.2 (S1DEFIX cont+3 2026-08-31):
+    // Replace hardcoded juridical name с series.author (pseudonym «Команданте FolkUp»)
+    // per Banksy canon — юр-имя только там, где обязано стоять (AI Act 50(4), юрстраницы,
+    // non-RU editions по канону колофона). BookSeries + Book schemas already use series.author.
     author: {
       '@type': 'Person',
-      name: 'Andrei Klemenchenok',
+      name: series.value.author,
     },
   }
 })
