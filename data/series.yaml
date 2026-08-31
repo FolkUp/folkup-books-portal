@@ -213,30 +213,19 @@ books:
     slug_en_temp: by-others-hands
     trilogy: iz_pervyh_ruk
     status: live
-    version: 1.0.0
+    version: 1.0.1
     launch_date: 2026-07-26
-    date_epub_shipped: 2026-07-30  # S3SCOOP cont+33 · pandoc HTML→MD→EPUB3 + h1-dedup FIX-FAST
-    # Iskra S236 VERDIKT W-B kn.5 v1.0 2026-07-30 11:26 UTC: G1-G3 PASS + G4 FIX-FAST (F1 TOC) + AUTO-G5 карт-бланш.
-    # FIX-FAST applied: HTML→MD via pandoc, fenced div strip (::: markers blocked h1 split),
-    # attribute strip, cover h1 removed. Rev6 = 10 TOC clean entries + illustrations embedded.
-    # Iskra PAKET-VYKLADKI-S216 §2 (2026-07-26): «Файл проверен изнутри — чист. Книга готова.» + publish Q5=А cont+22.
-    # v1.0 S3SCOOP cont+33 2026-07-30: EPUB 4.96 MB (with illustrations) SHA e36386a5... TOC 10 clean.
-    # Deanon canon S224: byline «Команданте FolkUp и Иви».
-    # PDF + apparat consolidation + epubcheck v1.0.1 patch (defer).
+    date_epub_shipped: 2026-08-31  # S1KOCHEGAR cont+9 · pandoc rebuild от canon v1.2 8e2ed16 per Iskra VIZA-S311-04 samoispolnimaya
+    # v1.0.1 rebuild S1KOCHEGAR cont+9 2026-08-31 per Iskra VIZA S311-04 «canon source = KN5-FULL v1.2 commit vault 8e2ed16, сверь MASTER — совпадает — ship по Option A»:
+    # MASTER 8e2ed16 diff HEAD = 0 (canon match) + rebuild с fresh assets (ill-11 v8 seed 811 per PR #194 Iskra VERDICT-S288-03 + ill-12 webp→jpg EPUB compat).
+    # Smoke 8/8 PASS + G1-грепы Iskra spec S234 (✎ / [дата / build-time / на визу / ГЕЙТ / ТЗ п. / Готовится Фридой) all=0 + Colophon Art 50 EU Regulation 2024/1689 + CC BY-SA 4.0.
+    # EPUB 6.2 MB · 8 illustrations (01/02/04/05/06/07/08/12) + cover_kn5.v3.png · 19 chapters · deep TOC 90 nav links.
     #
-    # P0 FIX S2SCOOP cont+39 2026-08-03: Iskra МАЯК RU-ЗАПУСК S248 §0 (мандат Andrey голосом
-    # «сделаем всё чтобы помочь Алисе запустить хотя бы русские версии»).
-    # Andrey открыл chuzhimi-rukami-v1.0.epub → обнаружил дефект: НЕТ ПОСВЯЩЕНИЯ.
-    # Public артефакт снят с публикации (канон «только ЩИТ-версии публично»).
-    # downloads.epub commented out → BookPage.vue hasAccessMethod=false → длинное pro-chto
-    # v4-BEZ-SCHYOTA (Ф1-Palimpsest applied PR #128 cont+41 EXT-C) возвращается на страницу.
-    # v1.0.1 пересборка (посвящение + аппарат + колофон + обложка KANON v2) — отдельный batch
-    # per Iskra §2 порядок работ: §0 срочное → полный цикл kn.5 v1.0.1.
+    # v1.0 history preserved for archive: S3SCOOP cont+33 2026-07-30 pandoc HTML→MD→EPUB3 4.96 MB SHA e36386a5.
+    # v1.0 P0 defect (no dedication) → v1.0.1 rebuild canonical (dedication + apparat + colophon + KANON v2 cover .v3 embedded).
     #
-    # downloads:
-    #   epub: https://books.folkup.life/kn5/downloads/chuzhimi-rukami-v1.0.epub  # DISABLED cont+39 P0 defekt — no dedication inside
-    format_stale_note: |
-      Файл на реставрации: обнаружен дефект в v1.0 (нет посвящения). Приёмка возобновится после пересборки v1.0.1.
+    downloads:
+      epub: /kn5/downloads/kn5-chuzhimi-rukami-v1.0.1.epub  # v1.0.1 S1KOCHEGAR cont+9 per Iskra VIZA S311-04
     cover_v1: /covers/cover_kn5.svg
     covers:
       ru: /covers/cover_kn5.svg
