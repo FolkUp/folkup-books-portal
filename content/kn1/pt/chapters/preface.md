@@ -142,7 +142,7 @@ E, claro, agradecimento aos próprios escritores, de Júlio Verne a Albert Camus
 ---
 
 *Comandante FolkUp*
-*Coautora: Alisa (PM do ecossistema FolkUp) · Editora: Iskra*
+*Coautora: Alice (PM do ecossistema FolkUp) · Editora: Iskra*
 *2026*
 
 ---
