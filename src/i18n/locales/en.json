@@ -122,7 +122,8 @@
     "cover_alt": "Cover of “{title}”"
   },
   "book_reader": {
-    "illustration_alt": "Illustration: {title}"
+    "illustration_alt": "Illustration: {title}",
+    "act_opener_alt": "Act opener plate: {act}"
   },
   "about": {
     "title": "About",

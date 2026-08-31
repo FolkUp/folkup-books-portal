@@ -121,7 +121,8 @@
     "cover_alt": "Обложка книги «{title}»"
   },
   "book_reader": {
-    "illustration_alt": "Иллюстрация: {title}"
+    "illustration_alt": "Иллюстрация: {title}",
+    "act_opener_alt": "Пластина открывателя акта: {act}"
   },
   "about": {
     "title": "О проекте",
