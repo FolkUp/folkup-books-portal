@@ -55,7 +55,7 @@ twitter_description: "Os Strugatski, NIICHAVO e as quatro leis da equipa auto-or
 
 Em 1964, os irmãos Strugatski terminavam «Um conto para trabalhadores científicos de menor idade»⁴. Boris Strugatski era astrónomo do Observatório de Pulkovo, Arkadi era tradutor de japonês em Moscovo. O que descreviam em NIICHAVO — um instituto onde magos-cientistas trabalham sobre «o que tem sentido» — era um retrato estilizado do que Boris via todos os dias em Pulkovo, e do que Arkadi ouvia dos amigos dos institutos académicos de Moscovo.
 
-O título surgiu da caderneta de anotações do escritor. A frase «a segunda-feira começa ao sábado» reflecte não o calendário, mas uma propriedade das pessoas de um certo tipo: para elas o trabalho não está separado da vida, e por isso a segunda-feira começa quando um empregado normal termina a sua semana laboral. Quando os irmãos acabaram o manuscrito, compreenderam que a novela estava a ser escrita precisamente sobre pessoas assim — e o título encaixou.
+O título surgiu da caderneta de anotações do escritor. A frase «a segunda-feira começa ao sábado» reflete não o calendário, mas uma propriedade das pessoas de um certo tipo: para elas o trabalho não está separado da vida, e por isso a segunda-feira começa quando um empregado normal termina a sua semana laboral. Quando os irmãos acabaram o manuscrito, compreenderam que a novela estava a ser escrita precisamente sobre pessoas assim — e o título encaixou.
 
 O livro saiu na «Detskaia Literatura» em 1965, com tiragem de cem mil exemplares e ilustrações de Yevgeny Migunov. Os leitores de então reconheceram em NIICHAVO os seus próprios institutos de investigação. Os leitores de hoje reconhecem nele a equipa que gostariam de dirigir e onde gostariam de trabalhar.
 
@@ -95,7 +95,7 @@ Paralelo contemporâneo — o conflito entre CTO e VPE em organizações de enge
 
 Cristóbal Josévitch Junta — chefe do Departamento do Sentido da Vida. Pela biografia — antigo Grande Inquisidor da Inquisição espanhola. Pelo carácter — cientista para quem o padrão interno do trabalho é mais importante do que quaisquer regras externas. Junta trabalha sobre tarefas cuja formulação nem sabe explicar à administração. Quando Kamnoiedov exige a Junta um relatório de resultados, Junta sai em silêncio.
 
-Modest Matvéievitch Kamnoiedov — vice-diretor para a parte administrativo-económica. Não é vilão: o instituto precisa de alguém que trate da eletricidade, pague as facturas, emita as ordens de missão, apresente contas ao ministério. Os Strugatski não fazem dele uma caricatura. Mostram outra coisa: a função administrativa é necessária, mas não deve comandar o conteúdo.
+Modest Matvéievitch Kamnoiedov — vice-diretor para a parte administrativo-económica. Não é vilão: o instituto precisa de alguém que trate da eletricidade, pague as faturas, emita as ordens de missão, apresente contas ao ministério. Os Strugatski não fazem dele uma caricatura. Mostram outra coisa: a função administrativa é necessária, mas não deve comandar o conteúdo.
 
 A lei está formulada numa das cenas mais conhecidas. Kamnoiedov exige que todos os funcionários, na noite de Ano Novo, entreguem as chaves e saiam do instituto. Junta, Kivrin, Kornéiev, Edik ignoram a ordem — porque nesse momento têm uma experiência em curso. Não se revoltam. Trabalham. E o seu trabalho é mais importante do que a ordem administrativa.
 
@@ -117,7 +117,7 @@ Paralelos contemporâneos — o modelo do aprendiz nos laboratórios de investig
 
 O instituto está composto por departamentos, cada um com a sua lógica:
 
-- **Departamento da Felicidade Linear** (Fiódor Simeónovitch Kivrin) — vertente aplicada optimista, instrumentos da felicidade humana. Análogo à equipa de produto.
+- **Departamento da Felicidade Linear** (Fiódor Simeónovitch Kivrin) — vertente aplicada otimista, instrumentos da felicidade humana. Análogo à equipa de produto.
 - **Departamento do Sentido da Vida** (Cristóbal Junta) — investigação fundamental, inacessível à administração nas formulações. Análogo à função de *research*.
 - **Departamento das Transformações Universais** (Gian Giacomo; aqui trabalha Víktor Kornéiev) — engenharia profunda da matéria. Análogo à equipa de plataforma.
 - **Centro Computacional** (Aleksandr Privalov) — função horizontal, que serve todos os departamentos.
@@ -134,7 +134,7 @@ Este é o retrato da equipa auto-organizada: mantém-se não pelo horário nem p
 
 Em «A Segunda-feira», Vybegalo é um caso à parte, em que o equilíbrio ainda se mantém. Em «Conto sobre a Tróica» (1968)⁹ — continuação da história de NIICHAVO — o equilíbrio já foi partido. Aí a função administrativa comanda por inteiro o conteúdo: a Tróica de racionalização e utilização de fenómenos inexplicados (órgão administrativo) governa em Kitéjgrad, colónia de fenómenos inexplicados do instituto, e decide que investigações são admissíveis, por critérios de lealdade, responsabilização e inteligibilidade.
 
-Os Strugatski escreveram a «Tróica» três anos depois da «Segunda-feira» — e deram, de facto, o diagnóstico de como se destrói a utopia do livro anterior. A Tróica de racionalização e utilização de fenómenos inexplicados — órgão administrativo que tomou o poder sobre a colónia do instituto em Kitéjgrad — decide a que fenómenos é permitido existir, por critérios de lealdade, responsabilização e inteligibilidade. Vybegalo, junto à Tróica, é conselheiro científico: o teatro metodológico tornou-se norma e obteve cargo. Privalov e Edik Amperián, destacados do instituto, atolam-se em reuniões, actas e regulamentos. Na redacção angariana da revista o final salva um *deus ex machina*: Junta e Kivrin surgem e dispersam a Tróica pelo poder de magos superiores. Mas o próprio gesto é significativo: de dentro do sistema em que o administrador venceu o especialista, já não há saída — é necessária uma força externa. Não é uma história alternativa nem uma sátira de fora. É o segundo ato da mesma história, contado sem óculos cor-de-rosa.
+Os Strugatski escreveram a «Tróica» três anos depois da «Segunda-feira» — e deram, de facto, o diagnóstico de como se destrói a utopia do livro anterior. A Tróica de racionalização e utilização de fenómenos inexplicados — órgão administrativo que tomou o poder sobre a colónia do instituto em Kitéjgrad — decide a que fenómenos é permitido existir, por critérios de lealdade, responsabilização e inteligibilidade. Vybegalo, junto à Tróica, é conselheiro científico: o teatro metodológico tornou-se norma e obteve cargo. Privalov e Edik Amperián, destacados do instituto, atolam-se em reuniões, atas e regulamentos. Na redação angariana da revista o final salva um *deus ex machina*: Junta e Kivrin surgem e dispersam a Tróica pelo poder de magos superiores. Mas o próprio gesto é significativo: de dentro do sistema em que o administrador venceu o especialista, já não há saída — é necessária uma força externa. Não é uma história alternativa nem uma sátira de fora. É o segundo ato da mesma história, contado sem óculos cor-de-rosa.
 
 O que destrói a equipa, segundo os Strugatski:
 
@@ -176,7 +176,7 @@ Os Strugatski mostram uma equipa que funciona porque está formada por pessoas p
 
 ⁵ Sobre a prática de Bell Labs no seu período produtivo (1925-1984) — ver: Gertner, Jon. *The Idea Factory: Bell Labs and the Great Age of American Innovation.* New York: Penguin Press, 2012. Tese autoral: o sucesso de Bell Labs assentou não numa hierarquia nem em KPI, mas na seleção de investigadores por interesse em tarefas fundamentais e na colaboração horizontal.
 
-⁶ Sobre Xerox PARC no período 1970-1983 — ver: Hiltzik, Michael A. *Dealers of Lightning: Xerox PARC and the Dawn of the Computer Age.* New York: HarperBusiness, 1999. Padrão semelhante: equipa seleccionada por sentido, coordenação horizontal, destruída pela intervenção administrativa da corporação-mãe.
+⁶ Sobre Xerox PARC no período 1970-1983 — ver: Hiltzik, Michael A. *Dealers of Lightning: Xerox PARC and the Dawn of the Computer Age.* New York: HarperBusiness, 1999. Padrão semelhante: equipa selecionada por sentido, coordenação horizontal, destruída pela intervenção administrativa da corporação-mãe.
 
 ⁷ Beck, Kent. *Extreme Programming Explained: Embrace Change.* Boston: Addison-Wesley, 1999. Sobre o projeto Chrysler Comprehensive Compensation (C3, 1996-2000) — cap. 1; XP foi formalizado sobre ele, mas a equipa trabalhou antes de a metodologia ter nome. Análise comparativa de equipas Agile iniciais: Cohn, Mike. *Succeeding with Agile.* Boston: Addison-Wesley, 2009, parte III.
 
