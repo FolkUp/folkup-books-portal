@@ -8,9 +8,7 @@ weight: 30
 
 *Bibliografia completa de todas as fontes utilizadas neste livro, agrupadas por capítulo.*
 
-> **Nota editorial (rascunho):** Este ficheiro de fontes será finalizado depois de a Vier-Augen de Iskra ser concluída para a edição portuguesa (ondas 1-5 entregues; revisão em curso ao ritmo da editora, per canon DEPLOY-OVER-HOLE-1). As fontes estão a ser consolidadas a partir das notas de rodapé de todos os capítulos (que contêm referências canónicas em português europeu — quando existem edições PT — ou nas línguas originais dos autores citados). A publicação da bibliografia integral está planeada para o lançamento kn.1 PT v1.0.0 estável.
->
-> Para as fontes atuais por capítulo, consulte as notas de rodapé no final de cada capítulo — contêm referências canónicas.
+> Esta bibliografia está a ser consolidada. Até lá, cada capítulo indica as suas fontes nas notas de rodapé no final do capítulo.
 
 ## Estrutura (a finalizar)
 
