@@ -38,6 +38,7 @@
     "cover_alt": "Обложка книги {title}",
     "crumb_trilogy": "трилогия «{name}»",
     "author_label": "Автор:",
+    "author_display": "Команданте FolkUp",
     "formats_stale_heading": "Форматы на реставрации.",
     "formats_stale_aria": "Пометка о форматах на реставрации",
     "formats_stale_body": "Издание v{version} · обновлено {date}",

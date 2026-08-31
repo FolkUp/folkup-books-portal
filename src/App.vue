@@ -66,11 +66,15 @@ const currentUrl = () => {
 }
 
 // Schema.org Organization — publisher identity (per Дьюи SEO audit 2026-07-23)
-const ORGANIZATION_JSONLD = {
+// Iskra VERDIKT S308-01 §5 «S1ENFIX Q4 MINOR» (S1DEFIX cont+3 2026-08-31):
+// alternateName был hardcoded «Библиотека FolkUp» кириллицей — эмитился на EN/PT/DE страницах.
+// Fix: computed reactive to i18n locale — alternateName = t('brand.name') per-locale
+// (ru «Библиотека FolkUp» / en «FolkUp Library» / pt «Biblioteca FolkUp» / de «FolkUp-Bibliothek»).
+const ORGANIZATION_JSONLD = computed(() => ({
   '@context': 'https://schema.org',
   '@type': 'Organization',
   name: 'FolkUp',
-  alternateName: 'Библиотека FolkUp',
+  alternateName: t('brand.name'),
   url: SITE_URL,
   logo: `${SITE_URL}/brand-mark.svg`,
   sameAs: [
@@ -79,7 +83,7 @@ const ORGANIZATION_JSONLD = {
     'https://t.me/folkupbooks',
     'https://github.com/FolkUp',
   ],
-}
+}))
 
 // NAV-1 Ступень 3 cont+22 S1PT LANG-URL-CANON-1 (Iskra TIKET-S287-01),
 // extended TIKET-31 4-lang decouple (cont+7 S8SCOOP 2026-08-24):
@@ -273,7 +277,7 @@ useHead({
   script: [
     {
       type: 'application/ld+json',
-      innerHTML: JSON.stringify(ORGANIZATION_JSONLD),
+      innerHTML: () => JSON.stringify(ORGANIZATION_JSONLD.value),
     },
   ],
 })
