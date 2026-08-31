@@ -208,11 +208,18 @@ const isCurrentLangLive = computed(
 const SITE_URL = 'https://books.folkup.life'
 
 // Per-book og:image — PNG version для соцсетей (Iskra STOP-MAYAK S219 §2д:
-// «соцсети капризны к SVG, превью отдавать растровым»). Wave 2 PNG variants
-// живут рядом с SVG (cover_knN.png). SVG остаётся для страничного рендера.
+// «соцсети капризны к SVG, превью отдавать растровым»). Iskra S310-11 §3
+// (2026-08-31): per-locale + `.v3.png` suffix (Kochegar PR #283 rebuild — 24 of
+// 28 PNGs shipped kn1-kn6). kn7 pending Frida verdict on 4 SVG regressions →
+// fallback к `.png` (без .v3). Preview соцсетей теперь на своём языке + свежая
+// версия без чужого подзаголовка.
 const bookOgImage = computed(() => {
-  const coverPath = book.value?.cover_v1 || '/covers/cover_kn1.svg'
-  const pngPath = coverPath.replace(/\.svg$/, '.png')
+  const coverPath =
+    book.value?.covers?.[locale.value as Locale] ??
+    book.value?.cover_v1 ??
+    '/covers/cover_kn1.svg'
+  const isKn7Pending = props.slug === 'kn7'
+  const pngPath = coverPath.replace(/\.svg$/, isKn7Pending ? '.png' : '.v3.png')
   return pngPath.startsWith('http') ? pngPath : `${SITE_URL}${pngPath}`
 })
 
