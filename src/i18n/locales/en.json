@@ -83,31 +83,38 @@
   "books": {
     "kn1": {
       "title": "Agile Sapiens",
-      "subtitle": "A literary business analysis: Verne, Shelley, Holmes and Borges diagnosed management long before the consultants arrived."
+      "subtitle": "A literary business analysis: Verne, Shelley, Holmes and Borges diagnosed management long before the consultants arrived.",
+      "description": "The agility now sold as a methodology was described by literature a century and a half before the consultants. Verne, Shelley, Holmes and Borges made their management diagnoses without selling certificates or training courses — which is why their testimony is clean. The book takes modern management systems apart into literary archetypes. If a principle shows through where no one meant to sell it, it is a principle, not packaging."
     },
     "kn2": {
       "title": "Consonants Without Vowels",
-      "subtitle": "The long war around knowledge: some lock it away, others break the locks — openness wins, again and again."
+      "subtitle": "The long war around knowledge: some lock it away, others break the locks — openness wins, again and again.",
+      "description": "A Torah scroll is written without vowels: the text lies wide open, yet cannot be read on its own — the vowels live in the head of someone who knows how. That is how knowledge is handed out while the key is held back. Three thousand years of this seesaw: Prometheus, the Masoretes, Gutenberg, Murano, Stallman, Swartz. By the finale the lock moves from the door into the head of the person standing before it — and openness wins, again and again."
     },
     "kn3": {
       "title": "City of the Sun",
-      "subtitle": "Ideal cities — from the heavenly Jerusalem to the Bauhaus — and the question: is it comfortable here for an ordinary person carrying grocery bags?"
+      "subtitle": "Ideal cities — from the heavenly Jerusalem to the Bauhaus — and the question: is it comfortable here for an ordinary person carrying grocery bags?",
+      "description": "Four hundred years ago Campanella devised an ideal city where everything was provided for — except the wish to leave. The book walks through the utopias from the heavenly Jerusalem to the Bauhaus and Brasília, testing each with one simple litmus: is it comfortable here for an ordinary person carrying grocery bags? The closing formula: the City of the Sun is not built — it is practised. And it spreads not by scaling, but by contagion."
     },
     "kn4": {
       "title": "Where the New Lives",
-      "subtitle": "Rules and breakthroughs are not a choice: canon is always late to name the new. Three thousand years of examples from the edges."
+      "subtitle": "Rules and breakthroughs are not a choice: canon is always late to name the new. Three thousand years of examples from the edges.",
+      "description": "Is it true that training and talent pull in opposite directions? The fork is false: asking which matters more — canon or breakthrough — is like asking what matters more to a river, the bed or the current. Three thousand years of examples about a single place — the edge where the rule still holds but already pinches — and one law: canon is always late to name the new."
     },
     "kn5": {
       "title": "By Others' Hands",
-      "subtitle": "Between the author and us, someone always stands: the scribe, the censor, the publisher, the editor, the critic — and now the algorithm."
+      "subtitle": "Between the author and us, someone always stands: the scribe, the censor, the publisher, the editor, the critic — and now the algorithm.",
+      "description": "There is a prayer book beneath whose lines the erased drawings of Archimedes show through: a monk needed the parchment. This book is about those who stand between the author and us: the scribe, the censor, the publisher, the editor, the critic — and now the algorithm. The same role both delivers and decides; the whole plot lies in that duality. What remains afterwards is a habit: look at a thing and count how many hands it passed through on its way to you."
     },
     "kn6": {
       "title": "Own Eyes",
-      "subtitle": "The world is full of phantoms — and against each one stands someone who went and checked for themselves, and paid the price."
+      "subtitle": "The world is full of phantoms — and against each one stands someone who went and checked for themselves, and paid the price.",
+      "description": "«I saw it myself» seems like the final authority — but the floor is false: a few calm voices are enough for the obvious to stop being obvious. Eight ways in which sight, memory and faith in the obvious let us down — from the Moon and MKULTRA to Dyatlov and Babchenko. And against every phantom, someone who went and checked for themselves. The coda is about what is worth carrying with you when you go to see."
     },
     "kn7": {
       "title": "Lost in Conversation",
-      "subtitle": "An orchestra plays inside your head — what comes out is a knock. A book about the barriers to understanding and how to break through them."
+      "subtitle": "An orchestra plays inside your head — what comes out is a knock. A book about the barriers to understanding and how to break through them.",
+      "description": "Tap out a familiar tune with your finger — the listener hears only knocking. A book about the gap between what sounds inside and what reaches the other person: barriers between cultures, professions, two people — and, at the end, between human and machine. The most dangerous barriers disguise themselves as understanding. Six books of the series rested on the assumption that we can hear one another; the seventh tests the assumption itself."
     }
   },
   "book_card": {
@@ -277,4 +284,4 @@
       ]
     }
   }
-}
+}

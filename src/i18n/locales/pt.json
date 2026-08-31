@@ -83,31 +83,38 @@
   "books": {
     "kn1": {
       "title": "Agile Sapiens",
-      "subtitle": "Uma análise literária do negócio: Verne, Shelley, Holmes e Borges diagnosticavam a gestão muito antes de os consultores chegarem."
+      "subtitle": "Uma análise literária do negócio: Verne, Shelley, Holmes e Borges diagnosticavam a gestão muito antes de os consultores chegarem.",
+      "description": "A agilidade que hoje se vende como metodologia foi descrita pela literatura século e meio antes dos consultores. Verne, Shelley, Holmes e Borges faziam diagnósticos de gestão sem vender certificados nem formações — por isso o seu testemunho é limpo. O livro desmonta os sistemas de gestão modernos em arquétipos literários. Se um princípio transparece onde ninguém tencionava vendê-lo, é um princípio, não uma embalagem."
     },
     "kn2": {
       "title": "Consoantes sem vogais",
-      "subtitle": "A longa guerra em torno do conhecimento: uns trancam-no, outros arrombam as fechaduras — a abertura vence, vez após vez."
+      "subtitle": "A longa guerra em torno do conhecimento: uns trancam-no, outros arrombam as fechaduras — a abertura vence, vez após vez.",
+      "description": "Um rolo da Torá escreve-se sem vogais: o texto está escancarado, mas não se consegue ler por si só — as vogais vivem na cabeça de quem sabe ler. É assim que se distribui o conhecimento guardando a chave. Três mil anos deste vaivém: Prometeu, os massoretas, Gutenberg, Murano, Stallman, Swartz. No final, a fechadura muda-se da porta para a cabeça de quem está diante dela — e a abertura vence, vez após vez."
     },
     "kn3": {
       "title": "Cidade do Sol",
-      "subtitle": "Cidades ideais — da Jerusalém celeste à Bauhaus — e a pergunta: é aqui confortável para uma pessoa comum, de sacos de compras nas mãos?"
+      "subtitle": "Cidades ideais — da Jerusalém celeste à Bauhaus — e a pergunta: é aqui confortável para uma pessoa comum, de sacos de compras nas mãos?",
+      "description": "Há quatrocentos anos, Campanella imaginou uma cidade ideal onde tudo estava previsto — exceto a vontade de partir. O livro percorre as utopias, da Jerusalém celeste à Bauhaus e a Brasília, e mede cada uma com um teste simples: é aqui confortável para uma pessoa comum, de sacos de compras nas mãos? A fórmula final: a Cidade do Sol não se constrói — pratica-se. E não se espalha por escala, mas por contágio."
     },
     "kn4": {
       "title": "Onde vive o novo",
-      "subtitle": "Regras e rutura não são uma alternativa: o cânone chega sempre tarde para nomear o novo. Três mil anos de exemplos vindos das margens."
+      "subtitle": "Regras e rutura não são uma alternativa: o cânone chega sempre tarde para nomear o novo. Três mil anos de exemplos vindos das margens.",
+      "description": "Será verdade que a aprendizagem e o dom puxam em direções opostas? A encruzilhada é falsa: perguntar o que importa mais — o cânone ou a rutura — é como perguntar o que importa mais para um rio, o leito ou a corrente. Três mil anos de exemplos sobre um único lugar — a fronteira onde a regra ainda vale, mas já aperta — e uma única lei: o cânone chega sempre tarde para nomear o novo."
     },
     "kn5": {
       "title": "Por mãos alheias",
-      "subtitle": "Entre o autor e nós há sempre alguém no meio: o copista, o censor, o editor, o revisor, o crítico — e agora o algoritmo."
+      "subtitle": "Entre o autor e nós há sempre alguém no meio: o copista, o censor, o editor, o revisor, o crítico — e agora o algoritmo.",
+      "description": "Há um livro de orações sob cujas linhas transparecem os desenhos apagados de Arquimedes: um monge precisava do pergaminho. Este livro é sobre quem está entre o autor e nós: o copista, o censor, o editor, o revisor, o crítico — e agora o algoritmo. O mesmo papel entrega e decide — nessa dualidade está todo o enredo. Depois dele fica um hábito: olhar para uma coisa e contar por quantas mãos passou até chegar até nós."
     },
     "kn6": {
       "title": "Com os próprios olhos",
-      "subtitle": "O mundo está cheio de fantasmas — e a cada um deles se opõe alguém que foi verificar por si próprio, e pagou por isso."
+      "subtitle": "O mundo está cheio de fantasmas — e a cada um deles se opõe alguém que foi verificar por si próprio, e pagou por isso.",
+      "description": "«Vi com os meus próprios olhos» parece a última instância — mas o fundo é falso: bastam algumas vozes tranquilas para que o evidente deixe de o ser. Oito maneiras de a visão, a memória e a fé no evidente nos atraiçoarem — da Lua e do MKULTRA a Dyatlov e Babchenko. E contra cada fantasma, alguém que foi verificar por si próprio. A coda é sobre o que vale a pena levar connosco quando vamos ver."
     },
     "kn7": {
       "title": "Dificuldades do diálogo",
-      "subtitle": "Na cabeça toca uma orquestra — cá para fora sai apenas uma pancada. Um livro sobre as barreiras à compreensão e sobre como as atravessar."
+      "subtitle": "Na cabeça toca uma orquestra — cá para fora sai apenas uma pancada. Um livro sobre as barreiras à compreensão e sobre como as atravessar.",
+      "description": "Tamborile com o dedo uma melodia conhecida — quem ouve só percebe pancadas. Um livro sobre o intervalo entre o que soa cá dentro e o que chega ao outro: barreiras entre culturas, entre profissões, entre duas pessoas — e, no fim, entre o homem e a máquina. As barreiras mais perigosas disfarçam-se de compreensão. Seis livros da série assentavam no pressuposto de que somos capazes de nos ouvir uns aos outros; o sétimo põe à prova o próprio pressuposto."
     }
   },
   "book_card": {
