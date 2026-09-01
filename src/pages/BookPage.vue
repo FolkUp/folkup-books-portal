@@ -212,14 +212,18 @@ const SITE_URL = 'https://books.folkup.life'
 // живут рядом с SVG (cover_knN.png). SVG остаётся для страничного рендера.
 //
 // Iskra S310-15 §3.3 + Kочегар POMETKA cont+8-01 §3 (2026-08-31):
-// per-locale + `.v3` suffix (kn1-6 rebuild из SVG raster PR #283 24 covers);
-// kn7 keep v1 per Kочегар Option (c) — no .v3 (kn7 SVG source embedded raster
-// 413×438 vs canonical 800×1200, regression risk если ship v3). Naming per locale:
+// per-locale + `.v3` suffix (kn1-6 rebuild из SVG raster PR #283 24 covers).
+//
+// Iskra SVOD S312-08 §3 (2026-09-01 cascade fix Frida S1FRIDA cont+3):
+// Canon S214 v2 «серия ≠ трилогия» → EN kn1 v4 (series «A Mind of One's Own»
+// + trilogy «By Our Own Means») + kn7 ×4 v4 (RU/EN/PT/DE series+trilogy 2-tier).
+// kn2-6 не трогать (retain .v3 per Iskra §3 explicit). Naming per locale:
 // RU baseline (no suffix), EN/PT/DE = `_<lang>` suffix.
 const bookOgImage = computed(() => {
   const lang = locale.value as Locale
   const langSuffix = lang === 'ru' ? '' : `_${lang}`
-  const versionSuffix = props.slug === 'kn7' ? '' : '.v3'
+  const isV4 = props.slug === 'kn7' || (props.slug === 'kn1' && lang === 'en')
+  const versionSuffix = isV4 ? '.v4' : '.v3'
   return `${SITE_URL}/covers/cover_${props.slug}${langSuffix}${versionSuffix}.png`
 })
 
