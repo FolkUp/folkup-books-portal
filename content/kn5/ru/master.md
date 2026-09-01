@@ -1,9 +1,9 @@
-\<\!-- KN5 «Чужими руками» — мастер RU · v1.2 свод S3SCOOP cont+32 · 2026-07-30, Berlin  
+\<\!-- KN5 «Чужими руками» — мастер RU · v1.2.1 свод S1KOCHEGAR cont+11 · S312-10 §1 apply · 2026-07-30, Berlin  
 Generated: pandoc HTML→MD из kn5-ru.html (S82 чистовик Иви)  
 Source HTML: vault/books/kn5-package/kn5-ru.html (218966 bytes, line 1080)  
 Status: ЩИТ v5.0 PASS · прогон S176 (основной) + контрольное чтение S176e · находок суммарно 2, обе закрыты визой Андрея 17.07.2026 · готов к DE re-translate (HOLD S164 снят)  
 ЩИТ v5.1 НАВ-детектор — находок 2, внесено 2 · S185 (виза Iskra S190 22:23 UTC — П5-1 цензорный слой + П5-2 лесенка) · applied Alice S2SCOOP cont+10 2026-07-20  
-v1.2 FIX-list applied cont+32 per Iskra S232 DOPOLNENIE 2026-07-29 §2 (2/3 items): (1) header version bump v1.0-DRAFT cont\#31 → v1.2 cont+32; (3) ill-03 verified absent в теле (grep 0 hits, сознательное изъятие per Frida brief). Deferred: (2) ill-11 status resolution + apparat consolidation Iskra verdict (B) → cont+33 kn.5 build session.  
+v1.2.1 FIX-list applied cont+32 per Iskra S232 DOPOLNENIE 2026-07-29 §2 (2/3 items): (1) header version bump v1.0-DRAFT cont\#31 → v1.2 cont+32; (3) ill-03 verified absent в теле (grep 0 hits, сознательное изъятие per Frida brief). Deferred: (2) ill-11 status resolution + apparat consolidation Iskra verdict (B) → cont+33 kn.5 build session.  
 Иллюстрации: 9 файлов в assets/ (ill-01,02,04,05,06,07,08,11,12) — из них 8 финальных + ill-11 «Пирамида тишины» present but rejected Frida (текущий вариант отвергнут, ждёт нового варианта). 4 slot (ill-03,09,10,13) rejected en bloc per Frida brief 2026-06-12; ill-09/10/13 остаются текстовыми плейсхолдерами в теле, ill-03 без плейсхолдера (сознательное изъятие).  
 Колофон Art 50: EU Regulation 2024/1689 — embedded (line 1072+)  
 License: CC BY-SA 4.0  
@@ -15,7 +15,7 @@ License: CC BY-SA 4.0
 :::::::: cover-typography  
 ::::::: cover-frame  
 ::: cover-tag  
-FolkUp · Книга 2 трилогии «Из первых рук»  
+Библиотека FolkUp · Трилогия «Из первых рук»  
 :::  
   
 \# Чужими руками {\#чужими-руками .cover-title}  
@@ -36,7 +36,7 @@ FolkUp · Книга 2 трилогии «Из первых рук»
   
 :::: {.section page="" data-title="Титул"}  
 ::: title-page  
-FolkUp · Книга 2 трилогии «Из первых рук»  
+Библиотека FolkUp · Трилогия «Из первых рук»  
   
 \# Чужими руками  
   
@@ -1081,7 +1081,7 @@ N взяла рисунок. Усмехнулась --- той самой усм
 ::: colophon  
 \#\# Колофон  
   
-«Чужими руками» --- книга 2 трилогии «Из первых рук» серии FolkUp.  
+«Чужими руками» --- книга трилогии «Из первых рук» серии «Своим умом» (FolkUp).  
   
 © Команданте FolkUp. Публикуется под лицензией Creative Commons «С указанием авторства --- На тех же условиях» 4.0 Всемирная (CC BY-SA 4.0). Юридический правообладатель --- Андрей Клеменчёнок (ORCID: 0009-0008-2953-8601).  
   
