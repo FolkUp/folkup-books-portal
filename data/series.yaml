@@ -225,7 +225,7 @@ books:
     # v1.0 P0 defect (no dedication) → v1.0.1 rebuild canonical (dedication + apparat + colophon + KANON v2 cover .v3 embedded).
     #
     downloads:
-      epub: https://books.folkup.life/kn5/downloads/kn5-chuzhimi-rukami-v1.0.1.epub  # v1.0.1 S1KOCHEGAR cont+9 per Iskra VIZA S311-04 (full URL per LESSON-S288-2 smoke convention)
+      epub: https://books.folkup.life/kn5/downloads/kn5-chuzhimi-rukami-v1.0.2.epub  # v1.0.1 S1KOCHEGAR cont+9 per Iskra VIZA S311-04 (full URL per LESSON-S288-2 smoke convention)
     cover_v1: /covers/cover_kn5.svg
     covers:
       ru: /covers/cover_kn5.svg
