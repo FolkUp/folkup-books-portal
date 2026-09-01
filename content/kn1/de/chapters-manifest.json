@@ -1,0 +1,17 @@
+{
+  "generated": "2026-08-16T16:09:23.579Z",
+  "book": "kn1",
+  "locale": "de",
+  "entries": [
+    {
+      "slug": "afterword",
+      "title": "Nachwort. Elf Fragen",
+      "description": "Nachwort zum Buch *Agile Sapiens* — Synthese der zwölf Kapitel als elf diagnostische Fragen mit einem Rahmen aus dem Pilotkapitel. Keine Anweisungen, sondern Fragen.",
+      "weight": 1000,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": false,
+      "order": 8000
+    }
+  ]
+}
