@@ -67,15 +67,26 @@ function stripLeadingH1(md) {
   return md.replace(/^# [^\n]+\n+/, '')
 }
 
+/**
+ * Strip pandoc header attributes {#id .class} from end of ATX headings.
+ * Per Iskra S312-06 §3 mandate: prevent pandoc syntax from reaching reader HTML.
+ * Same function mirrored в scripts/kn5-reader-manifest.mjs (одна функция, два скрипта per Iskra §3).
+ * Kn7 parts pattern не uses pandoc header attrs directly, но strip защищает от future svod additions
+ * from Kочегар pipeline (Iskra S312-06 §3 preventive discipline).
+ */
+function stripPandocHeaderAttrs(md) {
+  return md.replace(/^(#{1,6}\s+.+?)\s*\{[#.][^}]*\}\s*$/gm, '$1')
+}
+
 /** Extract title from first `# ...` heading. Return null if not found. */
 function extractTitle(md) {
   const match = md.match(/^# (.+)$/m)
   return match ? match[1].trim() : null
 }
 
-/** Render markdown body к HTML via marked (sync). Strips HTML comments + leading H1. */
+/** Render markdown body к HTML via marked (sync). Strips HTML comments + leading H1 + pandoc attrs. */
 function renderBody(rawMarkdown) {
-  return marked.parse(stripLeadingH1(stripHtmlComments(rawMarkdown)))
+  return marked.parse(stripPandocHeaderAttrs(stripLeadingH1(stripHtmlComments(rawMarkdown))))
 }
 
 /**

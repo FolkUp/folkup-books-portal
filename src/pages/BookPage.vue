@@ -287,10 +287,15 @@ useHead({
     { property: 'og:description', content: () => metaDescription.value},
     { property: 'og:type', content: 'book' },
     { property: 'og:image', content: () => bookOgImage.value },
+    // Iskra S312-09 §3 P3 og:image kn7 fix (S1DEFIX cont+8 2026-09-01): override site-wide
+    // default `image/jpeg` type + generic library alt — все covers PNG (kn1-7), per-book alt via title.
+    { property: 'og:image:type', content: 'image/png' },
+    { property: 'og:image:alt', content: () => t('portal.book_og_image_alt', { title: title.value }) },
     // Twitter Card override (per-book image)
     { name: 'twitter:title', content: () => title.value },
     { name: 'twitter:description', content: () => metaDescription.value},
     { name: 'twitter:image', content: () => bookOgImage.value },
+    { name: 'twitter:image:alt', content: () => t('portal.book_og_image_alt', { title: title.value }) },
   ],
   link: () => [
     // Iskra VIER-AUGEN-S305-03 §4-1 fix: canonical per-locale — was hardcoded к RU URL,
