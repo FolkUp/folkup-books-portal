@@ -189,6 +189,19 @@ export const routes: RouteRecordRaw[] = [
     component: () => import('../pages/kn7.vue'),
     meta: { pageType: 'book', bookSlug: 'kn7' },
   },
+  // Reader routes kn7 (S1DEFIX cont+7 batch 2 2026-09-01 per Iskra S312-01 §2 mandate «DEPLOY-VSYO-GOTOVOE»).
+  {
+    path: '/kn7/read',
+    name: 'kn7-read-toc',
+    component: () => import('../pages/Kn7ReadToc.vue'),
+    meta: { pageType: 'reader-toc', bookSlug: 'kn7' },
+  },
+  {
+    path: '/kn7/read/:slug',
+    name: 'kn7-read-chapter',
+    component: () => import('../pages/Kn7ReadChapter.vue'),
+    meta: { pageType: 'reader-chapter', bookSlug: 'kn7' },
+  },
   {
     path: '/about',
     name: 'about',
