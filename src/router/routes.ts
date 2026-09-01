@@ -294,7 +294,8 @@ export const routes: RouteRecordRaw[] = [
   { path: '/pt/kn4', name: 'kn4-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn4', lang: 'pt' } },
   { path: '/pt/kn5', name: 'kn5-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn5', lang: 'pt' } },
   { path: '/pt/kn6', name: 'kn6-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn6', lang: 'pt' } },
-  { path: '/pt/kn7', name: 'kn7-pt', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn7', lang: 'pt' } },
+  // /pt/kn7 flipped stub→wrapper (S1DEFIX cont+7 2026-09-01) per Iskra S311-18 §2.3 mandate + Zeka S2PT cont+8-EXT PR #300 880c158. Preview state per series.yaml translations.pt='preview' — inline pro-chto reading content/kn7/pt/pro-chto.md. Mirrors /pt/kn1 flip (Iskra VERDIKT-S307-03 §1 Q4). Reader wire-up defers к post-Kочегар свод cont+10.
+  { path: '/pt/kn7', name: 'kn7-pt', component: () => import('../pages/kn7.vue'), meta: { pageType: 'book', bookSlug: 'kn7', lang: 'pt' } },
 
   // Book pages DE stubs (kn1-7)
   { path: '/de/kn1', name: 'kn1-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn1', lang: 'de' } },
