@@ -1,5 +1,5 @@
 {
-  "generated": "2026-09-01T12:17:49.018Z",
+  "generated": "2026-09-01T15:29:13.195Z",
   "book": "kn5",
   "locale": "ru",
   "entries": [
@@ -46,10 +46,38 @@
       "isApparatus": false
     },
     {
+      "slug": "chapter-1-perepischik",
+      "title": "I. Переписчик",
+      "description": null,
+      "order": 106,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-2-tsenzor",
+      "title": "II. Цензор",
+      "description": null,
+      "order": 107,
+      "isApparatus": false
+    },
+    {
       "slug": "intermezzo-posle-tsenzora",
       "title": "Интермедия. После «Цензора»",
       "description": null,
       "order": 108,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-3-izdatel",
+      "title": "III. Издатель",
+      "description": null,
+      "order": 109,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-4-redaktor",
+      "title": "IV. Редактор",
+      "description": null,
+      "order": 110,
       "isApparatus": false
     },
     {
@@ -60,10 +88,38 @@
       "isApparatus": false
     },
     {
+      "slug": "chapter-5-impresario",
+      "title": "V. Импресарио",
+      "description": null,
+      "order": 112,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-6-kritik",
+      "title": "VI. Критик",
+      "description": null,
+      "order": 113,
+      "isApparatus": false
+    },
+    {
       "slug": "intermezzo-posle-kritika",
       "title": "Интермедия. После «Критика»",
       "description": null,
       "order": 114,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-7-kurator",
+      "title": "VII. Куратор",
+      "description": null,
+      "order": 115,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-8-platforma",
+      "title": "VIII. Платформа",
+      "description": null,
+      "order": 116,
       "isApparatus": false
     },
     {
@@ -74,66 +130,10 @@
       "isApparatus": false
     },
     {
-      "slug": "chapter-1-perepischik",
-      "title": "I. Переписчик",
-      "description": null,
-      "order": 210,
-      "isApparatus": false
-    },
-    {
-      "slug": "chapter-2-tsenzor",
-      "title": "II. Цензор",
-      "description": null,
-      "order": 220,
-      "isApparatus": false
-    },
-    {
-      "slug": "chapter-3-izdatel",
-      "title": "III. Издатель",
-      "description": null,
-      "order": 230,
-      "isApparatus": false
-    },
-    {
-      "slug": "chapter-4-redaktor",
-      "title": "IV. Редактор",
-      "description": null,
-      "order": 240,
-      "isApparatus": false
-    },
-    {
-      "slug": "chapter-5-impresario",
-      "title": "V. Импресарио",
-      "description": null,
-      "order": 250,
-      "isApparatus": false
-    },
-    {
-      "slug": "chapter-6-kritik",
-      "title": "VI. Критик",
-      "description": null,
-      "order": 260,
-      "isApparatus": false
-    },
-    {
-      "slug": "chapter-7-kurator",
-      "title": "VII. Куратор",
-      "description": null,
-      "order": 270,
-      "isApparatus": false
-    },
-    {
-      "slug": "chapter-8-platforma",
-      "title": "VIII. Платформа",
-      "description": null,
-      "order": 280,
-      "isApparatus": false
-    },
-    {
       "slug": "coda",
       "title": "Кода. История одного лица (Че)",
       "description": null,
-      "order": 850,
+      "order": 118,
       "isApparatus": false
     },
     {
