@@ -41,9 +41,11 @@ const routeLang = (): OgLang => {
 }
 // Iskra STOP-MAYAK S219 §2д: соцсети капризны к SVG. Wave 2 PNG отдаём для превью.
 // S1ILLUS cont+0 Frida OG integration (Iskra PAKET-19 S288 «Визирую пускай приступает» + Andrey verbatim pick cont+3):
-// Portal main OG теперь Ремедиос F-1 «Библиотека» (7 корешков + настольная лампа + Hammershøi mood) 1200×630 JPG.
+// Portal main OG теперь Ремедиос F-1 «Библиотека» (7 корешков + настольная лампа + Hammershøi mood) 1200×630.
+// Frida cont+4 D3 batch «OG экосистемы» (Andrey «APPROVE ALL 6» verdict via zerkalce 15:40 UTC):
+// Bass-style Path B canon updated — Ремедиос JPG → Bass warm parchment WebP «три переплёта + фонарь + book edges».
 // Cover_kn1.png ещё используется в about.vue + per-book BookPage.vue — не трогать.
-const DEFAULT_OG_IMAGE = `${SITE_URL}/images/og/books-og-hires.jpg`
+const DEFAULT_OG_IMAGE = `${SITE_URL}/images/og-folkup-books.webp?v=1`
 // TIKET-31 PORTAL-UI-LANG-DECOUPLE-1 (Iskra POMETKA-11 S299-11 GO cont+7 S8SCOOP 2026-08-24):
 // Оболочка 4 языка (RU + EN + PT + DE) per Iskra §S299-05 PORTAL-LANG-PARITY-1 canon.
 // i18n files ready: ru.json (212 keys) + en.json (227) + pt.json (212, Zeka Quatro Olhos)
@@ -304,7 +306,7 @@ useHead({
     { property: 'og:site_name', content: () => t('brand.name') },
     { property: 'og:url', content: currentUrl },
     { property: 'og:image', content: DEFAULT_OG_IMAGE },
-    { property: 'og:image:type', content: 'image/jpeg' },
+    { property: 'og:image:type', content: 'image/webp' },
     { property: 'og:image:width', content: '1200' },
     { property: 'og:image:height', content: '630' },
     // Iskra VIER-AUGEN-S305-03 §4-2 + VIZA-PAKET-S305-04 §3 Item 2 fix: og:image:alt per-locale
