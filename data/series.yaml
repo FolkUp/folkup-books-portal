@@ -282,7 +282,7 @@ books:
       ru: preparing
       de: preparing
       en: preparing
-      pt: preparing
+      pt: preview  # 2026-09-01 preparing→preview per Iskra S311-18 §2.3 mandate + Zeka S2PT cont+8-EXT PR #300 880c158 (content/kn7/pt/pro-chto.md LIVE «As Dificuldades do Diálogo» Formato 3 ~180 palavras Zeka canon 4/4 PASS). Route flip: /pt/kn7 stub→wrapper (S1DEFIX cont+7 batch 1). Reader /pt/kn7/read defer post-Kочегар свод + kn7-reader-manifest.mjs cont+10.
     svod_components:
       - S120_master
       - vstavka_perevodchik_S142
