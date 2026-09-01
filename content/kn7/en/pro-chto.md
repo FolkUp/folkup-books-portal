@@ -1,4 +1,4 @@
-<!-- ABOUT THIS BOOK · kn.7 «Difficulties of Dialogue» · v2-PO-KNIGE CANONICAL EN (Lolik S1LOLIK cont+7, translated 2026-08-03).
+<!-- ABOUT THIS BOOK · kn.7 «Lost in Conversation» · v2-PO-KNIGE CANONICAL EN (Lolik S1LOLIK cont+7, translated 2026-08-03; title canonized 2026-09-01 per Andrey VERDIKT S312-04 «Lost in Conversation»; trilogy III = «Common Ground» canon S259).
 File contains Format 3 (~185 words), main format for book page on portal (mirrors RU pattern).
 Additional formats in Lolik EN canonical Drive file: one line (feed/preview), ~57 words (showcase card), ~155 words (back cover if print).
 Iskra S244 VERDICT: PASS (light-review 2026-08-03, §1); §2 Flag #7 «the seventh book of the series» compliant left as-is (category noun, KANON-FLAG P1 compliant); §3 P2 «Have you ever explained» F3 applied α native call.
@@ -10,7 +10,7 @@ License: CC BY-SA 4.0. -->
 
 Have you ever explained something, as clearly as you could, only to have the listener take away something entirely their own? Why is what feels obvious to you like tapping on a table instead of music to someone else? And what actually happens in the moment when one person finally understands another?
 
-"Difficulties of Dialogue" is about the gap between what plays inside me and what reaches you. The book climbs that gap from the bottom up, along four floors: barriers between cultures, between professions, between two people, and, at the end, between a human and a machine, a conversant who was not there before. Along the way an uncomfortable fact surfaces: the most dangerous barriers wear the mask of understanding. Translated accurately, and we think we understood. Agreed, and we think we agreed on the same thing. Answered smoothly, and we think someone is there. Understanding turns out to be not what switches on when words match, but a second, heavy, mistrustful labor that no translator will do for us.
+"Lost in Conversation" is about the gap between what plays inside me and what reaches you. The book climbs that gap from the bottom up, along four floors: barriers between cultures, between professions, between two people, and, at the end, between a human and a machine, a conversant who was not there before. Along the way an uncomfortable fact surfaces: the most dangerous barriers wear the mask of understanding. Translated accurately, and we think we understood. Agreed, and we think we agreed on the same thing. Answered smoothly, and we think someone is there. Understanding turns out to be not what switches on when words match, but a second, heavy, mistrustful labor that no translator will do for us.
 
 This is the seventh book of the series, separate, standing apart. The previous six rested on one assumption: that we are at all capable of hearing each other. The seventh puts that assumption to the test.
 
