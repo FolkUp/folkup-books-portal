@@ -114,20 +114,23 @@ describe('useSeriesData', () => {
     // + kn.4 (Iskra VIZA-PAKET S213 flip 2026-07-23) + kn.5 (Andrey Q5=А + Iskra S216 §2 publish 2026-07-26)
     // + kn.2 (Iskra S236 KONFLIKT VIZ RESOLVED + AUTO-G5 карт-бланш portalization S3SCOOP cont+34 2026-07-30)
     // + kn.6 (Iskra S237 GO REWORK build 2 2026-07-30 · S3SCOOP built + S2SCOOP cont+33 portalization per Andrey verdict C)
-    expect(liveBooks.value).toHaveLength(6)
+    // + kn.7 (Iskra S312-01 §2 DEPLOY-VSYO-GOTOVOE + Andrey carte-blanche cont+1 2026-09-01 · S1DEFIX cont+7 batch 2 reader wire-up parts-based manifest)
+    expect(liveBooks.value).toHaveLength(7)
     const slugs = liveBooks.value.map((b) => b.slug).sort()
-    expect(slugs).toEqual(['kn1', 'kn2', 'kn3', 'kn4', 'kn5', 'kn6'])
+    expect(slugs).toEqual(['kn1', 'kn2', 'kn3', 'kn4', 'kn5', 'kn6', 'kn7'])
   })
 
-  it('upcomingBooks filters correctly — kn.5 promoted к live, upcoming empty', () => {
-    // kn.5 promoted к live 2026-07-26 (Andrey Q5=А + Iskra pair). Upcoming list может опустеть до kn.6 promotion.
+  it('upcomingBooks filters correctly — kn.5+kn.7 promoted к live, upcoming empty', () => {
+    // kn.5 promoted к live 2026-07-26 (Andrey Q5=А + Iskra pair). kn.7 promoted к live 2026-09-01 (Iskra S312-01 §2 + Andrey carte-blanche cont+1).
     expect(upcomingBooks.value).toHaveLength(0)
   })
 
-  it('gatedBooks includes kn7 (quality gate pending — ЩИТ v5 после кн.3 per Иви S151)', () => {
-    expect(gatedBooks.value).toHaveLength(1)
-    expect(gatedBooks.value[0].slug).toBe('kn7')
-    expect(gatedBooks.value[0].status).toBe('svod_zakryt_pre_shit_v5')
+  it('gatedBooks empty (kn7 promoted к live 2026-09-01, quality_gate_pending removed per Iskra S312-01 §2)', () => {
+    // Previous state: kn7 gated pending ЩИТ v5 после кн.3 (Ivin S151).
+    // 2026-09-01 Iskra S312-01 §2 mandate «DEPLOY-VSYO-GOTOVOE» + Andrey carte-blanche cont+1 →
+    // kn7 status svod_zakryt_pre_shit_v5 → live + quality_gate_pending removed + reader wire-up parts-based manifest (S1DEFIX cont+7 batch 2).
+    // gatedBooks list теперь пуст.
+    expect(gatedBooks.value).toHaveLength(0)
   })
 
   it('kn1 post-cutover — canonical_pre_cutover removed', () => {
