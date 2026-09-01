@@ -4,14 +4,26 @@
 **Position:** 7 из 7 (финал трилогии FolkUp — Variant B жёсткий)
 **Author:** Команданте FolkUp
 **License:** CC BY-SA 4.0
-**Status:** СВОД ЗАКРЫТ 2026-07-02 (Ивин S151 verdict Андрея) · ЩИТ v5.0 gates PENDING · release BLOCKED pending кн.3 close-out
+**Status:** ОПУБЛИКОВАНА v1.0 (ЩИТ v5.1 GO S311-18) · 2026-09-01 · Reader LIVE /kn7/read/* через parts-based manifest (S1DEFIX cont+7 batch 2) · EPUB v1.0 pending Kочегар cont+10 свод
 
-## ⚠️ Не публиковать до сигнала Андрея
+## Publishing state (2026-09-01)
 
-Из Ивин S151 mandate:
+Per Iskra S312-01 §2 mandate «DEPLOY-VSYO-GOTOVOE» + Andrey carte-blanche cont+1 «оркестрируй + 7 раз отмерь + комар носа не подточит»:
+- **Читалка LIVE:** `/kn7/read/*` 18 entries (KN7-00 title + KN7-01 intro + KN7-02..14 главы + KN7-06a/06b intermezzo/bridge + KN7-12..14 apparatus + KN7-16 указатель). KN7-15 колофон добавит Kочегар cont+10.
+- **PT preview:** `/pt/kn7` показывает Zeka pro-chto «As Dificuldades do Diálogo» Formato 3 Zeka canon 4/4 PASS (S2PT cont+8-EXT PR #300 880c158)
+- **RU status:** live · translations.ru: live · quality_gate_pending снят
+- **EPUB v1.0:** pending Kочегар cont+10 свод master.md + EPUB build + смоук 8/8
+
+**Iskra §S311 канонические артефакты применены:**
+- S311-17 колофон KN7-15 → Kочегар cont+10 (свод scope)
+- S311-22 5 sluzhebnyj snyat approach A (batch 1 PR #302 4c8f275) + HTML комментарии approach B (при manifest build kn7-reader-manifest.mjs strip)
+- S311-23 KN7-16-UKAZATEL commit as-is (batch 1) + reader entry (batch 2)
+- S311-24 slot L38 KN7-03 «Барьер до слов» replace 3 абзаца portugalskaya rech barjer (batch 1)
+
+Из Ивин S151 mandate (historical, свод корпус — DONE):
 > Собрать канонический корпус кн.7 в git: мастер S120 + вставка уровня 2 «Переводчик, которого никто не звал» (по разметке шва S142) + интерлюд «Занзибар» v10.
->
-> **ВАЖНО: закрытие свода ≠ готовность.** Кн.7 проходит ворота ЩИТ v5.0 (прогон Иви) ПОСЛЕ кн.3 — до этого не публиковать, соцпак не боевой.
+
+**ЩИТ v5.0/v5.1 progression:** S120 corpus assembly (2026-07-02) → ЩИТ v5.0 gates после кн.3 close-out → ЩИТ v5.1 GO S311-18 (2026-08-31 verdict Iskra) → Andrey carte-blanche cont+1 «релиз DEPLOY-VSYO-GOTOVOE» (2026-09-01) → v1.0 SHIPPED.
 
 ## Directory structure
 
