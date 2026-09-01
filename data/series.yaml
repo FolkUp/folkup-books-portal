@@ -118,7 +118,7 @@ books:
     slug_en_temp: city-of-the-sun
     trilogy: svoimi_silami
     status: live
-    version: 1.0.1
+    version: 1.0.3
     launch_date: 2026-07-26
     date_epub_shipped: 2026-07-29  # S3SCOOP cont+30 · pandoc-based build pipeline
     # Iskra S217 VIZA 2026-07-26 (publish canon «давайте её переводить к публикации»):
@@ -213,7 +213,7 @@ books:
     slug_en_temp: by-others-hands
     trilogy: iz_pervyh_ruk
     status: live
-    version: 1.0.1
+    version: 1.0.3
     launch_date: 2026-07-26
     date_epub_shipped: 2026-08-31  # S1KOCHEGAR cont+9 · pandoc rebuild от canon v1.2 8e2ed16 per Iskra VIZA-S311-04 samoispolnimaya
     # v1.0.1 rebuild S1KOCHEGAR cont+9 2026-08-31 per Iskra VIZA S311-04 «canon source = KN5-FULL v1.2 commit vault 8e2ed16, сверь MASTER — совпадает — ship по Option A»:
@@ -225,7 +225,7 @@ books:
     # v1.0 P0 defect (no dedication) → v1.0.1 rebuild canonical (dedication + apparat + colophon + KANON v2 cover .v3 embedded).
     #
     downloads:
-      epub: https://books.folkup.life/kn5/downloads/kn5-chuzhimi-rukami-v1.0.1.epub  # ROLLBACK to v1.0.1 per Iskra P0 S313-07 (v1.0.2 shipped broken pandoc syntax :::×58 {#×12 в ch001; v1.0.3 pending Kочегар input identification)
+      epub: https://books.folkup.life/kn5/downloads/kn5-chuzhimi-rukami-v1.0.3.epub  # v1.0.3 rebuild S1KOCHEGAR cont+12 2026-09-01 per Iskra P0 S313-07 §3: vault master 3 hotfix (L17/L38 «Библиотека FolkUp · Трилогия «Из первых рук»» + L1083 colophon S223 canon «книга серии «Своим умом»» + CRLF→LF) · 9 smoke gates PASS incl new 9th raw markup composite Meta-42 §8 candidate · md5 5847bc67083fbf5f7970c21079296553 · 5.3 MB
     cover_v1: /covers/cover_kn5.svg
     covers:
       ru: /covers/cover_kn5.svg
