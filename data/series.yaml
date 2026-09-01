@@ -287,3 +287,5 @@ books:
       - S120_master
       - vstavka_perevodchik_S142
       - interlude_zanzibar_v10  # Drive 1ryYCFpnS69ZXE8bhhNZShMfxuP0v6Q46 Transit
+    downloads:
+      epub: https://books.folkup.life/kn7/downloads/trudnosti-dialoga-v1.0.epub  # S1KOCHEGAR cont+10 pandoc rebuild от 19 частей per Iskra S311-17 колофон + S311-22 sluzhebnyj strip + S311-23 указатель + S311-24 slot filled + S1DEFIX PR #302 clean input parts/ + Kочегар KNIGA-OTKRYTA-1 second door (full URL per LESSON-S288-2 smoke convention)
