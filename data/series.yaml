@@ -269,7 +269,7 @@ books:
 
   - position: 7
     slug: kn7
-    slug_en_temp: lost-in-conversation
+    slug_en_temp: lost-in-conversation  # canonical per Andrey VERDIKT S312-04 (2026-09-01): «Lost in Conversation» = kn7 EN book title, «Common Ground» = trilogy III name (canon S259). Не temp. Slug canonical. Other 6 books' slug_en_temp остаются temp until Лёлик утвердит (per L2 comment).
     trilogy: obshchiy_yazyk
     status: svod_zakryt_pre_shit_v5  # Variant B UNLOCKED S151 (Андрей сигнал 2026-07-02). Свод закрыт (S120 master + вставка «Переводчик» S142 + Занзибар v10). ЩИТ v5.0 после кн.3 — только тогда публикация. Label «Скоро» via BookCard mapping (cont+28 Иве S170 update).
     cover_v1: /covers/cover_kn7.svg
