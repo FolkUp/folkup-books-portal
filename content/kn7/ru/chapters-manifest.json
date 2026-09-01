@@ -1,0 +1,133 @@
+{
+  "generated": "2026-09-01T06:49:43.314Z",
+  "book": "kn7",
+  "locale": "ru",
+  "entries": [
+    {
+      "slug": "title-page",
+      "title": "Трудности диалога",
+      "description": null,
+      "order": 5,
+      "isApparatus": false
+    },
+    {
+      "slug": "intro",
+      "title": "ВХОД. Рыбка, которой не хватило",
+      "description": null,
+      "order": 10,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-1-1",
+      "title": "Глава 1.1. Слова перевели — мир не поняли",
+      "description": null,
+      "order": 20,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-1-2",
+      "title": "Глава 1.2. Барьер до слов",
+      "description": null,
+      "order": 30,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-2-1",
+      "title": "Глава 2.1. Один язык, разные племена",
+      "description": null,
+      "order": 40,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-2-2",
+      "title": "Глава 2.2. Переводчик, которого никто не звал",
+      "description": null,
+      "order": 50,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-3-1",
+      "title": "Глава 3.1. Согласились",
+      "description": null,
+      "order": 60,
+      "isApparatus": false
+    },
+    {
+      "slug": "intermezzo-zanzibar",
+      "title": "ИНТЕРМЕДИЯ. Шестьдесят километров доверия",
+      "description": null,
+      "order": 65,
+      "isApparatus": false
+    },
+    {
+      "slug": "bridge-lambushka",
+      "title": "МОСТ. Ламбушка",
+      "description": null,
+      "order": 68,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-3-2",
+      "title": "Глава 3.2. Спорят об одном",
+      "description": null,
+      "order": 70,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-3-3",
+      "title": "Глава 3.3. Общий язык как оружие (Бангкок)",
+      "description": null,
+      "order": 80,
+      "isApparatus": false
+    },
+    {
+      "slug": "chapter-3-4",
+      "title": "Глава 3.4. Готовая коробка",
+      "description": null,
+      "order": 90,
+      "isApparatus": false
+    },
+    {
+      "slug": "level-4",
+      "title": "УРОВЕНЬ 4. Дно: человек ↔ машина",
+      "description": null,
+      "order": 100,
+      "isApparatus": false
+    },
+    {
+      "slug": "exit-door",
+      "title": "ВЫХОД. Распахнутая дверь",
+      "description": null,
+      "order": 110,
+      "isApparatus": false
+    },
+    {
+      "slug": "apparatus-level-3",
+      "title": "ПРИЛОЖЕНИЕ. К уровню 3",
+      "description": null,
+      "order": 800,
+      "isApparatus": true
+    },
+    {
+      "slug": "apparatus-level-4",
+      "title": "ПРИЛОЖЕНИЕ. К дну (уровень 4)",
+      "description": null,
+      "order": 810,
+      "isApparatus": true
+    },
+    {
+      "slug": "apparatus-philosophy",
+      "title": "ПРИЛОЖЕНИЕ. Философия диалога: шестеро об одном барьере",
+      "description": null,
+      "order": 820,
+      "isApparatus": true
+    },
+    {
+      "slug": "apparatus-index",
+      "title": "Предметный указатель",
+      "description": null,
+      "order": 910,
+      "isApparatus": true
+    }
+  ]
+}
