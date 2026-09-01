@@ -1,11 +1,11 @@
 {
-  "generated": "2026-09-01T12:17:49.355Z",
+  "generated": "2026-09-01T12:28:55.137Z",
   "book": "kn7",
   "locale": "ru",
   "entries": [
     {
       "slug": "title-page",
-      "title": "FolkUp · Книга 7 · Трилогия «Общий язык»",
+      "title": "Библиотека FolkUp · Трилогия «Общий язык»",
       "description": null,
       "order": 5,
       "isApparatus": false
@@ -120,6 +120,13 @@
       "title": "ПРИЛОЖЕНИЕ. Философия диалога: шестеро об одном барьере",
       "description": null,
       "order": 820,
+      "isApparatus": true
+    },
+    {
+      "slug": "colophon",
+      "title": "Выходные данные",
+      "description": null,
+      "order": 900,
       "isApparatus": true
     },
     {
