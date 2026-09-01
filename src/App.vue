@@ -86,7 +86,7 @@ const ORGANIZATION_JSONLD = computed(() => ({
   sameAs: [
     'https://folkup.app',
     'https://books.folkup.life/kn1',
-    'https://t.me/folkupbooks',
+    'https://t.me/JohnDoeWasHere',
     'https://github.com/FolkUp',
   ],
 }))
