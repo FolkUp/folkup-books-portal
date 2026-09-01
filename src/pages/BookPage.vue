@@ -219,11 +219,17 @@ const SITE_URL = 'https://books.folkup.life'
 // + trilogy «By Our Own Means») + kn7 ×4 v4 (RU/EN/PT/DE series+trilogy 2-tier).
 // kn2-6 не трогать (retain .v3 per Iskra §3 explicit). Naming per locale:
 // RU baseline (no suffix), EN/PT/DE = `_<lang>` suffix.
+//
+// Iskra S313-08 (2026-09-01 v4.1 typography fix Frida S1FRIDA cont+5):
+// Canon S271 §1 idiomы серии (виза Andrey 11.08): PT «Pela Própria Cabeça» (было
+// «Por Própria Cabeça»), DE «Selbstständig denken» (было «Mit eigenem Kopf»).
+// kn7 PT + DE → .v4.1 suffix (cache-bust + canonical idiom). RU + EN — .v4 без изменений.
 const bookOgImage = computed(() => {
   const lang = locale.value as Locale
   const langSuffix = lang === 'ru' ? '' : `_${lang}`
+  const isV41 = props.slug === 'kn7' && (lang === 'pt' || lang === 'de')
   const isV4 = props.slug === 'kn7' || (props.slug === 'kn1' && lang === 'en')
-  const versionSuffix = isV4 ? '.v4' : '.v3'
+  const versionSuffix = isV41 ? '.v4.1' : isV4 ? '.v4' : '.v3'
   return `${SITE_URL}/covers/cover_${props.slug}${langSuffix}${versionSuffix}.png`
 })
 
