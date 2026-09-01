@@ -42,6 +42,7 @@
     "formats_stale_heading": "Форматы на реставрации.",
     "formats_stale_aria": "Пометка о форматах на реставрации",
     "formats_stale_body": "Издание v{version} · обновлено {date}",
+    "book_og_image_alt": "Обложка книги «{title}» — Библиотека FolkUp",
     "pro_chto_heading": "Про что книга",
     "pro_chto_aria": "Про что книга «{title}»",
     "translations_heading": "Языковые версии",

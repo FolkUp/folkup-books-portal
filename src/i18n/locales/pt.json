@@ -43,6 +43,7 @@
     "formats_stale_heading": "Formatos em restauro.",
     "formats_stale_aria": "Nota sobre formatos em restauro",
     "formats_stale_body": "Edição v{version} · atualizada em {date}",
+    "book_og_image_alt": "Capa do livro «{title}» — Biblioteca FolkUp",
     "pro_chto_heading": "Sobre este livro",
     "pro_chto_aria": "Sobre o livro «{title}»",
     "translations_heading": "Versões linguísticas",

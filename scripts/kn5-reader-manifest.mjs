@@ -73,9 +73,19 @@ function stripLeadingH1(md) {
   return md.replace(/^# [^\n]+\n+/, '')
 }
 
-/** Render markdown body к HTML via marked (sync). Strips leading H1. */
+/**
+ * Strip pandoc header attributes {#id .class} from end of ATX headings.
+ * Per Iskra S312-06 §3 mandate: prevent pandoc syntax from reaching reader HTML.
+ * Regex matches `#{1,6} <text> {#anchor .class ...}` at end of line, removing только `{...}` suffix.
+ * Example: `# Чужими руками {#chuzhimi-rukami .cover-title}` → `# Чужими руками`
+ */
+function stripPandocHeaderAttrs(md) {
+  return md.replace(/^(#{1,6}\s+.+?)\s*\{[#.][^}]*\}\s*$/gm, '$1')
+}
+
+/** Render markdown body к HTML via marked (sync). Strips HTML comments, leading H1, pandoc attrs. */
 function renderBody(rawMarkdown) {
-  return marked.parse(stripLeadingH1(rawMarkdown))
+  return marked.parse(stripPandocHeaderAttrs(stripLeadingH1(rawMarkdown)))
 }
 
 /**
