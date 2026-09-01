@@ -185,8 +185,12 @@ function classifyHeading(title, index) {
   if (/^Предисловие/i.test(text)) return { slug: 'preface', isApparatus: false, order: 30 }
   if (/^Колофон/i.test(text)) return { slug: 'colophon', isApparatus: true, order: 900 }
 
+  // Body sections (интермедии + главы + Кода) — вес по позиции в master.md
+  // per Iskra S312-11 §3: порядок тела = порядок рукописи, не сортировка по классу.
+  // Front matter fixed 5-30, colophon fixed 900; body в [100..899].
+
   // Кода
-  if (/^Кода/i.test(text)) return { slug: 'coda', isApparatus: false, order: 850 }
+  if (/^Кода/i.test(text)) return { slug: 'coda', isApparatus: false, order: 100 + index }
 
   // Интермедии
   const intermezzoMatch = text.match(/^Интермедия\.\s*(.*)$/i)
@@ -211,7 +215,7 @@ function classifyHeading(title, index) {
     return {
       slug: `chapter-${n}-${toSlug(name)}`,
       isApparatus: false,
-      order: 200 + n * 10,
+      order: 100 + index,
     }
   }
 
