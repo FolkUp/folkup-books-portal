@@ -298,7 +298,8 @@ export const routes: RouteRecordRaw[] = [
   { path: '/en/kn4', name: 'kn4-en', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn4', lang: 'en' } },
   { path: '/en/kn5', name: 'kn5-en', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn5', lang: 'en' } },
   { path: '/en/kn6', name: 'kn6-en', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn6', lang: 'en' } },
-  { path: '/en/kn7', name: 'kn7-en', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn7', lang: 'en' } },
+  // /en/kn7 flipped stub→wrapper (Лёлик S1LOLIK cont+11 2026-09-01) per Andrey mandate «закрыть tech debt мешающие deploy готового» + Iskra S313-05 SVORACHIVANIE «deploy готового» + S313-04 EN covers PASS + Andrey Q4 5/5 ACCEPT canon locked. Preview state per series.yaml translations.en='preview' (PR #323) — inline pro-chto reading content/kn7/en/pro-chto.md «Lost in Conversation» (мой PR #306). Mirror /pt/kn7 flip (Iskra S311-18 §2.3 + Zeka PR #300). Reader wire-up defers post-EN chapters translation.
+  { path: '/en/kn7', name: 'kn7-en', component: () => import('../pages/kn7.vue'), meta: { pageType: 'book', bookSlug: 'kn7', lang: 'en' } },
 
   // Book pages PT stubs (kn1-7) — /pt/kn1 flipped stub→wrapper per Iskra VERDIKT-S307-03 §1 Q4 (S1DEFIX cont+2 2026-08-31) + Andrey S306 «флип без вето». Preview state per series.yaml translations.pt='preview' — reader `/kn1/pt/read/*` LIVE 4 chapters (Zeka batch 8 waves 1-4), downloads pending. Pattern mirrors /en/kn1 flip PR #255 (Iskra VIZA-VERDIKT-S304-01 §1).
   { path: '/pt/kn1', name: 'kn1-pt', component: () => import('../pages/kn1.vue'), meta: { pageType: 'book', bookSlug: 'kn1', lang: 'pt' } },
