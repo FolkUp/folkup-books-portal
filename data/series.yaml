@@ -281,7 +281,7 @@ books:
     translations:
       ru: live  # 2026-09-01 preparing → live per Iskra S312-01 §2 mandate. Reader /kn7/read/* LIVE (18 частей + указатель) через kn7-reader-manifest.mjs parts-based manifest (S1DEFIX cont+7 batch 2). Kочегар свод master.md + KN7-15 колофон + EPUB v1.0 второй коммит cont+10 (DEPLOY-OVER-HOLE-1).
       de: preparing
-      en: preparing
+      en: preview  # 2026-09-01 preparing→preview per Andrey mandate «закрыть tech debt мешающие deploy готового» cont+11 + Iskra S313-05 SVORACHIVANIE «deploy готового» + S313-04 EN covers PASS без условия + Andrey Q4 5/5 ACCEPT canon locked (S1UMBR cont+11). Mirror PT precedent (line 285): pro-chto.md LIVE «Lost in Conversation» через мой PR #306 8b82421 cont+10 (Iskra S312-08 §0 «коллизия закрыта верно» retro-виза) + cover v4 Frida PR #317 6dc8b12 canon S214 «серия ≠ трилогия». Reader /kn7/en/read defer post-EN chapters translation.
       pt: preview  # 2026-09-01 preparing→preview per Iskra S311-18 §2.3 mandate + Zeka S2PT cont+8-EXT PR #300 880c158 (content/kn7/pt/pro-chto.md LIVE «As Dificuldades do Diálogo» Formato 3 ~180 palavras Zeka canon 4/4 PASS). Route flip: /pt/kn7 stub→wrapper (S1DEFIX cont+7 batch 1). Reader /pt/kn7/read defer post-Bolik/Zeka PT chapters translation.
     svod_components:
       - S120_master
