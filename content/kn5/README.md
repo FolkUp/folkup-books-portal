@@ -1,7 +1,7 @@
 <!-- precommit:allow-ai-mentions -->
 # кн.5 «Чужими руками»
 
-**Position:** 5 из 7 (серия FolkUp) · книга 2 трилогии «Из первых рук»
+**Position:** 5 из 7 (серия «Своим умом» FolkUp) · книга трилогии «Из первых рук»
 **Author:** Команданте FolkUp (литературный псевдоним; юр. правообладатель — Андрей Клеменчёнок, ORCID 0009-0008-2953-8601, per КАНОН ПОДПИСИ v2.0 Iskra S213)
 **License:** CC BY-SA 4.0
 **Status:** RU-эталон ЩИТ v5.1 PASS + P5-1+2 patches applied · publish-ready
