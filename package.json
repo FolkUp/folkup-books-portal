@@ -48,11 +48,11 @@
     "js-yaml": "^4.1.0",
     "prettier": "^3.4.0",
     "style-dictionary": "^4.3.0",
-    "typescript": "^5.7.0",
+    "typescript": "^7.0.2",
     "vite": "^6.0.0",
     "vite-ssg": "^28.3.0",
     "vitest": "^4.1.7",
-    "vue-tsc": "^2.2.0"
+    "vue-tsc": "^3.3.11"
   },
   "engines": {
     "node": ">=22.0.0"
