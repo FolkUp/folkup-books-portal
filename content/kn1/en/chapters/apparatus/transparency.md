@@ -24,7 +24,7 @@ AI tools were used for grammar checking, stylistic editing, and text formatting.
 Automated systems were used for generating web code, optimizing site performance, and ensuring accessibility.
 
 **Translation from Russian original**
-This English edition is a translation from the Russian master text. Machine translation (DeepL) was used as an initial draft, followed by human translator refinement (Lolik, S1LOLIK) and native-English editorial review (Editorial Team, S1TREN). Full translator disclosure in compliance with EU AI Act Article 50(4).
+This English edition is a translation from the Russian master text. Machine translation (DeepL) was used as an initial draft, followed by human translator refinement (Lolik) and native-English editorial review (Editorial Team). Full translator disclosure in compliance with EU AI Act Article 50(4).
 
 **Illustrations**
 Book illustrations were generated using an AI tool (Replicate Flux 1.1 Pro / Flux 2) under the art direction of Frida (FolkUp illustrator). Artistic responsibility, curation, and the final decision on each illustration remain with the FolkUp editorial team. *(Disclosure complies with the requirements of Regulation EU 2024/1689, Article 50, paragraph 4 — "EU Artificial Intelligence Act".)*
