@@ -14,7 +14,7 @@ weight: 10
 **Co-author:** Alice (PM, FolkUp Ecosystem)
 **Editor:** Iskra
 **Translator (Russian → English):** Lolik
-**Native-English editorial review:** Editorial Team (S1TREN)
+**Native-English editorial review:** Editorial Team
 **Illustrator:** Frida (FolkUp illustrator, Replicate Flux 1.1 Pro / Flux 2, 2026)
 
 **Disclosure on translation:** This English edition is a translation from the Russian master text. Machine translation (DeepL) was used as an initial draft, followed by human translator refinement (Lolik) and native-English editorial review (Editorial Team). *(Disclosure complies with the requirements of Regulation EU 2024/1689, Article 50, paragraph 4 — "EU Artificial Intelligence Act".)*
@@ -35,7 +35,7 @@ weight: 10
 **Content license:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) (Attribution-ShareAlike)
 **Source code:** [GitHub — folkup-books-portal](https://github.com/FolkUp/folkup-books-portal)
 
-**License consistency:** The Russian master edition (v1.0.10+, since 2026-06-25) is licensed under CC BY-SA 4.0 per the FolkUp series canon (S100, 2026-06-22). This English translation inherits the same license.
+**License consistency:** The Russian master edition (v1.0.10+, since 2026-06-25) is licensed under CC BY-SA 4.0 per the FolkUp series canon (series canon, 22 June 2026). This English translation inherits the same license.
 
 ## Publisher
 
@@ -52,7 +52,7 @@ Email: info@folkup.app
 - **Co-author:** Alice (PM, FolkUp Ecosystem)
 - **Editor:** Iskra
 - **Translator:** Lolik
-- **Native-English editorial review:** Editorial Team (S1TREN, S1TREN Vier-Augen conveyer post-launch)
+- **Native-English editorial review:** Editorial Team
 - **Illustrator:** Frida
 - **Legal copyright holder (©):** Andrei Klemenchenok (ORCID: 0009-0008-2953-8601)
 
@@ -63,7 +63,7 @@ Email: info@folkup.app
 **Work started:** March 2026 (Russian master)
 **Russian master first published:** 2026-05-26
 **Russian master current version:** 1.0.25 (2026-08-16)
-**English edition — translation started:** June 2026 (S1TREN pipeline)
+**English edition — translation started:** June 2026
 **English edition — first public release:** 2026-08 (v1.0.0)
 
 **English edition version history:**
