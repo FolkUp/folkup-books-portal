@@ -252,9 +252,9 @@ books:
     # v1.0 EPUB 6.9 MB (SHA-256 95417b114d8350e6a6f07245f30fd78c0536cd6b28e8677c3a64f1c9247dc2c8).
     # LIVE кн.6 — с артом обложки Фриды K1 «Картотека» (vault/books/kn6-package/covers/kn6-cover-final.png).
     downloads:
-      epub: https://books.folkup.life/kn6/downloads/svoimi-glazami-v1.1c.epub  # v1.1c FINAL S1KOCHEGAR cont+13 2026-09-06 per PLAN-KARTINKI Iskra S313-06 §1 + editorial fix per Andrey report «техническая инфо пробралась в текст». Iterations: v1.1 broken (webp inline не supported у Andrey reader hypothesis) → v1.1b conservative rebuild (webp→jpg, no --split-level, Andrey confirmed opens fine) → v1.1c editorial fix (RAW HTML img без figure/figcaption, «Плашка Фриды: X» captions убраны из тела, полная атрибуция ТОЛЬКО в аппарате «Иллюстрации» per KANON-S214 §3). 20 картинок present (13 плашек Фриды + 7 первоисточников PD) в теле как mood illustrations, alt text только для accessibility. Гейты структуры 10-13 PASS: xhtml=15 · nav=63 русский · size 4.37 MB · epubcheck 3.3 clean. Content gates: 0 «Плашка Фриды» в теле · 0 figure/figcaption в теле · 20 img · 10 «Wikimedia Commons» ТОЛЬКО в аппарате «Иллюстрации». md5 e3c7f1109132229720f20afef7b807c4.
+      epub: https://books.folkup.life/kn6/downloads/svoimi-glazami-v1.1e.epub  # v1.1e FINAL S1KOCHEGAR cont+13 2026-09-06 per KANON EPUB-TRAKT-1 (S315-04 + S315-06 refinement). Iteration chain: v1.0 (07.30) → v1.1 (webp inline) → v1.1b (webp→jpg) → v1.1c (no captions in body) → v1.1d (K1 cover + nav linear=no) → v1.1e (nav itemref REMOVED from spine per Andrey S315-06 «читалки игнорируют linear=no»). Canon compliance: (1) cover K1 «Картотека» Фриды vault md5 854af8b0... ✓, (2) nav.xhtml WITHOUT itemref в spine (grep idref=nav в opf = 0) ✓, (3) JPG only (0 webp) ✓, (4) RAW HTML img body без figure/figcaption (0 captions) ✓, (5) Аппарат «Иллюстрации» + colophon S223 ✓. Гейты 10-13 PASS + landmarks TOC removed (epubcheck RSC-011 fix). md5 eabd885973018db85ed7014e27471b67.
     format_stale_note: |
-      Издание v1.1c · обновлено 06.09.2026 · +20 иллюстраций
+      Издание v1.1e · обновлено 06.09.2026 · +20 иллюстраций
     cover_v1: /covers/cover_kn6.svg
     covers:
       ru: /covers/cover_kn6.svg
