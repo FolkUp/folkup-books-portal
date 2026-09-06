@@ -6,7 +6,7 @@ import { useSeriesData } from '../composables/useSeriesData'
 import { useBookSeriesSchema } from '../composables/useSchemaOrg'
 import BookCard from '../components/BookCard.vue'
 
-const { t, te } = useI18n()
+const { t, te, locale } = useI18n()
 const route = useRoute()
 const { series, books, booksByTrilogy } = useSeriesData()
 
@@ -43,7 +43,9 @@ useHead({
 })
 
 // BookSeries JSON-LD Schema.org (Дьюи competitive gap fill)
-useBookSeriesSchema(series.value, books.value)
+// Iskra POMETKA-S315-10 §3.3 T-315-08 (Лёлик S1LOLIK cont+15): pass locale для author name
+// locale-aware в JSON-LD (Cyrillic на RU / Latin на EN/PT/DE per canonical pseudonym mechanism).
+useBookSeriesSchema(series.value, books.value, locale.value)
 
 // Iskra §3 VITRINNYY-PAKET S214: helper для i18n группы (с fallback на series.yaml).
 function trilogyName(key: string): string {

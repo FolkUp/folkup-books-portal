@@ -371,6 +371,27 @@ export const routes: RouteRecordRaw[] = [
   { path: '/kn7/pt', redirect: '/pt/kn7' },
   { path: '/kn7/de', redirect: '/de/kn7' },
 
+  // ═══════════════════════════════════════════════════════════════════════════════
+  // T-315-08 P0 L2 302 redirects (Iskra POMETKA-S315-10 §3.2 + REESTR §2 · S1LOLIK cont+15).
+  //
+  // Post-flip series.yaml kn7.translations.en/pt = preview → preparing (Iskra §3.1) —
+  // reader routes для non-RU kn7 не существуют (появятся когда переводы chapters shipped).
+  // Внешние hyperlinks / индексы / старые ссылки должны быть подхвачены → 302 на book stub.
+  //
+  // Wildcard `:pathMatch(.*)*` catches toc (`/en/kn7/read`) И глава (`/en/kn7/read/preface`) —
+  // одна запись покрывает оба варианта per language pair. RU kn7 reader (/kn7/read/*) НЕ трогаем —
+  // production LIVE (18 частей + указатель).
+  //
+  // Gates: `curl -I /kn7/en/read` → 302 · `curl -I /en/kn7/read/foo` → 302 → /en/kn7 200
+  // ═══════════════════════════════════════════════════════════════════════════════
+
+  { path: '/kn7/en/read/:pathMatch(.*)*', redirect: '/en/kn7' },
+  { path: '/kn7/pt/read/:pathMatch(.*)*', redirect: '/pt/kn7' },
+  { path: '/kn7/de/read/:pathMatch(.*)*', redirect: '/de/kn7' },
+  { path: '/en/kn7/read/:pathMatch(.*)*', redirect: '/en/kn7' },
+  { path: '/pt/kn7/read/:pathMatch(.*)*', redirect: '/pt/kn7' },
+  { path: '/de/kn7/read/:pathMatch(.*)*', redirect: '/de/kn7' },
+
   // Legal pages PT — real components (Zeka native PT-EU refined S299-20 PASS + Iskra S300-01+S301-11
   // Vier-Augen corrections applied 2026-08-24 via PR #239 PT-HOME + PR #240 PT-LEGAL; routes stubs
   // → real components per DEFAULT-GO canon Iskra S299-14 §1 + Andrey «деплоим постоянно всё что исправляем»).

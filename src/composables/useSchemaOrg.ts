@@ -8,7 +8,15 @@ import type { Book, SeriesMeta } from './useSeriesData'
 
 const BASE_URL = 'https://books.folkup.life'
 
-export function useBookSeriesSchema(series: SeriesMeta, books: Book[]) {
+// Iskra POMETKA-S315-10 §3.3 T-315-08 (Лёлик S1LOLIK cont+15 2026-09-06):
+// author name locale-aware в JSON-LD — RU остаётся «Команданте FolkUp» (Cyrillic canonical
+// per S178b pseudonym), non-RU локали → «Comandante FolkUp» (Latin). Matches visible
+// template pattern BookPage.vue:536 (t('portal.author_display')) + i18n keys en/pt/de.json:42.
+// Iskra strict gate `grep -c 'Команданте' <html /en/*> = 0` — JSON-LD Person.name часть HTML.
+const authorNameForLocale = (locale: string, canonical: string): string =>
+  locale === 'ru' ? canonical : 'Comandante FolkUp'
+
+export function useBookSeriesSchema(series: SeriesMeta, books: Book[], currentLocale: string = 'ru') {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BookSeries',
@@ -18,7 +26,7 @@ export function useBookSeriesSchema(series: SeriesMeta, books: Book[]) {
     author: {
       '@type': 'Person',
       '@id': `${BASE_URL}/#author`,
-      name: series.author,
+      name: authorNameForLocale(currentLocale, series.author),
     },
     hasPart: books.map((b) => ({
       '@type': 'Book',
@@ -77,7 +85,7 @@ export function useBookSchema(
     author: {
       '@type': 'Person',
       '@id': `${BASE_URL}/#author`,
-      name: series.author,
+      name: authorNameForLocale(currentLocale, series.author),
     },
     inLanguage: currentLocale,
     license: series.license_url,

@@ -69,3 +69,37 @@
 # Vraga catch cont+7 CRIT-1 pattern: catch-all rules блокируют pre-rendered trailing-slash routes.
 # Fallback для non-existent /{lang}/{path} routes: CF Pages default 404.html serving
 # (Vue router SPA fallback НЕ настроен — SSG pre-renders defined routes only).
+
+# ─────────────────────────────────────────────────────────────────
+# KN7-EN-PT-DE-READER-302-STUB (T-315-08 P0 · S1LOLIK cont+15 2026-09-06 · Iskra POMETKA-S315-10 §3.2)
+# Post-flip series.yaml kn7.translations.en/pt = preview → preparing (Iskra §3.1) — reader routes
+# для non-RU kn7 не существуют (появятся когда переводы chapters shipped после kn1 flagman closure).
+# CF Pages 302 catches старые hyperlinks / индексы / внешние ссылки → book stub `/xx/kn7`
+# с honest «Coming soon» / «in preparation» state per BookPage.vue rendering logic (preparing status).
+#
+# 302 (temporary) not 301 (permanent) — reader routes могут появиться когда EN/PT chapters translated
+# и Iskra revert kn7 EN/PT в очередь. 302 preserves SEO для future canonical reader URLs.
+#
+# Wildcard `*` splat catches toc (/xx/kn7/read) + chapter (/xx/kn7/read/preface) одной строкой
+# per CF Pages splat convention (https://developers.cloudflare.com/pages/configuration/redirects/).
+#
+# Companion Vue Router redirects (src/router/routes.ts) — client-side SPA navigation coverage
+# для internal `router.push('/kn7/en/read')` от deep-link кликов внутри SPA. Оба mechanisms
+# работают комплементарно (CF Pages для внешнего HTTP, Vue Router для внутреннего JS routing).
+#
+# Gates (Iskra §3 приёмка Печкина): `curl -I /kn7/en/read` → 302 → /en/kn7 200 · grep «Read online»
+# на /en/kn7 = 0 · регрессия /en/kn1 «Read online» present + /kn1/en/read 200 · «Команданте» на
+# /en/kn7 HTML = 0 (© line т.к. использует t('portal.author_display') = Latin per S315-10 §3.3).
+# ─────────────────────────────────────────────────────────────────
+/kn7/en/read       /en/kn7   302
+/kn7/pt/read       /pt/kn7   302
+/kn7/de/read       /de/kn7   302
+/kn7/en/read/*     /en/kn7   302
+/kn7/pt/read/*     /pt/kn7   302
+/kn7/de/read/*     /de/kn7   302
+/en/kn7/read       /en/kn7   302
+/pt/kn7/read       /pt/kn7   302
+/de/kn7/read       /de/kn7   302
+/en/kn7/read/*     /en/kn7   302
+/pt/kn7/read/*     /pt/kn7   302
+/de/kn7/read/*     /de/kn7   302
