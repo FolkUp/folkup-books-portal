@@ -42,21 +42,23 @@ A abordagem de investigação, os princípios de verificação e os padrões aca
 
 ## Controlo de Qualidade
 
-### Supervisão humana
-Todo o conteúdo passa por uma revisão obrigatória de um editor humano.
+**Humano.** Os enredos, as direções do pensamento, a estrutura do livro, os paralelos literários e todas as conclusões analíticas são obra do autor — não passam por IA. O autor lê integral e pessoalmente cada livro e cada texto publicado, e visa cada versão antes de sair. Onde a edição tem um leitor vivo — falante nativo (a edição alemã tem um leitor em Berlim) — as suas anotações entram nas revisões.
 
-### Verificação independente
-Os factos são verificados através de fontes independentes, sem intervenção de IA.
+**Assistentes de IA.** A edição, a verificação de factos junto às fontes, a revisão adversarial, os trabalhos técnicos e os rascunhos de tradução são executados por assistentes de IA do sistema editorial ЩИТ («Escudo»), nomeados no colofão. Cada correção deles é uma proposta ao autor; a decisão final e a responsabilidade permanecem no humano.
 
-### Revisão adversarial
-A análise crítica do conteúdo é realizada por revisores humanos.
+**Verificabilidade.** A fonte de cada facto está listada no aparato; o original russo e as traduções estão publicados lado a lado sob a licença CC BY-SA 4.0 — qualquer passagem pode ser conferida, contestada, e o leitor pode propor a sua própria redação.
+
+## Traduções
+
+As edições inglesa, portuguesa e alemã do livro são criadas pelo mesmo processo: o rascunho de tradução é preparado por um assistente de IA-tradutor (Lolik, Zeka, Bolik), o editor da série confere a tradução com o original russo, o autor visa a edição, e onde existe um leitor vivo — falante nativo — as suas observações entram nas revisões. Quem traduziu e quem verificou está indicado no colofão de cada edição.
 
 ## Informação Técnica
 
 **Data de implementação da política:** 2026-04-27
+**Data da última atualização:** 2026-09-06 — secção «Controlo de Qualidade» reescrita: papéis do humano e dos assistentes de IA definidos explicitamente; adicionada secção «Traduções»
 **Sistemas aplicáveis:** todos os utilizados na criação desta edição
 **Conformidade:** artigo 50.º do Regulamento sobre IA da UE, incluindo o n.º 4 (divulgação de tradução)
-**Contacto:** info@folkup.app
+**Contacto:** editor@folkup.app
 
 ## Atualizações da Política
 
