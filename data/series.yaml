@@ -252,9 +252,9 @@ books:
     # v1.0 EPUB 6.9 MB (SHA-256 95417b114d8350e6a6f07245f30fd78c0536cd6b28e8677c3a64f1c9247dc2c8).
     # LIVE кн.6 — с артом обложки Фриды K1 «Картотека» (vault/books/kn6-package/covers/kn6-cover-final.png).
     downloads:
-      epub: https://books.folkup.life/kn6/downloads/svoimi-glazami-v1.1.epub  # v1.1 rebuild S1KOCHEGAR cont+13 2026-09-06 per PLAN-KARTINKI Iskra S313-06 §1: +13 плашек Фриды (act-openers) + 7 первоисточников PD (в теле глав) + аппарат «Иллюстрации» с полной атрибуцией + colophon S223 «книга серии «Своим умом»». Гейты структуры 10-13 (S313-13 §3) PASS: xhtml=15 · nav=63 русский без English placeholders · size 5.55 MB (20 картинок в full репо resolution) · content gates 5/5 (::: {# &lt;figure «Книга 2» = 0 · 20 img) · md5 5a69028113f69619cee942e56c5e02ac.
+      epub: https://books.folkup.life/kn6/downloads/svoimi-glazami-v1.0.epub  # ROLLBACK v1.1 → v1.0 per Andrey report cont+13 «скачивается битый файл, не открыть». v1.1 epubcheck 3.3 clean + XML parse clean + ZIP OK + structure identical к v1.0 — но у Andrey's reader не открывается. Восстановлен v1.0 (7.0 MB, md5 42e19d05d5624b16d0b4fb857f7c3cd3, was LIVE 30.07-06.09). Расследование v1.1 продолжается автономно. v1.1 файл остаётся в репо для сравнения — не removed. Illustrations layer (13 плашек + 7 первоисточников + Иллюстрации + S223) вернём с новым build.
     format_stale_note: |
-      Издание v1.1 · обновлено 06.09.2026 · +20 иллюстраций
+      Издание v1.0.0 · обновлено 30.07.2026
     cover_v1: /covers/cover_kn6.svg
     covers:
       ru: /covers/cover_kn6.svg
