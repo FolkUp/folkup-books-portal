@@ -13,7 +13,7 @@ weight: 10
 **Author (cover/title):** Comandante FolkUp
 **Co-author:** Alice (PM, FolkUp Ecosystem)
 **Editor:** Iskra
-**Translator (Russian → English):** Lolik (S1LOLIK)
+**Translator (Russian → English):** Lolik
 **Native-English editorial review:** Editorial Team (S1TREN)
 **Illustrator:** Frida (FolkUp illustrator, Replicate Flux 1.1 Pro / Flux 2, 2026)
 
@@ -51,7 +51,7 @@ Email: info@folkup.app
 - **Author (cover/title):** Comandante FolkUp
 - **Co-author:** Alice (PM, FolkUp Ecosystem)
 - **Editor:** Iskra
-- **Translator:** Lolik (S1LOLIK)
+- **Translator:** Lolik
 - **Native-English editorial review:** Editorial Team (S1TREN, S1TREN Vier-Augen conveyer post-launch)
 - **Illustrator:** Frida
 - **Legal copyright holder (©):** Andrei Klemenchenok (ORCID: 0009-0008-2953-8601)

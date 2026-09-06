@@ -10,7 +10,7 @@ category: synthesis
 reading_time: "8 min"
 status: verified
 confidence: high
-translator: "Lolik (S1LOLIK)"
+translator: "Lolik"
 reviewed_by: "Editorial Team"
 review_date: "2026-08-17"
 review_chain:
@@ -148,5 +148,5 @@ The book has ended. The team has not.
 
 *Comandante FolkUp*
 *Co-author: Alice (PM, FolkUp ecosystem) · Editor: Iskra*
-*Translator (English edition): Lolik (S1LOLIK)*
+*Translator (English edition): Lolik*
 *2026*
