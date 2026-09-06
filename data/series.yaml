@@ -225,7 +225,7 @@ books:
     # v1.0 P0 defect (no dedication) → v1.0.1 rebuild canonical (dedication + apparat + colophon + KANON v2 cover .v3 embedded).
     #
     downloads:
-      epub: https://books.folkup.life/kn5/downloads/kn5-chuzhimi-rukami-v1.0.3.epub  # v1.0.3 rebuild S1KOCHEGAR cont+12 2026-09-01 per Iskra P0 S313-07 §3: vault master 3 hotfix (L17/L38 «Библиотека FolkUp · Трилогия «Из первых рук»» + L1083 colophon S223 canon «книга серии «Своим умом»» + CRLF→LF) · 9 smoke gates PASS incl new 9th raw markup composite Meta-42 §8 candidate · md5 5847bc67083fbf5f7970c21079296553 · 5.3 MB
+      epub: https://books.folkup.life/kn5/downloads/kn5-chuzhimi-rukami-v1.0.1.epub  # ROLLBACK v1.0.3 → v1.0.1 per Iskra P0 S313-13: v1.0.3 структурно сломан (3 xhtml, nav 4 пункта «Title Page/Cover/TOC» — глав нет). v1.0.1 = 21 xhtml, 90 nav, 6.23 MB, md5 9a437d4aedd8ddb362135bb0d79b2857. Заморозка kn5 EPUB на v1.0.1 до конца спринта. Гейты структуры 10-13 добавлены к смоуку.
     cover_v1: /covers/cover_kn5.svg
     covers:
       ru: /covers/cover_kn5.svg
