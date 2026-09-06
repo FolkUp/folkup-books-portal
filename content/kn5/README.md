@@ -20,9 +20,10 @@
 
 ## Illustrations
 
-- 9 живых иллюстраций Frida в `vault/books/kn5-package/assets/`:
-  - ill-01 palimpsest / ill-02 scriptorium / ill-04 bebelplatz / ill-05 jikji / ill-06 press / ill-07 wolfe / ill-08 sacre / ill-11 platform-hires / ill-12 frontispiece
-- 4 slot rejected en bloc per Frida brief 2026-06-12: ill-03 / ill-09 / ill-10 / ill-13 — на витрине показывать «ЭКСПОНАТ НА РЕСТАВРАЦИИ» stubs (pending assembly)
+- 12 живых иллюстраций Frida (обновлено cont+7 2026-09-06 per Iskra S314-13 §3 apparatus fix + Andrey S138):
+  - `vault/books/kn5-package/assets/`: ill-01 palimpsest / ill-02 scriptorium / ill-04 bebelplatz / ill-05 jikji / ill-06 press / ill-07 wolfe / ill-08 sacre / ill-12 frontispiece
+  - `public/images/kn5-chapters/` (shipped cont+6 PR #330 8c4d52b + wired cont+7 PR #336 e416584): ill-09 critic / ill-10 hang-plan / ill-11 spectrogram (replaces «Пирамида тишины» rejected) / ill-13 symbols
+- 1 slot остаётся сознательным изъятием per Frida brief 2026-06-12: ill-03 — на витрине показывать «ЭКСПОНАТ НА РЕСТАВРАЦИИ» stub (single remaining, чтение продолжается пропуском)
 - Cover: Ivi SVG (`public/covers/cover_kn5.svg`)
 
 ## Publish pipeline (Iskra RELIZ S199)
