@@ -149,27 +149,29 @@ yaml_blocks_stripped = content.count('```yaml')
 if yaml_blocks_stripped > 0:
     print(f'  [OK] v1.1f Layer 3 Gate 6 preprocess: {yaml_blocks_stripped} ```yaml fenced blocks stripped from body')
 
-# v1.1g Layer 4 Iskra DOPOLNENIE-S317-03a §1 + POMETKA-S317-06 canon: strip inline [СЛОТ k*-ill-*: ...]
-# markers per Iskra formal regex «\[СЛОТ\s+k[0-9]+-ill-[0-9]+:[^\]]*\]» DOTALL (Печкин cont5-03 §1
-# verbatim 7 slots in ch003/ch004/ch006/ch007 + Andrey screenshot S317-03a). Absatz целиком удаляется,
-# соседние не склеиваются (Iskra §1 «многострочный, DOTALL — слот может переноситься»).
+# v1.1g Layer 4 Iskra DOPOLNENIE-S317-03a §1 + POMETKA-S317-06 canon: strip inline [СЛОТ <any-id>: ...]
+# markers per Iskra formal regex — WIDENED per Vraga cont+16 catch (2026-09-07 SEAL hostile review):
+# Source SVOD contains BOTH conventions:
+#   - Canonical: `[СЛОТ k6-ill-01: ...]` (7 markers in k6-ill-NN format per KATALOG-KiberGonzo scheme)
+#   - Legacy: `[СЛОТ ill-k6-III-a: ...]` (2 markers in Roman numeral + letter format, pre-canonization)
+# Both must be stripped. Widened pattern `[^:\]]+:` matches any identifier token, defense-in-depth.
 slot_stripped = re.sub(
-    r'^\s*\[СЛОТ\s+k[0-9]+-ill-[0-9]+:[^\]]*?\]\s*$\n?',
+    r'^\s*\[СЛОТ\s+[^:\]]+?:[^\]]*?\]\s*$\n?',
     '',
     yaml_stripped,
     flags=re.MULTILINE | re.DOTALL
 )
 # EN variant on the safe side (Iskra §1 «на всякий случай `\[SLOT\s`»):
 slot_stripped = re.sub(
-    r'^\s*\[SLOT\s+k[0-9]+-ill-[0-9]+:[^\]]*?\]\s*$\n?',
+    r'^\s*\[SLOT\s+[^:\]]+?:[^\]]*?\]\s*$\n?',
     '',
     slot_stripped,
     flags=re.MULTILINE | re.DOTALL
 )
-slots_ru_count = len(re.findall(r'\[СЛОТ\s+k[0-9]+-ill-[0-9]+', yaml_stripped, re.MULTILINE))
-slots_en_count = len(re.findall(r'\[SLOT\s+k[0-9]+-ill-[0-9]+', yaml_stripped, re.MULTILINE))
+slots_ru_count = len(re.findall(r'\[СЛОТ\s+[^:\]]+?:', yaml_stripped, re.MULTILINE))
+slots_en_count = len(re.findall(r'\[SLOT\s+[^:\]]+?:', yaml_stripped, re.MULTILINE))
 if slots_ru_count > 0 or slots_en_count > 0:
-    print(f'  [OK] v1.1g Layer 4 preprocess: {slots_ru_count} [СЛОТ] + {slots_en_count} [SLOT] inline markers stripped from body')
+    print(f'  [OK] v1.1g Layer 4 preprocess (widened): {slots_ru_count} [СЛОТ] + {slots_en_count} [SLOT] inline markers stripped from body (both canonical k*-ill-NN + legacy ill-k*-*-* formats)')
 
 content = slot_stripped
 
