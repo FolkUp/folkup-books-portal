@@ -17,7 +17,7 @@ Every factual claim is checked against primary sources. Accuracy matters more th
 - **OSINT verification:** independent verification of facts through open sources
 
 ### Independent Review
-Each chapter passes through a check by independent reviewers, who actively look for errors, contradictions, and weak points in the argument.
+Each chapter passes through a check by independent reviewers, who actively look for errors, contradictions, and weak points in the argument. This review is performed by an AI assistant for hostile review within the ЩИТ editorial system; see the [AI Transparency statement](/en/ai-disclosure).
 
 ## Citation Standards
 
@@ -47,7 +47,7 @@ HTTPS, Content Security Policy, secure headers.
 1. **Research** — gathering material, primary analysis
 2. **Writing** — drafting the chapter
 3. **Verification** — checking facts and sources
-4. **Independent review** — searching for errors with independent reviewers
+4. **Independent review** — searching for errors with independent reviewers. This review is performed by an AI assistant for hostile review within the ЩИТ editorial system; see the [AI Transparency statement](/en/ai-disclosure).
 5. **Editing** — final revision and polish
 6. **Publication** — placement on the site
 
