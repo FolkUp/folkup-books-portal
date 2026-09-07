@@ -57,6 +57,7 @@ export interface Book {
 
 export interface SeriesMeta {
   name: string
+  name_i18n?: Record<Locale, string>
   author: string
   author_url: string
   license: string

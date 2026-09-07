@@ -16,12 +16,18 @@ const BASE_URL = 'https://books.folkup.life'
 const authorNameForLocale = (locale: string, canonical: string): string =>
   locale === 'ru' ? canonical : 'Comandante FolkUp'
 
+// T-315-09 P1 (Lelik S1LOLIK cont+16 2026-09-07): series.name per-locale JSON-LD
+// Iskra S315-01 §1.5 canon: EN «A Mind of One's Own» / PT «Pela Própria Cabeça» / DE «Selbstständig denken».
+// Fallback к series.name (RU baseline) if name_i18n not defined OR locale key missing.
+const seriesNameForLocale = (locale: string, series: SeriesMeta): string =>
+  series.name_i18n?.[locale as keyof typeof series.name_i18n] ?? series.name
+
 export function useBookSeriesSchema(series: SeriesMeta, books: Book[], currentLocale: string = 'ru') {
   const jsonLd = {
     '@context': 'https://schema.org',
     '@type': 'BookSeries',
     '@id': `${BASE_URL}/#series`,
-    name: series.name,
+    name: seriesNameForLocale(currentLocale, series),
     url: BASE_URL + '/',
     author: {
       '@type': 'Person',
@@ -79,7 +85,7 @@ export function useBookSchema(
     isPartOf: {
       '@type': 'BookSeries',
       '@id': `${BASE_URL}/#series`,
-      name: series.name,
+      name: seriesNameForLocale(currentLocale, series),
     },
     position: book.position,
     author: {

@@ -12,8 +12,16 @@
 
 series:
   # CANON v2 Iskra S214: серия «Своим умом» (виза — «FolkUp» бренд, не имя серии).
-  # DE/EN/PT идиомы уйдут Болику/Лёлику/Зеке отдельно; до их вердикта — RU placeholder.
+  # T-315-09 P1 (Lelik S1LOLIK cont+16 2026-09-07): name_i18n per Iskra S315-01 §1.5 canon
+  # (EN «A Mind of One's Own» S268 + PT «Pela Própria Cabeça» S311-18 + DE «Selbstständig denken» S312-05).
+  # JSON-LD `series.name` per-locale (gate: curl `/en/`,`/pt/`,`/de/` → localised series name).
+  # Legacy `name` field остаётся RU baseline (fallback + SSR default).
   name: Своим умом
+  name_i18n:
+    ru: Своим умом
+    en: A Mind of One's Own
+    pt: Pela Própria Cabeça
+    de: Selbstständig denken
   # Public author display = pseudonym per Iskra S178b canon 2026-07-18.
   # Legal identity reserved для /ai-disclosure page (AI Act Art. 50(4))
   # per Лев Option F canon: legal name published only where legally required.
