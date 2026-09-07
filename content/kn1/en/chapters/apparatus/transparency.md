@@ -1,16 +1,16 @@
 ---
 title: "AI Transparency Statement"
-description: "Transparent disclosure of AI assistance in content creation per EU AI Act Article 50"
+description: "Voluntary open disclosure of AI assistants used in creating and translating this edition, per Article 50(4) of the EU AI Act"
 weight: 40
 ---
 
 # AI Transparency Statement
 
-*EU AI Act Article 50 Transparency Obligation*
+*Voluntary AI transparency statement (Article 50(4) of Regulation (EU) 2024/1689)*
 
 ## AI Use in Content Creation
 
-In accordance with the requirements of the EU AI Act (Article 50), we hereby disclose the use of artificial intelligence tools in the creation of this edition.
+We voluntarily disclose the use of AI assistants in the creation of this edition. Under Article 50(4) of Regulation (EU) 2024/1689, content that has undergone editorial review by a human and for which a person bears editorial responsibility is exempt from mandatory labelling; we disclose it nonetheless, as an editorial decision.
 
 ### Areas of AI Application
 
@@ -21,13 +21,10 @@ Automated tools were used for searching, analyzing, and verifying sources, and p
 AI tools were used for grammar checking, stylistic editing, and text formatting.
 
 **Technical implementation**
-Automated systems were used for generating web code, optimizing site performance, and ensuring accessibility.
-
-**Translation from Russian original**
-This English edition is a translation from the Russian master text. Machine translation (DeepL) was used as an initial draft, followed by human translator refinement (Lolik) and native-English editorial review (Editorial Team). Full translator disclosure in compliance with EU AI Act Article 50(4).
+Automated systems were used for generating web code, optimizing site performance, and accessibility checks.
 
 **Illustrations**
-Book illustrations were generated using an AI tool (Replicate Flux 1.1 Pro / Flux 2) under the art direction of Frida (FolkUp illustrator). Artistic responsibility, curation, and the final decision on each illustration remain with the FolkUp editorial team. *(Disclosure complies with the requirements of Regulation EU 2024/1689, Article 50, paragraph 4 — "EU Artificial Intelligence Act".)*
+Book illustrations were generated using an AI tool (Replicate Flux 1.1 Pro / Flux 2) under the art direction of Frida (FolkUp illustrator). Disclosed voluntarily; artistic responsibility, curation, and the final decision on each illustration remain with the FolkUp editorial team.
 
 ### What Was NOT Created by AI
 
@@ -42,25 +39,27 @@ The research approach, verification principles, and academic standards were defi
 
 ## Quality Control
 
-### Human oversight
-All content undergoes mandatory review by a human editor.
+**The human.** Plots, lines of thought, book structure, literary parallels, and all analytical conclusions arise without AI participation — this is the author's work. The author personally proofreads every book and every published text in its entirety and personally signs off on every version before release. Where an edition has a living reader — a native speaker (the German edition has a reader in Berlin) — their notes are incorporated into revisions.
 
-### Independent verification
-Facts are verified through independent sources without AI involvement.
+**AI assistants.** Editing, fact-checking against sources, adversarial review, technical work, and translation drafts are performed by AI assistants of the Shield ("ЩИТ") editorial system, named individually in the colophon. Each of their edits is a proposal to the author; the final decision and responsibility remain with the human.
 
-### Adversarial review
-Critical analysis of content is performed by human reviewers.
+**Verifiability.** The source of every fact is listed in the apparatus; the Russian original and translations are published side by side under the CC BY-SA 4.0 license — any passage can be checked, contested, and re-edited.
+
+## Translations
+
+The English, Portuguese, and German editions of the book are created by one and the same process: an AI assistant translator (Lolik, Zeka, Bolik) prepares the draft translation, the series editor (Iskra) cross-checks the translation against the Russian original, the author signs off on the edition, and where there is a living reader — a native speaker — their remarks are incorporated into revisions. Who translated and who reviewed is stated in the colophon of each edition.
 
 ## Technical Information
 
 **Policy implementation date:** 2026-04-27
-**Applicable systems:** All those used in creating this edition
-**Compliance:** EU AI Act Article 50, including paragraph 4 (translation disclosure)
-**Contact:** info@folkup.app
+**Last updated:** 2026-09-07 — the «Quality Control» section rewritten to state the roles of the human and AI assistants explicitly; the «Translations» section added; framing changed from mandatory to voluntary disclosure per Article 50(4) exemption
+**Applicable systems:** All AI systems used in creating this edition (research, editing, translation, technical)
+**Compliance:** Article 50(4) of Regulation (EU) 2024/1689 — voluntary disclosure exceeding the mandatory labelling exemption
+**Contact:** editor@folkup.app
 
 ## Policy Updates
 
-This statement is updated as the use of AI tools changes. The current version is always available at [/kn1/en/read/apparatus-transparency](/kn1/en/read/apparatus-transparency).
+This statement is updated as the composition of participants or the use of AI tools changes. The current version is always available at [/kn1/en/read/apparatus-transparency](/kn1/en/read/apparatus-transparency).
 
 ---
 

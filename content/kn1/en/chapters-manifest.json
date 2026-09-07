@@ -1,5 +1,5 @@
 {
-  "generated": "2026-08-31T00:59:14.872Z",
+  "generated": "2026-09-07T01:28:53.478Z",
   "book": "kn1",
   "locale": "en",
   "entries": [
@@ -237,7 +237,7 @@
     {
       "slug": "apparatus-transparency",
       "title": "AI Transparency Statement",
-      "description": "Transparent disclosure of AI assistance in content creation per EU AI Act Article 50",
+      "description": "Voluntary open disclosure of AI assistants used in creating and translating this edition, per Article 50(4) of the EU AI Act",
       "weight": 40,
       "act": null,
       "act_opener": false,
