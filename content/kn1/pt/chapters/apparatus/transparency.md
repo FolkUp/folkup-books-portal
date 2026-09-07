@@ -1,16 +1,16 @@
 ---
 title: "Declaração de Transparência sobre IA"
-description: "Divulgação transparente da assistência de IA na criação de conteúdos, nos termos do artigo 50.º do Regulamento sobre IA da UE"
+description: "Divulgação voluntária da assistência de IA na criação de conteúdos (artigo 50.º, n.º 4 do Regulamento (UE) 2024/1689)"
 weight: 40
 ---
 
 # Declaração de Transparência sobre IA
 
-*Obrigação de Transparência prevista no artigo 50.º do Regulamento sobre IA da UE*
+*Divulgação voluntária (artigo 50.º, n.º 4 do Regulamento (UE) 2024/1689)*
 
 ## Utilização de IA na Criação de Conteúdos
 
-Em conformidade com o Regulamento (UE) 2024/1689 sobre IA (artigo 50.º), divulgamos por este meio a utilização de ferramentas de inteligência artificial na criação desta edição.
+Divulgamos voluntariamente a utilização de assistentes de IA na criação desta edição. Nos termos do artigo 50.º, n.º 4, o conteúdo que tenha sido objeto de revisão editorial humana e pelo qual uma pessoa singular assuma responsabilidade editorial está isento de rotulagem obrigatória; divulgamos ainda assim, por decisão editorial.
 
 ### Áreas de Aplicação da IA
 
@@ -24,10 +24,10 @@ Foram usadas ferramentas de IA para verificação gramatical, edição estilíst
 Foram usados sistemas automatizados para a geração de código web, otimização de desempenho do site e garantia de acessibilidade.
 
 **Tradução a partir do original russo**
-Esta edição portuguesa é uma tradução do texto-fonte russo. A tradução foi realizada por assistente de IA (Zeka), aplicando um registo de português europeu inspirado em Sophia de Mello Breyner, Saramago, Eça de Queirós e Pessoa, e a ortografia do Acordo Ortográfico de 1990. Revisão editorial por Iskra. Divulgação integral do tradutor em conformidade com o artigo 50.º, n.º 4 do Regulamento sobre IA da UE.
+Esta edição portuguesa é uma tradução do texto-fonte russo. A tradução foi realizada por assistente de IA (Zeka), aplicando um registo de português europeu inspirado em Sophia de Mello Breyner, Saramago, Eça de Queirós e Pessoa, e a ortografia do Acordo Ortográfico de 1990. Revisão editorial por Iskra. Divulgação integral do tradutor nos termos do artigo 50.º, n.º 4 do Regulamento (UE) 2024/1689.
 
 **Ilustrações**
-As ilustrações do livro foram geradas com recurso a uma ferramenta de IA (Replicate Flux 1.1 Pro / Flux 2) sob a direção artística de Frida (ilustradora FolkUp). A responsabilidade artística, a curadoria e a decisão final sobre cada ilustração pertencem à equipa editorial FolkUp. *(A divulgação cumpre os requisitos do Regulamento (UE) 2024/1689, artigo 50.º, n.º 4 — «Regulamento sobre IA da UE».)*
+As ilustrações do livro foram geradas com recurso a uma ferramenta de IA (Replicate Flux 1.1 Pro / Flux 2) sob a direção artística de Frida (ilustradora FolkUp). A responsabilidade artística, a curadoria e a decisão final sobre cada ilustração pertencem à equipa editorial FolkUp. *(Divulgação voluntária nos termos do artigo 50.º, n.º 4 do Regulamento (UE) 2024/1689.)*
 
 ### O Que NÃO Foi Criado por IA
 
