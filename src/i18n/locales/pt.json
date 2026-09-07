@@ -133,13 +133,13 @@
     "section1": {
       "h2": "Responsabilidade editorial",
       "p1": "Os livros da Biblioteca FolkUp são assinados com o pseudónimo «Comandante FolkUp». Por trás do pseudónimo está uma pessoa viva: Andrei Klemenchenok, residente em Portugal, editor e revisor. O pseudónimo é um padrão de tipo Banksy para identidade de marca não comercial, não uma ocultação de responsabilidade.",
-      "p2": "Contacto editorial e jurídico: editorial&#64;folkup.app"
+      "p2": "Contacto editorial e jurídico: editor&#64;folkup.app"
     },
     "section2": {
       "h2": "Como usamos IA",
       "p1": "A FolkUp utiliza assistentes de IA (Anthropic Claude e outros modelos) como ferramentas de rascunho e pesquisa na produção de livros:",
       "item1": "Análise literária e trabalho estrutural sobre o manuscrito",
-      "item2": "Tradução (russo → inglês, alemão, português europeu) com posterior revisão humana por falante nativo",
+      "item2": "Tradução (russo → inglês, alemão, português europeu): rascunho por assistente de IA tradutor, cotejo com o original russo pela editora da série (Iskra), assinatura do autor; onde a edição tem um leitor vivo — falante nativo (a edição alemã tem um leitor em Berlim) — as suas notas entram nas revisões",
       "item3": "Verificação de factos através de investigação OSINT e verificação cruzada de fontes",
       "p2": "Cada livro publicado passa por controlos humanos:",
       "gate1": "Portão editorial — compilação do manuscrito, controlo de qualidade ЩИТ («Escudo») v5.0",
