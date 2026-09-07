@@ -97,7 +97,22 @@ const isLive = computed(() => book.value?.status === 'live')
 // не диспатчена, книга ещё не издана. Директива Андрея: если книги нет а «Читать»
 // есть — ошибка. Restore после Batch B (kn.5 v1.0 build + Iskra PASS).
 const READER_ENABLED_BOOKS = ['kn1', 'kn3', 'kn4', 'kn5', 'kn7']
-const hasReader = computed(() => READER_ENABLED_BOOKS.includes(props.slug) && isLive.value)
+// Iskra POMETKA-S315-10 §3.1 T-315-08 (2026-09-06, Лёлик S1LOLIK cont+15):
+// hasReader locale-aware — matches readerUrl availability semantic. Preparing state
+// на non-RU локали НЕ показывает «Read online» кнопку (canon PORTAL-LANG-PARITY:
+// карточка «Coming soon» + честное «in preparation» + RU EPUB fallback без reader button).
+// Prior state (book-level isLive only): non-RU preparing pages показывали кнопку с
+// href fallback на RU reader — inconsistent с honest «translation preparing» состоянием.
+// RU остаётся book-level (baseline reader = /kn{N}/read always live if isLive).
+// Non-RU: 'live' OR 'preview' → per-locale reader route, otherwise hide button.
+const hasReader = computed(() => {
+  if (!READER_ENABLED_BOOKS.includes(props.slug)) return false
+  if (!isLive.value) return false
+  const currentLocale = locale.value as Locale
+  if (currentLocale === 'ru') return true
+  const st = book.value?.translations?.[currentLocale]
+  return st === 'live' || st === 'preview'
+})
 const isPause = computed(() => book.value?.status === 'variant_b_pause')
 
 // NAV-1 Ступень 3 cont+22 S1PT FIX-3 (Iskra TIKET-S287-01 §3): «Читать онлайн» lang-aware.
@@ -526,14 +541,19 @@ if (book.value) {
             author display per-locale i18n — RU «Команданте FolkUp» кириллицей,
             EN/PT/DE «Comandante FolkUp» латиницей (Banksy-модель псевдонима).
             Источник series.yaml:20 не трогаем — канон псевдонима S178b.
-            © строка использует series.author (pseudonym canonical) — единая для всех локалей
-            per S178b canon; локализуется только «visible display», не canonical identifier.
+
+            Iskra POMETKA-S315-10 §3.3 T-315-08 (2026-09-06, Лёлик S1LOLIK cont+15):
+            supersedes previous S308-02 «© единая для всех локалей» — теперь © локализуется
+            через `t('portal.author_display')` тот же i18n mechanism, что author label выше.
+            Rationale: EN/PT/DE страницы показывали «© Команданте FolkUp» кириллицей рядом с
+            «Author: Comandante FolkUp» латиницей — inconsistency flagged Iskra POMETKA §1.4.
+            RU остаётся «Команданте FolkUp» через ru.json portal.author_display (cyrillic).
           -->
           <p>
             <strong>{{ t('portal.author_label') }}</strong> {{ t('portal.author_display') }}
           </p>
           <p>
-            <strong>©</strong> {{ series.author }} ·
+            <strong>©</strong> {{ t('portal.author_display') }} ·
             <a :href="series.license_url">{{ series.license }}</a>
           </p>
         </footer>
