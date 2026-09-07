@@ -83,6 +83,15 @@ books:
       en:
         epub: https://books.folkup.life/kn1/downloads/agile-sapiens-en-v1.0.1.epub
         pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-en-v1.0.1.pdf
+      # DE edition per-locale nested downloads per Iskra KANON-VOROTA S289-07 + Iskra POMETKA-S318-05 §2 п.8
+      # kn1 DE v1.0.0 shipped 2026-09-07 (S1KOCHEGAR cont+16 Bolik apply per VIZA-S317-05 §3 п.1 auto-trigger).
+      # Bolik translation FINAL v1.0 (24 files: 7 apparatus + 17 chapters) applied inline per KVITANCIYA-cont21-05.
+      # Template v4 canon: nav.xhtml в spine ПОСЛЕ ch001 (Vorwort) — position 4 (nav after intro).
+      # Iskra POMETKA-S317-06 mandate «Template v4 all 3 EPUB kn6 v1.1g kn1 PT v1.0.1 kn1 DE v1.0».
+      # MD5: d1df56e78b4473f67cd4f849d6da72d3. Size: 1.9M. epubcheck 3.3: 0/0/0.
+      # Activated when translations.de flip'ается preparing→live per Q-C26 canon post-Iskra виза.
+      de:
+        epub: https://books.folkup.life/kn1/downloads/agile-sapiens-de-v1.0.0.epub
     # v1.0.20 cont+39/+44 S2SCOOP+S3SCOOP 2026-08-03: ЭШЕЛОН-2 dedup canon
     # per Iskra S248 МАЯК-КАНОН-DEDUP GO — 11 patches П6-П16 (dedup + rename
     # Иви→Искра + term-α EN form + hybrid П15 for portal absent ЭШЕЛОН-1).

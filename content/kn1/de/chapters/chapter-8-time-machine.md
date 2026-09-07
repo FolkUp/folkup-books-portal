@@ -1,0 +1,185 @@
+---
+title: "Kapitel 9: Die Zeitmaschine und die Horizonte der Arbeit"
+description: "1895 beschreibt Wells nicht eine Reise ins Jahr 802.701, sondern den Mechanismus, durch den sich Arbeit unter dem Druck der Technologie neu ordnet. Eloi und Morlocks sind die Logik der Belegschafts-Differenzierung im Grenzfall. Ein Jahrhundert später entdecken Ökonomen (David Autor, Acemoglu und Johnson, Karl Polanyi) denselben Mechanismus unter den Namen «Job-Polarisierung» und «politische Ökonomie der Verteilung». Platonow fügt 1930 eine dritte Lesart hinzu: Arbeit, die vom Ergebnis getrennt ist, wird zu einer Grube, die sich selbst frisst."
+date: 2026-09-07
+date_created: "2026-07-30"
+date_updated: "2026-09-07"
+weight: 90
+chapter: 9
+act: "III: Horizonte"
+act_opener: true
+act_label: "III"
+act_accent: "sage"
+act_plate: "agil-act-opener-III.webp"
+act_title: "Horizonte"
+category: arbeits-horizonte
+reading_time: "18 min"
+status: verified
+confidence: high
+translator: "Bolik"
+reviewed_by: "Iskra"
+review_date: "2026-09-06"
+tags:
+  - h-g-wells
+  - zeitmaschine
+  - arbeits-transformation
+  - polarisierung
+  - eloi-morlocks
+  - platonow
+  - acemoglu-johnson
+  - polanyi
+  - autor
+sensitive: false
+---
+
+## Kapitel 9: Die Zeitmaschine und die Horizonte der Arbeit
+
+*Akt III — Horizonte*
+
+> «The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us. His grey eyes shone and twinkled, and his usually pale face was flushed and animated.»¹
+>
+> — H. G. Wells, *Die Zeitmaschine* (1895), Kapitel I
+
+> **Worum es in diesem Kapitel geht.** Wells beschreibt 1895 nicht eine Reise ins Jahr 802 701, sondern den Mechanismus, nach dem sich die Arbeit unter dem Druck der Technologie umbaut. Eloi und Morlocks sind keine Zukunftsfiktion, sondern die zu Ende geführte Logik der Aufspaltung der Arbeitskraft in eine Freizeit- und eine Untertagsklasse. Hundert Jahre später werden Ökonomen denselben Mechanismus als «Polarisierung der Arbeit» (Autor) und als «politische Ökonomie der Verteilung» (Acemoglu, Johnson) wiederentdecken. Karl Polanyi fügt 1944 hinzu: der Markt ist kein Naturzustand, und die Gesellschaft antwortet auf seine Expansion mit einer Doppelbewegung. Platonow fügt 1930 eine dritte Lesart hinzu: Arbeit, die von ihrem eigenen Ergebnis abgelöst ist, verwandelt sich in eine sich selbst verzehrende Baugrube. Das Kapitel führt vier Gesetze der Arbeits-Horizonte ein — das Gerüst, auf dem die letzten Kapitel stehen.
+
+## London, Oktober 1894
+
+Regen am Fenster des gemieteten Zimmers. Der achtundzwanzigjährige Herbert George Wells — abgebrochener Biologe, gescheiterter Lehrer, beginnender Journalist — schreibt zum wiederholten Mal ein Manuskript um, das die Redakteure seit vier Jahren ablehnen². Zuerst hieß es *Die chronischen Argonauten* und wurde 1888 in der Studentenzeitung des Royal College of Science abgedruckt. Dann wurde es in eine Zeitschriftennovelle umgeschrieben. Dann noch einmal. Bis zum Herbst 1894 ist es fast schon *Die Zeitmaschine* — aber Wells versteht immer noch nicht, welches Buch er eigentlich schreibt.
+
+Er glaubt, eine wissenschaftliche Fantasie zu schreiben: eine Maschine, die durch die vierte Dimension fährt, seltsame bleiche Wesen in einem Garten, düstere unterirdische Kreaturen. Der Angriffswinkel ist biologisch: was wird aus dem Menschen nach achthunderttausend Jahren Evolution? Bis Ende des Jahres wird Wells noch die Eröffnungsvorlesung des Zeitreisenden über die Geometrie der vier Dimensionen hinzufügen — und das Manuskript für fünfzig Pfund Vorschuss an Heinemann verkaufen.
+
+Aber das Buch, das er schreibt, handelt nicht von Evolution. Wells ist Sozialist lange vor seinem Beitritt zur Fabian Society (der Gesellschaft der Webbs tritt er erst 1903 bei): mit dem Sozialismus ist er noch als Student in Berührung gekommen, bei den sonntäglichen Vorträgen im Kelmscott House bei William Morris. Jetzt veröffentlicht er bei William Ernest Henley und blickt auf das Londoner East End des Jahres 1894 — die Nähfabriken, die Kohlenkeller, die Dienstboten auf den Hintertreppen von Kensington — und sieht keine einzelnen Ungerechtigkeiten, sondern einen Mechanismus³. Eine Klasse, die unter der Erde lebt und die Maschinen bedient. Eine Klasse, die im Licht lebt und das Ergebnis konsumiert. Zwischen ihnen — ein Abgrund, der sich mit jedem technologischen Zyklus vertieft.
+
+Wells nimmt die Feder und schreibt die Schlussepisode um. Der Zeitreisende gelangt weder in eine Utopie noch in eine Katastrophe — er gelangt in die **bis zum Äußersten geführte Logik der Arbeitsteilung**. Eloi und Morlocks sind nicht zwei biologische Arten. Sie sind zwei Klassen, die zu lange getrennt evolviert sind.
+
+**Die Zeitmaschine zeigt nicht das Jahr 802 701, sondern den nächsten industriellen Zyklus.**
+
+## Wells — Sozialist, kein Futurologe
+
+Über hundert Jahre lang hat die Kritik *Die Zeitmaschine* als Roman über die biologische Degeneration gelesen: was, wenn der Mensch entartet? Diese bequeme Lesart erlaubte es, die Bilder zu bewundern und die Politik zu übersehen. Dabei hat Wells das niemals verheimlicht. In seiner Vorlesung von 1902 in der Royal Institution legte er seine Methode direkt dar: eine bereits existierende Tendenz nehmen und sie zu ihrem logischen Ende führen⁴.
+
+Die Tendenz, die Wells in *Die Zeitmaschine* zu ihrem Ende führt, ist die **Aufspaltung der Arbeitskraft unter dem Druck des technologischen Zyklus**. Im Britannien der 1890er-Jahre arbeiten fast anderthalb Millionen Frauen als Hausbedienstete — ungefähr jede dritte der arbeitenden Frauen; über zweihunderttausend allein in London⁵. Die britischen Kohlebergwerke förderten jährlich etwa zweihundert Millionen Tonnen, und in ihnen arbeiteten fast achthunderttausend Menschen, die den größten Teil ihres Lebens unter Tage verbrachten. Das ist der Keim der Morlocks: eine Klasse, die im wörtlichen Sinne das Licht oben aufrechterhält, ohne es selbst zu sehen.
+
+In diesem Sinne tut Wells dasselbe, was ein halbes Jahrhundert später Karl Polanyi in *Die große Transformation* und hundert Jahre später David Autor in seinen Arbeiten zur Polarisierung der Arbeit tun werden. Alle drei beschreiben denselben Mechanismus aus drei verschiedenen Positionen — literarisch, historisch, ökonometrisch:
+
+— **Der Arbeitsmarkt gehorcht keiner inneren Logik der Gerechtigkeit.** Er gehorcht der Logik der Technologie und der Macht.
+— **Die Technologie ist nicht neutral.** Jede Neuerung verteilt neu — wer bekommt das Mehrprodukt, wer zahlt für den Übergang, wessen Arbeit wird teurer, wessen billiger.
+— **Die Aufspaltung korrigiert sich nicht selbst.** Sie verstärkt sich, bis eine politische Kraft in Aktion tritt: die Gewerkschaft, der Regulierer, die Gegenbewegung.
+
+Wells hat beschrieben, was geschieht, wenn es keine Gegenbewegung gibt.
+
+## Vier Gesetze der Arbeits-Horizonte
+
+### Erstes Gesetz: Verstärkung verwandelt sich in Reorganisation
+
+Jede Neuerung kommt auf den Arbeitsmarkt unter der Flagge der «Verstärkung»: hier ist ein Helfer, der eure Arbeit schneller und leichter machen wird. Nach zehn oder fünfzehn Jahren verschwindet der Helfer nirgendwohin, aber um ihn herum reorganisiert sich die gesamte Struktur der Arbeit — und ein Teil der früheren Stellen rentiert sich einfach nicht mehr.
+
+Die elektronische Post wurde 1995 den Konzernen als «Instrument für Sekretärinnen und Manager der mittleren Ebene» verkauft: sollen sie schneller schreiben, weniger Routinebriefe, wichtige Korrespondenz bleibt auf dem Papier. Mitte der 2000er-Jahre waren die Sekretariatsstäbe in großen Firmen als selbstständige Abteilungen praktisch verschwunden⁶. Nicht weil die E-Mail die Sekretärinnen ersetzt hätte. Sondern weil sich um die E-Mail herum die gesamte Management-Kommunikation neu zusammensetzte: asynchrone Korrespondenz, flache Hierarchien, Ansprache über den Kopf des Managements. Die Sekretariatsposition in ihrer viktorianischen Gestalt — Puffer zwischen dem Chef und der Welt — hatte keinen Sinn mehr.
+
+GPS wurde Anfang der Nullerjahre den Transportfirmen als «Helfer des erfahrenen Fahrers» verkauft. Ende der Nullerjahre waren die Dispositionsabteilungen der Routenplanung verschwunden; die Route wurde zu Daten, die der Algorithmus an den Fahrer abgibt, und der menschliche Disponent verwandelte sich in einen logistischen Echtzeit-Koordinator.
+
+Google positionierte sich 1998 bescheiden als bequemer Ersatz für das Nachschlagewerk in der Bibliothek. Bis 2010 waren die Auskunftsabteilungen öffentlicher Bibliotheken in den USA reorganisiert — nicht ganz gestrichen, aber in den Modus der «digitalen Alphabetisierung» und der Arbeit mit besonderen Lesergruppen versetzt⁷.
+
+In jedem Fall wirkte dieselbe Mechanik: die Technologie-«Helfer» schrieb die Struktur um sich herum so um, dass die Rolle, die sie angeblich ergänzte, sich als überflüssig erwies. Wells nannte das Evolution. Die moderne Sprache — Reorganisation.
+
+### Zweites Gesetz: Polarisierung statt Ersetzung
+
+Im Jahr 2003 veröffentlichten David Autor, Frank Levy und Richard Murnane in den *Quarterly Journal of Economics* eine Arbeit, die die Ökonomie der Arbeit umschrieb⁸. Ihre Hauptbeobachtung: der Computer ersetzt nicht «die Arbeit im Allgemeinen», sondern einen konkreten Aufgabentyp — die **Routinearbeit**. Das können routinemäßige kognitive Aufgaben sein (Kolonnenaddition, Rechnungsstellung, Stenogrammabschrift) oder routinemäßige manuelle (Montage nach Anleitung, Stanzen, Verpacken). Aber **nicht-routinemäßige** Aufgaben — ob analytische (Diagnose, Verhandlungen, Forschung) oder motorische (Fahren im Verkehr, Pflege der Alten, Reparatur in unbekannter Umgebung) — ersetzt der Computer nicht, sondern **ergänzt** sie: die Nachfrage nach ihnen wächst.
+
+Daraus folgt keine «Massenarbeitslosigkeit», wie es Technopessimisten seit dem 19. Jahrhundert prophezeit haben. Daraus folgt eine **Polarisierung des Arbeitsmarktes**: die mittlere Schicht — Kleriker, Bediener, Kontrolleure — wird herausgedrückt; die Spitze (nicht-routinemäßige analytische Arbeit) wächst; der Boden (nicht-routinemäßige motorische Arbeit — Pflege, Zustellung, Gastronomie) wächst auch. Die Lohnverteilung verwandelt sich aus einer Glocke in eine Senke zwischen zwei Höckern⁹.
+
+Zwölf Jahre später kehrte Autor in den *Journal of Economic Perspectives* mit einem Aufsatz zurück, dessen provokativer Titel lautet: «Warum gibt es immer noch so viele Arbeitsplätze?»¹⁰ Die Antwort — weil die Automatisierung einer Aufgabe den Wert der mit ihr verbundenen nicht-routinemäßigen Aufgaben steigert. Der Radiologe, dem ein Algorithmus das Bild markiert, verschwindet nicht — seine Arbeitszeit verlagert sich zu komplizierten Fällen, der Erklärung der Diagnose an den Patienten, der interdisziplinären Besprechung. Der Jurist, dem die Präzedenzsuche automatisiert ist, verbringt mehr Stunden mit Strategie und Verhandlungen. Der Finanzberater, dem das Rebalancing des Portfolios automatisiert ist, verbringt mehr Zeit mit Gesprächen mit dem Klienten über dessen Lebensentscheidungen.
+
+Aber — und das ist der zweite Teil des Gesetzes — **den Gewinn aus dieser Umverteilung erhalten nicht alle**. Ihn erhalten diejenigen, die einen nicht-routinemäßigen analytischen Aufbau über der automatisierten Routine haben. Diejenigen, die ihn nicht haben — der High-School-Absolvent, der als Klerk arbeitete —, werden in den nicht-routinemäßigen motorischen Sektor mit seiner begrenzten Lohnobergrenze hinausgedrängt. Polarisierung ist keine gleichmäßige Bewegung der ganzen Kurve nach oben, sie ist ihre Streckung in beide Richtungen.
+
+### Drittes Gesetz: Verteilung ist eine politische Wahl
+
+Im Jahr 2023 brachten Daron Acemoglu und Simon Johnson das Buch *Power and Progress: Our Thousand-Year Struggle Over Technology and Prosperity* heraus¹¹. Ihre Hauptthese ist einfach und unbequem: die Technologie bringt an sich keinen allgemeinen Wohlstand. Ob sie ihn bringt oder nicht, hängt davon ab, wer die Richtung ihrer Entwicklung kontrolliert und wer über die Verteilung ihrer Früchte entscheidet.
+
+Tausend Jahre europäischer Wirtschaftsgeschichte lesen Acemoglu und Johnson als Wechsel zweier Regime. Im **Regime der Ausbeutung** bereichert eine neue Technologie eine schmale Schicht der Eigentümer, während die Massenarbeitskraft für den Übergang zahlt — durch sinkende Löhne, verlängerte Arbeitsstunden, verschlechterte Bedingungen. So sah der Beginn der Industriellen Revolution in England aus: von den 1790er- bis zu den 1840er-Jahren wuchs die Produktivität, aber die realen Löhne der Arbeiter blieben praktisch stehen. Das ist die «Engels-Pause» — ein halbes Jahrhundert, das die klassische Ökonomie lange nicht zu erklären wusste. Im **Regime der Verteilung** bringt dieselbe Technologie einen Gewinn für die Masse der Arbeitenden — durch Gewerkschaften, Arbeitsgesetzgebung, allgemeine Bildung, progressive Besteuerung. So sah die Mitte des 20. Jahrhunderts in den entwickelten Volkswirtschaften nach der Großen Depression und den zwei Weltkriegen aus.
+
+Der Unterschied zwischen den beiden Regimen ist nicht technologisch, sondern politisch. Derselbe Webstuhl kann für das eine Verteilungsmodell arbeiten oder für das andere — je nachdem, ob es im Land eine Weberngewerkschaft, eine Fabrikaufsicht und ein Gesetz über den Mindestlohn gibt.
+
+Acemoglu und Johnson erhielten ein Jahr nach dem Erscheinen des Buches den Nobelpreis — für langjährige Forschungen zum Zusammenhang zwischen Institutionen und Wohlstand. Ihre Schlussfolgerung ist gerade dadurch wichtig, dass sie der Technologie das moralische Alibi nimmt: «Nicht der Webstuhl ist schuld — schuld sind diejenigen, die entschieden, wie mit ihm umzugehen ist.»
+
+### Viertes Gesetz: die Doppelbewegung
+
+Im Jahr 1944 veröffentlichte der Wirtschaftshistoriker Karl Polanyi — ungarischer Emigrant, der in den Kriegsjahren am amerikanischen Bennington College Vorlesungen hielt — *The Great Transformation*¹². Das Buch wurde wenig gelesen; in den ersten zwanzig Jahren kannten es nur Fachleute. Bis zum Beginn des 21. Jahrhunderts wurde es zu einer der am häufigsten zitierten Arbeiten in den Sozialwissenschaften.
+
+Die Hauptthese Polanyis: die Marktwirtschaft ist kein Naturzustand der menschlichen Gesellschaft, sondern ein **Projekt**. Ein Projekt, das ständige politische Anstrengungen erfordert, um zu existieren. Und — was wichtiger ist — jedes Mal, wenn die Marktlogik versucht, jene Seite des menschlichen Lebens zu erfassen, die früher vor ihr geschützt war (Arbeit, Boden, Geld), antwortet die Gesellschaft mit einer **Gegenbewegung**: mit Gesetzen, mit Regulierung, mit Protest, mit neuen Institutionen.
+
+Das ist die «Doppelbewegung»: der Markt greift an — die Gesellschaft verteidigt sich. Nicht ideologisch, nicht aus «sozialistischen Überzeugungen», sondern weil sonst das unmittelbare Leben der Menschen unmöglich wird. Die englischen Fabrikgesetze des 19. Jahrhunderts, die deutsche Arbeiterversicherung unter Bismarck, der amerikanische New Deal, der europäische Sozialstaat der Nachkriegszeit — all das sind verschiedene Formen einer einzigen Gegenbewegung, ohne die die Marktexpansion in eine soziale Katastrophe geführt hätte.
+
+Aus Polanyi folgt, was aus Wells, aus Autor und aus Acemoglu nicht folgt: **die Transformation der Arbeit ist nicht eine Linie, sondern zwei**. Die erste Linie — der Druck des Marktes und der Technologie. Die zweite Linie — das, was die Gesellschaft mit diesem Druck macht. Wenn die zweite Linie schwach oder abwesend ist, tritt das ein, was Wells beschrieben hat: die Aufspaltung, bis zur biologischen Kluft zu Ende geführt. Wenn die zweite Linie stark ist, gibt derselbe technologische Zyklus ein anderes Ergebnis — die Erweiterung der Rechte, die Angleichung der Chancen, einen neuen Gesellschaftsvertrag.
+
+## FALLSTUDIE: Platonow und die Baugrube, die Arbeit frisst
+
+Im Dezember 1929 beginnt Andrej Platonow — Streckenarbeiter, Meliorator, Ingenieur von Ausbildung — eine Erzählung zu schreiben. Er beendet sie im April 1930. Er nennt sie *Die Baugrube*¹³.
+
+Der Inhalt, wenn man ihn formell nacherzählt, ist einfach. Eine Gruppe von Arbeitern hebt eine Baugrube für das Fundament eines riesigen Hauses aus, in dem, nach dem Plan, das gesamte örtliche Proletariat wohnen soll. Je mehr sie graben, desto größer wird die Baugrube. Mit dem Hausbau wird niemals begonnen. Einer der Arbeiter, Woschtschew, sucht ruhelos nach dem Sinn der Arbeit: wofür graben wir, für wen graben wir, was soll herauskommen. Niemand antwortet. Das Mädchen namens Nastja, das die Arbeiter zu sich nehmen, damit die Arbeit einen Adressaten hat, — stirbt. Am Ende wird ihr Körper auf dem Grund der Baugrube begraben. Das Haus wird nicht gebaut werden.
+
+Platonow schrieb kein antisowjetisches Pamphlet, wie man es in der Emigration lange zu lesen versuchte. Er schrieb etwas Universelleres: **was mit der Arbeit geschieht, wenn sie von ihrem eigenen Ergebnis abgelöst wird**. Wenn das Graben zur eigenständigen Tätigkeit wird, die kein Haus braucht. Wenn die Grube nicht deshalb wächst, weil das Fundament es verlangt, sondern weil Graben das Einzige ist, was zu tun übrigbleibt. Platonows Arbeiter sind weder Faulenzer noch Zyniker, sie arbeiten ehrlich und bis zur Erschöpfung. Aber die Richtung der Arbeit ist verloren, und die Arbeit beginnt sich selbst zu fressen.
+
+Das ist dieselbe Figur wie die Wells'schen Morlocks in den unterirdischen Maschinenhallen: Menschen, die den Betrieb eines Systems aufrechterhalten, dessen Sinn sie schon nicht mehr verstehen. Die Morlocks füttern die Maschinen, die einmal für die Bequemlichkeit der Eloi erdacht wurden — aber die Eloi sind längst degeneriert, die Maschinen drehen sich im Modus der Selbstreproduktion, und die Arbeit der Morlocks hat sich aus der Bedienung in ein Ritual verwandelt. Bei Platonow ist es ohne Fantastik gemacht, auf dem Material des ersten Fünfjahresplans: Grube, Haus, Mädchen, Tod, Ende.
+
+Und darin — die dritte Lesart, die den ökonomischen Arbeiten fehlt. Autor und Acemoglu beschreiben den Arbeitsmarkt von außen: wie die Löhne verteilt werden, welche Aufgaben automatisiert werden, wer gewinnt. Platonow beschreibt die Arbeit von innen: was der Mensch fühlt, wenn die Arbeit ihren Adressaten verloren hat. Das ist keine Statistik, das ist Diagnostik. Und im Horizont der 2030er-Jahre, wenn die Polarisierung tiefer geht und die Sekundäreffekte sichtbarer werden, wird der platonowsche Blick nicht weniger nötig sein als der ökonometrische.
+
+## UMKEHR: Der Zeitreisende bringt keine Voraussagen mit
+
+Am Ende der *Zeitmaschine* kehrt der Zeitreisende an seinen eigenen Esstisch zurück, an dem seine Gäste auf ihn warten, und erzählt von der Zukunft — aber niemand glaubt ihm bis zum Ende. Am nächsten Tag geht er wieder in die Maschine — und kehrt nicht mehr zurück. Das Buch endet damit, dass der Zuhörer — der anonyme Erzähler — mit zwei Fragen zurückbleibt: ist wahr, was ich gehört habe, und wenn es wahr ist — was soll ich jetzt damit anfangen.
+
+Wells beschließt das Buch nicht mit einer Prognose. Er beschließt es mit der **Übergabe der Frage**. Eloi und Morlocks sind ein **mögliches** Ergebnis, kein unvermeidliches. Der Zeitreisende weiß nicht, welche konkreten Entscheidungen zu diesem Ergebnis führen, welche — davon abhalten. Er weiß nur, dass die Richtung, in die sich seine eigene viktorianische Gesellschaft bewegt, in der Extrapolation genau ein solches Bild ergeben kann.
+
+Denselben Kunstgriff, ohne literarische Konventionen, machen Acemoglu und Johnson. Auf den letzten hundert Seiten von *Power and Progress* prognostizieren sie nicht, sondern zählen sie **Hebel** auf: Antimonopolrecht, Steuerpolitik, öffentliche Investitionen in die Grundlagenforschung, Verhandlungsmacht der Arbeitenden. Jeder Hebel — real, historisch verwendet, mit verständlichem Mechanismus. Ob man sie verwendet oder nicht — ist die Wahl der politischen Gemeinschaft, keine Unvermeidlichkeit des ökonomischen Zyklus.
+
+Wells tut hundertachtundzwanzig Jahre vor ihnen dasselbe in literarischer Form. *Die Zeitmaschine* ist keine Voraussage der Aufspaltung in Eloi und Morlocks. Sie ist ein diagnostisches Instrument: hier ist eine Tendenz, zu Ende geführt; entscheidet, ob ihr ein solches Ende wollt oder nicht.
+
+## EINSICHT: Vier Gesetze der Arbeit — drei Arten von Entscheidungen
+
+Wenn man die vier Gesetze in eine Tabelle zusammenfasst, ergibt sich eine einfache, aber unbequeme Hierarchie:
+
+— **Erstes Gesetz (Wells)** — beschreibt das, was nicht geändert werden kann. Technologie, die Arbeit ergänzt, reorganisiert sie. Das ist ein Naturgesetz der Wirtschaftsgeschichte, wie das Gesetz der Energieerhaltung in der Physik. Es zu ändern ergibt keinen Sinn; es zu berücksichtigen ist Pflicht.
+
+— **Zweites Gesetz (Autor)** — beschreibt den Markt. Die Polarisierung geschieht automatisch, unter dem Druck von Nachfrage und Angebot. Ändern lässt sie sich, aber nur durch Marktmechanismen: Umschulung, Mobilität, Aufgabenumverteilung. Das ist ein Gesetz der Mechanik der Ökonomie, nicht der Natur.
+
+— **Drittes Gesetz (Acemoglu — Johnson)** — beschreibt die Macht. Wer die Früchte der Transformation erhält, entscheidet nicht der Markt, sondern der politische Prozess. Hier hat die Gesellschaft Handlungsfähigkeit: Steuern, Regulierung, Repräsentation.
+
+— **Viertes Gesetz (Polanyi)** — beschreibt die Reaktion. Die Doppelbewegung startet nicht automatisch; die Gesellschaft muss den Schaden erkennen und politische Kräfte sammeln. Wenn es keine Gegenbewegung gibt — setzt der Markt die Expansion bis zu jenem Punkt fort, an dem die Reaktion katastrophal wird statt korrigierend.
+
+Im Horizont der Jahre 2026-2040 arbeitet das erste Gesetz bereits jetzt: die Reorganisation um neue technologische Zyklen läuft, und ihr entgegenzusetzen gibt es nichts. Das zweite Gesetz — die Polarisierung — beschreibt die Landschaft der nächsten zehn bis fünfzehn Jahre; hier sind marktliche Milderungen möglich (Umschulung, Mobilität), aber keine Aufhebung der Tendenz. Das dritte und vierte Gesetz — der Ort, an dem sich die Handlungsfähigkeit befindet. Was politische Gemeinschaften konkret als Antwort auf die Polarisierung tun werden, wird bestimmen, ob wir eine neue Verteilung oder eine neue Windung der Aufspaltung sehen. Die Baugrube Platonows — das, was passiert, wenn die Arbeit weitergeht, aber ihr Sinn schon verloren ist; auch dieses Szenario bleibt im Raum des Möglichen.
+
+## BRIDGE
+
+Wells zeigt den Mechanismus. Autor misst die Polarisierung. Acemoglu und Johnson führen die Hebel vor. Polanyi spricht von der Gegenbewegung. Platonow diagnostiziert, was die Arbeit fühlt, wenn der Sinn verschwindet. Alle bleiben auf der Ebene der Gesetze und der Tendenzen — aber der Horizont der 2030er-Jahre verlangt etwas anderes: **Entscheidungen eines konkreten Teams über die eigene Architektur — wie es organisiert ist, nach welchem Prinzip zusammengesetzt, was es lebendig erhält**. Nicht beim Ökonomen, nicht beim Politiker — sondern beim konkreten Team, das am Tisch sitzt und entscheidet, wie es die nächsten fünf Jahre leben und arbeiten will.
+
+Darüber handelt das nächste Kapitel.
+
+---
+
+## Quellen und Anmerkungen
+
+¹ Wells, Herbert George. *The Time Machine.* London: William Heinemann, 1895, Kap. I, S. 1. Autorenübersetzung in Anlehnung an die deutsche Standardausgabe von Felix Paul Greve alias Frederick Philip Grove (Minden: J.C.C. Bruns, [1904], gemeinfrei — Greve † 1948, § 64 UrhG Leben+70 = 2019 PD); Wortlaut bei der Endredaktion gegen die Greve-Ausgabe zu verifizieren. Deutsch: «Der Zeitreisende (denn so wird es bequem sein, ihn zu nennen) legte uns eine schwer verständliche Angelegenheit dar. Seine grauen Augen leuchteten und funkelten, und sein gewöhnlich bleiches Gesicht war gerötet und belebt.»
+
+² Biographische Details nach: Smith, David C. *H.G. Wells: Desperately Mortal.* New Haven: Yale University Press, 1986; Parrinder, Patrick (Hrsg.). *H.G. Wells: The Critical Heritage.* London: Routledge, 1972. Die frühe Fassung *Die chronischen Argonauten* erschien im *Science Schools Journal* von April bis Juni 1888.
+
+³ Zu Wells' Fabian-Verbindungen: McKenzie, Norman, und Jeanne McKenzie. *The Time Traveller: The Life of H.G. Wells.* London: Weidenfeld & Nicolson, 1973; zu seiner Zusammenarbeit mit dem *New Review* bei W.E. Henley — in den Briefen von Wells selbst (Wells H.G. *Experiment in Autobiography*, 1934, Bd. II, Buch VIII).
+
+⁴ Wells, H. G. *The Discovery of the Future.* Vortrag, gehalten in der Royal Institution am 24. Januar 1902; veröffentlicht in *Nature*, 6. Februar 1902.
+
+⁵ Daten zu britischen Bediensteten und Kohlebergwerken des späten 19. Jahrhunderts nach: Mitchell, B. R. *British Historical Statistics.* Cambridge: Cambridge University Press, 1988, Abschnitte V (Arbeit) und VIII (Bergbauindustrie).
+
+⁶ Cortada, James W. *The Digital Hand,* Bd. 2: *How Computers Changed the Work of American Financial, Telecommunications, Media, and Entertainment Industries.* Oxford: Oxford University Press, 2006, Kap. 4 — zur Reorganisation der Sekretariatsstäbe amerikanischer Konzerne 1995-2005.
+
+⁷ Bertot, John Carlo, u.a. *Public Libraries and the Internet.* Jahresberichte der American Library Association 1994-2012. Die systematische Verschiebung von der Auskunftsbedienung zu Programmen der digitalen Alphabetisierung ist in den Ausgaben 2006-2010 dokumentiert.
+
+⁸ Autor, David H., Frank Levy und Richard J. Murnane. «The Skill Content of Recent Technological Change: An Empirical Exploration.» *Quarterly Journal of Economics* 118, Nr. 4 (November 2003): 1279-1333. Preprint: NBER Working Paper Nr. 8337, 2001.
+
+⁹ Empirische Bestätigungen der Arbeits-Polarisierung in den USA und Westeuropa: Goos, Maarten, und Alan Manning. «Lousy and Lovely Jobs: The Rising Polarization of Work in Britain.» *Review of Economics and Statistics* 89, Nr. 1 (2007): 118-133; Goos, Maarten, Alan Manning und Anna Salomons. «Explaining Job Polarization: Routine-Biased Technological Change and Offshoring.» *American Economic Review* 104, Nr. 8 (2014): 2509-2526.
+
+¹⁰ Autor, David H. «Why Are There Still So Many Jobs? The History and Future of Workplace Automation.» *Journal of Economic Perspectives* 29, Nr. 3 (Sommer 2015): 3-30.
+
+¹¹ Acemoglu, Daron, und Simon Johnson. *Power and Progress: Our Thousand-Year Struggle Over Technology and Prosperity.* New York: PublicAffairs, 2023. Die Autoren sind Nobelpreisträger für Wirtschaftswissenschaften des Jahres 2024 (gemeinsam mit James Robinson) für Forschungen zum Zusammenhang zwischen Institutionen und Wohlstand. Zur «Engels-Pause» (1790-1840): Allen, Robert C. «Engels' Pause: Technical Change, Capital Accumulation, and Inequality in the British Industrial Revolution.» *Explorations in Economic History* 46, Nr. 4 (2009): 418-435. Eine deutsche Ausgabe des Buches existiert unter Copyright.
+
+¹² Polanyi, Karl. *The Great Transformation: The Political and Economic Origins of Our Time.* New York: Farrar & Rinehart, 1944. Vorwort — R. M. MacIver. Die Konzeption der «Doppelbewegung» ist im zweiten Teil, Kap. 11-13 entfaltet. Zur Bennington-Periode Polanyis: Dale, Gareth. *Karl Polanyi: A Life on the Left.* New York: Columbia University Press, 2016, Kap. 5. Suhrkamp DE-Übersetzung *Die große Transformation* (1978) — Copyright; die begrifflichen Zitate hier sind Autorenübersetzung nach dem englischen Original.
+
+¹³ Platonow, Andrej P. *Die Baugrube.* Geschrieben Dezember 1929 — April 1930. Erste Publikation in den Emigrantenzeitschriften *Grani* (Frankfurt am Main), Nr. 70, 1969, und *Student* (London), Nr. 13-14, 1969. In der UdSSR veröffentlicht in der Zeitschrift *Nowy Mir*, Nr. 6, 1987. Autorenübersetzung nach dem russischen Original; deutsche Übersetzungen des Romans stehen unter Copyright und werden hier nicht verwendet.

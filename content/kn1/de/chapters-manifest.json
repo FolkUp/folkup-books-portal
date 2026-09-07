@@ -1,0 +1,260 @@
+{
+  "generated": "2026-09-07T21:08:10.301Z",
+  "book": "kn1",
+  "locale": "de",
+  "entries": [
+    {
+      "slug": "preface",
+      "title": "Vorwort: Zur Methode der literarischen Betriebsanalyse",
+      "description": "Vorwort zu «Agile Sapiens» — über die Methodik der literarische Betriebsanalyse und darüber, warum die klassische Literatur präziser ausfiel als jeder Berater.",
+      "weight": 5,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": null,
+      "order": 5
+    },
+    {
+      "slug": "chapter-0-pilot",
+      "title": "Phileas Fogg erfand, was moderne Konzerne zerstört",
+      "description": "Wie ein erdachter englischer Gentleman des Jahres 1872 intuitiv jene Prinzipien anwandte, die die heutige Industrie agiler Methoden kommerzialisiert, verzerrt und für Milliarden US-Dollar zurückverkauft hat",
+      "weight": 10,
+      "act": "I: Ursprünge",
+      "act_opener": true,
+      "isApparatus": false,
+      "plate": "kn1-00-pilot.webp",
+      "order": 10
+    },
+    {
+      "slug": "chapter-1-jules-verne",
+      "title": "Kapitel 1: Jules Verne programmiert",
+      "description": "Wie die Abenteuerliteratur des 19. Jahrhunderts die Muster des Projektmanagements gelegt hat — von den «Zwanzigtausend Meilen» bis zu den Entwicklungszyklen (Sprints) im Silicon Valley",
+      "weight": 20,
+      "act": "I: Ursprünge",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-01-jules-verne.webp",
+      "order": 20
+    },
+    {
+      "slug": "chapter-2-frankenstein",
+      "title": "Kapitel 2: Frankenstein führt ein Projekt",
+      "description": "Wie der Roman der achtzehnjährigen Mary Shelley zur genauesten Nachbetrachtung (post-mortem) von Konzern-Fehlschlägen wurde: vom FBI Sentinel bis Healthcare.gov",
+      "weight": 30,
+      "act": "I: Ursprünge",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-02-frankenstein.webp",
+      "order": 30
+    },
+    {
+      "slug": "chapter-3-holmes",
+      "title": "Kapitel 3: Sherlock Holmes stellt die Diagnose",
+      "description": "Die deduktive Methode der Erkennung von Konzernpathologien: sieben Anzeichen dafür, dass Ihr Projekt stirbt — von Knight Capital bis Target Canada",
+      "weight": 40,
+      "act": "I: Ursprünge",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-03-holmes.webp",
+      "order": 40
+    },
+    {
+      "slug": "intermezzo-1",
+      "title": "Intermezzo I: Die Beratungs-Apartments",
+      "description": "Satirische Diagnose des Agile-Theaters durch Carroll × Bulgakow. Eine Beratungsfirma, in der 43 Mannschaften, 208 Sprints und 1200 Retros pro Monat kein einziges Produkt hervorbringen. Sprints wegen der Retros, Retros wegen der Planung der nächsten Sprints. «Sieben Rollen koordinieren die Arbeit eines Menschen mit sich selbst» — und das nennt sich reifer Prozess.",
+      "weight": 47,
+      "act": "Intermezzi",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": null,
+      "order": 47
+    },
+    {
+      "slug": "chapter-4-borges",
+      "title": "Kapitel 4: Borges zählt Story Points",
+      "description": "Wie Messungen, die Mannschaften beweglicher machen sollen, zur Lotterie werden: vom Spotify Model bis zum OKR-Theater, vom Velocity Gaming bis zum retrospektiven Ritual",
+      "weight": 50,
+      "act": "I: Ursprünge",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-04-borges.webp",
+      "order": 50
+    },
+    {
+      "slug": "chapter-5-nemo",
+      "title": "Kapitel 5: Cyrus Smith baut Zivilisation",
+      "description": "Bootstrap-Leadership: Wie eine kleine autonome Mannschaft die Konzernbürokratie schlägt. Die Ingenieure der «geheimnisvollen Insel» als Prototyp jeder erfolgreichen Tiger-Mannschaft",
+      "weight": 60,
+      "act": "II: Transformation",
+      "act_opener": true,
+      "isApparatus": false,
+      "plate": "kn1-05-nemo.webp",
+      "order": 60
+    },
+    {
+      "slug": "chapter-6-mina-harker",
+      "title": "Kapitel 6: Mina Harker sammelt die Aufklärung",
+      "description": "Die verteilte Mannschaft der viktorianischen Epoche: Phonograph, Stenographie, Telegraph und eine Schreibmaschine gegen einen unsichtbaren Feind. Die Crew of Light von Bram Stoker als frühes Vorbild einer bereichsübergreifenden Mannschaft mit einziger Wahrheitsquelle.",
+      "weight": 70,
+      "act": "II: Transformation",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-06-mina-harker.webp",
+      "order": 70
+    },
+    {
+      "slug": "chapter-6-jekyll-hyde",
+      "title": "Kapitel 7: Doktor Jekyll — Korporative Zweiheit",
+      "description": "Korporative Zweiheit von Stevenson bis Argyris. Dr. Jekyll ist das Manifest — Firmenwerte an der Wand des Besprechungsraums. Mr. Hyde ist das, was Mannschaften in der dritten Stunde eines Freitagsprints tatsächlich tun. Dr. Lanyon ist der Ältere, der beides sieht und das Gesehene nicht überlebt. Argyris und Schön (1974), Goffman (1959) und Korejko aus dem Goldenen Kalb.",
+      "weight": 75,
+      "act": "II: Transformation",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-06-jekyll-hyde.webp",
+      "order": 75
+    },
+    {
+      "slug": "chapter-7-don-quixote",
+      "title": "Kapitel 8: Don Quijote und Sancho — Die Geburt des Mannschafts-Mythos",
+      "description": "Finale des zweiten Aktes. Karl Weick hat 1995 gezeigt, was Cervantes 1605 gezeigt hat: Organisationen halten sich nicht durch Organigramme, sondern durch eine geteilte Geschichte darüber, wer sie sind. Vier Gesetze der Mannschafts-Mythologie, drei Modi (generativ, defensiv, versöhnend), ein russisches Double und ein Tod, in dem Sancho nicht über den Verlust des Partners weint — sondern über den Verlust des gemeinsamen Sinns.",
+      "weight": 80,
+      "act": "II: Transformation",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-07-don-quixote.webp",
+      "order": 80
+    },
+    {
+      "slug": "intermezzo-2",
+      "title": "Intermezzo II: Der Produktions-Keller",
+      "description": "Ein Produktions-Keller: 237 Bugs hängen fest, 189 P0-Fehler werden zu P1 umgestuft, P1 zu P2, P2 zu Tech Debt, Tech Debt zum Workshop des nächsten Quartals (der noch geplant wird). Agile Methodologie als formalisierte Vermeidung des Programmierens. Vier Dailys pro Tag zur Synchronisation einer Mannschaft, die zwischen den Dailys nichts produziert.",
+      "weight": 85,
+      "act": "Intermezzi",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": null,
+      "order": 85
+    },
+    {
+      "slug": "chapter-8-time-machine",
+      "title": "Kapitel 9: Die Zeitmaschine und die Horizonte der Arbeit",
+      "description": "1895 beschreibt Wells nicht eine Reise ins Jahr 802.701, sondern den Mechanismus, durch den sich Arbeit unter dem Druck der Technologie neu ordnet. Eloi und Morlocks sind die Logik der Belegschafts-Differenzierung im Grenzfall. Ein Jahrhundert später entdecken Ökonomen (David Autor, Acemoglu und Johnson, Karl Polanyi) denselben Mechanismus unter den Namen «Job-Polarisierung» und «politische Ökonomie der Verteilung». Platonow fügt 1930 eine dritte Lesart hinzu: Arbeit, die vom Ergebnis getrennt ist, wird zu einer Grube, die sich selbst frisst.",
+      "weight": 90,
+      "act": "III: Horizonte",
+      "act_opener": true,
+      "isApparatus": false,
+      "plate": "kn1-08-time-machine.webp",
+      "order": 90
+    },
+    {
+      "slug": "chapter-9-niichavo",
+      "title": "Kapitel 10: Der Montag fängt am Samstag an — NIITSCHAWO als das ideale Agile-Team",
+      "description": "Vier Gesetze einer selbstorganisierenden R&D-Mannschaft von den Strugatzki-Brüdern: Sinn als Eintrittsfilter, duale Führung, Fachmann gegen Verwalter, Vertiefung statt Schulung. NIITSCHAWO als Utopie sinnvoller Arbeit und als Diagnose der Bürokratie in einer Mannschaft.",
+      "weight": 100,
+      "act": "III: Horizonte",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-09-niichavo.webp",
+      "order": 100
+    },
+    {
+      "slug": "chapter-10-chuma",
+      "title": "Kapitel 11: Die Pest — Wie sich eine Mannschaft im Modus einer andauernden Krise formt",
+      "description": "Albert Camus' *La Peste* (1947) — die *communauté* von Doktor Rieux, Tarrou, Castel, Rambert, Grand und Paneloux: vier Gesetze anhaltender Arbeit unter Krise ohne Horizont des Sieges — Ablehnung als Verpflichtung, gemeinsame Anständigkeit statt Heldentum, Konvergenz ohne Hierarchie, Disziplin des Weitermachens. Der Epilog: Die Rückkehr des Phileas Fogg. Und das Finale: «Bestimmung — unbekannt. Abfahrt — jetzt.»",
+      "weight": 110,
+      "act": "III: Horizonte — Finale",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-10-chuma.webp",
+      "order": 110
+    },
+    {
+      "slug": "intermezzo-3",
+      "title": "Intermezzo III: Der Transformations-Aufzug",
+      "description": "Der Aufzug der agilen Transformation auf 127 Etagen. Man steigt eine Etage pro Iteration mit einem Retro dazwischen; «Etage 127 direkt drücken» ist Wasserfall-Denken. Apotheose des Agile-Absurdum: vertikale Dekomposition der Bewegung, adaptive Planung der einfachsten Handlung. Karikatur auf Digital-Transformation-Initiativen, in denen der Transformationsprozess zu seinem einzigen Produkt geworden ist.",
+      "weight": 120,
+      "act": "Intermezzi",
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": null,
+      "order": 120
+    },
+    {
+      "slug": "afterword",
+      "title": "Nachwort. Elf Fragen",
+      "description": "Nachwort zum Buch *Agile Sapiens* — Synthese der zwölf Kapitel als elf diagnostische Fragen mit einem Rahmen aus dem Pilotkapitel. Keine Anweisungen, sondern Fragen.",
+      "weight": 1000,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": false,
+      "plate": "kn1-afterword.webp",
+      "order": 8000
+    },
+    {
+      "slug": "apparatus-acknowledgments",
+      "title": "Danksagung",
+      "description": "Dankbarkeit allen, die geholfen haben, dieses Buch zu schaffen",
+      "weight": 50,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "plate": null,
+      "order": 9000
+    },
+    {
+      "slug": "apparatus-methodology",
+      "title": "Methodologie",
+      "description": "Prinzipien der Forschung, Standards der Verifikation, Ansätze der Analyse",
+      "weight": 20,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "plate": null,
+      "order": 9010
+    },
+    {
+      "slug": "apparatus-sources",
+      "title": "Quellenverzeichnis",
+      "description": "Vollständige Bibliographie sämtlicher im Buch verwendeter Quellen, gruppiert nach Kapiteln (deutsche Ausgabe)",
+      "weight": 20,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "plate": null,
+      "order": 9020
+    },
+    {
+      "slug": "apparatus-subject-index",
+      "title": "Sachregister",
+      "description": "Alphabetisches Verzeichnis der wichtigsten Begriffe, Personen und Kategorien von Agile Sapiens — mit Verweisen auf Kapitel und Anhänge",
+      "weight": 30,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "plate": null,
+      "order": 9030
+    },
+    {
+      "slug": "apparatus-transparency",
+      "title": "Erklärung zur KI-Transparenz",
+      "description": "Freiwillige Offenlegung der KI-Assistenz bei der Erstellung und Übersetzung von Inhalten im Sinne von Artikel 50 Absatz 4 der KI-Verordnung der EU",
+      "weight": 40,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "plate": null,
+      "order": 9050
+    },
+    {
+      "slug": "apparatus-colophon",
+      "title": "Impressum / Colophon",
+      "description": "Editorische Angaben — wer, wann und wie dieses Buch entstanden ist",
+      "weight": 10,
+      "act": null,
+      "act_opener": false,
+      "isApparatus": true,
+      "plate": null,
+      "order": 9060
+    }
+  ]
+}
