@@ -75,28 +75,25 @@ useHead({
   script: [
     {
       type: 'application/ld+json',
+      // T-315-24 cont+17: 4-locale alignment per Iskra S318-10 §5 п.4 ratify.
+      // Reuse existing i18n keys `ai_disclosure.title` + `ai_disclosure.meta_description`
+      // (Iskra-editorial-approved canonical strings × 4 locales) for canonical SEO+Schema alignment.
+      // Closes Vraga cont+16 finding «Person.description body language mismatch с inLanguage».
       innerHTML: () =>
         JSON.stringify({
           '@context': 'https://schema.org',
           '@type': 'WebPage',
           '@id': `${currentUrl.value}#webpage`,
-          name:
-            currentLang.value === 'en'
-              ? 'AI Usage Disclosure — FolkUp Library'
-              : 'Раскрытие использования ИИ — Библиотека FolkUp',
+          name: `${t('ai_disclosure.title')} — ${t('brand.name')}`,
           url: currentUrl.value,
-          description:
-            'AI usage disclosure per EU AI Act Article 50(4). Legal name of natural person responsible for editorial oversight: Andrei Klemenchenok.',
+          description: t('ai_disclosure.meta_description'),
           publisher: { '@id': `${SITE_URL}/#organization` },
           mainEntity: {
             '@type': 'Person',
             name: 'Andrei Klemenchenok',
             jobTitle: 'Editor / Publisher',
             worksFor: { '@id': `${SITE_URL}/#organization` },
-            description:
-              currentLang.value === 'ru'
-                ? 'Natural person responsible for editorial oversight of AI-assisted content per EU AI Act Article 50(4), second subparagraph. Publishes under pseudonym «Команданте FolkUp».'
-                : 'Natural person responsible for editorial oversight of AI-assisted content per EU AI Act Article 50(4), second subparagraph. Publishes under pseudonym «Comandante FolkUp».',
+            description: t('ai_disclosure.meta_description'),
           },
           inLanguage: currentLang.value,
         }),
