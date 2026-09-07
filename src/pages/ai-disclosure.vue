@@ -15,8 +15,14 @@ import { useHead } from '@unhead/vue'
 import { useI18n } from 'vue-i18n'
 import { useRoute } from 'vue-router'
 
-const { t } = useI18n()
+const { t, te } = useI18n()
 const route = useRoute()
+
+// Iskra APPLY-READY-S316-07 canon: 6-section structure (who_responsible / the_human /
+// ai_assistants / verifiability / why_voluntary / licence + italic subtitle + updated_note).
+// Rollout allowed per locale (Iskra §4). If new-canon EN keys present — render new 6-section;
+// else fallback к legacy 4-section (RU/PT/DE pending Kochegar/Zeka/Bolik apply per §4 порядок).
+const hasNewCanonStructure = computed(() => te('ai_disclosure.who_responsible.h2'))
 
 const SITE_URL = 'https://books.folkup.life'
 
@@ -88,7 +94,9 @@ useHead({
             jobTitle: 'Editor / Publisher',
             worksFor: { '@id': `${SITE_URL}/#organization` },
             description:
-              'Natural person responsible for editorial oversight of AI-assisted content per EU AI Act Article 50(4), second subparagraph. Publishes under pseudonym «Команданте FolkUp».',
+              currentLang.value === 'ru'
+                ? 'Natural person responsible for editorial oversight of AI-assisted content per EU AI Act Article 50(4), second subparagraph. Publishes under pseudonym «Команданте FolkUp».'
+                : 'Natural person responsible for editorial oversight of AI-assisted content per EU AI Act Article 50(4), second subparagraph. Publishes under pseudonym «Comandante FolkUp».',
           },
           inLanguage: currentLang.value,
         }),
@@ -102,38 +110,80 @@ useHead({
     <article class="ai-disclosure-page__content">
       <h1>{{ t('ai_disclosure.h1') }}</h1>
 
-      <section>
-        <h2>{{ t('ai_disclosure.section1.h2') }}</h2>
-        <p>{{ t('ai_disclosure.section1.p1') }}</p>
-        <p>{{ t('ai_disclosure.section1.p2') }}</p>
-      </section>
+      <!-- New canonical 6-section structure per Iskra APPLY-READY-S316-07 -->
+      <template v-if="hasNewCanonStructure">
+        <p class="ai-disclosure-page__subtitle"><em>{{ t('ai_disclosure.subtitle') }}</em></p>
 
-      <section>
-        <h2>{{ t('ai_disclosure.section2.h2') }}</h2>
-        <p>{{ t('ai_disclosure.section2.p1') }}</p>
-        <ul>
-          <li>{{ t('ai_disclosure.section2.item1') }}</li>
-          <li>{{ t('ai_disclosure.section2.item2') }}</li>
-          <li>{{ t('ai_disclosure.section2.item3') }}</li>
-        </ul>
-        <p>{{ t('ai_disclosure.section2.p2') }}</p>
-        <ul>
-          <li>{{ t('ai_disclosure.section2.gate1') }}</li>
-          <li>{{ t('ai_disclosure.section2.gate2') }}</li>
-          <li>{{ t('ai_disclosure.section2.gate3') }}</li>
-        </ul>
-      </section>
+        <section>
+          <h2>{{ t('ai_disclosure.who_responsible.h2') }}</h2>
+          <p>{{ t('ai_disclosure.who_responsible.p1') }}</p>
+          <p>{{ t('ai_disclosure.who_responsible.p2') }}</p>
+        </section>
 
-      <section>
-        <h2>{{ t('ai_disclosure.section3.h2') }}</h2>
-        <p>{{ t('ai_disclosure.section3.p1') }}</p>
-        <p>{{ t('ai_disclosure.section3.p2') }}</p>
-      </section>
+        <section>
+          <h2>{{ t('ai_disclosure.the_human.h2') }}</h2>
+          <p>{{ t('ai_disclosure.the_human.p1') }}</p>
+        </section>
 
-      <section>
-        <h2>{{ t('ai_disclosure.section4.h2') }}</h2>
-        <p>{{ t('ai_disclosure.section4.p1') }}</p>
-      </section>
+        <section>
+          <h2>{{ t('ai_disclosure.ai_assistants.h2') }}</h2>
+          <p>{{ t('ai_disclosure.ai_assistants.p1') }}</p>
+          <p>{{ t('ai_disclosure.ai_assistants.p2') }}</p>
+        </section>
+
+        <section>
+          <h2>{{ t('ai_disclosure.verifiability.h2') }}</h2>
+          <p>{{ t('ai_disclosure.verifiability.p1') }}</p>
+        </section>
+
+        <section>
+          <h2>{{ t('ai_disclosure.why_voluntary.h2') }}</h2>
+          <p>{{ t('ai_disclosure.why_voluntary.p1') }}</p>
+        </section>
+
+        <section>
+          <h2>{{ t('ai_disclosure.licence.h2') }}</h2>
+          <p>{{ t('ai_disclosure.licence.p1') }}</p>
+        </section>
+
+        <p class="ai-disclosure-page__footer"><em>{{ t('ai_disclosure.updated_note') }}</em></p>
+      </template>
+
+      <!-- Legacy 4-section structure (RU/PT/DE pending Kochegar/Zeka/Bolik apply per Iskra §4) -->
+      <template v-else>
+        <section>
+          <h2>{{ t('ai_disclosure.section1.h2') }}</h2>
+          <p>{{ t('ai_disclosure.section1.p1') }}</p>
+          <p>{{ t('ai_disclosure.section1.p2') }}</p>
+        </section>
+
+        <section>
+          <h2>{{ t('ai_disclosure.section2.h2') }}</h2>
+          <p>{{ t('ai_disclosure.section2.p1') }}</p>
+          <ul>
+            <li>{{ t('ai_disclosure.section2.item1') }}</li>
+            <li>{{ t('ai_disclosure.section2.item2') }}</li>
+            <li>{{ t('ai_disclosure.section2.item3') }}</li>
+          </ul>
+          <p>{{ t('ai_disclosure.section2.p2') }}</p>
+          <ul>
+            <li>{{ t('ai_disclosure.section2.gate1') }}</li>
+            <li>{{ t('ai_disclosure.section2.gate2') }}</li>
+            <li>{{ t('ai_disclosure.section2.gate3') }}</li>
+          </ul>
+        </section>
+
+        <section>
+          <h2>{{ t('ai_disclosure.section3.h2') }}</h2>
+          <p>{{ t('ai_disclosure.section3.p1') }}</p>
+          <p>{{ t('ai_disclosure.section3.p2') }}</p>
+        </section>
+
+        <section>
+          <h2>{{ t('ai_disclosure.section4.h2') }}</h2>
+          <p>{{ t('ai_disclosure.section4.p1') }}</p>
+        </section>
+      </template>
     </article>
   </div>
 </template>
@@ -149,8 +199,23 @@ useHead({
 }
 
 .ai-disclosure-page__content h1 {
+  margin-bottom: var(--spacing-md);
+  text-align: center;
+}
+
+.ai-disclosure-page__subtitle {
   margin-bottom: var(--spacing-2xl);
   text-align: center;
+  opacity: 0.75;
+  font-size: 0.95em;
+}
+
+.ai-disclosure-page__footer {
+  margin-top: var(--spacing-2xl);
+  padding-top: var(--spacing-md);
+  border-top: 1px solid var(--color-border, rgba(0,0,0,0.1));
+  opacity: 0.7;
+  font-size: 0.9em;
 }
 
 .ai-disclosure-page__content h2 {

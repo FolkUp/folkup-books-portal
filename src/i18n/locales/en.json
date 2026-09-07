@@ -156,9 +156,37 @@
     }
   },
   "ai_disclosure": {
-    "title": "AI Usage Disclosure",
-    "h1": "AI Usage Disclosure",
+    "title": "AI Usage",
+    "h1": "AI Usage",
+    "subtitle": "Voluntary disclosure. Article 50(4) of Regulation (EU) 2024/1689.",
     "meta_description": "Voluntary disclosure of AI use. Natural person holding editorial responsibility: Andrei Klemenchenok, resident of Portugal. Published under the pseudonym “Comandante FolkUp”.",
+    "who_responsible": {
+      "h2": "Editorial responsibility",
+      "p1": "The FolkUp Library books are signed with the pseudonym «Comandante FolkUp». Behind the pseudonym stands one living person: Andrei Klemenchenok, publisher and editor, resident of Portugal. The pseudonym holds the series, the way a name holds a cover; responsibility for every word rests with a human being. The model is the same as with Banksy or Pessoa: to move the figure of the author out of the reader's path — not to hide from it.",
+      "p2": "Editorial and legal contact: editor{'@'}folkup.app"
+    },
+    "the_human": {
+      "h2": "The human",
+      "p1": "Storylines, lines of thought, the structure of the books, literary parallels and all analytical conclusions arise without AI involvement — that is the author's work. The author personally reads through every book and every published text in full and personally signs off every version before release. Where an edition has a living reader — a native speaker (for the German edition, a reader in Berlin) — their notes go into the edits."
+    },
+    "ai_assistants": {
+      "h2": "AI assistants",
+      "p1": "Editorial review by a human, source verification, hostile review, technical work and translation drafts are carried out by AI assistants of the Shield («ЩИТ») editorial system — each has its own name and its own role, they are listed in the colophon of each edition and on the team page. Every change they propose is a suggestion to the author; the final decision and responsibility remain with a human being.",
+      "p2": "Translations into English, Portuguese and German are made the same way: an AI-assistant translator prepares the draft, the series editor (Iskra) cross-checks the translation against the Russian original, the author signs off the edition; where there is a living reader — a native speaker — their remarks go into the edits. Who translated and who cross-checked is stated in the colophon of each edition."
+    },
+    "verifiability": {
+      "h2": "Verifiability",
+      "p1": "The source of every fact is stated in the book's apparatus. The Russian original and the translations are published side by side under a CC BY-SA 4.0 licence — any paragraph can be checked, contested and republished in corrected form. Found an error? Write to us: we will correct it in the next version and thank you in the colophon."
+    },
+    "why_voluntary": {
+      "h2": "Why voluntarily",
+      "p1": "Under Article 50(4), second subparagraph, of Regulation (EU) 2024/1689, the obligation to label text generated with the help of AI does not apply where the content has undergone editorial review by a human and a natural or legal person holds editorial responsibility for its publication. That person is Andrei Klemenchenok. We disclose it nonetheless, as an editorial decision: the era these books are written about began in our editorial office too, and to conceal that would go against the books themselves."
+    },
+    "licence": {
+      "h2": "Licence",
+      "p1": "All library content is Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0). Code — MIT."
+    },
+    "updated_note": "Updated 2026-09-07 — the page has been rewritten: the roles of the human and of the AI assistants are named directly; claims of native-speaker review have been removed where there is no living reader.",
     "section1": {
       "h2": "Editorial responsibility",
       "p1": "FolkUp Library books are signed with the pseudonym “Comandante FolkUp”. Behind the pseudonym stands one living person: Andrei Klemenchenok, a resident of Portugal, publisher and editor. The pseudonym is a Banksy-style convention for non-commercial brand identity, not a way to hide responsibility.",
