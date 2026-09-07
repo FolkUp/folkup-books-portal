@@ -3,7 +3,7 @@
 ## I
 
 > *«A 15 de julho de 1972, às três horas e trinta e dois minutos da tarde, em St. Louis, estado do Missouri, morreu a arquitetura moderna».*
-> Charles Jencks, «A Linguagem da Arquitetura Pós-Moderna» (Stroyizdat, 1985)
+> Charles Jencks, *The Language of Post-Modern Architecture*, 1977 (ed. russa: Stroyizdat, 1985)
 
 Nas três horas e trinta e dois minutos da tarde não há nada de arquitetónico. É a hora do intervalo do almoço no escritório. É a hora do recreio na escola. É a hora em que em St. Louis, no verão de 1972, estavam trinta e três graus à sombra e o rio Mississippi exalava humidade.
 
