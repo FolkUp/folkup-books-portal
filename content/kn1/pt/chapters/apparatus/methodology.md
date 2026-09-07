@@ -17,7 +17,7 @@ Cada afirmação factual é verificada face às fontes primárias. A exatidão i
 - **Verificação OSINT:** verificação independente de factos através de fontes abertas
 
 ### Revisão Independente
-Cada capítulo passa por uma verificação de revisores independentes, que procuram ativamente erros, contradições e pontos frágeis da argumentação. Esta revisão é realizada por um assistente de IA para revisão hostil no sistema editorial ЩИТ; consulte a [Declaração de transparência da IA](/pt/ai-disclosure).
+Cada capítulo passa por uma verificação de revisores independentes, que procuram ativamente erros, contradições e pontos frágeis da argumentação. Esta revisão é realizada por um assistente de IA para revisão hostil no sistema editorial ЩИТ («Escudo»); consulte a [Declaração de transparência da IA](/pt/ai-disclosure).
 
 ## Padrões de Citação
 
@@ -47,7 +47,7 @@ HTTPS, Content Security Policy, cabeçalhos protegidos.
 1. **Investigação** — recolha de material, análise primária
 2. **Escrita** — redação do rascunho do capítulo
 3. **Verificação** — averiguação de factos e fontes
-4. **Revisão independente** — busca de erros com revisores independentes. Esta revisão é realizada por um assistente de IA para revisão hostil no sistema editorial ЩИТ; consulte a [Declaração de transparência da IA](/pt/ai-disclosure).
+4. **Revisão independente** — busca de erros com revisores independentes. Esta revisão é realizada por um assistente de IA para revisão hostil no sistema editorial ЩИТ («Escudo»); consulte a [Declaração de transparência da IA](/pt/ai-disclosure).
 5. **Edição** — revisão final e polimento
 6. **Publicação** — colocação no site
 
