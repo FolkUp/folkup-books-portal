@@ -43,6 +43,24 @@ const pdfHref = computed(
   () => kn1.value?.downloads?.[lang.value]?.pdf ?? kn1.value?.downloads?.pdf ?? '/kn1',
 )
 
+// T-315-10 P1 cont+17 per Iskra REESTR-TIKETOV-S315-19: «PT-читалка kn1: снять/подписать
+// ссылки на RU EPUB/PDF» + gate «до T-315-01 (translations.pt live) — «(edição russa)»;
+// после — PT-файлы». Detect fallback к RU (per-locale file отсутствует) → показать
+// подпись «(edição russa)» / «(Russian edition)» — читатель знает что download = RU edition.
+const RUSSIAN_EDITION_LABELS: Record<Lang, string> = {
+  ru: '',
+  en: '(Russian edition)',
+  pt: '(edição russa)',
+}
+const hasLocaleEpub = computed(() => Boolean(kn1.value?.downloads?.[lang.value]?.epub))
+const hasLocalePdf = computed(() => Boolean(kn1.value?.downloads?.[lang.value]?.pdf))
+const epubRussianLabel = computed(() =>
+  lang.value !== 'ru' && !hasLocaleEpub.value ? RUSSIAN_EDITION_LABELS[lang.value] : '',
+)
+const pdfRussianLabel = computed(() =>
+  lang.value !== 'ru' && !hasLocalePdf.value ? RUSSIAN_EDITION_LABELS[lang.value] : '',
+)
+
 const SITE_URL = 'https://books.folkup.life'
 
 // URL path segment (RU has no lang segment, PT/EN do — matches Kn1ReadChapter.vue pattern).
@@ -171,9 +189,9 @@ const sections = computed<TocSection[]>(() => {
       <p class="reader-toc__subtitle">{{ labels.subtitle }}</p>
       <p class="reader-toc__hint">
         {{ labels.hint }}
-        <a :href="epubHref" download>EPUB</a>
+        <a :href="epubHref" download>EPUB</a><span v-if="epubRussianLabel" class="reader-toc__lang-note"> {{ epubRussianLabel }}</span>
         {{ lang === 'ru' ? 'и' : lang === 'pt' ? 'e' : 'and' }}
-        <a :href="pdfHref" download>PDF</a>.
+        <a :href="pdfHref" download>PDF</a><span v-if="pdfRussianLabel" class="reader-toc__lang-note"> {{ pdfRussianLabel }}</span>.
       </p>
     </header>
 
@@ -246,6 +264,11 @@ const sections = computed<TocSection[]>(() => {
 .reader-toc__hint a {
   color: var(--color-link, #7a2e00);
   text-decoration: underline;
+}
+.reader-toc__lang-note {
+  font-size: 0.85em;
+  color: var(--color-text-muted, #888);
+  font-style: italic;
 }
 
 .reader-toc__section {
