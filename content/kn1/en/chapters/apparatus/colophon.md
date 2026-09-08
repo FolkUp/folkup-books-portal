@@ -42,7 +42,7 @@ weight: 10
 **FolkUp Ecosystem**
 Digital publisher of specialized content
 Website: [folkup.app](https://folkup.app)
-Email: info@folkup.app
+Email: editor@folkup.app
 
 ## Editorial Team
 
