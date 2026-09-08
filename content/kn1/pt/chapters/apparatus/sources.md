@@ -20,7 +20,7 @@ Fontes referenciadas em vários capítulos: clássicos da gestão de projetos (D
 
 ### 2. Fontes por capítulo
 
-Fontes específicas de cada capítulo, com números de página quando aplicável. Estão listadas nas notas de rodapé no final de cada um dos doze capítulos e do posfácio. Esta secção consolida essas notas num índice único.
+Fontes específicas de cada capítulo, com números de página quando aplicável. Estão listadas nas notas de rodapé no final de cada um dos doze capítulos e do posfácio. Este ficheiro consolidará essas notas num índice único; até lá, valem as notas de rodapé de cada capítulo.
 
 ### 3. Textos canónicos em português europeu
 
@@ -28,15 +28,15 @@ Quando existe edição consolidada em PT-EU de uma obra literária citada — Ve
 
 ### 4. Textos em línguas originais
 
-Quando não existe edição PT-EU canónica de uma obra citada — sobretudo textos académicos e corporativos em inglês (livros de gestão, artigos científicos, relatórios governamentais), documentação técnica em francês, alemão ou italiano — a citação faz-se do texto original. A primeira ocorrência de cada obra dentro de um capítulo é marcada com **«(tradução do autor)»**.
+Quando não existe edição PT-EU canónica de uma obra citada — sobretudo textos académicos e corporativos em inglês (livros de gestão, artigos científicos, relatórios governamentais), documentação técnica em francês, alemão ou italiano — a citação faz-se do texto original. A primeira ocorrência de cada obra dentro de um capítulo é marcada com **«(tradução da redação)»**.
 
 ### 5. Fontes russas dos irmãos Strugatski
 
-No capítulo 9, a obra *Понедельник начинается в субботу* («Segunda-feira Começa ao Sábado», 1965) é citada a partir do texto original russo. Não existindo edição PT-EU canónica desta obra, todas as citações levam **«(tradução do autor)»** marcado explicitamente na primeira ocorrência dentro do capítulo.
+No capítulo 9, a obra *Понедельник начинается в субботу* («Segunda-feira Começa ao Sábado», 1965) é citada a partir do texto original russo. Não existindo edição PT-EU canónica desta obra, todas as citações levam **«(tradução da redação)»** marcado explicitamente na primeira ocorrência dentro do capítulo.
 
-## Convenção «tradução do autor»
+## Convenção «tradução da redação»
 
-Sempre que uma citação provém de obra sem edição PT-EU consolidada — russo original dos Strugatski, artigos académicos em inglês, relatórios governamentais em francês, documentação técnica em alemão, entre outros — a primeira ocorrência dentro de um capítulo é marcada «(tradução do autor)». As ocorrências seguintes dentro do mesmo capítulo dispensam a repetição do marcador. A norma segue a prática das edições académicas portuguesas.
+Sempre que uma citação provém de obra sem edição PT-EU consolidada — russo original dos Strugatski, artigos académicos em inglês, relatórios governamentais em francês, documentação técnica em alemão, entre outros — a primeira ocorrência dentro de um capítulo é marcada «(tradução da redação)». As ocorrências seguintes dentro do mesmo capítulo dispensam a repetição do marcador. A norma segue a prática das edições académicas portuguesas.
 
 ## Fontes canónicas de referência
 
