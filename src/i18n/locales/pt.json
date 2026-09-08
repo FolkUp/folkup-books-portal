@@ -250,6 +250,7 @@
         "<p><strong>Este sítio não utiliza cookies de rastreio, cookies analíticos nem cookies publicitários.</strong></p>",
         "<p>É por isso que não vê qualquer banner de consentimento de cookies — ao abrigo da Diretiva ePrivacy 2002/58/CE (com as respetivas alterações) e do Considerando 66, o consentimento não é exigido para cookies «estritamente necessários» à prestação de um serviço solicitado pelo utilizador.</p>",
         "<h2>Que cookies podem ser definidos</h2>",
+        "<p>Os únicos cookies que podem surgir no seu navegador ao visitar este sítio são definidos pela <strong>Cloudflare</strong>, o nosso prestador de infraestrutura, para efeitos de segurança e prevenção de abusos:</p>",
         "<table><thead><tr><th>Cookie</th><th>Definido por</th><th>Finalidade</th><th>Duração</th></tr></thead><tbody><tr><td><code>__cf_bm</code></td><td>Cloudflare</td><td>Gestão de bots — distingue humanos de tráfego automatizado para proteger contra abusos</td><td>30 minutos</td></tr><tr><td><code>cf_clearance</code></td><td>Cloudflare</td><td>Regista que um visitante ultrapassou um desafio de segurança (apenas definido se o desafio for acionado)</td><td>30 dias</td></tr></tbody></table>",
         "<p>Ambos são classificados como <strong>estritamente necessários</strong> ao abrigo do RGPD / interpretação da ePrivacy e da própria <a href='https://developers.cloudflare.com/fundamentals/reference/policies-compliances/cloudflare-cookies/' rel='noopener'>documentação de cookies</a> da Cloudflare.</p>",
         "<h2>O que não utilizamos</h2>",
@@ -265,6 +266,7 @@
       "title": "Aviso Legal",
       "meta_description": "Aviso Legal do portal books.folkup.life — informações sobre o prestador de serviço, responsabilidade editorial e divulgação de utilização de IA nos termos do RIA.",
       "content": [
+        "<p><em>Informações legais: informação sobre o prestador do serviço, responsabilidade editorial e utilização de IA.</em></p>",
         "<h2>Prestador de serviço</h2>",
         "<p><strong>Andrei Klemenchenok</strong><br>Pessoa singular, residente em Portugal<br>Contacto: <a href='mailto:editorial&#64;folkup.app'>editorial&#64;folkup.app</a><br>Publica sob o pseudónimo: <strong>Comandante FolkUp</strong></p>",
         "<p>Trata-se de um projeto editorial amador, sem fins comerciais. <strong>Não</strong> é uma sociedade registada. Não existe NIPC, nem inscrição no registo comercial, nem filiação em qualquer câmara de comércio.</p>",
