@@ -22,7 +22,7 @@ The book was made using AI tools that form part of the FolkUp editorial ecosyste
 - **Technical editing** — verification of editorial standards and formatting
 - **Poetic-rhythm analysis** (chapter on Sherlock Holmes) — a literary-studies assistant
 - **Hostile review** — independent checking of logic and contradictions
-- **CSS/HTML layout and accessibility** — a front-end assistant (WCAG 2.1 AA)
+- **CSS/HTML layout and accessibility** — a front-end assistant
 - **Legal support** — a compliance assistant (GDPR, EU AI Act)
 
 For more on the architecture of the editorial ecosystem and the role of AI in the book, see the [AI Transparency page](/kn1/en/read/apparatus-transparency).

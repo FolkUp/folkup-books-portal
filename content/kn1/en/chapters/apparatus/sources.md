@@ -8,7 +8,7 @@ weight: 20
 
 *Full bibliography of all sources used in this book, grouped by chapter.*
 
-*This bibliography is being consolidated. Until then, each chapter lists its sources in the footnotes at the end of the chapter.*
+*This bibliography will be consolidated into a single index; until then, chapter footnotes are canonical.*
 
 ## Structure (to be finalized)
 

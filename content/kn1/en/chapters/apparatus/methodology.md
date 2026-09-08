@@ -33,7 +33,7 @@ We observe all copyright requirements when quoting. Volume limits:
 ## Technical Standards
 
 ### Accessibility
-Compliance with WCAG 2.1 AA — web accessibility for people with disabilities.
+Accessibility is checked with automated tools and manual reviews on each release.
 
 ### Performance
 Load time under 2 seconds, mobile adaptation, image optimization.
