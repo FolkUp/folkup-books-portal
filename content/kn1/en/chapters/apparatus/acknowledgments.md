@@ -43,7 +43,7 @@ For more on the architecture of the editorial ecosystem and the role of AI in th
 
 ---
 
-*If you feel your contribution has not been recognized, please write to info@folkup.app*
+*If you feel your contribution has not been recognized, please write to editor@folkup.app*
 
 ---
 
