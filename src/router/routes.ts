@@ -88,6 +88,24 @@ export const routes: RouteRecordRaw[] = [
     meta: { pageType: 'reader-chapter', bookSlug: 'kn1', lang: 'en' },
     props: (route) => ({ ...route.params, lang: 'en' }),
   },
+  // DE reader routes — mirror EN/PT pattern per Iskra POMETKA-S319-08 P0 flagman «дверь kn1 DE».
+  // Content ready: 23 chapters (17 chapters + 6 apparatus) в content/kn1/de/chapters-html/*.js
+  // + chapters-manifest.json (generated 2026-09-07T21:08:10Z Bolik apply PR #366).
+  // Series flip translations.de='live' + SUPPORTED_LANGS/type Lang extended.
+  // S1KOCHEGAR cont+0 P0 batch.
+  {
+    path: '/kn1/de/read',
+    name: 'kn1-de-read-toc',
+    component: () => import('../pages/Kn1ReadToc.vue'),
+    meta: { pageType: 'reader-toc', bookSlug: 'kn1', lang: 'de' },
+  },
+  {
+    path: '/kn1/de/read/:slug',
+    name: 'kn1-de-read-chapter',
+    component: () => import('../pages/Kn1ReadChapter.vue'),
+    meta: { pageType: 'reader-chapter', bookSlug: 'kn1', lang: 'de' },
+    props: (route) => ({ ...route.params, lang: 'de' }),
+  },
   // PRO-CHTO standalone routes (Option A.3 per Alisa KVIT-22 → S299-14 DEFAULT-GO canon apply).
   // 4-lang parity per Iskra S301-10 §4 P1 mandate + S301-04 LOCALE-PERSISTENCE canon.
   // Preserves canon S242 §1 KANON1=β (inline pro-chto suppression в BookPage.vue untouched).
@@ -311,8 +329,11 @@ export const routes: RouteRecordRaw[] = [
   // /pt/kn7 flipped stub→wrapper (S1DEFIX cont+7 2026-09-01) per Iskra S311-18 §2.3 mandate + Zeka S2PT cont+8-EXT PR #300 880c158. Preview state per series.yaml translations.pt='preview' — inline pro-chto reading content/kn7/pt/pro-chto.md. Mirrors /pt/kn1 flip (Iskra VERDIKT-S307-03 §1 Q4). Reader wire-up defers к post-Kочегар свод cont+10.
   { path: '/pt/kn7', name: 'kn7-pt', component: () => import('../pages/kn7.vue'), meta: { pageType: 'book', bookSlug: 'kn7', lang: 'pt' } },
 
-  // Book pages DE stubs (kn1-7)
-  { path: '/de/kn1', name: 'kn1-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn1', lang: 'de' } },
+  // Book pages DE stubs (kn2-7) — /de/kn1 flipped stub→wrapper per Iskra POMETKA-S319-08 P0
+  // flagman «дверь kn1 DE» (S1KOCHEGAR cont+0). Series translations.de='live' + reader routes
+  // /kn1/de/read/* добавлены + Bolik translation FINAL v1.0 shipped (PR #366 MD5 d1df56).
+  // Pattern mirrors /en/kn1 (PR #255 Iskra VIZA-VERDIKT-S304-01 §1) + /pt/kn1 (PR VERDIKT-S307-03 §1).
+  { path: '/de/kn1', name: 'kn1-de', component: () => import('../pages/kn1.vue'), meta: { pageType: 'book', bookSlug: 'kn1', lang: 'de' } },
   { path: '/de/kn2', name: 'kn2-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn2', lang: 'de' } },
   { path: '/de/kn3', name: 'kn3-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn3', lang: 'de' } },
   { path: '/de/kn4', name: 'kn4-de', component: () => import('../pages/LangNotReady.vue'), meta: { pageType: 'book-stub', bookSlug: 'kn4', lang: 'de' } },

@@ -225,6 +225,9 @@ const isCurrentLangLive = computed(
 // already here as preview (reader on `/pt/kn1` with pt: preview sees preview_full
 // contextually accurate, stub_full redundant). Hide stub-note on preview-lang page
 // too; badges в списке показывают preparing statuses соседних языков (as with live).
+// Cross-ref: S1PT cont+17-03 PR #379 landed 12:57 UTC = origin fix; S1KOCHEGAR cont+0
+// PR #380 shipped same 4-line duplicate ~1h30 позже (§7.9 bridge grep skip
+// self-catch pre-rebase — mechanical conflict resolved keep S2PT wording per authorship).
 const isCurrentLangPreview = computed(
   () => book.value?.translations?.[locale.value as Locale] === 'preview',
 )

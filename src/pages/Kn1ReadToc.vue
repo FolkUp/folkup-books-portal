@@ -19,8 +19,8 @@ import { useLangUrl } from '../composables/useLangUrl'
 const route = useRoute()
 const { langUrl } = useLangUrl()
 
-type Lang = 'ru' | 'pt' | 'en'
-const SUPPORTED_LANGS: Lang[] = ['ru', 'pt', 'en']
+type Lang = 'ru' | 'pt' | 'en' | 'de'
+const SUPPORTED_LANGS: Lang[] = ['ru', 'pt', 'en', 'de']
 const lang = computed<Lang>(() => {
   const metaLang = route.meta.lang
   if (typeof metaLang === 'string' && SUPPORTED_LANGS.includes(metaLang as Lang)) {
@@ -51,6 +51,9 @@ const RUSSIAN_EDITION_LABELS: Record<Lang, string> = {
   ru: '',
   en: '(Russian edition)',
   pt: '(edição russa)',
+  // DE: Bolik ratified de.json canon «russische Ausgabe» — mirror per S1KOCHEGAR cont+0
+  // P0 flagman door PR. Fallback label когда DE PDF отсутствует (DE EPUB LIVE, PDF pending).
+  de: '(russische Ausgabe)',
 }
 const hasLocaleEpub = computed(() => Boolean(kn1.value?.downloads?.[lang.value]?.epub))
 const hasLocalePdf = computed(() => Boolean(kn1.value?.downloads?.[lang.value]?.pdf))
@@ -127,6 +130,24 @@ const TOC_LABELS: Record<Lang, {
     metaDesc: 'Contents of «Agile Sapiens». Read online for free — all chapters, intermezzos, apparatus.',
     ogTitle: 'Read online — Agile Sapiens',
     ogDesc: 'Book contents — read online for free.',
+  },
+  // DE labels: Bolik ratified de.json «Online lesen» canonical (S1KOCHEGAR cont+0 P0 flagman
+  // door per Iskra POMETKA-S319-08). Mirror PT/EN pattern; standard German UX conventions
+  // (Bibliothek / Inhaltsverzeichnis / Apparat). Post-deploy Bolik visual review per Iskra §2.
+  de: {
+    title: 'Agile Sapiens',
+    subtitle: 'Literarische Betriebsanalyse',
+    hint: 'Kostenlos online lesen. Texte auch verfügbar in den Formaten',
+    hintDownloads: (formats) => formats,
+    breadcrumbLibrary: 'Bibliothek',
+    breadcrumbBook: 'Agile Sapiens',
+    breadcrumbCurrent: 'Online lesen',
+    sectionBody: 'Haupttext',
+    sectionApparatus: 'Apparat',
+    metaTitle: 'Online lesen — Agile Sapiens — FolkUp-Bibliothek',
+    metaDesc: 'Inhaltsverzeichnis des Buches «Agile Sapiens». Kostenlos online lesen — alle Kapitel, Intermezzi, Apparat.',
+    ogTitle: 'Online lesen — Agile Sapiens',
+    ogDesc: 'Buchinhalt — kostenlos online lesen.',
   },
 }
 const labels = computed(() => TOC_LABELS[lang.value])

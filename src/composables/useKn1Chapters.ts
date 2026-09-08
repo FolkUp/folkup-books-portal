@@ -43,7 +43,7 @@ interface Manifest {
   entries: ChapterMeta[]
 }
 
-type Lang = 'ru' | 'pt' | 'en'
+type Lang = 'ru' | 'pt' | 'en' | 'de'
 
 const typedRuManifest = ruManifest as Manifest
 
