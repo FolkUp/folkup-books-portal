@@ -220,6 +220,15 @@ const isCurrentLangLive = computed(
   () => book.value?.translations?.[locale.value as Locale] === 'live',
 )
 
+// Iskra VIZY-S320-03 §2 (2026-09-08) symmetric extension: on preview-lang page
+// the same stub-note («piece will arrive soon — enter») misleads because piece IS
+// already here as preview (reader on `/pt/kn1` with pt: preview sees preview_full
+// contextually accurate, stub_full redundant). Hide stub-note on preview-lang page
+// too; badges в списке показывают preparing statuses соседних языков (as with live).
+const isCurrentLangPreview = computed(
+  () => book.value?.translations?.[locale.value as Locale] === 'preview',
+)
+
 const SITE_URL = 'https://books.folkup.life'
 
 // Per-book og:image — PNG version для соцсетей (Iskra STOP-MAYAK S219 §2д:
@@ -528,7 +537,7 @@ if (book.value) {
             {{ t('portal.translation_preview_full') }}
           </p>
           <p
-            v-if="hasAnyPreparing && !isCurrentLangLive"
+            v-if="hasAnyPreparing && !isCurrentLangLive && !isCurrentLangPreview"
             class="book-page__translation-stub-full"
           >
             {{ t('portal.translation_stub_full') }}
