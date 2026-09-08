@@ -1,7 +1,5 @@
 # robots.txt для books.folkup.life
-# Per Андрей vердикт S156 F8 GEO A1 (2026-07-04): allow all training crawlers на public контур.
-# Public контур = все published URLs. Internal контур не exposed на portal (нет /admin/, /_meta/, etc).
-# Align с agile-sapiens/static/robots.txt post-F8 apply.
+# Открытый доступ для всех поисковых и AI-краулеров.
 
 User-agent: *
 Allow: /
