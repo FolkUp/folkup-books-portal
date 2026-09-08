@@ -37,8 +37,9 @@ const slug = computed(() => route.params.slug as string)
 // `/kn1/read/*` → 'ru' (backward compat, no lang segment, no meta.lang).
 // `/kn1/pt/read/*` → 'pt' (routes.ts sets meta.lang='pt').
 // `/kn1/en/read/*` → 'en' (routes.ts sets meta.lang='en').
-type Lang = 'ru' | 'pt' | 'en'
-const SUPPORTED_LANGS: Lang[] = ['ru', 'pt', 'en']
+// `/kn1/de/read/*` → 'de' (S1KOCHEGAR cont+0 P0 flagman дверь kn1 DE per Iskra POMETKA-S319-08).
+type Lang = 'ru' | 'pt' | 'en' | 'de'
+const SUPPORTED_LANGS: Lang[] = ['ru', 'pt', 'en', 'de']
 const lang = computed<Lang>(() => {
   const metaLang = route.meta.lang
   if (typeof metaLang === 'string' && SUPPORTED_LANGS.includes(metaLang as Lang)) {
@@ -149,6 +150,23 @@ const NAV_LABELS: Record<Lang, {
     metaFallback: 'Read',
     metaDescFallback: 'Read online — chapter of «Agile Sapiens».',
   },
+  // DE labels: standard German reader UX (S1KOCHEGAR cont+0 P0 flagman door).
+  // Mirror PT/EN pattern; Bolik de.json canonical «Lesen» short form.
+  de: {
+    toc: 'Zum Inhalt',
+    prev: '← Vorheriges',
+    next: 'Nächstes →',
+    breadcrumbLibrary: 'Bibliothek',
+    breadcrumbToc: 'Inhalt',
+    breadcrumbAria: 'Brotkrümel-Navigation',
+    navChaptersTopAria: 'Kapitelnavigation (oben)',
+    navChaptersBottomAria: 'Kapitelnavigation',
+    notFoundTitle: 'Kapitel nicht gefunden',
+    notFoundBody: 'Prüfen Sie die Adresse, oder',
+    notFoundLink: 'zurück zum Inhaltsverzeichnis',
+    metaFallback: 'Lesen',
+    metaDescFallback: 'Online lesen — Kapitel des Buches «Agile Sapiens».',
+  },
 }
 const labels = computed(() => NAV_LABELS[lang.value])
 
@@ -160,6 +178,7 @@ const BCP47_MAP: Record<Lang, string> = {
   ru: 'ru-RU',
   pt: 'pt-PT',
   en: 'en-US',
+  de: 'de-DE',
 }
 
 // Open Graph locale codes (ISO 15897 style — underscore separator, per OG spec).
@@ -167,6 +186,7 @@ const OG_LOCALE_MAP: Record<Lang, string> = {
   ru: 'ru_RU',
   pt: 'pt_PT',
   en: 'en_US',
+  de: 'de_DE',
 }
 
 // URL builder per lang (RU = no lang segment, backward compat; PT/EN = lang-prefixed).

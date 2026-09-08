@@ -50,11 +50,13 @@ function kn1LangReaderRoutes(lang: string): string[] {
 }
 
 function kn1ReaderRoutes(): string[] {
-  // RU + PT + EN (order matters for prerender log clarity).
+  // RU + PT + EN + DE (order matters for prerender log clarity).
+  // DE added S1KOCHEGAR cont+0 P0 flagman «дверь kn1 DE» per Iskra POMETKA-S319-08.
   return [
     ...kn1LangReaderRoutes('ru'),
     ...kn1LangReaderRoutes('pt'),
     ...kn1LangReaderRoutes('en'),
+    ...kn1LangReaderRoutes('de'),
   ]
 }
 
@@ -131,14 +133,15 @@ function kn7ReaderRoutes(): string[] {
 const KN1_RU_ROUTES = kn1LangReaderRoutes('ru')
 const KN1_PT_ROUTES = kn1LangReaderRoutes('pt')
 const KN1_EN_ROUTES = kn1LangReaderRoutes('en')
-const KN1_READER_ROUTES = [...KN1_RU_ROUTES, ...KN1_PT_ROUTES, ...KN1_EN_ROUTES]
+const KN1_DE_ROUTES = kn1LangReaderRoutes('de')
+const KN1_READER_ROUTES = [...KN1_RU_ROUTES, ...KN1_PT_ROUTES, ...KN1_EN_ROUTES, ...KN1_DE_ROUTES]
 const KN3_READER_ROUTES = kn3ReaderRoutes()
 const KN4_READER_ROUTES = kn4ReaderRoutes()
 const KN5_READER_ROUTES = kn5ReaderRoutes()
 const KN7_READER_ROUTES = kn7ReaderRoutes()
 console.log(
   `[vite-ssg] Prerender kn.1 reader routes: ${KN1_READER_ROUTES.length}` +
-  ` (ru: ${KN1_RU_ROUTES.length} + pt: ${KN1_PT_ROUTES.length} + en: ${KN1_EN_ROUTES.length})`,
+  ` (ru: ${KN1_RU_ROUTES.length} + pt: ${KN1_PT_ROUTES.length} + en: ${KN1_EN_ROUTES.length} + de: ${KN1_DE_ROUTES.length})`,
 )
 console.log(`[vite-ssg] Prerender kn.3 reader routes: ${KN3_READER_ROUTES.length}`)
 console.log(`[vite-ssg] Prerender kn.4 reader routes: ${KN4_READER_ROUTES.length}`)
