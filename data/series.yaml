@@ -83,6 +83,14 @@ books:
       en:
         epub: https://books.folkup.life/kn1/downloads/agile-sapiens-en-v1.0.1.epub
         pdf: https://books.folkup.life/kn1/downloads/agile-sapiens-en-v1.0.1.pdf
+      # PT edition per-locale nested downloads per Iskra POMETKA-S318-05 §2 п.3 + POMETKA-S317-06 Template v4 mandate
+      # kn1 PT v1.0.1 shipped 2026-09-07 (S1KOCHEGAR cont+16 EXT2 rebuild v1.0.0 → v1.0.1 per Template v4 canon).
+      # Template v4 canon: nav.xhtml в spine ПОСЛЕ ch001 (Prefácio) — position 4 (nav after intro).
+      # Same postprocess logic as kn6 v1.1g + kn1 DE v1.0.0 (Iskra all-3-EPUB mandate).
+      # MD5: 28dfaf50bc4c5a4f19c3d78e86629e46. Size: 1.8M. epubcheck 3.3: 0/0/0. Gates 1-10 PASS.
+      # translations.pt=preview → flip к live per Q-C26 canon post-Iskra виза + Andrey Q1 probe.
+      pt:
+        epub: https://books.folkup.life/kn1/downloads/agile-sapiens-pt-v1.0.1.epub
       # DE edition per-locale nested downloads per Iskra KANON-VOROTA S289-07 + Iskra POMETKA-S318-05 §2 п.8
       # kn1 DE v1.0.0 shipped 2026-09-07 (S1KOCHEGAR cont+16 Bolik apply per VIZA-S317-05 §3 п.1 auto-trigger).
       # Bolik translation FINAL v1.0 (24 files: 7 apparatus + 17 chapters) applied inline per KVITANCIYA-cont21-05.
